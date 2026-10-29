@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <!-- Cấu trúc cơ bản bị thiếu -->
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>edu.hust.search</groupId>
+    <artifactId>hust-search-engine</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    
+    <!-- Đóng gói dạng pom cho thư mục gốc -->
+    <packaging>pom</packaging>
+    <name>HUST Search Engine Root</name>
+
+    <!-- Khai báo 5 module con -->
+    <modules>
+        <module>crawler-module</module>
+        <module>evaluation-module</module>
+        <module>lucene-core-module</module>
+        <module>parser-module</module>
+        <module>web-app-module</module>
+    </modules>
+
+    <!-- Cấu hình Java 17 chung cho toàn dự án -->
+    <properties>
+        <maven.compiler.release>17</maven.compiler.release>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+</project>
