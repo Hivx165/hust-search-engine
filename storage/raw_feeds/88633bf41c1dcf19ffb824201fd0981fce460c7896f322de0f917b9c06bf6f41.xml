@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Recent publications &#8211; Data Science Laboratory</title>
+	<atom:link href="http://ds.soict.hust.edu.vn/?feed=rss2&#038;cat=6" rel="self" type="application/rss+xml" />
+	<link>http://ds.soict.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Sep 2026 08:08:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.35</generator>
+	<item>
+		<title>6 papers got accepted at NeurIPS 2026</title>
+		<link>http://ds.soict.hust.edu.vn/?p=950</link>
+		<pubDate>Mon, 28 Sep 2026 08:02:47 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=950</guid>
+		<description><![CDATA[Many students got new papers published at NeurIPS 2026 which is the top-tier AI venue: Khang Luong, Dinh Thai Son, Hoang Ta, Hung The Tran, <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=950" title="6 papers got accepted at NeurIPS 2026">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>4 papers got accepted at ICML 2026</title>
+		<link>http://ds.soict.hust.edu.vn/?p=944</link>
+		<pubDate>Fri, 01 May 2026 03:00:20 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=944</guid>
+		<description><![CDATA[Many students got new papers published at ICML 2026 which is the top-tier AI venue: Viet-Hoang Tran, Vinh Khanh Bui, Tan Lai Ngoc, Nam Nguyen, <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=944" title="4 papers got accepted at ICML 2026">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>A new paper got accepted at CVPR 2026</title>
+		<link>http://ds.soict.hust.edu.vn/?p=947</link>
+		<pubDate>Sat, 21 Mar 2026 03:00:35 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=947</guid>
+		<description><![CDATA[Quyen Tran, Ngoc-Hai Nguyen, Quan Dao, Hoang Phan, Linh Ngo Van, Khoat Than, Dinh Phung, Dimitris N. Metaxas, Trung Le. &#8220;An Optimal Transport-driven Approach for <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=947" title="A new paper got accepted at CVPR 2026">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>A new paper got accepted at ICLR 2026</title>
+		<link>http://ds.soict.hust.edu.vn/?p=938</link>
+		<pubDate>Tue, 27 Jan 2026 02:00:43 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=938</guid>
+		<description><![CDATA[Tung Tran, Danilo Vasconcellos Vargas, Khoat Than. &#8220;LCA: Local Classifier Alignment for Continual Learning&#8221;. The Fourteenth International Conference on Learning Representations, 2026.]]></description>
+		</item>
+		<item>
+		<title>4 new papers got accepted at ICML 2025</title>
+		<link>http://ds.soict.hust.edu.vn/?p=912</link>
+		<pubDate>Fri, 02 May 2025 03:20:49 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=912</guid>
+		<description><![CDATA[Many students got new papers published at ICML 2025 which is the top-tier AI venue: Lan-Cuong Nguyen, Quan Nguyen-Tri, Bang Tran Khanh, Dung D. Le, <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=912" title="4 new papers got accepted at ICML 2025">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>2 new papers to appear at top-tier journals</title>
+		<link>http://ds.soict.hust.edu.vn/?p=905</link>
+		<pubDate>Wed, 02 Apr 2025 07:45:38 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=905</guid>
+		<description><![CDATA[Two new papers to appear at international journals which have top-tier quality: Khoat Than, Dat Phan, and Giang Vu. &#8220;Gentle Local Robustness implies Generalization.&#8221; Machine Learning, 2025. <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=905" title="2 new papers to appear at top-tier journals">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>10 new papers got accepted at A* conferences</title>
+		<link>http://ds.soict.hust.edu.vn/?p=901</link>
+		<pubDate>Wed, 12 Feb 2025 04:44:56 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=901</guid>
+		<description><![CDATA[Many students got new papers published at international conferences which have top-tier quality: Lichuan Xiang, Quan Nguyen-Tri, Lan-Cuong Nguyen, Hoang Pham, Khoat Than, Long Tran-Thanh, <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=901" title="10 new papers got accepted at A* conferences">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>2 new papers to appear at Q1 journal and A* conference</title>
+		<link>http://ds.soict.hust.edu.vn/?p=880</link>
+		<pubDate>Tue, 21 May 2024 09:30:41 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=880</guid>
+		<description><![CDATA[Many students got new papers published at international journals and conference which have top-tier quality: Tinh Son Luong, Thanh-Thien Le, Linh Ngo Van, Thien Huu <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=880" title="2 new papers to appear at Q1 journal and A* conference">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>2 new papers to appear at AAAI 2024, a top-tier conference</title>
+		<link>http://ds.soict.hust.edu.vn/?p=876</link>
+		<pubDate>Sun, 10 Dec 2023 04:34:07 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=876</guid>
+		<description><![CDATA[Many students got 2 new papers published at AAAI 2024, which is one of the top-tier venues in AI: Viet Nguyen, Giang Vu, Tung Nguyen <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=876" title="2 new papers to appear at AAAI 2024, a top-tier conference">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>3 new papers to appear at top-tier journals</title>
+		<link>http://ds.soict.hust.edu.vn/?p=867</link>
+		<pubDate>Mon, 06 Nov 2023 06:51:42 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[Recent publications]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=867</guid>
+		<description><![CDATA[Many students got new papers published at international journals which have top-tier quality: Trang Thien, Nam Le, Linh Ngo Van, Thien Nguyen, Khoat Than. “Continual Variational <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=867" title="3 new papers to appear at top-tier journals">[...]</a>]]></description>
+		</item>
+	</channel>
+</rss>

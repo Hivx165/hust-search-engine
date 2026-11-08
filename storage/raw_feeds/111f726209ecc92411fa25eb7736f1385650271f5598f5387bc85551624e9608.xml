@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Cơ hội hợp tác - Báo chí nói về chúng tôi</title>
+        <link>https://iet.hust.edu.vn/vi/news/bao-chi-noi-ve-chung-toi/</link>
+        <atom:link href="https://iet.hust.edu.vn/vi/news/rss/bao-chi-noi-ve-chung-toi/" rel="self" />
+                <description>
+            <![CDATA[Viện Công nghệ Năng lượng - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Fri, 6 Feb 2026 03:02:00 GMT</pubDate>
+        <lastBuildDate>Fri, 6 Feb 2026 03:02:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Viện Công nghệ Năng lượng]]>
+        </copyright>
+        <docs>https://iet.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://iet.hust.edu.vn/uploads/iet/logo-dhbk-1-02_130_191.png</url>
+            <title>Cơ hội hợp tác - Báo chí nói về chúng tôi</title>
+            <link>https://iet.hust.edu.vn/vi/news/bao-chi-noi-ve-chung-toi/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Ra mắt Hội đồng Viện Công nghệ Năng lượng, Đại học Bách khoa Hà Nội</title>
+            <link>https://iet.hust.edu.vn/vi/news/tin-tuc/ra-mat-hoi-dong-vien-cong-nghe-nang-luong-dai-hoc-bach-khoa-ha-noi-23.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_23]]>
+            </guid>
+            
+                        <pubDate>Fri, 6 Feb 2026 03:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/news/2026_02/image-1.jpg" width="100" align="left" border="0">GDVN - Hội đồng Viện Công nghệ Năng lượng (Đại học Bách khoa Hà Nội) gồm 15 thành viên chính thức ra mắt vào chiều 8/5.]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Khánh thành không gian làm việc Viện Công nghệ Năng lượng, ĐH Bách khoa Hà Nội</title>
+            <link>https://iet.hust.edu.vn/vi/news/tin-tuc/khanh-thanh-khong-gian-lam-viec-vien-cong-nghe-nang-luong-dh-bach-khoa-ha-noi-17.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_17]]>
+            </guid>
+            
+                        <pubDate>Fri, 6 Feb 2026 02:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdn.giaoduc.net.vn/images/c3a11540dbf4a4411ef667e9d028fbcdaf2515e67649c3865cafe9df9bee44e698fb35f3d23cd60eebecc9d65d4db0ae/2.jpg" width="100" align="left" border="0">GDVN - Không gian làm việc mới hiện đại, tiện nghi của Viện Công nghệ Năng lượng toạ lạc tầng 4,5,6 toà nhà C1B, trong khuôn viên Đại học Bách khoa Hà Nội.]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>GDVN - Hội thảo tập trung cập nhật chính sách, chia sẻ kinh nghiệm quốc tế, giải pháp công nghệ hướng tới phát triển năng lượng xanh, bền vững.</title>
+            <link>https://iet.hust.edu.vn/vi/news/bao-chi-noi-ve-chung-toi/gdvn-hoi-thao-tap-trung-cap-nhat-chinh-sach-chia-se-kinh-nghiem-quoc-te-giai-phap-cong-nghe-huong-toi-phat-trien-nang-luong-xanh-ben-vung-16.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_16]]>
+            </guid>
+            
+                        <pubDate>Fri, 6 Feb 2026 02:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdn.giaoduc.net.vn/images/7b9c920fde1ed8fd776242471fa123def4f2dd8b2ced7355bab29beda956ec2bd3e152c21ac16a99a16e29cacf8c5753/gdvn-bk15.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Viện Công nghệ Năng lượng ký kết hợp tác với nhiều doanh nghiệp về năng lượng của Hàn Quốc</title>
+            <link>https://iet.hust.edu.vn/vi/news/bao-chi-noi-ve-chung-toi/vien-cong-nghe-nang-luong-ky-ket-hop-tac-voi-nhieu-doanh-nghiep-ve-nang-luong-cua-han-quoc-15.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_15]]>
+            </guid>
+            
+                        <pubDate>Fri, 6 Feb 2026 02:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdn.giaoduc.net.vn/images/6c5815ec8d4e1d1fd90b81503bb4d920b09ed38670caedd8b01a8b7456276aae11151c7ab1afd3dba5da0d95a4b82d3fe0f7c70207ad62622462535432c631f3/vien-cong-nghe-nang-luong-hust-4.jpg" width="100" align="left" border="0">GDVN -Viện Công nghệ Năng lượng (HUST) ký kết hợp tác với Hiệp hội Hàn Quốc và các doanh nghiệp Hàn Quốc.]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

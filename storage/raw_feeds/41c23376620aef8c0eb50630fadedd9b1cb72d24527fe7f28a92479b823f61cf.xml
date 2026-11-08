@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Đào tạo trực tuyến - Hướng dẫn LMS cho Sinh viên</title>
+        <link>https://cdt.hust.edu.vn/vi/dao-tao-truc-tuyen/huong-dan-lms-cho-sinh-vien/</link>
+        <atom:link href="https://cdt.hust.edu.vn/vi/dao-tao-truc-tuyen/rss/huong-dan-lms-cho-sinh-vien/" rel="self" />
+                <description>
+            <![CDATA[Trung tâm Chuyển đổi số - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Mon, 4 May 2026 07:05:00 GMT</pubDate>
+        <lastBuildDate>Mon, 4 May 2026 07:05:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Trung tâm Chuyển đổi số]]>
+        </copyright>
+        <docs>https://cdt.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://cdt.hust.edu.vn/uploads/cdt/logo-dhbk-1-02_130_191.png</url>
+            <title>Đào tạo trực tuyến - Hướng dẫn LMS cho Sinh viên</title>
+            <link>https://cdt.hust.edu.vn/vi/dao-tao-truc-tuyen/huong-dan-lms-cho-sinh-vien/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Hướng dẫn luyện tập trắc nghiệm</title>
+            <link>https://cdt.hust.edu.vn/vi/dao-tao-truc-tuyen/huong-dan-lms-cho-sinh-vien/huong-dan-luyen-tap-trac-nghiem-6.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[dao-tao-truc-tuyen_6]]>
+            </guid>
+            
+                        <pubDate>Mon, 4 May 2026 07:05:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/dao-tao-truc-tuyen/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn nộp bài tập</title>
+            <link>https://cdt.hust.edu.vn/vi/dao-tao-truc-tuyen/huong-dan-lms-cho-sinh-vien/huong-dan-nop-bai-tap-5.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[dao-tao-truc-tuyen_5]]>
+            </guid>
+            
+                        <pubDate>Mon, 4 May 2026 07:05:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/dao-tao-truc-tuyen/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn xem video bài giảng</title>
+            <link>https://cdt.hust.edu.vn/vi/dao-tao-truc-tuyen/huong-dan-lms-cho-sinh-vien/huong-dan-xem-video-bai-giang-4.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[dao-tao-truc-tuyen_4]]>
+            </guid>
+            
+                        <pubDate>Mon, 4 May 2026 07:05:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/dao-tao-truc-tuyen/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn truy cập nội dung học tập</title>
+            <link>https://cdt.hust.edu.vn/vi/dao-tao-truc-tuyen/huong-dan-lms-cho-sinh-vien/huong-dan-truy-cap-noi-dung-hoc-tap-3.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[dao-tao-truc-tuyen_3]]>
+            </guid>
+            
+                        <pubDate>Mon, 4 May 2026 07:05:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/dao-tao-truc-tuyen/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn tìm kiếm khóa học</title>
+            <link>https://cdt.hust.edu.vn/vi/dao-tao-truc-tuyen/huong-dan-lms-cho-sinh-vien/huong-dan-tim-kiem-khoa-hoc-2.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[dao-tao-truc-tuyen_2]]>
+            </guid>
+            
+                        <pubDate>Mon, 4 May 2026 07:05:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/dao-tao-truc-tuyen/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

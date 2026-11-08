@@ -1,0 +1,3 @@
+Passive discovery: 285 concrete hosts, 2 wildcard patterns, sourcesComplete=false
+HTTP evidence: 27/285 hosts checked (others remain queued/cached); see discovery/live-hosts.csv
+Report[reportedHosts=285, dnsResolvedHosts=193, wildcardPatterns=2, sourceComplete=false, sourceErrors=[wayback: RequestFailure: HTTP 429]]

@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>Khai giảng c&#225;c lớp tiếng Nhật 2026 do c&#225;c Tỉnh t&#224;i trợ: Mở rộng cơ hội quốc tế cho sinh vi&#234;n Đại học B&#225;ch khoa H&#224; Nội</h3>
+        <div class="clearfix" style="box-sizing: border-box; margin: 0px; padding: 0px; color: rgb(51, 51, 51); font-family: LinhAvantGarde, sans-serif; font-size: 15px; background-color: rgb(255, 251, 251);">
+	<div class="hometext m-bottom" itemprop="description" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-left: 0px; padding: 0px; font-size: 16px; margin-bottom: 10px !important; font-family: Lato !important;">
+		Từ ng&agrave;y 01 đến ng&agrave;y 03/6/2026 vừa qua, Đại học B&aacute;ch khoa H&agrave; Nội tổ chức chuỗi Lễ khai giảng chương tr&igrave;nh đ&agrave;o tạo tiếng Nhật v&agrave; định hướng nghề nghiệp tại Nhật Bản d&agrave;nh cho sinh vi&ecirc;n.</div>
+</div>
+<div class="bodytext margin-bottom-lg" id="news-bodyhtml" style="box-sizing: border-box; margin: 0px 0px 15px; padding: 0px; word-break: keep-all; max-width: 100%; overflow: hidden visible; line-height: 1.7em; font-size: 16px; color: rgb(51, 51, 51); background-color: rgb(255, 251, 251); font-family: Lato !important;">
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Chương tr&igrave;nh l&agrave; một trong những hoạt động trọng t&acirc;m trong khu&ocirc;n khổ hợp t&aacute;c giữa Đại học B&aacute;ch khoa H&agrave; Nội v&agrave; ch&iacute;nh quyền c&aacute;c Tỉnh Nhật Bản bao gồm tỉnh Shiga, tỉnh Tochigi v&agrave; tỉnh Mie với sự đồng h&agrave;nh của Tập đo&agrave;n Sekisho (Nhật Bản), nhằm hỗ trợ sinh vi&ecirc;n n&acirc;ng cao năng lực ngoại ngữ, hiểu biết về văn h&oacute;a doanh nghiệp Nhật Bản, đồng thời mở rộng cơ hội thực tập, l&agrave;m việc tại c&aacute;c doanh nghiệp v&agrave; địa phương của Nhật Bản sau khi tốt nghiệp.</p>
+	<div class="image-center" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; text-align: center; float: none !important;">
+		<img alt="Ban CTSV" height="475" src="https://hust.edu.vn/uploads/sys/sinh-vien/2026_06/ban-ctsv.jpg" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: middle; width: 772.188px; height: auto;" width="633" /></div>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		<strong style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;">Ngoại ngữ v&agrave; kỹ năng &ndash; h&agrave;nh trang bước ra thế giới&nbsp;</strong></p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Ph&aacute;t biểu tại lễ khai giảng, PGS. TS. Phạm Thanh Huyền, Trưởng Ban C&ocirc;ng t&aacute;c sinh vi&ecirc;n, Đại học B&aacute;ch khoa H&agrave; Nội gửi lời ch&uacute;c mừng tới c&aacute;c sinh vi&ecirc;n đ&atilde; vượt qua qu&aacute; tr&igrave;nh tuyển chọn để trở th&agrave;nh học vi&ecirc;n của chương tr&igrave;nh tiếng Nhật do c&aacute;c Tỉnh t&agrave;i trợ năm 2026.</p>
+	<div class="image-center" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; text-align: center; float: none !important;">
+		<figure class="image" style="box-sizing: border-box; margin: 5px auto 10px; padding: 0px; display: table; position: relative; clear: both; min-width: 10px; float: none !important;">
+			<img alt="Đai học Bach Khoa tieng Nhat" height="475" src="https://hust.edu.vn/uploads/sys/sinh-vien/2026_06/dai-hoc-bach-khoa-tieng-nhat.jpg" style="box-sizing: border-box; margin: 0px auto; padding: 0px; border: 0px; vertical-align: middle; display: block; max-width: 100%; min-width: 100%; height: auto; width: 858px;" width="633" /><figcaption style="box-sizing: border-box; margin: 0px; padding: 5px; display: table-caption; font-size: 13px; caption-side: bottom; word-break: break-word; outline-offset: -1px;">PGS. TS. Phạm Thanh Huyền, Trưởng Ban C&ocirc;ng t&aacute;c sinh vi&ecirc;n ph&aacute;t biểu khai mạc sự kiện</figcaption></figure>
+	</div>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		PGS. TS. Phạm Thanh Huyền nhấn mạnh trong bối cảnh hội nhập quốc tế ng&agrave;y c&agrave;ng s&acirc;u rộng, ngoại ngữ kh&ocirc;ng chỉ l&agrave; c&ocirc;ng cụ giao tiếp m&agrave; c&ograve;n l&agrave; ch&igrave;a kh&oacute;a mở ra những cơ hội học tập, thực tập v&agrave; l&agrave;m việc trong m&ocirc;i trường to&agrave;n cầu. Theo c&ocirc;, chương tr&igrave;nh đ&agrave;o tạo tiếng Nhật do c&aacute;c Tỉnh t&agrave;i trợ kh&ocirc;ng đơn thuần l&agrave; một kh&oacute;a học ngoại ngữ m&agrave; c&ograve;n l&agrave; cầu nối gi&uacute;p sinh vi&ecirc;n tiếp cận văn h&oacute;a, t&aacute;c phong l&agrave;m việc v&agrave; c&aacute;c cơ hội nghề nghiệp tại Nhật Bản.</p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		&ldquo; C&ocirc; mong rằng c&aacute;c em kh&ocirc;ng chỉ học tốt tiếng Nhật m&agrave; c&ograve;n học được tinh thần kỷ luật, t&aacute;c phong chuy&ecirc;n nghiệp v&agrave; khả năng th&iacute;ch nghi với m&ocirc;i trường quốc tế để trở th&agrave;nh những kỹ sư to&agrave;n cầu trong tương lai&quot;, PGS. TS. Phạm Thanh Huyền chia sẻ.&nbsp;</p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		<strong style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;">C&aacute;c địa phương Nhật Bản rộng mở cơ hội cho sinh vi&ecirc;n B&aacute;ch khoa</strong></p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Điểm nhấn đặc biệt của chuỗi lễ khai giảng năm nay l&agrave; sự tham gia trực tuyến của đại diện c&aacute;c địa phương Nhật Bản &ndash; những nơi đang c&oacute; nhu cầu lớn về nguồn nh&acirc;n lực kỹ thuật chất lượng cao từ Việt Nam.</p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Ph&aacute;t biểu trực tuyến từ đầu cầu Nhật Bản, đại diện tỉnh Shiga, &ocirc;ng Honda Nobuyuki, Trưởng ph&ograve;ng Văn ph&ograve;ng X&uacute;c tiến Ph&aacute;t triển Nguồn nh&acirc;n lực C&ocirc;ng nghiệp thuộc Ban Ch&iacute;nh s&aacute;ch Lao động v&agrave; Việc l&agrave;m tỉnh Shiga gửi lời ch&uacute;c mừng tới c&aacute;c học vi&ecirc;n: &ldquo;T&ocirc;i hy vọng c&aacute;c em sinh vi&ecirc;n sẽ tận dụng tối đa cơ hội học tập qu&yacute; gi&aacute; n&agrave;y để ph&aacute;t triển năng lực bản th&acirc;n. Tỉnh Shiga lu&ocirc;n mở rộng cửa v&agrave; sẵn s&agrave;ng đ&oacute;n nhận c&aacute;c kỹ sư trẻ c&oacute; tr&igrave;nh độ chuy&ecirc;n m&ocirc;n, t&aacute;c phong chuy&ecirc;n nghiệp v&agrave; tinh thần cầu tiến từ Đại học B&aacute;ch khoa H&agrave; Nội.&rdquo;</p>
+	<div class="image-center" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; text-align: center; float: none !important;">
+		<figure class="image" style="box-sizing: border-box; margin: 5px auto 10px; padding: 0px; display: table; position: relative; clear: both; min-width: 10px; float: none !important;">
+			<img alt="Sinh vien Bach Khoa" height="565" src="https://hust.edu.vn/uploads/sys/sinh-vien/2026_06/sinh-vien-bach-khoa.jpg" style="box-sizing: border-box; margin: 0px auto; padding: 0px; border: 0px; vertical-align: middle; display: block; max-width: 100%; min-width: 100%; height: auto; width: 858px;" width="633" /><figcaption style="box-sizing: border-box; margin: 0px; padding: 5px; display: table-caption; font-size: 13px; caption-side: bottom; word-break: break-word; outline-offset: -1px;">Đại diện c&aacute;c Tỉnh tham gia trực tuyến​​​​</figcaption></figure>
+	</div>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Đến từ tỉnh Tochigi, b&agrave; Hirose Yuka, Trưởng ph&ograve;ng Kinh tế Quốc tế, Sở C&ocirc;ng nghiệp, Lao động v&agrave; Du lịch tỉnh Tochigi, đ&aacute;nh gi&aacute; cao chất lượng đ&agrave;o tạo h&agrave;ng đầu của Nh&agrave; trường. B&agrave; nhấn mạnh: &ldquo;Nhiều doanh nghiệp tại Tochigi đang c&oacute; nhu cầu rất lớn về kỹ sư giỏi trong c&aacute;c lĩnh vực c&ocirc;ng nghiệp v&agrave; c&ocirc;ng nghệ cao. Ch&uacute;ng t&ocirc;i kỳ vọng chương tr&igrave;nh Sekisho sẽ tiếp tục l&agrave; bệ ph&oacute;ng hiệu quả, chuẩn bị cho sinh vi&ecirc;n đ&aacute;p ứng tốt c&aacute;c ti&ecirc;u chuẩn khắt khe của thị trường lao động Nhật Bản.&rdquo;&nbsp;</p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Trong khi đ&oacute;, &ocirc;ng Yamada Akira, Trưởng ban Kinh tế v&agrave; Việc l&agrave;m tỉnh Mie, khẳng định địa phương đang t&iacute;ch cực th&uacute;c đẩy c&aacute;c chương tr&igrave;nh hợp t&aacute;c quốc tế để thu h&uacute;t nh&acirc;n t&agrave;i. &Ocirc;ng khẳng định: &ldquo;Tỉnh Mie lu&ocirc;n tr&acirc;n trọng v&agrave; đ&aacute;nh gi&aacute; cao chất lượng nguồn nh&acirc;n lực được đ&agrave;o tạo từ Đại học B&aacute;ch khoa H&agrave; Nội. Ch&uacute;ng t&ocirc;i kỳ vọng mối quan hệ hợp t&aacute;c giữa c&aacute;c b&ecirc;n sẽ ng&agrave;y c&agrave;ng ph&aacute;t triển bền chặt, mở ra nhiều cơ hội thực tập v&agrave; l&agrave;m việc thực chất cho c&aacute;c kỹ sư trẻ trong tương lai.&rdquo;&nbsp;</p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Những chia sẻ trực tiếp từ đại diện c&aacute;c tỉnh đ&atilde; mang đến cho sinh vi&ecirc;n g&oacute;c nh&igrave;n to&agrave;n cảnh v&agrave; thực tế nhất về bức tranh nghề nghiệp tại xứ sở hoa anh đ&agrave;o, minh chứng cho sức h&uacute;t mạnh mẽ của thương hiệu sinh vi&ecirc;n Đại học B&aacute;ch khoa H&agrave; Nội.</p>
+	<div class="image-center" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; text-align: center; float: none !important;">
+		<img alt="Bk holding" height="475" src="https://hust.edu.vn/uploads/sys/sinh-vien/2026_06/bk-holding.jpg" style="box-sizing: border-box; margin: 0px; padding: 0px; border: 0px; vertical-align: middle; width: 772.188px; height: auto;" width="633" /></div>
+	<div class="image-center" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; text-align: center; float: none !important;">
+		<figure class="image" style="box-sizing: border-box; margin: 5px auto 10px; padding: 0px; display: table; position: relative; clear: both; min-width: 10px; float: none !important;">
+			<img alt="Trao doi sinh vien" height="475" src="https://hust.edu.vn/uploads/sys/sinh-vien/2026_06/trao-doi-sinh-vien.jpg" style="box-sizing: border-box; margin: 0px auto; padding: 0px; border: 0px; vertical-align: middle; display: block; max-width: 100%; min-width: 100%; height: auto; width: 858px;" width="633" /><figcaption style="box-sizing: border-box; margin: 0px; padding: 5px; display: table-caption; font-size: 13px; caption-side: bottom; word-break: break-word; outline-offset: -1px;">Sinh vi&ecirc;n đặt c&acirc;u hỏi cho đại diện c&aacute;c Tỉnh</figcaption></figure>
+	</div>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		<strong style="box-sizing: border-box; margin: 0px; padding: 0px; font-weight: bold;">Từ lớp học tiếng Nhật đến giấc mơ nghề nghiệp quốc tế&nbsp;</strong></p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Tại chương tr&igrave;nh, c&aacute;c học vi&ecirc;n ti&ecirc;u biểu của kh&oacute;a học cũng đ&atilde; chia sẻ h&agrave;nh tr&igrave;nh học tập v&agrave; những trải nghiệm thực tế từ chương tr&igrave;nh tiếng Nhật Sekisho.</p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Đặc biệt, bạn Nguyễn Xu&acirc;n Sơn, sinh vi&ecirc;n Kh&oacute;a 65 Trường Cơ kh&iacute;, đ&atilde; chia sẻ những trải nghiệm đ&aacute;ng nhớ từ chương tr&igrave;nh tiếng Nhật do tỉnh Mie t&agrave;i trợ năm 2025 v&agrave; h&agrave;nh tr&igrave;nh tham gia chương tr&igrave;nh trải nghiệm thực tập tại tỉnh Mie (Nhật Bản) từ ng&agrave;y 01/12 đến 07/12/2025.</p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Th&ocirc;ng qua chương tr&igrave;nh, Sơn đ&atilde; c&oacute; cơ hội trực tiếp t&igrave;m hiểu m&ocirc;i trường l&agrave;m việc, văn h&oacute;a doanh nghiệp Nhật Bản v&agrave; trải nghiệm thực tế tại C&ocirc;ng ty Abetech. Sau thời gian thực tập, Sơn đ&atilde; nhận được thư mời l&agrave;m việc từ ch&iacute;nh doanh nghiệp n&agrave;y - một kết quả vượt ngo&agrave;i mong đợi đối với bản th&acirc;n em.</p>
+	<div class="image-center" style="box-sizing: border-box; margin: 0px 0px 10px; padding: 0px; text-align: center; float: none !important;">
+		<figure class="image" style="box-sizing: border-box; margin: 5px auto 10px; padding: 0px; display: table; position: relative; clear: both; min-width: 10px; float: none !important;">
+			<img alt="z7912172714905 5518c72d3828f34b6e1eb7407bc560e6" height="277" src="https://hust.edu.vn/uploads/sys/sinh-vien/2026_06/z7912172714905_5518c72d3828f34b6e1eb7407bc560e6.jpg" style="box-sizing: border-box; margin: 0px auto; padding: 0px; border: 0px; vertical-align: middle; display: block; max-width: 100%; min-width: 100%; height: auto; width: 858px;" width="380" /><figcaption style="box-sizing: border-box; margin: 0px; padding: 5px; display: table-caption; font-size: 13px; caption-side: bottom; word-break: break-word; outline-offset: -1px;">Bạn Nguyễn Xu&acirc;n Sơn, sinh vi&ecirc;n Kh&oacute;a 65 Trường Cơ kh&iacute;</figcaption></figure>
+	</div>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		&quot;Tiếng Nhật l&agrave; một ng&ocirc;n ngữ kh&ocirc;ng dễ học, nhưng nếu ki&ecirc;n tr&igrave; từng ng&agrave;y v&agrave; x&aacute;c định r&otilde; mục ti&ecirc;u của m&igrave;nh th&igrave; c&aacute;c bạn sẽ thấy những nỗ lực đ&oacute; ho&agrave;n to&agrave;n xứng đ&aacute;ng. Em mong c&aacute;c bạn sinh vi&ecirc;n đừng ngại thử sức với những cơ hội mới, bởi ch&iacute;nh những trải nghiệm từ chương tr&igrave;nh đ&atilde; gi&uacute;p em trưởng th&agrave;nh hơn, tự tin hơn v&agrave; c&oacute; th&ecirc;m định hướng r&otilde; r&agrave;ng cho tương lai&quot;, Nguyễn Xu&acirc;n Sơn chia sẻ.</p>
+	<p dir="ltr" style="box-sizing: border-box; margin-top: 0px; margin-right: 0px; margin-bottom: 15px !important; margin-left: 0px; padding: 0px;">
+		Những chia sẻ ch&acirc;n th&agrave;nh của Sơn đ&atilde; truyền th&ecirc;m động lực cho sinh vi&ecirc;n tham gia c&aacute;c kho&aacute; học tiếng Nhật năm 2026, đồng thời cho thấy gi&aacute; trị thiết thực m&agrave; chương tr&igrave;nh tiếng Nhật mang lại tr&ecirc;n h&agrave;nh tr&igrave;nh ph&aacute;t triển bản th&acirc;n v&agrave; hội nhập quốc tế của sinh vi&ecirc;n B&aacute;ch khoa H&agrave; Nội.</p>
+</div>
+<br />
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Đại học Bách khoa Hà Nội RSS&#x3A; Lịch làm việc - Đại học Bách khoa Hà Nội</title>
+        <link>https://hust-dev.hust.edu.vn/vi/lich-lam-viec/?cat=Truong-dai-hoc-BKHN</link>
+        <atom:link href="https://hust-dev.hust.edu.vn/vi/lich-lam-viec/rss/" rel="self" />
+                <description>
+            <![CDATA[Đại học Bách khoa Hà Nội - HaNoi University of science and technology]]>
+        </description>
+        
+        <language>vi</language>
+        
+        <copyright>
+            <![CDATA[Đại học Bách khoa Hà Nội]]>
+        </copyright>
+        <docs>https://hust-dev.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://hust-dev.hust.edu.vn/uploads/logo-dhbk-1-02_616a061d33335ddd66ccf19bf185d56a.png</url>
+            <title>Đại học Bách khoa Hà Nội RSS&#x3A; Lịch làm việc - Đại học Bách khoa Hà Nội</title>
+            <link>https://hust-dev.hust.edu.vn/vi/lich-lam-viec/?cat=Truong-dai-hoc-BKHN</link>
+            <width>144</width>
+            <height>212</height>
+        </image>
+        
+        
+    </channel>
+</rss>

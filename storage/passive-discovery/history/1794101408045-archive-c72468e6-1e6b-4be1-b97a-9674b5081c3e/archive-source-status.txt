@@ -1,0 +1,5 @@
+2026-11-08T01:30:09.802106200Z wayback-page-1 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false&resumeKey=eJwry9NJTSnVySgtLtHULy3IyU9MKdYvrizWz0stL9Y3MjAyjjcwBNMGhoaGuslJ-fHmBgamelkF6QpAURMDcwMLIyMDQyNTAIA5FVY HTTP 429
+2026-11-08T01:30:09.811186300Z wayback hosts=1 complete=false next_check_at=2026-11-08T02:00:09.806Z
+2026-11-08T01:30:09.811186300Z commoncrawl CACHE next_check_at=2026-11-08T11:44:47.844Z complete=true
+2026-11-08T01:30:09.811186300Z complete=false concrete_hosts=58
+ERROR wayback: RequestFailure: HTTP 429

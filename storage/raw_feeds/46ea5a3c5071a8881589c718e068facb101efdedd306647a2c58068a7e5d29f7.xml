@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Seminar &#8211; Khoa Toán &#8211; Tin</title>
+	<atom:link href="https://fami.hust.edu.vn/lich-seminar/feed/" rel="self" type="application/rss+xml" />
+	<link>https://fami.hust.edu.vn</link>
+	<description>ĐH Bách KHoa Hà Nội</description>
+	<lastBuildDate>Sat, 07 Nov 2026 06:15:50 +0000</lastBuildDate>
+	<language>vi-VN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+
+<image>
+	<url>https://fami.hust.edu.vn/wp-content/uploads/cropped-android-chrome-512x512-32x32.png</url>
+	<title>Seminar &#8211; Khoa Toán &#8211; Tin</title>
+	<link>https://fami.hust.edu.vn</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Adaptive Rollout Allocation for Online Reinforcement Learning with Verifiable Rewards</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/adaptive-rollout-allocation-for-online-reinforcement-learning-with-verifiable-rewards/</link>
+		<pubDate>Mon, 14 Sep 2026 08:39:40 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thị Thu Hương]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37956</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>MIMICO project: From Surrogate Modeling to Explainable AI in Agent-Based Simulations</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mimico-project-from-surrogate-modeling-to-explainable-ai-in-agent-based-simulations/</link>
+		<pubDate>Fri, 24 Apr 2026 04:55:09 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thị Thu Hương]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37140</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Một số nội dung giảng dạy môn Giải tích III</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mot-so-noi-dung-giang-day-mon-giai-tich-iii-8/</link>
+		<pubDate>Mon, 13 Apr 2026 09:14:38 +0000</pubDate>
+		<dc:creator><![CDATA[Lê Văn Tứ]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37119</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Một số nội dung giảng dạy Giải tích II</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mot-so-noi-dung-giang-day-giai-tich-ii-6/</link>
+		<pubDate>Mon, 13 Apr 2026 09:13:29 +0000</pubDate>
+		<dc:creator><![CDATA[Lê Văn Tứ]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37118</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Một số nội dung giảng dạy môn Giải tích III</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mot-so-noi-dung-giang-day-mon-giai-tich-iii-7/</link>
+		<pubDate>Mon, 13 Apr 2026 09:12:29 +0000</pubDate>
+		<dc:creator><![CDATA[Lê Văn Tứ]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37117</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Một số nội dung giảng dạy Giải tích II</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mot-so-noi-dung-giang-day-giai-tich-ii-5/</link>
+		<pubDate>Mon, 13 Apr 2026 09:11:21 +0000</pubDate>
+		<dc:creator><![CDATA[Lê Văn Tứ]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37116</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Một số nội dung giảng dạy môn Giải tích III</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mot-so-noi-dung-giang-day-mon-giai-tich-iii-6/</link>
+		<pubDate>Mon, 13 Apr 2026 09:10:10 +0000</pubDate>
+		<dc:creator><![CDATA[Lê Văn Tứ]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37115</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Một số nội dung giảng dạy Giải tích II</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mot-so-noi-dung-giang-day-giai-tich-ii-4/</link>
+		<pubDate>Mon, 13 Apr 2026 09:08:59 +0000</pubDate>
+		<dc:creator><![CDATA[Lê Văn Tứ]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37114</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Một số nội dung giảng dạy môn Giải tích III</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mot-so-noi-dung-giang-day-mon-giai-tich-iii-5/</link>
+		<pubDate>Mon, 13 Apr 2026 09:07:54 +0000</pubDate>
+		<dc:creator><![CDATA[Lê Văn Tứ]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37113</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Một số nội dung giảng dạy môn Giải tích III</title>
+		<link>https://fami.hust.edu.vn/lich-seminar/mot-so-noi-dung-giang-day-mon-giai-tich-iii-4/</link>
+		<pubDate>Mon, 13 Apr 2026 09:05:54 +0000</pubDate>
+		<dc:creator><![CDATA[Lê Văn Tứ]]></dc:creator>
+		
+		<guid isPermaLink="false">https://fami.hust.edu.vn/?post_type=seminar&#038;p=37112</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+	</channel>
+</rss>

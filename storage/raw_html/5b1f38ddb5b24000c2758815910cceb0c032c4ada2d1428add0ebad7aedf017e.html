@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>Triển khai thực hiện gi&#227;n c&#225;ch x&#227; hội ph&#242;ng, chống dịch bệnh COVID-19 (cập nhật 24/7/2021)</h3>
+        <p style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); font-size: 20px !important;">
+	K&iacute;nh gửi:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;C&aacute;c đơn vị;&nbsp;C&aacute;n bộ vi&ecirc;n chức, người học v&agrave; kh&aacute;ch đến Trường,</p>
+<p style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); font-size: 20px !important;">
+	Đại dịch Covid-19 đang g&acirc;y ảnh hưởng nghi&ecirc;m trọng đến ph&aacute;t triển kinh tế, gi&aacute;o dục v&agrave; x&atilde; hội. Thủ đ&ocirc; H&agrave; Nội c&oacute; li&ecirc;n tiếp nhiều ca mắc mới từ cộng đồng m&agrave; chưa x&aacute;c định được nguồn l&acirc;y với chủng virut Delta. Nguy cơ l&acirc;y lan dịch bệnh rất cao tr&ecirc;n địa b&agrave;n Quận Hai B&agrave; Trưng v&agrave; trong c&aacute;c khu&ocirc;n vi&ecirc;n Trường. Thực hiện C&ocirc;ng điện 15/CĐ-UBND ng&agrave;y 18/7/2021 về diễn biến phức tạp của dịch bệnh tr&ecirc;n cả nước, Phương &aacute;n 170/PA-UBND ng&agrave;y 21/7/2021 về triển khai chiến dịch ti&ecirc;m chủng vắc xin ở H&agrave; Nội, C&ocirc;ng điện 16/CĐ-UBDN ng&agrave;y 21/7/2021 về triển khai biện ph&aacute;p cấp b&aacute;ch tr&ecirc;n địa b&agrave;n Th&agrave;nh phố, Chỉ thị 17/CT-UBND ng&agrave;y 23/7/2021 về thực hiện gi&atilde;n c&aacute;ch ở Thủ đ&ocirc; của Chủ tịch UBND TP H&agrave; Nội theo tinh thần Chỉ thị 16/CT-TTg ng&agrave;y 31/3/2020 của Thủ tướng Ch&iacute;nh phủ, C&ocirc;ng văn 3117/BGDĐT-GDĐT ng&agrave;y 23/7/2021 về chung tay với Thủ đ&ocirc; ứng ph&oacute; khẩn cấp dịch Covid-19 của Bộ GDĐT, Ban Gi&aacute;m hiệu y&ecirc;u cầu c&aacute;c đơn vị tập trung ph&ograve;ng chống dịch l&agrave; cấp b&aacute;ch h&agrave;ng đầu với nội dung sau:</p>
+<p style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); font-size: 20px !important;">
+	1. Trưởng c&aacute;c đơn vị v&agrave; CBVC qu&aacute;n triệt thực hiện nghi&ecirc;m t&uacute;c c&aacute;c biện ph&aacute;p ph&ograve;ng, chống dịch từ Ch&iacute;nh phủ, Bộ ng&agrave;nh, Th&agrave;nh phố H&agrave; Nội v&agrave; Trường. Trưởng c&aacute;c đơn vị dừng tất cả c&aacute;c hoạt động trực tiếp chưa cấp thiết v&agrave; bố tr&iacute; CBVC l&agrave;m việc trực tuyến tại nh&agrave;. Chỉ v&agrave;o c&aacute;c khu&ocirc;n vi&ecirc;n Trường khi thực sự cần thiết (đảm bảo &iacute;t nhất 01 l&atilde;nh đạo trực đơn vị cấp 2 để xử l&yacute; c&ocirc;ng việc kịp thời) hoặc khẩn cấp ph&aacute;t sinh. C&aacute;c đơn vị kiểm tra tắt điện, nước để đảm bảo an to&agrave;n v&agrave; đ&oacute;ng cửa ph&ograve;ng th&iacute; nghiệm. Hạn chế tối đa tiếp kh&aacute;ch kh&ocirc;ng cấp thiết v&agrave; c&aacute;c c&ocirc;ng việc đ&ocirc;ng người,&nbsp;c&aacute;c trường hợp cần thiết phải được sự đồng &yacute; bằng văn bản của Hiệu trưởng;</p>
+<p style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); font-size: 20px !important;">
+	2. Đ&oacute;ng cửa, tạm dừng c&aacute;c địa điểm dịch vụ kh&ocirc;ng thiết yếu trong c&aacute;c khu&ocirc;n vi&ecirc;n Trường. Ph&ograve;ng CSVC nhận c&aacute;c đăng k&yacute; của c&aacute;c địa điểm thiết yếu c&ograve;n hoạt động, c&ocirc;ng tr&igrave;nh đang x&acirc;y dựng trọng điểm cấp b&aacute;ch, v&agrave; chuẩn bị hội trường, nh&agrave; thi đấu, s&acirc;n v&acirc;n động cho phương &aacute;n th&agrave;nh lập c&aacute;c khu c&aacute;ch ly, điều trị, hoạt động y tế tập trung. Ph&ograve;ng An ninh phối hợp với C&ocirc;ng ty bảo vệ H&ugrave;ng Vương trực 24/7, tăng cường gi&aacute;m s&aacute;t CBVC v&agrave; kh&aacute;ch đến l&agrave;m việc phải điền th&ocirc;ng tin khai b&aacute;o theo&nbsp;<a href="https://forms.office.com/r/p1ddYwqqmF" style="color: rgb(51, 51, 51); text-decoration-line: none;"><span style="color: rgb(0, 0, 255); font-size: 18px !important;"><strong>https://forms.office.com/r/p1ddYwqqmF</strong></span></a>;</p>
+<p style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); font-size: 20px !important;">
+	3. K&yacute; t&uacute;c x&aacute; bố tr&iacute; ở cho Sinh vi&ecirc;n chưa thể quay về c&aacute;c địa phương thuộc v&ugrave;ng dịch c&aacute;ch ly, sắp xếp Sinh vi&ecirc;n gọn v&agrave;o c&aacute;c t&ograve;a nh&agrave; an to&agrave;n, Sinh vi&ecirc;n phải tu&acirc;n thủ c&aacute;c biện ph&aacute;p ph&ograve;ng chống dịch của Ban quản l&yacute; K&yacute; t&uacute;c x&aacute;. D&agrave;nh ri&ecirc;ng c&aacute;c khu vực sẵn s&agrave;ng cho phương &aacute;n th&agrave;nh lập khu vực c&aacute;ch ly tập trung;</p>
+<p style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); font-size: 20px !important;">
+	4. C&ocirc;ng t&aacute;c dạy-học kỳ h&egrave; tiếp tục được tổ chức trực tuyến tr&ecirc;n MS Teams. C&aacute;c hội đồng chấm tốt nghiệp đại học, thạc sĩ chỉ c&oacute; thể tổ chức họp v&agrave; người học bảo vệ đồ &aacute;n/kh&oacute;a luận/luận văn trực tuyến. Dừng tổ chức bảo vệ luận &aacute;n trực tiếp. Khuyến kh&iacute;ch c&aacute;c đơn vị chuy&ecirc;n m&ocirc;n sớm tổ chức thi kết th&uacute;c học phần trong học kỳ 2020.2 theo h&igrave;nh thức vấn đ&aacute;p trực tuyến, ưu ti&ecirc;n sinh vi&ecirc;n năm cuối để đạt điều kiện tốt nghiệp đại học. Kỳ thi kết th&uacute;c c&aacute;c học phần đang giảng dạy trong học kỳ h&egrave; 2020.3 sẽ chuyển sang h&igrave;nh thức thi trực tuyến theo c&aacute;c nội dung hướng dẫn chi tiết sẽ sớm được Ph&ograve;ng Đ&agrave;o tạo c&ocirc;ng bố. Kế hoạch tổ chức, h&igrave;nh thức thi kết th&uacute;c c&aacute;c học phần đ&atilde; ho&agrave;n th&agrave;nh giảng dạy trong học kỳ 2020.2 sẽ được ấn định sau khi kết th&uacute;c học kỳ h&egrave;, t&ugrave;y theo diễn biến của t&igrave;nh h&igrave;nh dịch;</p>
+<p style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); font-size: 20px !important;">
+	5. Thực hiện nghi&ecirc;m nguy&ecirc;n tắc &ldquo;5K&rdquo;, khai b&aacute;o y tế h&agrave;ng ng&agrave;y qua Ncovi/Bluezone, v&agrave; khai b&aacute;o hỗ trợ ph&ograve;ng chống dịch theo&nbsp;<a href="https://forms.office.com/r/LsycY7QZ8E" style="color: rgb(51, 51, 51); text-decoration-line: none;"><span style="color: rgb(0, 0, 255); font-size: 18px !important;"><strong>https://forms.office.com/r/LsycY7QZ8E</strong></span></a>. Trưởng c&aacute;c đơn vị chịu tr&aacute;ch nhiệm nếu CBVC, Sinh vi&ecirc;n trong đơn vị l&acirc;y nhiễm dịch bệnh do kh&ocirc;ng chấp h&agrave;nh nghi&ecirc;m chỉnh quy định ph&ograve;ng, chống dịch tại c&ocirc;ng sở. CBVC chuẩn bị ti&ecirc;m chủng vắc xin ph&ograve;ng COVID-19 diện rộng tr&ecirc;n địa b&agrave;n H&agrave; Nội theo đăng k&yacute; chung của Trường khi c&oacute; th&ocirc;ng b&aacute;o.</p>
+<p style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); font-size: 20px !important;">
+	Đề nghị c&aacute;c đơn vị, c&aacute;n bộ vi&ecirc;n chức, người học v&agrave; kh&aacute;ch đến Trường cấp b&aacute;ch thực hiện ph&ograve;ng, chống dịch COVID-19 với c&aacute;c nội dung tr&ecirc;n cho đến khi c&oacute; th&ocirc;ng b&aacute;o mới.</p>
+<p id="yui_patched_v3_11_0_1_1627129177821_620" style="margin: 20px 0px 25px; font-family: Calibri; line-height: 1.3em; color: rgb(51, 51, 51); caret-color: rgb(51, 51, 51); text-align: right; font-size: 20px !important;">
+	BAN CHỈ ĐẠO PH&Ograve;NG, CHỐNG DỊCH COVID-19<br />
+	(Theo https://hust.edu.vn)</p>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Tin Tức - Giới thiệu</title>
+        <link>https://svbk.hust.edu.vn/vi/news/gioi-thieu/</link>
+        <atom:link href="https://svbk.hust.edu.vn/vi/news/rss/gioi-thieu/" rel="self" />
+                <description>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Sat, 5 Sep 2026 10:09:00 GMT</pubDate>
+        <lastBuildDate>Sat, 5 Sep 2026 10:09:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </copyright>
+        <docs>https://svbk.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://svbk.hust.edu.vn/uploads/svbk/logo-dhbk-1-02_130_191.png</url>
+            <title>Tin Tức - Giới thiệu</title>
+            <link>https://svbk.hust.edu.vn/vi/news/gioi-thieu/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Hướng dẫn làm thủ tục chuyển sinh hoạt đoàn cho tân sinh viên</title>
+            <link>https://svbk.hust.edu.vn/vi/news/tin-hoat-dong/huong-dan-lam-thu-tuc-chuyen-sinh-hoat-doan-cho-tan-sinh-vien-303001.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_303001]]>
+            </guid>
+            
+                        <pubDate>Sat, 5 Sep 2026 10:09:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>XUẤT QUÂN XUÂN YÊU THƯƠNG&#x3A; KHI NHỮNG TRÁI TIM LÊN ĐƯỜNG TRAO GỬI HẠNH PHÚC</title>
+            <link>https://svbk.hust.edu.vn/vi/news/tin-hoat-dong/xuat-quan-xuan-yeu-thuong-khi-nhung-trai-tim-len-duong-trao-gui-hanh-phuc-302988.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_302988]]>
+            </guid>
+            
+                        <pubDate>Mon, 9 Mar 2026 05:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://svbk.hust.edu.vn/assets/svbk/news/2026_03/anh1.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Liên hệ</title>
+            <link>https://svbk.hust.edu.vn/vi/news/gioi-thieu/lien-he-225895.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_225895]]>
+            </guid>
+            
+                        <pubDate>Tue, 8 Dec 2020 20:12:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Facebook</title>
+            <link>https://svbk.hust.edu.vn/vi/news/gioi-thieu/facebook-207250.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_207250]]>
+            </guid>
+            
+                        <pubDate>Tue, 7 Jul 2020 19:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

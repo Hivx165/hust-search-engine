@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venue - The 9th ASEAN Smart Grid Congress</title>
+    
+    <link href="./css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/homepage.css" />
+    <link href="./css/google-fonts.css" rel="stylesheet">
+
+    <style>
+        .map-container {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+        .map-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+        .info-card {
+            background-color: #f8f9fa;
+            border-left: 6px solid #1b263f;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header-wrapper">
+        <div class="container">
+		<div class="header-navigation-container">
+            <div class="header-logo-container text-start">
+                <a href="index.html" class="text-decoration-none"><div style="display:inline-block; vertical-align:middle; background-color: #001f3f; color: #e0fe08; padding: 5px 15px; font-weight: bold; font-family: 'Poppins', sans-serif; font-size: 16px; border-radius: 4px; margin-right: 10px;">ASGC9</div></a>
+                
+            </div>
+<nav class="navbar navbar-expand-lg navbar-dark navbar-custom shadow">
+    
+    <button class="navbar-toggler ms-auto custom-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+        <ul class="navbar-nav w-100 justify-content-between text-center align-items-center">
+            
+            <!-- Menu About (Đã sửa href thành # và đảm bảo data-bs-toggle) -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-caret" href="#" id="navbarAbout" role="button" data-bs-toggle="dropdown" aria-bs-auto-close="outside" aria-expanded="false">
+                    About <img class="menu-item-arrow" alt="" src="./public/img/global/menu-item-arrow.svg"/>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarAbout">
+                    <li><a class="dropdown-item" href="past_conferences.html">Past Conferences</a></li>
+                </ul>
+            </li>
+
+            <!-- Menu Programme -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle no-caret" href="#" id="navbarProgramme" role="button" data-bs-toggle="dropdown" aria-bs-auto-close="outside" aria-expanded="false">
+                    Programme <img class="menu-item-arrow" alt="" src="./public/img/global/menu-item-arrow.svg"/>
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarProgramme">
+                    <li><a class="dropdown-item" href="tentative.html">Tentative</a></li>
+                    <li><a class="dropdown-item" href="keynote.html">Keynote Speaker</a></li>
+                    <li><a class="dropdown-item" href="technical.html">Technical Tour</a></li>
+                    <li><a class="dropdown-item" href="fullprogram.html">Full Program</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-item"><a class="nav-link" href="Organizing Committee.html">Committee</a></li>
+            <li class="nav-item"><a class="nav-link" href="submission.html">Submission</a></li>
+            <li class="nav-item"><a class="nav-link" href="registration.html">Fee & Payment</a></li>
+            <li class="nav-item"><a class="nav-link" href="venue.html">Venue</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item ms-lg-3 mt-3 mt-lg-0 mb-3 mb-lg-0">
+                <a class="header-register-btn" href="registration2.php">Register</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+			</div>
+        </div>
+    </header>
+
+    <main style="background-color: #ffffff; overflow-x: hidden; width: 100%;">
+        <div class="container-fluid px-0 mb-3">
+            <div class="position-relative d-flex align-items-center">
+                <img src="./public/img/venue/hanoi_bridge.png" alt="Hanoi Bridge" class="img-fluid w-100" style="aspect-ratio: 1280/450; object-fit: cover; object-position: bottom; z-index: 0;">
+                
+                <!-- Graphic Overlay -->
+                <img src="./public/img/venue/mask.svg" alt="Overlay" class="position-absolute top-0 start-0 w-100 h-100 object-fit-cover" style="pointer-events: none; z-index: 1; opacity: 0.6;">
+                
+                <!-- Overlay Text -->
+                <div class="position-absolute w-100" style="z-index: 2; top: 40%; left: 0; transform: translateY(-50%);">
+                    <div class="container text-center text-lg-start mb-3">
+                        <h1 class="hero-title m-0" style="font-family: 'Poppins', sans-serif; font-weight: 700; font-size: 64px; color: #ffffff; text-transform: uppercase;">VENUE</h1>
+                    </div>
+                    <div class="w-100 text-center">
+                        <div class="fw-bold" style="font-family: 'Poppins', sans-serif; font-size: clamp(32px, 5vw, 81px); line-height: 1.2; color: #ffffff; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">Hanoi, Vietnam</div>
+                        <div class="fw-bold" style="font-family: 'Poppins', sans-serif; font-size: clamp(20px, 3vw, 54px); line-height: 1.2; margin-top: 10px; color: #ffffff; text-shadow: 2px 2px 8px rgba(0,0,0,0.6);">November 05-07, 2026</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="padding-top: 40px; padding-bottom: 100px;">
+            <div class="venue-content">
+                
+                <!-- Section 1: Conference Venue -->
+                <div class="mb-3 pb-3 border-bottom">
+                    <!-- Label Badge -->
+                    <div class="d-inline-block px-3 py-1 mb-3" style="background-color: #dbe64c; border-radius: 12px; color: #1b263f;">
+                        <span class="fw-medium" style="font-family: 'Poppins', sans-serif; font-size: 16px;">Location</span>
+                    </div>
+                    
+                    <h2 class="display-6 fw-bold mb-4" style="color: #1b263f;">Hanoi University of Science and Technology (HUST)</h2>
+
+                    <div style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #1b263f; line-height: 1.6;">
+                        <p class="mb-4">The 9th ASEAN Smart Grid Congress (ASGC 9) will be hosted at the prestigious Hanoi University of Science and Technology campus, located in the heart of Hanoi, Vietnam.</p>
+                        
+                        <div class="p-4 mb-3 info-card">
+                            <div class="mb-2"><strong style="display: inline-block; width: 120px;">Building:</strong> <span>Ta Quang Buu Library</span></div>
+                            <div class="mb-2"><strong style="display: inline-block; width: 120px;">Address:</strong> <span>1 Dai Co Viet Road, Bach Mai, Hai Ba Trung District, Hanoi, Vietnam</span></div>
+                            <div class="mb-0"><strong style="display: inline-block; width: 120px;">Rooms:</strong> <span>International Conference Chamber (10th Floor) and Lecture Hall Rooms</span></div>
+                        </div>
+
+                        <!-- Google Map -->
+                        <div class="map-container mb-4">
+                            <iframe 
+                                src="https://maps.google.com/maps?q=Thu+vien+Ta+Quang+Buu,+Dai+hoc+Bach+khoa+Ha+Noi&t=&z=16&ie=UTF8&iwloc=&output=embed" 
+                                width="100%" 
+                                height="450" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Section 2: Getting There -->
+                <div>
+                    <!-- Label Badge -->
+                    <div class="d-inline-block px-3 py-1 mb-3" style="background-color: #dbe64c; border-radius: 12px; color: #1b263f;">
+                        <span class="fw-medium" style="font-family: 'Poppins', sans-serif; font-size: 16px;">Directions</span>
+                    </div>
+                    
+                    <h2 class="display-6 fw-bold mb-4" style="color: #1b263f;">How to get there</h2>
+
+                    <div style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #1b263f; line-height: 1.6;">
+                        <p class="mb-4">HUST is centrally located and easily accessible by various modes of transportation:</p>
+                        
+                        <ol class="ps-3 mb-0" style="font-family: 'Poppins', sans-serif; font-size: 16px; color: #1b263f; line-height: 1.8;">
+                            <li class="mb-3">
+                                <strong>From Noi Bai International Airport (HAN):</strong>
+                                <br>It takes approximately 45-60 minutes by taxi or ride-hailing services (Grab) to reach the campus. Alternatively, you can take public Airport Bus No. 86 to the city center and transfer to the campus.
+                            </li>
+                            <li class="mb-3">
+                                <strong>By Taxi / Ride-Hailing:</strong>
+                                <br>Simply search for "Ta Quang Buu Library HUST" or "Hanoi University of Science and Technology" on Grab or tell your taxi driver to go to "Cong Parabol, Dai hoc Bach Khoa Hanoi" (Parabol Gate, Dai Co Viet St).
+                            </li>
+                            <li class="mb-0">
+                                <strong>By Public Bus:</strong>
+                                <br>Several bus routes pass directly by HUST gates on Dai Co Viet Road and Tran Dai Nghia Road, including routes 08, 21, 26, 28, and 31.
+                            </li>
+                        </ol>
+                    </div>
+                </div>
+
+                <!-- Section 3: Hotel Recommendations -->
+                <div class="mt-3 pt-3 border-top">
+                    <!-- Label Badge -->
+                    <div class="d-inline-block px-3 py-1 mb-3" style="background-color: #dbe64c; border-radius: 12px; color: #1b263f;">
+                        <span class="fw-medium" style="font-family: 'Poppins', sans-serif; font-size: 16px;">Accommodation</span>
+                    </div>
+                    
+                    <h2 class="display-6 fw-bold mb-4" style="color: #1b263f;">Hotel Recommendations</h2>
+
+                    <div class="slider-container position-relative overflow-hidden mt-3" style="padding: 40px 0;">
+                        <div class="hotel-slider d-flex align-items-center justify-content-center" id="hotelSlider" style="transition: transform 0.5s ease; min-height: 500px;">
+                            <!-- The slides will be populated by JS -->
+                        </div>
+                        
+                        <!-- Navigation Buttons -->
+                        <button class="btn position-absolute top-50 start-0 translate-middle-y ms-0 ms-md-4 rounded-circle shadow d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; z-index: 5; background-color: #fff; color: #1b263f; border: none;" onclick="moveSlider('prev')">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M15 18l-6-6 6-6"/>
+                            </svg>
+                        </button>
+                        <button class="btn position-absolute top-50 end-0 translate-middle-y me-0 me-md-4 rounded-circle shadow d-flex align-items-center justify-content-center" style="width: 50px; height: 50px; z-index: 5; background-color: #fff; color: #1b263f; border: none;" onclick="moveSlider('next')">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M9 18l6-6-6-6"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-custom">
+        <div class="container position-relative">
+            <div class="row g-4 justify-content-between">
+                <!-- Column 1 -->
+                <div class="col-lg-4 col-md-12 mb-4 mb-lg-0 footer-col-1">
+                    <h5 class="fw-bold mb-3">The 9th ASEAN Smart Grid Congress<br>November 05 - 07, 2026 | Hanoi, Vietnam<br>Hanoi University of Science and Technology</h5>
+                    <p class="footer-desc mt-3">Accepted papers will be published in the official Journal of Science and Technology (JST) of Hanoi University of Science and Technology (HUST) (jst.vn).</p>
+                </div>
+
+                <!-- Column 2 -->
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 footer-col-2">
+                    <h4 class="fw-bold mb-4 footer-heading">Get in touch</h4>
+                    <ul class="list-unstyled footer-contact-list">
+                        <li class="d-flex mb-3 align-items-start">
+                            <img src="./public/img/global/phone-call-4@2x.png" width="19" height="19" class="mt-1 me-3" alt="Phone">
+                            <span>+84 (024) 3623.0949</span>
+                        </li>
+                        <li class="d-flex mb-3 align-items-start">
+                            <img src="./public/img/global/email-4@2x.png" width="19" height="19" class="mt-1 me-3" alt="Email">
+                            <a href="mailto:asgc9@hust.edu.vn" class="text-white text-decoration-none">asgc9@hust.edu.vn</a>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <img src="./public/img/global/maps-and-flags-1@2x.png" width="19" height="19" class="mt-1 me-3" alt="Location">
+                            <span>320 - Ta Quang Buu Library, Hanoi University of Science and Technology<br>1 Dai Co Viet, Bach Mai, Hanoi, Vietnam</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Column 3 -->
+                <div class="col-lg-3 col-md-6 footer-col-3 position-relative">
+                    <h4 class="fw-bold mb-4 footer-heading">Quick links</h4>
+                    <ul class="list-unstyled footer-links">
+                        <li class="mb-3 d-flex align-items-start">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-1 me-2 text-white">
+                                <path d="M5 5L19 19M19 19V5M19 19H5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a href="submission.html" class="text-white text-decoration-none">Submission details</a>
+                        </li>
+                        <li class="mb-3 d-flex align-items-start">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-1 me-2 text-white">
+                                <path d="M5 5L19 19M19 19V5M19 19H5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a href="registration2.html" class="text-white text-decoration-none">Registration</a>
+                        </li>
+                        <li class="d-flex align-items-start">
+                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="mt-1 me-2 text-white">
+                                <path d="M5 5L19 19M19 19V5M19 19H5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <a href="Organizing Committee.html" class="text-white text-decoration-none">Conference Committee</a>
+                        </li>
+                    </ul>
+                    <!-- Decorative element / Back to top -->
+                    <a href="#" class="footer-decorator d-none d-lg-flex align-items-center justify-content-center text-decoration-none" onclick="window.scrollTo({top: 0, behavior: 'smooth'}); return false;">
+                        <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" style="color: #1b263f;">
+                            <path d="M12 19V5M12 5L5 12M12 5L19 12" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3 pt-4 footer-copyright border-top border-light border-opacity-25">
+                Copyright All rights reserved
+            </div>
+        </div>
+    </footer>
+
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <script>
+        const hotels = [
+            {
+                name: "Hôtel du Parc Hanoï",
+                img: "./public/img/venue/hotels/hotel_du_parc/jaune.jpg",
+                desc: "Address: 84 Tran Nhan Tong, Hai Ba Trung, Hanoi<br>Contact: +84 24 3822 3535<br>5 Minutes drive from Venue<br>A luxury 5-star hotel blending Vietnamese charm with Japanese hospitality."
+            },
+            {
+                name: "Mövenpick Hotel Hanoi",
+                img: "./public/img/venue/hotels/movenpick_hotel.jpg",
+                desc: "Address: 83A Ly Thuong Kiet, Hoan Kiem, Hanoi<br>Contact: +84 24 3822 2800<br>10 Minutes drive from Venue<br>Premium 5-star hotel offering contemporary French architecture."
+            },
+            {
+                name: "Sofitel Legend Metropole",
+                img: "./public/img/venue/hotels/sofitel_metropole/La-Veranda_54859-scaled.jpg",
+                desc: "Address: 15 Ngo Quyen, Hoan Kiem, Hanoi<br>Contact: +84 24 3826 6919<br>12 Minutes drive from Venue<br>Historic luxury landmark since 1901 featuring French colonial grandeur."
+            },
+            {
+                name: "Kim Lien Hotel",
+                img: "./public/img/venue/hotels/kim_lien_hotel.webp",
+                desc: "Address: 7 Dao Duy Anh, Phuong Mai, Dong Da, Hanoi<br>Contact: +84 24 3852 2522<br>10 Minutes walk from Venue<br>A well-known 3-star hotel offering comfort and great accessibility to HUST."
+            },
+            {
+                name: "Parkside Sunline Hotel",
+                img: "./public/img/venue/hotels/parkside_sunline_hotel.jpg",
+                desc: "Address: 72-74 Dai Co Viet, Le Dai Hanh, Hai Ba Trung, Hanoi<br>Contact: +84 24 3974 7272<br>10 Minutes walk from Venue<br>A modern 4-star hotel located right across the street from the conference venue."
+            }
+        ];
+
+        let currentIndex = 1; // Hotel B is center initially
+
+        function renderSlider() {
+            const slider = document.getElementById('hotelSlider');
+            slider.innerHTML = '';
+
+            const leftIndex = (currentIndex - 1 + hotels.length) % hotels.length;
+            const centerIndex = currentIndex;
+            const rightIndex = (currentIndex + 1) % hotels.length;
+
+            const indices = [leftIndex, centerIndex, rightIndex];
+
+            indices.forEach((index, i) => {
+                const hotel = hotels[index];
+                const isCenter = (i === 1);
+                
+                const slideDiv = document.createElement('div');
+                slideDiv.className = `hotel-slide text-center mx-2 mx-md-3 ${isCenter ? 'center-slide' : 'side-slide'}`;
+                
+                slideDiv.style.flex = isCenter ? '0 0 45%' : '0 0 25%';
+                slideDiv.style.transition = 'all 0.5s ease';
+                slideDiv.style.opacity = isCenter ? '1' : '0.4';
+                slideDiv.style.transform = isCenter ? 'scale(1.05)' : 'scale(0.85)';
+                slideDiv.style.zIndex = isCenter ? '2' : '1';
+                
+                // Use a fallback placeholder image if needed
+                const fallbackImg = "https://placehold.co/600x400/eeeeee/31343C?text=Hotel";
+                
+                slideDiv.innerHTML = `
+                    <div style="border-radius: 16px; overflow: hidden; box-shadow: ${isCenter ? '0 10px 30px rgba(0,0,0,0.15)' : '0 4px 10px rgba(0,0,0,0.1)'}; background-color: #f8f9fa;">
+                        <img src="${hotel.img}" onerror="this.src='${fallbackImg}'" alt="${hotel.name}" class="img-fluid" style="height: ${isCenter ? '320px' : '220px'}; object-fit: cover; width: 100%; transition: height 0.5s ease;">
+                    </div>
+                    <div class="mt-4 px-2" style="transition: opacity 0.5s ease; opacity: ${isCenter ? '1' : '0'}; visibility: ${isCenter ? 'visible' : 'hidden'};">
+                        <h4 class="fw-bold mb-3" style="color: #1b263f; font-size: 28px;">${hotel.name}</h4>
+                        <p class="text-muted" style="font-size: 15px; line-height: 1.6;">${hotel.desc}</p>
+                    </div>
+                `;
+                
+                slider.appendChild(slideDiv);
+            });
+        }
+
+        function moveSlider(direction) {
+            if (direction === 'next') {
+                currentIndex = (currentIndex + 1) % hotels.length;
+            } else {
+                currentIndex = (currentIndex - 1 + hotels.length) % hotels.length;
+            }
+            renderSlider();
+        }
+
+        document.addEventListener('DOMContentLoaded', renderSlider);
+    </script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        window.addEventListener("scroll", function() {
+            const header = document.querySelector(".header-wrapper");
+            if (header) {
+                if (window.scrollY > 50) {
+                    header.classList.add("scrolled");
+                } else {
+                    header.classList.remove("scrolled");
+                }
+            }
+        });
+    });
+</script>
+
+</body>
+</html>
+
+
+

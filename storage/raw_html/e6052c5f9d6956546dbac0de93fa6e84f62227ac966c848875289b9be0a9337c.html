@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>Th&#244;ng b&#225;o tuyển dụng v&#224; học bổng Goertek Việt Nam năm học 2025-2026 </h3>
+        <div style="text-align: justify;">
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Giới thiệu chương tr&igrave;nh đ&agrave;o tạo 3,5+0,5 của Goertek với sinh vi&ecirc;n ĐHBKHN</strong><br />
+	&nbsp;<br />
+	Th&aacute;ng 6/2025 vừa qua, 04 sinh vi&ecirc;n Đại học Bách Khoa Hà N&ocirc;̣i đ&atilde; vượt qua v&ograve;ng tuyển chọn khắt khe để trở th&agrave;nh thực tập sinh trong chương tr&igrave;nh <strong>&quot;Đ&ocirc;i C&aacute;nh Goertek 2025&quot;</strong> của C&ocirc;ng ty TNHH Khoa học Kỹ thuật Goertek Vina, một trong những tập đo&agrave;n c&ocirc;ng nghệ h&agrave;ng đầu thế giới với trụ sở tại Bắc Ninh, Việt Nam. Đ&acirc;y l&agrave; chương tr&igrave;nh tuyển dụng v&agrave; đ&agrave;o tạo c&aacute;n bộ nguồn danh gi&aacute;, mang đến cơ hội ph&aacute;t triển nghề nghiệp vượt trội c&ugrave;ng c&aacute;c chế độ ph&uacute;c lợi hấp dẫn.<br />
+	<strong>Th&agrave;nh t&iacute;ch nổi bật của bốn sinh vi&ecirc;n</strong><br />
+	Bốn sinh vi&ecirc;n xuất sắc đến từ Đại học B&aacute;ch khoa H&agrave; Nội, bao gồm c&aacute;c chuy&ecirc;n ng&agrave;nh kỹ thuật như Cơ điện tử, Điện tử Viễn th&ocirc;ng v&agrave; Logistic v&agrave; chuỗi cung ứng. Với CPA cao, ngoại ngữ tốt v&agrave; tinh thần học hỏi kh&ocirc;ng ngừng, c&aacute;c bạn đ&atilde; chứng minh năng lực vượt trội qua c&aacute;c v&ograve;ng phỏng vấn v&agrave; đ&aacute;nh gi&aacute; trực tiếp tại Goertek Vina.<br />
+	<strong>Chương tr&igrave;nh đ&agrave;o tạo tại Việt Nam 3,5 + 0,5</strong><br />
+	Năm học 2025-2026, Goertek Vina sẽ tiếp tục phối hợp với Đại học B&aacute;ch khoa H&agrave; Nội để tổ chức Chương tr&igrave;nh đ&agrave;o tạo tại Việt Nam 3,5 + 0,5. C&aacute;c bạn thực tập sinh l&agrave; sinh vi&ecirc;n năm cuối khối ng&agrave;nh kỹ thuật (c&oacute; CPA &gt; 2.3) sẽ trải qua lộ tr&igrave;nh đ&agrave;o tạo chuy&ecirc;n s&acirc;u, kết hợp l&yacute; thuyết v&agrave; thực h&agrave;nh, với c&aacute;c giai đoạn sau:</span></span></div>
+<ul>
+	<li style="text-align: justify;">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Giai đoạn 1 (Th&aacute;ng 9</strong><strong>/2025</strong><strong> - 01</strong><strong>/2026</strong><strong>)</strong>: Học tiếng Trung đầu ra tr&igrave;nh độ tương đương HSK3 + HSKK sơ cấp tại Đại học B&aacute;ch khoa H&agrave; Nội, được Goertek t&agrave;i trợ 100% chi ph&iacute; học tập.</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Giai đoạn 2 </strong></span></span></li>
+</ul>
+<div style="text-align: justify;">
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Th&aacute;ng 02/2026</strong><strong> - 04</strong><strong>/2026</strong>: Tiếp tục học tiếng Trung &nbsp;n&acirc;ng cao v&agrave; kiến thức chuy&ecirc;n ng&agrave;nh cơ bản như: Mes, Vission, Robot c&ocirc;ng nghiệp&hellip; đồng thời được hướng dẫn ho&agrave;n th&agrave;nh đồ &aacute;n tốt nghiệp. Được miễn ph&iacute; chỗ ở, xe đưa đ&oacute;n v&agrave; bữa ăn trưa.<br />
+	<strong>Th&aacute;ng 05/2026</strong><strong> - 06/2026</strong>: Thực tập tại c&aacute;c vị tr&iacute; việc l&agrave;m c&oacute; đạo sư hướng dẫn trực tiếp, nhận trợ cấp thực tập l&ecirc;n đến <strong>9.0</strong><strong>00.000 VNĐ/th&aacute;ng chưa bao gồm tăng ca </strong>(trợ cấp được chuyển trực tiếp v&agrave;o t&agrave;i khoản của sinh vi&ecirc;n). &nbsp;Được miễn ph&iacute; chỗ ở, xe đưa đ&oacute;n v&agrave; bữa ăn trưa.</span></span></div>
+<ul>
+	<li style="text-align: justify;">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Giai đoạn 3 (Từ th&aacute;ng 7/2026) - </strong><strong>Cơ hội trở th&agrave;nh nh&acirc;n vi&ecirc;n ch&iacute;nh thức</strong>: Sau khi ho&agrave;n th&agrave;nh chương tr&igrave;nh, c&aacute;c thực tập sinh xuất sắc sẽ tham gia kỳ thi tuyển để trở th&agrave;nh nh&acirc;n vi&ecirc;n ch&iacute;nh thức hưởng chế độ&nbsp; Đ&ocirc;i c&aacute;nh Goertek với mức lương từ <strong>1</strong><strong>1</strong><strong>.000.000 - 15.000.000 VNĐ/th&aacute;ng</strong> (chưa bao gồm tăng ca). Được miễn ph&iacute; chỗ ở, xe đưa đ&oacute;n v&agrave; 3 bữa ăn/ng&agrave;y, k&egrave;m theo học bổng trị gi&aacute; <strong>21</strong><strong>.000.000 VNĐ</strong> v&agrave; cơ hội đ&agrave;o tạo tại Trung Quốc.</span></span></li>
+</ul>
+<div style="text-align: justify;">
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Ph&uacute;c lợi v&agrave; cơ hội ph&aacute;t triển</strong><br />
+	Tham gia chương tr&igrave;nh, c&aacute;c thực tập sinh sẽ được hưởng:</span></span></div>
+<ul>
+	<li style="text-align: justify;">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>M&ocirc;i trường l&agrave;m việc chuy&ecirc;n nghiệp</strong>: L&agrave;m việc tại khu c&ocirc;ng nghiệp Quế V&otilde; 1, Bắc Ninh, với cơ sở vật chất hiện đại v&agrave; c&ocirc;ng nghệ ti&ecirc;n tiến.</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Chế độ ph&uacute;c lợi hấp dẫn</strong>.</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Đ&agrave;o tạo chuy&ecirc;n s&acirc;u</strong>: Được hướng dẫn 1-1 bởi c&aacute;c chuy&ecirc;n gia gi&agrave;u kinh nghiệm, n&acirc;ng cao kỹ năng chuy&ecirc;n m&ocirc;n, ng&ocirc;n ngữ (tiếng Trung/tiếng Anh), v&agrave; kỹ năng mềm.</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Cơ hội thăng tiến</strong>: Lộ tr&igrave;nh ph&aacute;t triển r&otilde; r&agrave;ng, cơ hội trở th&agrave;nh nh&acirc;n vi&ecirc;n ch&iacute;nh thức v&agrave; đảm nhận c&aacute;c dự &aacute;n quan trọng tại Goertek.</span></span></li>
+	<li style="text-align: justify;">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>Cơ hội được cử đi đ&agrave;o tạo tại Trung Quốc</strong>.</span></span></li>
+</ul>
+<div style="text-align: center;">
+	<strong><font face="times new roman, times, serif"><span style="font-size: 16px;"><span style="color:#0000ff;">Đăng k&yacute; tuyển dụng:</span> <a href="https://work.hust.edu.vn/#/nha-tuyen-dung/381/thong-tin">tại đ&acirc;y</a></span></font></strong></div>
+<div style="text-align: center;">
+	<span style="font-family: &quot;times new roman&quot;, times, serif; font-size: 16px; text-align: center; color: rgb(0, 0, 255);"><strong>C&aacute;c bạn đăng k&yacute; học bổng v&agrave; thực tập/ĐATN:</strong></span><span style="font-family: &quot;times new roman&quot;, times, serif; font-size: 16px; text-align: center;">&nbsp;</span><a href="https://ctsv.hust.edu.vn/#/hoc-bong/175/chi-tiet" style="font-family: &quot;times new roman&quot;, times, serif; font-size: 16px; text-align: center;"><span style="color: rgb(255, 0, 0);"><strong>tại đ&acirc;y</strong></span></a><br />
+	&nbsp;</div>
+<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><img alt="" src="/Upload/Nguyễn Việt Tiến/images/dc6e5b910cd3848dddc2.jpg" style="width: 850px; height: 476px;" /></span></span><br />
+<br />
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

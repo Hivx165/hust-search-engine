@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Khoa Khoa học &amp; Công nghệ giáo dục RSS&#x3A; Lịch làm việc</title>
+        <link>https://fed.hust.edu.vn/vi/workcalendar/</link>
+        <atom:link href="https://fed.hust.edu.vn/vi/workcalendar/rss/" rel="self" />
+                <description>
+            <![CDATA[Khoa Khoa học & Công nghệ giáo dục - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Mon, 9 Jun 2025 04:06:33 GMT</pubDate>
+        <lastBuildDate>Mon, 9 Jun 2025 04:06:33 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Khoa Khoa học &amp; Công nghệ giáo dục]]>
+        </copyright>
+        <docs>https://fed.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://fed.hust.edu.vn/uploads/feed/logo-dhbk-1-02_130_191.png</url>
+            <title>Khoa Khoa học &amp; Công nghệ giáo dục RSS&#x3A; Lịch làm việc</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Quay phóng sự VTV 3</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Quay-phong-su-VTV-3/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_97]]>
+            </guid>
+            
+                        <pubDate>Mon, 9 Jun 2025 04:06:33 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Tổ chức thi Tâm lý học ứng dụng</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/To-chuc-thi-Tam-ly-hoc-ung-dung/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_96]]>
+            </guid>
+            
+                        <pubDate>Mon, 9 Jun 2025 04:06:37 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Seminar&#x3A; AI-IDLE for Social Impact</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Seminar-AI-IDLE-for-Social-Impact/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_95]]>
+            </guid>
+            
+                        <pubDate>Fri, 23 May 2025 03:05:29 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[Seminar: AI-IDLE for Social Impact]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Seminar SV NCKH</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Seminar-SV-NCKH/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_94]]>
+            </guid>
+            
+                        <pubDate>Mon, 5 May 2025 02:05:02 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp lớp CNGD 03 - K69</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Hop-lop-CNGD-03-K69/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_93]]>
+            </guid>
+            
+                        <pubDate>Sun, 20 Apr 2025 04:04:42 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chuỗi seminar NCKH</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Chuoi-seminar-NCKH/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_92]]>
+            </guid>
+            
+                        <pubDate>Thu, 17 Apr 2025 21:04:36 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp lớp học kỳ 20242</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Hop/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_91]]>
+            </guid>
+            
+                        <pubDate>Tue, 25 Mar 2025 02:03:54 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hội đồng nghiệm thu đề tài cấp Bộ</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Hoi-dong-nghiem-thu-de-tai-cap-Bo/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_90]]>
+            </guid>
+            
+                        <pubDate>Tue, 11 Feb 2025 04:02:34 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp Cao học</title>
+            <link>https://fed.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop cao hoc 2</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_89]]>
+            </guid>
+            
+                        <pubDate>Tue, 11 Feb 2025 03:02:05 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp Cao học</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop-Cao-hoc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_88]]>
+            </guid>
+            
+                        <pubDate>Tue, 11 Feb 2025 03:02:36 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án môn học</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Bao-ve-do-an-mon-hoc-buoi-2/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_87]]>
+            </guid>
+            
+                        <pubDate>Mon, 13 Jan 2025 04:01:18 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án môn học</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Bao-ve-do-an-mon-hoc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_86]]>
+            </guid>
+            
+                        <pubDate>Mon, 13 Jan 2025 04:01:47 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lịch họp nghiệm thu đề tài</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lich-hop-nghiem-thu-de-tai/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_85]]>
+            </guid>
+            
+                        <pubDate>Thu, 12 Dec 2024 08:12:43 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lịch họp</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lich-hop/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_84]]>
+            </guid>
+            
+                        <pubDate>Thu, 12 Dec 2024 08:12:06 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp học Giáo dục STEAM</title>
+            <link>https://fed.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop-hoc-Giao-duc-STEAM Buổi 3</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_83]]>
+            </guid>
+            
+                        <pubDate>Thu, 28 Nov 2024 07:11:55 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp học Giáo dục STEAM</title>
+            <link>https://fed.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop-hoc-Giao-duc-STEAM Buổi 2</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_82]]>
+            </guid>
+            
+                        <pubDate>Thu, 28 Nov 2024 07:11:14 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp học Giáo dục STEAM</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop-hoc-Giao-duc-STEAM/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_81]]>
+            </guid>
+            
+                        <pubDate>Thu, 28 Nov 2024 07:11:37 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Seminar 4&#x3A; STEM Education for all&#x3A; Giáo dục STEM cho mọi người &#40;hỗ trợ người học yếu thế&#41;</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Seminar-4-STEM-Education-for-all-Giao-duc-STEM-cho-moi-nguoi-ho-tro-nguoi-hoc-yeu-the/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_80]]>
+            </guid>
+            
+                        <pubDate>Mon, 25 Nov 2024 08:11:16 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Seminar 3&#x3A; E-Learning and Professional Development Center&#x3A; Trung tâm E-Learning và Phát triển Chuyên môn &#40;Chỉ dành cho cán bộ Khoa KH&amp;CN Giáo dục&#41;</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Seminar-3-E-Learning-and-Professional-Development-Center-Trung-tam-E-Learning-va-Phat-trien-Chuyen-mon-Chi-danh-cho-can-bo-Khoa-KH-CN-Giao-duc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_79]]>
+            </guid>
+            
+                        <pubDate>Mon, 25 Nov 2024 08:11:30 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Seminar 2&#x3A; Scientific Reasoning Labs&#x3A; Phương pháp Phòng thí nghiệm Lý luận Khoa học</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Seminar-2-Scientific-Reasoning-Labs-Phuong-phap-Phong-thi-nghiem-Ly-luan-Khoa-hoc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_78]]>
+            </guid>
+            
+                        <pubDate>Mon, 25 Nov 2024 08:11:32 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Seminar 1&#x3A; Open STEM Teachers’ Resources Bank &#40;OSTRB&#41; and Parallel Pedagogy&#x3A; Ngân hàng tài nguyên mở cho giáo viên STEM và Phương pháp sư phạm Song song</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Seminar-1-Open-STEM-Teachers-Resources-Bank-OSTRB-and-Parallel-Pedagogy-Ngan-hang-tai-nguyen-mo-cho-giao-vien-STEM-va-Phuong-phap-su-pham-Song-song/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_77]]>
+            </guid>
+            
+                        <pubDate>Mon, 25 Nov 2024 08:11:59 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp học thực hành &quot;Elearning&quot;</title>
+            <link>https://fed.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop-hoc-thuc-hanh-Elearning buổi 5</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_76]]>
+            </guid>
+            
+                        <pubDate>Mon, 25 Nov 2024 02:11:49 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp học thực hành &quot;Elearning&quot;</title>
+            <link>https://fed.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop-hoc-thuc-hanh-Elearning buổi 4</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_75]]>
+            </guid>
+            
+                        <pubDate>Mon, 25 Nov 2024 02:11:15 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp học thực hành &quot;Elearning&quot;</title>
+            <link>https://fed.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop-hoc-thuc-hanh-Elearning buổi 3</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_74]]>
+            </guid>
+            
+                        <pubDate>Mon, 25 Nov 2024 02:11:42 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lớp học thực hành &quot;Elearning&quot;</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Lop-hoc-thuc-hanh-Elearning/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_73]]>
+            </guid>
+            
+                        <pubDate>Mon, 25 Nov 2024 02:11:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Workshop Phân tích mạng lưới xã hội sử dụng NodeXL</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Workshop-Phan-tich-mang-luoi-xa-hoi-su-dung-NodeXL/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_72]]>
+            </guid>
+            
+                        <pubDate>Thu, 21 Nov 2024 03:11:57 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>LỄ TỐT NGHIỆP cho sinh viên Khoa KH&amp;CN Giáo dục</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/LE-TOT-NGHIEP-cho-sinh-vien-Khoa-KH-CN-Giao-duc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_71]]>
+            </guid>
+            
+                        <pubDate>Mon, 23 Sep 2024 03:09:32 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chương trình Hội thảo Hệ sinh thái Đổi mới sáng tạo và khởi nghiệp sinh viên ĐHBK Hà Nội</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Chuong-trinh-Hoi-thao-He-sinh-thai-Doi-moi-sang-tao-va-khoi-nghiep-sinh-vien-DHBK-Ha-Noi/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_70]]>
+            </guid>
+            
+                        <pubDate>Mon, 23 Sep 2024 03:09:19 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Seminar quốc tế&#x3A; Giảng dạy các môn Khoa học thông qua  tiếp cận giải quyết vấn đề và tư duy liên ngành</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Seminar-quoc-te-Giang-day-cac-mon-Khoa-hoc-thong-qua-tiep-can-giai-quyet-van-de-va-tu-duy-lien-nganh/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_69]]>
+            </guid>
+            
+                        <pubDate>Mon, 22 Jul 2024 09:07:20 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Seminar của NCS Nguyễn Thị Hoài Nam&#x3A;</title>
+            <link>https://fed.hust.edu.vn/vi/workcalendar/Khoa-Cong-nghe-giao-duc-DHBK-HaNoi/Seminar-cua-NCS-Nguyen-Thi-Hoai-Nam/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_68]]>
+            </guid>
+            
+                        <pubDate>Thu, 11 Jul 2024 03:07:12 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[Seminar của NCS Nguyễn Thị Hoài Nam:<br />1/ Thời gian: 16h00 thứ Sáu ngày 12 tháng 07 năm 2024.<br />2/ Địa điểm: Phòng 224 C7]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

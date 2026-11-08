@@ -1,0 +1,1813 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlLang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- ======= Post-conference redirect =======-->
+    <!-- QMFS 2026 has ended: visitors landing directly on the home page go to the recap.
+         The home page stays reachable from inside the site (logo, index.html#home, ...) or via index.html?home -->
+    <script>
+      (function () {
+        var fromSite = false;
+        try {
+          fromSite = !!document.referrer && new URL(document.referrer).origin === location.origin;
+        } catch (e) {}
+        if (!location.hash && !/[?&]home\b/.test(location.search) && !fromSite) {
+          location.replace('recap.html');
+        }
+      })();
+    </script>
+
+    <title>QMFS 2026 - The 8th International Conference on Quality Management and Food Safety</title>
+
+    <!-- Meta Description -->
+    <meta
+      name="description"
+      content="QMFS 2026 - The 8th International Conference on Quality Management and Food Safety. Join leading researchers, industry experts, and policymakers in Hanoi, Vietnam, October 2, 2026."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="QMFS 2026" />
+    <meta property="og:url" content="https://qmfs.hust.edu.vn/" />
+    <meta
+      property="og:title"
+      content="QMFS 2026 - The 8th International Conference on Quality Management and Food Safety"
+    />
+    <meta
+      property="og:description"
+      content="The 8th International Conference on Quality Management and Food Safety. Join leading researchers, industry experts, and policymakers in Hanoi, Vietnam, October 2, 2026."
+    />
+    <meta property="og:image" content="https://qmfs.hust.edu.vn/assets/images/hust4.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://qmfs.hust.edu.vn/" />
+    <meta
+      name="twitter:title"
+      content="QMFS 2026 - The 8th International Conference on Quality Management and Food Safety"
+    />
+    <meta
+      name="twitter:description"
+      content="The 8th International Conference on Quality Management and Food Safety. Join us in Hanoi, Vietnam, October 2, 2026."
+    />
+    <meta name="twitter:image" content="https://qmfs.hust.edu.vn/assets/images/hust4.jpg" />
+
+    <!-- ======= Google Fonts =======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Fonts-->
+
+    <!-- ======= Bootstrap & Icons =======-->
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- End Bootstrap-->
+
+    <!-- ======= Custom Styles =======-->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- End Custom Styles-->
+
+    <!-- ======= Swiper =======-->
+    <link href="assets/vendors/swiper/swiper-bundle.min.css" rel="stylesheet" />
+    <!-- End Swiper-->
+
+    <!-- ======= Apply theme =======-->
+    <script>
+      // Apply the theme as early as possible to avoid flicker
+      (function () {
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-bs-theme', storedTheme);
+      })();
+    </script>
+  </head>
+  <body>
+    <!-- ======= Site Wrap =======-->
+    <div class="site-wrap">
+      <!-- ======= Organizer Logo Bar =======-->
+      <div class="org-topbar">
+        <div class="container">
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/hust-70.png" alt="HUST 70 years (1956 - 2026)" /></a>
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/vinacert-vicb.png" alt="VinaCert - VICB Inspection" /></a>
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/scls-hust.png" alt="School of Chemistry and Life Sciences, Hanoi University of Science and Technology" /></a>
+          <a class="org-topbar-logo org-topbar-logo--wide" href="index.html"><img src="assets/images/organizers/greenwich-kent-lase.png" alt="University of Greenwich, University of Kent, LASE University Group" /></a>
+        </div>
+      </div>
+      <!-- End Organizer Logo Bar-->
+
+      <!-- ======= Header / Navigation =======-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/organizers/qmfs-2026.png" alt="QMFS 2026 - International Conference on Quality Management and Food Safety" style="max-height: 50px" />
+          </a>          
+
+
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="#home" data-i18n="nav.home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link--recap" href="recap.html" data-i18n="nav.recap">Recap</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#topics" data-i18n="nav.topic">Topics</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#speakers" data-i18n="nav.speakers">Speakers</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="program.html"
+                  id="programDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-i18n="nav.program"
+                >
+                  Program
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                  <li>
+                    <a class="dropdown-item" href="program.html#overview" data-i18n="nav.programOverview"
+                      >General Program</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="program.html#schedule" data-i18n="nav.programSchedule"
+                      >Detailed Schedule</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="program.html#poster" data-i18n="nav.programPoster"
+                      >Student Poster</a
+                    >
+                  </li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="timeline.html" data-i18n="nav.history">History</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="committeeDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-i18n="nav.committee"
+                >
+                  Committee
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="committeeDropdown">
+                  <li>
+                    <a class="dropdown-item" href="organizing-committee.html" data-i18n="nav.organizing"
+                      >Organizing Committee</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="scientific-committee.html" data-i18n="nav.scientific"
+                      >Scientific Committee</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing" data-i18n="nav.pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary ms-2" href="#contact" data-i18n="nav.registration">Registration</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Header-->
+
+      <!-- ======= Main =======-->
+      <main>
+        <!-- ======= Hero Section =======-->
+        <section class="hero-section" id="home">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-lg-6 hero-content">
+                <span class="hero-badge reveal" data-i18n="hero.subtitle">INTERNATIONAL CONFERENCE</span>
+                <h1 class="hero-title reveal" data-i18n="hero.title">
+                  Quality Management<br />
+                  <span class="gradient-text">and Food Safety</span>
+                </h1>
+                <p class="hero-subtitle reveal">
+                  <span data-i18n="hero.event">QMFS 2026 - The 8th International Conference</span><br />
+                  <strong data-i18n="hero.date">02/10/2026</strong> |
+                  <span data-i18n="hero.location">Hotel du parc, Hanoi, Vietnam</span>
+                </p>
+                <div class="hero-cta reveal">
+                  <a href="#contact" class="btn btn-primary" data-i18n="hero.register">Register Now</a>
+                </div>
+              </div>
+              <div class="col-lg-6 hero-image reveal">
+                <img src="assets/images/hust4.jpg" alt="QMFS 2026 Conference" />
+              </div>
+            </div>
+
+            <!-- Countdown Timer -->
+            <div class="countdown-container reveal">
+              <div class="row text-center">
+                <div class="col-6 col-md-3">
+                  <div class="countdown-item">
+                    <div class="countdown-circle-wrapper">
+                      <svg class="progress-ring" width="120" height="120">
+                        <circle
+                          class="progress-ring__circle-bg"
+                          stroke="rgba(15,122,99,0.12)"
+                          stroke-width="8"
+                          fill="transparent"
+                          r="52"
+                          cx="60"
+                          cy="60"
+                        />
+                        <circle
+                          class="progress-ring__circle stroke-days"
+                          stroke="#0f7a63"
+                          stroke-width="8"
+                          fill="transparent"
+                          r="52"
+                          cx="60"
+                          cy="60"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <div class="countdown-text">
+                        <span class="countdown-number" id="days">00</span>
+                        <p class="countdown-label" data-i18n="countdown.days">Days</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="countdown-item">
+                    <div class="countdown-circle-wrapper">
+                      <svg class="progress-ring" width="120" height="120">
+                        <circle
+                          class="progress-ring__circle-bg"
+                          stroke="rgba(15,122,99,0.12)"
+                          stroke-width="8"
+                          fill="transparent"
+                          r="52"
+                          cx="60"
+                          cy="60"
+                        />
+                        <circle
+                          class="progress-ring__circle stroke-hours"
+                          stroke="#0f7a63"
+                          stroke-width="8"
+                          fill="transparent"
+                          r="52"
+                          cx="60"
+                          cy="60"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <div class="countdown-text">
+                        <span class="countdown-number" id="hours">00</span>
+                        <p class="countdown-label" data-i18n="countdown.hours">Hours</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="countdown-item">
+                    <div class="countdown-circle-wrapper">
+                      <svg class="progress-ring" width="120" height="120">
+                        <circle
+                          class="progress-ring__circle-bg"
+                          stroke="rgba(15,122,99,0.12)"
+                          stroke-width="8"
+                          fill="transparent"
+                          r="52"
+                          cx="60"
+                          cy="60"
+                        />
+                        <circle
+                          class="progress-ring__circle stroke-minutes"
+                          stroke="#0f7a63"
+                          stroke-width="8"
+                          fill="transparent"
+                          r="52"
+                          cx="60"
+                          cy="60"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <div class="countdown-text">
+                        <span class="countdown-number" id="minutes">00</span>
+                        <p class="countdown-label" data-i18n="countdown.minutes">Minutes</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-6 col-md-3">
+                  <div class="countdown-item">
+                    <div class="countdown-circle-wrapper">
+                      <svg class="progress-ring" width="120" height="120">
+                        <circle
+                          class="progress-ring__circle-bg"
+                          stroke="rgba(15,122,99,0.12)"
+                          stroke-width="8"
+                          fill="transparent"
+                          r="52"
+                          cx="60"
+                          cy="60"
+                        />
+                        <circle
+                          class="progress-ring__circle stroke-seconds"
+                          stroke="#0f7a63"
+                          stroke-width="8"
+                          fill="transparent"
+                          r="52"
+                          cx="60"
+                          cy="60"
+                          stroke-linecap="round"
+                        />
+                      </svg>
+                      <div class="countdown-text">
+                        <span class="countdown-number" id="seconds">00</span>
+                        <p class="countdown-label" data-i18n="countdown.seconds">Seconds</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Hero Section-->
+
+        <!-- ======= 70th Anniversary Banner =======-->
+        <section class="anniversary-section">
+          <div class="container">
+            <div class="anniversary-inner reveal">
+              <div class="anniversary-text">
+                <span class="anniversary-badge">1956 — 2026</span>
+                <h2 class="anniversary-title" data-i18n="anniversary.title">
+                </h2>
+                <p class="anniversary-desc" data-i18n="anniversary.description1">
+                </p>
+                <br>
+                <p class="anniversary-desc" data-i18n="anniversary.description2">
+                </p>
+                <div class="anniversary-highlight">
+                  <i class="bi bi-award-fill"></i>
+                  <span data-i18n="anniversary.highlight"></span>
+                </div>
+              </div>
+              <div class="anniversary-logo-wrap">
+                <img
+                  src="assets/images/Full Color.png"
+                  alt="HUST 70th Anniversary Logo"
+                  class="anniversary-logo"
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+                />
+                <div class="anniversary-logo-fallback" aria-label="HUST 70 Years">
+                  <div class="anniversary-number">70</div>
+                  <div class="anniversary-label-wrap">
+                    <span>NĂM</span>
+                    <span>ĐHBKHN</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End 70th Anniversary Banner-->
+
+        <!-- ======= About Section =======-->
+        <section class="section about-section" id="about">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge" data-i18n="about.subtitle">About the Conference</span>
+              <h2 class="section-title" data-i18n="about.title">QMFS 2026 Conference</h2>
+              <p class="section-description" data-i18n="about.description">
+                A premier international conference bringing together leading researchers, industry experts, and
+                policymakers to explore revolutionary solutions in food quality management and safety.
+              </p>
+            </div>
+
+            <div class="about-content reveal">
+              <div class="about-text">
+                <p data-i18n="about.paragraph1">
+                  QMFS 2026 – The 8th International Conference on Quality Management and Food Safety – represents a convergence of cutting-edge science and practical innovation. This premier
+                  international conference brings together leading researchers, industry experts, and policymakers to
+                  explore revolutionary solutions that integrate food technology, biotechnology, analytical sciences,
+                  and quality management across the entire food supply chain.
+                </p>
+                <p data-i18n="about.paragraph2">
+                  Join us as we pioneer evidence-based strategies, foster cross-disciplinary collaboration, and shape
+                  the future of food systems—where excellence in quality management meets the highest standards of food
+                  safety and environmental stewardship.
+                </p>
+
+                <div class="about-stats">
+                  <div class="stat-item reveal">
+                    <span class="stat-number">8th</span>
+                    <p class="stat-label">Edition</p>
+                  </div>
+                  <div class="stat-item reveal">
+                    <span class="stat-number">200+</span>
+                    <p class="stat-label">Participants</p>
+                  </div>
+                  <div class="stat-item reveal">
+                    <span class="stat-number">50+</span>
+                    <p class="stat-label">Speakers</p>
+                  </div>
+                  <div class="stat-item reveal">
+                    <span class="stat-number">6</span>
+                    <p class="stat-label">Topics</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="about-image reveal">
+                <img src="assets/images/HD1.jpg" alt="QMFS 2026 Conference" style="top: 200px" />
+                <div class="glass-card" style="position: absolute; top: 240px; right: -30px; max-width: 400px">
+                  <div style="display: flex; gap: 1rem; align-items: start">
+                    <div
+                      style="
+                        width: 50px;
+                        height: 50px;
+                        background: linear-gradient(135deg, var(--primary), var(--secondary));
+                        border-radius: 12px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 1.5rem;
+                      "
+                    >
+                      <i class="bi bi-lightbulb"></i>
+                    </div>
+                    <div>
+                      <h4 style="font-size: 1rem; margin-bottom: 0.5rem" data-i18n="about.visionTitle">Vision</h4>
+                      <p style="font-size: 0.875rem; margin: 0; color: var(--text-secondary)" data-i18n="about.vision">
+                        To create a dynamic, multidisciplinary forum where groundbreaking research meets real-world
+                        application. We unite academia, industry, and research institutions to accelerate innovation,
+                        share transformative technologies, and build collaborative partnerships that drive sustainable
+                        progress in food quality and safety.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End About Section-->
+
+        <!-- ======= Conference Gallery Section =======-->
+         <!--
+        <section class="section gallery-section" id="gallery">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge" data-i18n="gallery.badge">Previous Conferences</span>
+              <h2 class="section-title" data-i18n="gallery.title">Conference Gallery</h2>
+              <p class="section-description" data-i18n="gallery.description">
+                Moments captured from previous QMFS conferences — plenary sessions, parallel discussions, product
+                exhibitions and more
+              </p>
+            </div>
+
+            <div class="swiper gallerySwiper reveal">
+              <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                  <div class="gallery-card">
+                    <img src="assets/images/HD1.jpg" alt="Opening Ceremony" loading="lazy" />
+                    <div class="gallery-caption">
+                      <span class="gallery-tag" data-i18n="gallery.tag.opening">Opening Ceremony</span>
+                      <p data-i18n="gallery.photo1">QMFS 2024 – Opening Ceremony</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery-card">
+                    <img src="assets/images/hust4.jpg" alt="Plenary Session" loading="lazy" />
+                    <div class="gallery-caption">
+                      <span class="gallery-tag" data-i18n="gallery.tag.plenary">Plenary Session</span>
+                      <p data-i18n="gallery.photo2">QMFS 2024 – Keynote Presentations</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery-card">
+                    <img src="assets/images/hust3.jpg" alt="Parallel Sessions" loading="lazy" />
+                    <div class="gallery-caption">
+                      <span class="gallery-tag" data-i18n="gallery.tag.parallel">Parallel Sessions</span>
+                      <p data-i18n="gallery.photo3">QMFS 2022 – Scientific Sessions</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery-card">
+                    <img src="assets/images/scls.jpg" alt="Product Exhibition" loading="lazy" />
+                    <div class="gallery-caption">
+                      <span class="gallery-tag" data-i18n="gallery.tag.exhibition">Exhibition</span>
+                      <p data-i18n="gallery.photo4">QMFS 2022 – Product &amp; Research Exhibition</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery-card">
+                    <img src="assets/images/about_2-min.jpg" alt="Best Paper Award" loading="lazy" />
+                    <div class="gallery-caption">
+                      <span class="gallery-tag" data-i18n="gallery.tag.award">Best Paper Award</span>
+                      <p data-i18n="gallery.photo5">QMFS 2024 – Best Paper Awards</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="swiper-slide">
+                  <div class="gallery-card">
+                    <img src="assets/images/hero-img-1-min.jpg" alt="Networking" loading="lazy" />
+                    <div class="gallery-caption">
+                      <span class="gallery-tag" data-i18n="gallery.tag.networking">Networking</span>
+                      <p data-i18n="gallery.photo6">QMFS 2022 – Networking &amp; Gala Dinner</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-pagination"></div>
+            </div>
+
+            <p class="gallery-note text-center mt-3" data-i18n="gallery.note">
+              * Images are for illustration. Actual conference photos will be updated closer to the event.
+            </p>
+          </div>
+        </section>
+        -->
+        <!-- End Conference Gallery Section-->
+        
+        <!-- ======= Topics Section =======-->
+        <section class="section topics-section" id="topics">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge" data-i18n="topics.badge">Conference Topics</span>
+              <h2 class="section-title" data-i18n="topics.title">Main Conference Topics</h2>
+              <p class="section-description" data-i18n="topics.description">
+                The conference focuses on the following cutting-edge topics in quality management and food safety
+              </p>
+            </div>
+
+            <div class="topics-grid">
+              <div class="topic-card reveal">
+                <div class="topic-icon">
+                  <i class="bi bi-cpu"></i>
+                </div>
+                <h3 class="topic-title" data-i18n="topics.topic1.title">
+                </h3>
+                <p class="topic-description" data-i18n="topics.topic1.description">
+                </p>
+              </div>
+              <div class="topic-card reveal">
+                <div class="topic-icon">
+                  <i class="bi bi-arrow-repeat"></i>
+                </div>
+                <h3 class="topic-title" data-i18n="topics.topic2.title">
+                </h3>
+                <p class="topic-description" data-i18n="topics.topic2.description">
+                </p>
+              </div>
+              <div class="topic-card reveal">
+                <div class="topic-icon">
+                  <i class="bi bi-cloud-snow"></i>
+                </div>
+                <h3 class="topic-title" data-i18n="topics.topic3.title">
+                </h3>
+                <p class="topic-description" data-i18n="topics.topic3.description">
+                </p>
+              </div>
+              <div class="topic-card reveal">
+                <div class="topic-icon">
+                  <i class="bi bi-lightbulb"></i>
+                </div>
+                <h3 class="topic-title" data-i18n="topics.topic4.title">
+                </h3>
+                <p class="topic-description" data-i18n="topics.topic4.description">
+                 </p>
+              </div>
+              <div class="topic-card reveal">
+                <div class="topic-icon">
+                  <i class="bi bi-flower1"></i>
+                </div>
+                <h3 class="topic-title" data-i18n="topics.topic5.title"></h3>
+                <p class="topic-description" data-i18n="topics.topic5.description">
+                </p>
+              </div>
+              
+            </div>
+          </div>
+        </section>
+        <!-- End Topics Section-->
+
+        <!-- ======= Key Dates Section =======-->
+        <section class="section dates-section" id="dates">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge" data-i18n="dates.badge">Important Dates</span>
+              <h2 class="section-title" data-i18n="dates.title">Key Dates & Deadlines</h2>
+              <p class="section-description" data-i18n="dates.description">
+                Mark your calendar with these important dates for QMFS 2026
+              </p>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-item reveal">
+                <div class="timeline-date">
+                  <div>
+                    <span data-i18n="dates.date1.month">May</span><br /><span data-i18n="dates.date1.day">15</span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title" data-i18n="dates.date1.title">Abstract Submission Deadline</h4>
+                  <p class="timeline-description" data-i18n="dates.date1.description">
+                    Submit your abstract for consideration in the conference program
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item reveal">
+                <div class="timeline-date">
+                  <div>
+                    <span data-i18n="dates.date2.month">May</span><br /><span data-i18n="dates.date2.day">31</span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title" data-i18n="dates.date2.title">Notification of Acceptance</h4>
+                  <p class="timeline-description" data-i18n="dates.date2.description">
+                    Authors will be notified about the acceptance of their submissions
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item reveal">
+                <div class="timeline-date">
+                  <div>
+                    <span data-i18n="dates.date3.month">Jun</span><br /><span data-i18n="dates.date3.day">30</span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title" data-i18n="dates.date3.title">Full Paper Submission</h4>
+                  <p class="timeline-description" data-i18n="dates.date3.description">
+                    Submit your complete research paper for publication
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item reveal">
+                <div class="timeline-date">
+                  <div>
+                    <span data-i18n="dates.date4.month">Sep</span><br /><span data-i18n="dates.date4.day">15</span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title" data-i18n="dates.date4.title">Early Bird Registration</h4>
+                  <p class="timeline-description" data-i18n="dates.date4.description">
+                    Register early to secure your spot at discounted rates
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item reveal">
+                <div class="timeline-date">
+                  <div>
+                    <span data-i18n="dates.date5.month">Oct</span><br /><span data-i18n="dates.date5.day">02</span>
+                  </div>
+                </div>
+                <div class="timeline-content">
+                  <h4 class="timeline-title" data-i18n="dates.date5.title">Conference Begins</h4>
+                  <p class="timeline-description" data-i18n="dates.date5.description">
+                    Join us in Hanoi for a full day of scientific excellence
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Key Dates Section-->
+
+        <!-- ======= Speakers Section =======-->
+        <section class="section speakers-section" id="speakers">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge" data-i18n="speakers.badge">Our Speakers</span>
+              <h2 class="section-title" data-i18n="speakers.title">Keynote Speakers & Committee</h2>
+              <p class="section-description" data-i18n="speakers.description">
+                Meet our distinguished speakers and committee members
+              </p>
+            </div>
+            <div class="speakers-grid">
+              <div class="speaker-card reveal reveal-delay-5">
+                <img src="assets/images/Anik.png" alt="Speaker" class="speaker-avatar" />
+                <h4 class="speaker-name" data-i18n="speakers.speaker5.name">Prof. Anil Kumar Anal</h4>
+                <p class="speaker-title" data-i18n="speakers.speaker5.title">
+                  Food Innovation, Bioprocessing, Nutrition and Health Program of the Asian Institute of Technology
+                </p>
+                <p class="speaker-bio" data-i18n="speakers.speaker5.bio">
+                  Prof. Anil Kumar Anal is Professor in the Food Innovation, Bioprocessing, Nutrition and Health Program at the Asian Institute of Technology (AIT), Thailand, where he currently serves as Chair of the Academic Senate and Dean of the Faculty of Food, Agriculture and Natural Resources. With more than two decades of experience in academic leadership, research, and international advisory services, Prof. Anal specializes in sustainable food systems, circular bioeconomy, food innovation, functional ingredients, food safety, and sustainable nutrition. His research integrates biotechnology, microbiological solutions, nanotechnology, and advanced food-processing technologies to develop resilient and sustainable food systems. Prof. Anal has published more than 200 peer-reviewed publications, books, book chapters, policy papers, and patents, with an H-index of 58 and over 13,850 citations. He has supervised more than 33 PhD and 160 Master's students and has provided expert advisory services to major international organizations, including FAO, ADB, World Bank, WHO, UNEP, UNIDO, and JICA. He also serves as an editorial board member and reviewer for leading international journals and has received multiple awards and fellowships for excellence in research, teaching, and international service.
+                </p>
+              </div>
+
+              <div class="speaker-card reveal reveal-delay-2">
+                <img src="assets/images/Long.jpg" alt="Speaker" class="speaker-avatar" />
+                <h4 class="speaker-name" data-i18n="speakers.speaker2.name">Prof. Pham Quoc Long</h4>
+                <p class="speaker-title" data-i18n="speakers.speaker2.title">
+                  Senior Researcher at IAST - Ton Duc Thang University.
+                </p>
+                <p class="speaker-bio" data-i18n="speakers.speaker2.bio">
+                  Prof. Pham Quoc Long is a leading expert in organic chemistry, chemistry of natural compounds, and
+                  chemical technology. He is currently a Senior Researcher at IAST - Ton Duc Thang University, with
+                  more than 250 scientific publications, nearly 100 WoS-indexed papers, and an H-index of 24. His
+                  research focuses on lipids, fatty acids, and natural compounds from marine organisms and Vietnamese
+                  plants, with applications in pharmaceuticals, functional foods, and biotechnology. Prof. Long has led
+                  numerous national-level research projects, holds multiple patents, and has made significant
+                  contributions to doctoral training and international scientific collaboration.
+                </p>
+              </div>
+
+
+              <div class="speaker-card reveal reveal-delay-5">
+                <img src="assets/images/Parag.jpg" alt="Speaker" class="speaker-avatar" />
+                <h4 class="speaker-name" data-i18n="speakers.speaker7.name">Assoc. Prof. Parag Acharya</h4>
+                <p class="speaker-title" data-i18n="speakers.speaker7.title">
+                  Leading alternative protein-based food research and innovation at the Natural Resources Institute
+                </p>
+                <p class="speaker-bio" data-i18n="speakers.speaker7.bio">
+                  Dr. Parag Acharya is a food scientist and innovation leader specializing in alternative proteins, sustainable food systems, food processing, and product innovation. He leads research on food processing and innovation at the Natural Resources Institute (NRI), University of Greenwich, and played a key role in establishing the Medway Food Innovation Centre. His research focuses on developing climate-smart foods from sustainable protein sources, including legumes, algae, and agri-food by-products, through advanced processing, clean-label formulation, and flavour technologies. Dr. Acharya has extensive industry experience from his decade-long career in Unilever Food R&D in the Netherlands, where he led multidisciplinary research and innovation projects and was a lead inventor on four patents. He is actively involved in UK and international initiatives on alternative proteins and sustainable food innovation, working across academia, industry, and policy.
+                </p>
+              </div>
+
+
+              <div class="speaker-card reveal reveal-delay-3">
+                <img src="assets/images/Komatsu.jpg" alt="Speaker" class="speaker-avatar" />
+                <h4 class="speaker-name" data-i18n="speakers.speaker3.name">Prof. Toshiaki Komatsu</h4>
+                <p class="speaker-title" data-i18n="speakers.speaker3.title">
+                  Global Office – Tokyo University of Marine Science and Technology
+                </p>
+                <p class="speaker-bio" data-i18n="speakers.speaker3.bio">
+                  Professor Toshiaki Komatsu is a practitioner–scholar specializing in 
+                  international education, career development, and human resource 
+                  development. Since joining Tokyo University of Marine Science and 
+                  Technology in 2012, he has designed and managed international education 
+                  programs, including overseas internships, field-based learning, 
+                  and university–industry collaborations across Asia and other regions. 
+                  He has supported more than 400 students participating in international 
+                  programs in ten countries and has played a key role in strengthening 
+                  educational cooperation between Japan and Vietnam, particularly between 
+                  Tokyo University of Marine Science and Technology and Hanoi University 
+                  of Science and Technology. His research focuses on how international 
+                  learning experiences shape students’ global perspectives, learning 
+                  development, and long-term careers. With approximately 20 years of prior 
+                  experience in Japanese and American companies, Professor Komatsu brings 
+                  extensive practical expertise in recruitment, talent management, 
+                  organizational development, business training, and career development.
+                   He is also the author of 16 books on business skills and career 
+                   development.
+                  </p>
+              </div>
+            
+              <div class="speaker-card reveal reveal-delay-4">
+                <img src="assets/images/HungPV.jpg" alt="Speaker" class="speaker-avatar" />
+                <h4 class="speaker-name" data-i18n="speakers.speaker4.name">Prof. Pham Van Hung</h4>
+                <p class="speaker-title" data-i18n="speakers.speaker4.title">
+                  Vice President – International University, Vietnam National University in Ho Chi Minh City
+                </p>
+                <p class="speaker-bio" data-i18n="speakers.speaker4.bio">
+                  Prof. Dr. Pham Van Hung is an expert in food biochemistry, food science and technology,
+                  and functional foods. He received his PhD in Food Biochemistry from Osaka Prefecture
+                  University, Japan, in 2005 and has been affiliated with International University, Vietnam National
+                  University Ho Chi Minh City (VNU-HCM), since 2009. He currently serves as Vice President of the
+                  University and Senior Lecturer in the Department of Food Technology. With more than 25 years of
+                  experience in teaching and research, Prof. Hung has led over ten research projects and published
+                  more than 100 scientific articles, as well as five books and book chapters. His publications have
+                  received over 6,000 citations, with an H-index of 41 (Google Scholar). He received the Ta Quang Buu
+                  Award in 2018 and the First Prize of the Ho Chi Minh City Creative Award in 2019. His research focuses
+                  on functional foods, natural bioactive compounds, food safety, and the valorization of agricultural and
+                  food-processing by-products for sustainable food applications.
+                </p>
+              </div>
+
+
+
+              <div class="speaker-card reveal reveal-delay-6">
+                <img src="assets/images/Honda.jpg" alt="Speaker" class="speaker-avatar" />
+                <h4 class="speaker-name" data-i18n="speakers.speaker6.name">Prof. Kohsuke Honda</h4>
+                <p class="speaker-title" data-i18n="speakers.speaker6.title">
+                  Director – International Center for Biotechnology, The University of Osaka
+                </p>
+                <p class="speaker-bio" data-i18n="speakers.speaker6.bio">
+                  Dr. Kohsuke HONDA received his PhD in 2003 from Kyoto University, Japan. After staying there as a post-doctoral fellow, he moved to Department of Biotechnology, Graduate School of Engineering, The University of Osaka (UOsaka), as an assistant professor in 2005. He was appointed as an associate professor of the same department in 2010, and then a full professor of the International Center for Biotechnology, UOsaka, in 2019. His research area is applied microbiology and synthetic biology with a particular interest in the application of extremophiles and their enzymes. He has actively engaged in collaborative research with researchers in ASEAN countries and has co-authored more than 30 of his approximately 130 publications with ASEAN collaborators. He received Amano Enzyme Application Award (2013), and Young Scientist Awards from Japanese Society of Enzyme Engineering (2015), Japan Bioindustry Association (2017), and the Society for Biotechnology, Japan (2018).
+                </p>
+              </div>
+            </div>
+
+            <div class="text-center mt-5 reveal reveal-delay-5">
+              <a
+                href="scientific-committee.html"
+                class="btn btn-outline-primary me-3"
+                data-i18n="speakers.scientificCommittee"
+                >Scientific Committee</a
+              >
+              <a
+                href="organizing-committee.html"
+                class="btn btn-outline-primary"
+                data-i18n="speakers.organizingCommittee"
+                >Organizing Committee</a
+              >
+            </div>
+
+          </div>
+        </section>
+        <!-- End Speakers Section-->
+
+        <!-- ======= Call for Papers Section =======-->
+        <section class="section cfp-section" id="cfp">
+          <div class="container">
+            <div class="cfp-content reveal">
+              <span
+                class="section-badge"
+                style="background: rgba(255, 255, 255, 0.2); color: white"
+                data-i18n="cfp.badge"
+                >Call for Papers</span
+              >
+              <h2 class="cfp-title" data-i18n="cfp.title">Submit Your Research</h2>
+              <p class="cfp-description" data-i18n="cfp.description">
+                We invite researchers, academics, and industry professionals to submit their original research papers on
+                topics related to quality management and food safety. Selected papers will be published in conference
+                proceedings and indexed journals.
+              </p>
+
+              <div class="cfp-features">
+                <div class="cfp-feature reveal">
+                  <div class="cfp-feature-icon">
+                    <i class="bi bi-file-earmark-text"></i>
+                  </div>
+                  <h4 class="cfp-feature-title text-white" data-i18n="cfp.feature1.title">Paper Submission</h4>
+                  <p class="cfp-feature-text" data-i18n="cfp.feature1.text">
+                    Submit your abstract and full paper through our online system
+                  </p>
+                </div>
+
+                <div class="cfp-feature reveal">
+                  <div class="cfp-feature-icon">
+                    <i class="bi bi-check-circle"></i>
+                  </div>
+                  <h4 class="cfp-feature-title text-white" data-i18n="cfp.feature2.title">Peer Review</h4>
+                  <p class="cfp-feature-text" data-i18n="cfp.feature2.text">
+                    All submissions undergo rigorous peer review process
+                  </p>
+                </div>
+
+                <div class="cfp-feature reveal">
+                  <div class="cfp-feature-icon">
+                    <i class="bi bi-book"></i>
+                  </div>
+                  <h4 class="cfp-feature-title text-white" data-i18n="cfp.feature3.title">Publication</h4>
+                  <p class="cfp-feature-text" data-i18n="cfp.feature3.text">
+                    Accepted papers published in indexed conference proceedings
+                  </p>
+                </div>
+              </div>
+
+              <div class="mt-5 reveal">
+                <a
+                  href="#contact"
+                  class="btn btn-primary"
+                  style="background: white; color: var(--primary)"
+                  data-i18n="cfp.submitButton"
+                  >Submit Paper Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Call for Papers Section-->
+
+        <!-- ======= Phí đăng kí =======-->
+
+        <section class="section pricing__v2" id="pricing">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-md-8 mx-auto text-center">
+                <span class="subtitle text-uppercase mb-3" data-aos="fade-up" data-aos-delay="0" data-i18n="pricing.subtitle">Registration Fees</span>
+                <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100" data-i18n="pricing.title">Conference Registration Fees</h2>
+                <p class="mb-0" data-aos="fade-up" data-aos-delay="200" data-i18n="pricing.description">
+                  Information on paper submission and conference participation fees for all participants
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-4 mb-4">
+
+              <!-- Card 1: Publication Fees -->
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+                <div class="p-4 p-md-5 rounded-4 price-table h-100">
+
+                  <!-- Card header -->
+                  <div class="d-flex align-items-center gap-3 mb-4">
+                    <div class="pricing-icon-wrap">
+                      <i class="bi bi-journal-text"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0" data-i18n="pricing.publication.title">Publication Fees</h3>
+                      <small style="color:var(--text-secondary);" data-i18n="pricing.publication.perPaper">Per accepted paper</small>
+                    </div>
+                  </div>
+
+                  <!-- Choose one label -->
+                  <div class="d-flex align-items-center gap-2 mb-3">
+                    <div style="flex:1;height:1px;background:var(--border-color,rgba(0,0,0,0.1));"></div>
+                    <span style="font-size:0.75rem;text-transform:uppercase;letter-spacing:.8px;color:var(--text-secondary);white-space:nowrap;" data-i18n="pricing.publication.chooseOne">Choose one of the following</span>
+                    <div style="flex:1;height:1px;background:var(--border-color,rgba(0,0,0,0.1));"></div>
+                  </div>
+
+                  <!-- Journal options -->
+                  <div class="d-flex flex-column gap-3 mb-4">
+                    <!-- Option A -->
+                    <div class="p-3 rounded-3" style="border:1px solid var(--border-color,rgba(0,0,0,0.1));background:var(--card-bg,rgba(255,255,255,0.04));">
+                      <div class="d-flex align-items-start justify-content-between gap-2">
+                        <div class="d-flex align-items-start gap-2">
+                          <i class="bi bi-journal-bookmark-fill mt-1" style="color:var(--primary);flex-shrink:0;"></i>
+                          <div>
+                            <span class="fw-semibold d-block" style="font-size:0.9rem;" data-i18n="pricing.publication.journalA.name">Vietnam Journal of Agriculture and Environment</span>
+                            <small style="color:var(--text-secondary);" data-i18n="pricing.publication.journalA.type">Vietnamese journal</small>
+                          </div>
+                        </div>
+                        <div class="text-end" style="flex-shrink:0;">
+                          <span class="fw-bold d-block" style="color:var(--primary);font-size:1rem;">$120 USD</span>
+                          <small style="color:var(--text-secondary);">≈ 3,000,000 VND</small>
+                        </div>
+                      </div>
+                    </div>
+                
+                  </div>
+
+                  <!-- Abstract Book -->
+                  <div class="d-flex align-items-center gap-3 p-3 rounded-3" style="border:1px solid var(--border-color,rgba(0,0,0,0.1));background:var(--card-bg,rgba(255,255,255,0.04));">
+                    <i class="bi bi-qr-code" style="color:var(--primary);font-size:1.4rem;flex-shrink:0;"></i>
+                    <div>
+                      <span class="fw-semibold d-block" style="font-size:0.9rem;" data-i18n="pricing.publication.abstractBook">Conference Abstract Book</span>
+                    </div>
+                    <span class="badge bg-success ms-auto" style="font-size:0.7rem;" data-i18n="pricing.publication.included">Included</span>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Card 2: Participation Fees -->
+              <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+                <div class="p-4 p-md-5 rounded-4 price-table popular h-100">
+
+                  <!-- Card header -->
+                  <div class="d-flex align-items-center gap-3 mb-4">
+                    <div class="pricing-icon-wrap">
+                      <i class="bi bi-people-fill"></i>
+                    </div>
+                    <div>
+                      <h3 class="mb-0" data-i18n="pricing.participation.title">Participation Fees</h3>
+                      <small style="color:var(--text-secondary);" data-i18n="pricing.participation.perPerson">Per person</small>
+                    </div>
+                  </div>
+
+                  <!-- Early Bird notice -->
+                  <div class="d-flex align-items-center gap-2 mb-4 p-3 rounded-3" style="background:linear-gradient(135deg,rgba(246,133,31,0.12),rgba(230,57,70,0.12));border:1px solid rgba(246,133,31,0.3);">
+                    <i class="bi bi-lightning-charge-fill" style="color:#f6851f;font-size:1.1rem;flex-shrink:0;"></i>
+                    <div>
+                      <span class="fw-semibold d-block" style="font-size:0.85rem;color:#f6851f;" data-i18n="pricing.participation.earlyBirdTitle">Early Bird Discount</span>
+                      <small style="color:var(--text-secondary);" data-i18n="pricing.participation.earlyBirdNote">Register before <strong>30 June 2026</strong> to save</small>
+                    </div>
+                  </div>
+
+                  <!-- Pricing table -->
+                  <div class="mb-4">
+                    <!-- Table header -->
+                    <div class="row gx-2 mb-2 px-1">
+                      <div class="col-5"></div>
+                      <div class="col-3-5 col text-center">
+                        <span style="font-size:0.72rem;text-transform:uppercase;letter-spacing:.5px;color:#f6851f;font-weight:700;">
+                          <i class="bi bi-lightning-charge-fill me-1"></i><span data-i18n="pricing.participation.earlyBirdLabel">Early Bird</span>
+                        </span>
+                      </div>
+                      <div class="col text-center">
+                        <span style="font-size:0.72rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);font-weight:700;" data-i18n="pricing.participation.regularLabel">Regular</span>
+                      </div>
+                    </div>
+
+                    <!-- Vietnamese row -->
+                    <div class="p-3 rounded-3 mb-2" style="border:1px solid var(--border-color,rgba(0,0,0,0.1));background:var(--card-bg,rgba(255,255,255,0.04));">
+                      <div class="row align-items-center gx-2">
+                        <div class="col-5 d-flex align-items-center gap-2">
+                          <span style="font-size:1.2rem;">🇻🇳</span>
+                          <div>
+                            <span class="fw-semibold d-block" style="font-size:0.88rem;" data-i18n="pricing.participation.vn.label">Vietnamese</span>
+                            <small style="color:var(--text-secondary);" data-i18n="pricing.participation.vn.sub">Domestic</small>
+                          </div>
+                        </div>
+                        <div class="col text-center">
+                          <span class="fw-bold d-block" style="color:var(--primary);font-size:0.95rem;">3,000,000 VND</span>
+
+                        </div>
+                        <div class="col text-center">
+                          <span class="fw-bold d-block" style="font-size:0.95rem;">5,000,000 VND</span>
+
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- International row -->
+                    <div class="p-3 rounded-3" style="border:1px solid var(--border-color,rgba(0,0,0,0.1));background:var(--card-bg,rgba(255,255,255,0.04));">
+                      <div class="row align-items-center gx-2">
+                        <div class="col-5 d-flex align-items-center gap-2">
+                          <span style="font-size:1.2rem;">🌏</span>
+                          <div>
+                            <span class="fw-semibold d-block" style="font-size:0.88rem;" data-i18n="pricing.participation.intl.label">International</span>
+                            <small style="color:var(--text-secondary);" data-i18n="pricing.participation.intl.sub">Foreign</small>
+                          </div>
+                        </div>
+                        <div class="col text-center">
+                          <span class="fw-bold d-block" style="color:var(--primary);font-size:0.95rem;">$200 USD</span>
+
+                        </div>
+                        <div class="col text-center">
+                          <span class="fw-bold d-block" style="font-size:0.95rem;">$300 USD</span>
+
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- Payment method -->
+                  <div class="p-3 rounded-3 mb-4" style="border:1px solid var(--border-color,rgba(0,0,0,0.1));background:var(--card-bg,rgba(255,255,255,0.04));">
+                    <p class="fw-semibold mb-2 d-flex align-items-center gap-2" style="font-size:0.8rem;text-transform:uppercase;letter-spacing:.6px;color:var(--text-secondary);">
+                      <i class="bi bi-bank" style="color:var(--primary);"></i><span data-i18n="pricing.participation.bankTitle">Bank Transfer</span>
+                    </p>
+
+                    <!-- VND account -->
+                    <div class="mb-2 pb-2" style="border-bottom:1px dashed var(--border-color,rgba(0,0,0,0.1));font-size:0.85rem;line-height:1.8;">
+                      <div class="fw-semibold mb-1" style="font-size:0.75rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);"><span data-i18n="pricing.participation.vndAccount.tag">🇻🇳 VND – Domestic</span></div>
+                      <div><span style="color:var(--text-secondary);" data-i18n="pricing.participation.bankLabel">Bank:</span> <strong data-i18n="pricing.participation.vndBankValue">BIDV</strong></div>
+                      <div><span style="color:var(--text-secondary);" data-i18n="pricing.participation.accountLabel">Account:</span> <strong>8670019924</strong></div>
+                      <div><span style="color:var(--text-secondary);" data-i18n="pricing.participation.nameLabel">Name:</span> <strong data-i18n="pricing.participation.vndNameValue">TRUONG HOA VA KHOA HOC SU SONG</strong></div>
+                    </div>
+
+                    <!-- USD account -->
+                    <div class="mb-2 pb-2" style="border-bottom:1px dashed var(--border-color,rgba(0,0,0,0.1));font-size:0.85rem;line-height:1.8;">
+                      <div class="fw-semibold mb-1" style="font-size:0.75rem;text-transform:uppercase;letter-spacing:.5px;color:var(--text-secondary);"><span data-i18n="pricing.participation.usdAccount.tag">💵 USD – International</span></div>
+                      <div><span style="color:var(--text-secondary);" data-i18n="pricing.participation.bankLabel">Bank:</span> <strong data-i18n="pricing.participation.usdBankValue">JOINT STOCK COMMERCIAL BANK FOR INVESTMENT AND DEVELOPMENT OF VIETNAM</strong></div>
+                      <div><span style="color:var(--text-secondary);" data-i18n="pricing.participation.accountLabel">Account:</span> <strong>8690020117</strong></div>
+                      <div><span style="color:var(--text-secondary);">Swift:</span> <strong>BIDVVNVX</strong></div>
+                      <div><span style="color:var(--text-secondary);" data-i18n="pricing.participation.nameLabel">Name:</span> <strong data-i18n="pricing.participation.usdNameValue">SCHOOL OF CHEMISTRY AND LIFE SCIENCES</strong></div>
+                    </div>
+
+                    <!-- Transfer content -->
+                    <div style="font-size:0.85rem;line-height:1.8;">
+                      <div><span style="color:var(--text-secondary);" data-i18n="pricing.participation.contentLabel">Content:</span> <em data-i18n="pricing.participation.contentValue">QMFS2026 – [Full Name]</em></div>
+                    </div>
+                  </div>
+
+                  <!-- Register button -->
+                  <a
+                    href="https://forms.google.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary fw-semibold w-100 d-flex align-items-center justify-content-center gap-2"
+                    style="padding:.85rem 1.5rem;font-size:0.95rem;"
+                  >
+                    <i class="bi bi-pencil-square"></i>
+                    <span data-i18n="pricing.registerBtn">Register to Attend</span>
+                    <i class="bi bi-box-arrow-up-right ms-1" style="font-size:.8rem;"></i>
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </section>
+
+        <style>
+          .pricing-icon-wrap {
+            width: 48px;
+            height: 48px;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+          }
+        </style>
+
+
+        <!-- Hội đồng khoa học -->
+        <!--
+        <div class="modal fade mt-3" id="scienceBoardModal" tabindex="-1" aria-hidden="true">
+          <div style="max-width: 900px;" class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content p-3">
+
+              <div class="modal-header">
+                <h5 class="modal-title">Scientific Committee Members
+                </h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+              </div>
+
+              <div class="modal-body">
+                <div class="row g-5">
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">PGS.TS Nguyễn Văn A</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust4.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust4.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust4.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust4.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                    <div class="col-3 text-center">
+                        <img src="assets/images/hust3.jpg" class="rounded-circle img-fluid" style="width:100px;height:100px;object-fit:cover;">
+                        <div class="mt-2">TS Trần Thị B</div>
+                    </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>  
+        -->
+        <!--  Ban ổ chức -->
+
+        <!--
+
+        <section class="section features__v2" id="features">
+  <div class="container">
+    <div class="p-5 rounded-4 content text-center">
+
+
+      <h2 class="mb-4">Organizing Committee</h2>
+
+
+      <div class="overflow-hidden">
+
+
+        <div id="memberTrack" class="d-flex flex-nowrap">
+
+          <div class="text-center px-3 flex-shrink-0" style="width:25%;">
+            <img src="assets/images/hust3.jpg"
+                 class="rounded-circle img-fluid mb-2"
+                 style="width:90px;height:90px;object-fit:cover;">
+            <h6 class="fw-bold mb-0">Dr. Nguyen Van A</h6>
+            <small>Food Quality Management</small>
+          </div>
+
+          <div class="text-center px-3 flex-shrink-0" style="width:25%;">
+            <img src="assets/images/hust3.jpg"
+                 class="rounded-circle img-fluid mb-2"
+                 style="width:90px;height:90px;object-fit:cover;">
+            <h6 class="fw-bold mb-0">Assoc. Prof. Tran Thi B</h6>
+            <small>Food Safety</small>
+          </div>
+
+          <div class="text-center px-3 flex-shrink-0" style="width:25%;">
+            <img src="assets/images/hust3.jpg"
+                 class="rounded-circle img-fluid mb-2"
+                 style="width:90px;height:90px;object-fit:cover;">
+            <h6 class="fw-bold mb-0">Dr. Le Van C</h6>
+            <small>Food Technology</small>
+          </div>
+
+          <div class="text-center px-3 flex-shrink-0" style="width:25%;">
+            <img src="assets/images/hust3.jpg"
+                 class="rounded-circle img-fluid mb-2"
+                 style="width:90px;height:90px;object-fit:cover;">
+            <h6 class="fw-bold mb-0">MSc. Pham Thi D</h6>
+            <small>Food Analysis</small>
+          </div>
+
+          <div class="text-center px-3 flex-shrink-0" style="width:25%;">
+            <img src="assets/images/hust3.jpg"
+                 class="rounded-circle img-fluid mb-2"
+                 style="width:90px;height:90px;object-fit:cover;">
+            <h6 class="fw-bold mb-0">Dr. Hoang Van E</h6>
+            <small>Food Traceability</small>
+          </div>
+
+          <div class="text-center px-3 flex-shrink-0" style="width:25%;">
+            <img src="assets/images/hust3.jpg"
+                 class="rounded-circle img-fluid mb-2"
+                 style="width:90px;height:90px;object-fit:cover;">
+            <h6 class="fw-bold mb-0">Assoc. Prof. Do Thi F</h6>
+            <small>Sustainable Food Systems</small>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+        </section>
+
+      -->
+        <!-- Modal -->
+
+        <!-- End Pricing-->
+        <style>
+          #scienceBoardModal .modal-body {
+            overflow-y: auto;
+            overflow-x: hidden;
+          }
+        </style>
+
+        <!--
+
+      <div id="scienceBoardBanner"
+          class="text-center mx-auto p-4 rounded-4 shadow-sm wow fadeInUp"
+          data-wow-delay="0.2s"
+          style="max-width: 800px; cursor:pointer; background-color:#F5FAF4;">
+
+        <h2 class="text-uppercase text-primary mb-2">
+          Scientific Committee
+        </h2>
+
+        <h6 class="mb-0 text-muted" data-aos="fade-up" data-aos-delay="100">
+          Hanoi University of Science and Technology
+        </h6>
+      
+      </div>
+        -->
+        <!-- End Features-->
+
+        <style>
+          /* 1. MÀU NỀN & KHỐI TỔNG */
+          .countdown-section {
+            background-color: #1f5652; /* Màu xanh đậm giống ảnh */
+            border-radius: 20px; /* Bo góc khung lớn */
+            padding: 40px 10px; /* Khoảng cách trên dưới */
+            margin-top: 20px;
+            color: white; /* Màu chữ mặc định là trắng */
+          }
+
+          /* Container chính cho từng vòng tròn */
+          .countdown-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          }
+
+          /* Container chứa SVG và Text */
+          .svg-container {
+            position: relative;
+            width: 120px;
+            height: 120px;
+          }
+
+          /* Cấu hình vòng tròn SVG */
+          .progress-ring__circle {
+            transition: stroke-dashoffset 0.35s;
+            transform-origin: 50% 50%;
+            stroke-linecap: round;
+          }
+
+          /* Định vị text nằm giữa vòng tròn */
+          .inner-text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            width: 100%;
+            line-height: 1;
+          }
+
+          /* 2. CHỈNH MÀU SỐ VÀ CHỮ SANG TRẮNG */
+          .inner-text span {
+            font-size: 32px;
+            font-weight: 800;
+            color: #ffffff; /* Số màu trắng */
+            display: block;
+            margin-bottom: 5px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Bóng nhẹ cho dễ đọc */
+          }
+
+          .inner-text .label {
+            font-size: 12px;
+            font-weight: 600;
+            text-transform: uppercase;
+            color: rgba(255, 255, 255, 0.8); /* Chữ label trắng mờ chút */
+            margin: 0;
+          }
+        </style>
+
+        <!-- End Stats-->
+
+        <!-- ======= Sponsors Section =======-->
+        <section class="section sponsors-section" id="sponsors">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge" data-i18n="sponsors.badge">Our Sponsors</span>
+              <h2 class="section-title" data-i18n="sponsors.title">QMFS 2026 Sponsors</h2>
+              <p class="section-description" data-i18n="sponsors.description">
+                We sincerely thank our sponsors for their valuable support of QMFS 2026.
+              </p>
+            </div>
+
+            <div class="sponsor-tier sponsor-tier--diamond reveal">
+              <h3 class="sponsor-tier-title"><i class="bi bi-gem"></i> <span data-i18n="sponsors.diamond">Diamond Sponsors</span></h3>
+              <div class="sponsor-grid">
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/academy-medical-sciences.png" alt="The Academy of Medical Sciences" title="The Academy of Medical Sciences" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/opc.png" alt="OPC" title="OPC" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="sponsor-tier sponsor-tier--gold reveal">
+              <h3 class="sponsor-tier-title"><i class="bi bi-award-fill"></i> <span data-i18n="sponsors.gold">Gold Sponsors</span></h3>
+              <div class="sponsor-grid">
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/habeco.png" alt="HABECO" title="HABECO" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/data-impact.png" alt="Data Impact" title="Data Impact" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/fujitsu.png" alt="Fujitsu" title="Fujitsu" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/beckent-bauer.png" alt="Beckent Bauer 1689" title="Beckent Bauer 1689" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="sponsor-tier sponsor-tier--silver reveal">
+              <h3 class="sponsor-tier-title"><i class="bi bi-award"></i> <span data-i18n="sponsors.silver">Silver Sponsors</span></h3>
+              <div class="sponsor-grid">
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/wilmar.png" alt="Wilmar" title="Wilmar" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/icfood.png" alt="ICFOOD Việt Nam" title="ICFOOD Việt Nam" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/hanoimilk.png" alt="Hanoimilk" title="Hanoimilk" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/ajinomoto.png" alt="Ajinomoto" title="Ajinomoto" loading="lazy" />
+                </div>
+              </div>
+            </div>
+
+            <div class="sponsor-tier sponsor-tier--bronze reveal">
+              <h3 class="sponsor-tier-title"><i class="bi bi-patch-check"></i> <span data-i18n="sponsors.bronze">Bronze Sponsors</span></h3>
+              <div class="sponsor-grid">
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/2h-instrument.png" alt="2H Instrument" title="2H Instrument" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/mega-we-care.png" alt="Mega We care" title="Mega We care" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/th.png" alt="TH" title="TH" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/vinasoy.png" alt="Vinasoy" title="Vinasoy" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/anton-paar.png" alt="Anton Paar" title="Anton Paar" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/pm-jsc.png" alt="PM., JSC" title="PM., JSC" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/suabavi.png" alt="Công ty Cổ phần Sữa Ba Vì" title="Công ty Cổ phần Sữa Ba Vì" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/green-food.png" alt="Green Food &amp; Ingredient Co., Ltd" title="Green Food &amp; Ingredient Co., Ltd" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/fobic.png" alt="Fobic" title="Fobic" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/hitachi.png" alt="Hitachi" title="Hitachi" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/bfc.png" alt="BFC" title="BFC" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/groupg.png" alt="GroupG Asia Pacific" title="GroupG Asia Pacific" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/fgc.png" alt="FGC" title="FGC" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/dongloi.png" alt="Dongloi" title="Dongloi" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/trangan.png" alt="Tràng An" title="Tràng An" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/euromed.png" alt="Euromed" title="Euromed" loading="lazy" />
+                </div>
+                <div class="sponsor-logo">
+                  <img src="assets/images/sponsors/cocayhoala.png" alt="Cỏ Cây Hoa Lá" title="Cỏ Cây Hoa Lá" loading="lazy" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Sponsors Section-->
+
+        <!-- ======= Contact / Registration Section =======-->
+        <section class="section registration-section" id="contact">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge" data-i18n="contact.badge">Get In Touch</span>
+              <h2 class="section-title" data-i18n="contact.title">Contact & Registration</h2>
+              <p class="section-description" data-i18n="contact.description">
+                Contact us for more information about the conference and submit your paper.
+              </p>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 mb-4 mb-md-0 reveal-left reveal-delay-2">
+                <div class="contact-info-wrapper d-flex flex-column justify-content-center">
+                  <h3 class="mb-4" data-i18n="contact.infoTitle">Contact Information</h3>
+                  <div class="d-flex flex-column gap-4">
+                    <div class="d-flex align-items-start gap-3">
+                      <div
+                        style="
+                          width: 50px;
+                          height: 50px;
+                          background: linear-gradient(135deg, var(--primary), var(--secondary));
+                          border-radius: 12px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          color: white;
+                          font-size: 1.25rem;
+                          flex-shrink: 0;
+                        "
+                      >
+                        <i class="bi bi-telephone"></i>
+                      </div>
+                      <div>
+                        <h5
+                          style="
+                            font-size: 0.875rem;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            color: var(--text-secondary);
+                            margin-bottom: 0.25rem;
+                          "
+                          data-i18n="contact.phoneLabel"
+                        >
+                          Phone
+                        </h5>
+                        <p style="font-size: 1rem; margin: 0; color: var(--text-primary); line-height: 1.6">
+                          +84 (24) 3869 2468
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3">
+                      <div
+                        style="
+                          width: 50px;
+                          height: 50px;
+                          background: linear-gradient(135deg, var(--primary), var(--secondary));
+                          border-radius: 12px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          color: white;
+                          font-size: 1.25rem;
+                          flex-shrink: 0;
+                        "
+                      >
+                        <i class="bi bi-envelope"></i>
+                      </div>
+                      <div>
+                        <h5
+                          style="
+                            font-size: 0.875rem;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            color: var(--text-secondary);
+                            margin-bottom: 0.25rem;
+                          "
+                          data-i18n="contact.emailLabel"
+                        >
+                          Email
+                        </h5>
+
+                        <p style="font-size: 1rem; margin: 0; color: var(--text-primary); line-height: 1.6">
+                          qmfs@hust.edu.vn
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="d-flex align-items-start gap-3">
+                      <div
+                        style="
+                          width: 50px;
+                          height: 50px;
+                          background: linear-gradient(135deg, var(--primary), var(--secondary));
+                          border-radius: 12px;
+                          display: flex;
+                          align-items: center;
+                          justify-content: center;
+                          color: white;
+                          font-size: 1.25rem;
+                          flex-shrink: 0;
+                        "
+                      >
+                        <i class="bi bi-geo-alt"></i>
+                      </div>
+                      <div>
+                        <h5
+                          style="
+                            font-size: 0.875rem;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            color: var(--text-secondary);
+                            margin-bottom: 0.25rem;
+                          "
+                          data-i18n="contact.addressLabel"
+                        >
+                          Address
+                        </h5>
+                        <p style="font-size: 1rem; margin: 0; color: var(--text-primary); line-height: 1.6">
+                          C4 Building, Hanoi University of Science and Technology<br />
+                          No. 1, Dai Co Viet Street, Hanoi, Vietnam
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-6 reveal-right reveal-delay-3">
+                <div class="registration-card">
+                  <div class="d-flex align-items-center gap-3 mb-4">
+                    <div
+                      style="
+                        width: 56px;
+                        height: 56px;
+                        background: linear-gradient(135deg, var(--primary), var(--secondary));
+                        border-radius: 14px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        color: white;
+                        font-size: 1.5rem;
+                        flex-shrink: 0;
+                      "
+                    >
+                      <i class="bi bi-file-earmark-text"></i>
+                    </div>
+                    <h3 class="mb-0" data-i18n="contact.formTitle">Submit Your Abstract</h3>
+                  </div>
+
+                  <p class="mb-4" style="color: var(--text-secondary); line-height: 1.7" data-i18n="contact.formDescription">
+                    Use our official submission portal to submit your abstract. All fields are managed
+                    securely through Microsoft Forms.
+                  </p>
+
+                  <a
+                    href="https://forms.cloud.microsoft/r/Gk5SNxirDA"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn btn-primary btn-submit fw-semibold w-100 d-flex align-items-center justify-content-center gap-2"
+                    style="font-size: 1rem; padding: 0.85rem 1.5rem;"
+                  >
+                    <i class="bi bi-send-fill"></i>
+                    <span data-i18n="contact.form.submit">Submit Abstract Now</span>
+                    <i class="bi bi-box-arrow-up-right ms-1" style="font-size: 0.85rem;"></i>
+                  </a>
+
+                  <p class="mt-3 mb-0 text-center" style="font-size: 0.82rem; color: var(--text-secondary);">
+                    <i class="bi bi-shield-lock me-1"></i>
+                    <span data-i18n="contact.formNote">Submission is handled securely via Microsoft Forms</span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Contact-->
+
+        <!-- Modal Loading -->
+        <div
+          class="modal fade"
+          id="loadingModal"
+          tabindex="-1"
+          aria-hidden="true"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+        >
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body text-center py-5">
+                <div class="spinner-border text-primary mb-3" role="status" style="width: 3rem; height: 3rem">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+                <h5 class="mb-2">Đang xử lý...</h5>
+                <p class="text-muted mb-0">Vui lòng đợi trong giây lát</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal Thành công -->
+        <div class="modal fade" id="successModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-body text-center py-5">
+                <div class="mb-4">
+                  <i class="bi bi-check-circle-fill text-success" style="font-size: 4rem"></i>
+                </div>
+                <h4 class="mb-3 text-success">Gửi thành công!</h4>
+                <p class="mb-3" id="successModalMessage">Bài báo của bạn đã được gửi thành công.</p>
+                <p class="text-muted mb-4" id="successModalId"></p>
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Đóng</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======= Footer =======-->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-content">
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.aboutTitle">About QMFS 2026</h4>
+                <p style="color: rgba(255, 255, 255, 0.8)" data-i18n="footer.about">
+                  The 8th International Conference on Quality Management and Food Safety - A meeting place
+                  for leading scientists and experts in the food field.
+                </p>
+              </div>
+
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                <ul class="footer-links">
+                  <li><a href="#home" data-i18n="footer.linkHome">Home</a></li>
+                  <li><a href="recap.html" data-i18n="footer.linkRecap">QMFS 2026 Recap</a></li>
+                  <li><a href="#about" data-i18n="footer.linkAbout">About</a></li>
+                  <li><a href="#topics" data-i18n="footer.linkTopics">Topics</a></li>
+                  <li><a href="#dates" data-i18n="dates.title">Key Dates</a></li>
+                  <li><a href="#speakers" data-i18n="nav.speakers">Speakers</a></li>
+                  <li><a href="#cfp" data-i18n="cfp.badge">Call for Papers</a></li>
+                  <li><a href="#sponsors" data-i18n="sponsors.footerLink">Sponsors</a></li>
+                  <li><a href="#contact" data-i18n="footer.linkContact">Contact</a></li>
+                  <li><a href="program.html" data-i18n="footer.linkProgram">Conference Program</a></li>
+                  <li><a href="timeline.html" data-i18n="footer.linkHistory">Conference History</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.contact">Contact</h4>
+                <p style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-geo-alt-fill me-2"></i>
+                  C4 Building, Hanoi University of Science and Technology, No. 1, Dai Co Viet Street, Hanoi, Vietnam
+                </p>
+                <p style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-envelope-fill me-2"></i>
+                  <a>qmfs@hust.edu.vn</a>
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-telephone-fill me-2"></i>
+                  <a href="tel:+842438692468" style="color: rgba(255, 255, 255, 0.8)">+84 (24) 3869 2468</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              <p>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                QMFS 2026. All rights reserved. | Code by Phuc Le Tuan
+              </p>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer-->
+      </main>
+    </div>
+
+    <!-- ======= Language Toggle =======-->
+    <button id="langToggle" class="lang-toggle-btn" type="button" title="Switch language" aria-label="Switch language">
+      <i class="bi bi-translate"></i>
+      <span id="langText">VI</span>
+    </button>
+    <!-- End Language Toggle-->
+
+    <!-- ======= Javascripts =======-->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendors/swiper/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="assets/js/submit_paper.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <!-- End JavaScripts-->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </body>
+</html>

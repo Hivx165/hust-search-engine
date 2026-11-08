@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Sinh viên - Hướng dẫn</title>
+        <link>https://smse.hust.edu.vn/vi/sinh-vien/huong-dan/</link>
+        <atom:link href="https://smse.hust.edu.vn/vi/sinh-vien/rss/huong-dan/" rel="self" />
+                <description>
+            <![CDATA[Trường Vật liệu - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Thu, 22 Oct 2026 05:10:00 GMT</pubDate>
+        <lastBuildDate>Thu, 22 Oct 2026 05:10:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[TRƯỜNG VẬT LIỆU - Đại học Bách khoa Hà Nội]]>
+        </copyright>
+        <docs>https://smse.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://smse.hust.edu.vn/uploads/smse/logo-dhbk-1-02_130_191.png</url>
+            <title>Sinh viên - Hướng dẫn</title>
+            <link>https://smse.hust.edu.vn/vi/sinh-vien/huong-dan/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>THÔNG BÁO&#x3A; HƯỚNG DẪN HỌC VIÊN NỘP HỒ SƠ BẢO VỆ LUẬN VĂN CAO HỌC, ÁP DỤNG TỪ THÁNG 5&#x002F;2026</title>
+            <link>https://smse.hust.edu.vn/vi/sinh-vien/thong-bao/thong-bao-huong-dan-hoc-vien-nop-ho-so-bao-ve-luan-van-cao-hoc-ap-dung-tu-thang-5-2026-25.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[sinh-vien_25]]>
+            </guid>
+            
+                        <pubDate>Thu, 22 Oct 2026 05:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://smse.hust.edu.vn/assets/smse/sinh-vien/2026_10/tb-nop-hs-luanvancaohoc-smse.png" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>THÔNG BÁO&#x3A; HƯỚNG DẪN SINH VIÊN THỰC HIỆN ĐĂNG KÝ HỌC TẬP HỌC KỲ 2026-1</title>
+            <link>https://smse.hust.edu.vn/vi/sinh-vien/sinh-vien-truong-vat-lieu/thong-bao-huong-dan-sinh-vien-thuc-hien-dang-ky-hoc-tap-hoc-ky-2026-1-21.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[sinh-vien_21]]>
+            </guid>
+            
+                        <pubDate>Tue, 21 Jul 2026 12:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://smse.hust.edu.vn/assets/smse/sinh-vien/2026_07/hd_dangkyhocjtapk2026-1.png" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>HƯỚNG DẪN SINH VIÊN TRƯỜNG VẬT LIỆU NHẬN BẰNG VÀ HỒ SƠ TỐT NGHIỆP</title>
+            <link>https://smse.hust.edu.vn/vi/sinh-vien/thong-bao/huong-dan-sinh-vien-truong-vat-lieu-nhan-bang-va-ho-so-tot-nghiep-12.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[sinh-vien_12]]>
+            </guid>
+            
+                        <pubDate>Thu, 3 Oct 2024 07:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>HƯỚNG DẪN ĐĂNG KÝ MỘT SỐ LOẠI GIẤY CHỨNG NHẬN TRÊN EHUST</title>
+            <link>https://smse.hust.edu.vn/vi/sinh-vien/thong-bao/huong-dan-dang-ky-mot-so-loai-giay-chung-nhan-tren-ehust-11.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[sinh-vien_11]]>
+            </guid>
+            
+                        <pubDate>Thu, 3 Oct 2024 06:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

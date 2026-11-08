@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html  dir="ltr" lang="en" xml:lang="en">
+<head>
+    <title>Log in to the site | Moodle</title>
+    <link rel="shortcut icon" href="https://lms.fintech.hust.edu.vn/pluginfile.php/1/core_admin/favicon/64x64/1785918321/logoBK%20%282%29.png" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="moodle, Log in to the site | Moodle" />
+<link rel="stylesheet" type="text/css" href="https://lms.fintech.hust.edu.vn/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.css" /><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="https://lms.fintech.hust.edu.vn/theme/styles.php/lmsbk905/1785918321_1785982608/all" />
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/lms.fintech.hust.edu.vn","apibase":"https:\/\/lms.fintech.hust.edu.vn\/r.php\/api","homeurl":{},"sesskey":"xEQn0XbUMH","sessiontimeout":"28800","sessiontimeoutwarning":"1200","themerev":"1785918321","slasharguments":1,"theme":"lmsbk905","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1785918204","admin":"admin","svgicons":true,"usertimezone":"Europe\/London","language":"en","courseId":1,"courseContextId":2,"contextid":1,"contextInstanceId":0,"langrev":1787110206,"templaterev":"1785918204","siteId":1,"userId":0,"deprecationignorelist":[],"traceId":null};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/lms.fintech.hust.edu.vn\/lib\/yuilib\/3.18.1\/","comboBase":"https:\/\/lms.fintech.hust.edu.vn\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/lms.fintech.hust.edu.vn\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/lms.fintech.hust.edu.vn\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/lms.fintech.hust.edu.vn\/theme\/yui_combo.php?m\/1785918204\/","combine":true,"comboBase":"https:\/\/lms.fintech.hust.edu.vn\/theme\/yui_combo.php?","ext":false,"root":"m\/1785918204\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form","datatype-date-format"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]}}},"gallery":{"name":"gallery","base":"https:\/\/lms.fintech.hust.edu.vn\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/lms.fintech.hust.edu.vn\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1785918204\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/lms.fintech.hust.edu.vn\/lib\/javascript.php\/1785918204\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/lms.fintech.hust.edu.vn\/lib\/javascript.php\/1785918204\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]}},"logInclude":[],"logExclude":[],"logLevel":null};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<script type="importmap">{
+    "imports": {
+        "@moodle/lms/": "https://lms.fintech.hust.edu.vn/r.php/core/esm/1785918204/@moodle/lms/",
+        "@moodlehq/design-system": "https://lms.fintech.hust.edu.vn/r.php/core/esm/1785918204/@moodlehq/design-system",
+        "react": "https://lms.fintech.hust.edu.vn/r.php/core/esm/1785918204/react",
+        "react/": "https://lms.fintech.hust.edu.vn/r.php/core/esm/1785918204/react/",
+        "react-dom": "https://lms.fintech.hust.edu.vn/r.php/core/esm/1785918204/react-dom",
+        "react-dom/": "https://lms.fintech.hust.edu.vn/r.php/core/esm/1785918204/react-dom/"
+    }
+}</script>
+<meta name="robots" content="noindex" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body  id="page-login-index" class="format-site  path-login dir-ltr lang-en yui-skin-sam yui3-skin-sam lms-fintech-hust-edu-vn pagelayout-login course-1 context-1 notloggedin theme ">
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+
+<div id="page-wrapper">
+
+    <div>
+    <a class="visually-hidden-focusable" href="#maincontent">Skip to main content</a>
+</div><script src="https://lms.fintech.hust.edu.vn/lib/javascript.php/1785918204/lib/polyfills/polyfill.js"></script>
+<script src="https://lms.fintech.hust.edu.vn/theme/yui_combo.php?rollup/3.18.1/yui-moodlesimple-min.js"></script><script src="https://lms.fintech.hust.edu.vn/lib/javascript.php/1785918204/lib/javascript-static.js"></script>
+<script type="module" src="https://lms.fintech.hust.edu.vn/r.php/core/esm/1785918204/@moodle/lms/core/react_autoinit"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    <div id="page" class="mt-0">
+        <div id="page-content">
+            <div id="region-main-box">
+                <div id="region-main">
+                    <div class="login-wrapper">
+                        <div class="login-container">
+                            <div role="main"><span id="maincontent"></span><div class="loginform loginform-custom">
+        <div id="loginlogo" class="login-logo">
+            <img id="logoimage" src="https://lms.fintech.hust.edu.vn/pluginfile.php/1/core_admin/logo/0x200/1785918321/Logo%20BK%203%20%281%29.png" class="img-fluid" alt="BKFintech LMS"/>
+            <h1 class="login-heading sr-only">Log in to BKFintech LMS</h1>
+        </div>
+<!--    login sso chuyển lên trên-->
+    <div class="login-divider-text"></div>
+
+    <form class="login-form" action="https://lms.fintech.hust.edu.vn/login/index.php" method="post" id="login">
+        <input id="anchor" type="hidden" name="anchor" value="">
+        <script>document.getElementById('anchor').value = location.hash;</script>
+        <input type="hidden" name="logintoken" value="NIRvBSDRFcugfm68UQe3JUHJuM4anlQH">
+        <div class="title-username">Username:</div>
+        <div class="login-form-username form-group">
+            <label for="username" class="sr-only">
+                    username
+            </label>
+            <input type="text" name="username" id="username" class="form-control form-control-lg" value="" placeholder= "username"autocomplete="username">
+        </div>
+        <div class="title-password">Password:</div>
+        <div class="login-form-password form-group">
+            <label for="password" class="sr-only">password</label>
+            <input type="password" name="password" id="password" value="" class="form-control form-control-lg" placeholder="password" autocomplete="current-password">
+        </div>
+
+        <div class="login-form-submit form-group">
+            <button class="btn btn-secondary btn-lg" type="submit" id="loginbtn">Login</button>
+        </div>
+
+    </form>
+
+    <div class="login-footer-custom">@2025 lms.hust.edu.vn</div>
+</div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</body></html>

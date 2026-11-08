@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Tin Tức</title>
+        <link>https://act.hust.edu.vn/vi/news/</link>
+        <atom:link href="https://act.hust.edu.vn/vi/news/rss/" rel="self" />
+                <description>
+            <![CDATA[Viện Công nghệ Điều khiển và Tự động hóa - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Wed, 7 Oct 2026 09:10:51 GMT</pubDate>
+        <lastBuildDate>Wed, 7 Oct 2026 09:10:51 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Viện Công nghệ Điều khiển và Tự động hóa]]>
+        </copyright>
+        <docs>https://act.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://act.hust.edu.vn/uploads/act/logo-dhbk-1-02_130_191.png</url>
+            <title>Tin Tức</title>
+            <link>https://act.hust.edu.vn/vi/news/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Viện Công nghệ Điều khiển và Tự động hóa phối hợp thăm hỏi, tri ân thương binh tại Trung tâm Điều dưỡng thương binh Thuận Thành, tỉnh Bắc Ninh</title>
+            <link>https://act.hust.edu.vn/vi/news/tin-bai/vien-cong-nghe-dieu-khien-va-tu-dong-hoa-phoi-hop-tham-hoi-tri-an-thuong-binh-tai-trung-tam-dieu-duong-thuong-binh-thuan-thanh-tinh-bac-ninh-178.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_178]]>
+            </guid>
+            
+                        <pubDate>Wed, 7 Oct 2026 09:10:51 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/news/2026_10/thuanthanh.jpg" width="100" align="left" border="0">Sáng ngày 08/08/2026, đoàn cán bộ Viện Công nghệ Điều khiển và Tự động hóa (ACT), phối hợp cùng, Trường Điện – Điện tử, và Trường Cơ khí, Đại học Bách khoa Hà Nội, đã đến thăm và làm việc tại Trung tâm Điều dưỡng thương binh Thuận Thành, tỉnh Bắc Ninh. Đây là hoạt động ý nghĩa nhằm thăm hỏi, tri ân những người đã cống hiến, hy sinh vì độc lập, tự do của Tổ quốc, đồng thời lan tỏa truyền thống uống nước nhớ nguồn của dân tộc.]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Khai giảng lớp vận hành chuyên sâu, bảo trì trạm cân điện tử 150 tấn và Trao đổi triển khai Dự án cải tạo nâng cấp hệ thống điều khiển DCS với Công ty CP Supe Phốt phát và Hóa chất Lâm Thao</title>
+            <link>https://act.hust.edu.vn/vi/news/tin-bai/khai-giang-lop-van-hanh-chuyen-sau-bao-tri-tram-can-dien-tu-150-tan-va-trao-doi-trien-khai-du-an-cai-tao-nang-cap-he-thong-dieu-khien-dcs-voi-cong-ty-cp-supe-phot-phat-va-hoa-chat-lam-thao-173.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_173]]>
+            </guid>
+            
+                        <pubDate>Wed, 23 Apr 2025 04:04:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/news/2025_07/1753329868.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Tổ chức khóa đào tạo &quot;Hướng dẫn sử dụng phòng học đa phương tiện&quot; cho Học viện Chính trị khu vực 1</title>
+            <link>https://act.hust.edu.vn/vi/news/tin-bai/to-chuc-khoa-dao-tao-huong-dan-su-dung-phong-hoc-da-phuong-tien-cho-hoc-vien-chinh-tri-khu-vuc-1-174.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_174]]>
+            </guid>
+            
+                        <pubDate>Sun, 19 May 2019 04:05:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/news/2025_07/1753330069.png" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đào tạo về “Kỹ thuật thẩm định hệ thống thiết bị trong Thủy điện vừa và nhỏ” tại Công ty Đầu tư SCIC</title>
+            <link>https://act.hust.edu.vn/vi/news/tin-bai/dao-tao-ve-ky-thuat-tham-dinh-he-thong-thiet-bi-trong-thuy-dien-vua-va-nho-tai-cong-ty-dau-tu-scic-172.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_172]]>
+            </guid>
+            
+                        <pubDate>Mon, 15 Apr 2019 04:04:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/news/2025_07/1753329653.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Làm việc tại nhà máy của Tập đoàn Sunhouse</title>
+            <link>https://act.hust.edu.vn/vi/news/tin-bai/lam-viec-tai-nha-may-cua-tap-doan-sunhouse-171.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_171]]>
+            </guid>
+            
+                        <pubDate>Fri, 22 Mar 2019 03:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/news/2025_07/1753329581.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Khai giảng lớp Simatic-S7-WinCC Flexible cho Tổng công ty Giấy Việt Nam</title>
+            <link>https://act.hust.edu.vn/vi/news/su-kien-da-dien-ra/khai-giang-lop-simatic-s7-wincc-flexible-cho-tong-cong-ty-giay-viet-nam-176.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_176]]>
+            </guid>
+            
+                        <pubDate>Thu, 21 Feb 2019 04:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/news/2025_07/1753330698.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Triển khai khóa đào tạo “Kỹ thuật điều khiển cho hệ thống thiết bị làm sạch”</title>
+            <link>https://act.hust.edu.vn/vi/news/su-kien-da-dien-ra/trien-khai-khoa-dao-tao-ky-thuat-dieu-khien-cho-he-thong-thiet-bi-lam-sach-175.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_175]]>
+            </guid>
+            
+                        <pubDate>Fri, 15 Feb 2019 04:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/news/2025_07/1753330516.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Làm việc với đoàn các giáo sư Hàn Quốc của Đại học Gachon</title>
+            <link>https://act.hust.edu.vn/vi/news/tin-bai/lam-viec-voi-doan-cac-giao-su-han-quoc-cua-dai-hoc-gachon-170.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_170]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jan 2019 03:01:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/news/2025_07/1753329353.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

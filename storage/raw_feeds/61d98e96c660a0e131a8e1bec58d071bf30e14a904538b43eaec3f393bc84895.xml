@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Đơn vị trực thuộc - Chi đoàn trực thuộc</title>
+        <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/chi-doan-truc-thuoc/</link>
+        <atom:link href="https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/rss/chi-doan-truc-thuoc/" rel="self" />
+                <description>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+        <lastBuildDate>Thu, 9 Jul 2020 15:07:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </copyright>
+        <docs>https://svbk.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://svbk.hust.edu.vn/uploads/svbk/logo-dhbk-1-02_130_191.png</url>
+            <title>Đơn vị trực thuộc - Chi đoàn trực thuộc</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/chi-doan-truc-thuoc/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Chi đoàn Cán bộ Liên phòng ban</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/chi-doan-truc-thuoc/lien-phong-ban-207978.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207978]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chi đoàn Khoa Giáo dục Thể chất</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/chi-doan-truc-thuoc/khoa-giao-duc-the-chat-207950.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207950]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

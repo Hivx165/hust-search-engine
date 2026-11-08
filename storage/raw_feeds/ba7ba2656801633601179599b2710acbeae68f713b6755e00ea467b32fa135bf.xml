@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Nhóm nghiên cứu &#8211; Khoa Toán &#8211; Tin</title>
+	<atom:link href="https://fami.hust.edu.vn/nhom-nghien-cuu/feed/" rel="self" type="application/rss+xml" />
+	<link>https://fami.hust.edu.vn</link>
+	<description>ĐH Bách KHoa Hà Nội</description>
+	<lastBuildDate>Sat, 07 Nov 2026 06:15:50 +0000</lastBuildDate>
+	<language>vi-VN</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.8</generator>
+
+<image>
+	<url>https://fami.hust.edu.vn/wp-content/uploads/cropped-android-chrome-512x512-32x32.png</url>
+	<title>Nhóm nghiên cứu &#8211; Khoa Toán &#8211; Tin</title>
+	<link>https://fami.hust.edu.vn</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Mô hình hóa, Mô phỏng và Tối ưu hóa trong Khoa học dữ liệu</title>
+		<link>https://fami.hust.edu.vn/nhom-nghien-cuu/mo-hinh-hoa-mo-pho%cc%89ng-va-toi-uu-trong-khoa-ho%cc%a3c-du%cc%83-lie%cc%a3u/</link>
+		<pubDate>Tue, 30 Jan 2018 20:56:32 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Danh Tú (Admin)]]></dc:creator>
+		
+		<guid isPermaLink="false">http://sami.hust.edu.vn/?post_type=research&#038;p=7281</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Khoa học dữ liệu, máy học và các phương pháp tính toán mềm</title>
+		<link>https://fami.hust.edu.vn/nhom-nghien-cuu/khoa-hoc-du-lieu-may-hoc-va-cac-phuong-phap-tinh-toan-mem/</link>
+		<pubDate>Tue, 29 Nov 2016 02:40:36 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thị Thanh Huyền]]></dc:creator>
+		
+		<guid isPermaLink="false">http://sami.hust.edu.vn/?post_type=research&#038;p=6128</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Toán rời rạc</title>
+		<link>https://fami.hust.edu.vn/nhom-nghien-cuu/toan-roi-rac/</link>
+		<pubDate>Tue, 29 Nov 2016 02:35:46 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thị Thanh Huyền]]></dc:creator>
+		
+		<guid isPermaLink="false">http://sami.hust.edu.vn/?post_type=research&#038;p=6127</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Toán Giải tích</title>
+		<link>https://fami.hust.edu.vn/nhom-nghien-cuu/toan-giai-tich/</link>
+		<pubDate>Mon, 15 Dec 2014 15:53:46 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thị Thanh Huyền]]></dc:creator>
+		
+		<guid isPermaLink="false">http://sami.hust.edu.vn/?post_type=research&#038;p=3927</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Lý thuyết tối ưu và ứng dụng</title>
+		<link>https://fami.hust.edu.vn/nhom-nghien-cuu/ly-thuyet-toi-uu-va-ung-dung/</link>
+		<pubDate>Mon, 15 Dec 2014 15:49:07 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thị Thanh Huyền]]></dc:creator>
+		
+		<guid isPermaLink="false">http://sami.hust.edu.vn/?post_type=research&#038;p=3926</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Phương trình vi phân và ứng dụng</title>
+		<link>https://fami.hust.edu.vn/nhom-nghien-cuu/phuong-trinh-vi-phan-va-ung-dung/</link>
+		<pubDate>Mon, 15 Dec 2014 15:43:41 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thị Thanh Huyền]]></dc:creator>
+		
+		<guid isPermaLink="false">http://sami.hust.edu.vn/?post_type=research&#038;p=3925</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Các mô hình toán học ứng dụng trong hệ thống phức tạp</title>
+		<link>https://fami.hust.edu.vn/nhom-nghien-cuu/cac-mo-hinh-toan-hoc-ung-dung-trong-he-thong-phuc-tap/</link>
+		<pubDate>Mon, 15 Dec 2014 15:39:00 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thị Thanh Huyền]]></dc:creator>
+		
+		<guid isPermaLink="false">http://sami.hust.edu.vn/?post_type=research&#038;p=3924</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+		<item>
+		<title>Toán Tin-lý thuyết và ứng dụng</title>
+		<link>https://fami.hust.edu.vn/nhom-nghien-cuu/toan-tin-ly-thuyet-va-ung-dung/</link>
+		<pubDate>Mon, 15 Dec 2014 15:04:40 +0000</pubDate>
+		<dc:creator><![CDATA[Nguyễn Thái Bình]]></dc:creator>
+		
+		<guid isPermaLink="false">http://sami.hust.edu.vn/?post_type=research&#038;p=3916</guid>
+		<description><![CDATA[]]></description>
+				<content:encoded><![CDATA[]]></content:encoded>
+			</item>
+	</channel>
+</rss>

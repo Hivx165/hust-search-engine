@@ -1,0 +1,1744 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlLang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Conference Program - QMFS 2026</title>
+    <meta
+      name="description"
+      content="QMFS 2026 program: a single-day international conference with opening ceremony, plenary session, six parallel tracks, student poster program, and gala dinner on 02 October 2026 at Hotel du Parc Hanoi."
+    />
+
+    <!-- ======= Google Fonts =======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Fonts-->
+
+    <!-- ======= Bootstrap & Icons =======-->
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- End Bootstrap-->
+
+    <!-- ======= Custom Styles =======-->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- End Custom Styles-->
+
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-bs-theme', storedTheme);
+      })();
+    </script>
+
+    <style>
+      /* ======= Program page (scoped, prog- prefix) ======= */
+      .prog-quick-nav {
+        position: sticky;
+        top: 70px;
+        z-index: 990;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+        padding: 0.75rem 0;
+      }
+      .prog-quick-nav .nav-pill-btn {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        padding: 0.55rem 1.25rem;
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.88rem;
+        color: var(--text-primary);
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.12);
+        transition: var(--transition-smooth);
+        text-decoration: none;
+      }
+      .prog-quick-nav .nav-pill-btn:hover {
+        background: var(--primary);
+        color: #fff;
+        border-color: var(--primary);
+        transform: translateY(-2px);
+        box-shadow: 0 4px 12px rgba(15, 122, 99, 0.2);
+      }
+      .prog-quick-nav .nav-pill-btn i {
+        font-size: 1rem;
+        color: var(--primary);
+        transition: color 0.3s ease;
+      }
+      .prog-quick-nav .nav-pill-btn:hover i {
+        color: #fff;
+      }
+
+      .prog-hero-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.65rem;
+        margin-top: 1.5rem;
+        justify-content: center;
+      }
+      .prog-meta-chip {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #fff;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 0.5rem 1rem;
+        border-radius: 999px;
+        font-size: 0.83rem;
+        box-shadow: 0 2px 10px rgba(15, 122, 99, 0.06);
+      }
+      .prog-meta-chip i {
+        color: var(--primary);
+      }
+      .prog-section-title {
+        font-weight: 700;
+        color: var(--text-primary);
+      }
+      .prog-eyebrow {
+        display: inline-block;
+        background: linear-gradient(135deg, var(--primary-light), var(--secondary));
+        color: #fff;
+        padding: 5px 14px;
+        border-radius: 7px;
+        font-weight: 600;
+        font-size: 0.75rem;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin-bottom: 0.75rem;
+      }
+
+      .prog-day-card {
+        background: #fff;
+        border: 2px solid rgba(0, 0, 0, 0.08);
+        border-radius: 16px;
+        padding: 1.75rem;
+        height: 100%;
+        transition: 0.3s ease;
+      }
+      .prog-day-card:hover {
+        border-color: var(--primary);
+        box-shadow: 0 15px 40px rgba(15, 122, 99, 0.12);
+        transform: translateY(-4px);
+      }
+      .prog-day-top {
+        display: flex;
+        align-items: center;
+        gap: 0.85rem;
+        margin-bottom: 1.1rem;
+      }
+      .prog-day-badge {
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 46px;
+        height: 46px;
+        border-radius: 12px;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: #fff;
+        font-weight: 700;
+        font-size: 1.05rem;
+      }
+      .prog-day-date {
+        font-size: 0.75rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--text-light);
+        margin-bottom: 0.15rem;
+      }
+      .prog-slot-row {
+        display: flex;
+        gap: 0.9rem;
+        padding: 0.7rem 0;
+        border-top: 1px dashed rgba(0, 0, 0, 0.14);
+      }
+      .prog-slot-row:first-of-type {
+        border-top: none;
+        padding-top: 0;
+      }
+      .prog-slot-label {
+        flex: 0 0 78px;
+        font-weight: 700;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: var(--primary);
+        padding-top: 0.15rem;
+      }
+      .prog-slot-text {
+        font-size: 0.87rem;
+        color: var(--text-primary);
+        line-height: 1.55;
+      }
+      .prog-day-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.4rem;
+        margin-top: 1.1rem;
+        font-weight: 600;
+        font-size: 0.85rem;
+      }
+
+      .prog-session {
+        display: flex;
+        gap: 1.1rem;
+        padding: 0.95rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      }
+      .prog-session:last-child {
+        border-bottom: none;
+        padding-bottom: 0;
+      }
+      .prog-session:first-child {
+        padding-top: 0;
+      }
+      .prog-time {
+        flex: 0 0 112px;
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 0.83rem;
+        padding-top: 0.1rem;
+      }
+      .prog-session-body h6 {
+        margin-bottom: 0.25rem;
+        font-weight: 600;
+        color: var(--text-primary);
+      }
+      .prog-session-body p {
+        margin: 0;
+        font-size: 0.85rem;
+        color: var(--text-light);
+        line-height: 1.55;
+      }
+      .prog-session-body .prog-speaker {
+        display: block;
+        margin-top: 0.25rem;
+        font-size: 0.8rem;
+        color: var(--primary);
+        font-weight: 500;
+      }
+      @media (max-width: 575.98px) {
+        .prog-session {
+          flex-direction: column;
+          gap: 0.3rem;
+        }
+        .prog-time {
+          flex: none;
+        }
+      }
+
+      .prog-chair-line {
+        font-size: 0.83rem;
+        color: var(--text-light);
+        margin-bottom: 1.15rem;
+        padding-bottom: 0.9rem;
+        border-bottom: 1px dashed rgba(0, 0, 0, 0.15);
+      }
+      .prog-chair-line strong {
+        color: var(--text-primary);
+      }
+
+      .prog-mini-card {
+        background: var(--bg-light);
+        border-radius: 12px;
+        padding: 1rem 1.1rem;
+        height: 100%;
+        font-size: 0.83rem;
+      }
+      .prog-mini-card .prog-room {
+        font-size: 0.7rem;
+        text-transform: uppercase;
+        letter-spacing: 0.04em;
+        color: var(--text-light);
+        font-weight: 700;
+        margin-bottom: 0.3rem;
+      }
+      .prog-mini-card .prog-track-name {
+        font-weight: 700;
+        color: var(--text-primary);
+        display: block;
+        margin-bottom: 0.2rem;
+      }
+      .prog-break-banner {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+        color: #fff;
+        border-radius: 12px;
+        padding: 0.85rem 1.25rem;
+        text-align: center;
+        font-size: 0.85rem;
+        font-weight: 600;
+        margin: 0.75rem 0;
+      }
+
+      .prog-track-tabs {
+        border-bottom: none;
+        margin-bottom: 1.5rem;
+      }
+      .prog-track-tabs .nav-link {
+        border-radius: 999px;
+        font-weight: 600;
+        font-size: 0.82rem;
+        color: var(--text-primary);
+        border: 1px solid rgba(0, 0, 0, 0.15);
+        margin-right: 0.5rem;
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+      }
+      .prog-track-tabs .nav-link.active {
+        background: var(--primary);
+        color: #fff;
+        border-color: var(--primary);
+      }
+
+      .prog-timeline {
+        position: relative;
+        padding-left: 2.25rem;
+      }
+      .prog-timeline::before {
+        content: '';
+        position: absolute;
+        left: 9px;
+        top: 6px;
+        bottom: 6px;
+        width: 2px;
+        background: rgba(15, 122, 99, 0.2);
+      }
+      .prog-timeline-item {
+        position: relative;
+        padding-bottom: 1.85rem;
+      }
+      .prog-timeline-item:last-child {
+        padding-bottom: 0;
+      }
+      .prog-timeline-item::before {
+        content: '';
+        position: absolute;
+        left: -2.25rem;
+        top: 3px;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #fff;
+        border: 3px solid var(--primary);
+      }
+      .prog-timeline-date {
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 0.85rem;
+        margin-bottom: 0.15rem;
+      }
+      .prog-timeline-item p {
+        margin: 0;
+        font-size: 0.87rem;
+        color: var(--text-light);
+      }
+
+      .prog-award-card {
+        background: #fff;
+        border-radius: 18px;
+        padding: 1.5rem 1.25rem;
+        text-align: center;
+        border: 1px solid rgba(0, 0, 0, 0.08);
+        height: 100%;
+        min-height: 270px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        transition: 0.3s ease;
+      }
+      .prog-award-card:hover {
+        border-color: var(--primary);
+        box-shadow: 0 15px 40px rgba(15, 122, 99, 0.12);
+        transform: translateY(-4px);
+      }
+      .prog-award-card-feature {
+        min-height: 100%;
+        padding: 2rem 1.5rem;
+        background: rgba(255, 255, 255, 0.9);
+      }
+      .prog-award-icon {
+        width: 62px;
+        height: 62px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 1rem;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        color: #fff;
+        font-size: 1.5rem;
+        box-shadow: 0 8px 18px rgba(15, 122, 99, 0.15);
+      }
+      .prog-award-card.is-top .prog-award-icon,
+      .prog-award-card-feature .prog-award-icon {
+        background: linear-gradient(135deg, #e08e2b, #f6c453);
+      }
+      .prog-award-card h5 {
+        font-size: 1.08rem;
+        font-weight: 700;
+        margin-bottom: 0.5rem;
+      }
+      .prog-award-value {
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 1rem;
+        margin-bottom: 0.85rem;
+      }
+      .prog-award-card p.desc {
+        font-size: 0.82rem;
+        line-height: 1.6;
+        color: var(--text-light);
+        margin: 0;
+      }
+
+      .prog-criteria-row {
+        display: flex;
+        align-items: baseline;
+        gap: 1.1rem;
+        padding: 0.95rem 0;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+      }
+      .prog-criteria-row:last-child {
+        border-bottom: none;
+        font-weight: 700;
+      }
+      .prog-criteria-points {
+        flex: 0 0 60px;
+        font-weight: 700;
+        color: var(--primary);
+        font-size: 1.05rem;
+      }
+      .prog-criteria-row div p {
+        margin: 0;
+        font-size: 0.83rem;
+        color: var(--text-light);
+      }
+
+      .prog-obj-item {
+        display: flex;
+        gap: 0.85rem;
+        align-items: flex-start;
+      }
+      .prog-obj-item i {
+        color: var(--primary);
+        font-size: 1.1rem;
+        margin-top: 0.15rem;
+        flex-shrink: 0;
+      }
+      .prog-obj-item p {
+        margin: 0;
+        font-size: 0.9rem;
+        color: var(--text-primary);
+      }
+
+      .prog-cta {
+        background: linear-gradient(135deg, var(--primary) 0%, #0a5c49 100%);
+        border-radius: 24px;
+        padding: 3rem 2rem;
+        text-align: center;
+        color: #fff;
+      }
+      .prog-cta .btn-light {
+        font-weight: 600;
+      }
+
+      .prog-note {
+        font-size: 0.82rem;
+        color: var(--text-light);
+        font-style: italic;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-wrap">
+      <!-- ======= Organizer Logo Bar =======-->
+      <div class="org-topbar">
+        <div class="container">
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/hust-70.png" alt="HUST 70 years (1956 - 2026)" /></a>
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/vinacert-vicb.png" alt="VinaCert - VICB Inspection" /></a>
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/scls-hust.png" alt="School of Chemistry and Life Sciences, Hanoi University of Science and Technology" /></a>
+          <a class="org-topbar-logo org-topbar-logo--wide" href="index.html"><img src="assets/images/organizers/greenwich-kent-lase.png" alt="University of Greenwich, University of Kent, LASE University Group" /></a>
+        </div>
+      </div>
+      <!-- End Organizer Logo Bar-->
+
+      <!-- ======= Header / Navigation =======-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/organizers/qmfs-2026.png" alt="QMFS 2026 - International Conference on Quality Management and Food Safety" style="max-height: 50px" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#home" data-i18n="nav.home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link--recap" href="recap.html" data-i18n="nav.recap">Recap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#topics" data-i18n="nav.topic">Topics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#speakers" data-i18n="nav.speakers">Speakers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="program.html"
+                  id="programDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-i18n="nav.program"
+                >
+                  Program
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#overview" data-i18n="nav.programOverview">General Program</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#schedule" data-i18n="nav.programSchedule">Detailed Schedule</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#poster" data-i18n="nav.programPoster">Student Poster</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="timeline.html" data-i18n="nav.history">History</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="committeeDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-i18n="nav.committee"
+                >
+                  Committee
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="committeeDropdown">
+                  <li>
+                    <a class="dropdown-item" href="organizing-committee.html" data-i18n="nav.organizing">Organizing Committee</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="scientific-committee.html" data-i18n="nav.scientific">Scientific Committee</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary ms-2" href="index.html#contact" data-i18n="nav.registration">Registration</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Header-->
+
+      <main>
+        <!-- ======= Page Title ======= -->
+        <section class="section" style="background: linear-gradient(135deg, rgba(15, 122, 99, 0.1) 0%, rgba(232, 245, 240, 0.2) 100%)">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-9 mx-auto text-center">
+                <span class="section-badge" data-i18n="program.hero.badge">02 October 2026 - Hotel du Parc, Hanoi</span>
+                <h1 class="section-title mb-3" data-i18n="program.hero.title">QMFS 2026 Conference Program</h1>
+                <p class="section-description mb-0" data-i18n="program.hero.subtitle">
+                  The 8th International Conference on Quality Management and Food Safety
+                </p>
+
+                <div class="prog-hero-meta">
+                  <span class="prog-meta-chip"><i class="bi bi-calendar-event"></i> <span data-i18n="program.hero.metaDates">Friday, 02 Oct 2026</span></span>
+                  <span class="prog-meta-chip"><i class="bi bi-geo-alt"></i> <span data-i18n="program.hero.metaVenue">Hotel du Parc Hanoi, 84 Tran Nhan Tong</span></span>
+                  <span class="prog-meta-chip"><i class="bi bi-mortarboard"></i> <span data-i18n="program.hero.metaHost">Hosted by: SCLS, Hanoi University of Science and Technology</span></span>
+                  <span class="prog-meta-chip"><i class="bi bi-building"></i> <span data-i18n="program.hero.metaCohost">Co-organized by: VinaCert</span></span>
+                  <span class="prog-meta-chip"><i class="bi bi-translate"></i> <span data-i18n="program.hero.metaLang">Vietnamese & English</span></span>
+                  <span class="prog-meta-chip"><i class="bi bi-people"></i> <span data-i18n="program.hero.metaScale">~200 Vietnamese delegates + 7-10 international delegates</span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Page Title -->
+
+        <!-- ======= Quick Sub-navigation Bar ======= -->
+        <div class="prog-quick-nav">
+          <div class="container text-center">
+            <div class="d-inline-flex flex-wrap gap-2 justify-content-center p-1 rounded-pill bg-light border">
+              <a href="#overview" class="nav-pill-btn">
+                <i class="bi bi-calendar-range"></i>
+                <span data-i18n="program.nav.overview">General Program</span>
+              </a>
+              <a href="#schedule" class="nav-pill-btn">
+                <i class="bi bi-clock-history"></i>
+                <span data-i18n="program.nav.schedule">Detailed Schedule</span>
+              </a>
+              <a href="#poster" class="nav-pill-btn">
+                <i class="bi bi-mortarboard-fill"></i>
+                <span data-i18n="program.nav.poster">Student Poster</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End Quick Sub-navigation Bar -->
+
+        <!-- ======= Single-day Overview ======= -->
+        <section class="section" id="overview">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-lg-8 mx-auto text-center">
+                <span class="prog-eyebrow" data-i18n="program.overview.eyebrow">Program Overview</span>
+                <h2 class="prog-section-title" data-i18n="program.overview.title">A Single-Day Conference</h2>
+                <p class="text-muted mb-0" data-i18n="program.overview.subtitle">
+                  The QMFS 2026 scientific program is organized on one main conference day in accordance with the official schedule.
+                </p>
+              </div>
+            </div>
+
+            <div class="row g-4 justify-content-center">
+              <div class="col-lg-8">
+                <div class="prog-day-card">
+                  <div class="prog-day-top">
+                    <div class="prog-day-badge">02</div>
+                    <div>
+                      <div class="prog-day-date" data-i18n="program.overview.day2Date">Friday, 02 Oct 2026</div>
+                      <div class="fw-bold" data-i18n="program.overview.day2Title">Main Scientific Day</div>
+                    </div>
+                  </div>
+                  <div class="prog-slot-row">
+                    <div class="prog-slot-label" data-i18n="program.overview.morningLabel">Morning</div>
+                    <div class="prog-slot-text" data-i18n="program.overview.day2Morning">Welcome &amp; registration, opening and welcome remarks, group photo, and the plenary session with 6 keynote talks</div>
+                  </div>
+                  <div class="prog-slot-row">
+                    <div class="prog-slot-label" data-i18n="program.overview.afternoonLabel">Afternoon</div>
+                    <div class="prog-slot-text" data-i18n="program.overview.day2Afternoon">6 parallel sessions (13:30 – 17:00), followed by the sessions wrap-up &amp; Student Poster Award Ceremony (17:00 – 17:30)</div>
+                  </div>
+                  <div class="prog-slot-row">
+                    <div class="prog-slot-label" data-i18n="program.overview.eveningLabel">Evening</div>
+                    <div class="prog-slot-text" data-i18n="program.overview.day2Evening">Networking events &amp; Gala Dinner (18:00 – 21:00): launch of the 3PUKSEA network and the Food Technology Universities Network, MOU signing ceremonies and AI Beer Showcase</div>
+                  </div>
+                  <a class="prog-day-link" href="#day2-morning"><i class="bi bi-arrow-down-circle"></i> <span data-i18n="program.overview.viewDetails">View details</span></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Single-day Overview -->
+
+        <!-- ======= Detailed Schedule ======= -->
+        <section class="section" style="background: var(--bg-light)" id="schedule">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-lg-8 mx-auto text-center">
+                <span class="prog-eyebrow" data-i18n="program.schedule.eyebrow">Detailed Schedule</span>
+                <h2 class="prog-section-title" data-i18n="program.schedule.title">Program on Friday, 02 October 2026</h2>
+              </div>
+            </div>
+
+            <div class="accordion faq__v2">
+              <div class="custom-accordion accordion" id="programAccordion">
+                <div class="accordion-item shadow-sm" id="day2-morning">
+                  <h3 class="accordion-header" id="headingDay2Morning">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseDay2Morning"
+                      aria-expanded="true"
+                      aria-controls="collapseDay2Morning"
+                    >
+                      <i class="bi bi-calendar-event me-3 text-primary"></i> <span data-i18n="program.schedule.mHeader">Morning – Welcome, Opening &amp; Plenary Session</span>
+                    </button>
+                  </h3>
+                  <div id="collapseDay2Morning" class="accordion-collapse collapse show" data-bs-parent="#programAccordion">
+                    <div class="accordion-body">
+                      <div class="prog-session">
+                        <div class="prog-time">07:30 – 08:15</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.m1t">Welcome &amp; Registration</h6>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">08:15 – 08:30</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.m2t">Introduction of Delegations and Guests</h6>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">08:30 – 08:35</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.m3t">Opening remarks</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.m3w">Prof. Le Anh Tuan, President of Hanoi University of Science and Technology (HUST)</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">08:35 – 08:40</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.m4t">Welcome remarks</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.m4w">Mr. Matthew Albon-Crouch, Agriculture, Food and Drink Attaché, British Embassy Hanoi, UK</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">08:40 – 08:45</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.m5t">Welcome remarks</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.m5w">Dr. Chu Quoc Thinh, Director of Vietnam Food Administration (VFA), Ministry of Health</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">08:45 – 09:05</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.m6t">Opening Address: New Policies in Food Safety Management in Vietnam</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.m6w">Dr. Chu Quoc Thinh, Director of Vietnam Food Administration, Ministry of Health</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">09:05 – 09:10</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.m7t">Group photo</h6>
+                        </div>
+                      </div>
+
+                      <div class="prog-break-banner" data-i18n="program.schedule.plenaryBanner">PLENARY SESSION · 09:10 – 12:00</div>
+                      <p class="prog-chair-line text-center" data-i18n="program.schedule.plenaryChairs">Chairs: <strong>Prof. Fujiyama Kazuhito</strong> &amp; <strong>Prof. Ben Bennett</strong></p>
+
+                      <div class="prog-session">
+                        <div class="prog-time">09:10 – 09:35</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.k1t">Keynote 1: Transforming Regional Food Systems: Integrating Quality Management, Food Safety, and Biotechnology in the Circular Economy</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.k1w">Prof. Anil Kumar Anal, Asian Institute of Technology, Thailand</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">09:35 – 10:00</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.k2t">Keynote 2: Food Safety Risk Management and Quality Management of Natural Products — Challenges and Opportunities in the Digital and AI Era</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.k2w">Prof. Pham Quoc Long, Vietnam Association of Natural Products Sciences, Vietnam</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">10:00 – 10:25</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.k3t">Keynote 3: From Rice Side-Streams to Sustainable Protein: Quality, Innovation and UK - Southeast Asia Partnership in Plant-Based Protein</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.k3w">Dr. Parag Acharya, Natural Resources Institute, University of Greenwich, United Kingdom</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">10:25 – 10:45</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.kCoffeet">Coffee break</h6>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">10:45 – 11:10</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.k4t">Keynote 4: Building Human Capability for Food Safety - The Impact of International Learning</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.k4w">Prof. Toshiaki Komatsu, Tokyo University of Marine Science and Technology, Japan</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">11:10 – 11:35</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.k5t">Keynote 5: A 30-Year Research Journey in Carbohydrate Modification and Digestibility: Innovations in Developing Health-Oriented Foods</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.k5w">Prof. Pham Van Hung, International University - Vietnam National University HCM City, Vietnam</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">11:35 – 12:00</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.k6t">Keynote 6: Driving Metabolic Pathways Outside Living Cells</h6>
+                          <span class="prog-speaker" data-i18n="program.schedule.k6w">Prof. Kohsuke Honda, ICBiotech, The University of Osaka, Japan</span>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">12:00 – 12:15</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.kSponsort">Sponsor presentation &amp; appreciation</h6>
+                        </div>
+                      </div>
+                      <div class="prog-session">
+                        <div class="prog-time">12:15 – 13:30</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.kLuncht">Lunch</h6>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item shadow-sm" id="day2-afternoon">
+                  <h3 class="accordion-header" id="headingDay2Afternoon">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseDay2Afternoon"
+                      aria-expanded="true"
+                      aria-controls="collapseDay2Afternoon"
+                    >
+                      <i class="bi bi-people me-3 text-primary"></i> <span data-i18n="program.schedule.aHeader">Afternoon – Parallel Sessions, 13:30 – 17:00</span>
+                    </button>
+                  </h3>
+                  <div id="collapseDay2Afternoon" class="accordion-collapse collapse show" data-bs-parent="#programAccordion">
+                    <div class="accordion-body">
+                      <p class="prog-chair-line" data-i18n="program.schedule.aNote">Six parallel sessions: Sessions 1 &amp; 4 run 13:30 – 15:00; Sessions 5 &amp; 6 run 15:30 – 17:00; Sessions 2 &amp; 3 run through the whole afternoon with a coffee break at 15:00 – 15:30.</p>
+
+                      <div class="row g-3 mb-4">
+                        <div class="col-sm-6 col-lg-4">
+                          <div class="prog-mini-card">
+                            <div class="prog-room" data-i18n="program.schedule.s1Card">13:30 – 15:00 · Vietnamese</div>
+                            <span class="prog-track-name" data-i18n="program.schedule.s1Name">Session 1</span>
+                            <div data-i18n="program.schedule.s1Title">Quality Management &amp; Digital Transformation in Food Processing</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                          <div class="prog-mini-card">
+                            <div class="prog-room" data-i18n="program.schedule.s2Card">13:30 – 17:00 · Vietnamese</div>
+                            <span class="prog-track-name" data-i18n="program.schedule.s2Name">Session 2</span>
+                            <div data-i18n="program.schedule.s2Title">Biotechnology: From Research to Practice and Human Resources</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                          <div class="prog-mini-card">
+                            <div class="prog-room" data-i18n="program.schedule.s3Card">13:30 – 17:00 · English</div>
+                            <span class="prog-track-name" data-i18n="program.schedule.s3Name">Session 3</span>
+                            <div data-i18n="program.schedule.s3Title">Workshop on Plant-Based Protein Food &amp; Beverages</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                          <div class="prog-mini-card">
+                            <div class="prog-room" data-i18n="program.schedule.s4Card">13:30 – 15:00 · Vietnamese</div>
+                            <span class="prog-track-name" data-i18n="program.schedule.s4Name">Session 4</span>
+                            <div data-i18n="program.schedule.s4Title">Quality Management of Natural Products</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                          <div class="prog-mini-card">
+                            <div class="prog-room" data-i18n="program.schedule.s5Card">15:30 – 17:00 · Vietnamese</div>
+                            <span class="prog-track-name" data-i18n="program.schedule.s5Name">Session 5</span>
+                            <div data-i18n="program.schedule.s5Title">Education &amp; Human Resource Development</div>
+                          </div>
+                        </div>
+                        <div class="col-sm-6 col-lg-4">
+                          <div class="prog-mini-card">
+                            <div class="prog-room" data-i18n="program.schedule.s6Card">15:30 – 17:00 · English</div>
+                            <span class="prog-track-name" data-i18n="program.schedule.s6Name">Session 6</span>
+                            <div data-i18n="program.schedule.s6Title">Probiotics &amp; Food System Transformation Trends</div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <ul class="nav prog-track-tabs" id="trackTab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#track1" type="button" role="tab" data-i18n="program.schedule.s1Name">Session 1</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#track2" type="button" role="tab" data-i18n="program.schedule.s2Name">Session 2</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#track3" type="button" role="tab" data-i18n="program.schedule.s3Name">Session 3</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#track4" type="button" role="tab" data-i18n="program.schedule.s4Name">Session 4</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#track5" type="button" role="tab" data-i18n="program.schedule.s5Name">Session 5</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                          <button class="nav-link" data-bs-toggle="tab" data-bs-target="#track6" type="button" role="tab" data-i18n="program.schedule.s6Name">Session 6</button>
+                        </li>
+                      </ul>
+
+                      <div class="tab-content">
+                        <div class="tab-pane fade show active" id="track1" role="tabpanel">
+                          <p class="prog-chair-line" data-i18n="program.schedule.s1Chair"><strong>Session 1: Quality Management &amp; Digital Transformation in Food Processing</strong><br />Chairs: Prof. Phan Thi Kim (NFSI) &amp; Assoc. Prof. To Kim Anh (HUST)<br />Time: 13:30 – 15:00 | Language: Vietnamese | Room: JAUNE B</p>
+                          <div class="prog-session">
+                            <div class="prog-time">13:30 – 13:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s1i1t">Sharing Experience in Applying Food Safety Management Systems Combined with Productivity and Quality Improvement Tools in Food Enterprises</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s1i1w">Industry representative</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">13:45 – 14:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s1i2t">AI-Driven Lager Beer Formulation: An Interdisciplinary Approach Integrating AI, R&amp;D and Consumer Insights</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s1i2w">Dang Quang Duy (Data Impact) &amp; Assoc. Dr. Ho Phu Ha (SCLS – HUST)</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:00 – 14:15</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s1i3t">New-Generation Minerals: Chelated Bisglycinate Calcium, Magnesium and Iron</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s1i3w">Nguyen Hoang Tung – Sales Director, Brenntag</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:15 – 14:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s1i4t">Assessment of Heavy Metal Residues in Mushrooms</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s1i4w">Luong Van Bang – RETAQ</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:30 – 14:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s1i5t">Determination of Selected Metal Contents in Black Soldier Fly (<i>Hermetia illucens</i>) Pupae by Flame Atomic Absorption Spectrometry (F-AAS)</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s1i5w">Le Thi My Chau – Vinh University</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:45 – 15:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s1i6t">Discussion &amp; Q&amp;A</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s1i6w">Chairs</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="track2" role="tabpanel">
+                          <p class="prog-chair-line" data-i18n="program.schedule.s2Chair"><strong>Session 2: Biotechnology: From Research to Practice and Human Resources</strong><br />Chairs: Prof. Dr. Pham Van Hung (HCMIU) &amp; Assoc. Prof. Dr. Nguyen Lan Huong (HUST)<br />Time: 13:30 – 17:00 | Language: Vietnamese | Room: LE SALON</p>
+                          <div class="prog-session">
+                            <div class="prog-time">13:30 – 13:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i1t">Applications of Gene Technology in Healthcare in Vietnam: Practical Implementation Experience</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i1w">Dr. Duong Ngoc Cuong – CEO &amp; Co-founder, GeneStory</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">13:45 – 14:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i2t">Genetically Modified Organisms Eligible for Use in Contained Production</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i2w">MSc. Ta Thi Kieu Anh – Department of Nature Conservation and Biodiversity, MAE</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:00 – 14:15</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i3t">Fermentation Technology for Converting Food Industry By-products into High Value-Added Products – Cooperation in Training and Research with Universities</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i3w">Mr. Le Xuan Thao – MBF Group, VN</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:15 – 14:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i4t">Research on Production Technology and Application of Spore-Based Probiotics to Reduce Antibiotic Use in Poultry Farming in Hanoi – Orientation for Cooperation in Training and Research with Universities</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i4w">Ms. Ngo Thi Huong – Director, VMC Vietnam Production and Trading JSC</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:30 – 14:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i5t">Scientific Research and Innovation in Health at Hanoi University of Science and Technology</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i5w">Assoc. Prof. Tran Thuong Quang – Vice Dean, HST – HUST</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:45 – 15:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i6t">Research and Development Orientation for Advanced Biotechnology and Biomedicine, 2026–2035, at the Vietnam Academy of Science and Technology</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i6w">Assoc. Prof. Phi Quyet Tien – Dean, IB, VAST</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:00 – 15:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.coffee">Coffee break</h6>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:30 – 15:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i8t">Sharing Experience in Biotechnology Training and Research at the International University, Vietnam National University Ho Chi Minh City</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i8w">Dr. Nguyen Minh Thanh – Dean, School of Biotechnology, HCMIU</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:45 – 16:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i9t">Developing the Biotechnology Training Program at the VNU University of Science</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i9w">Assoc. Prof. Nguyen Thanh Nam – Deputy Head, Faculty of Biology, VNU University of Science (VNU-HUS)</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:00 – 16:15</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i10t">Training High-Quality Human Resources in Biotechnology in the Context of International Integration at USTH</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i10w">Assoc. Prof. Nguyen Quang Huy – Deputy Head, Faculty of Life Sciences, USTH</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:15 – 16:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i11t">Training High-Quality Human Resources in Biotechnology at Hanoi University of Science and Technology</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i11w">Dr. Nguyen Tien Thanh – Deputy Head, Department of Bioengineering, SCLS, HUST</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:30 – 17:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s2i12t">Roundtable Discussion: Training High-Quality Human Resources in Biotechnology – Connecting Universities, Research and Enterprises</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s2i12w">Chairs and invited guests</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="track3" role="tabpanel">
+                          <p class="prog-chair-line" data-i18n="program.schedule.s3Chair"><strong>Session 3: Workshop on Plant-Based Protein Food &amp; Beverages</strong><br />Chairs: Assoc. Prof. Son Chu-Ky (HUST) &amp; Dr. Parag Acharya (NRI, UK)<br />Time: 13:30 – 17:00 | Language: English | Room: JAUNE A</p>
+                          <div class="prog-session">
+                            <div class="prog-time">13:30 – 13:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i1t">Welcome of delegates to the afternoon Plant-Based Protein Workshop (within QMFS 2026).</h6>
+                              <p data-i18n="program.schedule.s3i1d">Seating zones: businesses – scientists/lecturers – regulators – international 3PUKSEA delegation.</p>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i1w">HUST Organising Committee</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">13:45 – 13:55</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i2t">Introduction to the content, speakers and structure of the afternoon session.</h6>
+                              <p data-i18n="program.schedule.s3i2d">Brief introduction to the 3PUKSEA project and the international expert delegation.</p>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i2w">Dr. Nguyen Tien Thanh, HUST</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">13:55 – 14:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i3t">Context, mission and objectives of the Plant-Based Protein Workshop within QMFS 2026.</h6>
+                              <p data-i18n="program.schedule.s3i3d">Introduction to the Plant Protein Plus Network UK–SE Asia (3PUKSEA).</p>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i3w">Assoc. Prof. Chu Ky Son, HUST; Dr. Parag Acharya – NRI, UK</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:00 – 14:10</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i4t">Global market trends 2024–2030 for plant-based protein products. Southeast Asia: opportunities and barriers to market entry.</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i4w">Ms. Pham Thi Huong Giang – Executive Chair, GroupG Asia Pacific</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:10 – 14:20</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i5t">Analysis of Vietnam's rice value chain and the potential to recover protein from rice bran.</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i5w">Prof. Ben Bennett – NRI, University of Greenwich, UK</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:20 – 14:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i6t">Life Cycle Assessment of rice-protein and SEA plant-protein products.</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i6w">Dr. Tran Phuong Ha, Assoc. Prof. Hoang Thi Thu Huong, SCLS – HUST; Dr. Conor Walsh, NRI, UK</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:30 – 14:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i7t">Unlocking the Potential of Plant-Based Proteins in Southeast Asia: R&amp;D and Consumer Insights from Vinasoy</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i7w">Dr. Le Hoang Duy, Vinasoy, VN</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:45 – 15:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i8t">The Dairy Matrix as a Carrier for Plant Bioactives</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i8w">Dr. Sergio Rizzo, INTA, Argentina</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:00 – 15:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.coffee">Coffee break</h6>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:30 – 15:40</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i10t">Improving nutritional and sensory quality of plant-protein foods through microbial fermentation.</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i10w">Prof. Yves Waché – L'Institut Agro Dijon, France</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:40 – 15:50</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i11t">NRI's Food Accelerator programme supporting SEA plant-based start-ups to access the EU market.</h6>
+                              <p data-i18n="program.schedule.s3i11d">Participation opportunities for Vietnamese businesses and scientists.</p>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i11w">Ms. Valerie Pondaven – Food Accelerator Manager, NRI, UK</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:50 – 16:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i12t">Selective Delivery of Growth Factors to Target Cells: Advanced Targeting Technologies for Cultivated Meat Nourishment</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i12w">Prof. Dr. Hinanit Koltai – Agriculture Research Organization, Volcani Institute, Israel</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:00 – 16:50</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i13t">Open discussion on UK–SEA collaboration opportunities in plant-protein research and innovation.</h6>
+                              <p data-i18n="program.schedule.s3i13d">Identifying joint research and innovation topics and proposing 3PUKSEA Phase 2 projects (EU Horizon calls). Capturing input and collaboration proposals from attending businesses and organisations.</p>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i13w">Assoc. Prof. Chu Ky Son, HUST; Dr. Parag Acharya – NRI, UK; All 3PUKSEA members</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:50 – 17:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s3i14t">Wrap-up of the Plant-Based Protein Workshop and 3PUKSEA Dissemination event.</h6>
+                              <p data-i18n="program.schedule.s3i14d">Acknowledgement of speakers, sponsors and partners.</p>
+                              <span class="prog-speaker" data-i18n="program.schedule.s3i14w">HUST Organising Committee; Afternoon MC</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="track4" role="tabpanel">
+                          <p class="prog-chair-line" data-i18n="program.schedule.s4Chair"><strong>Session 4: Quality Management of Natural Products</strong><br />Chair: Prof. Pham Quoc Long (Vietnam Association of Natural Products Sciences)<br />Time: 13:30 – 15:00 | Language: Vietnamese | Room: MARRON</p>
+                          <div class="prog-session">
+                            <div class="prog-time">13:30 – 13:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s4i1t">Development of natural functional ingredients based on cereals and fruits using combined technologies of solid-state fermentation and dehydration</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s4i1w">Dr. Luciana Rossetti – INTA, Argentina</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">13:45 – 14:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s4i2t">Applying AI in Developing In-house Standards (TCCS) for Vietnamese Natural Products</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s4i2w">Prof. Pham Quoc Long – Vietnam Association of Natural Products Sciences; Ton Duc Thang University</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:00 – 14:15</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s4i3t">Applying Core Technologies (IoT, AI, Blockchain) in Food Safety Management</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s4i3w">Dr. To Dinh Dung – Chairman, Science and Technology Council, Vietnam Airlines</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:15 – 14:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s4i4t">LC-HRMS Combined with Chemometric Analysis to Evaluate Changes in the Chemical Composition of <i>Scutellaria baicalensis</i> Georgi after Processing</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s4i4w">Dr. Nguyen Thi Thuy Hang – Institute of Chemistry</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:30 – 14:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s4i5t">Chemical Constituents and Anticancer Cytotoxic Activity of Selected <i>Solanum</i> Species</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s4i5w">Dr. Do Thi Quynh – Ton Duc Thang University</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">14:45 – 15:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s4i6t">Discussion &amp; Q&amp;A</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s4i6w">Chairs</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="track5" role="tabpanel">
+                          <p class="prog-chair-line" data-i18n="program.schedule.s5Chair"><strong>Session 5: Education &amp; Human Resource Development</strong><br />Chair: Mr. Nguyen Huu Dung – Co-chair: Assoc. Prof. Nguyen Thi Minh Tu<br />Time: 15:30 – 17:00 | Language: Vietnamese | Room: JAUNE B</p>
+                          <div class="prog-session">
+                            <div class="prog-time">15:30 – 15:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s5i1t">Overview of the Food Engineering and Bioengineering Training Programs and Their Development Orientation at SCLS – HUST</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s5i1w">Dr. Nguyen Tien Cuong – SCLS – HUST</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:45 – 16:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s5i2t">Knowledge Areas and Courses to Be Strengthened in the Food Technology / Food Engineering Curriculum</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s5i2w">Prof. Luu Duan – Saigon Technology University (STU)</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:00 – 16:15</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s5i3t">Experience in Launching New Majors and Developing New Programs at Industrial University of Ho Chi Minh City</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s5i3w">Prof. Tran Dinh Thang – Industrial University of Ho Chi Minh City</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:15 – 16:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s5i4t">Human Resource Needs in the Digital Era and the Impact of Generative AI</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s5i4w">Mr. Ta Quang Hoa – CEO, Ba Dinh Foodstuff Technology Joint Stock Company</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:30 – 16:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s5i5t">Roundtable Discussion: Inter-institutional and Inter-university Cooperation in Food Training</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s5i5w">Food Training University Network (FTUN)</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:45 – 17:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s5i6t">General discussion</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s5i6w">Chairs</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="tab-pane fade" id="track6" role="tabpanel">
+                          <p class="prog-chair-line" data-i18n="program.schedule.s6Chair"><strong>Session 6: Probiotics &amp; Food System Transformation Trends</strong><br />Chairs: Prof. Ngo Xuan Binh &amp; Assoc. Prof. Ho Phu Ha<br />Time: 15:30 – 17:00 | Language: English | Room: MARRON</p>
+                          <div class="prog-session">
+                            <div class="prog-time">15:30 – 15:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s6i1t">Probiotic Candidates from Gut Microbiota and Honey for Next-Generation Probiotic Development</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s6i1w">Prof. Dong Van Quyen – IB, VAST</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">15:45 – 16:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s6i2t">Nasal-Spray <i>Bacillus</i> Spore Probiotics Improve Clinical Outcomes, Nasal Microbiota, and Mucosal Immunity in Children With RSV Respiratory Infections and Bacterial Co-Infections</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s6i2w">Assoc. Prof. Nguyen Thi Van Anh – ANABIO R&amp;D</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:00 – 16:15</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s6i3t">Probiotics in Vietnam: a glance at research and development in human and animal health</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s6i3w">Dr. Nguyen Quynh Uyen – VNU-IMBT</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:15 – 16:30</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s6i4t">Metabolomics-based approach for the development of new functional food</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s6i4w">Prof. Sastia P. Putri – Osaka University, Japan</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:30 – 16:45</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s6i5t">Evaluation of the Probiotic Activities and Glucose Fermentation Capacity of <i>Enterococcus faecium</i> TD2</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s6i5w">Dr. Minh-Tan Pham – Ton Duc Thang University</span>
+                            </div>
+                          </div>
+                          <div class="prog-session">
+                            <div class="prog-time">16:45 – 17:00</div>
+                            <div class="prog-session-body">
+                              <h6 data-i18n="program.schedule.s6i6t">Evaluation of probiotic properties of <i>Lactiplantibacillus</i> sp. TTT2 isolated from Vietnamese fermented pork</h6>
+                              <span class="prog-speaker" data-i18n="program.schedule.s6i6w">Dr. Bui Dinh Lam – IBFT, Thai Nguyen University of Agriculture and Forestry</span>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="mt-4" style="border-top: 1px solid rgba(0, 0, 0, 0.1); padding-top: 1rem">
+                        <div class="prog-session">
+                          <div class="prog-time">17:00 – 17:30</div>
+                          <div class="prog-session-body">
+                            <h6 data-i18n="program.schedule.aWrapupt">Sessions wrap-up &amp; Student Poster Award Ceremony</h6>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="accordion-item shadow-sm" id="day2-evening">
+                  <h3 class="accordion-header" id="headingDay2Evening">
+                    <button
+                      class="accordion-button"
+                      type="button"
+                      data-bs-toggle="collapse"
+                      data-bs-target="#collapseDay2Evening"
+                      aria-expanded="true"
+                      aria-controls="collapseDay2Evening"
+                    >
+                      <i class="bi bi-stars me-3 text-primary"></i> <span data-i18n="program.schedule.eHeader">Evening – Networking Events &amp; Gala Dinner</span>
+                    </button>
+                  </h3>
+                  <div id="collapseDay2Evening" class="accordion-collapse collapse show" data-bs-parent="#programAccordion">
+                    <div class="accordion-body">
+                      <div class="prog-session">
+                        <div class="prog-time">18:00 – 21:00</div>
+                        <div class="prog-session-body">
+                          <h6 data-i18n="program.schedule.eGalat">Networking events and Gala Dinner</h6>
+                          <p data-i18n="program.schedule.eGalad">Launch of Plant Protein Plus Network UK-SE Asia (3PUKSEA); Food Technology Universities Network; MOU Signing Ceremonies and AI Beer Showcase.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- End Detailed Schedule -->
+
+        <!-- ======= Student Poster Program ======= -->
+        <section class="section" id="poster">
+          <div class="container">
+            <div class="row mb-5">
+              <div class="col-lg-8 mx-auto text-center">
+                <span class="prog-eyebrow" data-i18n="program.poster.eyebrow">Student Program</span>
+                <h2 class="prog-section-title" data-i18n="program.poster.title">QMFS 2026 Student Poster Arena</h2>
+                <p class="text-muted mb-0 fst-italic" data-i18n="program.poster.subtitle">
+                  "From Lab to Market"
+                </p>
+              </div>
+            </div>
+
+            <!-- Objectives -->
+            <div class="row g-3 mb-5">
+              <div class="col-md-6">
+                <div class="prog-obj-item">
+                  <i class="bi bi-stars"></i>
+                  <p data-i18n="program.poster.obj1">Creating a substantive, competitive, and inspiring scientific playground for students in Food, Biology, and Chemistry.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="prog-obj-item">
+                  <i class="bi bi-globe-asia-australia"></i>
+                  <p data-i18n="program.poster.obj2">Bringing students into direct contact with international experts, regulators, and businesses within an international conference.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="prog-obj-item">
+                  <i class="bi bi-briefcase"></i>
+                  <p data-i18n="program.poster.obj3">Creating a direct recruitment and internship channel between sponsoring businesses and outstanding students.</p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="prog-obj-item">
+                  <i class="bi bi-award"></i>
+                  <p data-i18n="program.poster.obj4">Contributing to the celebration of the 70th anniversary of Hanoi University of Science and Technology.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Poster Registration & Template Action Card -->
+            <div class="row mb-5">
+              <div class="col-lg-10 mx-auto">
+                <div class="p-4 p-md-5 rounded-4 shadow-sm" style="background: linear-gradient(135deg, rgba(15, 122, 99, 0.08) 0%, rgba(224, 142, 43, 0.09) 100%); border: 2px solid rgba(15, 122, 99, 0.25);">
+                  <div class="row align-items-center g-4">
+                    <div class="col-lg-7">
+                      <div class="d-flex align-items-center gap-3 mb-3">
+                        <div style="width: 54px; height: 54px; border-radius: 14px; background: linear-gradient(135deg, var(--primary), var(--secondary)); display: flex; align-items: center; justify-content: center; color: white; font-size: 1.6rem; flex-shrink: 0;">
+                          <i class="bi bi-file-earmark-slides"></i>
+                        </div>
+                        <div>
+                          <h3 class="mb-1" style="font-size: 1.35rem;" data-i18n="program.poster.regCardTitle">Student Poster Registration & Template</h3>
+                          <span class="badge" style="background: var(--accent); color: white; font-size: 0.75rem;">QMFS 2026 Poster Arena</span>
+                        </div>
+                      </div>
+                      <p class="mb-3" style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;" data-i18n="program.poster.regCardDesc">
+                        Mỗi nhóm sinh viên cần đăng ký tham gia, nộp abstract 300–500 từ, sau đó sẽ được Ban tổ chức sơ loại và cấp mã Poster ID. Các poster bắt buộc ghi rõ Poster ID trên sản phẩm trình bày.
+                      </p>
+                      <div class="d-flex flex-column gap-2">
+                        <div class="d-flex align-items-center gap-2" style="font-size: 0.88rem;">
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                          <span data-i18n="program.poster.regCheck1">Abstract từ 300–500 từ theo hướng nghiên cứu của nhóm</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2" style="font-size: 0.88rem;">
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                          <span data-i18n="program.poster.regCheck2">Sơ loại trước, sau đó mới được cấp mã Poster ID</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-2" style="font-size: 0.88rem;">
+                          <i class="bi bi-check-circle-fill text-success"></i>
+                          <span data-i18n="program.poster.regCheck3">Nhóm sinh viên tự in poster; ngôn ngữ trình bày là tiếng Việt</span>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="col-lg-5">
+                      <div class="d-flex flex-column gap-3 p-3 p-md-4 rounded-3 bg-white border shadow-sm">
+                        <!-- Register Button -->
+                        <a
+                          href="https://forms.gle/JQ3JVMBcdBJqedvA9"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="btn btn-primary d-flex align-items-center justify-content-center gap-2 py-3 px-3 text-center fw-bold shadow-sm"
+                          style="font-size: 0.95rem;"
+                        >
+                          <i class="bi bi-pencil-square fs-5"></i>
+                          <span data-i18n="program.poster.regBtn">Register for Student Poster</span>
+                          <i class="bi bi-box-arrow-up-right ms-auto" style="font-size: 0.8rem;"></i>
+                        </a>
+
+                        <!-- Template Button -->
+                        <a
+                          href="https://docs.google.com/presentation/d/17pMxwDGA49PKqWk23INJq71EvOhiSKK_/edit?usp=drive_link&ouid=111286363816324027146&rtpof=true&sd=true"
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="btn btn-outline-primary d-flex align-items-center justify-content-center gap-2 py-3 px-3 text-center fw-bold"
+                          style="font-size: 0.95rem;"
+                        >
+                          <i class="bi bi-file-earmark-ppt fs-5 text-warning"></i>
+                          <span data-i18n="program.poster.templateBtn">Download Poster Template</span>
+                          <i class="bi bi-box-arrow-up-right ms-auto" style="font-size: 0.8rem;"></i>
+                        </a>
+
+                        <small class="text-center text-muted" style="font-size: 0.78rem;">
+                          <i class="bi bi-info-circle me-1"></i> Google Forms & Google Slides
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Rules accordion -->
+            <div class="row mb-5">
+              <div class="col-lg-9 mx-auto">
+                <h5 class="fw-bold mb-3 text-center"><i class="bi bi-clipboard-check text-primary me-2"></i><span data-i18n="program.poster.rulesTitle">Participation Rules</span></h5>
+                <div class="accordion faq__v2">
+                  <div class="custom-accordion accordion" id="rulesAccordion">
+                    <div class="accordion-item shadow-sm">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rule1" data-i18n="program.poster.ruleTopicTitle">Chủ đề Poster</button>
+                      </h3>
+                      <div id="rule1" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body" data-i18n="program.poster.ruleTopicBody">
+                          Mỗi poster cần bám sát một trong các chủ đề chính của hội thảo QMFS 2026: (1) Chuyển đổi số trong Công nghệ Thực phẩm và Quản lý Chất lượng; (2) Xu hướng Chuyển đổi Hệ thống Thực phẩm; (3) Nghiên cứu và Phát triển Sản phẩm; (4) Tiến bộ Công nghệ Sinh học vì một Tương lai Khỏe mạnh hơn; (5) Quản lý chất lượng sản phẩm tự nhiên.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item shadow-sm">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rule2" data-i18n="program.poster.ruleAbstractTitle">Abstract và sơ loại</button>
+                      </h3>
+                      <div id="rule2" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body" data-i18n="program.poster.ruleAbstractBody">
+                          Mỗi nhóm cần nộp abstract từ 300–500 từ theo chủ đề nghiên cứu của nhóm. Sau khi đăng ký, Ban tổ chức sẽ thực hiện sơ loại để chọn các nhóm đủ điều kiện tham dự và cấp mã Poster ID.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item shadow-sm">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rule3" data-i18n="program.poster.rulePosterIdTitle">Poster ID và cách ghi trên poster</button>
+                      </h3>
+                      <div id="rule3" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body" data-i18n="program.poster.rulePosterIdBody">
+                          Sau khi sơ loại, mỗi nhóm sẽ được Ban tổ chức cung cấp mã Poster ID. Tất cả poster phải ghi rõ Poster ID ở vị trí dễ nhìn trên poster để phục vụ cho việc chấm điểm và theo dõi bài thi.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item shadow-sm">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rule4" data-i18n="program.poster.rulePrintTitle">In ấn và định dạng poster</button>
+                      </h3>
+                      <div id="rule4" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body" data-i18n="program.poster.rulePrintBody">
+                          Poster do chính nhóm sinh viên chuẩn bị và tự in ấn theo đúng format, nội dung và tiêu chí do Ban tổ chức quy định. Mỗi poster cần đảm bảo bố cục rõ ràng, dễ đọc và ghi đầy đủ Poster ID.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item shadow-sm">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rule5" data-i18n="program.poster.ruleLangTitle">Ngôn ngữ trình bày</button>
+                      </h3>
+                      <div id="rule5" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body" data-i18n="program.poster.ruleLangBody">
+                          Ngôn ngữ trình bày chính thức là tiếng Việt. Các thành viên có thể bổ sung tiếng Anh nếu cần nhưng bắt buộc poster, nội dung và thuyết trình chính phải làm rõ bằng tiếng Việt.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item shadow-sm">
+                      <h3 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#rule6" data-i18n="program.poster.ruleTravelTitle">Hỗ trợ đi lại</button>
+                      </h3>
+                      <div id="rule6" class="accordion-collapse collapse" data-bs-parent="#rulesAccordion">
+                        <div class="accordion-body" data-i18n="program.poster.ruleTravelBody">
+                          Mỗi nhóm tham dự sẽ được Ban tổ chức hỗ trợ một phần chi phí đi lại theo quy định của Ban tổ chức, nhằm tạo điều kiện thuận lợi cho sinh viên tham gia hội thảo và trình bày poster.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Timeline for students (hidden per request - kept for future use)
+            <div class="row mb-5">
+              <div class="col-lg-7 mx-auto">
+                <h5 class="fw-bold mb-4 text-center"><i class="bi bi-signpost-2 text-primary me-2"></i>Timeline nộp bài</h5>
+                <div class="prog-timeline">
+                  <div class="prog-timeline-item">
+                    <div class="prog-timeline-date">01/08/2026</div>
+                    <p>Công bố "Call for Student Posters" trên website QMFS, fanpage SCLS và các trường đối tác.</p>
+                  </div>
+                  <div class="prog-timeline-item">
+                    <div class="prog-timeline-date">25/08/2026</div>
+                    <p>Hạn nộp tóm tắt (abstract).</p>
+                  </div>
+                  <div class="prog-timeline-item">
+                    <div class="prog-timeline-date">05/09/2026</div>
+                    <p>Thông báo kết quả chấp nhận, phân bổ chủ đề và mã poster (P01 - P48).</p>
+                  </div>
+                  <div class="prog-timeline-item">
+                    <div class="prog-timeline-date">18/09/2026</div>
+                    <p>Hạn nộp file poster PDF và video pitch 60 giây.</p>
+                  </div>
+                  <div class="prog-timeline-item">
+                    <div class="prog-timeline-date">25/09/2026</div>
+                    <p>Hoàn tất in ấn; công bố sơ đồ khu poster và lịch trình chi tiết.</p>
+                  </div>
+                  <div class="prog-timeline-item">
+                    <div class="prog-timeline-date">01/10/2026 (chiều)</div>
+                    <p>Dựng khu poster, treo poster, chạy thử sân khấu Pitch Corner, tổng duyệt.</p>
+                  </div>
+                  <div class="prog-timeline-item">
+                    <div class="prog-timeline-date">02/10/2026</div>
+                    <p>Ngày thi chính.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            -->
+
+            <!-- Day of schedule (hidden per request - kept for future use)
+            <div class="row mb-5">
+              <div class="col-lg-9 mx-auto">
+                <h5 class="fw-bold mb-3 text-center"><i class="bi bi-calendar2-week text-primary me-2"></i>Chương trình ngày thi, 02/10/2026</h5>
+                <p class="text-muted text-center mb-4">Chạy song song với chương trình khoa học chính</p>
+                <div class="prog-day-card">
+                  <div class="prog-session">
+                    <div class="prog-time">07:30 - 08:30</div>
+                    <div class="prog-session-body"><h6>Check-in sinh viên</h6><p>Nhận thẻ, kiểm tra poster, đứng đúng vị trí. Chụp ảnh nhóm tại Photo Wall.</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">08:50 - 10:05</div>
+                    <div class="prog-session-body"><h6>Phiên toàn thể</h6><p>Sinh viên vào hội trường nghe 3 keynote đầu (khu ghế dành riêng).</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">10:05 - 10:30</div>
+                    <div class="prog-session-body"><h6>Poster Coffee Session 1</h6><p>Khai mạc khu poster; sinh viên đứng cạnh poster, thuyết trình nhanh 2 phút cho đại biểu ghé thăm.</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">12:00 - 13:30</div>
+                    <div class="prog-session-body"><h6>Poster Lunch Walk</h6><p>Ban Giám khảo chia 3 tiểu ban, chấm toàn bộ 40-48 poster (5 phút/poster). Kết quả: chọn TOP 10 vào chung kết.</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">13:30 - 15:00</div>
+                    <div class="prog-session-body"><h6>Dự thính các phân ban</h6><p>Sinh viên vào phân ban đúng chủ đề poster của mình. Công bố TOP 10 lúc 14:45.</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">15:00 - 15:30</div>
+                    <div class="prog-session-body"><h6>Chung kết "60-Second Pitch"</h6><p>TOP 10 trình bày 60 giây/người. Đại biểu quét QR bình chọn Audience Choice ngay tại chỗ.</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">15:30 - 16:30</div>
+                    <div class="prog-session-body"><h6>Chấm vòng 2 &amp; vòng doanh nghiệp</h6><p>Ban Giám khảo phỏng vấn sâu TOP 10 tại poster; đại diện doanh nghiệp tài trợ chọn "Industry Pick".</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">17:00 - 17:30</div>
+                    <div class="prog-session-body"><h6>Lễ trao giải</h6><p>Trao giải trước toàn thể đại biểu quốc tế tại hội trường chính. Chụp ảnh lưu niệm.</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">18:00 - 20:00</div>
+                    <div class="prog-session-body"><h6>Gala Dinner</h6><p>TOP 3, giải Audience Choice và giải Industry Pick được mời dự Gala cùng các nhà khoa học quốc tế.</p></div>
+                  </div>
+                  <div class="prog-session">
+                    <div class="prog-time">03/10/2026</div>
+                    <div class="prog-session-body"><h6>Industry Tour</h6><p>10 sinh viên xuất sắc tham gia đoàn tham quan doanh nghiệp và phòng thí nghiệm cùng đại biểu.</p></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            -->
+
+            <div class="row mb-5 align-items-stretch g-4">
+              <div class="col-12">
+                <h5 class="fw-bold mb-0"><i class="bi bi-trophy text-primary me-2"></i><span data-i18n="program.poster.awardsTitle">Cơ cấu giải thưởng</span></h5>
+              </div>
+
+              <div class="col-lg-3 d-flex">
+                <div class="prog-award-card prog-award-card-feature is-top w-100">
+                  <div class="prog-award-icon"><i class="bi bi-trophy-fill"></i></div>
+                  <h5 data-i18n="program.poster.award1Title">Giải Nhất</h5>
+                  <p class="prog-award-value" data-i18n="program.poster.award1Value">01 giải - 5.000.000 đ</p>
+                </div>
+              </div>
+
+              <div class="col-lg-9">
+                <div class="row g-4">
+                  <div class="col-md-4">
+                    <div class="prog-award-card">
+                      <div class="prog-award-icon"><i class="bi bi-award-fill"></i></div>
+                      <h5 data-i18n="program.poster.award2Title">Giải Nhì</h5>
+                      <p class="prog-award-value" data-i18n="program.poster.award2Value">02 giải - 2.500.000 đ</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="prog-award-card">
+                      <div class="prog-award-icon"><i class="bi bi-award-fill"></i></div>
+                      <h5 data-i18n="program.poster.award3Title">Giải Ba</h5>
+                      <p class="prog-award-value" data-i18n="program.poster.award3Value">03 giải - 1.000.000 đ</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-4">
+                    <div class="prog-award-card">
+                      <div class="prog-award-icon"><i class="bi bi-stars"></i></div>
+                      <h5 data-i18n="program.poster.award4Title">Giải Triển vọng</h5>
+                      <p class="prog-award-value" data-i18n="program.poster.award4Value">04 giải - 500.000 đ</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <!-- Judging criteria (hidden per request - kept for future use)
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <h5 class="fw-bold mb-4 text-center"><i class="bi bi-clipboard-data text-primary me-2"></i>Tiêu chí chấm điểm Poster</h5>
+                <div class="prog-day-card">
+                  <div class="prog-criteria-row">
+                    <div class="prog-criteria-points">30đ</div>
+                    <div><h6 class="mb-1">Chất lượng khoa học &amp; tính mới</h6><p>Câu hỏi nghiên cứu rõ ràng, có đóng góp mới, đặt đúng trong bối cảnh tài liệu hiện có.</p></div>
+                  </div>
+                  <div class="prog-criteria-row">
+                    <div class="prog-criteria-points">20đ</div>
+                    <div><h6 class="mb-1">Phương pháp &amp; độ tin cậy dữ liệu</h6><p>Thiết kế thí nghiệm hợp lý, có lặp lại, xử lý thống kê đúng, kết luận tương xứng dữ liệu.</p></div>
+                  </div>
+                  <div class="prog-criteria-row">
+                    <div class="prog-criteria-points">20đ</div>
+                    <div><h6 class="mb-1">Tính ứng dụng &amp; tác động thực tiễn</h6><p>Khả năng chuyển giao cho doanh nghiệp, giải quyết vấn đề thực tế của ngành hoặc địa phương.</p></div>
+                  </div>
+                  <div class="prog-criteria-row">
+                    <div class="prog-criteria-points">15đ</div>
+                    <div><h6 class="mb-1">Thiết kế &amp; trực quan poster</h6><p>Bố cục, đồ họa, khả năng đọc từ xa, sự súc tích, tuân thủ template QMFS.</p></div>
+                  </div>
+                  <div class="prog-criteria-row">
+                    <div class="prog-criteria-points">15đ</div>
+                    <div><h6 class="mb-1">Thuyết trình &amp; phản biện</h6><p>Pitch 2 phút và trả lời câu hỏi; điểm cộng khi trình bày bằng tiếng Anh.</p></div>
+                  </div>
+                  <div class="prog-criteria-row">
+                    <div class="prog-criteria-points">100đ</div>
+                    <div><h6 class="mb-0">Tổng điểm</h6></div>
+                  </div>
+                </div>
+                <p class="prog-note text-center mt-3">
+                  Ban Giám khảo gồm 09 người, chia 03 tiểu ban. Mỗi tiểu ban gồm 01 nhà khoa học, 01 chuyên gia quốc tế và
+                  01 đại diện doanh nghiệp. Giải Audience Choice được chấm độc lập bằng bình chọn qua QR của đại biểu.
+                </p>
+              </div>
+            </div>
+            -->
+          </div>
+        </section>
+        <!-- End Student Poster Program -->
+
+        <!-- ======= CTA ======= -->
+        <section class="section pt-0">
+          <div class="container">
+            <div class="prog-cta">
+              <h3 class="fw-bold mb-2 text-white" data-i18n="program.cta.title">Ready to join QMFS 2026?</h3>
+              <p class="mb-4" style="color: rgba(255, 255, 255, 0.85); max-width: 560px; margin-left: auto; margin-right: auto" data-i18n="program.cta.subtitle">
+                Submit your research abstract or register to attend the conference today.
+              </p>
+              <a href="index.html#contact" class="btn btn-light px-4 py-2" data-i18n="program.cta.button">Register to Attend</a>
+            </div>
+          </div>
+        </section>
+        <!-- End CTA -->
+
+        <!-- ======= Footer =======-->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-content">
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.aboutTitle">About QMFS 2026</h4>
+                <p style="color: rgba(255, 255, 255, 0.8)" data-i18n="footer.about">
+                  The 8th International Conference on Quality Management and Food Safety - A meeting place
+                  for leading scientists and experts in the food field.
+                </p>
+              </div>
+
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                <ul class="footer-links">
+                  <li><a href="index.html#home" data-i18n="footer.linkHome">Home</a></li>
+                  <li><a href="recap.html" data-i18n="footer.linkRecap">QMFS 2026 Recap</a></li>
+                  <li><a href="index.html#about" data-i18n="footer.linkAbout">About</a></li>
+                  <li><a href="index.html#topics" data-i18n="footer.linkTopics">Topics</a></li>
+                  <li><a href="program.html" data-i18n="footer.linkProgram">Conference Program</a></li>
+                  <li><a href="timeline.html" data-i18n="footer.linkHistory">Conference History</a></li>
+                  <li><a href="index.html#contact" data-i18n="footer.linkContact">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.contact">Contact</h4>
+                <p style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-geo-alt-fill me-2"></i>
+                  C4 Building, Hanoi University of Science and Technology, No. 1, Dai Co Viet Street, Hanoi, Vietnam
+                </p>
+                <p style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-envelope-fill me-2"></i>
+                  <a>qmfs@hust.edu.vn</a>
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-telephone-fill me-2"></i>
+                  <a href="tel:+842438692468" style="color: rgba(255, 255, 255, 0.8)">+84 (24) 3869 2468</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              <p>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                QMFS 2026. All rights reserved. | Code by Phuc Le Tuan
+              </p>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer-->
+      </main>
+    </div>
+
+    <!-- ======= Language Toggle =======-->
+    <button id="langToggle" class="lang-toggle-btn" type="button" title="Switch language" aria-label="Switch language">
+      <i class="bi bi-translate"></i>
+      <span id="langText">VI</span>
+    </button>
+    <!-- End Language Toggle-->
+
+    <!-- ======= Javascripts =======-->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <!-- End JavaScripts-->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </body>
+</html>

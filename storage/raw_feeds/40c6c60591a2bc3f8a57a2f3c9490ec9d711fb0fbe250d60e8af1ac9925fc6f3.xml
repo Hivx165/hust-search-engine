@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Industrial partners &#8211; Data Science Laboratory</title>
+	<atom:link href="http://ds.soict.hust.edu.vn/?feed=rss2&#038;cat=8" rel="self" type="application/rss+xml" />
+	<link>http://ds.soict.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Sep 2026 08:08:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.35</generator>
+	<item>
+		<title>Grooo International</title>
+		<link>http://ds.soict.hust.edu.vn/?p=405</link>
+		<pubDate>Sun, 26 Feb 2017 23:38:24 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Industrial partners]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=405</guid>
+		<description><![CDATA[DSLab and Grooo International have a joint MOU on the followings: &#8211; Joint projects which use technologies from Machine Learning, Artificial Intelligence &#8211; Training of <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=405" title="Grooo International">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>VNPT Media will visit us on Nov. 16 to discuss about future collaboration.</title>
+		<link>http://ds.soict.hust.edu.vn/?p=351</link>
+		<pubDate>Sat, 12 Nov 2016 00:43:38 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Industrial partners]]></category>
+		<category><![CDATA[Opportunities]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=351</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>AOARD/AFOSR will visit us on November 10.</title>
+		<link>http://ds.soict.hust.edu.vn/?p=339</link>
+		<pubDate>Tue, 25 Oct 2016 23:58:03 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Industrial partners]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=339</guid>
+		<description><![CDATA[A PM from AOARD/AFOSR will visit us on November 10 to discuss the current project, and then open the next one.]]></description>
+		</item>
+		<item>
+		<title>VC Corporation</title>
+		<link>http://ds.soict.hust.edu.vn/?p=244</link>
+		<pubDate>Tue, 16 Feb 2016 21:32:44 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Industrial partners]]></category>
+		<category><![CDATA[Sponsors]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=244</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>AOARD/AFOSR will visit us on November 9</title>
+		<link>http://ds.soict.hust.edu.vn/?p=203</link>
+		<pubDate>Wed, 23 Sep 2015 00:39:19 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Industrial partners]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=203</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>Toshiba will visit us to discuss future collaboration on July 22</title>
+		<link>http://ds.soict.hust.edu.vn/?p=181</link>
+		<pubDate>Fri, 17 Jul 2015 09:21:27 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Industrial partners]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=181</guid>
+		<description><![CDATA[]]></description>
+		</item>
+	</channel>
+</rss>

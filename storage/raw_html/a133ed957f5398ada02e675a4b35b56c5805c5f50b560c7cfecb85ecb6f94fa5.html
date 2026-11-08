@@ -1,0 +1,466 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Bản đồ Đào tạo - Đại học Bách khoa Hà Nội</title>
+    <link rel="shortcut icon" href="https://hust.edu.vn/uploads/sys/android-icon-36x36.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://hust.edu.vn/themes/hust/css/style.css?t=1708913709">
+    <link rel="stylesheet" href="https://hust.edu.vn/themes/hust/css/hust.css?t=1708913709">
+    <link rel="stylesheet" href="https://hust.edu.vn/themes/hust/css/custom.css?t=1708913709">
+    <link rel="stylesheet" href="https://hust.edu.vn/themes/hust/css/bootstrap.min.css?">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zfont@latest/dist/zfont.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <style>
+        .tabs {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 2px solid #3333;
+            padding-top: 20px;
+        }
+    
+        .tab {
+            cursor: pointer;
+            padding: 10px 30px;
+            margin: 5px;
+            position: relative;
+            font-family: Inter, sans-serif;
+            font-size: 17px;
+            font-weight: 700;
+            line-height: 20.57px;
+            text-align: center;
+            width: 33%;
+        }
+    
+        .tab:not(:first-child) {
+            margin-left: 20px;
+        }
+    
+        .tab-indicator {
+            height: 3px;
+            width: 0;
+            background-color: rgba(192, 33, 53, 1);
+            position: absolute;
+            bottom: 0;
+            transition: width 0.3s ease-in-out;
+        }
+    
+        /* Style cho tab đang được chọn */
+        .active-tab {
+            color: rgba(192, 33, 53, 1);
+        }
+    
+        .banner-2 {
+            width: 100%;
+            min-height: 600px;
+            background-image: url("./banner.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+        }
+    
+        .title {
+            font-family: Inter;
+            font-size: 17px;
+            font-weight: 400;
+            line-height: 20.57px;
+            text-align: left;
+            padding: 10px 80px;
+    
+        }
+    
+        .content canvas {
+            -moz-user-select: none;
+            -webkit-user-select: none;
+            -ms-user-select: none;
+        }
+    
+        .bubble {
+            width: 1200px;
+            height: 800px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            padding-top: 30px;
+        }
+    
+        .container h2 {
+            font-family: Inter, sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 58.09px;
+            color: #C02135;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    
+        .text-upper {
+            text-transform: uppercase;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="section-header home-header">
+            <div class="wraper">
+                <div id="header">
+                    <div class="logo">
+                        <div class="text-site">
+                            <a title="Đại học Bách khoa Hà Nội" href="https://hust.edu.vn/vi/">
+                                <img src="https://hust.edu.vn/uploads/sys/logo-dhbk-1-02_130_191.png"
+                                    alt="Đại học Bách khoa Hà Nội">
+                            </a>
+                            <ul class="text-sologan">
+                                <li class="bo">
+                                    <a href="#" style="font-size: 24px;">Hệ Thống Bản Đồ Đào Tạo</a>
+                                </li>
+                                <li class="cuc">
+                                    <a href="#" style="font-size: 14px;">Training Map System</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header home-header">
+            <div class="wraper">
+                <div id="header">
+                    <nav style="padding-top: 9px;">
+                        <ul>
+                            <li><a href="index.html">Bản đồ tổng thế</a></li>
+                            <li><a href="phan-tich-chuyen-mon.html">Phân tích chuyên môn</a></li>
+                            <li><a href="phan-tich-tuong-quan.html">Phân tích tương quan</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- 
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li>
+                            <a href="#">Chương trình đào tạo</a>
+                            <ul class="submenu">
+                                <li><a href="#">Chương trình A</a></li>
+                                <li><a href="#">Chương trình B</a></li>
+                                <li><a href="#">Chương trình C</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">So sánh</a>
+                            <ul class="submenu">
+                                <li><a href="index.html">Tổng thể</a></li>
+                                
+                                <li><a href="perspective.html">Theo từng góc nhìn</a></li>
+                                <li><a href="specialize.html">Chuyên môn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div> -->
+    </header>
+    <!-- <div class="banner-2"></div> -->
+    <section class="content">
+        <div class="container">
+            <div class="title">
+                <h2>Phân tích chuyên môn</h2>
+            </div>
+            <div class="tabs">
+                <div class="tab text-upper" onclick="selectTab(event, 'tuyenSinh')">Tuyển sinh</div>
+                <div class="tab text-upper" onclick="selectTab(event, 'daoTao')">Đào tạo</div>
+                <div class="tab text-upper" onclick="selectTab(event, 'ngheNghiep')">Nghề nghiệp</div>
+                <div class="tab-indicator"></div>
+            </div>
+        </div>
+        <div class="bubble">
+            <canvas id="myChart"></canvas>
+
+        </div>
+        <div class="container">
+            <div class="title"></div>
+        </div>
+    </section>
+
+    <nav class="section-footer-bottom footerNav2">
+        <div class="wraper">
+            <div class="container">
+                <div class="col-md-5 col-sm-5 col-xs-24" style="padding-left: 0px"><img alt="Logo HUST 02" height="79"
+                        src="https://hust.edu.vn/uploads/sys/logo-hust-02.png" width="200">
+                </div>
+                <div class="col-md-19 col-sm-19 col-xs-24 css-banquyen">
+                    <div><span class="copy-title">Hệ Thống Bản Đồ Đào Tạo</span></div>
+                    <div class="copy-content">Bản quyền thuộc về Đại học Bách khoa Hà Nội<br>
+                        Thông tin liên hệ: Ban Tuyển sinh - Hướng nghiệp<br>
+                        Tel: 0243 868 3408 | Email: tuyensinh@hust.edu.vn
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+</body>
+<script>
+    function selectTab(event, tabId) {
+        // Xóa tất cả các lớp 'active-tab' khỏi các tab
+        var tabs = document.querySelectorAll('.tab');
+        tabs.forEach(function (tab) {
+            tab.classList.remove('active-tab');
+        });
+
+        // Thêm lớp 'active-tab' vào tab hiện tại
+        var currentTab = event.currentTarget;
+        currentTab.classList.add('active-tab');
+
+        // Cập nhật thanh chỉ báo tab
+        var tabIndicator = document.querySelector('.tab-indicator');
+        tabIndicator.style.width = currentTab.offsetWidth + 'px';
+        tabIndicator.style.left = currentTab.offsetLeft + 'px';
+
+        
+        // Initialize Bubble Chart
+        let canvas_id = 'myChart'
+        let chartStatus = Chart.getChart(canvas_id); // <canvas> id
+        if (chartStatus != undefined) {
+            chartStatus.destroy();
+        }
+        var ctx = document.getElementById(canvas_id).getContext('2d');
+        if (tabId === 'tuyenSinh') generate_chart(ctx, chartdata_admission)
+        if (tabId === 'daoTao') generate_chart(ctx, chartdata_training)
+        if (tabId === 'ngheNghiep') generate_chart(ctx, chartdata_target)
+    }
+
+    // Kích hoạt tab mặc định khi trang tải xong
+    window.onload = function () {
+        // Thay 'tuyenSinh' bằng ID của tab mặc định bạn muốn kích hoạt
+        selectTab({ currentTarget: document.querySelector('.tab') }, 'tuyenSinh');
+    }
+
+    ROOTS_DATA = [
+        { id: 1, name: 'Trường Cơ khí', color: 'rgba(62, 68, 157, 1)' },
+        { id: 2, name: 'Trường Điện – Điện tử', color: 'rgba(236, 105, 44, 1)' },
+        { id: 3, name: 'Trường Công nghệ Thông tin và Truyền thông', color: 'rgba(0, 151, 196, 1)' },
+        { id: 4, name: 'Trường Hóa và Khoa học sự sống', color: 'rgba(53, 194, 177, 1)' },
+        { id: 5, name: 'Trường Vật liệu', color: 'rgba(196, 199, 82, 1)' },
+        { id: 6, name: 'Viện Kinh tế và Quản lý', color: 'rgba(255, 202, 113, 1)' },
+        { id: 7, name: 'Khoa Toán - Tin', color: 'rgba(255, 157, 138, 1)' },
+        { id: 8, name: 'Khoa Khoa học và Công nghệ giáo dục', color: 'rgba(224, 84, 96, 1)' },
+        { id: 9, name: 'Khoa Ngoại ngữ', color: 'rgba(200, 120, 204, 1)' },
+        { id: 10, name: 'Khoa Vật lý Kỹ thuật', color: 'rgba(63, 115, 207, 1)' }
+    ]
+
+    PROGRAMS_DATA = [
+        { id: '1', code: 'ME1', name: 'Kỹ thuật Cơ điện tử', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '300', admission_score: '6.129802587', training_score: '4.78', target_score: '7.102634309' },
+        { id: '2', code: 'ME2', name: 'Kỹ thuật Cơ khí', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '560', admission_score: '4.781920249', training_score: '3.71', target_score: '6.29667353' },
+        { id: '3', code: 'HE1', name: 'Kỹ thuật Nhiệt', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '250', admission_score: '4.37036163', training_score: '3.65', target_score: '6.139487324' },
+        { id: '4', code: 'TE1', name: 'Kỹ thuật Ô tô', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '200', admission_score: '6.117773034', training_score: '4.97', target_score: '7.161957792' },
+        { id: '5', code: 'TE2', name: 'Kỹ thuật Cơ khí động lực', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '120', admission_score: '4.788040386', training_score: '3.75', target_score: '6.312046909' },
+        { id: '6', code: 'TE3', name: 'Kỹ thuật Hàng không', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '80', admission_score: '5.324588443', training_score: '4.03', target_score: '6.584229595' },
+        { id: '7', code: 'ME-E1', name: 'Kỹ thuật Cơ điện tử (CT Tiên tiến)', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '120', admission_score: '4.836898008', training_score: '4.75', target_score: '6.661666116' },
+        { id: '8', code: 'ME-GU', name: 'Cơ khí-Chế tạo máy - ĐH Griffith (Úc)', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '40', admission_score: '4.42446273', training_score: '5.82', target_score: '6.880854357' },
+        { id: '9', code: 'TE-E2', name: 'Kỹ thuật Ô tô (CT tiên tiến)', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '80', admission_score: '4.850651592', training_score: '4.93', target_score: '6.726250644' },
+        { id: '10', code: 'ME-LUH', name: 'Cơ điện tử - ĐH Leibniz Hannover (Đức)', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '50', admission_score: '5.202436636', training_score: '5.75', target_score: '7.116845659' },
+        { id: '11', code: 'ME-NUT', name: 'Cơ điện tử - ĐH Nagaoka (Nhật Bản)', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '100', admission_score: '4.622428545', training_score: '5.54', target_score: '6.853509629' },
+        { id: '12', code: 'TE-EP', name: 'Cơ khí Hàng không (CT Việt-Pháp PFIEV)', root_id: '1', root_name: 'Trường Cơ khí', no_quotas: '40', admission_score: '4.614442922', training_score: '5.03', target_score: '6.680847754' },
+        { id: '13', code: 'EE1', name: 'Kỹ thuật điện', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '240', admission_score: '5.769373716', training_score: '4.83', target_score: '7.236925973' },
+        { id: '14', code: 'EE2', name: 'Kỹ thuật Điều khiển – Tự động hóa', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '500', admission_score: '6.395896879', training_score: '5.19', target_score: '7.565767028' },
+        { id: '15', code: 'ET1', name: 'Kỹ thuật Điện tử - Viễn thông', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '480', admission_score: '6.304129904', training_score: '4.96', target_score: '7.458511369' },
+        { id: '16', code: 'ET2', name: 'Kỹ thuật Y sinh', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '100', admission_score: '5.667178604', training_score: '1.75', target_score: '6.176194269' },
+        { id: '17', code: 'EE-E18', name: 'Hệ thống điện và năng lượng tái tạo', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '50', admission_score: '4.725799366', training_score: '2.75', target_score: '6.195734523' },
+        { id: '18', code: 'EE-E8', name: 'Kỹ thuật Điều khiển – Tự động hóa (CT Tiên tiến)', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '120', admission_score: '5.694266026', training_score: '5.1', target_score: '7.301890077' },
+        { id: '19', code: 'EE-EP', name: 'Tin học công nghiệp và Tự động hóa (CT PFIEV)', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '40', admission_score: '4.93353727', training_score: '6.24', target_score: '7.428313824' },
+        { id: '20', code: 'ET-E4', name: 'Kỹ thuật Điện tử - Viễn thông (CT Tiên tiến)', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '60', admission_score: '5.516288562', training_score: '5.02', target_score: '7.215897589' },
+        { id: '21', code: 'ET-E5', name: 'Kỹ thuật Y sinh (CT Tiên tiến)', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '40', admission_score: '4.727201895', training_score: '5.01', target_score: '6.949535366' },
+        { id: '22', code: 'ET-E9', name: 'Hệ thống nhúng thông minh và IoT', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '60', admission_score: '5.904267713', training_score: '6.33', target_score: '7.781890639' },
+        { id: '23', code: 'ET-E16', name: 'Truyền thông số và Kỹ thuật Đa phương tiện', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '60', admission_score: '5.57770194', training_score: '2.75', target_score: '6.479702048' },
+        { id: '24', code: 'ET-LUH', name: 'Điện tử - Viễn thông – ĐH Leibniz Hannover', root_id: '2', root_name: 'Trường Điện – Điện tử', no_quotas: '40', admission_score: '4.927398622', training_score: '5.84', target_score: '7.292934275' },
+        { id: '25', code: 'IT1', name: 'Khoa học máy tính', root_id: '3', root_name: 'Trường Công nghệ Thông tin và Truyền thông', no_quotas: '300', admission_score: '7.586745062', training_score: '5.43', target_score: '8.878555413' },
+        { id: '26', code: 'IT2', name: 'Kỹ thuật máy tính', root_id: '3', root_name: 'Trường Công nghệ Thông tin và Truyền thông', no_quotas: '200', admission_score: '6.784921728', training_score: '4.09', target_score: '8.164614302' },
+        { id: '27', code: 'IT-E6', name: 'Công nghệ thông tin Việt - Nhật', root_id: '3', root_name: 'Trường Công nghệ Thông tin và Truyền thông', no_quotas: '240', admission_score: '6.096631646', training_score: '6.04', target_score: '8.585184274' },
+        { id: '28', code: 'IT-E7', name: 'Công nghệ thông tin Global ICT', root_id: '3', root_name: 'Trường Công nghệ Thông tin và Truyền thông', no_quotas: '100', admission_score: '7.265075693', training_score: '6.17', target_score: '9.017998956' },
+        { id: '29', code: 'IT-EP', name: 'Công nghệ thông tin Việt - Pháp', root_id: '3', root_name: 'Trường Công nghệ Thông tin và Truyền thông', no_quotas: '40', admission_score: '5.940214245', training_score: '2.75', target_score: '7.436378474' },
+        { id: '30', code: 'IT-E10', name: 'Khoa học dữ liệu và Trí tuệ nhân tạo', root_id: '3', root_name: 'Trường Công nghệ Thông tin và Truyền thông', no_quotas: '100', admission_score: '7.474189717', training_score: '6.45', target_score: '9.181036964' },
+        { id: '31', code: 'IT-E15', name: 'An toàn không gian số - Cyber Security', root_id: '3', root_name: 'Trường Công nghệ Thông tin và Truyền thông', no_quotas: '40', admission_score: '6.822916215', training_score: '2.75', target_score: '7.730612464' },
+        { id: '32', code: 'BF2', name: 'Kỹ thuật Thực phẩm', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '360', admission_score: '5.336607102', training_score: '6.51', target_score: '7.284952106' },
+        { id: '33', code: 'BF1', name: 'Kỹ thuật Sinh học', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '160', admission_score: '5.720595514', training_score: '6.37', target_score: '7.366281576' },
+        { id: '34', code: 'CH1', name: 'Kỹ thuật Hóa học', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '680', admission_score: '4.759601151', training_score: '4.82', target_score: '6.529283455' },
+        { id: '35', code: 'CH2', name: 'Hóa học', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '160', admission_score: '4.634238108', training_score: '3.82', target_score: '6.154162441' },
+        { id: '36', code: 'EV1', name: 'Kỹ thuật môi trường', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '160', admission_score: '4.275067123', training_score: '4.79', target_score: '6.357772113' },
+        { id: '37', code: 'EV2', name: 'Quản lý Tài nguyên và Môi trường', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '120', admission_score: '4.364948069', training_score: '1.75', target_score: '5.374399095' },
+        { id: '38', code: 'CH-E11', name: 'Kỹ thuật Hóa dược (CT Tiên tiến)', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '80', admission_score: '5.200617806', training_score: '5.37', target_score: '6.85962234' },
+        { id: '39', code: 'BF-E12', name: 'Kỹ thuật Thực phẩm (CT Tiên tiến)', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '40', admission_score: '4.98008474', training_score: '5.2', target_score: '6.729444652' },
+        { id: '40', code: 'BF-E19', name: 'Kỹ thuật Sinh học (CT Tiên tiến)', root_id: '4', root_name: 'Trường Hóa và Khoa học sự sống', no_quotas: '40', admission_score: '4.915477508', training_score: '0', target_score: '4.974575574' },
+        { id: '41', code: 'MS1', name: 'Kỹ thuật vật liệu', root_id: '5', root_name: 'Trường Vật liệu', no_quotas: '280', admission_score: '4.366522696', training_score: '4.87', target_score: '6.384348712' },
+        { id: '42', code: 'MS2', name: 'Kỹ thuật Vi điện tử và Công nghệ nano', root_id: '5', root_name: 'Trường Vật liệu', no_quotas: '140', admission_score: '5.951962882', training_score: '4.75', target_score: '6.872828774' },
+        { id: '43', code: 'MS3', name: 'Công nghệ vật liệu polyme và compozit', root_id: '5', root_name: 'Trường Vật liệu', no_quotas: '80', admission_score: '4.627069382', training_score: '4.75', target_score: '6.431197607' },
+        { id: '44', code: 'MS5', name: 'Kỹ thuật in', root_id: '5', root_name: 'Trường Vật liệu', no_quotas: '60', admission_score: '4.404950221', training_score: '4.82', target_score: '6.38049122' },
+        { id: '45', code: 'TX1', name: 'Công nghệ Dệt May', root_id: '5', root_name: 'Trường Vật liệu', no_quotas: '240', admission_score: '4.55754', training_score: '6.5', target_score: '6.99135448' },
+        { id: '46', code: 'MS-E3', name: 'Khoa học và Kỹ thuật vật liệu (CT Tiên Tiến)', root_id: '5', root_name: 'Trường Vật liệu', no_quotas: '50', admission_score: '4.051334149', training_score: '4.8', target_score: '6.255952529' },
+        { id: '47', code: 'EM1', name: 'Quản lý Năng lượng', root_id: '6', root_name: 'Viện Kinh tế và Quản lý', no_quotas: '60', admission_score: '5.032881754', training_score: '3.9', target_score: '6.316732461' },
+        { id: '48', code: 'EM2', name: 'Quản lý Công nghiệp', root_id: '6', root_name: 'Viện Kinh tế và Quản lý', no_quotas: '80', admission_score: '6.973074542', training_score: '3.89', target_score: '6.960130057' },
+        { id: '49', code: 'EM3', name: 'Quản trị kinh doanh', root_id: '6', root_name: 'Viện Kinh tế và Quản lý', no_quotas: '120', admission_score: '6.724901213', training_score: '3.84', target_score: '6.860738948' },
+        { id: '50', code: 'EM4', name: 'Kế toán', root_id: '6', root_name: 'Viện Kinh tế và Quản lý', no_quotas: '80', admission_score: '5.899834483', training_score: '3.9', target_score: '6.605716705' },
+        { id: '51', code: 'EM5', name: 'Tài chính – Ngân hàng', root_id: '6', root_name: 'Viện Kinh tế và Quản lý', no_quotas: '80', admission_score: '6.667409733', training_score: '3.86', target_score: '6.848241788' },
+        { id: '52', code: 'EM-E13', name: 'Phân tích kinh doanh', root_id: '6', root_name: 'Viện Kinh tế và Quản lý', no_quotas: '120', admission_score: '5.677945871', training_score: '5.42', target_score: '7.038420501' },
+        { id: '53', code: 'EM-E14', name: 'Logistics và Quản lý chuỗi cung ứng', root_id: '6', root_name: 'Viện Kinh tế và Quản lý', no_quotas: '120', admission_score: '5.983528814', training_score: '3.75', target_score: '6.583614815' },
+        { id: '54', code: 'TROY-BA', name: 'Quản trị Kinh doanh - ĐH Troy (Hoa Kỳ)', root_id: '6', root_name: 'Viện Kinh tế và Quản lý', no_quotas: '60', admission_score: '4.732063494', training_score: '0', target_score: '4.916459708' },
+        { id: '55', code: 'MI1', name: 'Toán - Tin', root_id: '7', root_name: 'Khoa Toán - Tin', no_quotas: '160', admission_score: '6.157740742', training_score: '3.96', target_score: '7.246407144' },
+        { id: '56', code: 'MI2', name: 'Hệ thống thông tin quản lý', root_id: '7', root_name: 'Khoa Toán - Tin', no_quotas: '80', admission_score: '7.001383145', training_score: '3.99', target_score: '7.537621279' },
+        { id: '57', code: 'TROY-IT', name: 'Khoa học Máy tính - ĐH Troy (Hoa Kỳ)', root_id: '7', root_name: 'Khoa Toán - Tin', no_quotas: '120', admission_score: '5.23249097', training_score: '0', target_score: '5.617990554' },
+        { id: '58', code: 'ED2', name: 'Công nghệ Giáo dục', root_id: '8', root_name: 'Khoa Khoa học và Công nghệ giáo dục', no_quotas: '120', admission_score: '5.180883992', training_score: '4.27', target_score: '6.503707648' },
+        // { id: '59', code: 'ED3', name: 'Quản lý Giáo dục', root_id: '8', root_name: 'Khoa Khoa học và Công nghệ giáo dục', no_quotas: '60', admission_score: '0', training_score: '0', target_score: '0' },
+        { id: '60', code: 'FL1', name: 'Tiếng Anh KHKT và công nghệ', root_id: '9', root_name: 'Khoa Ngoại ngữ', no_quotas: '210', admission_score: '5.966605354', training_score: '6', target_score: '7.367897486' },
+        { id: '61', code: 'FL2', name: 'Tiếng Anh chuyên nghiệp quốc tế', root_id: '9', root_name: 'Khoa Ngoại ngữ', no_quotas: '90', admission_score: '5.720696213', training_score: '6.49', target_score: '7.449261106' },
+        { id: '62', code: 'PH1', name: 'Vật lý kỹ thuật', root_id: '10', root_name: 'Khoa Vật lý Kỹ thuật', no_quotas: '200', admission_score: '4.499331714', training_score: '4.84', target_score: '6.310936189' },
+        { id: '63', code: 'PH2', name: 'Kỹ thuật Hạt nhân', root_id: '10', root_name: 'Khoa Vật lý Kỹ thuật', no_quotas: '40', admission_score: '4.361192319', training_score: '4.74', target_score: '6.23155639' },
+        { id: '64', code: 'PH3', name: 'Vật lý Y khoa', root_id: '10', root_name: 'Khoa Vật lý Kỹ thuật', no_quotas: '60', admission_score: '4.895083854', training_score: '1.75', target_score: '5.412853569' }
+    ]
+
+    // Custom plugin to draw text inside bubbles
+    Chart.register({
+        id: 'custombubble',
+        afterDatasetsDraw: function (chart) {
+            var ctx = chart.ctx;
+
+            chart.data.datasets.forEach(function (dataset, datasetIndex) {
+                var meta = chart.getDatasetMeta(datasetIndex);
+                if (!meta.hidden) {
+                    meta.data.forEach(function (element, index) {
+                        // Draw the text inside each bubble
+                        var data = dataset.data[index];
+                        var fontSize = 11;
+                        var fontStyle = 'normal';
+                        var fontFamily = 'Arial';
+                        ctx.font = Chart.helpers.fontString(fontSize, fontStyle, fontFamily);
+                        ctx.fillStyle = 'white';
+                        ctx.textAlign = 'center';
+                        ctx.textBaseline = 'middle';
+                        ctx.fillText(data.letter, element.x, element.y);
+                    });
+                }
+            });
+        }
+    });
+
+    // Sample data for Bubble Chart
+    var xaxis_labels = [0]
+    var datasets_admission = []
+    var datasets_training = []
+    var datasets_target = []
+    ROOTS_DATA.forEach(_r => {
+        data_admission = []
+        data_training = []
+        data_target = []
+        rad = 24
+
+        PROGRAMS_DATA.forEach(_prog => {
+            if (_prog.root_id == _r.id) {
+                data_admission.push({
+                    x: _r.name,
+                    y: +(_prog.admission_score),
+                    r: rad,
+                    name: _prog.name,
+                    letter: _prog.code
+                })
+
+                data_training.push({
+                    x: _r.name,
+                    y: +(_prog.training_score),
+                    r: rad,
+                    name: _prog.name,
+                    letter: _prog.code
+                })
+
+                data_target.push({
+                    x: _r.name,
+                    y: +(_prog.target_score),
+                    r: rad,
+                    name: _prog.name,
+                    letter: _prog.code
+                })
+            }
+        })
+
+        datasets_admission.push({
+            label: _r.name,
+            data: data_admission,
+            backgroundColor: _r.color
+        })
+
+        datasets_training.push({
+            label: _r.name,
+            data: data_training,
+            backgroundColor: _r.color
+        })
+
+        datasets_target.push({
+            label: _r.name,
+            data: data_target,
+            backgroundColor: _r.color
+        })
+
+        xaxis_labels.push(_r.name)
+    })
+
+    var chartdata_admission = {
+        datasets: datasets_admission
+    };
+    var chartdata_training = {
+        datasets: datasets_training
+    };
+    var chartdata_target = {
+        datasets: datasets_target
+    };
+
+    function generate_chart(ctx, data) {
+         var myChart = new Chart(ctx, {
+            type: 'bubble',
+            data: data,
+            options: {
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        callbacks: {
+                            label: function (context) {
+                                var label = context.dataset.data[context.dataIndex].name || '';
+                                var score = Math.round(context.dataset.data[context.dataIndex].y * 100) / 100
+                                label += ' (' + context.dataset.data[context.dataIndex].letter + '): ' + score
+                                return label;
+                            }
+                        }
+                    }
+                },
+                scales: {
+                    x: {
+                        type: 'category',
+                        labels: xaxis_labels
+                    },
+                    y: {
+                        max: 10,
+                        ticks: {
+                            crossAlign: 'far',
+                            autoSkipPadding: 130
+                        }
+                    }
+                }
+            }
+        });
+    }
+</script>
+
+</html>

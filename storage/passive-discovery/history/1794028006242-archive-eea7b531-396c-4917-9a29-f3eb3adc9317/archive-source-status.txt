@@ -1,0 +1,7 @@
+2026-11-07T05:06:47.428264Z wayback-page-1 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false HTTP 429
+2026-11-07T05:06:47.467695Z wayback hosts=0 complete=false next_check_at=2026-11-07T05:36:47.431Z
+2026-11-07T05:06:48.654687500Z commoncrawl-catalog https://index.commoncrawl.org/collinfo.json HTTP 200
+2026-11-07T05:06:58.290211Z commoncrawl-metadata https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=*.hust.edu.vn%2F*&matchType=domain&output=json&fl=url&collapse=urlkey&pageSize=1&showNumPages=true HTTP 200
+2026-11-07T05:06:58.303372700Z commoncrawl hosts=0 complete=true next_check_at=2026-11-08T05:06:58.294Z
+2026-11-07T05:06:58.303372700Z complete=false concrete_hosts=0
+ERROR wayback: RequestFailure: HTTP 429

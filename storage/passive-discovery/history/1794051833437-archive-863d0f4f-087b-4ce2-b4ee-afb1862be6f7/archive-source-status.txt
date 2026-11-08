@@ -1,0 +1,9 @@
+2026-11-07T11:44:12.159380400Z wayback-page-1 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false&resumeKey=eJwry9NJTSnVySgtLtHUTywuTi0p1i-uBOJS3ezM1DzdvPxM3aTEEn0jAyOTeANL_ZKkkhTdlPwSXWOQiF5WQboCiGFgaWRgaGpsYGoGAHC1GQg HTTP 200
+2026-11-07T11:44:24.667822100Z wayback-page-2 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false&resumeKey=eJwdjcsKgzAQRX-lq0BBmjEYaRahnyKxTnUgD0kmSv--sbvD4R7uETtcarfVwne5cfByT5k9svRppSjfpcjgKD4avGY7KtBizuksmGmxiTfMwru4VrdiEwdNRxSBIn0IM393tC0UbHttzNgPahwAQLQsXPPrdjpdni74y5sCBWDAKNU_NfwAAyc3LA HTTP 200
+2026-11-07T11:44:36.752237500Z wayback-page-3 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false&resumeKey=eJwry9NJTSnVySgtLtHUz8xLSa3QK8gosC-wzTcvyygwycpTK05Nzs9LsU0uys_Lyk8qVjAyMDIxMDewMDIyMTOyAADqeRU_ HTTP 200
+2026-11-07T11:44:36.818633400Z wayback hosts=1 complete=false next_check_at=2026-11-07T12:43:53.438Z
+2026-11-07T11:44:37.760590500Z commoncrawl-catalog https://index.commoncrawl.org/collinfo.json HTTP 200
+2026-11-07T11:44:47.807152800Z commoncrawl-page-1 https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=hust.edu.vn%2F&matchType=domain&output=json&fl=url&collapse=urlkey&pageSize=1&page=1 HTTP 200
+2026-11-07T11:44:47.851421200Z commoncrawl hosts=57 complete=true next_check_at=2026-11-08T11:44:47.844Z
+2026-11-07T11:44:47.851421200Z complete=false concrete_hosts=58
+ERROR wayback: page budget 3 reached; cursor saved for next run

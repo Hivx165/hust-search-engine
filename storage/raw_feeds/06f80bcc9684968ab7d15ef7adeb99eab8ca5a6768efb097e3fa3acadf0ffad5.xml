@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Cơ hội hợp tác - Sự kiện sắp diễn ra</title>
+        <link>https://iet.hust.edu.vn/vi/news/su-kien-sap-dien-ra/</link>
+        <atom:link href="https://iet.hust.edu.vn/vi/news/rss/su-kien-sap-dien-ra/" rel="self" />
+                <description>
+            <![CDATA[Viện Công nghệ Năng lượng - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Mon, 2 Feb 2026 09:02:00 GMT</pubDate>
+        <lastBuildDate>Mon, 2 Feb 2026 09:02:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Viện Công nghệ Năng lượng]]>
+        </copyright>
+        <docs>https://iet.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://iet.hust.edu.vn/uploads/iet/logo-dhbk-1-02_130_191.png</url>
+            <title>Cơ hội hợp tác - Sự kiện sắp diễn ra</title>
+            <link>https://iet.hust.edu.vn/vi/news/su-kien-sap-dien-ra/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Hội thảo “Trí tuệ nhân tạo &amp; Tương lai hạ tầng năng lượng”&#x3A; Kết nối công nghệ – ứng dụng – hợp tác Việt – Hàn</title>
+            <link>https://iet.hust.edu.vn/vi/news/su-kien-sap-dien-ra/hoi-thao-tri-tue-nhan-tao-tuong-lai-ha-tang-nang-luong-ket-noi-cong-nghe-ung-dung-hop-tac-viet-han-13.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_13]]>
+            </guid>
+            
+                        <pubDate>Mon, 2 Feb 2026 09:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/news/2026_02/hoi-thao1.jpg" width="100" align="left" border="0">Với mục tiêu tăng cường kết nối và thúc đẩy hợp tác, hội thảo là sự kiện đặc biệt kết nối Viện với hệ sinh thái doanh nghiệp công nghệ Hàn Quốc; đồng thời nhấn mạnh định hướng đưa công nghệ gắn với nhu cầu ứng dụng thực tiễn trong lĩnh vực hạ tầng năng lượng.]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

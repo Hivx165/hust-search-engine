@@ -1,0 +1,46 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/C:/Users/mimmim-mi/Downloads/hust-search-engine/crawler-module/target/crawler-module-1.0-SNAPSHOT.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+https://api-uat.giving.hust.edu.vn/ : IOException: HTTP 404
+https://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://api.giving.hust.edu.vn/ : IOException: HTTP 404
+https://asso.hust.edu.vn/ : IOException: HTTP 404
+https://autodiscover.hust.edu.vn/ : ConnectException: null
+https://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://baotri.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching baotri.hust.edu.vn found.
+https://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://bk-fund.hust.edu.vn/ : SSLHandshakeException: (access_denied) Received fatal alert: access_denied
+https://bkcontech.hust.edu.vn/ : ConnectException: null
+https://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.fintech.hust.edu.vn/ : SSLHandshakeException: (certificate_expired) PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+https://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://congdoan-meta.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://congdoan.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://crdlab.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://credentials-manager.bksign.hust.edu.vn/ : IOException: HTTP 404
+https://daotao.soict.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T04:46:16.415232800Z
+https://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://dtlt.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://ecotech.fintech.hust.edu.vn/ : SSLHandshakeException: (handshake_failure) Received fatal alert: handshake_failure
+https://eflow.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://en.bme.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://en.hust.edu.vn/ : ConnectException: null
+https://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://feed-exam.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching feed-exam.hust.edu.vn found.
+https://feed.hust.edu.vn/ : ConnectException: null
+https://file-server.bksign.hust.edu.vn/ : IOException: HTTP 404
+https://hosting.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching hosting.hust.edu.vn found.
+https://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://hust-marjon-project.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching hust-marjon-project.hust.edu.vn found.
+https://ihere.hust.edu.vn/ : ConnectException: null
+https://ithub.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching ithub.hust.edu.vn found.
+https://itims.hust.edu.vn/ : SSLHandshakeException: (certificate_expired) PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed

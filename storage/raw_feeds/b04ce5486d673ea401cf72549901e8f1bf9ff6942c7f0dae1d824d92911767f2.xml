@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>projects &#8211; MSOLab</title>
+	<atom:link href="http://mso.soict.hust.edu.vn/?feed=rss2&#038;cat=12" rel="self" type="application/rss+xml" />
+	<link>http://mso.soict.hust.edu.vn</link>
+	<description>Modelling, Simulation &#38; Optimization Laboratory</description>
+	<lastBuildDate>Tue, 07 Aug 2018 15:09:35 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2.15</generator>
+	<item>
+		<title>Seminar &#8220;Data Analytics&#8221;</title>
+		<link>http://mso.soict.hust.edu.vn/?p=167</link>
+					<comments>http://mso.soict.hust.edu.vn/?p=167#comments</comments>
+		
+		<dc:creator><![CDATA[ductv]]></dc:creator>
+		<pubDate>Sat, 28 Oct 2017 09:34:54 +0000</pubDate>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[projects]]></category>
+		<category><![CDATA[Data Analytics]]></category>
+		<category><![CDATA[Seminar]]></category>
+		<guid isPermaLink="false">http://mso.soict.hust.edu.vn/?p=167</guid>
+
+					<description><![CDATA[Thời gian: 14.30 ngày thứ 2, 30/10/2017 Địa điểm: phòng 803, nhà B1, Đại học Bách khoa Người trình bày: Kasturi Dewi Varathan, University of Malaya, Malaysia Tiêu đề: Data Analytics Abstract: The huge amount of data that are available has lead many individuals as well organizations to seek for a way in helping them ...]]></description>
+		
+					<wfw:commentRss>http://mso.soict.hust.edu.vn/?feed=rss2&#038;p=167</wfw:commentRss>
+			<slash:comments>8788</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

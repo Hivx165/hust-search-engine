@@ -1,0 +1,1609 @@
+<!DOCTYPE html>
+<html lang='en' class=''>
+
+<head>
+    <meta charset='UTF-8'>
+    <title>Nguyen Phi Le</title>
+    <meta name="robots" content="noindex">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css'>
+    <style class="INLINE_PEN_STYLESHEET_ID">
+        @import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+        @import url("https://fonts.googleapis.com/css?family=Bree+Serif&display=swap");
+
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            padding-top: 90px;
+            font-family: "Poppins", sans-serif;
+            margin: 0 100px;
+            height: 100%;
+            background: #e8f9f9;
+            /*background-repeat: cover;*/
+        }
+
+        .profile-header {
+            background: #fff;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(244, 250, 250, 1) 0%, rgba(175, 230, 241, 1) 52%);
+            width: 100%;
+            display: flex;
+            height: 190px;
+            position: relative;
+            box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .profile-img {
+            float: left;
+            width: 340px;
+            height: 200px;
+        }
+
+        .profile-img img {
+            border-radius: 50%;
+            height: 230px;
+            width: 230px;
+            border: 5px solid #fff;
+            box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            z-index: 5;
+            background: #fff;
+        }
+
+        .profile-nav-info {
+            float: left;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 60px;
+        }
+
+        .profile-nav-info h3 {
+            font-variant: small-caps;
+            font-size: 2rem;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .profile-nav-info .address {
+            display: flex;
+            font-weight: bold;
+            color: #777;
+        }
+
+        .profile-nav-info .address p {
+            margin-right: 5px;
+        }
+
+        .profile-option {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            right: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            transition: all 0.5s ease-in-out;
+            outline: none;
+            background: #e40046;
+        }
+
+        .profile-option:hover {
+            background: #fff;
+            border: 1px solid #e40046;
+        }
+
+        .profile-option:hover .notification i {
+            color: #e40046;
+        }
+
+        .profile-option:hover span {
+            background: #e40046;
+        }
+
+        .profile-option .notification i {
+            color: #fff;
+            font-size: 1.2rem;
+            transition: all 0.5s ease-in-out;
+        }
+
+        .profile-option .notification .alert-message {
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            background: #fff;
+            color: #e40046;
+            border: 1px solid #e40046;
+            padding: 5px;
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+
+        .main-bd {
+            width: 100%;
+            display: flex;
+        }
+
+        .profile-side {
+            width: 300px;
+            background: rgb(2, 0, 36);
+            background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(244, 250, 250, 1) 0%, rgba(175, 230, 241, 1) 52%);
+            box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2);
+            padding: 90px 30px 20px;
+            font-family: "Bree Serif", serif;
+            z-index: 99;
+        }
+
+        .profile-side p {
+            margin-bottom: 7px;
+            color: #333;
+            font-size: 14px;
+        }
+
+        .profile-side p i {
+            color: #e40046;
+            margin-right: 10px;
+        }
+
+        .mobile-no i {
+            transform: rotateY(180deg);
+            color: #e40046;
+        }
+
+        .profile-btn {
+            display: flex;
+        }
+
+        button.chatbtn,
+        button.createbtn {
+            border: 0;
+            padding: 10px;
+            width: 100%;
+            border-radius: 3px;
+            background: #e40046;
+            color: #fff;
+            font-family: "Bree Serif";
+            font-size: 1rem;
+            margin: 5px 2px;
+            cursor: pointer;
+            outline: none;
+            margin-bottom: 10px;
+            transition: background 0.3s ease-in-out;
+            box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        button.chatbtn:hover,
+        button.createbtn:hover {
+            background: rgba(288, 0, 70, 0.9);
+        }
+
+        button.chatbtn i,
+        button.createbtn i {
+            margin-right: 5px;
+        }
+
+        .user-rating {
+            display: flex;
+        }
+
+        .user-rating h3 {
+            font-size: 2.5rem;
+            font-weight: 200;
+            margin-right: 5px;
+            letter-spacing: 1px;
+            color: #666;
+        }
+
+        .user-rating .no-of-user-rate {
+            font-size: 0.9rem;
+        }
+
+        .rate {
+            padding-top: 6px;
+        }
+
+        .rate i {
+            font-size: 0.9rem;
+            color: rgba(228, 0, 70, 1);
+        }
+
+        .nav {
+            width: 100%;
+            z-index: -1;
+        }
+
+        .nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style-type: none;
+            height: 40px;
+            background: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .nav ul li {
+            padding: 10px;
+            width: 100%;
+            cursor: pointer;
+            text-align: center;
+            transition: all 0.2s ease-in-out;
+        }
+
+        .nav ul li:hover,
+        .nav ul li.active {
+            box-shadow: 0px -3px 0px rgba(288, 0, 70, 0.9) inset;
+        }
+
+        .profile-body {
+            width: 100%;
+            z-index: -1;
+        }
+
+        .tab {
+            display: none;
+        }
+
+        .tab {
+            padding: 20px;
+            padding-right: 0px;
+            width: 100%;
+            min-height: 70vh;
+            /*text-align: center;*/
+        }
+
+        @media (max-width: 1100px) {
+            .profile-side {
+                width: 250px;
+                padding: 90px 15px 20px;
+            }
+
+            .profile-img img {
+                /* height: 200px;
+                width: 200px; */
+                left: 12px;
+                top: 50px;
+            }
+        }
+
+        @media (max-width: 900px) {
+            body {
+                margin: 0 20px;
+            }
+
+            .profile-header {
+                display: flex;
+                height: 100%;
+                flex-direction: column;
+                text-align: center;
+                padding-bottom: 20px;
+            }
+
+            .profile-img {
+                float: left;
+                width: 100%;
+                height: 200px;
+            }
+
+            .profile-img img {
+                position: relative;
+                /* height: 200px;
+                width: 200px; */
+                left: 0px;
+            }
+
+            .profile-nav-info {
+                text-align: center;
+            }
+
+            .profile-option {
+                right: 20px;
+                top: 75%;
+                transform: translateY(50%);
+            }
+
+            .main-bd {
+                flex-direction: column;
+                padding-right: 0;
+            }
+
+            .profile-side {
+                width: 100%;
+                text-align: center;
+                padding: 20px;
+                margin: 5px 0;
+            }
+
+            .profile-nav-info .address {
+                justify-content: center;
+            }
+
+            .user-rating {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 400px) {
+            body {
+                /* margin: ; */
+            }
+
+            .profile-header h3 {}
+
+            .profile-option {
+                width: 30px;
+                height: 30px;
+                position: absolute;
+                right: 15px;
+                top: 83%;
+            }
+
+            .profile-option .notification .alert-message {
+                top: -3px;
+                right: -4px;
+                padding: 4px;
+                height: 15px;
+                width: 15px;
+                font-size: 0.7rem;
+            }
+
+            .profile-nav-info h3 {
+                font-size: 1.9rem;
+            }
+
+            .profile-nav-info .address p,
+            .profile-nav-info .address span {
+                font-size: 0.7rem;
+            }
+        }
+
+        #see-more-bio,
+        #see-less-bio {
+            color: blue;
+            cursor: pointer;
+            text-transform: lowercase;
+        }
+
+        .tab h2 {
+            font-family: "Bree Serif", sans-serif;
+        }
+
+        .resume-content {
+            margin-bottom: 20px;
+        }
+
+        .resume-body {
+            margin-left: 25px;
+        }
+
+        ol {
+            margin-left: 25px;
+        }
+
+        .important {
+            font-weight: 900;
+            text-decoration: underline;
+            font-size: 17px;
+        }
+
+        #social-links a {
+            margin-right: 20px;
+        }
+
+        li {
+            text-align: justify;
+        }
+
+        p {
+            text-align: justify;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="profile-header">
+            <div class="profile-img">
+                <!-- <img style="width: 226px" src="https://res.cloudinary.com/dyqyg6gjk/images/w_225,h_300,c_scale/f_auto,q_auto/v1741168530/01@2x/01@2x.png?_i=AA" alt="Profile Image" data-lazy-src="https://res.cloudinary.com/dyqyg6gjk/images/w_225,h_300,c_scale/f_auto,q_auto/v1741168530/01@2x/01@2x.png?_i=AA"> -->
+                <img fetchpriority="high" decoding="async" width="225" height="300"
+                    src="https://res.cloudinary.com/dyqyg6gjk/images/f_auto,q_auto/v1741167711/z6173450008404_ed33ae84b344c3b655ec29a44117640b/z6173450008404_ed33ae84b344c3b655ec29a44117640b.jpg?_i=AA"
+                    data-lazy-src="" class="attachment-medium size-medium wp-image-2256" alt=""
+                    sizes="(max-width: 225px) 100vw, 225px">
+            </div>
+
+            <div class="profile-nav-info">
+                <h3 class="user-name">PHI LE NGUYEN</h3>
+                <div class="address">
+                    <p id="state" class="state">Hanoi University of Science and Technology <br>
+                        School of Information and Communication Technology
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="main-bd">
+            <div class="left-side">
+                <div class="profile-side">
+                    <div class="user-bio">
+                        <h3>Contact</h3>
+                        <!-- <p class="mobile-no"><i class="fa fa-phone"></i> +23470xxxxx700</p> -->
+                        <p class="user-mail"><i class="fa fa-envelope"></i> <a href="/cdn-cgi/l/email-protection"
+                                class="__cf_email__"
+                                data-cfemail="410333282629352832202022797101262c20282d6f222e2c">lenp@soict.hust.edu.vn</a>
+                        </p>
+                    </div>
+                    <!--
+        <div id="social-links" style="margin-top: 15px;">
+          <a href="#"><i class="fab fa-facebook-f stroke-transparent"></i></a>
+          <a href="#"><i class="fab fa-twitter stroke-transparent"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in stroke-transparent"></i></a>
+          <a href="#"><i class="fab fa-github stroke-transparent"></i></a>
+        </div>
+      -->
+                </div>
+            </div>
+            <div class="right-side">
+                <div class="nav">
+                    <ul>
+                        <li id="profile" onclick="tabs(0)" class="user-post active">PROFILE</li>
+                        <li id="lecturers" onclick="tabs(1)" class="user-post">LECTURERS</li>
+                        <li id="publications" onclick="tabs(2)" class="user-review">PUBLICATIONS</li>
+                        <li id="services" onclick="tabs(3)" class="user-setting">SERVICES</li>
+                        <li id="others" onclick="tabs(4)" class="others">NEWS</li>
+                    </ul>
+                </div>
+                <div class="profile-body">
+                    <div class="profile-posts tab">
+                        <div class="resume-content">
+                            <h2>Short Bio</h2>
+                            <p class="h5 text-muted mb-3"></p>
+                            <p> 
+                                Phi Le Nguyen obtained her Bachelor of Engineering and Master of Science degrees from the University of Tokyo in 2007 and 2010, respectively. She joined HUST in 2010 and returned to Japan in 2016 to pursue her Ph.D. In 2019, she earned her doctorate in Informatics from the National Institute of Informatics, Japan. <br>
+
+                                She currently serves as the Director of the Institute for AI Innovation and Societal Impact (AI4LIFE) and holds the position of Associate Professor at the School of Information and Communication Technology, Hanoi University of Science and Technology (HUST). She leads a large research group of talented and ambitious students, focusing on both theoretical AI and its applications in environmental science, climate change, and smart healthcare. <br>
+
+                                With a portfolio of more than 150 articles published in esteemed journals and conferences such as ICML, NeurIPS, ICLR, EMNLP, and IJCAI, Dr. Nguyen has received multiple best paper awards, including those at ISSNIP 2014, ICT-DM 2019, CCGrid 2023, and CANDAR 2023. Her research has been funded by several renowned institutions, including VinIF, NAFOSTED, the Ministry of Education and Training (MOET), the Ministry of Science and Technology (MOST), and Aus4Innovation. <br>
+
+                                She actively contributes to leading conferences as a Technical Program Committee member and serves as a reviewer for top-tier journals and conferences, including AAAI, ICLR, NeurIPS, CVPR, ECCV, UAI, ICCV, IEEE/ACM Transactions on Networking (ToN), and the IEEE Internet of Things Journal (IoTJ). She serve as an Associate Editor of ACM Computing Surveys. 
+                            </p>
+                        </div>
+                        <div class="resume-content">
+                            <h2>Current and Past Positions</h2>
+                            <p class="h5 text-muted mb-3"></p>
+                            <p>11/2010 – Present: Department of Computer Science, School of Information and
+                                Communication Technology, Hanoi University of Science and Technology.
+                            </p>
+                            <p> 03/2021 – Present: Managing Director of the International Research Center for Artificial Intelligence (BKAI), School of Information and
+                                Communication Technology, Hanoi University of Science and Technology.
+                            </p>
+                            <p> 06/2024 – Present: Director, Institute for AI Innovation and Societal Impact (AI4LIFE), Hanoi University of Science and Technology.
+                            </p>
+                        </div>
+                        <div class="resume-content">
+                            <h2>Education</h2>
+                            <div>
+                                <ul class="resume-body">
+                                    <li>Ph.D., Informatics, The Graduate University for Advanced Studies (SOKENDAI) in
+                                        Alliance with Japan National Institute of Informatics, 2019</li>
+                                    <li>M.S., Frontier Informatics, The University of Tokyo, 2010</li>
+                                    <li>B.E., Information and Communication Engineering, The University of Tokyo, 2007
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="resume-content">
+                            <h2>Grants for research</h2>
+                            <ul class="resume-body">
+                                <ol>
+                                    <li>
+                                        "Artificial intelligence to develop an automated system for generating PET images from CT images to support disease diagnosis", A grant from Dien Bien Province (PI), 2026-2028.
+                                    </li>
+                                    <li>
+                                        "Artificial intelligence for the diagnosis and treatment of cardiovascular diseases", A grant from Dien Bien Province (PI), 2026-2028.
+                                    </li>
+                                        "360° Air Pollution Overview", A grant from A grant from VinUni (co-PI), 2024-2026.
+                                    </li>
+                                    <li>
+                                        "Research and Development of an AI-Based System for Air Pollution Management, Visualization, Forecasting, and Source Attribution", A grant from A grant from Hanoi University of Science and Technology (co-PI), 2024-2026.
+                                    </li>
+                                    <li><a href="https://www.greenfarming.vn/" target="_blank">"Proactive Carbon Farming
+                                            with AI and Digital Twins for Sustainable Agriculture in Thanh Hoa
+                                            Province"</a>, A4I122, A grant from A grant from Aus4Innovation (Co-PI), 2024-2026
+                                    </li>
+                                    <li>"Vietnamese Handwriting OCR recognition dataset and model development",
+                                        NAVER.2022.07, A grant from A grant from NAVER corporation for 1 year (I),
+                                        2022-2023
+                                    </li>
+                                    <li>"Discrete structures and Applications", 102.01-2020.23, A grant from NAFOSTED
+                                        for 2 years (member), 2020-2022
+                                    </li>
+                                    <li><a href="https://vaipe.org/" target="_blank">"VAIPE</a>: AI-assisted IoT-enabled
+                                        personalized health care monitoring and supporting system for Vietnamese",
+                                        VINIF.2021.DA128, A grant from VINIF for 3 years (Member), 2021-2024
+                                    </li>
+                                    <li> "Vietnamese OCR recognition model development", A grant from NAVER corporation
+                                        for 1 year (member), 2021-2022
+                                    </li>
+                                    <li>"Towards energy unlimited IoT networks by nature-inspired algorithms",
+                                        102.01-2019.304, A grant from NAFOSTED for 2 years (member), 2019-2021
+                                    </li>
+                                    <li> "An effective resource scaling solutions for IoT services with dynamic
+                                        characteristics in cloud computing and edge computing", B2020-BKA-13, A grant
+                                        from Vietnam Ministry of Education for 2 years (PI), 2019-2021
+                                    </li>
+                                    <li>"Exploiting Discrete Structures in Performance Optimization of Autonomous
+                                        Networks", 102.01-2019.302, A grant from NAFOSTED for 2 years (PI), 2019-2021
+                                    </li>
+                                    <li><a href="http://fi-mi.vn" target="_blank">"Fi-Mi</a>: A Fine-grained AI-based
+                                        Mobile Air Quality Monitoring and Forecasting System", VINIF.2020.DA09, A grant
+                                        from VINIF for 2 years (PI), 2019-2021
+                                    </li>
+                                </ol>
+                            </ul>
+                        </div>
+                        <div class="resume-content">
+                            <h2>Certificates</h2>
+                            <ul class="resume-body">
+                                <li>NVIDIA University Ambassador</li>
+                                <li>NVIDIA Certified Instructor for Fundamentals of Deep Learning Workshop</li>
+                            </ul>
+                        </div>
+                        <div class="resume-content">
+                            <h2>Honors and Awards</h2>
+                            <ul class="resume-body">
+                                <li>Best paper award at EUC 2024.</li>
+                                <li>Best paper award at CANDAR 2024.</li>
+                                <li>Best lecturer of the year 2023-2024 awarded by HUST.</li>
+                                <li>Best paper nominated by CCGRID 2023.</li>
+                                <li>2023 APEC-Australia Women in Research Fellowship.</li>
+                                <li>NII best student award in 2018.</li>
+                                <li>Best paper award at ICT-DM 2018.</li>
+                                <li>Student award at Japan SINET Ideathon competition, 2018.</li>
+                                <li>Monbusho (Monbukagakusho) scholarship for a three-year PhD program offered by
+                                    Japanese Government,
+                                    2016.
+                                </li>
+                                <li>Best paper award at SoICT 2015.</li>
+                                <li>Best paper award at ISSNIP 2014.</li>
+                                <li>Monbusho (Monbukagakusho) scholarship for a two-year M.S program offered by Japanese
+                                    Government,
+                                    2007.
+                                </li>
+                                <li> Monbusho (Monbukagakusho) scholarship for a four-year B.S program offered by
+                                    Japanese Government,
+                                    2002.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="profile-settings tab">
+                        <div class="resume-content">
+                            <h2>Teaching</h2>
+                            <div>
+                                <ul class="resume-body">
+                                    <li>
+                                        <h6>Introduction to Deep learning IT3320E</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Artificial Intelligence IT6606</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Trustworthy AI IT5416</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Information Security: IT4015, IT4012E, IT4015, IT4012.</h6>
+                                    </li>
+                                    <li>
+                                        <h6>Network security: IT4262. </h6>
+                                    </li>
+                                    <li>
+                                        <h6>IT Japanese: <a href="#" onclick="tabs(4)">JP3120</a>, JP3130.</h6>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="profile-reviews tab">
+                        <div class="resume-content">
+                            <p class="h5 text-muted mb-3"></p>
+                            <div>
+                                <i> (The first author is either my student or myself) </i>
+                                <br> 
+                                <br> 
+                                <ol>
+                                    <h4><b>2026</b></h4>   
+                                    <li>
+                                        Duong M. Nguyen, Trong Nghia Hoang, Hang Thi Nguyen, Thanh Trung Huynh, Phi Le Nguyen, Minh N. Do, "Nonparametric Distribution Matching for Self-Supervised Whole-Slide Image Condensation", NeurIPS 2026.
+                                    </li>
+                                    <li>
+                                        T. Khiem Tran, Long Minh Bui, Phi Le Nguyen, Mrinal K Sen, Sanjay Srinivasan, Trong Nghia Hoang, Jana Doppa, "CoupledFlow: One-Step Neural Operators for Coupled Multi-Physics PDEs", NeurIPS 2026.
+                                    </li>
+                                    <li>
+                                        Tuan-Kiet Doan, Van-Chien Nguyen, Trung-Hieu Tran, Quang Hung Pham, Ngoc-Son Vu, Huy Phan, Phi Le Nguyen, Duc Han LE, Nikola Simidjievski, Van-Tam Nguyen, "MAGE: Towards Generalizable Multi-timescale EEG Representations", NeurIPS 2026.
+                                    </li>
+                                    <li>
+                                        Hoang Minh Vu, Trung Kien Pham, Thi Ha Chi Nguyen, Hai Dang Nguyen, Dac Thai Nguyen, Mai Hong Son, Thanh Trung Nguyen, Trung Thanh Nguyen, Phi Le Nguyen, "DiffCAS: Inference-time CT-free diffusion model for physics-aware multi-slice attenuation correction in cardiac SPECT", Artificial Intelligence in Medicine Journal 2026.
+                                    </li>
+                                    <li>
+                                        Minh Dao-Xuan-Quang, Son Dinh-Nguyen, Thi-Mai-Anh Bui, Le Nguyen-Phi, "M-LAMA: Multimodal Automated Scoring of Long-form Spoken English", Interspeech 2026. 
+                                    </li>
+                                    <li>
+                                        Duc-Tri Tran, Phi Le Nguyen, Minh Hoai, "Back-Tracking from Clarity: Self-Learning to See Text from Afar", ECCV 2026.
+                                    </li>
+                                    <li>
+                                        T. Khiem Tran, Anh Duc Chu, Quang Hung Pham, <span class="important">Phi Le Nguyen</span>, Trong Nghia Hoang, "Cross-Modal Knowledge Distillation without Paired Data: Theoretical Foundations and Algorithms", ICML 2026.
+                                    </li>
+                                    <li>
+                                        Minh Khoi Nguyen, Dai Lam Le, Amir Reza Jafari, Tuan Dung Nguyen, Hong Son Mai, Huy Thong Mai, Quang Huy Nguyen, Thanh Trung Nguyen, Reza Farahbakhsh, Noel Crespi, <span class="important">Phi Le Nguyen</span>, "Med-StepBench: A Hierarchical Reasoning Framework for Evaluating Hallucinations in Medical Vision-Language Models", IJCAI 2026 (Main Conference).
+                                    </li>
+                                    <li>
+                                        Cong Huy Nguyen, Son Dinh Nguyen, Guanlin Li, Tuan Dung Nguyen, Aditya Narayan Sankaran, Mai Huy Thong, Thanh Trung Nguyen, Mai Hong Son, Reza Farahbakhsh, <span class="important">Phi Le Nguyen</span>, Noel Crespi, "Region-Grounded Report Generation for 3D Medical Imaging: A Fine-Grained Dataset and Graph-Enhanced Framework", ACL 2026 (Main confernece).
+                                    </li>
+                                    <li>
+                                     Hoang Quang Huy, Nguyen Tran Tri Dung, Do Thi Thuy Nga, <span class="important">Phi Le Nguyen</span>, Tran Anh Vu, "VTN3GCN: Enhancing Sign Language Recognition Through Multi-View and Multi-Stream Integration", Neural Computing and Applications (NCAA 2026). 
+                                    </li>
+                                    <li>
+                                        Nam Duong Tran, <span class="important">Phi Le Nguyen</span>, "Phantasia: Context-Adaptive Backdoors in Vision Language Models", CVPR 2026 (Findings). 
+                                    </li>
+                                    <li>
+                                        Nam Nguyen Phuong, Duc Nguyen The Minh, <span class="important">Phi Le Nguyen</span>, Ehsan Abbasnejad, Minh Hoai, "Dual Strategies for Test-time adaptation", CVPR 2026 (Findings). 
+                                    </li>
+                                    <li>
+                                        Tuan Dung Nguyen, Minh Khoi Ho, Qi Chen, Yutong Xie, Nguyen Cam-Tu, Minh Khoi Nguyen, Dang Huy Pham Nguyen, Anton van den Hengel, Johan W. Verjans, <span class="important">Phi Le Nguyen</span>, Vu Minh Hieu Phan, "Beyond the Global Scores: Fine-Grained Token Grounding as a Robust Detector of LVLM Hallucinations", CVPR 2026 (Main conference). 
+                                    </li>
+                                    <li>
+                                        T. Khiem Tran, Manh Cuong Dao, <span class="important">Phi Le Nguyen</span>, Thao Nguyen Truong, Trong Nghia Hoang, "Rethinking Cross-Modal Fine-Tuning: Optimizing the Interaction between Feature Alignment and Target Fitting", AISTATS 2026. 
+                                    </li>
+                                    <li>
+                                        Nang Hung Nguyen, <span class="important">Phi Le Nguyen</span>, Thao Nguyen Truong, Trong Nghia Hoang, Masashi Sugiyama, "Causal Graph Learning via Distributional Invariance of Cause-Effect Relationship", Transactions on Machine Learning Research.
+                                    </li>  
+                                    <li>
+                                        Trung Kien Pham, Hoang Minh Vu, Anh Duc Chu, Dac Thai Nguyen, Trung Thanh Nguyen, Thao Nguyen Truong, Mai Hong Son, Thanh Trung Nguyen, <span class="important">Phi Le Nguyen</span>, "PADM: A Physics-aware Diffusion Model for Attenuation Correction", The IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2026).
+                                    </li>     
+                                    <br>                            
+                                    <h4><b>2025</b></h4>
+                                    <li>
+                                        <span class="important">Phi Le Nguyen</span>, et al., "Enhancing Tropical Cyclone Intensity Forecasting over the Bien Dong Sea with Foundation Model and Prompt Tuning", Engineering Applications of Artificial Intelligence Journal (EAAI 2025).
+                                    </li> 
+                                    <li>
+                                        Manh Cuong Dao, The Hung Tran, <span class="important">Phi Le Nguyen</span>, Thao Nguyen Truong, Trong Nghia Hoang, "ROOT: Rethinking Offline Optimization as Distributional Translation via Probabilistic Bridge", The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025 - Spotlight)
+                                    </li>   
+                                    <li>
+                                        Manh Duong Nguyen, Trong Nghia Hoang, Thanh Trung Huynh, Quoc Viet Hung Nguyen, <span class="important">Phi Le Nguyen</span>, "Learning Reconfigurable Representations for Multimodal Federated Learning with Missing Data", The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)
+                                    </li>
+                                    <li>
+                                        Huu Tien Nguyen, Dac Thai Nguyen, Duc Nguyen The Minh, Trung Thanh Nguyen, Thao Nguyen Truong, Hieu Pham, Johan Barthelemy, Tran Minh Quan, Quoc Viet Hung Nguyen, Thanh Tam Nguyen, Mai Hong Son, Chau Quynh Anh, Thanh Trung Nguyen, <span class="important">Phi Le Nguyen</span>, "Toward a Vision-Language Foundation Model for Medical Data: Multimodal Dataset and Benchmarks for Vietnamese PET/CT Report Generation", The Thirty-ninth Annual Conference on Neural Information Processing Systems (NeurIPS 2025)
+                                    </li> 
+                                    <li>
+                                    <span class="important">Phi Le Nguyen</span> et al., "Evaluating MPQUIC Schedulers in Dynamic Wireless Networks with 2D and 3D Mobility", Computer Networks Journal 2025. 
+                                     </li>
+                                    <li> Thanh Trung Nguyen, Minh Hai Vu, Phi Le Nguyen, Kien Nguyen, "Analysis and Visualization of QUIC Protocol Deployment in Vietnam," IEICE Communications Express, 2025. 
+                                    </li>
+                                    <li>
+                                    Trong Bang Nguyen, <span class="important">Phi Le Nguyen</span>, Simon Lucey, Minh Hoai, "Region-Level Data Attribution for Text-to-Image Generative Models", International Conference on Computer Vision 2025 (ICCV)
+                                    </li>
+                                    <li>
+                                    Thu Hang Phung, Manh Duong Nguyen, Thanh Trung Huynh, Quoc Viet Hung Nguyen, Trong Nghia Hoang, <span class="important">Phi Le Nguyen</span>, "Federated Prompt-Tuning with Heterogeneous and Incomplete Multimodal Client Data", International Conference on Computer Vision 2025 (ICCV)
+                                    </li>
+                                    <li>
+                                    Nam Duong Tran, Nam Nguyen Phuong, Hieu Pham, <span class="important">Phi Le Nguyen</span>, My T. Thai, "ConstStyle: Robust Domain Generalization with Unified Style Transformation", International Conference on Computer Vision 2025 (ICCV)
+                                    </li>
+                                    <li>
+                                    Cuong Pham, <span class="important">Phi Le Nguyen</span>, Thanh Trung Nguyen, Minh Hieu Phan, Binh Nguyen, "Unleashing SAM for Few-Shot Medical Image Segmentation with Dual-Encoder and Automated Prompting", Medical Image Computing and Computer Assisted Intervention 2025 (MICCAI)
+                                    </li>
+                                    <li>
+                                        Manh Cuong Dao, <span class="important">Phi Le Nguyen</span>, Huy Hieu Pham, Thanh Hung Nguyen, Peng Chen, Mohamed Wahib and Thao Nguyen Truong, "Noisy Data-based Attack: a New Type of Untargeted Attack in Federated Learning and Its Countermeasures", Future Generation Computer Systems, 2025
+                                    </li>
+                                    <li>
+                                        Quang H. Nguyen, Hoang V. Tran, Tien H. Nguyen, Phuong T. M. Le, <span class="important">Phi Le Nguyen</span>, Binh P. Nguyen, "AIM: An Accurate and Explainable Model for ATAC to GEX Translation and Pathway Analysis", Memetic Computing.
+                                    </li>
+                                    <li>
+                                        Nguyen Nang Hung, Truong Thao Nguyen, Trong Nghia Hoang, Hieu H. Pham, Thanh Hung Nguyen, and <span class="important">Phi Le Nguyen</span>, "SAFA: Handling Sparse and Scarce Data in Federated Learning with Accumulative Learning", IEEE Transactions on Computers.
+                                    </li>
+                                    <li>
+                                        Thanh Trung Huynh, Trong Bang Nguyen, Thanh Toan Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, Hongzhi Yin, Quoc Viet Hung Nguyen,
+                                        Thanh Tam Nguyen, "Certified Unlearning for Federated Recommendation", ACM
+                                        Transactions on Information Systems, 2025.
+                                    </li>
+                                    <li>
+                                        Dung Nguyen, Minh Khoi Ho, Huy Ta, Thanh Tam Nguyen, Qi Chen, Kumar Rav, Quy Duong Dang, Satwik Ramchandre, Son Lam Phung, Zhibin Liao, Minh-Son To, Johan Verjans, <span class="important">Phi Le Nguyen</span>, Minh Hieu Phan, "Localizing Before Answering: A Benchmark for Grounded Medical Visual Question Answering", The 34th International Joint Conference on Artificial Intelligence (IJCAI-25) Main Track. 
+                                    </li>
+                                    <li>
+                                        Manh Duong Nguyen, Nguyen Dang Huy Pham, <span class="important">Phi Le Nguyen</span>, Minh N. Do, "A Semi-Supervised Learning Framework with Cross-Magnification Attention for Glioma Mitosis Classification", 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI). 
+                                    </li>
+                                    <li>
+                                     Tue Minh Cao, Nhat Hoang-Xuan, Hieu Pham, <span class="important">Phi Le Nguyen</span>, My T. Thai, "NeurFlow: Interpreting Neural Networks through Critical Neuron Groups and Functional Interactions", The Thirteenth International Conference on Learning Representations, ICLR 2025. 
+                                    </li>
+                                    <li>
+                                        Manh-Duong Nguyen, Dac Thai Nguyen, Viet Trung Nguyen, Homi Yamada, Huy Hieu Pham, <span class="important">Phi Le Nguyen</span>, "Bridging Classification and Segmentation in Osteosarcoma Assessment via Foundation and Discrete Diffusion Models", 2025 IEEE 22nd International Symposium on Biomedical Imaging (ISBI). 
+                                    </li>
+                                    <li>
+                                        Bach Vu, Hoang Nguyen, Quang Nguyen, Duong Le, Hieu Pham, <span class="important">Phi Le Nguyen</span>, Lam Nguyen, "Foundation Model and
+                                        Temporal Priors-guided Transductive Few-shot Action Recognition", 2025 IEEE
+                                        International Conference on Acoustics, Speech and Signal Processing (ICASSP 2025 Main Tracks).
+                                    </li>
+                                    <li>
+                                        Thai Nguyen, Trung Thanh NGUYEN, Tien Nguyen, Trung Nguyen Thanh, Hieu Pham,
+                                        Thanh Hung Nguyen, Truong Thao Nguyen, <span class="important">Phi Le
+                                            Nguyen</span>, "CT to PET Translation: A Large-scale Dataset and
+                                        Domain-Knowledge-Guided Diffusion Approach", IEEE/CVF Winter Conference on
+                                        Applications of Computer Vision (WACV 2025).
+                                    </li>
+                                    <li>
+                                        Son Dinh, Dung Nguyen, Duc-Tri Tran, Dang-Huy Pham-Nguyen, Thuan Hieu Tran, Tong
+                                        Anh, Quang Huy Hoang, <span class="important">Phi Le Nguyen</span>, "Sign
+                                        Language Recognition: A Large-scale Multi-view Dataset and Comprehensive
+                                        Evaluation", IEEE/CVF Winter Conference on Applications of Computer Vision (WACV 2025).
+                                    </li>
+                                    <br>
+                                    <h4><b>2024</b></h4>
+                                    <li>
+                                        Thanh Trung Nguyen, Minh Hai Vu, Thi Ha Ly Dinh, Thanh Hung Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, Kien Nguyen, "FQ-SAT: a Fuzzy
+                                        Q-learning-based MPQUIC Scheduler for Data Transmission Optimization", Computer Communications Journal, 2024.
+                                    </li>
+                                    <li>
+                                        Trung Thanh Nguyen, <span class="important">Phi Le Nguyen</span>, Yasutomo
+                                        Kawanishi, Takahiro Komanishi, Takahiro, Ichiro Ide, "Zero-shot
+                                        Pill-Prescription Matching with Graph Convolutional Network and Contrastive
+                                        Learning", IEEE Access, 2024.
+                                    </li>
+                                    <li>
+                                        Pham Minh Khiem, <span class="important">Phi Le Nguyen</span>, Vu Viet Hung,
+                                        Truong Thao Nguyen, Vo-Van Hoa, and Thanh Ngo-Duc, "A Data-driven Approach for
+                                        High Accurate Spatiotemporal Precipitation Estimation", Neural Computing and
+                                        Applications Journal (NCAA), 2024.
+                                    </li>
+                                    <li>
+                                        Viet Hung Vu, Duc Long Nguyen, Thanh Hung Nguyen, Nguyen Quoc Viet Hung, <span
+                                            class="important">Phi Le Nguyen</span>, and Huynh Thanh Trung,
+                                        "Self-supervised air quality estimation with graph neural network assistance and
+                                        attention enhancement," Neural Computing and Applications Journal (NCAA), 2024.
+                                    </li>
+                                    <li>
+                                        <span class="important">Phi Le Nguyen</span> et al., "GAMMA: a Universal Model
+                                        for Calibrating Sensory Data of Multiple Low-Cost Air Monitoring Devices",
+                                        Engineering Applications of Artificial Intelligence (EAAI), 2024.
+                                    </li>
+                                    <li>
+                                        Manh Duong Nguyen, Trung Thanh Nguyen, Huy Hieu Pham, Trong Nghia Hoang, <span
+                                            class="important">Phi Le Nguyen</span> and Thanh Trung Huynh, "FedMAC:
+                                        Tackling Partial-Modality Missing in Federated Learning with Cross-Modal
+                                        Aggregation and Contrastive Regularization", The 22nd International Symposium on
+                                        Network Computing and Applications (NCA 2024).
+                                    </li>
+                                    <li>
+                                        Manh Cuong Dao, <span class="important">Phi Le Nguyen</span>, Thao Nguyen
+                                        Truong, Trong Nghia Hoang, "Incorporating Surrogate Gradient Norm to Improve
+                                        Offline Optimization Techniques",The Thirty-eighth Annual Conference on Neural
+                                        Information Processing Systems, NeurIPS 2025 2024.
+                                    </li>
+                                    <li>
+                                        Tuan Dung Nguyen, Thanh Trung Huynh, Minh Hieu Phan, Quoc Viet Hung Nguyen,
+                                        <span class="important">Phi Le Nguyen</span>, "CARER - ClinicAl
+                                        Reasoning-Enhanced Representation for Temporal Health Risk Prediction", The 2024 Conference on Empirical Methods in Natural Language Processing, EMNLP.
+                                    </li>
+                                    <li>
+                                        Dong Duc Anh Nguyen, Minh Hieu Nguyen, <span class="important">Phi Le
+                                            Nguyen</span>, Jun Jo, Hongzhi Yin, Thanh Tam Nguyen, "Multi-task Learning of Heterogeneous Hypergraph Representations in LBSNs", The 20th International
+                                        Conference on Advanced Data Mining and Applications 2024.
+                                    </li>
+                                    <li>
+                                        <span class="important">Phi Le Nguyen</span> et al., "Improving Time Series
+                                        Encoding with Noise-Aware Self-Supervised Learning and an Efficient Encoder", ICDM 2024.
+                                    </li>
+                                    <li>
+                                        Minh Hai Vu, Thanh Trung Nguyen, Thi Ha Ly Dinh, <span class="important">Phi Le
+                                            Nguyen</span>, Kien Nguyen, "LoGra: an LSTM-DDPG Integrated MPQUIC Scheduler
+                                        for Mobile Video Streaming", VTC 2024.
+                                    </li>
+                                    <li>
+                                        Thanh Trung Huynh, Trong Bang Nguyen, <span class="important">Phi Le
+                                            Nguyen</span>, Thanh Tam Nguyen, Matthias Weidlich, Quoc Viet Hung Nguyen,
+                                        Karl Aberer, "Fast-FedUL: A Training-Free Federated Unlearning with Provable
+                                        Skew Resilience", European Conference on Machine Learning and Principles and
+                                        Practice of Knowledge Discovery in Databases (ECML PKDD 2024).
+                                    </li>
+                                    <li>
+                                        Van An Le, Duc Long Nguyen, <span class="important">Phi Le Nguyen</span>,
+                                        Yusheng Ji, "Traffic Engineering in Large-scale Networks via Multi-Agent Deep
+                                        Reinforcement Learning with Joint-Training", The 33rd International Conference
+                                        on Computer Communications and Networks (ICCCN 2024).
+                                    </li>
+                                    <li>
+                                        Manh Cuong Dao, <span class="important">Phi Le Nguyen</span>, Thao Nguyen
+                                        Truong, Trong Nghia Hoang, "Boosting Offline Optimizers with Surrogate
+                                        Sensitivity", The 41st International Conference on Machine Learning (ICML 2024).
+                                    </li>
+                                    <li>
+                                        Tuan Dung Nguyen, Ngoc Anh Tong, Viet Hung Nguyen, Phu Binh Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, Trung Huynh, “Hierarchical Federated
+                                        Learning in MEC Networks with Knowledge Distillation”, the International Joint
+                                        Conference on Neural Networks (IJCNN 2024).
+                                    </li>
+                                    <li>
+                                        Thu Hang Phung, Thanh Hung Nguyen, Viet Hung Nguyen, Phu Binh Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, Trung Huynh, “A Contrastive Learning
+                                        and Graph-based Approach for Missing Modalities in Multimodal Federated
+                                        Learning”, the International Joint Conference on Neural Networks (IJCNN 2024).
+                                    </li>
+                                    <li>
+                                        Duc Long Nguyen, Thao Nguyen Truong, <span class="important">Phi Le
+                                            Nguyen</span>, "Combating Quality Distortion in Federated Learning with
+                                        Collaborative Data Selection", 28th Pacific-Asia Conference on Knowledge
+                                        Discovery and Data Mining (PAKDD 2024).
+                                    </li>
+                                    <li>
+                                        Van An Le, Nam Duong Tran, Phuong Nam Nguyen, Thanh Hung Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, Truong Thao Nguyen, Yusheng Ji,
+                                        "Enhancing the Generalization of Personalized Federated Learning with Multi-head
+                                        Model and Ensemble Voting", 38th IEEE International Parallel & Distributed
+                                        Processing Symposium (IPDPS 2024).
+                                    </li>
+                                    <li>
+                                        Thanh Trung Nguyen, Minh Hai Vu, Thi Ha Ly Dinh, <span class="important">Phi Le
+                                            Nguyen</span>, Kien Nguyen, "MuLeS: a Multi-client Learning-based MPQUIC
+                                        Scheduler", IEEE Consumer Communications & Networking Conference (CCNC), 2024.
+                                    </li>
+                                    <li>
+                                        Quang Ha Pham, Nguyen Nang Hung, Hieu Pham, Nguyen Thanh-Hung, Truong Thao
+                                        Nguyen, <span class="important">Phi Le Nguyen</span>, "SEM: A Simple Yet
+                                        Efficient Model-agnostic Local Training Mechanism to Tackle Data Sparsity and
+                                        Scarcity in Federated Learning", The Eleventh International Symposium on
+                                        Computing and Networking (CANDAR), 2024 <b>(Best paper reward)</b>.
+                                    </li>
+                                    <li>
+                                        Le Anh Duc Vu, Minh Hai Vu, Bao Ngoc Tran, Minh Tung Hoang, Duc Anh Nguyen, Minh Quan Hoang, <span class="important">Phi Le Nguyen</span>, "An Automated PM2.5 Analysis and Prediction System with Encoder-Decoder Architecture and Continual Learning Mechanism", 2024 IEEE 23rd International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom) (Best paper award).
+                                    </li>
+                                    <li>
+                                        Duong Nguyen, <span class="important">Phi Le Nguyen</span>, Truong Nguyen, Hieu
+                                        Pham, and Duc Tran, "FedBlock: A Blockchain Approach to Federated Learning
+                                        against Backdoor Attacks", IEEE BigData 2024.
+                                    </li>
+                                    <li>
+                                        Minh Hieu Nguyen, Huu Tien Nguyen, Trung Thanh Nguyen, Manh Duong Nguyen, Trong
+                                        Nghia Hoang, Truong Thao Nguyen and <span class="important">Phi Le
+                                            Nguyen</span>, "FedCert: Federated Accuracy Certification", The 22nd
+                                        International Symposium on Network Computing and Applications (NCA 2024).
+                                    </li>
+
+                                    <br>
+                                    <h4><b>2023</b></h4>
+                                    <li>
+                                        <span class="important">Phi Le Nguyen</span> et al., "High Accurate and
+                                        Explainable Multi-Pill Detection Framework with Graph Neural Network-Assisted
+                                        Multimodal Data Fusion", PLoS One, 2023.
+                                    </li>
+                                    <li>
+                                        <span class="important">Phi Le Nguyen</span> et al., "Backdoor Attacks and
+                                        Defenses in Federated Learning: Survey, Challenges and Future Research
+                                        Directions", Engineering Applications of Artificial Intelligence (EAAI), 2023.
+                                    </li>
+                                    <li>
+                                        <span class="important">Phi Le Nguyen</span> et al., "Attentional Ensemble Model
+                                        for Accurate Discharge and Water Level Prediction with Training Data
+                                        Enhancement", Engineering Applications of Artificial Intelligence (EAAI), 2023.
+                                    </li>
+                                    <li>
+                                        Quan Nguyen, Hieu H. Pham, Kok-Seng Wong, <span class="important">Phi Le
+                                            Nguyen</span>, Truong Thao Nguyen and Minh N. Do, "FedDCT: Federated
+                                        Learning of Large Convolutional Neural Networks on Resource Constrained Devices
+                                        using Divide and Collaborative Training", IEEE Transactions on Network and
+                                        Service Management, 2023.
+                                    </li>
+                                    <li>
+                                        Quang Viet Ly, Ngoc Anh Tong, Bo-Mi Lee, Minh Hieu Nguyen, Huynh Thanh Trung,
+                                        <span class="important">Phi Le Nguyen</span>, Thu-Huong T. Hoang, Yuhoon Hwang,
+                                        Jin Hur, "Improving algal bloom detection using spectroscopic analysis and
+                                        machine learning: A case study in a large artificial reservoir, South Korea",
+                                        Science of The Total Environment, 22 August 2023, 166467.
+                                    </li>
+                                    <li>
+                                        Xuan Cuong Do, Hoang Dang Nguyen, Nhat Hai Nguyen, Thanh Hung Nguyen, Hieu Pham
+                                        and <span class="important">Phi Le Nguyen</span>, "A Novel Approach for
+                                        Extracting Key Information from Vietnamese Prescription Images", SoICT 2023.
+                                    </li>
+                                    <li>
+                                        Minh Quang Le, Nguyen Nang Hung, Kien Nguyen, <span class="important">Phi Le
+                                            Nguyen</span> and Phan Thuan Do, "Perpetual Sensor Networks with the Minimum
+                                        Number of Mobile Chargers", SoICT 2023.
+                                    </li>
+                                    <li>
+                                        Tue Cao, Nhat Tran, <span class="important">Phi Le Nguyen</span>, Hung Nguyen
+                                        and Hieu Pham, "IncepSE: Leveraging InceptionTime's performance with Squeeze and
+                                        Excitaion mechanism in ECG analysis", SoICT 2023.
+                                    </li>
+                                    <li>
+                                        Hoang Quan Pham, Manh Cuong Pham, Thanh Hung Nguyen, <span class="important">Phi
+                                            Le Nguyen</span> and Van Chien Trinh, "A Q-learning-based Energy Efficiency
+                                        Optimization in LoRa Networks", SoICT 2023.
+                                    </li>
+                                    <li>
+                                        Minh Tu Le, Bao Thang Ta, Nhat Minh Le, <span class="important">Phi Le
+                                            Nguyen</span> and Van Hai Do, "A Gaussian Distribution Labeling Method for
+                                        Speech Quality Assessment", CSoNet 2023.
+                                    </li>
+                                    <li>
+                                        Hoang Dang Nguyen, Dinh Nguyen Vu, Viet Anh Nguyen, Tien Dong Nguyen, and <span
+                                            class="important">Phi Le Nguyen</span>, "A Robust Document Localization
+                                        Solution with Segmentation and Clustering", The 36th International Conference on
+                                        Industrial, Engineering & Other Applications of Applied Intelligent Systems
+                                        (IEA/AIE 2023).
+                                    </li>
+                                    <li>
+                                        Giang Nguyen, Thi Ha Ly Dinh, Thanh Hung Nguyen, Kien Nguyen, and <span
+                                            class="important">Phi Le Nguyen</span>, "A Data-driven Scheduling Strategy
+                                        for Mobile Air Quality Monitoring Devices", 15th Asian Conference on Intelligent
+                                        Information and Database Systems (ACIIDS 2023).
+                                    </li>
+                                    <li>
+                                        Nam Duong Tran, Manh Cuong Dao, Thanh Hung Nguyen, Dinh Thi Ha Ly, Kien Nguyen,
+                                        and <span class="important">Phi Le Nguyen</span>, "A Deep Reinforcement
+                                        Learning-based Multi-Objective Optimization for Crowdsensing-based Air Quality
+                                        Monitoring Systems", 15th Asian Conference on Intelligent Information and
+                                        Database Systems (ACIIDS 2023).
+                                    </li>
+                                    <li>
+                                        <span class="important">Phi Le Nguyen</span> et al., FedGrad: Mitigating
+                                        Backdoor Attacks in Federated Learning Through Local Ultimate Gradients
+                                        Inspection, International Joint Conference on Neural Networks (IJCNN 2023).
+                                    </li>
+                                    <li>
+                                        Nang Hung Nguyen, Duc Long Nguyen, Trong Bang Nguyen, Thanh-Hung Nguyen, Hieu
+                                        Pham, Truong Thao Nguyen and <span class="important">Phi Le Nguyen</span>,
+                                        "CADIS: Handling Cluster-skewed Non-IID Data in Federated Learning with
+                                        Clustered Aggregation and Knowledge Distilled Regularization", The 23nd IEEE
+                                        International Symposium on Cluster, Cloud and Internet Computing (CCGrid 2023)
+                                        <b>(Best paper finalist).</b>
+                                    </li>
+                                    <br>
+                                    <h4><b>2022</b></h4>
+
+                                    <li>
+                                        <span class="important">Phi Le Nguyen</span> et al., "Accurate Discharge and
+                                        Water Level Forecasting Using Ensemble Learning with Genetic Algorithm and
+                                        Singular Spectrum Analysis-based Denoising", 2022, Scientific Reports, 12(1),
+                                        p.19870.
+                                    </li>
+                                    <li>
+                                        Nguyen Thanh Long, Tran Thi Huong, Nguyen Ngoc Bao, Huynh Thi Thanh Binh, <span
+                                            class="important">Phi Le Nguyen</span>, and Kien Nguyen, "Q-learning-based
+                                        Distributed Multi-Charging Algorithm for Large-scale WRSNs", 2023, Nonlinear
+                                        Theory and Its Applications, IEICE, 14(1), pp.18-34.
+                                    </li>
+                                    <li>
+                                    <li>
+                                        Trung Thanh Nguyen, Truong Thao Nguyen, Thanh Hung Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, "Fuzzy Q-learning-based
+                                        Opportunistic Communication for MEC-enhanced Vehicular Crowdsensing", IEEE
+                                        Transactions on Network and Service Management, 1932-4537, 2022.
+                                    </li>
+                                    <li>
+                                        La Van Quan, Minh Hieu Nguyen, Thanh Hung Nguyen, Kien Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, "On the Global Maximization of
+                                        Network Lifetime in Wireless Rechargeable Sensor Networks", ACM Transaction on
+                                        Sensor Networks, 22022, , 18(4), pp.1-29.
+                                    </li>
+                                    <li>
+                                        Thu Hang Phung, Duc Long Nguyen, Viet Hung Vu, Thanh Trung Huynh, Thanh Hung
+                                        Nguyen and <span class="important">Phi Le Nguyen</span>, "Unsupervised Air
+                                        Quality Interpolation with Attentive Graph Neural Network", SoICT 2022.
+                                    </li>
+                                    <li>
+                                        Minh Hai Vu, Giang T. T. Nguyen, Hai Dang Tran, Thanh Trung Nguyen, Phan Thuan
+                                        Do, <span class="important">Phi Le Nguyen</span>, Kien Nguyen, "An Empirical
+                                        Study of MPQUIC Schedulers in Mobile Wireless Networks", SoICT 2022.
+                                    </li>
+                                    <li>
+                                        Thanh Trung Nguyen, Minh Hai Vu, <span class="important">Phi Le Nguyen</span>,
+                                        Phan Thuan Do, Kien Nguyen, "A Q-learning-based Multipath Scheduler for Data
+                                        Transmission Optimization in Heterogeneous Wireless Networks", IEEE Consumer
+                                        Communications & Networking Conference (CCNC 2022).
+                                    </li>
+                                    <li>
+                                        Trung Thanh Nguyen, Hoang Dang Nguyen, Thanh Hung Nguyen, Huy Hieu Pham, Ichiro
+                                        Ide, <span class="important">Phi Le Nguyen</span>, "A Novel Approach for
+                                        Pill-Prescription Matching with GNN Assistance and Contrastive Learning", The
+                                        19th Pacific Rim International Conference on Artificial Intelligence (PRICAI
+                                        2022).
+                                    </li>
+                                    <li>
+                                        Ngoc Bui, <span class="important">Phi Le Nguyen</span>, Viet Anh Nguyen, Phan
+                                        Thuan Do, "A Deep Reinforcement Learning-based Adaptive Charging Policy for
+                                        WRSNs", The 19th IEEE International Conference on Mobile Ad-Hoc and Smart
+                                        Systems (MASS 2022).
+                                    </li>
+                                    <li>
+                                        Anh Duy Nguyen, Thuy Dung Nguyen, Huy Hieu Pham, Thanh Hung Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, "Image-based Contextual Pill
+                                        Recognition with Medical Knowledge Graph Assistance", 14th Asian Conference on
+                                        Intelligent Information and Database Systems (ACIIDS), 2022.
+                                    </li>
+                                    <li>
+                                        Nang Hung Nguyen, <span class="important">Phi Le Nguyen</span>, Duc Long Nguyen,
+                                        Trung Thanh Nguyen, Thuy Dung Nguyen, Huy Hieu Pham, Thanh Hung Nguyen, Truong
+                                        Thao Nguyen, "FedDRL: Deep Reinforcement Learning-based Adaptive Aggregation for
+                                        Non-IID Data in Federated Learning", 51st International Conference on Parallel
+                                        Processing (ICPP), 2022.
+                                    </li>
+                                    <li>
+                                        Hung Cuong Nguyen, Manh Cuong Dao, Thanh Trung Nguyen, Ngoc Khanh Doan, Thanh
+                                        Hung Nguyen, Truong Thao Nguyen, <span class="important">Phi Le Nguyen</span>,
+                                        "Deep Reinforcement Learning-based Charging Algorithm for Target Coverage and
+                                        Connectivity in WRSNs", The 2022 Annual IEEE International Symposium on
+                                        Personal, Indoor and Mobile Radio Communications (IEEE PIMRC), 2022.
+                                    </li>
+                                    <li>
+                                        Minh Hieu Nguyen, Viet Huy Nguyen, Thanh Trung Huynh, Thanh Hung Nguyen, Quoc
+                                        Viet Hung Nguyen, <span class="important">Phi Le Nguyen</span>, "A Lightweight
+                                        and Efficient GA-based Model-Agnostic Feature Selection Scheme for Time Series
+                                        Forecasting", 14th Asian Conference on Intelligent Information and Database
+                                        Systems (ACIIDS), 2022.
+                                    </li>
+                                    <li>
+                                        Kien Nguyen, <span class="important">Phi Le Nguyen</span>, Hiroo Sekiya, "A
+                                        Host-based Investigation of IPv6 in Academia: The Cases of Japan and Vietnam",
+                                        IEEE CCNC 2022.
+                                    </li>
+                                    <li>
+                                        Hieu Dinh, Nang Hung Nguyen, Trung Thanh Nguyen,Thanh Hung Nguyen, Truong Thao
+                                        Nguyen, <span class="important">Phi Le Nguyen</span>, "Deep Reinforcement
+                                        Learning-based Offloading for Latency Minimization in 3-tier V2X Networks", WCNC
+                                        2022.
+                                    </li>
+                                    <li>
+                                        Tuan Anh Nguyen Dinh, Anh Duy Nguyen, Truong Thao Nguyen, Thanh Hung Nguyen,
+                                        <span class="important">Phi Le Nguyen</span>, "Spatial-temporal Coverage
+                                        Maximization in Vehicle-based Mobile Crowdsensing for Air Quality Monitoring",
+                                        WCNC 2022.
+                                    </li>
+                                    <br>
+                                    <h4><b>2021</b></h4>
+
+                                    <li>
+                                        Viet Dung Nguyen, <span class="important">Phi Le Nguyen</span>, Kien Nguyen,
+                                        Phan Thuan Do, "Constant Approximation for Opportunistic Sensing in Mobile Air
+                                        Quality Monitoring System", Computer Networks Journal, 2021, 202, p.108646.
+                                    </li>
+                                    <li>Thuy Dung Nguyen, Tuyen Nguyen, Thanh Hung Nguyen, Kien Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, "Joint Optimization of Charging
+                                        Location and Time for Network Lifetime Extension in WRSNs", IEEE Transactions on
+                                        Green Communications and Networking, 2021, , 6(2), pp.1186-1197.
+                                    </li>
+                                    <li>Tran Thi Huong, Le Van Cuong, Ngo Minh Hai, <span class="important">Phi Le
+                                            Nguyen</span>, Le Trong Vinh, Huynh Thi Thanh Binh, "A bi-level optimized
+                                        charging algorithm for energy depletion avoidance in wireless rechargeable
+                                        sensor networks", Applied Intelligence, 2021, pp.1-23.
+                                    </li>
+                                    <li><span class="important">Phi Le Nguyen</span>, Nang Hung Nguyen, Tuan Anh Nguyen
+                                        Dinh, Khanh Le, Thanh Hung Nguyen, Kien Nguyen, "QIH: an Efficient Q-learning
+                                        Inspired Hole-Bypassing Routing Protocol for WSNs", IEEE Access, 9,
+                                        pp.123414-123429.
+                                    </li>
+                                    <li>Van Quan La, Anh Duy Nguyen, Thanh Hung Nguyen, Kien Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, "An On-demand Charging for Connected
+                                        Target Coverage in WRSNs using Fuzzy Logic and Q-learning", MDPI Sensors, 2021,
+                                        21(16), p.5520.
+                                    </li>
+                                    <li>Kien Nguyen, <span class="important">Phi Le Nguyen</span>, Li Zhe-tao, Hiroo
+                                        Sekiya, "Empowering 5G Mobile Devices with Network Softwarization", IEEE
+                                        Transactions on Network and Service Management, 2021, 18(3), pp.2492-2501
+                                    </li>
+                                    <li>Minh Hieu Nguyen, <span class="important">Phi Le Nguyen</span>, Kien Nguyen, Van
+                                        An Le, Thanh-Hung Nguyen, Yusheng Ji, "PM2.5 Prediction Using Genetic
+                                        Algorithm-based Feature Selection and Encoder-Decoder Model", IEEE Access, 2021,
+                                        9, pp.57338-57350.
+                                    </li>
+                                    <li><span class="important">Phi Le Nguyen</span>, Yusheng Ji, Minh Khiem Pham, Hieu
+                                        Le, Thanh Hung Nguyen, “(1+epsilon)<sup>2</sup>- and Polynomial-Time
+                                        Approximation Algorithms for Network Lifetime Maximization with Relay Hop
+                                        Bounded Connected Target Coverage in WSNs”, IEEE Sensors Journal, 2021, 21(7),
+                                        pp.9577-9599.
+                                    </li>
+                                    <li>
+                                        Trung Thanh Nguyen, Truong Thao Nguyen, Tuan Anh Nguyen Dinh, Thanh-Hung Nguyen,
+                                        <span class="important">Phi Le Nguyen</span>, "Q-learning-based Opportunistic
+                                        Communication for Real-time Mobile Air Quality Monitoring Systems", IPCCC 2021.
+                                    </li>
+                                    <li>
+                                        Thanh Le-Cong, Xuan Bach Le D., <span class="important">Phi Le Nguyen</span> and
+                                        Quyet Thang Huynh, "Usability and Aesthetics: Better Together for Automated
+                                        Repair of Web Pages", ISSRE 2021.
+                                    </li>
+                                    <li>Viet An Nguyen, Viet Hung , Van Sang Doan, Thanh Hung Nguyen, Phan Thuan Do,
+                                        Kien Nguyen, <span class="important">Phi Le Nguyen</span>, Minh Thuy Le,
+                                        "Realizing Mobile Air Quality Monitoring System: Architectural Concept and
+                                        Device Prototype", Asia Pacific Conference on Communications (APCC 2021).
+                                    </li>
+                                    <li>Nang Hung Nguyen, <span class="important">Phi Le Nguyen</span>, Hieu Dinh, Thanh
+                                        Hung Nguyen, Kien Nguyen, “Multi-Agent Multi-Armed Bandit Learning for
+                                        Offloading Delay Minimization in V2X Networks”, IThe 19th IEEE international
+                                        conference on embedded and ubiquitous computing (EUC 2021).
+                                    </li>
+                                    <li>Do Bao Son, Vu Tri An, Trinh Thu Hai, Binh Minh Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, Huynh Thi Thanh Binh, “Fuzzy Deep
+                                        Q-learning Task Offloading in Delay Constrained Vehicular Fog Computing”,
+                                        International Joint Conference on Neural Network, IJCNN 2021.
+                                    </li>
+                                    <li>Tran Bao Hieu, Hoang Duc Viet, Nguyen Manh Hiep, Pham Ngoc Bao Anh, Nguyen Duc
+                                        Anh, Hoang Gia Bao, Hai-Phong Bui, Thanh Hung Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, Thi-Lan Le, “MC-OCR Challenge 2021:
+                                        A Multi-modal Approach for Mobile-Captured Vietnamese Receipts Recognition”, The
+                                        15th IEEE-RIVF International Conference on Computing and Communication
+                                        Technologies, RIVF 2021.
+                                    </li>
+                                    <li>Anh Duy Nguyen, Viet Hung Vu, Minh Hieu Nguyen, Duc Viet Hoang, Thanh Hung
+                                        Nguyen, Kien Nguyen, <span class="important">Phi Le Nguyen</span>, “Efficient
+                                        Prediction of Discharge and Water Levels Using Ensemble Learning and
+                                        Singular-Spectrum Analysis-based Denoising”, The 34th International Conference
+                                        on Industrial, Engineering & Other Applications of Applied Intelligent Systems
+                                        IEA/AIE 2021.
+                                    </li>
+                                    <li>Van An Le, Tien Thanh Le, <span class="important">Phi Le Nguyen</span>, Huynh
+                                        Thi Thanh Binh, Rajendra Akerkar, Yusheng Ji, “GCRINT: Network Traffic
+                                        Imputation Using Graph Convolutional Recurrent Neural Network”, IEEE
+                                        International Conference on Communications (ICC2021), Virtual / Montreal.
+                                    </li>
+                                    <li>Van An Le, Tien Thanh Le, <span class="important">Phi Le Nguyen</span>, Huynh
+                                        Thi Thanh Binh, Yusheng Ji, “Multi-time-step Segment Routing based Traffic
+                                        Engineering Leveraging Traffic Prediction”, IFIP/IEEE International Symposium on
+                                        Integrated Network Management (IM2021), Bordeaux, France.
+                                    </li>
+                                    <br>
+                                    <h4><b>2020</b></h4>
+
+                                    <li><span class="important">Phi Le Nguyen</span>, Thanh Hung Nguyen, Kien Nguyen, “A
+                                        Path-Length Efficient, Low-Overhead, Load-Balanced Routing Protocol for Maximum
+                                        Network Lifetime in Wireless Sensor Networks with Holes”, MDPI Sensors, 20(9),
+                                        2020.
+                                    </li>
+                                    <li>Le Hoai Anh, Chu Manh Hai, Nguyen Phu Truong, Thanh-Hung Nguyen, <span
+                                            class="important">Phi Le Nguyen</span>, “Optimal Deployment of Vehicular
+                                        Mobile Air Quality Monitoring Systems”, NICS, 2020.
+                                    </li>
+                                    <li>Viet Dung Nguyen, <span class="important"><span class="important">Phi Le
+                                                Nguyen</span></span>, Trung Hieu Nguyen, Kien Nguyen, Phan Thuan Do,
+                                        “An (e-1)/(2e-1)-Approximation Algorithm for Maximizing the Coverage Capability
+                                        in Vehicle-based Mobile Air Quality Monitoring Systems”, The 19th IEEE
+                                        International Symposium on Network Computing and Applications (NCA 2020), 24-27
+                                        November 2020.
+                                    </li>
+                                    <li>La Van Quan, <span class="important"><span class="important">Phi Le
+                                                Nguyen</span></span>, Thanh-Hung Nguyen, Kien Nguyen,
+                                        “Q-learning-based, Optimized On-demand Charging Algorithm in WRSN”, The 19th
+                                        IEEE International Symposium on Network Computing and Applications (NCA 2020),
+                                        24-27 November 2020, Virtual conference.
+                                    </li>
+                                    <li>Bao Hieu Tran, Thanh Le-Cong, Huu Manh Nguyen, Duc Anh Le, Thanh Hung Nguyen,
+                                        <span class="important"><span class="important">Phi Le Nguyen</span></span>,
+                                        “SAFL: A Self-Attention Scene Text Recognizer with Focal Loss”, 19th IEEE
+                                        International Conference On Machine Learning And Applications (ICMLA 2020),
+                                        December 14-17, 2020, MIAMI, FLORIDA.
+                                    </li>
+                                    <li><span class="important"><span class="important">Phi Le Nguyen</span></span>,
+                                        Ren-Hung Hwang, Pham Minh Khiem, Kien Nguyen, Ying-Dar Lin, “Modeling and
+                                        Minimizing Latency in Three-tier V2X Networks”, The 2020 IEEE Global
+                                        Communications Conference (IEEE GLOBECOM), 8–10 December 2020, Taipei, Taiwan.
+                                    </li>
+                                    <li>Viet-Dung Nguyen, <span class="important"><span class="important">Phi Le
+                                                Nguyen</span></span>, Trung Hieu Nguyen, Phan Thuan Do, “A
+                                        1/2-Approximation Algorithm for Target Coverage Problem in Mobile Air Quality
+                                        Monitoring Systems”, The 2020 IEEE Global Communications Conference (IEEE
+                                        GLOBECOM), 8–10 December 2020, Taipei, Taiwan.
+                                    </li>
+                                    <li>Manh Hung Dinh, Ngoc Thach Hoang, Mai Phuong Nguyen, <span
+                                            class="important"><span class="important">Phi Le Nguyen,</span></span> Phan
+                                        Thuan Do,
+                                        “Node Deployment Optimization for Target Coverage and Connectivity in WSNs with
+                                        a Delay-constrained Mobile Sink”, ICCE 2020.
+                                    </li>
+                                    <li>Huong Tran, Thi Thanh Binh Huynh, <span class="important"><span
+                                                class="important">Phi Le Nguyen,</span></span> Cao Thanh Long Doan, Dinh
+                                        An Vuong and Trong Vinh Le,
+                                        “Optimizing Charging Locations and Charging Time for Energy Depletion Avoidance
+                                        in WRSNs”, the 2020 IEEE Congress on Evolutionary Computation (IEEE CEC 2020),
+                                        19 – 24th July, 2020, Glasgow (UK).
+                                    </li>
+                                    <li>Tran Thi Huong, <span class="important"><span class="important">Phi Le
+                                                Nguyen,</span></span> Huynh
+                                        Thi Thanh Binh, Kien Nguyen, Ngo Minh Hai, Le Trong Vinh, “Genetic
+                                        Algorithm-based Periodic Charging
+                                        Scheme for Energy Depletion Avoidance in WRSNs”, IEEE Wireless Communications
+                                        and Networking Conference (WCNC 2020), 25-28 May 2020 // Virtual Conference.
+                                    </li>
+                                    <li>La Van Quan, Thanh Hung Nguyen, <span class="important"><span
+                                                class="important">Phi Le Nguyen,</span></span> “Extending Network
+                                        Lifetime by Exploiting Wireless Charging in WSN”, RIVF 2020.
+                                    </li>
+
+                                    <br>
+                                    <h4><b>2019</b></h4>
+
+                                    <li><span class="important">Phi Le Nguyen</span>, Nguyen Thi Hanh, Nguyen Tien
+                                        Khuong, Huynh Thi Thanh Binh, Yusheng Ji, “Node placement for connected target
+                                        coverage in wireless sensor networks with dynamic sinks”, Pervasive and Mobile
+                                        Computing, Volume 59, 2019.
+                                    </li>
+                                    <li><span class="important">Phi Le Nguyen</span>, Kien Nguyen, Huy Vu, Yusheng Ji,
+                                        “TELPAC: A Time and Energy Efficient Protocol for Locating and Patching Coverage
+                                        Holes in WSNs”, Journal of Network and Computer Applications, Volume 147, 1
+                                        December 2019, 102439.
+                                    </li>
+                                    <li><span class="important"><span class="important">Phi Le Nguyen,</span></span>
+                                        Thanh Hung Nguyen, Kien
+                                        Nguyen, “A Dynamic Routing Protocol for Maximizing Network Lifetime in WSNs with
+                                        Holes”, SoICT 2019.
+                                    </li>
+                                    <li>Khanh Le, Nguyen Thanh Hung, Kien Nguyen, <span class="important"><span
+                                                class="important">Phi Le Nguyen,</span></span>
+                                        “Exploiting Q-learning in Extending the Network Lifetime of Wireless Sensor
+                                        Networks with Holes”, 25th IEEE International Conference on Parallel and
+                                        Distributed Systems, ICPADS 2019, Tianjin, China, 2019.
+                                    </li>
+                                    <li>Nguyen Thanh Trung, Nguyen Thanh Hung, <span class="important"><span
+                                                class="important">Phi Le Nguyen,</span></span>
+                                        “Network Lifetime Maximization for Full Area Coverage in Wireless Sensor
+                                        Networks”, The 25th Asia-Pacific Conference on Communications (APCC), 2019.
+                                    </li>
+                                    <br>
+                                    <h4><b>2018</b></h4>
+                                    <li><span class="important"><span class="important">Phi Le Nguyen,</span></span>
+                                        Yusheng Ji, Khanh Le,
+                                        Thanh-Hung Nguyen, “Routing in the Vicinity of Multiple Holes in WSNs”, ICT-DM
+                                        2018, Sendai, Japan. <b>(best student paper award).</b>
+                                    </li>
+                                    <li><span class="important"><span class="important">Phi Le Nguyen,</span></span>
+                                        Yusheng Ji, Khanh Le,
+                                        Thanh-Hung Nguyen, ”Load Balanced and Constant Stretch Routing in the Vicinity
+                                        of Holes in WSNs”, the 15th Annual IEEE Consumer Communications & Networking
+                                        Conference, IEEE CCNC 2018, Las Vegas, USA.
+                                    </li>
+                                    <br>
+                                    <h4><b>2017</b></h4>
+
+                                    <li><span class="important">Phi Le Nguyen</span>, Yusheng Ji, Zhi Liu, Huy Vu,
+                                        Khanh-Van Nguyen, ”Distributed Hole-Bypassing Protocol in WSNs with Constant
+                                        Stretch and Load Balancing”, Computer Networks journal 129 (2017), pp. 232-250.
+                                    </li>
+                                    <li><span class="important"><span class="important">Phi Le Nguyen,</span></span>
+                                        Yusheng Ji, Trung Thanh
+                                        Nguyen, Thanh-Hung Nguyen, “Constant Stretch and Load Balanced Routing Protocol
+                                        for Bypassing Multiple
+                                        Holes in Wireless Sensor Networks”, The 16th IEEE International Symposium on
+                                        Network Computing and Applications (NCA 2017), Boston, USA.
+                                    </li>
+                                    <li><span class="important"><span class="important">Phi Le Nguyen,</span></span>
+                                        Yusheng Ji, Thanh Trung
+                                        Nguyen, Thanh-Hung Nguyen, “A Delay-Guaranteed Geographic Routing Protocol with
+                                        Hole Avoidance in
+                                        WSNs”, the 14th IEEE International Conference on Mobile Ad hoc and Sensor
+                                        Systems (MASS) will be held in Orlando, Florida, USA, on October 22-25, 2017,
+                                        Florida, USA.
+                                    </li>
+
+                                    <br>
+                                    <h4><b>2016</b></h4>
+                                    <li><span class="important"><span class="important">Phi Le Nguyen,</span></span>
+                                        Khanh Van Nguyen, Huy
+                                        Vu, Yusheng Ji, “A Time and Energy Efficient Protocol for Locating Coverage
+                                        Holes in WSNs”, the 41st IEEE Conference on Local Computer Networks (LCN’16),
+                                        Dubai.
+                                    </li>
+
+                                    <br>
+                                    <h4><b>2015</b></h4>
+
+                                    <li>Nguyen Duc Trong, <span class="important">Nguyen Phi Le</span>, Phan Van Hau,
+                                        Nguyen Khanh Van, “A Distributed Protocol for
+                                        Detecting and Updating Hole Boundary in Wireless Sensor Networks”, the Sixth
+                                        Symposium on Information and Communication Technology (SoICT’15), Hanoi, Vietnam
+                                        <b>(Best paper award).</b>
+                                    </li>
+                                    <br>
+
+                                    <h4><b>2014</b></h4>
+
+                                    <li><span class="important">Le Phi Nguyen</span>, Khanh-Van Nguyen, “On hole
+                                        approximation algorithms in wireless sensor networks”, Journal of Computer
+                                        Science and Cybernetics, Volume 30 (4), 2014.
+                                    </li>
+                                    <li><span class="important">Phi Le Nguyen</span>, Duc-Trong Nguyen, Khanh-Van
+                                        Nguyen, “Load Balanced Routing with Constant Stretch for
+                                        Wireless Sensor Network with Holes”, the 9th IEEE International Conference on
+                                        Intelligent Sensors,
+                                        Sensor Networks and Information Processing (ISSNIP’14), Singapore <b>(Best paper
+                                            award).</b>
+                                    </li>
+                                    <li><span class="important">Phi Le Nguyen</span> and Khanh-Van Nguyen, “Hole
+                                        Approximation-Dissemination Scheme for Bounded-Stretch
+                                        Routing in Sensor Networks”, the 10th IEEE International Conference on
+                                        Distributed Computing in Sensor
+                                        Systems (DCOSS’14), USA.
+                                    </li>
+                                    <br>
+                                    <h4><b>2012</b></h4>
+
+                                    <li><span class="important"><span class="important">Phi Le Nguyen,</span></span>
+                                        Trung Hieu Nguyen,
+                                        Khanh Van Nguyen, “ELBAR: Efficient Load Balanced Routing Scheme for Wireless
+                                        Sensor Networks with
+                                        Holes”, the Third Symposium on Information and Communication Technology
+                                        (SoICT’12), Hanoi, Vietnam.
+                                    </li>
+
+                                    <br>
+                                    <h4><b>2011</b></h4>
+
+                                    <li><span class="important"><span class="important">Phi Le Nguyen,</span></span>
+                                        Trung Hieu Nguyen, Tien
+                                        Quan Bui and Khanh Van Nguyen, “Efficient Approximation of Routing Holes in
+                                        Wireless Sensor Networks”,
+                                        the Second Symposium on Information and Communication Technology (SoICT’11),
+                                        Hanoi, Vietnam., Vietnam,
+                                        2011.
+                                    </li>
+
+                                    <br>
+                                    <h4><b>2010</b></h4>
+
+                                    <li><span class="important">N. P. Le</span>, T. Morohashi, H. Imaizumi, and H.
+                                        Morikawa, “A Performance Evaluation of Energy Efficient
+                                        Schemes for Green Office Networks”, IEEE Green Technologies Conference, Dallas,
+                                        USA, 2010.
+                                    </li>
+
+                                    <br>
+                                    <h2>Technical Reports</h2>
+
+                                    <li><span class="important">Phi Le Nguyen,</span> Vu Quoc Huy, Yusheng Ji, “Hole
+                                        Aware Real-time Routing
+                                        Protocol in WSNs”, IEICE, 2017-01-CQ, Jan. 2017, Japan.
+                                    </li>
+                                    <li><span class="important">Phi Le Nguyen,</span> Yusheng Ji, Thanh Trung Nguyen,
+                                        Thanh-Hung Nguyen,
+                                        “Hole
+                                        Bypassing Geographic Routing Protocol with Delay Guarantee in WSNs”, IEICE, IN
+                                        2016-163, March 2017,
+                                        Japan
+                                    </li>
+                                    <li><span class="important">Phi Le Nguyen,</span> Yusheng Ji, “Load Balanced
+                                        Geographic Routing in the
+                                        Vicinity of Holes in WSNs”, IEICE, September 2017, Japan.
+                                    </li>
+                                    <li><span class="important">Phi Le Nguyen,</span> Yusheng Ji, Le Hieu, Nguyen Duc
+                                        Anh, Van An Le, Thanh
+                                        Hung Nguyen, “Network Lifetime Maximization with Full Area Coverage in WSNs”,
+                                        IEICE, Vol. 118, No.
+                                        192,
+                                        CQ2018-54, pp. 47-52, Aug. 2018, Japan.
+                                    </li>
+                                    <li>Van An Le, <span class="important">Phi Le Nguyen,</span> Yusheng Ji, “Traffic
+                                        Matrix Prediction
+                                        based
+                                        on Bidirectional Recurrent Neural Network and Long Short-Term Memory”, IEICE,
+                                        Vol. 118, No. 140,
+                                        CQ2018-40, pp. 51-56, July 2018, Japan.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="profile-settings tab">
+                    <div class="resume-content">
+                        <h2>Editor </h2>
+                        <p class="h5 text-muted mb-3"></p>
+                        <div>
+                            <ul class="resume-body">
+                                <li>
+                                    Associate Editor of ACM Computing Surveys 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-content">
+                        <h2>Chair </h2>
+                        <p class="h5 text-muted mb-3"></p>
+                        <div>
+                            <ul class="resume-body">
+                                <li>
+                                    ICDM 2026 Workshop Chair, CSoNet 2026 TPC Chair.  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-content">
+                        <h2>TPC member </h2>
+                        <p class="h5 text-muted mb-3"></p>
+                        <div>
+                            <ul class="resume-body">
+                                <li>
+                                    Globecom, PRICAI, ICC, VTC, IJCNN, CSoNET 
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="resume-content">
+                        <h2>Reviewer</h2>
+                        <p class="h5 text-muted mb-3"></p>
+                        <div>
+                            <ul class="resume-body">
+                                <li>
+
+                                    Engineering Applications of Artificial Intelligence, IEEE Transactions on Network
+                                    and Service Management, IEEE Transactions on Neural Networks and Learning Systems,
+                                    IEEE Transaction on Computer, IEEE Transaction on Networking, PLoS One, Internet of
+                                    Things Journal, ACM Transactions on Sensor Networks, Applied Soft Computing,
+                                    Peer-to-Peer Networking and Applications, IEEE sensors, IEEE Transactions on
+                                    Vehicular Technology, IEEE Communications Letters, International Journal of
+                                    Distributed Sensor Networks, IEICE Transactions on Communications, Journal of
+                                    Computer Networks and Communications, Wireless Communications and Mobile Computing.
+                                </li>
+                                <li>
+                                    NeuRIPS, ICLR, ICML, AAAI, AISTATS, UAI, CVPR, ICCV, ECCV, ACL, WACV, ICC, Globecom.  
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="profile-settings tab">
+                    <div class="resume-content">
+                        <h2>2024</h2>
+                    </div>
+                    <div class="resume-content">
+                        <ul class="resume-body">
+                            <li>26 Aug: I am invited to serve as a TPC member for Globecom 2024.</li>
+                            <li>23 Apr: I am invited to serve as a TPC member for PRICAI 2024.</li>
+                            <li>30 Jan: I am invited to serve as a TPC member for UAI 2024.</li>
+                        </ul>
+                    </div>
+                    <div class="resume-content">
+                        <h2>2023</h2>
+                    </div>
+                    <div class="resume-content">
+                        <ul class="resume-body">
+                            <li>July: I am invited to serve as a Publicity chair for CSoNet 2023</li>
+                            <li>22 May: I am invited to serve as a PC member for Globecom 2023.</li>
+                            <li>20 April: I am invited to give a talk at Japan-Vietnam AI Forum.</li>
+                            <li>17 March: I am invited to serve as a PC member for the main track of PRICAI 2023.</li>
+                            <li>17 March: I am invited to serve as a PC member for IEA-AIE 2023.</li>
+                            <li>27 Feb: I am invited to serve as a PC member for ISEE 2023.</li>
+                            <li>25 Feb: I am invited to serve as a PC member for IJCAI 2023.</li>
+                            <li>14 Feb: I am invited to serve as a PC member for VTC2023-Spring.</li>
+                            <li>11 Feb: I am invited to serve as a PC member for ICC'23.</li>
+                            <li>4 Feb: I am invited to serve as a PC member for IJCNN 2023.</li>
+                            <li>6 Feb: I am invited to serve as a PC member for ICCV 2023.</li>
+                        </ul>
+                    </div>
+
+                    <div class="resume-content">
+                        <h2>2022</h2>
+                    </div>
+                    <div class="resume-content">
+                        <ul class="resume-body">
+                            <li>8 July : I am invited to serve as a PC member for IEEE ICC'23 - CQRM Symposium.</li>
+                            <li>10 July : I am invited to serve as a PC member for PRICAI 2022.</li>
+                            <li>17 Jan : I am invited to serve as a PC member for Globecom 2022.</li>
+                        </ul>
+                    </div>
+
+                    <!--
+      <div class="profile-settings tab">
+          <div class="resume-content">
+            <h2>Template đồ án tốt nghiệp</h2>
+            <div data-toggle="modal" data-target="#exampleModalLong">
+              <img src="static/template.png" width="200px" style="cursor: zoom-in">
+            </div>
+          </div>
+          <div class="resume-content">
+            <h5 style="font-weight: bold;">Chú ý:</h5>
+            <div>
+              <ul class="resume-body">
+                <li>Hệ kỹ sư chính quy -> Ngành Kỹ thuật phần mềm</li>
+                <li>Hệ Việt Nhật -> Ngành Công nghệ thông tin</li>
+                <li>Hệ ICT -> Information Technology</li>
+                <li>Hệ KSTN -> Ngành Công nghệ thông tin</li>
+                <li>Hệ Cử nhân -> Ngành Công nghệ thông tin</li>
+                <li>Hệ SIE-LTU -> Ngành Công nghệ thông tin (nếu viết luận văn bằng tiếng anh thì tên ngành là Information Technology) </li>
+                <li>Hệ SIE-VUW -> Ngành Kỹ thuật Phần mềm </li>
+                <li>Hệ G-INP -> Ngành Hệ thống thông tin </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+     
+
+      <div class="profile-settings tab">
+          <h2>JP3120 - Tiếng Nhật chuyên ngành 2 </h2>
+          <div class="resume-content">
+          <h5 style="font-weight: bold;">Slides:</h5>
+          <div>
+            <ul class="resume-body">
+              <li><a href="static/jp3120/01.alphabet.pdf" download>01.アルファベット</a></li>
+              <li><a href="static/jp3120/02.OSI.pdf" download>02.OSI基本参照モデル</a></li>
+              <li><a href="static/jp3120/03.class.pdf" download>03.IPアドレス</a></li>
+              <li><a href="static/jp3120/04.LAN.pdf" download>04.LAN</a></li>
+              <li><a href="static/jp3120/05.WAN.pdf" download>05.WAN</a></li>
+              <li><a href="static/jp3120/06.AI.pdf" download>06.AI</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="resume-content">
+          <h5 style="font-weight: bold;">Word list:</h5>
+          <div>
+            <ul class="resume-body">
+              <li><a href="static/jp3120/word_list.pdf" download>ネットワークに関する語彙</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  -->
+
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog"
+            aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="resume-content">
+                        <img src="static/template.png">
+                    </div>
+                </div>
+            </div>s
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+            <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+                integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+                crossorigin="anonymous"></script>
+            <script>
+
+
+
+                $(".nav ul li").click(function () {
+                    $(this).addClass("active").siblings().removeClass("active");
+                });
+
+                const tabBtn = document.querySelectorAll(".nav ul li");
+                const tab = document.querySelectorAll(".tab");
+
+                function tabs(panelIndex) {
+                    tab.forEach(function (node) {
+                        node.style.display = "none";
+                    });
+                    tab[panelIndex].style.display = "block";
+                }
+
+                let tag = location.hash.replace(/^#/, "");
+                if (tag != null && tag != '') {
+                    $('#' + tag).click();
+                    console.log($('#' + tag));
+                } else {
+                    tabs(0);
+                }
+
+            </script>
+</body>
+
+</html>

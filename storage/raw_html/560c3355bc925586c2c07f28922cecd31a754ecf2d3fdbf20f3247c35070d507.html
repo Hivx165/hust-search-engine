@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>
+	Ban đ&#224;o tạo - Bộ phận sau đại học
+</title><script src="/Scripts/modernizr-2.8.3.js"></script>
+<link href="/Content/bootstrap.min.css" rel="stylesheet"/>
+<link href="/Content/jquery.mCustomScrollbar.min.css" rel="stylesheet"/>
+<link href="/Content/Site.css" rel="stylesheet"/>
+<link href="/Content/select2.min.css" rel="stylesheet"/>
+<link href="/Content/all.min.css" rel="stylesheet"/>
+<link href="/Content/toastr.min.css" rel="stylesheet"/>
+<link href="favicon.ico" rel="shortcut icon" type="image/x-icon" /></head>
+<body>
+    <form method="post" action="./Default.aspx" id="ctl01">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="XUAE4xBAqjGNvYO6beSohkGA1M1E9UhXMHjMFHgsa7R5Oqy6hXE02mp42E5aOfGI/ek/m64K17gPizTwdodMqj72FIl8Erood4QiMa/ermZn3j5DfPbbalsJnaOWtM9hCGQd0dH0f0n23Q2Rbn9Sx0LkVd4ZfrKCx4PgPQZzvfDOSv4NQVO+UEmhEaTCpfmRiFcRDV2qF7tvZYScFLmefzAotsdfNBTGScNOuSR29tQfMM9/KN8xaPVonzjXp8BTk+Ud7nVIAZeacjRCBv3E5QsEpe0O8iQyNzXylIXUEF0TecBp8QJKpUaHgzM/2YhIGCZ6ygEJWBr6WdNaOQgSYstQeClZhZoT1Ab30WSEYYUUlsAT2XQIjhYqsuB9K4uTt/858GmtN75xMwijSr95s3auWdSA09ijfytzc4ktOBucLP18svWFCnXTAHOktvzTUPEx2wnM1tB6fkZwYLnJhIgwDFdiSP7FNLBnUZz15AHz8gART29gVrZzAVzV7I57IR3lRKY+M0V7BBnj0vwZ0p8dHgHY7mLDuTqx8JwempDchTa1VHXPYuzQpq0eRkW+ytYWiLcXCJkZ/QG/9MUjAgQLtFmyWBK1F3boak/F75OS9uCuOWh2e5JdPyRl2yoOBDlNRT4cqeH4q4NC9yjDsI2qxvAYg2/sMAwLN8w5sjGPy7BkNoqqjXNeuxph/OfELJnvTRzcbQnIfBgJzbS/6n9H1K5dk9qaZyTdycLowIyG+n2H5QDhc0eQklkhIM6xeRPrZUeHgaPS+sWLfM1+cdgfU0TV/BAC9gpTJDtrSqkPiuCUeTLjvAm1f5TXhpyzmunhSGQFPgQko+69Tv+xm32BAxL77HoZ8oqe4B9iAP2Ty0//MlwlPuxzBUninoAusdjI6VhCEInRd4aPXZFaETDGVJzzdYuMEYHobQgRXiqhNaMnZbhDGvkuUO/P6GOdJ+7pRqjZbpGclCmTMCgygn7323qQCyHdPgVcYLRfEzOJ92CCuAVl8cXEux8weGnck7CH3td/nHQyenCTe6ngzcx77QvzI/gXjzHNeGv6f5XH3OXjXW2U5zJwHG/y0FPf6wHtds36AfdC3ZAbRMJAHYYGZUQxDFLyZ43thXPcSOdJCD3VBEXvotQrXPWplHcVPMC70g2vD18ZDzCnNpYVOCDmBlSSumjd/WtMdtrsCaGJhk027lmNpJ1kLtc0T64IWC48PJFNqZr/N64gI3Utq1BFIGgWgwb/iAEgcXiMB2M/Bcnl4L8KU3erSNBVvpKHma/PNKKbdRt/MDKYwGN97Z6TnnFJ7HyEHWi4afqfp+jDUQWOMBNCqzkVbmXyjXX/lXMd7/m1fT7gjwHaUgFqDhcDspfy5QyO069Rw8OTw9ddIzba012K+v63qufRBTwhEBHx/pU0aHzzKgtDOiZWrfqSKaAI/94ORqMdkYnhZ7BNGukkrSmbSnb+l5r9w72BpUfqtZttSIlNbLJTVsPlZAS4Y2VXL5Toqn4NuCegqxUcIOrVo9NwOZF9xDg3ONCZFdRSbQLP+CHqZsP6w06QoTqo2Hd7xdnAyuJu8AeLSenAfZkNLkKVGhSXVu6NUgAEbifN+QRewvl38j74kBhwRqkaRc8p8mSz0XLsEQmI1LkH++Zz4+pTg6SlaAQVd/0oXoJc7pechr41R2RXwdY75XXuezV0UKYpaEh1zDPMFgp8k2z6BOA4P4/CNalFzqRyNTAiVXZFoUHq3dAiHmMaZYvHHOTgvxqbZ9v6iBE3ypzF8c3m27G1tzwcSHnZXFt/6T/5TjCegRbBrXAiT3//dFgvkVi/5ZoS81SVVdP4nUz3LSyS45/U9l8aQT8zr4ahoJAuUkRzlGwln+/SsDhCV0ekCoJ3BWl3nXn+bvX0XKK9Ab1KMMbUdNJ0rs00o8tktKMSDCi64iEHEz3tVvOd5ZOtEcN/ySQZvnEWE5/qLvsrqLwgXXS5pZc8EtElKn5UxsDbQ/ipSxgOpM9vaF+5aiSTqlJd4TCUhCrY9GTk6VfE+dynY+9KMtFdZopY3en/Z3Oz7AfeJqobL/HQPDxBqmOcwZlwF9YKMjeYNU5AC/aiDLx95W/RmsIziu7zyjEpH7lDDFfskjI7UDiWPzzTJr0oTUgUGiWZ8rjoprSQXhhCIDIe7t/UEd/MiWTrxaA+o/VoVPqTmFte6Gg2MGRppOwLYMg7Qb8mr9wplJQEO4yeenKJExwL0/X8MW4uosRd5eD6Q4LFpnECOUYv2cRKj/0mH+iMb7hpCoEC2mjhU0+oEySZoUVxyMNVWpdwgG5nRb8fw7CAKGzLCjQvQpphpvnWzplBlbry39egQPdnRKiLb0TyV2P6YFmXH/b356sHnypaT0+hZ436jOlX3vZoHtQFeZ/hEyZRH2rNRGX4wBD1B6eP/1T//ZiN143OGBzex0243fzy1xAuIf86ptkA/wryqbSJPBAtr76fa0Yx0qatZZGu+NmdbQ+ssNHO7I9RI6eA0Gvz/WhrXoJ8MpNl5yd+3diMt4DkEeS5tnnWDVWcDmafhXcqCIuNBM8cbtY0v/U6D+2K2xcy/9GnTBZlHFqdHKxUcZjrv43LrpsQIHSn/UZzTUCfFWsp6igZzqVezNI5P5Cs2PaEcuR84BZIMhQmLsXI9fYBM29/WIfDSAubXYwldzbvt17TatEL2IxzFpX+lmtmTgYaogPPKwOH/uU4TwH9X1USeIU2G2ycL6uC3NhKCWthLk8KCPvfUMDAloJKFbzBYFoCnf1+Oa7qTbc67QGPy0/Ge8p240nqV4lwNWYIw2wG/xuVdrBVBpkpEri6E0AAa/IwrKNdkCdwYf32maqbBFOgDdbSDESNKqlPgvgKyXnliY7aiB05Vc7jmWrN3yMDVZlD3laIab1yslxKQ5DMOSDuKwgigk4d/1P+X0etI8Ov3TuLD/LRohZW95pOWmlp0Z61w3dZGPRv+s77WkDNqzcrhj7E2+nWZ/WHEC0o5Bo0U9SSjep0IbjNzDj53Uk8ZgHtFtq//1AcYyaOpka0eVe6IbW2TE3wAvMBNzj8xxaVwUiG/Yqrl43afwqipVn99S6WE5EauTFAwGe038+IQ3AitZTJp6FDx2b+hrWV++Ta9xW5fF+TWNW0kkbOOu2hm/JK2Do54w5uMSazYhxhk6ANQ8G7rQr4X5cHvCsVnRCgNbaOZBfYkHLMInZZ7dwh4xyRtYEnXNHpVwtzYRE1O0b7ctsvUPr2Sa80kushKgDYDhzapipE/XkM7AvXqIV8hNBH37Glqo6cqGmvV7JttQcT9GgquKEO2zB0H07S2JlR8pZcLwZgKG9/N0AdpS6HalAnBd30Idep7ujLHpfH4srdhs4tkPIfQhsnYy4YE08z187rfBiNbkbriUV/qBkIAE1PAXkUaJAOJu1rsDLcpwoI9l6mGf9dEt5AK0PCZ+xgrPaDMLKSIHl5pxJePQXWGc+O2gUN/zE1UCO9b26kjneanwoHj7jcYLyQ5NxF6V08v+sxHEVsegdeALruBCvYc/6vC/IdwfIVhyqTGjw/T0z4h8QIhSLlhenDXxBKRH7v948PxdgBKOLECJYANPmq+U/jN0xpW0g+oTfuGk+XjGFJpjk628XPTQjLLUz+O16FD1LMqXTR+26V3HBzuzB5A4SMfG8rDRnZrk+PlKaOz97XI2Qh9tNVl0PlceaO3iNsc0kE9vtKzECfFxzDmfaBTy35gyG2y3680eTxX5SFzo5SWfBjt0CDW7E4pq9J58iOpmoqZzEs4Mn/dpw2LSpdECDncAPJolHMKUM8K0oL83JeYfVhypTSxznROddSg2ODvIQ9u0MpW06ezQGzVYMqhV/6CkeCzzUbARN3y7GKUf4ZFkvpWIVH3xCOYeYYBJ1OhImfKu5ELllatfoLaDlbcCZiYUtr8TbdZ7NAf67/oq2MKOGu1NReW0PkqeSYOcNmuvTKdmCPjYyX4FK6o0w954x/U99Q09IjbaXU99wLY/yIbN/hkajz4zT0UJV0tuCMEuaPcLH7VdnO83wp7kg5GUHO10Og435uVxTsiEMdcwXCmL0ntii8X6RL/Yfe+J8z3UcIF4Vg4UqBNJkJ6ywXzj0wjZk1wpwTET+JLSTPNz4Tatohyu9JkkKmxLtn7jMIr5jsNjfpeE2RrfH2Td56rxPgxwLJ/YF7mevufYjFT9oxPBE09hDEIKR5oogFmI1MAMsZD6ivJ7sIE5F+8VYkrAFOI1cnTWDjq+cR8cvddiyqEkvezeLlm7WhPYH4QjBKadMxXC7oVoGuZVEdQRKgVVphPIpWUYpzHtOU6UuX7PN+TQmsZUe1RCj0gWAtBJEMiYS7tRn9WqbWCi9/5gIPFHHol/mthnL0L8ApNM5pLkhmYZDpZnB6J18u78yroPBUCRTn5Kxdny84bTGVLZyoFvvtxH95lGqfG579tdo6doXraEFGO3WpfjY7g/NiY4vO5GCgOOrQQTKgeU4Bv66jrzZJwgsHwWL7INcqYnKSfrWVrKZc9LD6wP8GSShbpzkEm+vTPpZZqW5XVz7Qk9UNzCSEK0lsiVXT7zb2RP6dry3/nVX6+RfpRGjQUPb64/sNYxVjeA09LgPhHtuRNCGGZfv9ArIqiWevm1EFslH0GC81L2lJbnuoz6YM272MtplIcvvAVty1pnHNhRGBysdkk0ysvJGjcYxWAYBbzlX1NJ39i/vHqM9pKXfolKgBG4w6PjZ+F0Hd/ZXATiNtGujQcq3X+dyU7U+4GvWEHRR8+q088UatFnWDggnz+ElJ7spq2hfJazkHALNUBnSSuzU72JYgIAxIWibgSXRCCZFh+Xpy7ePa2UHkYgIPgEx3K90gxYQKCkvDk9+Zk4LWs/zDdcLbzWkzbzK5+ZLWTrBV0an/+3JnAn7TY2d1qlcezw97phpZpC09rrXY0WuQL/MeW512u/rbog9Jg3pltmbHXTsueryAyUjDbC6ih+edEd2a9dmuXlJdB+VbKWF6hh2szgrbZf3Px/X0Xl/ZXSukUEw1skVPAFwy+GxsVp57gf4o3A3ffLt9fFTNI46HpXUOlei9lGpu2KgAuhbuDxcBowq+ghGHBiNby2m7Fxc/YShGKWh0ppCiaKmphjVygw2+petAkBOn8FWUAphju9GupypfEnZNtWUqU0jj+RDT4fm3CV4z01SyC27P6a2XbDHmEBT5R1VtYMQ2P23qBlj84J99qRkYzrnExY0VNCsT0Cmf44k92UMstSbMrroHB/6gMGKk1g96Uhb9PaE++KOM5oIoi0gZ6AlgRpbvdwWZFJw7pq+eJFBao1gDbX/Q4AbX4eCLOoe8BvIEw5W92jkAJ1u2UUz8mYo5VIRmEe/WrpYXsa/ZFjByBAZAGKjE0NZSNiTd+nIvllg+QF0j/Tlkin6Z5sqfiIShfCZSfp6RUz4HV1hOfaYjRnD4Jv++rm/+cwu1G3QJD09UnXhG0DpT9P7Gdwu+na3MOd7rWrDl3D/EUHC+2kHsEdUVs+jafW+kQFhlQFPp1DlEyBj1SyNJ4el7s8fvzTzPQIGGQyVM4sLXN5+YXMQFwbGwxda2vV5ZrAY+bV6HLpZEy2RAPyPeNjgr/IBHS9U1suGp8105iwg+/CVdHyXi13RGZ41hNwJyC5MLKspvST/CMeedegedqJtMmkKUjoagEh7eGwEFpF0P0+xt0HUILbkS8TVWtbBn/RXI9EI3xk3+6EqO/ZUAq/3/7vta1dhfYqwoH3XGercAurRyDKCqUVezVLoqfAvjgEYqjiLUhdiJxhNVa2OTA7icDp1sTdGvpiVs0B0TLUIxDA8HTUyw0fWxShEAeEk1rEPsQxqa6HBRlnXcTLTDyUOTN+5y4gQF6t0y2FBnCrfJ7fr00QhunFb8qtpzdt39RJSrLuUyW8zef06xeHLBOrKSIyGiWJbmYpskDSvE3VuWeOZQvm5OCDPmzOattrDO70VyLuUdenFheZqX0NkljfwKQjTW6ZNTQm2rcodeG6onimzx3WRKtWppWE2y16bUR9Zex5bUKlQamI7hyWaj2WkhmEMLFx/9QPpVYYYQZhgsPPSwKEnW7SzBOxLXLm8zSvkAajCoEf33LCtHNnT4azDjMenxEZSi34eAqFsG1k9U9N5ViYWItvOkKF/l+Zmq029JF6VSuGLVgljolkZnqPWng+Z7AvSL+hDLDRFQjB1xQ1InilbWf6wtYXCEY4FwNxFNa6Tr/Xq2LFKRvxov2bZu77UieYp2ALYJ5XT0o31g4/8iQpe7hV0YuTGSaOe6B1I9DQhY7awr7cLeuFbhhSiHFYY41v08VBFF2Jijz9MwprnfYdbtNjymPBg7SZzFmY4qiQiVThpfGiO9Y+ptDQYn/IdXqBI677X12zE+QWYAC7FXGfjOZjByMyS1nQe9JIFcEs98e/mN35La2Ub3xK6YhbOfAWuy9eiDM/ResKHluvAuYw4hpHBD5xlStTxa2O1cI9rByGETbWIzt2KJcs4cpkYMt2JFEoZctlOgcczuKQpWMcAPkgIE5Zo+UN8nFjWrpCncQCTU6lEgzxU3QjdQamyPbOO5wEVsVArVSsvu+/qp+b/ApVkbwq9V1S46mlfYsvYmsxB3K+iKss0zUHNeRlz081bnMvlgEAp95563cA3EFCwdWz8v6n5M39f/cw0cB/kocSZRGDt7IhG40afbczM3QF1oXgToD1PCtPHre3PcwhDNetjD2xwjqTPbANQsAkb1iEx8jJxDr8/8e0YT/CLvCQyYWHKlWH8aFoKCuYWu+vYZvFyuXEDG0BxEwqp4b9dI3W/rw8W9Vb/cn/ar8ysE2SZHkjHTjkQx93ABHg9JyyxrEm5YuqgjK/r8tH/VDm46X0COjZWC1ZXXN/A49nC7W28gFiMHX6Vx7wbY9UXP3F1A8eLH1d0TYxj/twQr0OPSwAyZi7dAdJNn+sZQvRIUQf5duy+VbbQbq10jc8Q0dKMoNyw/18iOJV+iwrEX800rKLuDvz+lTubjXByjp7Fx1guEXA7ZuyOBWl+7MLRfkeEbbaczU2BfY5kUrC0MXfkZWmp3fGnYG6BqsowVpLtTCHBOjcVpyfUJWYNdigebvdDCUZ4egP3xLY6XKLBJlu6aWlE/fGKxSI/dmd2skM8KrYrWFI51lIGhhL3fabD3SfYo1FhLBVbhiQ7qwXER5jSojBP6eLTwhjahT0syMUGvZ1Vxj+orvejLjhOZoJCJlZ3VcVJ2BTCnRV0VNj+VfKkDPBwHSvb0YTbISRTyEZmAtgXK/3KNzOjw0FEOfxZyZUMvMufQ24BS1ovtt5WEkRaI8HDLV1q0cvRGTE0JNRPGrp8oztBTFXJ0wiHMY3LHO6XNny1hUHUUJ/0RU/P7kNI7ntOzAOv3fwG7tn6DYh98rsPjWdIlMkoPAw2ZHcMzbzs4gnjVH3laGeSPCovsAXT89FrWmH17m26ZAoGeSvv3LcGJyqmXFSPq+8rCL3igHEis9g/JV/TbUi7U/XA4RFbtvg89t3vtNcy25abE5HYd9UPpB+av96whw0WIlwphoAiZCtKLt0WkW/dS0Hv2N+6O9bEflmntmTmxIxa59AtvJx8XmphuHTeqML54t1RRLER3I5gAP/nVjw/bhWiITWYWfsqzAmX20FBAw1sPnmBmjC0Lgo97g0dQeiAsh8+j56aw35imC3UQ7aBZRtaC3knfDsS8ppqoB6FdJtY+7ErSu8qGPbk8XLk2m+WtFozC18xi97W1JbOD4jt+S1rLdM/ejHUMa8voAW5CBwcVtJtksZRO6fURZYRalEN7vKU1EAcTDMXCmAK48rOZRJxijZ/4FXd8zjLa6NrZYdS4ZcQBY4EQtYM3vwgW6by9MQPARXi5KmDbEgy7L9cLPpPwKCplOReVd6sYO+vek1TnhyV76w7bI5stt5KiD8UZjX0KC1Ud+IqWuhdR+bglkSBgRLSS9KIkUWsvyQNqxp5uQ0giFtzpXFO23MTg3uSLJrZqUU2uRwiv/GGYqI6czjnuNS9Zw/dA4tFZecih98Bn6v+Y4eyBr/2oj783xkRCeBjRfsEnNW8WjTKDjm0DcQnxMW7kryqvlWrkeGFohApZLS57e+9wP6GXNiH24tvtHqf2XkN6U7iFTghFgAXAR4lr/LVenB5h0GNhYRwh4GKxt6NtNCh6aDN+UdUZBNGdBeHfoI0m4ZOkKRpFfr5ncXpxeEfCphY9VEjQC0fDvnbA7wVnc+OfsXvaR8FOh6giSlsIA+cDutxDj2kye8Vq+WwunYgYSZ4PKDIsS3AWdwgmf2w2xdxrTR1EFTcZP4Zc4fZMYn+ldZrYAR4B1FftDoktF3qYjIb2efOvKJP8ItPQ5yCz5auIDFnjgTKc4C0aogFW+Z15XPYGVm9ieYtwKguK1WQq0sjoXsFbZQe6wiLgrulVnGn1QoJjzyYDmDVbn5ruGccffjzySa7ufJzxYTs2ksd5ux1nnI3hm8AOzw3c4pn/AGPkGkCBqolb6/W6MKmwRRkdAo7tWvUMqAnfjmZu9NVFr2wFFCSNdfyp7T/2GX33KsRCoYA69dEJBRqYziGZzWwI8t2xiCeKpiiU2dVDGL30K1faBpzK3L5HdEBCWG+7BOzG3MkeYhcguYtx8yaxbgxLRfuRQuSRmkPVa99kyrDfZ76MQ1n2JhOWEBUBCyjGcZ22qfqowAjDRtd5e4RfgAyr7PWAvHHobQ+RDrHRPfOIiDUR1E90kq2PU8CMchWQSGVtOUFr37LbmsV36am7ppOhL5ohL3UQSzQ+OPyIXMZZWrYUOw2rAu9r3ge5lRLM7Ik9uOXKD6jnFu7YYN4nJ0JRHVL1QyyWOEwwYgItsUBp090lneiomx7vmmudy68XHCQcBYY8kFKPRkulmwjwqK0n5hjNMyUaoKXeM3q69c4tWeq1GNMuDEGzWViR3RERhlrtd6CPbTTIU52gxA96wVoRdm/uj3BfUXnNShEKmBbeRPYt490IQ4MYtPcaenByHtCPcmgydAxiAjMGIN82LajJag9PSJWOp6adTnTcJv6EYgu5bTLY0EMm6ARuSDt+lxIbJU/UQEhFEaSHnLo2HIgSfGaR6g8/6zXPQxQ88fw4ggts2MX2SYeduNACNOj38f1Kq3Rz+Jqg13peRVUPSkeFs4Yr0a0ZLxOph2qzpxCtpDCMT/Q+Oyg5QsW1GT0TsOIOoxS9+ocui9QF9GdEw7gY1DKdMhNNRsqiKNzggjq0s1e4lzmADTbe0+xN6hxSV+HfQ96iNoPkoq4WV6u6Y2vvWed9tYf3FLNPk0QTunezyroW1GM3sil0o/62x3y9YC6niNNAIsSWyGpu7FXFoNU3aQhQJqprmUORSLPTVEWS+b0UNje+0Wn3e7+zQVejhLFieD73Op/K7EpLotbRNwx3xZJVWsN39hBIaehSq/8DWmXgGf2g1PchwtzxJS8jaCn2IdxzSjc0gWGIjmKApNpqx6iIOWGRFtfmWI1SENf1mjczYkHhQyNhcZlhD/brDE+EjsH0PF/6lt8/2MV62DwSUuM8ihJbDjkkwYXGLbRLMIJgpR/cDdIapCFsKf5AMhuajVyb57SFfKKhdmoQJpB1gLpME9pTZ7JoL7lR5ZXKVEZohwLrwqzV81eySopexWAqOwFfPsvY4bQ1A5M4+joojMhbFd2Zxk7XLHHAcJKAV2O9GlQYm4kYCcwD9WGUU5QskM3U7VyN0uaYdKPA4sfcxGMwmLAXNUaKxwMMrOKm/sqrYS9PAHZl/jyiJBRnJbcHyAbmZUAInpWYEbgyezrhHj5/fOAzAXeaC9lPU4GT2Ag4mAB+GPO5QiLwgswekN5ksUPt9ZcwX8qAmcWNfl69egVtVyC/HljQtfidoaByUP6Mc9X9Yx/dCUDM/xp4bSYmL9QCgFTWjeZh0J4cGGoh8TyeATlHLGIMV9jKNVr/LtESdv1QDlPmxtiMWjaKfHoGJicvU508oSLzq7T+6A3PCwXVh6O6YY932gEPomq5xAPzdeATfFrQgEMw8j6Fs9hlYY0pNaD0lZG3N8t2eHyRxyxbumUxtkJcG/yMoi2aOSV+l75u488dxMOfP46DI55qzpqLRfzEDjp7eGgWtaJgAwjRZobWn0zaP5FuPm6gmMtK+wroI0jyL79UgkMo4NHmNFSmfCn/E1RfFojYM1TFsqlqXHlDswzBejJHFVVmJy/zdgkz4fzO9K/TJsnpxXv38FP/vle7jJXqQE/W3+PWh6+cX/oGjLjosr4wNY3U1V1SA8G2EKifqFlxiY92fzZ0GsCmUMNUoMZpepUeEw7k0FCfhpWC2Hlf/gKFj/KKSSQb1N+SrsfkFFblaom/3T42AJUxSne/nHQY52ihPcOZ4NUjWFkdNAhBjHh0czrEU4L95UqOSrIJMJd5fQH/WeCsywhddOxaFZFwCeKSsDW/kVxlL0/JtJW0URIQmZQ2WAkKl5dAZ6pDbuQSZC31gItRcIKektLo8a/D/tZtsBNXCE5In5AE/goJLczRH5SP8G6Qdoft7i5bkvMSaLvb458RDLeBTwKXswGSqwPpuWXnm1l4/HB8McHoesoCfSMHZGs9nKixp+nbBLw1KAvQ2muHXL3KFX38d1dykpcUs+z1vFzt0mz6ClD/3kzFuo0FMGYJgt4YXdSJ639XVU8rJ/nK4vb9hh1eQTJKoXSc4DvAzJhiPNZ2NcDdXo8gMHRRojwvbD7CA6ursJZ+ohZWbqVkbdVDmbV/njQJP/Aui3IXSCDcRUdfkNXCuNsXFsGj7245Cxo66dCJVipkKw45mJqK/Rqr9gL+cY9Z67dvkQxfVEZyS+fz5U8xpSo98T9AhVpW2XrhXzTpwZB1wgF/JCo2x5oP0FprIZDAPZtQgaEkIKyXxibuylBioTmvh9bvkmlKiOXNpC2RqiIUBSDuhON0C4dp57MVz9dlAFWt4bXxxZDF91x5uXYogdmJoIjZqEiHGVwGG9rhBw49Yw0GQlnCY87gpWUvnHq7BXlebtfXz5dWBX4Ij7z2Hz0JBqkOFHha0epZavcYgSzvAI2YecZE7wyCyss1zx08Lp5P5lZ9cCu+uR6z6lF7FYdxvhw6uRW/l3sCC52out/gxmzKzTLZlX0bnJpUjEhKjguOQ6V+sYTisyU4lsYSFytt5M+a6CBf8C3fHq9pHZ+yor/1SCnfVppWoekBwxmHR7GkJAXDqSvqQlYkawvni3OOmpZwTNBONvPI6V2D8N3R+6HtBRyvXP0KXJPS3zHLPtwtyrP+NsruAEcSIKXBa0ktLL9ayjwobJO2LhdSihB+WYrN9mO//KkbU1CyLJJoah+DJ1eCcAtTdOs+oO6aBBhvjQzbjcUucv/PuT5at2zHIdyqtJ3Kkf2UQ5s4if9H60jp/nl1GKZZ6FzKDCWzai8Dw8e29tg5DLCJ3qZYFZMtpABUHmzojHuogDPfK2nF8UQ+OIXbNsmZ/WJRvRp/tuxo9pcw37ACFETe5WDGpsqpyZ1bZ7MBr/Eqm6rxBGkL+28SlHQizXJVzz8qM04ONOJ54rgNW786obho+kQc4Hc37DiHh4gHivNb9B6vR9T952mUMcn4fibCKxClV8Vb534vYYGvMI32dlf0ZPIaF32nc9Bu/CzA0HeH2+iO2rZWwMFA/+5SRZQ5nHvv5B+UG1oroNUWIkC5Ye/44mx1EVcD4/m0cKhydfE3/BH22NAUa7P9WKJTABBZPWbF2JyrrFIcWn1rqsxTS22HLk/CSow5AO4RHLfO7JCT+s4aoTSLvazh6Kxv+no3GatAzvihe5kJq2f8vcCz0hLOVlSDY9uMxVZpgcyqaaLO6dlK1oU0ll7xF8Z1RcopuvkEdpPzqwGHUZ2phS1YutldnlZSytgBepZC3h1I7LAghVg6mYWTvPxvND8l7MVt5n2YlD51Z3XyLTpRbggYttc9+6v2vrygf94psubO6mdrH0YOTG1UFDC4MUH+NHDYqKeal0mQFv46jvJ40/XhgYXMJGbK1V5EMOJ8EA/AZ3PJ7hnjQ9mY5jxFoTLmBOwbF2d5kjAp9JMsRWBkm8HJ5Akq+4xeRPSvXqfXKrUjWBLXiq9fe/nvb1D4COMpnhmyoN8VjsPTm8Mqe9SYce7OFDIdgjaVZk004fWoGBa2DR5eEQ2/IE6soWD1fflx8zjjX2TqhW6HYk8Ixy5xQwqZlw==" />
+
+
+<script src="/bundles/MsAjaxJs?v=D6VN0fHlwFSIWjbVzi6mZyE9Ls-4LNrSSYVGRU46XF81" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<script src="Scripts/jquery-3.4.1.js" type="text/javascript"></script>
+<script src="Scripts/umd/popper.js" type="text/javascript"></script>
+<script src="Scripts/bootstrap.js" type="text/javascript"></script>
+<script src="/bundles/WebFormsJs?v=N8tymL9KraMLGAMFuPycfH3pXe6uUlRXdhtYv8A_jUU1" type="text/javascript"></script>
+<script src="Scripts/jquery.mCustomScrollbar.concat.min.js" type="text/javascript"></script>
+<script src="Scripts/utils.js" type="text/javascript"></script>
+<script src="Scripts/select2.min.js" type="text/javascript"></script>
+<script src="Scripts/ckeditor/ckeditor.js" type="text/javascript"></script>
+<script src="Scripts/toastr.min.js" type="text/javascript"></script>
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="Jbb89bGgbetSgXmBYUHMHaAUkJfneSpuKLjBmnnywk0NBkF5isA4GJcm9CMhLPb85Pfa7xD+r2GA3eZhmYKzcuiYoDDkWcQm8Ff0XlEe6ghudEbWyObogKG/uoOyQSdJw+mZ4QzKmaSeMtFCGdEpmQ==" />
+              
+        <header id="banner" role="banner">
+            <div id="banner-wrapper" class="container pt-1" style="padding-top:5px;background-color:#FFFFFF">
+                 <div class="row">
+		              <div  class="col-md-8 col-xs-12" >
+			             <a href="/"><img class="img-fluid" src="Skins/IBS/Images/logo.jpg" alt="Bộ quận Quản lý sau đại học" /></a>
+		              </div>
+		              <div  class="col-md-4 col-xs-12">
+		                 
+<table cellpadding=0 cellspacing=0 border="0">
+<tr>
+<td class=seachHome>Tìm kiếm&nbsp;</td>
+<td align=right  valign=middle><input name="ctl00$Search$txtSearch" type="text" id="Search_txtSearch" class="form-control form-control-sm" /></td>
+<td align=center valign=middle>&nbsp;<input type="image" name="ctl00$Search$btnSeach" id="Search_btnSeach" src="Skins/IBS/Images/search-icon2.png" style="height: 22px; margin: 2px" /></td>
+</tr>
+</table>
+
+
+		              </div>
+		        </div>
+                <div class="row" style="background-color:#4e4e4e">
+		           <div class="col-md-12">
+			          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+				         <a class="navbar-brand" href="#"></a>
+				            <button id="sidebarCollapse" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					           <span class="navbar-toggler-icon"></span>
+				            </button>
+				            <div class="collapse navbar-collapse " id="navbarSupportedContent"><ul class="navbar-nav mr-auto"><li class="nav-item"><a class="nav-link" href="Default.aspx">Home <span class="sr-only">(current)</span></a></li><li class="nav-item dropdown" style="border-left: 1px solid #444444;"><a href="Default.aspx?scid=23&amp;CategoryID=21" class="nav-link">Giới thiệu</a><div class="dropdown-content"><a class="dropdown-item" href="Default.aspx?scid=23&amp;CategoryID=73" title="73">Giới thiệu chung</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown" style="border-left: 1px solid #444444;"><a href="Default.aspx?scid=29&amp;CategoryID=68" class="nav-link">Tin tức &amp; sự kiện</a><div class="dropdown-content"><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=110" title="110">Tin tức chung</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=111" title="111">Ðào tạo</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown" style="border-left: 1px solid #444444;"><a href="Default.aspx?scid=29&amp;CategoryID=127" class="nav-link">Tuyển sinh</a><div class="dropdown-content"><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=132" title="132">Cao học</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=133" title="133">Nghiên cứu sinh</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown" style="border-left: 1px solid #444444;"><a href="Default.aspx?scid=29&amp;CategoryID=71" class="nav-link">Ðào tạo</a><div class="dropdown-content"><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=143" title="143">Học phí</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=146" title="146">Ngoại ngữ</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=122" title="122">Cao học</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=117" title="117">Nghiên cứu sinh</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown" style="border-left: 1px solid #444444;"><a href="Default.aspx?scid=29&amp;CategoryID=113" class="nav-link">Văn bản &amp; Quy chế</a><div class="dropdown-content"><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=144" title="144">Quy chế sau đại học</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=114" title="114">Thạc sỹ</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=115" title="115">Nghiên cứu sinh</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown" style="border-left: 1px solid #444444;"><a href="Default.aspx?scid=23&amp;CategoryID=129" class="nav-link">Các mẫu giấy tờ</a><div class="dropdown-content"><a class="dropdown-item" href="Default.aspx?scid=23&amp;CategoryID=130" title="130">Cao học</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=23&amp;CategoryID=131" title="131">Nghiên cứu sinh</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown" style="border-left: 1px solid #444444;"><a href="Default.aspx?scid=29&amp;CategoryID=135" class="nav-link">Chương trình đào tạo</a><div class="dropdown-content"><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=136" title="136">Cao học</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=137" title="137">Nghiên cứu sinh</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=29&amp;CategoryID=147" title="147">Kỹ sư chuyên sâu</a><div class="dropdown-divider"></div></div></li><li class="nav-item dropdown" style="border-left: 1px solid #444444;"><a href="Default.aspx?scid=23&amp;CategoryID=108" class="nav-link">Thư  viện ảnh</a><div class="dropdown-content"><a class="dropdown-item" href="Default.aspx?scid=23&amp;CategoryID=141" title="141">Lễ phát bằng thạc sĩ ngày 30 tháng 05 năm 2015</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?scid=23&amp;CategoryID=142" title="142">Lễ phát bằng thạc sĩ ngày 07 tháng 08 năm 2015</a><div class="dropdown-divider"></div><a class="dropdown-item" href="Default.aspx?root=1&amp;hidden=1&amp;scid=3&amp;CategoryID=109" title="109">Lễ phát bằng thạc sỹ  khóa 2007</a><div class="dropdown-divider"></div></div></li><li class="nav-item" style="border-left: 1px solid #444444;"><a href="https://dkhsdh.hust.edu.vn" class="nav-link">Dành cho học viên</a></li><li class="nav-item" style="border-left: 1px solid #444444;"><a href="https://sdh.hust.edu.vn/Default.aspx?scid=57" class="nav-link">Tra cứu thông tin bằng</a></li></ul></div>				     
+			         </nav>
+		          </div>
+               </div>
+          </div>
+        </header>        
+        <div class="container body-content" style="background-color:#FFFFFF" >
+            
+       
+	   
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		<span id="MainContent_ctl00_ctl00_Privacy_lblPrivacy" class="Normal"><div class="carousel slide my-1" data-ride="carousel" id="magicCarousel">
+	<!--    Carousel Slider    -->
+	<div class="carousel-inner" role="listbox">
+		<div class="carousel-item active">
+			<img class="d-block w-100" src="Skins/Style/3c/BannerBK_01.jpg" />
+			<div class="carousel-caption">
+				<h2>
+					TUYỂN SINH THẠC SĨ NĂM 2026</h2>
+				<p>
+					Đại học B&aacute;ch Khoa H&agrave; Nội tuyển sinh tr&igrave;nh độ thạc sĩ năm 2026 với 42 chương tr&igrave;nh đ&agrave;o tạo</p>
+				<a class="btn btn-sm btn-primary" href="https://ts.hust.edu.vn/tin-tuc/thong-bao-tuyen-sinh-trinh-do-thac-si-nam-2026" target="_self"><span>Xem th&ecirc;m</span> </a></div>
+		</div>
+		<div class="carousel-item">
+			<img class="d-block w-100" src="Skins/Style/3c/BannerBK_02.jpg" />
+			<div class="carousel-caption ">
+				<h2>
+					X&Eacute;T TUYỂN NGHI&Ecirc;N CỨU SINH NĂM 2026</h2>
+				<p>
+					Đại học B&aacute;ch khoa H&agrave; Nội x&eacute;t tuyển nghi&ecirc;n cứu sinh (Đ&agrave;o tạo tiến sĩ) năm 2026 với 27 ng&agrave;nh</p>
+				<a class="btn btn-sm btn-primary" href="https://ts.hust.edu.vn/tin-tuc/thong-bao-tuyen-sinh-trinh-do-tien-si-nam-2026" target="_self"><span>Xem th&ecirc;m</span> </a></div>
+		</div>
+		<!--     Carousel Controls     --><a class="carousel-control-prev" data-slide="prev" href="#magicCarousel" role="button"><span class="sr-only">Previous</span> </a> <a class="carousel-control-next" data-slide="next" href="#magicCarousel" role="button"> <span class="carousel-control-next-icon"> </span> <span class="sr-only">Next</span> </a></div>
+	<div align="center">
+		<table bgcolor="#09426d" border="1" bordercolor="#ffffff" id="table1" style="BORDER-COLLAPSE: collapse" width="100%">
+			<tbody>
+				<tr>
+					<td align="middle" title="Thư viện Tạ Quang Bửu " width="3%">
+						<a class="internal-link" href="http://library.hust.edu.vn" target="_blank"><font color="#ffffff">LIB</font> </a></td>
+					<td align="middle" title="Trường Cơ khí" width="3%">
+						<a class="internal-link" href="https://sme.hust.edu.vn" target="_blank"><font color="#ffffff">SME</font> </a></td>
+					<td align="middle" title="Trường Hóa và Khoa học sự sống" width="3%">
+						<a class="internal-link" href="https://scls.hust.edu.vn" target="_blank"><font color="#ffffff">SCLS</font> </a></td>
+					<td align="middle" title="Trường Công nghệ Thông tin và Truyền thông" width="3%">
+						<a class="internal-link" href="https://soict.hust.edu.vn" target="_blank"><font color="#ffffff">SOICT</font> </a></td>
+					<td align="middle" title="Trường Vật liệu" width="3%">
+						<a class="internal-link" href="https://smse.hust.edu.vn" target="_blank"><font color="#ffffff">SMSE</font> </a></td>
+					<td align="middle" title="Trường Điện-Điện tử" width="3%">
+						<a class="internal-link" href="https://seee.hust.edu.vn" target="_blank"><font color="#ffffff">SEEE</font> </a></td>
+					<td align="middle" title="Viện Kinh tế và quản lý" width="3%">
+						<a class="internal-link" href="https://sem.hust.edu.vn" target="_blank"><font color="#ffffff">SEM</font> </a></td>
+					<td align="middle" title="Khoa Khoa học và Công nghệ giáo dục" width="3%">
+						<a class="internal-link" href="https://feed.hust.edu.vn" target="_blank"><font color="#ffffff">FEED</font> </a></td>
+					<td align="middle" title="Khoa Toán-Tin" width="3%">
+						<a class="internal-link" href="https://fami.hust.edu.vn/" target="_blank"><font color="#ffffff">FAMI</font> </a></td>
+					<td align="middle" class="internal-link" title="Khoa Vật lý kỹ thuật" width="3%">
+						<a class="internal-link" href="https://sep.hust.edu.vn" target="_blank"><font color="#ffffff">FEP</font> </a></td>
+					<td align="middle" title="Viện Kỹ thuật điều khiển và tự động hóa" width="3%">
+						<a class="internal-link" href="https://icea.hust.edu.vn" target="_blank"><font color="#ffffff">ICEA</font> </a></td>
+					<td align="middle" title="Viện Khoa học và công nghệ nhiệt lạnh" width="3%">
+						<a class="internal-link" href="http://ihere.hust.edu.vn/" target="_blank"><font color="#ffffff">IHERE</font> </a></td>
+					<td align="middle" title="Trung tâm Công nghệ và Kinh tế số" width="3%">
+						<a class="internal-link" href="https://fintech.hust.edu.vn" target="_blank"><font color="#ffffff">FINTECH</font> </a> <a> </a></td>
+					<td align="middle" title="Khoa Lý luận chính trị" width="3%">
+						<a class="internal-link" href="https://fpt.hust.edu.vn/" target="_blank"><font color="#ffffff">FPT</font> </a></td>
+					<td align="middle" title="Viện Đào tạo quốc tế về khoa học vật liệu" width="3%">
+						<a class="internal-link" href="https://www.itims.edu.vn" target="_blank"><font color="#ffffff">ITIMS</font> </a></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+<br />
+</span>
+<table cellpadding="0" cellspacing="0" width="100%" border="0" >
+	<tr>
+		<td align="left">
+			
+		</td>
+		<td align="right">
+			
+			
+			
+		</td>
+	</tr>
+</table>
+<BR>
+	</div>
+</div>
+<div class="row">
+	<div class="col-md-12 col-sm-12 col-xs-12">
+		
+<div class="row">
+    <div class="col-md-4 col-sm-3 col-xs-12">
+	    <div>
+		    <div class="title"><h5 >Tin nổi bật</h5></div>
+		       <table id="MainContent_ctl00_ctl00_TopProducts_grdCategory" cellspacing="0">
+	<tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3587'>
+									Lịch học cao học kỳ 1 năm học 2026-2027 đợt 2 (2026.1B)
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=111&nid=3583'>
+									Hà Nội ban hành chinh sách hỗ trợ tài chính cho nghiên cứu sinh giải quyết các bài toán lớn của thành phố
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3580'>
+									Thông báo về việc nhận bằng kỹ sư chuyên sâu đợt 20252
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3578'>
+									Thông báo kế hoạch đăng ký học phần và giảng dạy học kỳ 1 2026 2027 đợt 2
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3577'>
+									 Thông báo về việc công nhận tốt nghiệp và nhận bằng thạc sĩ năm 2026 (đợt 3)
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3576'>
+									Về việc nhận hồ sơ xét cấp học bổng sau đại học năm 2026
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=111&nid=3574'>
+									Thông báo tuyển sinh học bổng sau đại học CEID - SEOULTECH Hàn quốc năm 2027
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3572'>
+									Lịch học cao học kỳ 1 năm học 2026-2027 đợt 1 (2026.1A)
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=110&nid=3570'>
+									Thông báo lịch tập huấn 2026 của Ban đào tạo
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3567'>
+									Thông báo về việc công nhận tốt nghiệp và nhận bằng thạc sĩ năm 2026 (đợt 2)
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=111&nid=3561'>
+									Kết quả xét cấp học bổng Sau đại học của Hội khuyến học thương gia Đài Loan tại Việt Nam năm 2026
+						  </li>
+					  </td>
+	</tr><tr>
+		<td>
+					      <li class="new-notifies-item">
+							<a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=111&nid=3554'>
+									 Thông báo Học bổng Sau đại học của Hội khuyến học Thương gia Đài Loan năm 2026
+						  </li>
+					  </td>
+	</tr>
+</table>
+		</div>
+	</div>
+	<div class="col-md-4 col-sm-3 col-xs-12">
+	    <div>
+		     <div class="title"><h5>Nghiên cứu sinh</h5></div>
+		       <table id="MainContent_ctl00_ctl00_TopProducts_grdNews" cellspacing="0">
+	<tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3590'>
+							       NCS Lương Đình Hải - Luận án bảo vệ cấp Đại học Bách khoa Hà Nội
+						     </a>
+						</li>		
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3589'>
+							       NCS Lê Minh Đức - Luận án bảo vệ cấp Đại học Bách khoa Hà Nội
+						     </a>
+						</li>		
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3588'>
+							       Lịch bảo vệ luận án Tiến sĩ cấp Đại học Bách khoa Hà Nội cho nghiên cứu sinh Trịnh Việt Dũng
+						     </a>
+						</li>		
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3586'>
+							       NCS Phạm Thị Loan - Luận án bảo vệ cấp Đại học Bách khoa Hà Nội
+						     </a>
+						</li>		
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3585'>
+							       NCS Cấn Văn Đa - Luận án bảo vệ cấp Đại học Bách khoa Hà Nội
+						     </a>
+						</li>		
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3584'>
+							       Lịch bảo vệ luận án Tiến sĩ cấp Đại học Bách khoa Hà Nội cho nghiên cứu sinh Trần Minh Thế
+						     </a>
+						</li>		
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3582'>
+							       NCS Trịnh Việt Dũng - Luận án bảo vệ cấp Đại học Bách khoa Hà Nội
+						     </a>
+						</li>		
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3581'>
+							       NCS Nguyễn Quốc Khánh - Luận án đã chỉnh sửa, hoàn thiện sau bảo vệ cấp ĐHBK Hà Nội
+						     </a>
+						</li>		
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=117&nid=3579'>
+							       NCS Trần Minh Thế - Luận án bảo vệ cấp Đại học Bách khoa Hà Nội
+						     </a>
+						</li>		
+					</td>
+	</tr>
+</table>
+	    </div>
+	</div>
+	<div class="col-md-4 col-sm-3 col-xs-12">
+	    <div>
+		      <div class="title"><h5>Thạc sĩ</h5></div>
+			  <table id="MainContent_ctl00_ctl00_TopProducts_grdNormalNews" cellspacing="0">
+	<tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3587'>
+							       Lịch học cao học kỳ 1 năm học 2026-2027 đợt 2 (2026.1B)
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3580'>
+							       Thông báo về việc nhận bằng kỹ sư chuyên sâu đợt 20252
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3578'>
+							       Thông báo kế hoạch đăng ký học phần và giảng dạy học kỳ 1 2026 2027 đợt 2
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3577'>
+							        Thông báo về việc công nhận tốt nghiệp và nhận bằng thạc sĩ năm 2026 (đợt 3)
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3576'>
+							       Về việc nhận hồ sơ xét cấp học bổng sau đại học năm 2026
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3572'>
+							       Lịch học cao học kỳ 1 năm học 2026-2027 đợt 1 (2026.1A)
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3567'>
+							       Thông báo về việc công nhận tốt nghiệp và nhận bằng thạc sĩ năm 2026 (đợt 2)
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3564'>
+							       Thông báo kế hoạch đăng ký học phần và giảng dạy học kỳ 1 2026 2027 đợt 1.
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3545'>
+							       Lịch học cao học kỳ 2 năm học 2025-2026 đợt 2 (2025.2B)
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3534'>
+							       Thông báo kế hoạch đăng ký học phần và giảng dạy học kỳ 2 2025 2026 đợt 2
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3527'>
+							       Thông báo về việc công nhận tốt nghiệp và nhận bằng thạc sĩ năm 2026 (đợt 1)
+						     </a>	
+						</li>
+					</td>
+	</tr><tr>
+		<td>
+						<li class="new-notifies-item">
+						    <a class="new-notifies-item-link" href='Default.aspx?scid=23&CategoryID=122&nid=3503'>
+							       Lịch học cao học kỳ 1 năm học 2025-2026 đợt 1 (2025.2A)
+						     </a>	
+						</li>
+					</td>
+	</tr>
+</table>
+		 </div>
+	</div>
+</div>
+
+	</div>
+</div>	
+            
+            <hr />           
+            <div class="wrapper"><nav id="sidebar"><div id="dismiss"><i class="fa-solid fa-arrow-left"></i></div><div class="sidebar-header"><h3>Bộ phận SĐH</h3></div><ul class="list-unstyled components"><li><a href="#21" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Giới thiệu</a><ul class="collapse list-unstyled" id="21"><li><a href="Default.aspx?scid=23&amp;CategoryID=73">Giới thiệu chung</a></li></ul></li><li><a href="#68" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Tin tức &amp; sự kiện</a><ul class="collapse list-unstyled" id="68"><li><a href="Default.aspx?scid=29&amp;CategoryID=110">Tin tức chung</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=111">Ðào tạo</a></li></ul></li><li><a href="#127" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Tuyển sinh</a><ul class="collapse list-unstyled" id="127"><li><a href="Default.aspx?scid=29&amp;CategoryID=132">Cao học</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=133">Nghiên cứu sinh</a></li></ul></li><li><a href="#71" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Ðào tạo</a><ul class="collapse list-unstyled" id="71"><li><a href="Default.aspx?scid=29&amp;CategoryID=143">Học phí</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=146">Ngoại ngữ</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=122">Cao học</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=117">Nghiên cứu sinh</a></li></ul></li><li><a href="#113" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Văn bản &amp; Quy chế</a><ul class="collapse list-unstyled" id="113"><li><a href="Default.aspx?scid=29&amp;CategoryID=144">Quy chế sau đại học</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=114">Thạc sỹ</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=115">Nghiên cứu sinh</a></li></ul></li><li><a href="#129" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Các mẫu giấy tờ</a><ul class="collapse list-unstyled" id="129"><li><a href="Default.aspx?scid=23&amp;CategoryID=130">Cao học</a></li><li><a href="Default.aspx?scid=23&amp;CategoryID=131">Nghiên cứu sinh</a></li></ul></li><li><a href="#135" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Chương trình đào tạo</a><ul class="collapse list-unstyled" id="135"><li><a href="Default.aspx?scid=29&amp;CategoryID=136">Cao học</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=137">Nghiên cứu sinh</a></li><li><a href="Default.aspx?scid=29&amp;CategoryID=147">Kỹ sư chuyên sâu</a></li></ul></li><li><a href="#108" class="dropdown-toggle" data-toggle="collapse" aria-expanded="false">Thư  viện ảnh</a><ul class="collapse list-unstyled" id="108"><li><a href="Default.aspx?scid=23&amp;CategoryID=141">Lễ phát bằng thạc sĩ ngày 30 tháng 05 năm 2015</a></li><li><a href="Default.aspx?scid=23&amp;CategoryID=142">Lễ phát bằng thạc sĩ ngày 07 tháng 08 năm 2015</a></li><li><a href="Default.aspx?root=1&amp;hidden=1&amp;scid=3&amp;CategoryID=109">Lễ phát bằng thạc sỹ  khóa 2007</a></li></ul></li><li><a href="https://dkhsdh.hust.edu.vn">Dành cho học viên</a></li><li><a href="https://sdh.hust.edu.vn/Default.aspx?scid=57">Tra cứu thông tin bằng</a></li></ul></nav></div> 
+            <footer >                     
+            </footer>
+        </div>  
+        <div class="container" style="background: url(/Skins/IBS/Images/footerBK.jpg) scroll 50% 90%!important;">
+             <div class="row text-white text-center text-xs-center text-sm-left text-md-left ">
+			              <div class="col-md-4 my-2">
+			                 Điện thoại: 02438692115 
+			              </div>
+			              <div class="col-md-4 my-2">
+				            
+
+
+			              </div>
+			              <div class="col-md-4 my-2">
+			                Ban đào tạo- Bộ phận quản lý đào tạo sau đại học - Tầng 1 - C1 - Đại học Bách khoa Hà Nội, Số 1 Đại Cồ Việt - Hà Nội - Việt Nam
+			             </div>
+		            </div>
+        </div>
+    </form>
+</body>
+</html>

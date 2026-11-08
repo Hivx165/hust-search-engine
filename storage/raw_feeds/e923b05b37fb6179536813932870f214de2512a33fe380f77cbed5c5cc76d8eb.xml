@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Networking and Communication Technology Laboratory &#187; Overview</title>
+	<atom:link href="http://nct.soict.hust.edu.vn/?feed=rss2&#038;cat=1" rel="self" type="application/rss+xml" />
+	<link>http://nct.soict.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Wed, 28 Oct 2015 19:40:41 +0000</lastBuildDate>
+	<language>en-US</language>
+		<sy:updatePeriod>hourly</sy:updatePeriod>
+		<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.9.20</generator>
+	<item>
+		<title>Welcome to NCT Lab</title>
+		<link>http://nct.soict.hust.edu.vn/?p=1</link>
+		<comments>http://nct.soict.hust.edu.vn/?p=1#comments</comments>
+		<pubDate>Wed, 21 May 2014 01:05:33 +0000</pubDate>
+		<dc:creator><![CDATA[nctadmin]]></dc:creator>
+				<category><![CDATA[Overview]]></category>
+
+		<guid isPermaLink="false">http://nct.soict.hust.edu.vn/?p=1</guid>
+		<description><![CDATA[We cooperate with many partners in both academic and industrial research projects for innovative ideas in the area of data communication and networking. Our research interests include: Advanced Network Technologies Network and Information Security Multimedia Communication Technologies Mobile and Distributed Computing]]></description>
+				<content:encoded><![CDATA[<p><a href="http://nct.soict.hust.edu.vn/wp-content/uploads/2014/05/lab.png"><img class=" wp-image-5 aligncenter" src="http://nct.soict.hust.edu.vn/wp-content/uploads/2014/05/lab-300x99.png" alt="lab" width="485" height="160" /></a></p>
+<p>We cooperate with many partners in both academic and industrial research projects for innovative ideas in the area of data communication and networking. Our research interests include:</p>
+<ul>
+<ul>
+<li>Advanced Network Technologies</li>
+<li>Network and Information Security</li>
+<li>Multimedia Communication Technologies</li>
+<li>Mobile and Distributed Computing</li>
+</ul>
+</ul>
+]]></content:encoded>
+			<wfw:commentRss>http://nct.soict.hust.edu.vn/?feed=rss2&#038;p=1</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+	</channel>
+</rss>

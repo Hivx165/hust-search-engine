@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Courses &#8211; Bach Khoa Cybersecurity Center</title>
+	<atom:link href="https://bkcs.hust.edu.vn/courses/feed/" rel="self" type="application/rss+xml" />
+	<link>https://bkcs.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Thu, 20 Mar 2025 14:09:05 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.7.2</generator>
+
+<image>
+	<url>https://bkcs.hust.edu.vn/wp-content/uploads/2025/03/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>Courses &#8211; Bach Khoa Cybersecurity Center</title>
+	<link>https://bkcs.hust.edu.vn</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Cyber Security Essentials</title>
+		<link>https://bkcs.hust.edu.vn/courses/cyber-security-essentials/</link>
+		
+		<dc:creator><![CDATA[bkcs]]></dc:creator>
+		<pubDate>Tue, 18 Mar 2025 07:41:44 +0000</pubDate>
+				<guid isPermaLink="false">https://bkcs.hust.edu.vn/?post_type=courses&#038;p=225</guid>
+
+					<description><![CDATA[This course provides essential skills and techniques that the learners need to secure their critical information and defend their networks.]]></description>
+										<content:encoded><![CDATA[
+<p class="has-text-align-justify has-text-align-justify">This course provides essential skills and techniques that the learners need to secure their critical information and defend their networks.</p>
+
+
+
+<p><strong>Topic 1: Introduction to cyber security</strong></p>
+
+
+
+<p>The evolution of cyber security</p>
+
+
+
+<p>Security standards, regulations, and frameworks</p>
+
+
+
+<p>Cyber Threats, vulnerabilities, and risks</p>
+
+
+
+<p>Trending topics in cyber security</p>
+
+
+
+<p><strong>Topic 2: Malware</strong></p>
+
+
+
+<p>What is malware?</p>
+
+
+
+<p>Types of malwares</p>
+
+
+
+<p>Malware attack life cycle</p>
+
+
+
+<p>Malware detection and response</p>
+
+
+
+<p><strong>Topic 3: Data encryption and integrity</strong></p>
+
+
+
+<p>Cryptography: the Basics</p>
+
+
+
+<p>Data encryption</p>
+
+
+
+<p>Hashing</p>
+
+
+
+<p>Digital signature</p>
+
+
+
+<p><strong>Topic 4: Digital identity protection</strong></p>
+
+
+
+<p>Phishing for usernames and passwords&nbsp; &nbsp;</p>
+
+
+
+<p>Password management techniques</p>
+
+
+
+<p>Authentication, Authorization, and Accounting</p>
+
+
+
+<p><strong>Topic 5: Fundamentals of network security</strong></p>
+
+
+
+<p>Secure network protocols</p>
+
+
+
+<p>Network attacks</p>
+
+
+
+<p>Introduction to firewalls and intrusion detection systems</p>
+
+
+
+<p>Networking security best practices</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>Malware Analysis</title>
+		<link>https://bkcs.hust.edu.vn/courses/malware-analysis/</link>
+		
+		<dc:creator><![CDATA[bkcs]]></dc:creator>
+		<pubDate>Tue, 18 Mar 2025 07:41:13 +0000</pubDate>
+				<guid isPermaLink="false">https://bkcs.hust.edu.vn/?post_type=courses&#038;p=224</guid>
+
+					<description><![CDATA[Introduction The course equips students with the necessary knowledge and skills in the field of malware analysis (from basic concepts]]></description>
+										<content:encoded><![CDATA[
+<p class="has-x-large-font-size" style="font-style:normal;font-weight:700">Introduction</p>
+
+
+
+<p class="has-text-align-justify has-text-align-justify">The course equips students with the necessary knowledge and skills in the field of malware analysis (from basic concepts to advanced techniques). The main contents of the course focus on the classification of malware and the characteristics, structures, behaviors, and concealment mechanisms that malware often uses; detection methods, analysis, and handling of malware. Specifically:</p>
+
+
+
+<p class="has-text-align-justify has-text-align-justify">&#8211; Overview of malware detection and tracing techniques, as well as static analysis, dynamic analysis, and network behavior analysis methods.</p>
+
+
+
+<p class="has-text-align-justify has-text-align-justify">&#8211; Camouflage and concealment techniques such as anti-VM and anti-debug, helping students understand how malware is often used to avoid detection.</p>
+
+
+
+<p class="has-text-align-justify has-text-align-justify">&#8211; Tools, methods, and practical skills needed to perform effective malware analysis.</p>
+
+
+
+<p class="has-text-align-justify has-text-align-justify">After completing the course, students will clearly understand the process and proficiently use the tools used in malware analysis while accumulating more practical skills. Students will also gain a deeper understanding of CPU architecture and the operating principles of operating systems such as Windows and Linux. In addition, students will also be trained in using virtualization software such as VMware and VirtualBox and how to install, configure, and set up an analysis environment on both operating systems.</p>
+
+
+
+<p class="has-x-large-font-size" style="font-style:normal;font-weight:700">Content</p>
+
+
+
+<figure class="wp-block-table is-style-regular"><table class="has-fixed-layout"><tbody><tr><td colspan="2"><strong>&nbsp;</strong></td><td><strong>Content</strong></td></tr><tr><td rowspan="2">Day 1</td><td>Morning</td><td>I. Overview 1. Concept of malware 2. Classification of malware 3. Ways of spreading malware II. Methods of analyzing malware 1. Static analysis 2. Dynamic analysis 3. Automatic analysis</td></tr><tr><td>Afternoon</td><td>Practice 1: Setting up a Malware Analysis Environment 1. Windows Operating System 2. Linux Operating System</td></tr><tr><td rowspan="2">Day 2</td><td>Morning</td><td>III. Static Malware Analysis 1. Concepts and Tools 2. Static Analysis Process 3. Some Static Analysis Techniques</td></tr><tr><td>Afternoon</td><td>Exercise 2: Static Malware Analysis 1. Deploy and Install the Tool 2. Perform the Analysis</td></tr><tr><td rowspan="2">Day 3</td><td>Morning</td><td>I. Reverse Engineering 1. CPU Architecture and Basic Operating Principles 2. Software RE: Concepts and Applications 3. Assembly Language 4. Tools Used in Software RE</td></tr><tr><td>Afternoon</td><td>Practice 3: Software RE Tools 1. Deploy and Install the Tool 2. Perform the Analysis</td></tr><tr><td rowspan="2">Day 4</td><td>Morning</td><td>I. Overview of Windows executable programs 1. Windows system architecture (System architecture, threads, processes, memory management, registry) 2. PE file structure (PE file format, PE header and section) 3. Execution mechanism in Windows (Windows loader, Windows API, IAT, Import &amp; Export function) 4. PE file management (PE files on disk and in memory)</td></tr><tr><td>Afternoon</td><td>Practice 4: File Analysis on Windows 1. Deploy and Install Process and Memory Monitoring Tools 2. Perform PE File Analysis</td></tr><tr><td rowspan="2">Day 5</td><td>Morning</td><td>VI. Dynamic Malware Analysis 1. Concepts and Tools 2. Common Dynamic Analysis Techniques 3. Dynamic Analysis Process 4. Dynamic Analysis in Virtual Environments (Sandbox, Emulation)</td></tr><tr><td>Afternoon</td><td>Practice 5: Dynamic Malware Analysis 1. Deploy the tool 2. Perform analysis in a sandbox environment</td></tr><tr><td rowspan="2">Day 6</td><td>Morning</td><td>VII. Some Anti RE techniques 1. Serial number bypass technique 2. Byte patching technique 3. Obfuscation technique 4. Anti-debug technique 5. Anti memory dumping technique 6. Anti-VM technique</td></tr><tr><td>Afternoon</td><td>Practice 6: Analysis of some Anti RE techniques 1. Deployment and installation of tools 2. Byte patching techniques 3. Obfuscation techniques 4. Anti-debug, Anti-VM techniques</td></tr><tr><td rowspan="2">Day 7</td><td>Morning</td><td>VIII. Advanced static malware analysis 1. x86 and x64 architectures 2. Disassemblers and decompilers 3. Advanced analysis techniques with disassembler IDA</td></tr><tr><td>Afternoon</td><td>Practice 7: Advanced Static Malware Analysis 1. Installing and Configuring IDA 2. Advanced Static Analysis Using Reverse Engineering</td></tr><tr><td rowspan="2">Day 8</td><td>Morning</td><td>IX. Advanced Dynamic Malware Analysis 1. Introduction to Debuggers 2. Debugging in User Mode and Kernel Mode 3. Introduction to Packing/Unpacking (using Automated Tools) 4. Some Code Injection and Hooking Techniques 5. Dynamic Malware Analysis Using OllyDbg</td></tr><tr><td>Afternoon</td><td>Practice 8: Advanced Dynamic Malware Analysis 1. Practice Pack/Unpack (using automated tools) 2. Extract packed malware from memory 3. Analyze fileless malware 4. Analyze obfuscated malware 5. Analyze multi-technology malware</td></tr><tr><td rowspan="2">Day 9</td><td>Morning</td><td>I. AI technology in static analysis 1. Introduction to AI, ML, DL, LLM technology and applications in information security problems 2. Malware analysis process using AI technology (Collecting malware and extracting features, representing malware data, building AI models, testing and evaluating the performance of AI models) 3. Application of CNN model in static analysis (PE header, bytecode, opcode)</td></tr><tr><td>Afternoon</td><td>Practice 12: AI in Static Analysis 1. Deep learning model (CNN) in static analysis 2. Testing and evaluating the effectiveness of the model</td></tr><tr><td rowspan="2">Day 10</td><td>Morning</td><td>II. AI Technology in Dynamic Analysis 1. Sequence2sequence (DGA) Model 2. Graph Neural Network (Network Traffic) Model</td></tr><tr><td>Afternoon</td><td>Practice 13: AI in Dynamic Analysis 1. Sequence2sequence Model 2. Graph Neural Networks</td></tr><tr><td rowspan="2">Day 11</td><td>Morning</td><td>XII. Incident Handling Practice 1. Incident Handling and Threat Hunting Procedures 2. Incident Handling and System Recovery Drills</td></tr><tr><td>Afternoon</td><td>Presentation on mini projects</td></tr><tr><td rowspan="2">Day 12</td><td>Morning</td><td>Course Exam</td></tr><tr><td>Afternoon</td><td>Course Summary and Closing</td></tr></tbody></table></figure>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

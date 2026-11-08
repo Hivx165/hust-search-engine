@@ -1,3 +1,8 @@
 **/target/
-storage/
 .tools/
+storage/crawler.pid
+storage/crawler.lock
+storage/dataset.db
+storage/**/*.db-journal
+storage/**/*.db-wal
+storage/**/*.db-shm

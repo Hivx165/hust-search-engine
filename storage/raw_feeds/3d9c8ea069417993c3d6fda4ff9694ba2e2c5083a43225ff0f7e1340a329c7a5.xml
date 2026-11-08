@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Trung tâm Chuyển đổi số RSS&#x3A; Văn bản - Hướng dẫn</title>
+        <link>https://cdt.hust.edu.vn/vi/laws/?cat=Huong-dan</link>
+        <atom:link href="https://cdt.hust.edu.vn/vi/laws/rss/" rel="self" />
+                <description>
+            <![CDATA[Trung tâm Chuyển đổi số - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+        
+        <copyright>
+            <![CDATA[Trung tâm Chuyển đổi số]]>
+        </copyright>
+        <docs>https://cdt.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://cdt.hust.edu.vn/uploads/cdt/logo-dhbk-1-02_130_191.png</url>
+            <title>Trung tâm Chuyển đổi số RSS&#x3A; Văn bản - Hướng dẫn</title>
+            <link>https://cdt.hust.edu.vn/vi/laws/?cat=Huong-dan</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+        
+    </channel>
+</rss>

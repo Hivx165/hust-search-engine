@@ -1,0 +1,1179 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head id="Head"><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_8,1_4,100_127,100_124,100_206,100_209,1_7-jvfI7" /><link href="App_Themes/SisTheme/Chart/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/Editors/sprite.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/Editors/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/GridView/sprite.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/GridView/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/HtmlEditor/sprite.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/HtmlEditor/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/PivotGrid/sprite.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/PivotGrid/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/Scheduler/sprite.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/Scheduler/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/SpellChecker/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/TreeList/sprite.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/TreeList/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/Web/sprite.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/Web/styles.css" type="text/css" rel="stylesheet" /><link href="App_Themes/SisTheme/XtraReports/sprite.css" type="text/css" rel="stylesheet" /><title>
+	SIS &#149; MainPage
+</title><link rel="SHORTCUT ICON" href="Styles/favicon.ico" /><link href="Styles/Site.css" rel="stylesheet" type="text/css" />
+    
+    <script src="~/Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        var MasterIsPostback = false;
+        document.onkeydown = function () {
+            switch (event.keyCode) {
+                case 116: //F5 button
+                    event.returnValue = false;
+                    event.keyCode = 0;
+                    return false;
+                case 82: //R button
+                    if (event.ctrlKey) {
+                        event.returnValue = false;
+                        event.keyCode = 0;
+                        return false;
+                    }
+            }
+        }
+
+	</script>
+
+
+</head>
+
+<body>
+    <form method="post" action="./" id="mainForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMjE0MzQwNjk4Mw9kFgJmD2QWAgIDD2QWBAIFD2QWAmYPPCsABAEADxYCHgVWYWx1ZQV2SOG7jWMga+G7syAyMDI2MSx0deG6p24gdGjhu6kgMTAsbmfDoHkgNyB0aMOhbmcgMTEgbsSDbSAyMDI2CkNow7puZyB0YSBjw7MgNSBraMOhY2ggdsOgIDAgdGjDoG5oIHZpw6puIHRy4buxYyB0dXnhur9uIGRkAgcPZBYCZg9kFgJmDzwrAAkCAA8WAh4OXyFVc2VWaWV3U3RhdGVnZAYPZBAWAWYWATwrAAwBABYCHghTZWxlY3RlZGdkZBgJBRxjdGwwMCRNYWluQ29udGVudCRM4buLY2ggdGhpDxQrAAdkZmZmZmZoZAU0Y3RsMDAkTWFpbkNvbnRlbnQkVGjDtG5nIGLDoW8gY+G7p2EgYmFuIFF14bqjbiB0cuG7iw8UKwAHZGZmZmZmaGQFMWN0bDAwJE1haW5Db250ZW50JFRow7RuZyBiw6FvIHjDqXQgdOG7kXQgbmdoaeG7h3APFCsAB2RmZmZmZmhkBTRjdGwwMCRNYWluQ29udGVudCRUaMO0bmcgYsOhbyDEkcSDbmcga8O9IGjhu41jIHThuq1wDxQrAAdkZmZmZmZoZAUyY3RsMDAkTWFpbkNvbnRlbnQkVGjDtG5nIGLDoW8geOG7rSBsw70gaOG7jWMgdOG6rXAPFCsAB2RmZmZmZmhkBRdjdGwwMCRNYWluQ29udGVudCRjdGwwOA8UKwAHZGZmZmZmaGQFIGN0bDAwJE1haW5Db250ZW50JEjGsOG7m25nIGThuqtuDxQrAAdkZmZmZmZoZAUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgoFF2N0bDAwJGNMb2dJbjEkYnRfY0xvZ0luBRhjdGwwMCRjVG9wTWVudTEkVXNlck1lbnUFIGN0bDAwJE1haW5Db250ZW50JEjGsOG7m25nIGThuqtuBRxjdGwwMCRNYWluQ29udGVudCRM4buLY2ggdGhpBTRjdGwwMCRNYWluQ29udGVudCRUaMO0bmcgYsOhbyBj4bunYSBiYW4gUXXhuqNuIHRy4buLBTRjdGwwMCRNYWluQ29udGVudCRUaMO0bmcgYsOhbyDEkcSDbmcga8O9IGjhu41jIHThuq1wBUJjdGwwMCRNYWluQ29udGVudCRUaMO0bmcgYsOhbyB4w6l0IG5o4bqtbiDEkeG7kyDDoW4gdOG7kXQgbmdoaeG7h3AFMWN0bDAwJE1haW5Db250ZW50JFRow7RuZyBiw6FvIHjDqXQgdOG7kXQgbmdoaeG7h3AFMmN0bDAwJE1haW5Db250ZW50JFRow7RuZyBiw6FvIHjhu60gbMO9IGjhu41jIHThuq1wBRdjdGwwMCRNYWluQ29udGVudCRjdGwwOAVCY3RsMDAkTWFpbkNvbnRlbnQkVGjDtG5nIGLDoW8geMOpdCBuaOG6rW4gxJHhu5Mgw6FuIHThu5F0IG5naGnhu4dwDxQrAAdkZmZmZmZoZL97ELY0coBdAuYxMlTDkBziu+5lyrB7KHqBKstY6UoI" />
+
+
+<script src="/ScriptResource.axd?d=Tzg-g9lX8upHGPYGzxSFkiMn4FL7PTvF24Q0MElt9xTL4N-diNmoGX7QQCRcu5_vd8kZ-I_hAYQ79pY4F0pVQpC7yhvRhBnF8D3s7bqDhEPfSNu2TcIj-WzAI_-VcpIlrpatMwKK1LLvdHPBGBSPeA2&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="CA0B0334" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAmtY2edAeNv5v05onU2APItA0Zy4EOkSgkrJTLWj1jUvJGwbydYdcxXTwNHZwYjSvkpcTXDyNrMg7kdiWEg9cAdpSRkl47KIIG2y6/YO3a7S1N/Knkiyvy64PPwZWfs3hb1Nu5AdY0fZXhbKYmqvdcXHEVWWRSwSNrmLB/m6Dn4U3c+Qyf4bhh8D8CKZfYtWxX8YU5XelWRd3w8yfpJmyRuDgv+fE4lvSB1i7jI+wQEww==" />
+        
+        <center>
+            <div id="bgtop">
+                <div id="site_header">
+                    
+                        
+
+    <script type="text/javascript" language="javascript">
+    // <![CDATA[
+        var cLogInisPostback = false;
+        function bt_cLogIn_ClientOnclick(s, e) {
+            e.processOnServer = !cLogInisPostback;
+            cLogInisPostback = true;
+        }
+
+    // ]]>
+    </script>
+
+ <table width="100%">
+                <tr>
+                    <td align="left" valign="top">
+                    <a href ="/"><div style="width: 80px; height: 120px; left: 40px; position: relative;"></div></a>
+                    </td>
+
+                    <td align="center" valign="middle" style="width: 600px">
+                    </td>
+
+                    <td align="right" style="padding: 0px 10px 10px 10px; margin: 0px 10px 10px 10px;" valign="top">
+                        
+    <table width="100%" style="padding: 5px">
+    <tr>
+        <td align="right">
+            <div>
+                <input type="hidden"/><script id="dxis_1102973276" src="/DXR.axd?r=1_145,1_81,1_99,1_105,1_137,1_106,1_92,1_130,1_135,1_121,1_126,1_84,1_124-jvfI7" type="text/javascript"></script><label class="dxeBase_SisTheme" id="cLogIn1_lb_cLogIn_User" for="cLogIn1_tb_cLogIn_User_I" style="display:inline-block;"><font color="White">t&#224;i khoản:</font></label>
+            </div>
+        </td>
+        <td align="left">
+            <div>
+                <table class="dxeTextBoxSys dxeTextBox_SisTheme" cellspacing="0" cellpadding="0" id="cLogIn1_tb_cLogIn_User">
+	<tr>
+		<td class="dxic" width="100%"><input class="dxeEditArea_SisTheme dxeEditAreaSys" id="cLogIn1_tb_cLogIn_User_I" name="ctl00$cLogIn1$tb_cLogIn_User" onfocus="aspxEGotFocus(&#39;cLogIn1_tb_cLogIn_User&#39;)" onblur="aspxELostFocus(&#39;cLogIn1_tb_cLogIn_User&#39;)" onkeydown="aspxEKeyDown(&#39;cLogIn1_tb_cLogIn_User&#39;, event)" onkeyup="aspxEKeyUp(&#39;cLogIn1_tb_cLogIn_User&#39;, event)" type="text" /></td>
+	</tr>
+</table><script id="dxss_340104185" type="text/javascript">
+<!--
+aspxAddDisabledItems('cLogIn1_tb_cLogIn_User',[[['dxeDisabled_SisTheme'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('cLogIn1_tb_cLogIn_User');
+window['tb_cLogIn_User'] = dxo;
+dxo.uniqueID = 'ctl00$cLogIn1$tb_cLogIn_User';
+dxo.renderIFrameForPopupElements = true;
+dxo.widthCorrectionRequired = true;
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_SisTheme','');
+dxo.InlineInitialize();
+
+//-->
+</script>
+            </div>
+        </td>
+        <td align="right">
+            <div>
+                <label class="dxeBase_SisTheme" id="cLogIn1_lb_cLogIn_Pass" for="cLogIn1_tb_cLogIn_Pass_I" style="display:inline-block;"><font color="White">mật khẩu:</font></label>
+            </div>
+        </td>
+        <td align="left">
+            <div>
+                <table class="dxeTextBoxSys dxeTextBox_SisTheme" cellspacing="0" cellpadding="0" id="cLogIn1_tb_cLogIn_Pass">
+	<tr>
+		<td class="dxic" width="100%"><input class="dxeEditArea_SisTheme dxeEditAreaSys" name="ctl00$cLogIn1$tb_cLogIn_Pass" onkeyup="aspxEKeyUp(&#39;cLogIn1_tb_cLogIn_Pass&#39;, event)" id="cLogIn1_tb_cLogIn_Pass_I" onchange="aspxEValueChanged(&#39;cLogIn1_tb_cLogIn_Pass&#39;)" onblur="aspxELostFocus(&#39;cLogIn1_tb_cLogIn_Pass&#39;)" onfocus="aspxEGotFocus(&#39;cLogIn1_tb_cLogIn_Pass&#39;)" type="password" onkeydown="aspxEKeyDown(&#39;cLogIn1_tb_cLogIn_Pass&#39;, event)" /></td>
+	</tr>
+</table><script id="dxss_1414859609" type="text/javascript">
+<!--
+aspxAddDisabledItems('cLogIn1_tb_cLogIn_Pass',[[['dxeDisabled_SisTheme'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('cLogIn1_tb_cLogIn_Pass');
+window['tb_cLogIn_Pass'] = dxo;
+dxo.uniqueID = 'ctl00$cLogIn1$tb_cLogIn_Pass';
+dxo.renderIFrameForPopupElements = true;
+dxo.ValueChanged.AddHandler(function(s,e) {   bt_cLogIn.DoClick(); });
+dxo.widthCorrectionRequired = true;
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_SisTheme','');
+dxo.InlineInitialize();
+
+//-->
+</script>
+            </div>
+        </td>
+        <td>
+            <div>
+                <table cellspacing="0" cellpadding="0" id="cLogIn1_bt_cLogIn" width="100" style="border-collapse:separate;">
+	<tr>
+		<td id="cLogIn1_bt_cLogIn_B" class="dxbButton_SisTheme" align="center"><div id="cLogIn1_bt_cLogIn_CD" class="dxb">
+			<span>Đăng nhập</span>
+		</div></td><td width="0%"><input value="" onfocus="aspxBGotFocus(&#39;cLogIn1_bt_cLogIn&#39;)" type="button" name="ctl00$cLogIn1$bt_cLogIn" border="0" style="padding:0px;" /></td>
+	</tr>
+</table><script id="dxss_1730087740" type="text/javascript">
+<!--
+aspxAddHoverItems('cLogIn1_bt_cLogIn',[[['dxbButtonHover_SisTheme'],[''],['B'],['','TC'],[['']],['Img']]]);
+aspxAddPressedItems('cLogIn1_bt_cLogIn',[[['dxbButtonPressed_SisTheme'],[''],['B'],['','TC'],[['']],['Img']]]);
+aspxAddDisabledItems('cLogIn1_bt_cLogIn',[[['dxbDisabled_SisTheme'],[''],['B'],['','TC'],[['']],['Img']]]);
+
+var dxo = new ASPxClientButton('cLogIn1_bt_cLogIn');
+window['bt_cLogIn'] = dxo;
+dxo.autoPostBack = true;
+dxo.uniqueID = 'ctl00$cLogIn1$bt_cLogIn';
+dxo.renderIFrameForPopupElements = true;
+dxo.Click.AddHandler(bt_cLogIn_ClientOnclick);
+dxo.RegisterServerEventAssigned(['Click']);
+aspxAddSelectedItems('cLogIn1_bt_cLogIn',[[['dxbf'],[''],['CD']]]);
+dxo.autoPostBackFunction = function(postBackArg) { WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$cLogIn1$bt_cLogIn",  postBackArg, true, "", "", false, true)); };
+dxo.useSubmitBehavior = false;
+dxo.InlineInitialize();
+
+//-->
+</script> 
+            </div>
+        </td>
+    </tr>
+</table>
+
+                        
+                    </td>
+                </tr>
+
+            
+                </table>
+
+
+
+
+
+                </div>
+                <div id="dvSite_Header_Statistic"><span class="dxeBase_SisTheme" id="statisticMember_StatusTextLabel">Học kỳ 20261,tuần thứ 10,ng&#224;y 7 th&#225;ng 11 năm 2026<br />Ch&#250;ng ta c&#243; 5 kh&#225;ch v&#224; 0 th&#224;nh vi&#234;n trực tuyến </span>
+</div>
+            </div>
+            <div id="bgbody" style="padding: 20px 0px 0px 0px">
+                
+                <table class="decorateTable" cellpadding="0px" cellspacing="0px" style="padding-bottom: 10px">
+                    <tr><td class="c1"></td><td class="c2"></td><td class="c3"></td></tr>
+                    <tr><td class="c4"></td>
+                        <td class="c5" style="padding: 0px; margin: 0px; width: 100%;">
+                        
+                            <div id="MainMenu">
+                                <table cellspacing="0" cellpadding="0" id="cTopMenu1_UserMenu" width="100%" style="border-collapse:separate;">
+	<tr>
+		<td class="dxmMenu_SisTheme" valign="top" style="text-align:Left;"><table cellspacing="0" cellpadding="0" height="100%" width="100%" style="border-collapse:separate;float:left;">
+			<tr>
+				<td id="cTopMenu1_UserMenu_DXI0_T" class="dxmMenuItem_SisTheme dxmMenuItemSelected_SisTheme dxmIFC dxmILC" width="15%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Trang chủ</span></td><td><div id="cTopMenu1_UserMenu_DXI0_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI1_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI1_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI1_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI1_T" class="dxmMenuItemWithPopOutImage_SisTheme dxmIFC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;1&#39;)" width="15%" style="cursor:pointer;text-align:Left;white-space:nowrap;border-right:0px!important;padding-right:4px!important;"><span style="cursor:pointer;">Chương tr&#236;nh đ&#224;o tạo</span></td><td id="cTopMenu1_UserMenu_DXI1_P" class="dxmMenuItemWithPopOutImage_SisTheme dxmILC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;1&#39;)" style="cursor:pointer;padding-left:0px!important;border-left:0px!important;"><img id="cTopMenu1_UserMenu_DXI1_PImg" class="dxWeb_mHorizontalPopOut_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" /></td><td><div id="cTopMenu1_UserMenu_DXI1_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI2_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI2_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI2_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI2_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" width="14%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Kế hoạch học tập</span></td><td><div id="cTopMenu1_UserMenu_DXI2_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI3_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI3_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI3_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI3_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" width="14%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Kết quả học tập</span></td><td><div id="cTopMenu1_UserMenu_DXI3_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI4_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI4_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI4_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI4_T" class="dxmMenuItemWithPopOutImage_SisTheme dxmIFC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;4&#39;)" width="14%" style="cursor:pointer;text-align:Left;white-space:nowrap;border-right:0px!important;padding-right:4px!important;"><span style="cursor:pointer;">Đăng k&#253; học tập</span></td><td id="cTopMenu1_UserMenu_DXI4_P" class="dxmMenuItemWithPopOutImage_SisTheme dxmILC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;4&#39;)" style="cursor:pointer;padding-left:0px!important;border-left:0px!important;"><img id="cTopMenu1_UserMenu_DXI4_PImg" class="dxWeb_mHorizontalPopOut_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" /></td><td><div id="cTopMenu1_UserMenu_DXI4_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI5_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI5_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI5_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI5_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" width="14%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Tra cứu</span></td><td><div id="cTopMenu1_UserMenu_DXI5_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI6_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI6_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI6_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI6_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" width="14%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Hướng dẫn</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><div id="cTopMenu1_UserMenu_DXM1_" style="position:absolute;left:0px;top:0px;z-index:20000;visibility:hidden;display:none;">
+	<table id="cTopMenu1_UserMenu_DXMST1_" cellspacing="0" cellpadding="0" style="border-collapse:separate;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=85);position:relative;">
+		<tr>
+			<td class="dxmSubMenu_SisTheme"><div id="cTopMenu1_UserMenu_DXSB1_U" class="dxmScrollUpButton_SisTheme" style="display:none;">
+				<img id="cTopMenu1_UserMenu_DXSB1_UImg" class="dxWeb_mScrollUp_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="^" title="" />
+			</div><div id="cTopMenu1_UserMenu_DXSA1" class="dxmScrollArea_SisTheme">
+				<table cellspacing="0" cellpadding="0" style="border-collapse:separate;float:left;">
+					<tr id="cTopMenu1_UserMenu_DXI1i0_" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;1i0&#39;)">
+						<td id="cTopMenu1_UserMenu_DXI1i0_T" class="dxmSubMenuItem_SisTheme" width="100%" style="cursor:pointer;"><a href="ModuleProgram/CourseLists.aspx">Danh mục học phần</a></td>
+					</tr>
+				</table>
+			</div><div id="cTopMenu1_UserMenu_DXSB1_D" class="dxmScrollDownButton_SisTheme" style="display:none;">
+				<img id="cTopMenu1_UserMenu_DXSB1_DImg" class="dxWeb_mScrollDown_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" />
+			</div></td>
+		</tr>
+	</table>
+</div><div id="cTopMenu1_UserMenu_DXM4_" style="position:absolute;left:0px;top:0px;z-index:20000;visibility:hidden;display:none;">
+	<table id="cTopMenu1_UserMenu_DXMST4_" cellspacing="0" cellpadding="0" style="border-collapse:separate;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=85);position:relative;">
+		<tr>
+			<td class="dxmSubMenu_SisTheme"><div id="cTopMenu1_UserMenu_DXSB4_U" class="dxmScrollUpButton_SisTheme" style="display:none;">
+				<img id="cTopMenu1_UserMenu_DXSB4_UImg" class="dxWeb_mScrollUp_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="^" title="" />
+			</div><div id="cTopMenu1_UserMenu_DXSA4" class="dxmScrollArea_SisTheme">
+				<table cellspacing="0" cellpadding="0" style="border-collapse:separate;float:left;">
+					<tr id="cTopMenu1_UserMenu_DXI4i0_" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;4i0&#39;)">
+						<td id="cTopMenu1_UserMenu_DXI4i0_T" class="dxmSubMenuItem_SisTheme" width="100%" style="cursor:pointer;"><a href="ModuleRegisterClass/CourseListRegister.aspx">Học phần mở đăng k&#253;</a></td>
+					</tr>
+				</table>
+			</div><div id="cTopMenu1_UserMenu_DXSB4_D" class="dxmScrollDownButton_SisTheme" style="display:none;">
+				<img id="cTopMenu1_UserMenu_DXSB4_DImg" class="dxWeb_mScrollDown_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" />
+			</div></td>
+		</tr>
+	</table>
+</div><iframe id="cTopMenu1_UserMenu_DXMIF0" src="javascript:false" scrolling="no" frameborder="0" style="position:absolute;display:none;z-index:19997;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=0);">
+
+</iframe><iframe id="cTopMenu1_UserMenu_DXMIF1" src="javascript:false" scrolling="no" frameborder="0" style="position:absolute;display:none;z-index:19997;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=0);">
+
+</iframe><script id="dxss_531284427" type="text/javascript">
+<!--
+aspxAddHoverItems('cTopMenu1_UserMenu',[[[''],[''],['DXM_','DXM1_','DXMBC1_','DXM4_','DXMBC4_']],[['',''],['',''],['DXI0_'],['I','N','T','P'],[['']],['Img','PImg']],[['dxmScrollButtonHover_SisTheme'],[''],['DXSB0_U','DXSB0_D','DXSB1i0_U','DXSB1i0_D','DXSB1_U','DXSB1_D','DXSB2_U','DXSB2_D','DXSB3_U','DXSB3_D','DXSB4i0_U','DXSB4i0_D','DXSB4_U','DXSB4_D','DXSB5_U','DXSB5_D','DXSB6_U','DXSB6_D'],,[[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],['']],['Img']],[['dxmMenuItemHoverWithPopOutImage_SisTheme'],[''],['DXI1_','DXI4_'],['I','N','T','P'],[['',''],['','']],['Img','PImg']],[['dxmSubMenuItemHover_SisTheme'],[''],['DXI1i0_','DXI4i0_'],['I','N','T','P'],[[''],['']],['Img','PImg']],[['dxmMenuItemHover_SisTheme'],[''],['DXI2_','DXI3_','DXI5_','DXI6_'],['I','N','T','P'],[[''],[''],[''],['']],['Img','PImg']]]);
+aspxAddPressedItems('cTopMenu1_UserMenu',[[['dxmScrollButtonPressed_SisTheme'],[''],['DXSB1_U','DXSB1_D','DXSB4_U','DXSB4_D'],,[[''],[''],[''],['']],['Img']]]);
+
+var dxo = new ASPxClientMenu('cTopMenu1_UserMenu');
+window['cTopMenu1_UserMenu'] = dxo;
+dxo.uniqueID = 'ctl00$cTopMenu1$UserMenu';
+dxo.renderIFrameForPopupElements = true;
+dxo.disappearAfter=200;
+dxo.subMenuFIXOffset=1;
+dxo.subMenuFIYOffset=-1;
+dxo.subMenuLIXOffset=1;
+dxo.subMenuLIYOffset=-1;
+dxo.subMenuXOffset=1;
+dxo.subMenuYOffset=-1;
+dxo.rootSubMenuFIXOffset=-1;
+dxo.rootSubMenuLIXOffset=-1;
+dxo.rootSubMenuXOffset=-1;
+dxo.scrollInfo=['0','1','1i0','2','3','4','4i0','5','6'];
+dxo.shadowVisible=false;
+dxo.InlineInitialize();
+
+//-->
+</script>
+                            </div>
+                        
+                        </td>
+                    <td class="c6"></td></tr><tr><td class="c7"></td><td class="c8"></td><td class="c9"></td></tr>
+                </table>
+               
+
+
+                
+                <table class="decorateTable" cellpadding="0px" cellspacing="0px">
+                    <tr>
+                        <td class="n1"></td><td class="n2"></td><td class="n3"></td>
+                    </tr>
+                    <tr>
+                        <td class="n4"></td>
+                        <td class="n5" style="padding: 10px 10px 10px 10px; margin: 0px; width: 100%">
+                            <div id="mainTextHeader">
+                                <img id="main_text_header_ctl00" src="Styles/home_icon.png" alt="" height="32" width="32" />&nbsp; Trang chủ
+                            </div>
+                            <div class="nSeparator" style="width: 100%; padding-top:20px;">
+                            </div>
+                            <div id="mainTextBody">
+                                
+<script>
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+            (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date(); a = s.createElement(o),
+  m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+    ga('create', 'UA-40723480-1', 'hust.edu.vn');
+    ga('send', 'pageview');
+
+</script>
+    
+    <table style="width: 100%">
+        <tr>
+            <td style="vertical-align: top; width: 70%;">
+                <span><b><font color="DarkRed" size="5">Hướng dẫn</font></b></span><script id="dxss_463073712" type="text/javascript">
+<!--
+var __dxLastScrollY = -1;
+function backtotop(anchorStr, offsetY){
+  scrollY = (document.documentElement.scrollTop || document.body.scrollTop);
+  if (__dxLastScrollY != scrollY){
+    location.href=anchorStr;
+    scrollX = (document.documentElement.scrollLeft || document.body.scrollLeft);
+    scrollY = (document.documentElement.scrollTop || document.body.scrollTop);
+    __dxLastScrollY = scrollY - offsetY;
+    window.scrollTo(scrollX, __dxLastScrollY);
+  }
+}
+
+//-->
+</script><div style="padding:0px;">
+	<a name="MainContent_Hướng dẫn_BT"><font size="1"></font></a>
+</div><input id="MainContent_Hướng dẫn_S" name="ctl00$MainContent$Hướng dẫn" type="hidden" value="0;3;1;0" /><table class="dxncControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_Hướng dẫn" bgcolor="Transparent" width="100%">
+	<tr>
+		<td id="MainContent_Hướng dẫn_CCell" class="dxncCtrl" style="vertical-align:top;"><font color="Blue"><table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+			<tr>
+				<td id="MainContent_Hướng dẫn_ICell" class="dxncContent_SisTheme"><font color="Blue"><table cellspacing="0" cellpadding="0" height="100%" width="100%">
+					<tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Hướng dẫn_ctl09" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									01/03/2017 04:29
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=299"><font color="Blue">Hướng dẫn kiểm tra điều kiện tốt nghiệp</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Sinh vi&#234;n tự kiểm tra điều kiện tốt nghiệp tr&#234;n trang <span style="white-space:nowrap;">http://ctt-daotao.hust.edu.vn <a href="NewsModule/?ID=299"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Hướng dẫn_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr>
+				</table></font></td>
+			</tr>
+		</table></font></td>
+	</tr>
+</table><table id="MainContent_Hướng dẫn_LP" class="dxncLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_Hướng dẫn_TL">xin &#273;&#7907;i&hellip;</span><br /><img src="/DXR.axd?r=100_210-8V9H7" alt="" align="middle" style="margin-top:3px;" /></td>
+	</tr>
+</table><div id="MainContent_Hướng dẫn_LD" class="dxncLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_885477997" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientNewsControl('MainContent_Hướng dẫn');
+window['MainContent_Hướng dẫn'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$Hướng dẫn',arg,aspxCallback,'MainContent_Hướng dẫn',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$Hướng dẫn';
+dxo.renderIFrameForPopupElements = true;
+dxo.InlineInitialize();
+
+//-->
+</script><span><b><font color="DarkRed" size="5">Lịch thi</font></b></span><div style="padding:0px;">
+	<a name="MainContent_Lịch thi_BT"><font size="1"></font></a>
+</div><input id="MainContent_Lịch thi_S" name="ctl00$MainContent$Lịch thi" type="hidden" value="0;3;6;0" /><table class="dxncControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_Lịch thi" bgcolor="Transparent" width="100%">
+	<tr>
+		<td id="MainContent_Lịch thi_CCell" class="dxncCtrl" style="vertical-align:top;"><font color="Blue"><table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+			<tr>
+				<td id="MainContent_Lịch thi_ICell" class="dxncContent_SisTheme"><font color="Blue"><table cellspacing="0" cellpadding="0" height="100%" width="100%">
+					<tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Lịch thi_ctl10" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									16/12/2017 03:42
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=334"><font color="Blue">Lịch thi giữa kỳ v&#224; cuối kỳ học kỳ 20171 (cập nhật lịch thi cuối kỳ ng&#224;y 16/12/2017)</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Sinh vi&#234;n ch&#250; &#253; xem v&#224; cập nhật lịch thi cuối kỳ v&#224; giữa kỳ học kỳ 20171 (cập nhật lịch thi cuối kỳ ng&#224;y <span style="white-space:nowrap;">16/12/2017) <a href="NewsModule/?ID=334"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Lịch thi_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Lịch thi_ctl13" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									24/07/2017 02:31
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=318"><font color="Blue">Lịch thi giữa kỳ v&#224; cuồi kỳ học kỳ h&#232; 20163 </font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Sinh vi&#234;n ch&#250; &#253; xem v&#224; cập nhật thường xuy&#234;n c&#225;c lịch thi giữa kỳ v&#224; cuối kỳ tại th&#244;ng b&#225;o n&#224;y. Đ&#227; cập nhật lịch thi <span style="white-space:nowrap;">cuối&hellip; <a href="NewsModule/?ID=318"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Lịch thi_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Lịch thi_ctl16" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									24/05/2017 04:28
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=301"><font color="Blue">Lịch thi giữa kỳ v&#224; cuối kỳ học kỳ 20162-A-AB-B (cập nhật ng&#224;y 24/05/2017)</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									SV ch&#250; &#253; xem lịch thi giữa kỳ v&#224; cuối kỳ (cập nhật ng&#224;y <span style="white-space:nowrap;">24/05/2017) <a href="NewsModule/?ID=301"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Lịch thi_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr>
+				</table></font></td>
+			</tr><tr>
+				<td class="dxncPPSpacing" height="12"><font color="Blue"></font></td>
+			</tr><tr>
+				<td class="dxncPagerPanel_SisTheme" align="left"><font color="Blue"><div class="dxpLite_SisTheme" id="MainContent_Lịch thi_PGB"><font color="Blue">
+					<b class="dxp-lead dxp-summary"></b><b class="dxp-sep"></b><b class="dxp-num dxp-current">[1]</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Lịch thi&#39;, &#39;PN1&#39;)"><font color="Blue">2</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Lịch thi&#39;, &#39;PN2&#39;)"><font color="Blue">3</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Lịch thi&#39;, &#39;PN3&#39;)"><font color="Blue">4</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Lịch thi&#39;, &#39;PN4&#39;)"><font color="Blue">5</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Lịch thi&#39;, &#39;PN5&#39;)"><font color="Blue">6</font></a>
+				</font></div><b class="dx-clear"></b><script id="dxss_1324919834" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientPager('MainContent_Lịch thi_PGB');
+window['MainContent_Lịch thi_PGB'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$Lịch thi$PGB';
+dxo.renderIFrameForPopupElements = true;
+dxo.liteRender=true;
+dxo.hasOwnerControl=true;
+dxo.pageSizeItems = [{'text':'3','value':'3'},{'text':'5','value':'5'},{'text':'10','value':'10'},{'text':'20','value':'20'}];
+dxo.pageSizeSelectedItem = ({'text':'3','value':3});
+dxo.pageSizeChangedHandler.AddHandler(function(s, e) { aspxDVPagerClick('MainContent_Lịch thi', e.value); });
+dxo.InlineInitialize();
+
+//-->
+</script></font></td>
+			</tr>
+		</table></font></td>
+	</tr>
+</table><table id="MainContent_Lịch thi_LP" class="dxncLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_Lịch thi_TL">xin &#273;&#7907;i&hellip;</span><br /><img src="/DXR.axd?r=100_210-8V9H7" alt="" align="middle" style="margin-top:3px;" /></td>
+	</tr>
+</table><div id="MainContent_Lịch thi_LD" class="dxncLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_20935789" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientNewsControl('MainContent_Lịch thi');
+window['MainContent_Lịch thi'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$Lịch thi',arg,aspxCallback,'MainContent_Lịch thi',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$Lịch thi';
+dxo.renderIFrameForPopupElements = true;
+dxo.InlineInitialize();
+
+//-->
+</script><span><b><font color="DarkRed" size="5">Thông báo của ban Quản trị</font></b></span><div style="padding:0px;">
+	<a name="MainContent_Thông báo của ban Quản trị_BT"><font size="1"></font></a>
+</div><input id="MainContent_Thông báo của ban Quản trị_S" name="ctl00$MainContent$Thông báo của ban Quản trị" type="hidden" value="0;3;24;0" /><table class="dxncControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_Thông báo của ban Quản trị" bgcolor="Transparent" width="100%">
+	<tr>
+		<td id="MainContent_Thông báo của ban Quản trị_CCell" class="dxncCtrl" style="vertical-align:top;"><font color="Blue"><table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+			<tr>
+				<td id="MainContent_Thông báo của ban Quản trị_ICell" class="dxncContent_SisTheme"><font color="Blue"><table cellspacing="0" cellpadding="0" height="100%" width="100%">
+					<tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo của ban Quản trị_ctl10" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									04/12/2019 09:22
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=377"><font color="Blue">Th&#244;ng b&#225;o lịch thu học ph&#237; kỳ 20191 - đợt 2</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Sinh vi&#234;n ch&#250; &#253; đọc kỹ th&#244;ng b&#225;o về học <span style="white-space:nowrap;">ph&#237;. <a href="NewsModule/?ID=377"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo của ban Quản trị_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo của ban Quản trị_ctl13" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									17/09/2019 09:00
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=374"><font color="Blue">TH&#212;NG B&#193;O Về học ph&#237; kỳ I năm học 2019-2020 (20191) đợt 1</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									(Trừ hệ đ&#224;o tạo Quốc tế <span style="white-space:nowrap;">SIE) <a href="NewsModule/?ID=374"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo của ban Quản trị_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo của ban Quản trị_ctl16" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									27/08/2019 10:41
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=371"><font color="Blue">TH&#212;NG B&#193;O Về học ph&#237; kỳ h&#232; năm học 2018-2019 (20183) đợt 2</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Học ph&#237; kỳ h&#232; năm học 2018-2019 (20183) đợt 2<br />(Trừ hệ đ&#224;o tạo Quốc tế <span style="white-space:nowrap;">SIE) <a href="NewsModule/?ID=371"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo của ban Quản trị_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr>
+				</table></font></td>
+			</tr><tr>
+				<td class="dxncPPSpacing" height="12"><font color="Blue"></font></td>
+			</tr><tr>
+				<td class="dxncPagerPanel_SisTheme" align="left"><font color="Blue"><div class="dxpLite_SisTheme" id="MainContent_Thông báo của ban Quản trị_PGB"><font color="Blue">
+					<b class="dxp-lead dxp-summary"></b><b class="dxp-sep"></b><b class="dxp-num dxp-current">[1]</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN1&#39;)"><font color="Blue">2</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN2&#39;)"><font color="Blue">3</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN3&#39;)"><font color="Blue">4</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN4&#39;)"><font color="Blue">5</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN5&#39;)"><font color="Blue">6</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN6&#39;)"><font color="Blue">7</font></a><b class="dxp-sep"></b><b class="dxp-ellip">&hellip;</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN21&#39;)"><font color="Blue">22</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN22&#39;)"><font color="Blue">23</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo của ban Quản trị&#39;, &#39;PN23&#39;)"><font color="Blue">24</font></a>
+				</font></div><b class="dx-clear"></b><script id="dxss_1870782490" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientPager('MainContent_Thông báo của ban Quản trị_PGB');
+window['MainContent_Thông báo của ban Quản trị_PGB'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$Thông báo của ban Quản trị$PGB';
+dxo.renderIFrameForPopupElements = true;
+dxo.liteRender=true;
+dxo.hasOwnerControl=true;
+dxo.pageSizeItems = [{'text':'3','value':'3'},{'text':'5','value':'5'},{'text':'10','value':'10'},{'text':'20','value':'20'}];
+dxo.pageSizeSelectedItem = ({'text':'3','value':3});
+dxo.pageSizeChangedHandler.AddHandler(function(s, e) { aspxDVPagerClick('MainContent_Thông báo của ban Quản trị', e.value); });
+dxo.InlineInitialize();
+
+//-->
+</script></font></td>
+			</tr>
+		</table></font></td>
+	</tr>
+</table><table id="MainContent_Thông báo của ban Quản trị_LP" class="dxncLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_Thông báo của ban Quản trị_TL">xin &#273;&#7907;i&hellip;</span><br /><img src="/DXR.axd?r=100_210-8V9H7" alt="" align="middle" style="margin-top:3px;" /></td>
+	</tr>
+</table><div id="MainContent_Thông báo của ban Quản trị_LD" class="dxncLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1764444959" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientNewsControl('MainContent_Thông báo của ban Quản trị');
+window['MainContent_Thông báo của ban Quản trị'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$Thông báo của ban Quản trị',arg,aspxCallback,'MainContent_Thông báo của ban Quản trị',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$Thông báo của ban Quản trị';
+dxo.renderIFrameForPopupElements = true;
+dxo.InlineInitialize();
+
+//-->
+</script><span><b><font color="DarkRed" size="5">Thông báo đăng ký học tập</font></b></span><div style="padding:0px;">
+	<a name="MainContent_Thông báo đăng ký học tập_BT"><font size="1"></font></a>
+</div><input id="MainContent_Thông báo đăng ký học tập_S" name="ctl00$MainContent$Thông báo đăng ký học tập" type="hidden" value="0;3;26;0" /><table class="dxncControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_Thông báo đăng ký học tập" bgcolor="Transparent" width="100%">
+	<tr>
+		<td id="MainContent_Thông báo đăng ký học tập_CCell" class="dxncCtrl" style="vertical-align:top;"><font color="Blue"><table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+			<tr>
+				<td id="MainContent_Thông báo đăng ký học tập_ICell" class="dxncContent_SisTheme"><font color="Blue"><table cellspacing="0" cellpadding="0" height="100%" width="100%">
+					<tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo đăng ký học tập_ctl10" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									19/12/2018 01:00
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=359"><font color="Blue">Th&#244;ng b&#225;o mở đăng k&#253; lớp học kỳ 20182</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Sinh vi&#234;n ch&#250; &#253; thời gian đăng k&#253; học <span style="white-space:nowrap;">tập <a href="NewsModule/?ID=359"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo đăng ký học tập_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo đăng ký học tập_ctl13" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									05/07/2018 09:42
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=349"><font color="Blue">Th&#244;ng b&#225;o thu học ph&#237; kỳ 20173 đợt 1</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Th&#244;ng b&#225;o thu học ph&#237; kỳ 20173 đợt <span style="white-space:nowrap;">1 <a href="NewsModule/?ID=349"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo đăng ký học tập_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo đăng ký học tập_ctl16" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									10/04/2018 04:24
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=343"><font color="Blue">Th&#244;ng b&#225;o về học ph&#237; học kỳ 20172 (đợt 2)</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Th&#244;ng b&#225;o về học ph&#237; học kỳ 20172 (đợt <span style="white-space:nowrap;">2) <a href="NewsModule/?ID=343"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo đăng ký học tập_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr>
+				</table></font></td>
+			</tr><tr>
+				<td class="dxncPPSpacing" height="12"><font color="Blue"></font></td>
+			</tr><tr>
+				<td class="dxncPagerPanel_SisTheme" align="left"><font color="Blue"><div class="dxpLite_SisTheme" id="MainContent_Thông báo đăng ký học tập_PGB"><font color="Blue">
+					<b class="dxp-lead dxp-summary"></b><b class="dxp-sep"></b><b class="dxp-num dxp-current">[1]</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN1&#39;)"><font color="Blue">2</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN2&#39;)"><font color="Blue">3</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN3&#39;)"><font color="Blue">4</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN4&#39;)"><font color="Blue">5</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN5&#39;)"><font color="Blue">6</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN6&#39;)"><font color="Blue">7</font></a><b class="dxp-sep"></b><b class="dxp-ellip">&hellip;</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN23&#39;)"><font color="Blue">24</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN24&#39;)"><font color="Blue">25</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo đăng ký học tập&#39;, &#39;PN25&#39;)"><font color="Blue">26</font></a>
+				</font></div><b class="dx-clear"></b><script id="dxss_1082668022" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientPager('MainContent_Thông báo đăng ký học tập_PGB');
+window['MainContent_Thông báo đăng ký học tập_PGB'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$Thông báo đăng ký học tập$PGB';
+dxo.renderIFrameForPopupElements = true;
+dxo.liteRender=true;
+dxo.hasOwnerControl=true;
+dxo.pageSizeItems = [{'text':'3','value':'3'},{'text':'5','value':'5'},{'text':'10','value':'10'},{'text':'20','value':'20'}];
+dxo.pageSizeSelectedItem = ({'text':'3','value':3});
+dxo.pageSizeChangedHandler.AddHandler(function(s, e) { aspxDVPagerClick('MainContent_Thông báo đăng ký học tập', e.value); });
+dxo.InlineInitialize();
+
+//-->
+</script></font></td>
+			</tr>
+		</table></font></td>
+	</tr>
+</table><table id="MainContent_Thông báo đăng ký học tập_LP" class="dxncLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_Thông báo đăng ký học tập_TL">xin &#273;&#7907;i&hellip;</span><br /><img src="/DXR.axd?r=100_210-8V9H7" alt="" align="middle" style="margin-top:3px;" /></td>
+	</tr>
+</table><div id="MainContent_Thông báo đăng ký học tập_LD" class="dxncLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1226263045" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientNewsControl('MainContent_Thông báo đăng ký học tập');
+window['MainContent_Thông báo đăng ký học tập'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$Thông báo đăng ký học tập',arg,aspxCallback,'MainContent_Thông báo đăng ký học tập',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$Thông báo đăng ký học tập';
+dxo.renderIFrameForPopupElements = true;
+dxo.InlineInitialize();
+
+//-->
+</script><span><b><font color="DarkRed" size="5">Thông báo xét nhận đồ án tốt nghiệp</font></b></span><div style="padding:0px;">
+	<a name="MainContent_Thông báo xét nhận đồ án tốt nghiệp_BT"><font size="1"></font></a>
+</div><input id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_S" name="ctl00$MainContent$Thông báo xét nhận đồ án tốt nghiệp" type="hidden" value="0;3;7;0" /><table class="dxncControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_Thông báo xét nhận đồ án tốt nghiệp" bgcolor="Transparent" width="100%">
+	<tr>
+		<td id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_CCell" class="dxncCtrl" style="vertical-align:top;"><font color="Blue"><table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+			<tr>
+				<td id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_ICell" class="dxncContent_SisTheme"><font color="Blue"><table cellspacing="0" cellpadding="0" height="100%" width="100%">
+					<tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_ctl10" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									13/09/2019 02:41
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=373"><font color="Blue">Kết quả x&#233;t nhận đồ &#225;n tốt nghiệp 20191</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Kết quả x&#233;t nhận đồ &#225;n tốt nghiệp <span style="white-space:nowrap;">20191 <a href="NewsModule/?ID=373"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xét nhận đồ án tốt nghiệp_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_ctl13" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									11/07/2019 03:40
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=369"><font color="Blue">Kết quả x&#233;t nhận đồ &#225;n tốt nghiệp kỳ 20183</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Kết quả x&#233;t nhận đồ &#225;n tốt nghiệp kỳ <span style="white-space:nowrap;">20183 <a href="NewsModule/?ID=369"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xét nhận đồ án tốt nghiệp_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_ctl16" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									18/02/2019 11:32
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=362"><font color="Blue">Th&#244;ng b&#225;o về kết quả x&#233;t nhận đồ &#225;n tốt nghiệp 20182</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Th&#244;ng b&#225;o về kết quả x&#233;t nhận đồ &#225;n tốt nghiệp <span style="white-space:nowrap;">20182 <a href="NewsModule/?ID=362"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xét nhận đồ án tốt nghiệp_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr>
+				</table></font></td>
+			</tr><tr>
+				<td class="dxncPPSpacing" height="12"><font color="Blue"></font></td>
+			</tr><tr>
+				<td class="dxncPagerPanel_SisTheme" align="left"><font color="Blue"><div class="dxpLite_SisTheme" id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_PGB"><font color="Blue">
+					<b class="dxp-lead dxp-summary"></b><b class="dxp-sep"></b><b class="dxp-num dxp-current">[1]</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét nhận đồ án tốt nghiệp&#39;, &#39;PN1&#39;)"><font color="Blue">2</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét nhận đồ án tốt nghiệp&#39;, &#39;PN2&#39;)"><font color="Blue">3</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét nhận đồ án tốt nghiệp&#39;, &#39;PN3&#39;)"><font color="Blue">4</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét nhận đồ án tốt nghiệp&#39;, &#39;PN4&#39;)"><font color="Blue">5</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét nhận đồ án tốt nghiệp&#39;, &#39;PN5&#39;)"><font color="Blue">6</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét nhận đồ án tốt nghiệp&#39;, &#39;PN6&#39;)"><font color="Blue">7</font></a>
+				</font></div><b class="dx-clear"></b><script id="dxss_744245238" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientPager('MainContent_Thông báo xét nhận đồ án tốt nghiệp_PGB');
+window['MainContent_Thông báo xét nhận đồ án tốt nghiệp_PGB'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$Thông báo xét nhận đồ án tốt nghiệp$PGB';
+dxo.renderIFrameForPopupElements = true;
+dxo.liteRender=true;
+dxo.hasOwnerControl=true;
+dxo.pageSizeItems = [{'text':'3','value':'3'},{'text':'5','value':'5'},{'text':'10','value':'10'},{'text':'20','value':'20'}];
+dxo.pageSizeSelectedItem = ({'text':'3','value':3});
+dxo.pageSizeChangedHandler.AddHandler(function(s, e) { aspxDVPagerClick('MainContent_Thông báo xét nhận đồ án tốt nghiệp', e.value); });
+dxo.InlineInitialize();
+
+//-->
+</script></font></td>
+			</tr>
+		</table></font></td>
+	</tr>
+</table><table id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_LP" class="dxncLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_TL">xin &#273;&#7907;i&hellip;</span><br /><img src="/DXR.axd?r=100_210-8V9H7" alt="" align="middle" style="margin-top:3px;" /></td>
+	</tr>
+</table><div id="MainContent_Thông báo xét nhận đồ án tốt nghiệp_LD" class="dxncLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1982651786" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientNewsControl('MainContent_Thông báo xét nhận đồ án tốt nghiệp');
+window['MainContent_Thông báo xét nhận đồ án tốt nghiệp'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$Thông báo xét nhận đồ án tốt nghiệp',arg,aspxCallback,'MainContent_Thông báo xét nhận đồ án tốt nghiệp',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$Thông báo xét nhận đồ án tốt nghiệp';
+dxo.renderIFrameForPopupElements = true;
+dxo.InlineInitialize();
+
+//-->
+</script><span><b><font color="DarkRed" size="5">Thông báo xét tốt nghiệp</font></b></span><div style="padding:0px;">
+	<a name="MainContent_Thông báo xét tốt nghiệp_BT"><font size="1"></font></a>
+</div><input id="MainContent_Thông báo xét tốt nghiệp_S" name="ctl00$MainContent$Thông báo xét tốt nghiệp" type="hidden" value="0;3;24;0" /><table class="dxncControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_Thông báo xét tốt nghiệp" bgcolor="Transparent" width="100%">
+	<tr>
+		<td id="MainContent_Thông báo xét tốt nghiệp_CCell" class="dxncCtrl" style="vertical-align:top;"><font color="Blue"><table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+			<tr>
+				<td id="MainContent_Thông báo xét tốt nghiệp_ICell" class="dxncContent_SisTheme"><font color="Blue"><table cellspacing="0" cellpadding="0" height="100%" width="100%">
+					<tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xét tốt nghiệp_ctl10" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									15/06/2020 04:35
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=380"><font color="Blue">Lịch mở đăng k&#253; x&#233;t tốt nghiệp 20192A</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Sinh vi&#234;n đ&#227; ho&#224;n th&#224;nh chương tr&#236;nh đ&#224;o tạo c&#243; thể v&#224;o đăng k&#253; x&#233;t tốt nghiệp kỳ <span style="white-space:nowrap;">20192A <a href="NewsModule/?ID=380"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xét tốt nghiệp_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xét tốt nghiệp_ctl13" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									22/01/2020 08:34
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=379"><font color="Blue">Mở đăng k&#253; tốt nghiệp đợt 20191B</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Mở đăng k&#253; tốt nghiệp đợt <span style="white-space:nowrap;">20191B <a href="NewsModule/?ID=379"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xét tốt nghiệp_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xét tốt nghiệp_ctl16" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									13/12/2019 10:07
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=378"><font color="Blue">Kết quả x&#233;t tốt nghiệp đợt 20191-A</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Kết quả x&#233;t tốt nghiệp đợt <span style="white-space:nowrap;">20191-A <a href="NewsModule/?ID=378"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xét tốt nghiệp_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr>
+				</table></font></td>
+			</tr><tr>
+				<td class="dxncPPSpacing" height="12"><font color="Blue"></font></td>
+			</tr><tr>
+				<td class="dxncPagerPanel_SisTheme" align="left"><font color="Blue"><div class="dxpLite_SisTheme" id="MainContent_Thông báo xét tốt nghiệp_PGB"><font color="Blue">
+					<b class="dxp-lead dxp-summary"></b><b class="dxp-sep"></b><b class="dxp-num dxp-current">[1]</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN1&#39;)"><font color="Blue">2</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN2&#39;)"><font color="Blue">3</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN3&#39;)"><font color="Blue">4</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN4&#39;)"><font color="Blue">5</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN5&#39;)"><font color="Blue">6</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN6&#39;)"><font color="Blue">7</font></a><b class="dxp-sep"></b><b class="dxp-ellip">&hellip;</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN21&#39;)"><font color="Blue">22</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN22&#39;)"><font color="Blue">23</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xét tốt nghiệp&#39;, &#39;PN23&#39;)"><font color="Blue">24</font></a>
+				</font></div><b class="dx-clear"></b><script id="dxss_293245158" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientPager('MainContent_Thông báo xét tốt nghiệp_PGB');
+window['MainContent_Thông báo xét tốt nghiệp_PGB'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$Thông báo xét tốt nghiệp$PGB';
+dxo.renderIFrameForPopupElements = true;
+dxo.liteRender=true;
+dxo.hasOwnerControl=true;
+dxo.pageSizeItems = [{'text':'3','value':'3'},{'text':'5','value':'5'},{'text':'10','value':'10'},{'text':'20','value':'20'}];
+dxo.pageSizeSelectedItem = ({'text':'3','value':3});
+dxo.pageSizeChangedHandler.AddHandler(function(s, e) { aspxDVPagerClick('MainContent_Thông báo xét tốt nghiệp', e.value); });
+dxo.InlineInitialize();
+
+//-->
+</script></font></td>
+			</tr>
+		</table></font></td>
+	</tr>
+</table><table id="MainContent_Thông báo xét tốt nghiệp_LP" class="dxncLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_Thông báo xét tốt nghiệp_TL">xin &#273;&#7907;i&hellip;</span><br /><img src="/DXR.axd?r=100_210-8V9H7" alt="" align="middle" style="margin-top:3px;" /></td>
+	</tr>
+</table><div id="MainContent_Thông báo xét tốt nghiệp_LD" class="dxncLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_5103690" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientNewsControl('MainContent_Thông báo xét tốt nghiệp');
+window['MainContent_Thông báo xét tốt nghiệp'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$Thông báo xét tốt nghiệp',arg,aspxCallback,'MainContent_Thông báo xét tốt nghiệp',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$Thông báo xét tốt nghiệp';
+dxo.renderIFrameForPopupElements = true;
+dxo.InlineInitialize();
+
+//-->
+</script><span><b><font color="DarkRed" size="5">Thông báo xử lý học tập</font></b></span><div style="padding:0px;">
+	<a name="MainContent_Thông báo xử lý học tập_BT"><font size="1"></font></a>
+</div><input id="MainContent_Thông báo xử lý học tập_S" name="ctl00$MainContent$Thông báo xử lý học tập" type="hidden" value="0;3;7;0" /><table class="dxncControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_Thông báo xử lý học tập" bgcolor="Transparent" width="100%">
+	<tr>
+		<td id="MainContent_Thông báo xử lý học tập_CCell" class="dxncCtrl" style="vertical-align:top;"><font color="Blue"><table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+			<tr>
+				<td id="MainContent_Thông báo xử lý học tập_ICell" class="dxncContent_SisTheme"><font color="Blue"><table cellspacing="0" cellpadding="0" height="100%" width="100%">
+					<tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xử lý học tập_ctl10" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									04/09/2018 05:39
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=352"><font color="Blue">Th&#244;ng b&#225;o về xử l&#253; học tập học kỳ 20172</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Về vấn đề xử l&#253; học tập học kỳ <span style="white-space:nowrap;">20172 <a href="NewsModule/?ID=352"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xử lý học tập_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xử lý học tập_ctl13" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									20/09/2017 04:40
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=331"><font color="Blue">Th&#244;ng b&#225;o xử l&#253; học tập ch&#237;nh thức kỳ 20162</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Sinh vi&#234;n v&#224;o xem th&#244;ng b&#225;o xử l&#253; học tập ch&#237;nh thức kỳ <span style="white-space:nowrap;">20162 <a href="NewsModule/?ID=331"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xử lý học tập_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_Thông báo xử lý học tập_ctl16" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td class="dxncItemLeftPanel_SisTheme" valign="top"><font color="Blue"><div class="dxncItemDate_SisTheme" style="line-height:14px;"><font color="Blue">
+									28/08/2017 10:13
+								</font></div></font></td><td width="7"><font color="Blue"><div style="overflow:hidden;font-size:1px;">
+
+								</div></font></td><td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;"><font color="Blue">
+									<a href="NewsModule/?ID=322"><font color="Blue">TH&#212;NG B&#193;O VỀ XỬ L&#221; HỌC TẬP HỌC KỲ 20162</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									Th&#244;ng b&#225;o về xử l&#253; học tập học kỳ <span style="white-space:nowrap;">20162 <a href="NewsModule/?ID=322"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a></span>
+								</font></div></font></td>
+							</tr>
+						</table><div class="dxncBackToTop_SisTheme" style="margin-top:8px;"><font color="Blue">
+							<a href="javascript:backtotop(&quot;#MainContent_Thông báo xử lý học tập_BT&quot;,8);"><font color="Blue">Back to top</font></a>
+						</font></div></font></td>
+					</tr>
+				</table></font></td>
+			</tr><tr>
+				<td class="dxncPPSpacing" height="12"><font color="Blue"></font></td>
+			</tr><tr>
+				<td class="dxncPagerPanel_SisTheme" align="left"><font color="Blue"><div class="dxpLite_SisTheme" id="MainContent_Thông báo xử lý học tập_PGB"><font color="Blue">
+					<b class="dxp-lead dxp-summary"></b><b class="dxp-sep"></b><b class="dxp-num dxp-current">[1]</b><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xử lý học tập&#39;, &#39;PN1&#39;)"><font color="Blue">2</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xử lý học tập&#39;, &#39;PN2&#39;)"><font color="Blue">3</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xử lý học tập&#39;, &#39;PN3&#39;)"><font color="Blue">4</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xử lý học tập&#39;, &#39;PN4&#39;)"><font color="Blue">5</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xử lý học tập&#39;, &#39;PN5&#39;)"><font color="Blue">6</font></a><b class="dxp-sep"></b><a class="dxp-num" onclick="aspxDVPagerClick(&#39;MainContent_Thông báo xử lý học tập&#39;, &#39;PN6&#39;)"><font color="Blue">7</font></a>
+				</font></div><b class="dx-clear"></b><script id="dxss_576301002" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientPager('MainContent_Thông báo xử lý học tập_PGB');
+window['MainContent_Thông báo xử lý học tập_PGB'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$Thông báo xử lý học tập$PGB';
+dxo.renderIFrameForPopupElements = true;
+dxo.liteRender=true;
+dxo.hasOwnerControl=true;
+dxo.pageSizeItems = [{'text':'3','value':'3'},{'text':'5','value':'5'},{'text':'10','value':'10'},{'text':'20','value':'20'}];
+dxo.pageSizeSelectedItem = ({'text':'3','value':3});
+dxo.pageSizeChangedHandler.AddHandler(function(s, e) { aspxDVPagerClick('MainContent_Thông báo xử lý học tập', e.value); });
+dxo.InlineInitialize();
+
+//-->
+</script></font></td>
+			</tr>
+		</table></font></td>
+	</tr>
+</table><table id="MainContent_Thông báo xử lý học tập_LP" class="dxncLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_Thông báo xử lý học tập_TL">xin &#273;&#7907;i&hellip;</span><br /><img src="/DXR.axd?r=100_210-8V9H7" alt="" align="middle" style="margin-top:3px;" /></td>
+	</tr>
+</table><div id="MainContent_Thông báo xử lý học tập_LD" class="dxncLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1074228034" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientNewsControl('MainContent_Thông báo xử lý học tập');
+window['MainContent_Thông báo xử lý học tập'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$Thông báo xử lý học tập',arg,aspxCallback,'MainContent_Thông báo xử lý học tập',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$Thông báo xử lý học tập';
+dxo.renderIFrameForPopupElements = true;
+dxo.InlineInitialize();
+
+//-->
+</script>
+            </td>
+            <td style="vertical-align: top; width: 30%;">
+                <div style="border: thin double #808080; padding: 5px;">
+                    <span><b><font color="DarkRed" size="5">10 tin mới nhất</font></b></span><div style="padding:0px;">
+	<a name="MainContent_ctl08_BT"><font size="1"></font></a>
+</div><input id="MainContent_ctl08_S" name="ctl00$MainContent$ctl08" type="hidden" value="0;3;1;0" /><table class="dxncControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_ctl08" bgcolor="Transparent" width="100%">
+	<tr>
+		<td id="MainContent_ctl08_CCell" class="dxncCtrl" style="vertical-align:top;"><font color="Blue"><table cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+			<tr>
+				<td id="MainContent_ctl08_ICell" class="dxncContent_SisTheme"><font color="Blue"><table cellspacing="0" cellpadding="0" height="100%" width="100%">
+					<tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl09" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=380"><font color="Blue">Lịch mở đăng k&#253; x&#233;t tốt nghiệp 20192A</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=380"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl11" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=379"><font color="Blue">Mở đăng k&#253; tốt nghiệp đợt 20191B</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=379"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl13" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=378"><font color="Blue">Kết quả x&#233;t tốt nghiệp đợt 20191-A</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=378"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl15" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=377"><font color="Blue">Th&#244;ng b&#225;o lịch thu học ph&#237; kỳ 20191 - đợt 2</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=377"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl17" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=376"><font color="Blue">Mở đăng k&#253; tốt nghiệp đợt 20191A</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=376"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl19" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=375"><font color="Blue">Kết quả x&#233;t tốt nghiệp đợt 20183</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=375"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl21" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=374"><font color="Blue">TH&#212;NG B&#193;O Về học ph&#237; kỳ I năm học 2019-2020 (20191) đợt 1</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=374"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl23" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=373"><font color="Blue">Kết quả x&#233;t nhận đồ &#225;n tốt nghiệp 20191</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=373"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl25" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=372"><font color="Blue">Mở đăng k&#253; tốt nghiệp đợt 20183 (kỳ h&#232;)</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=372"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr><tr>
+						<td class="dxncItem_SisTheme" align="left" style="vertical-align:Top;"><font color="Blue"><table cellspacing="0" cellpadding="0" id="MainContent_ctl08_ctl27" width="100%" style="border-collapse:separate;">
+							<tr>
+								<td valign="top" width="100%"><font color="Blue"><div class="dxncItemHeader_SisTheme" style="margin-bottom:2px;line-height:16px;"><font color="Blue" size="3">
+									<a href="NewsModule/?ID=371"><font color="Blue">TH&#212;NG B&#193;O Về học ph&#237; kỳ h&#232; năm học 2018-2019 (20183) đợt 2</font></a>
+								</font></div><div class="dxncItemContent_SisTheme" style="vertical-align:Top;line-height:14px;"><font color="Blue">
+									 <a href="NewsModule/?ID=371"><img class="dxWeb_hlTail_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" align="bottom" /></a>
+								</font></div></font></td>
+							</tr>
+						</table></font></td>
+					</tr>
+				</table></font></td>
+			</tr>
+		</table></font></td>
+	</tr>
+</table><table id="MainContent_ctl08_LP" class="dxncLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_ctl08_TL">xin &#273;&#7907;i&hellip;</span><br /><img src="/DXR.axd?r=100_210-8V9H7" alt="" align="middle" style="margin-top:3px;" /></td>
+	</tr>
+</table><div id="MainContent_ctl08_LD" class="dxncLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><script id="dxss_1755890367" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientNewsControl('MainContent_ctl08');
+window['MainContent_ctl08'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$ctl08',arg,aspxCallback,'MainContent_ctl08',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$ctl08';
+dxo.renderIFrameForPopupElements = true;
+dxo.InlineInitialize();
+
+//-->
+</script>
+                </div>
+            </td>
+        </tr>
+    </table>
+
+
+
+
+                            </div>
+                        </td>
+                        <td class="n6"></td>
+                    </tr>
+                    <tr>
+                        <td class="n7"></td><td class="n8"></td><td class="n9"></td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+                
+
+
+                
+                <table class="decorateTable" cellpadding="0px" cellspacing="0px" style="padding-top: 20px">
+                    <tr><td class="c1"></td><td class="c2"></td><td class="c3"></td></tr>
+                    <tr><td class="c4"></td>
+                        <td class="c5" style="padding: 10px 10px 10px 10px; margin: 0px; width: 100%;">
+                                        <div style="text-align: center" >
+                                            Trang SIS phòng Đào tạo Đại học trường Đại học Bách Khoa Hà Nội
+                                        </div>
+                                        <p align="center" style="font-size: small; color: #800000" class="status_text">
+                                            Hanoi University of Science and Technology - No. 1, Dai Co Viet Str., Hanoi, Vietnam
+                                            <br />
+                                            Tel: (+844)38682305, (+844)38692008 - E-mail: <a href="mailto:dt@hust.edu.vn" id="A2" class="custom">DTDH@mail.hust.edu.vn</a>
+                                        </p>
+                        </td>
+                    <td class="c6"></td></tr><tr><td class="c7"></td><td class="c8"></td><td class="c9"></td></tr>
+                </table>
+
+
+
+            </div>
+            <div id="bgbottom"></div>
+        </center>
+    </form>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Conference Updates - ICECH2026</title>
+	<atom:link href="https://icech.hust.edu.vn/chuyen-muc/conference-updates/feed/" rel="self" type="application/rss+xml" />
+	<link>https://icech.hust.edu.vn/chuyen-muc/conference-updates/</link>
+	<description></description>
+	<lastBuildDate>Mon, 02 Nov 2026 11:47:17 +0000</lastBuildDate>
+	<language>vi</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.0</generator>
+
+<image>
+	<url>https://icech.hust.edu.vn/wp-content/uploads/2026/06/favicon-Icech-82x82.png</url>
+	<title>Conference Updates - ICECH2026</title>
+	<link>https://icech.hust.edu.vn/chuyen-muc/conference-updates/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+</channel>
+</rss>

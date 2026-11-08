@@ -1,0 +1,6 @@
+2026-11-07T13:41:43.695211300Z wayback-page-1 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false&resumeKey=eJwry9NJTSnVySgtLtHUL8lIzU0t1gdx9LOK9YtzMpOzIaQuWEovubjYvsTW0MzM0sDQ3NDcRMHIwMjYwMTQwNDExNDYEAAjvhgx HTTP 200
+2026-11-07T13:41:50.863834200Z wayback-page-2 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false&resumeKey=eJwNxlsKgCAQAMCr9Buku-sD9DiCokaosFp0-5qvuduR4jrK4rnDGlcPkYFfhpYeBoXkAQ2UXkXLpYoZhigrNIFWak_WW6lQaS_Pkbd_Bh050kqT_QBFTBqp HTTP 503
+2026-11-07T13:41:50.891268600Z wayback hosts=1 complete=false next_check_at=2026-11-07T14:11:50.874Z
+2026-11-07T13:41:50.891268600Z commoncrawl CACHE next_check_at=2026-11-08T11:44:47.844Z complete=true
+2026-11-07T13:41:50.891268600Z complete=false concrete_hosts=58
+ERROR wayback: RequestFailure: HTTP 503

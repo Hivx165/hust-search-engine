@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>News &#8211; MSOLab</title>
+	<atom:link href="http://mso.soict.hust.edu.vn/?feed=rss2&#038;cat=11" rel="self" type="application/rss+xml" />
+	<link>http://mso.soict.hust.edu.vn</link>
+	<description>Modelling, Simulation &#38; Optimization Laboratory</description>
+	<lastBuildDate>Thu, 16 Aug 2018 15:07:56 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2.15</generator>
+	<item>
+		<title>IEEE World Congress on Computational Intelligence</title>
+		<link>http://mso.soict.hust.edu.vn/?p=254</link>
+					<comments>http://mso.soict.hust.edu.vn/?p=254#comments</comments>
+		
+		<dc:creator><![CDATA[ductv]]></dc:creator>
+		<pubDate>Thu, 16 Aug 2018 15:07:56 +0000</pubDate>
+				<category><![CDATA[News]]></category>
+		<guid isPermaLink="false">http://mso.soict.hust.edu.vn/?p=254</guid>
+
+					<description><![CDATA[Team from MSO Lab has 3 papers accepted at IEEE World Congress on Computational Intelligence (WCCI). We also participated WCCI2018 Competition on Evolutionary Multi-task Optimization and won the first prize on Multi-task single-objective (MTSOO), won the third prize on Multi-task multi-objective optimization (MTMOO).]]></description>
+		
+					<wfw:commentRss>http://mso.soict.hust.edu.vn/?feed=rss2&#038;p=254</wfw:commentRss>
+			<slash:comments>9143</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

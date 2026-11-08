@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Submission</title>
+        <link>https://icpt.hust.edu.vn/en/submission/</link>
+        <atom:link href="https://icpt.hust.edu.vn/en/submission/rss/" rel="self" />
+                <description>
+            <![CDATA[International conference on human resources for sustaninable development]]>
+        </description>
+        
+        <language>en</language>
+                <pubDate>Fri, 15 Sep 2023 02:09:12 GMT</pubDate>
+        <lastBuildDate>Fri, 15 Sep 2023 02:09:12 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[ICPT.HUST – International conference on human resources for sustainable development]]>
+        </copyright>
+        <docs>https://icpt.hust.edu.vn/en/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://icpt.hust.edu.vn/uploads/icpt/logo-dhbk-1-02_130_191.png</url>
+            <title>Submission</title>
+            <link>https://icpt.hust.edu.vn/en/submission/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Template</title>
+            <link>https://icpt.hust.edu.vn/en/submission/template.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[submission_1]]>
+            </guid>
+            
+                        <pubDate>Fri, 15 Sep 2023 02:09:05 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Submission Guidelines</title>
+            <link>https://icpt.hust.edu.vn/en/submission/submission-guidelines.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[submission_2]]>
+            </guid>
+            
+                        <pubDate>Fri, 15 Sep 2023 02:09:47 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Payment</title>
+            <link>https://icpt.hust.edu.vn/en/submission/payment.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[submission_3]]>
+            </guid>
+            
+                        <pubDate>Fri, 15 Sep 2023 02:09:12 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

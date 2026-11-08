@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/logo-hust.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BKOffice</title>
+    <style>html{--lightningcss-light:initial;--lightningcss-dark: ;color-scheme:light;background:#fff}body{margin:0}.app-loading{background:#fff;align-content:center;place-items:center;gap:12px;min-height:100dvh;display:grid}.app-loading-text{color:#000;margin:0;font:14px system-ui,sans-serif}.app-spinner{box-sizing:border-box;border:2px solid #e5e7eb;border-top-color:#000;border-radius:50%;width:28px;height:28px;animation:.8s linear infinite app-spin;display:inline-block}@keyframes app-spin{to{transform:rotate(360deg)}}@media (prefers-reduced-motion:reduce){.app-spinner{animation:none}}</style>
+    <script type="module" crossorigin src="/assets/index-GcWrF6HJ.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/runtime-core.esm-bundler-BpoX0ijZ.js">
+    <link rel="modulepreload" crossorigin href="/assets/eventbus-AP82hr2R.js">
+    <link rel="modulepreload" crossorigin href="/assets/useQuery-JdC43ojC.js">
+    <link rel="modulepreload" crossorigin href="/assets/pinia-CMzbmiiT.js">
+    <link rel="modulepreload" crossorigin href="/assets/userProfileStore-BlLdG53o.js">
+    <link rel="modulepreload" crossorigin href="/assets/_arrayIncludesWith-DSdV4ztt.js">
+    <link rel="modulepreload" crossorigin href="/assets/basecomponent-DXAm6h9F.js">
+    <link rel="modulepreload" crossorigin href="/assets/useSystemConfigStore-DyAytiM0.js">
+    <link rel="modulepreload" crossorigin href="/assets/router-DK_k9loB.js">
+    <link rel="modulepreload" crossorigin href="/assets/useApi-CUWMwLLw-DHb9I9lD.js">
+    <link rel="stylesheet" crossorigin href="/assets/index-B57JcLaO.css">
+  </head>
+  <body>
+    <div id="app">
+      <div class="app-loading" role="status" aria-label="Đang tải ứng dụng" aria-busy="true">
+        <span class="app-spinner" aria-hidden="true"></span>
+        <p class="app-loading-text">Đang tải ứng dụng...</p>
+      </div>
+    </div>
+    <script>
+      setTimeout(() => {
+        const retryKey = 'eoffice-app-refresh-attempted'
+        const isLoading = document.querySelector('#app .app-loading') !== null
+        try {
+          if (!isLoading) {
+            sessionStorage.removeItem(retryKey)
+            return
+          }
+          if (sessionStorage.getItem(retryKey)) return
+          sessionStorage.setItem(retryKey, '1')
+        } catch {
+          // Without sessionStorage, skip recovery to avoid a redirect loop.
+          return
+        }
+        window.location.replace('/refresh-app')
+      }, 5000)
+    </script>
+  </body>
+</html>

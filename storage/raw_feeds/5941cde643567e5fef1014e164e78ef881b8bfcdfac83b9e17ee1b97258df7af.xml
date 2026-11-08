@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>GNN Archives - AI4LIFE</title>
+	<atom:link href="https://ai4life.hust.edu.vn/tag/gnn/feed/" rel="self" type="application/rss+xml" />
+	<link>https://ai4life.hust.edu.vn/tag/gnn/</link>
+	<description>Institute for AI Innovation and Societal Impact (AI4LIFE)</description>
+	<lastBuildDate>Tue, 04 Feb 2025 02:29:43 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.4</generator>
+
+<image>
+	<url>https://ai4life.hust.edu.vn/wp-content/uploads/2024/11/512px.svg</url>
+	<title>GNN Archives - AI4LIFE</title>
+	<link>https://ai4life.hust.edu.vn/tag/gnn/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Seminar on Graph Neural Networks</title>
+		<link>https://ai4life.hust.edu.vn/2024/04/01/what-is-the-best-holding-back-the-it-solution/</link>
+					<comments>https://ai4life.hust.edu.vn/2024/04/01/what-is-the-best-holding-back-the-it-solution/#respond</comments>
+		
+		<dc:creator><![CDATA[anhtn]]></dc:creator>
+		<pubDate>Mon, 01 Apr 2024 04:40:13 +0000</pubDate>
+				<category><![CDATA[News & Events]]></category>
+		<category><![CDATA[Seminar]]></category>
+		<category><![CDATA[GNN]]></category>
+		<category><![CDATA[Seminars]]></category>
+		<guid isPermaLink="false">https://wordpress.onertheme.com/gratech/?p=165</guid>
+
+					<description><![CDATA[<p>Time: 10:00, Monday, 11 Nov 2024Place: AI4LIFE, Room 618, Tạ Quang Bửu Library, HUSTPresenter: Prof. Michael Benedikt, Đại học Oxford Bio:Michael Benedikt is a professor at Oxford University’s computer science department, and a fellow of University College Oxford.He has held previous positions in industry at Bell Laboratories and at&#160; Yahoo! Research.He has worked extensively in...</p>
+<p>The post <a href="https://ai4life.hust.edu.vn/2024/04/01/what-is-the-best-holding-back-the-it-solution/">Seminar on Graph Neural Networks</a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph"><strong>Time: </strong>10:00, Monday, 11 Nov 2024<br><strong>Place:</strong> AI4LIFE, Room 618, Tạ Quang Bửu Library, HUST<br><strong>Presenter: </strong>Prof. Michael Benedikt, Đại học Oxford</p><p class="wp-block-paragraph"><strong>Bio:</strong><br>Michael Benedikt is a professor at Oxford University’s computer science department, and a fellow of University College Oxford.<br>He has held previous positions in industry at Bell Laboratories and at&nbsp; Yahoo! Research.<br>He has worked extensively in AI, computational logic, verification, and data management. He has served as program chair of the two main database theory conferences, Principles of Database Systems and International Conference on Database Theory, and has served as vice chair and co-chair for conferences and workshops on databases and the Web. His current work focuses on the interaction between machine learning, data management, and reasoning.</p><p class="wp-block-paragraph"><strong>Title: What you can and cannot do (usually) on Graph Neural Networks.</strong></p><p class="wp-block-paragraph"><strong>Abstract:</strong><br>Graph neural networks (GNNs) are the predominant architectures for a variety of learning tasks on graphs.<br>We present a new angle on the expressive power of GNNs by studying how the predictions of a GNN probabilistic classifier evolve as we apply the classifier on larger graphs drawn from some random graph model. We show a strong limit on what GNNs based on averaging can express on &#8220;typical’&#8217; graphs: the output converges asymptotically almost surely to a constant function.<br>Our convergence results are framed within a query language with aggregates, subsuming a very wide class of GNNs, including state of the art models, with aggregates including mean and the attention-based mechanism of graph transformers.<br>The results apply to a broad class of random graph models. Our query language-based approach allows our results to be situated within the long line of research on probabilistic analysis of declarative languages.<br>The talk will include joint work with Sam Adam-Day, Ismail Ceylan, and Ben Finkelshtein, to be presented at NeurIPS 2024&#8211; see&nbsp;<a target="_blank" href="https://arxiv.org/abs/2403.03880" rel="noreferrer noopener">https://arxiv.org/abs/2403.03880</a>,&nbsp; It will also include ongoing joint work with Sam Adam-Day and Alberto Larrauri.</p><p class="wp-block-paragraph"></p><p class="wp-block-paragraph"></p><p>The post <a href="https://ai4life.hust.edu.vn/2024/04/01/what-is-the-best-holding-back-the-it-solution/">Seminar on Graph Neural Networks</a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ai4life.hust.edu.vn/2024/04/01/what-is-the-best-holding-back-the-it-solution/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

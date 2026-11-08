@@ -1,0 +1,8 @@
+2026-11-07T05:07:09.362894600Z
+generated_guesses=122
+wordlist_dns_positives=59
+external_reported_names=0
+wildcard_matches_excluded=0
+complete=true
+Guesses are not reported/discovered hosts. External imports require downstream DNS/HTTP checks.
+UNRESOLVED does not prove NXDOMAIN. Random-control DNS matches are not promoted from guesses.

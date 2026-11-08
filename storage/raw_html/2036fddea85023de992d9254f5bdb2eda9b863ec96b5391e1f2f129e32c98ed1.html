@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>Th&#244;ng b&#225;o tuyển sinh năm 2021 Văn bằng hai ch&#237;nh qui v&#224; Vừa l&#224;m vừa học</h3>
+        <strong><a href="/Upload/Nguyen Anh Dung/files/TBTS2021.pdf">(Tải bản gốc tại đ&acirc;y)</a></strong>
+<div style="text-align: center;">
+	<strong>TH&Ocirc;NG B&Aacute;O TUYỂN SINH NĂM 2021</strong><br />
+	<strong>VĂN BẰNG HAI V&Agrave; LI&Ecirc;N TH&Ocirc;NG TỪ CAO ĐẲNG, TRUNG CẤP L&Ecirc;N ĐẠI HỌC </strong></div>
+<br />
+<strong>Trường Đại học B&aacute;ch Khoa H&agrave; Nội th&ocirc;ng b&aacute;o tuyển sinh đ&agrave;o tạo Văn bằng hai (VB2) ch&iacute;nh quy v&agrave; vừa l&agrave;m vừa học (VLVH); li&ecirc;n th&ocirc;ng từ trung cấp, cao đẳng l&ecirc;n đại học VLVH năm 2021 như sau:</strong><br />
+<ol>
+	<li>
+		<strong>NG&Agrave;NH Đ&Agrave;O TẠO</strong></li>
+</ol>
+<table border="1" cellpadding="0" cellspacing="0" width="650">
+	<tbody>
+		<tr>
+			<td style="width:43px;">
+				<strong>TT</strong></td>
+			<td style="width:79px;">
+				<strong>M&atilde; ng&agrave;nh </strong></td>
+			<td style="width:227px;">
+				<strong>Ng&agrave;nh đ&agrave;o tạo</strong></td>
+			<td style="width:189px;">
+				<strong>Chuy&ecirc;n ng&agrave;nh</strong></td>
+			<td style="width:111px;">
+				<strong>Bằng được cấp</strong></td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7480201</td>
+			<td style="width:227px;">
+				C&ocirc;ng nghệ th&ocirc;ng tin</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+			<td rowspan="17" style="width:111px;">
+				Cử nh&acirc;n</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="2">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520201</td>
+			<td style="width:227px;">
+				Kỹ thuật điện</td>
+			<td style="width:189px;">
+				Hệ thống điện</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="3">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520216</td>
+			<td style="width:227px;">
+				Kỹ thuật điều khiển v&agrave; tự động h&oacute;a</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td rowspan="3" style="width:43px;">
+				<ol>
+					<li align="center" value="4">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td rowspan="3" style="width:79px;">
+				7520207</td>
+			<td rowspan="3" style="width:227px;">
+				Kỹ thuật điện tử - viễn th&ocirc;ng</td>
+			<td style="width:189px;">
+				Ph&aacute;t thanh &ndash; truyền h&igrave;nh</td>
+		</tr>
+		<tr>
+			<td style="width:189px;">
+				Kỹ thuật Y sinh</td>
+		</tr>
+		<tr>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="5">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520103</td>
+			<td style="width:227px;">
+				Kỹ thuật cơ kh&iacute;</td>
+			<td style="width:189px;">
+				C&ocirc;ng nghệ Chế tạo m&aacute;y</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="6">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520130</td>
+			<td style="width:227px;">
+				Kỹ thuật &ocirc; t&ocirc;</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="7">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520114</td>
+			<td style="width:227px;">
+				Kỹ thuật cơ điện tử</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="8">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520137</td>
+			<td style="width:227px;">
+				Kỹ thuật in</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="9">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520301</td>
+			<td style="width:227px;">
+				Kỹ thuật h&oacute;a học</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="10">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520309</td>
+			<td style="width:227px;">
+				Kỹ thuật vật liệu</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="11">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7520115</td>
+			<td style="width:227px;">
+				Kỹ thuật nhiệt</td>
+			<td style="width:189px;">
+				M&aacute;y v&agrave; thiết bị nhiệt - lạnh</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="12">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7540102</td>
+			<td style="width:227px;">
+				Kỹ thuật thực phẩm</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="13">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7340101</td>
+			<td style="width:227px;">
+				Quản trị kinh doanh</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="14">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7340301</td>
+			<td style="width:227px;">
+				Kế to&aacute;n</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+		<tr>
+			<td style="width:43px;">
+				<ol>
+					<li align="center" value="15">
+						&nbsp;</li>
+				</ol>
+			</td>
+			<td style="width:79px;">
+				7220201</td>
+			<td style="width:227px;">
+				Ng&ocirc;n ngữ Anh (chỉ tuyển VB2)</td>
+			<td style="width:189px;">
+				&nbsp;</td>
+		</tr>
+	</tbody>
+</table>
+<ol>
+	<li value="2">
+		<strong>TỔ CHỨC Đ&Agrave;O TẠO</strong></li>
+</ol>
+<strong>&nbsp;&nbsp;Thời gian đ&agrave;o tạo</strong><br />
+<strong>- Văn bằng hai v&agrave; li&ecirc;n th&ocirc;ng từ cao đẳng l&ecirc;n đại học: </strong>&nbsp;02 năm (chưa t&iacute;nh thời gian học bổ sung kiến thức).<br />
+<strong>- Li&ecirc;n th&ocirc;ng từ trung cấp l&ecirc;n đại học: </strong>&nbsp;03 năm (chưa t&iacute;nh thời gian học bổ sung kiến thức).<br />
+<strong>&nbsp;&nbsp;Thời gian học: </strong>Li&ecirc;n tục trong tuần hoặc c&aacute;c ng&agrave;y thứ Bảy v&agrave; Chủ nhật.
+<ol>
+	<li value="3">
+		<strong>TỔ CHỨC TUYỂN SINH</strong></li>
+</ol>
+<strong>&nbsp; Đối tượng tuyển sinh</strong>
+<ul>
+	<li>
+		Th&iacute; sinh dự tuyển h&igrave;nh thức đại học ch&iacute;nh quy (sau đ&acirc;y gọi chung l&agrave; văn bằng hai ch&iacute;nh quy - VB2CQ): Đ&atilde; c&oacute; bằng tốt nghiệp đại học ch&iacute;nh quy.</li>
+	<li>
+		Th&iacute; sinh dự tuyển h&igrave;nh thức đại học vừa l&agrave;m vừa học (sau đ&acirc;y gọi chung l&agrave; văn bằng hai vừa l&agrave;m vừa học - VB2VLVH): Đ&atilde; c&oacute; bằng tốt nghiệp đại học.</li>
+	<li>
+		Th&iacute; sinh dự tuyển hệ li&ecirc;n th&ocirc;ng từ trung cấp, cao đẳng l&ecirc;n đại học h&igrave;nh thức VLVH (sau đ&acirc;y gọi chung l&agrave; li&ecirc;n th&ocirc;ng): Đ&atilde; c&oacute; bằng tốt nghiệp trung cấp (LTTC) hoặc cao đẳng&nbsp; (LTCĐ).</li>
+</ul>
+<strong>&nbsp;Phương thức tuyển sinh: X&eacute;t tuyển v&agrave; thi tuyển</strong><br />
+<em>a. X&eacute;t tuyển </em><br />
+<ul>
+	<li>
+		Tổ chức x&eacute;t tuyển dựa tr&ecirc;n hồ sơ th&iacute; sinh dự tuyển đối với tất cả c&aacute;c ng&agrave;nh, ri&ecirc;ng ng&agrave;nh Ng&ocirc;n ngữ Anh phải tham dự th&ecirc;m kỳ thi tuyển đầu v&agrave;o theo mục b.</li>
+	<li>
+		Th&iacute; sinh x&eacute;t tuyển đạt y&ecirc;u cầu sẽ được c&ocirc;ng nhận tr&uacute;ng tuyển c&oacute; điều kiện v&agrave; phải ho&agrave;n th&agrave;nh c&aacute;c học phần bổ sung (bổ t&uacute;c). Số học phần bổ sung được xem x&eacute;t căn cứ v&agrave;o bảng điểm tốt nghiệp của th&iacute; sinh dự tuyển v&agrave; chương tr&igrave;nh đ&agrave;o tạo m&agrave; th&iacute; sinh đăng k&yacute; dự tuyển.</li>
+</ul>
+<em>b. Thi tuyển đầu v&agrave;o đối với ng&agrave;nh Ng&ocirc;n ngữ Anh</em><br />
+<ul>
+	<li>
+		Th&iacute; sinh dự tuyển ng&agrave;nh Ng&ocirc;n ngữ Anh phải tham gia thi tuyển đầu v&agrave;o gồm 02 b&agrave;i thi Kỹ năng đọc v&agrave; Kỹ năng viết, mỗi b&agrave;i thi được thiết kế trong thời gian 60 ph&uacute;t.</li>
+	<li>
+		Th&iacute; sinh được xem x&eacute;t miễn thi tuyển đầu v&agrave;o nếu c&oacute; một trong c&aacute;c chứng chỉ tiếng Anh c&ograve;n hạn đến thời điểm nộp hồ sơ, cụ thể:&nbsp; Chứng chỉ quốc tế tối thiểu: IELTS 4.5; iBT 53; TOEIC 500; TOEFL Institutional 477; TOEFL Computer 153; Preliminary PET; Chứng chỉ B1 hoặc tương đương do c&aacute;c cơ sở đ&agrave;o tạo được Bộ Gi&aacute;o dục v&agrave; Đ&agrave;o tạo c&ocirc;ng nhận.</li>
+</ul>
+<ol>
+	<li value="4">
+		<strong>HỒ SƠ, THỜI GIAN TUYỂN SINH V&Agrave; ĐỊA ĐIỂM HỌC TẬP</strong></li>
+</ol>
+<strong>&nbsp;Hồ sơ tuyển sinh: &nbsp;</strong>Th&iacute; sinh đăng k&yacute; tuyển sinh l&agrave;m hồ sơ theo mẫu do Trường ĐHBK H&agrave; Nội &nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; ph&aacute;t h&agrave;nh v&agrave; nộp tại Viện Đ&agrave;o tạo li&ecirc;n tục hoặc tại đơn vị li&ecirc;n kết.<br />
+<strong>&nbsp;Thời gian dự kiến tuyển sinh</strong>
+<ul>
+	<li>
+		Thời gian nhận hồ sơ: Trong giờ h&agrave;nh ch&iacute;nh c&aacute;c ng&agrave;y từ thứ Hai đến thứ S&aacute;u.</li>
+	<li>
+		Thời gian tuyển sinh dự kiến (c&oacute; thể thay đổi phụ thuộc v&agrave;o điều kiện thực tế):
+		<ul>
+			<li>
+				Đợt 20211: Th&aacute;ng 04/2021</li>
+			<li>
+				Đợt 20212: Th&aacute;ng 10/2021</li>
+			<li value="4.3">
+				<strong>Địa điểm thi tuyển v&agrave; học tập&nbsp; </strong></li>
+		</ul>
+	</li>
+	<li>
+		Đ&agrave;o tạo VB2CQ: Tại Trường Đại học B&aacute;ch khoa H&agrave; Nội.</li>
+	<li>
+		Đ&agrave;o tạo VB2VLVH, &nbsp;LTCĐ hoặc LTTC: Tại Trường ĐHBK H&agrave; Nội hoặc tại đơn vị li&ecirc;n kết đủ điều kiện theo quy định.</li>
+</ul>
+<ol>
+	<li value="5">
+		<strong>PH&Iacute; TUYỂN SINH V&Agrave; &Ocirc;N TẬP</strong></li>
+</ol>
+<strong>Ph&iacute; &ocirc;n tập:</strong> Căn cứ v&agrave;o nhu cầu của th&iacute; sinh dự tuyển ng&agrave;nh Ng&ocirc;n ngữ Anh, Nh&agrave; trường sẽ tổ chức &ocirc;n tập kiến thức trước khi thi tuyển. Ph&iacute; &ocirc;n tập căn cứ nguy&ecirc;n tắc lấy thu b&ugrave; chi theo số lượng th&iacute; sinh dự tuyển đăng k&yacute; &ocirc;n tập thực tế.<br />
+<strong>Ph&iacute; tuyển sinh: 350.000đ/th&iacute; sinh dự tuyển nộp tại thời điểm nhận hồ sơ.</strong><br />
+<strong>Học ph&iacute;:</strong>&nbsp; &Aacute;p dụng theo quyết định học ph&iacute; hiện h&agrave;nh của Trường ĐHBK H&agrave; Nội.<br />
+<br />
+<strong>&nbsp; &nbsp; &nbsp; &nbsp; 6. TH&Ocirc;NG TIN LI&Ecirc;N HỆ:&nbsp; </strong>Ph&ograve;ng Tuyển sinh, Viện Đ&agrave;o tạo li&ecirc;n tục - P.104 nh&agrave; C, Số 94 L&ecirc; Thanh Nghị, Quận Hai B&agrave; Trưng, H&agrave; Nội - Điện thoại: 024.38680359; &nbsp;024.38683137;&nbsp; 0989090688.<br />
+Email: <a href="mailto:dtlt@hust.edu.vn">dtlt@hust.edu.vn</a> - Website: <a href="http://dtlt.hust.edu.vn/">http://dtlt.hust.edu.vn</a> &nbsp;-&nbsp; FB: <a href="http://www.facebook.com/dtltbkhn">http://www.facebook.com/dtltbkhn</a><br />
+&nbsp;<br />
+<table border="0" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:321px;">
+				&nbsp;</td>
+			<td style="width: 321px; text-align: center;">
+				<strong>KT. </strong><strong>HIỆU TRƯỞNG</strong><br />
+				<strong>PH&Oacute; HIỆU TRƯỞNG</strong><br />
+				<br />
+				&nbsp;(đ&atilde; k&yacute;)<br />
+				&nbsp;<br />
+				<strong>PGS. TS. Nguyễn Phong Điền</strong></td>
+		</tr>
+	</tbody>
+</table>
+&nbsp;<br />
+<br />
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

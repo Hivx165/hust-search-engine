@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<!--[if IE]>
+	<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=edge" /><![endif]-->
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<title>MSOLab &#8211; Modelling, Simulation &amp; Optimization Laboratory</title>
+<meta name='robots' content='max-image-preview:large' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel="alternate" type="application/rss+xml" title="MSOLab &raquo; Feed" href="http://mso.soict.hust.edu.vn/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="MSOLab &raquo; Comments Feed" href="http://mso.soict.hust.edu.vn/?feed=comments-rss2" />
+<script type="text/javascript">
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/14.0.0\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/mso.soict.hust.edu.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.2.15"}};
+/*! This file is auto-generated */
+!function(e,a,t){var n,r,o,i=a.createElement("canvas"),p=i.getContext&&i.getContext("2d");function s(e,t){p.clearRect(0,0,i.width,i.height),p.fillText(e,0,0);e=i.toDataURL();return p.clearRect(0,0,i.width,i.height),p.fillText(t,0,0),e===i.toDataURL()}function c(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(o=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},r=0;r<o.length;r++)t.supports[o[r]]=function(e){if(p&&p.fillText)switch(p.textBaseline="top",p.font="600 32px Arial",e){case"flag":return s("\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!s("\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!s("\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!s("\ud83e\udef1\ud83c\udffb\u200d\ud83e\udef2\ud83c\udfff","\ud83e\udef1\ud83c\udffb\u200b\ud83e\udef2\ud83c\udfff")}return!1}(o[r]),t.supports.everything=t.supports.everything&&t.supports[o[r]],"flag"!==o[r]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[o[r]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(e=t.source||{}).concatemoji?c(e.concatemoji):e.wpemoji&&e.twemoji&&(c(e.twemoji),c(e.wpemoji)))}(window,document,window._wpemojiSettings);
+</script>
+<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 0.07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+	<link rel='stylesheet' id='wp-block-library-css' href='http://mso.soict.hust.edu.vn/wp-includes/css/dist/block-library/style.min.css?ver=6.2.15' type='text/css' media='all' />
+<link rel='stylesheet' id='classic-theme-styles-css' href='http://mso.soict.hust.edu.vn/wp-includes/css/classic-themes.min.css?ver=6.2.15' type='text/css' media='all' />
+<style id='global-styles-inline-css' type='text/css'>
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='dslc-fontawesome-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/live-composer-page-builder/css/font-awesome.css?ver=1.3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='dslc-main-css-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/live-composer-page-builder/css/frontend/main.css?ver=1.3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='dslc-modules-css-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/live-composer-page-builder/css/frontend/modules.css?ver=1.3.9' type='text/css' media='all' />
+<link rel='stylesheet' id='dslc-plugins-css-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/live-composer-page-builder/css/frontend/plugins.css?ver=1.3.9' type='text/css' media='all' />
+<!--[if IE]>
+<link rel='stylesheet' id='dslc-css-ie-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/live-composer-page-builder/css/ie.css?ver=1.3.9' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='basic-fonts-css' href='//fonts.googleapis.com/css?family=PT+Serif%3A400%2C700%7COpen+Sans%3A400%2C400italic%2C700%2C700italic&#038;subset=latin%2Ccyrillic&#038;ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='basic-style-css' href='http://mso.soict.hust.edu.vn/wp-content/themes/basic/style.css?ver=1' type='text/css' media='all' />
+<link rel='stylesheet' id='tmm-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/team-members/inc/css/tmm_style.css?ver=6.2.15' type='text/css' media='all' />
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-includes/js/jquery/jquery.min.js?ver=3.6.4' id='jquery-core-js'></script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.0' id='jquery-migrate-js'></script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-content/plugins/live-composer-page-builder/js/frontend/plugins.js?ver=1.3.9' id='dslc-plugins-js-js'></script>
+<link rel="https://api.w.org/" href="http://mso.soict.hust.edu.vn/index.php?rest_route=/" /><link rel="alternate" type="application/json" href="http://mso.soict.hust.edu.vn/index.php?rest_route=/wp/v2/pages/80" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mso.soict.hust.edu.vn/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://mso.soict.hust.edu.vn/wp-includes/wlwmanifest.xml" />
+<meta name="generator" content="WordPress 6.2.15" />
+<link rel="canonical" href="http://mso.soict.hust.edu.vn/" />
+<link rel='shortlink' href='http://mso.soict.hust.edu.vn/' />
+<link rel="alternate" type="application/json+oembed" href="http://mso.soict.hust.edu.vn/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fmso.soict.hust.edu.vn%2F" />
+<link rel="alternate" type="text/xml+oembed" href="http://mso.soict.hust.edu.vn/index.php?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fmso.soict.hust.edu.vn%2F&#038;format=xml" />
+
+<!-- teachPress -->
+<script type="text/javascript" src="http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/js/frontend.js?ver=6.2.1"></script>
+<link type="text/css" href="http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/styles/teachpress_front.css?ver=6.2.1" rel="stylesheet" />
+<!-- END teachPress -->
+<!-- BEGIN Customizer CSS -->
+<style type='text/css' id='basic-customizer-css'>a:hover,#logo,.bx-controls a:hover .fa{color:#9c1010}a:hover{color:#9c1010}blockquote,q,input:focus,textarea:focus,select:focus{border-color:#9c1010}input[type=submit],input[type=button],button,.submit,.button,.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt, .woocommerce input.button.alt,.woocommerce #respond input#submit.alt:hover,.woocommerce a.button.alt:hover,.woocommerce button.button.alt:hover,.woocommerce input.button.alt:hover,#mobile-menu,.top-menu,.top-menu .sub-menu,.top-menu .children,.more-link,.nav-links a:hover,.nav-links .current,#footer{background-color:#9c1010}</style>
+<!-- END Customizer CSS -->
+<style type="text/css">.dslc-modules-section-wrapper, .dslca-add-modules-section { width : px; } .dslc-modules-section:not(.dslc-full) { padding-left: 4%;  padding-right: 4%; } .dslc-modules-section { background-image:disabled;background-repeat:repeat;background-position:left top;background-attachment:scroll;background-size:auto;border-width:0px;border-style:solid;margin-left:0%;margin-right:0%;margin-bottom:0px;padding-bottom:80px;padding-top:80px;padding-left:0%;padding-right:0%; }
+
+/*  CSS FOR POST ID: 80 */
+#dslc-module-6de2c8d3b15 .dslc-text-module-content{background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;background-size:auto ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content,#dslc-module-6de2c8d3b15 .dslc-text-module-content .dslca-editable-content,#dslc-module-6de2c8d3b15 .dslc-text-module-content p{font-size:13px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:22px;text-align:left ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content p{margin-bottom:25px;} #dslc-module-6de2c8d3b15 .dslc-text-module-content h1{font-size:25px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:35px;margin-bottom:15px;text-align:left ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content h2{font-size:23px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:33px;margin-bottom:15px;text-align:left ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content h3{font-size:21px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:31px;margin-bottom:15px;text-align:left ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content h4{font-size:19px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:29px;margin-bottom:15px;text-align:left ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content h5{font-size:17px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:27px;margin-bottom:15px;text-align:left ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content h6{font-size:15px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:25px;margin-bottom:15px;text-align:left ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content li{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;margin-bottom:10px;} #dslc-module-6de2c8d3b15 .dslc-text-module-content ul,#dslc-module-6de2c8d3b15 .dslc-text-module-content ol{margin-bottom:25px;margin-left:25px;} #dslc-module-6de2c8d3b15 .dslc-text-module-content ul{list-style-type:disc ;} #dslc-module-6de2c8d3b15 .dslc-text-module-content ol{list-style-type:decimal ;} #dslc-module-6de2c8d3b15 input[type=text],#dslc-module-6de2c8d3b15 input[type=password],#dslc-module-6de2c8d3b15 input[type=number],#dslc-module-6de2c8d3b15 input[type=email],#dslc-module-6de2c8d3b15 input[type=tel],#dslc-module-6de2c8d3b15 textarea,#dslc-module-6de2c8d3b15 select{color:#4d4d4d ;font-size:13px;font-weight:500;font-family:"Open Sans";margin-bottom:15px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;background-color:#fff ;border-color:#ddd;border-width:1px;border-style:solid solid solid solid;} #dslc-module-6de2c8d3b15 textarea{line-height:23px;} #dslc-module-6de2c8d3b15 .dslc-text-module-content blockquote,#dslc-module-6de2c8d3b15 .dslc-text-module-content blockquote p{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;} #dslc-module-6de2c8d3b15 blockquote,#dslc-module-6de2c8d3b15 .dslc-text-module-content blockquote p{text-align:left ;} #dslc-module-6de2c8d3b15 blockquote{background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;} #dslc-module-6de2c8d3b15 input[type=submit],#dslc-module-6de2c8d3b15 button{background-color:#5890e5 ;border-radius:3px;color:#fff ;font-size:13px;font-weight:500;font-family:"Open Sans";line-height:13px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;} #dslc-module-6de2c8d3b15 input[type=submit]:hover,#dslc-module-6de2c8d3b15 button:hover{background-color:#5890e5 ;color:#fff ;border-color:#5890e5;} #dslc-module-b09a8a49c57 .dslc-module-shortcode{} #dslc-module-b09a8a49c57 .dslc-module-shortcode,#dslc-module-b09a8a49c57 .dslc-module-shortcode p{font-size:13px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:22px;text-align:center ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode p{margin-bottom:25px;} #dslc-module-b09a8a49c57 .dslc-module-shortcode h1{font-size:25px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:35px;margin-bottom:15px;text-align:left ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode h2{font-size:23px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:33px;margin-bottom:15px;text-align:left ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode h3{font-size:21px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:31px;margin-bottom:15px;text-align:left ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode h4{font-size:19px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:29px;margin-bottom:15px;text-align:left ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode h5{font-size:17px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:27px;margin-bottom:15px;text-align:left ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode h6{font-size:15px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:25px;margin-bottom:15px;text-align:left ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode li{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;margin-bottom:10px;} #dslc-module-b09a8a49c57 .dslc-module-shortcode ul,#dslc-module-b09a8a49c57 .dslc-module-shortcode ol{margin-bottom:25px;margin-left:25px;} #dslc-module-b09a8a49c57 .dslc-module-shortcode ul{list-style-type:disc ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode ol{list-style-type:decimal ;} #dslc-module-b09a8a49c57 input[type=text],#dslc-module-b09a8a49c57 input[type=password],#dslc-module-b09a8a49c57 input[type=number],#dslc-module-b09a8a49c57 input[type=email],#dslc-module-b09a8a49c57 input[type=tel],#dslc-module-b09a8a49c57 textarea,#dslc-module-b09a8a49c57 select{background-color:#fff ;color:#4d4d4d ;font-size:13px;font-weight:500;font-family:"Open Sans";width:100%;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;border-color:#ddd;border-width:1px;border-style:solid solid solid solid;} #dslc-module-b09a8a49c57 textarea{line-height:23px;} #dslc-module-b09a8a49c57 .dslc-module-shortcode blockquote{background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;} #dslc-module-b09a8a49c57 .dslc-module-shortcode blockquote,#dslc-module-b09a8a49c57 .dslc-module-shortcode blockquote p{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;} #dslc-module-b09a8a49c57 blockquote,#dslc-module-b09a8a49c57 .dslc-module-shortcode blockquote p{text-align:left ;} #dslc-module-b09a8a49c57 input[type=submit],#dslc-module-b09a8a49c57 input[type=button],#dslc-module-b09a8a49c57 button{background-color:#5890e5 ;border-radius:3px;color:#fff ;font-size:13px;font-weight:500;font-family:"Open Sans";line-height:13px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;} #dslc-module-b09a8a49c57 input[type=submit]:hover,#dslc-module-b09a8a49c57 input[type=button]:hover,#dslc-module-b09a8a49c57 button:hover{background-color:#5890e5 ;color:#fff ;border-color:#5890e5;} #dslc-module-58u2hvjd4eo .dslc-text-module-content{margin-bottom:0px;padding-left:0px;padding-right:0px;background-color:#ffffff ;background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;background-size:auto ;border-color:#9c1010;border-width:4px;border-style:none none solid none;} #dslc-module-58u2hvjd4eo .dslc-text-module-content,#dslc-module-58u2hvjd4eo .dslc-text-module-content .dslca-editable-content,#dslc-module-58u2hvjd4eo .dslc-text-module-content p{font-size:13px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:25px;text-align:left ;} #dslc-module-58u2hvjd4eo .dslc-text-module-content p{margin-bottom:0px;} #dslc-module-58u2hvjd4eo .dslc-text-module-content h1{font-size:25px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:35px;margin-bottom:15px;text-align:left ;} #dslc-module-58u2hvjd4eo .dslc-text-module-content h2{font-size:25px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:30px;margin-bottom:0px;text-align:left ;} #dslc-module-58u2hvjd4eo .dslc-text-module-content h3{font-size:21px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:31px;margin-bottom:15px;text-align:left ;} #dslc-module-58u2hvjd4eo .dslc-text-module-content h4{font-size:19px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:29px;margin-bottom:15px;text-align:left ;} #dslc-module-58u2hvjd4eo .dslc-text-module-content h5{font-size:17px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:27px;margin-bottom:15px;text-align:left ;} #dslc-module-58u2hvjd4eo .dslc-text-module-content h6{font-size:15px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:25px;margin-bottom:15px;text-align:left ;} #dslc-module-58u2hvjd4eo .dslc-text-module-content li{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;margin-bottom:10px;} #dslc-module-58u2hvjd4eo .dslc-text-module-content ul,#dslc-module-58u2hvjd4eo .dslc-text-module-content ol{margin-bottom:25px;margin-left:25px;} #dslc-module-58u2hvjd4eo .dslc-text-module-content ul{list-style-type:disc ;} #dslc-module-58u2hvjd4eo .dslc-text-module-content ol{list-style-type:decimal ;} #dslc-module-58u2hvjd4eo input[type=text],#dslc-module-58u2hvjd4eo input[type=password],#dslc-module-58u2hvjd4eo input[type=number],#dslc-module-58u2hvjd4eo input[type=email],#dslc-module-58u2hvjd4eo input[type=tel],#dslc-module-58u2hvjd4eo textarea,#dslc-module-58u2hvjd4eo select{color:#4d4d4d ;font-size:13px;font-weight:500;font-family:"Open Sans";margin-bottom:15px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;background-color:#fff ;border-color:#ddd;border-width:1px;border-style:solid solid solid solid;} #dslc-module-58u2hvjd4eo textarea{line-height:23px;} #dslc-module-58u2hvjd4eo .dslc-text-module-content blockquote,#dslc-module-58u2hvjd4eo .dslc-text-module-content blockquote p{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;} #dslc-module-58u2hvjd4eo blockquote,#dslc-module-58u2hvjd4eo .dslc-text-module-content blockquote p{text-align:left ;} #dslc-module-58u2hvjd4eo blockquote{background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;} #dslc-module-58u2hvjd4eo input[type=submit],#dslc-module-58u2hvjd4eo button{background-color:#5890e5 ;border-radius:3px;color:#fff ;font-size:13px;font-weight:500;font-family:"Open Sans";line-height:13px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;} #dslc-module-58u2hvjd4eo input[type=submit]:hover,#dslc-module-58u2hvjd4eo button:hover{background-color:#5890e5 ;color:#fff ;border-color:#5890e5;} #dslc-module-a441ebea10a .dslc-posts{} #dslc-module-a441ebea10a .dslc-post-separator{margin-bottom:32px;padding-bottom:32px;border-color:#ededed;border-bottom-width:1px;} #dslc-module-a441ebea10a .dslc-cpt-post-thumb{text-align:left ;margin-right:20px;width:100%;} #dslc-module-a441ebea10a .dslc-cpt-post-thumb-inner{} #dslc-module-a441ebea10a .dslc-cpt-post-thumb,#dslc-module-a441ebea10a .dslc-cpt-post-thumb-inner{border-top-left-radius:4px;border-top-right-radius:4px;} #dslc-module-a441ebea10a .dslc-cpt-post-main{background-color:#ffffff ;padding-top:25px;padding-bottom:25px;padding-left:25px;padding-right:25px;text-align:center ;border-color:#e8e8e8;border-width:1px;border-style:none solid solid solid;} #dslc-module-a441ebea10a .dslc-post{border-bottom-left-radius:4px;border-bottom-right-radius:4px;} #dslc-module-a441ebea10a .dslc-cpt-post-main-inner{width:100%;} #dslc-module-a441ebea10a .dslc-cpt-post-title h2,#dslc-module-a441ebea10a .dslc-cpt-post-title h2 a{color:#4d4d4d ;font-size:17px;font-weight:500;font-family:"Open Sans";line-height:29px;} #dslc-module-a441ebea10a .dslc-cpt-post-title{margin-bottom:16px;} #dslc-module-a441ebea10a .dslc-cpt-post-title h2{text-transform:none ;} #dslc-module-a441ebea10a .dslc-cpt-post-meta{color:#a8a8a8 ;font-size:11px;font-family:"Libre Baskerville";font-weight:400;margin-bottom:10px;padding-top:3px;padding-bottom:3px;} #dslc-module-a441ebea10a .dslc-cpt-post-meta a{color:#5890e5 ;} #dslc-module-a441ebea10a .dslc-cpt-post-meta a:hover{color:#5890e5 ;} #dslc-module-a441ebea10a .dslc-cpt-post-excerpt{color:#a6a6a6 ;font-size:13px;font-weight:500;font-family:"Bitter";margin-bottom:22px;} #dslc-module-a441ebea10a .dslc-cpt-post-excerpt,#dslc-module-a441ebea10a .dslc-cpt-post-excerpt p{line-height:23px;} #dslc-module-a441ebea10a .dslc-cpt-post-read-more a{background-color:#5890e5 ;border-radius:3px;color:#ffffff ;font-size:11px;font-weight:800;font-family:"Lato";padding-top:12px;padding-bottom:12px;padding-left:12px;padding-right:12px;} #dslc-module-a441ebea10a .dslc-cpt-post-read-more a:hover{background-color:#4b7bc2 ;color:#ffffff ;} #dslc-module-a441ebea10a .dslc-cpt-post-read-more a .dslc-icon{margin-right:5px;} #dslc-module-a441ebea10a .dslc-module-heading h2{font-size:17px;font-weight:400;line-height:37px;margin-bottom:20px;} #dslc-module-a441ebea10a .dslc-module-heading-view-all a{font-size:11px;font-weight:600;} #dslc-module-a441ebea10a .dslc-module-heading-view-all{padding-top:10px;padding-bottom:10px;} #dslc-module-a441ebea10a .dslc-post-filter.dslc-inactive{background-color:#ffffff ;color:#979797 ;border-color:#e8e8e8;} #dslc-module-a441ebea10a .dslc-post-filter.dslc-active{background-color:#5890e5 ;color:#ffffff ;border-color:#5890e5;} #dslc-module-a441ebea10a .dslc-post-filter{border-radius:3px;font-size:11px;font-weight:700;padding-top:12px;padding-bottom:12px;padding-left:12px;padding-right:12px;margin-right:10px;border-width:1px;border-style:solid solid solid solid;} #dslc-module-a441ebea10a .dslc-post-filters{text-align:left ;margin-bottom:20px;} #dslc-module-a441ebea10a .dslc-carousel-nav-prev,#dslc-module-a441ebea10a .dslc-carousel-nav-next{background-color:#c9c9c9 ;border-radius:3px;width:24px;height:24px;} #dslc-module-a441ebea10a .dslc-carousel-nav-prev:hover,#dslc-module-a441ebea10a .dslc-carousel-nav-next:hover{background-color:#5890e5 ;} #dslc-module-a441ebea10a .dslc-carousel-nav-prev span,#dslc-module-a441ebea10a .dslc-carousel-nav-next span{color:#ffffff ;font-size:10px;} #dslc-module-a441ebea10a .dslc-carousel-nav-prev:hover span,#dslc-module-a441ebea10a .dslc-carousel-nav-next:hover span{color:#ffffff ;} #dslc-module-a441ebea10a .dslc-carousel-nav{margin-top:6px;margin-bottom:20px;} #dslc-module-a441ebea10a .owl-pagination .owl-page span{background-color:#b9b9b9 ;width:7px;height:7px;} #dslc-module-a441ebea10a .owl-pagination .owl-page.active span{background-color:#5890e5 ;} #dslc-module-a441ebea10a .owl-controls{margin-top:20px;} #dslc-module-a441ebea10a .owl-pagination .owl-page{margin-left:3px;margin-right:3px;} #dslc-module-a441ebea10a .dslc-pagination{text-align:left ;} #dslc-module-a441ebea10a .dslc-pagination li.dslc-inactive a{background-color:#ffffff ;color:#979797 ;border-color:#e8e8e8;border-width:1px;} #dslc-module-a441ebea10a .dslc-pagination li.dslc-active a{background-color:#5890e5 ;color:#ffffff ;border-color:#5890e5;border-width:1px;} #dslc-module-a441ebea10a .dslc-pagination li a{border-radius:3px;font-size:11px;font-weight:700;padding-top:12px;padding-bottom:12px;padding-left:12px;padding-right:12px;} #dslc-module-a441ebea10a .dslc-pagination li{margin-right:10px;} #dslc-module-8kqrj8vph4 .dslc-text-module-content{background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;background-size:auto ;border-color:#9c1010;border-width:4px;border-style:none none solid none;} #dslc-module-8kqrj8vph4 .dslc-text-module-content,#dslc-module-8kqrj8vph4 .dslc-text-module-content .dslca-editable-content,#dslc-module-8kqrj8vph4 .dslc-text-module-content p{font-size:13px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:22px;text-align:left ;} #dslc-module-8kqrj8vph4 .dslc-text-module-content p{margin-bottom:25px;} #dslc-module-8kqrj8vph4 .dslc-text-module-content h1{font-size:25px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:35px;margin-bottom:15px;text-align:left ;} #dslc-module-8kqrj8vph4 .dslc-text-module-content h2{font-size:23px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:31px;margin-bottom:0px;text-align:left ;} #dslc-module-8kqrj8vph4 .dslc-text-module-content h3{font-size:21px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:31px;margin-bottom:15px;text-align:left ;} #dslc-module-8kqrj8vph4 .dslc-text-module-content h4{font-size:19px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:29px;margin-bottom:15px;text-align:left ;} #dslc-module-8kqrj8vph4 .dslc-text-module-content h5{font-size:17px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:27px;margin-bottom:15px;text-align:left ;} #dslc-module-8kqrj8vph4 .dslc-text-module-content h6{font-size:15px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:25px;margin-bottom:15px;text-align:left ;} #dslc-module-8kqrj8vph4 .dslc-text-module-content li{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;margin-bottom:10px;} #dslc-module-8kqrj8vph4 .dslc-text-module-content ul,#dslc-module-8kqrj8vph4 .dslc-text-module-content ol{margin-bottom:25px;margin-left:25px;} #dslc-module-8kqrj8vph4 .dslc-text-module-content ul{list-style-type:disc ;} #dslc-module-8kqrj8vph4 .dslc-text-module-content ol{list-style-type:decimal ;} #dslc-module-8kqrj8vph4 input[type=text],#dslc-module-8kqrj8vph4 input[type=password],#dslc-module-8kqrj8vph4 input[type=number],#dslc-module-8kqrj8vph4 input[type=email],#dslc-module-8kqrj8vph4 input[type=tel],#dslc-module-8kqrj8vph4 textarea,#dslc-module-8kqrj8vph4 select{color:#4d4d4d ;font-size:13px;font-weight:500;font-family:"Open Sans";margin-bottom:15px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;background-color:#fff ;border-color:#ddd;border-width:1px;border-style:solid solid solid solid;} #dslc-module-8kqrj8vph4 textarea{line-height:23px;} #dslc-module-8kqrj8vph4 .dslc-text-module-content blockquote,#dslc-module-8kqrj8vph4 .dslc-text-module-content blockquote p{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;} #dslc-module-8kqrj8vph4 blockquote,#dslc-module-8kqrj8vph4 .dslc-text-module-content blockquote p{text-align:left ;} #dslc-module-8kqrj8vph4 blockquote{background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;} #dslc-module-8kqrj8vph4 input[type=submit],#dslc-module-8kqrj8vph4 button{background-color:#5890e5 ;border-radius:3px;color:#fff ;font-size:13px;font-weight:500;font-family:"Open Sans";line-height:13px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;} #dslc-module-8kqrj8vph4 input[type=submit]:hover,#dslc-module-8kqrj8vph4 button:hover{background-color:#5890e5 ;color:#fff ;border-color:#5890e5;} #dslc-module-bf712a22f08 .dslc-text-module-content{background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;background-size:auto ;} #dslc-module-bf712a22f08 .dslc-text-module-content,#dslc-module-bf712a22f08 .dslc-text-module-content .dslca-editable-content,#dslc-module-bf712a22f08 .dslc-text-module-content p{font-size:13px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:22px;text-align:justify ;} #dslc-module-bf712a22f08 .dslc-text-module-content p{margin-bottom:25px;} #dslc-module-bf712a22f08 .dslc-text-module-content h1{font-size:25px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:35px;margin-bottom:15px;text-align:left ;} #dslc-module-bf712a22f08 .dslc-text-module-content h2{font-size:23px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:33px;margin-bottom:15px;text-align:left ;} #dslc-module-bf712a22f08 .dslc-text-module-content h3{font-size:21px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:31px;margin-bottom:15px;text-align:left ;} #dslc-module-bf712a22f08 .dslc-text-module-content h4{font-size:19px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:29px;margin-bottom:15px;text-align:left ;} #dslc-module-bf712a22f08 .dslc-text-module-content h5{font-size:17px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:27px;margin-bottom:15px;text-align:left ;} #dslc-module-bf712a22f08 .dslc-text-module-content h6{font-size:15px;font-weight:400;font-family:"Open Sans";font-style:normal ;line-height:25px;margin-bottom:15px;text-align:left ;} #dslc-module-bf712a22f08 .dslc-text-module-content li{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:9px;margin-bottom:10px;} #dslc-module-bf712a22f08 .dslc-text-module-content ul,#dslc-module-bf712a22f08 .dslc-text-module-content ol{margin-bottom:25px;margin-left:25px;} #dslc-module-bf712a22f08 .dslc-text-module-content ul{list-style-type:disc ;} #dslc-module-bf712a22f08 .dslc-text-module-content ol{list-style-type:decimal ;} #dslc-module-bf712a22f08 input[type=text],#dslc-module-bf712a22f08 input[type=password],#dslc-module-bf712a22f08 input[type=number],#dslc-module-bf712a22f08 input[type=email],#dslc-module-bf712a22f08 input[type=tel],#dslc-module-bf712a22f08 textarea,#dslc-module-bf712a22f08 select{color:#4d4d4d ;font-size:13px;font-weight:500;font-family:"Open Sans";margin-bottom:15px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;background-color:#fff ;border-color:#ddd;border-width:1px;} #dslc-module-bf712a22f08 textarea{line-height:23px;} #dslc-module-bf712a22f08 .dslc-text-module-content blockquote,#dslc-module-bf712a22f08 .dslc-text-module-content blockquote p{font-size:13px;font-weight:400;font-family:"Open Sans";line-height:22px;} #dslc-module-bf712a22f08 blockquote,#dslc-module-bf712a22f08 .dslc-text-module-content blockquote p{text-align:left ;} #dslc-module-bf712a22f08 blockquote{background-repeat:repeat ;background-attachment:scroll ;background-position:top left ;} #dslc-module-bf712a22f08 input[type=submit],#dslc-module-bf712a22f08 button{background-color:#5890e5 ;border-radius:3px;color:#fff ;font-size:13px;font-weight:500;font-family:"Open Sans";line-height:13px;padding-top:10px;padding-bottom:10px;padding-left:15px;padding-right:15px;} #dslc-module-bf712a22f08 input[type=submit]:hover,#dslc-module-bf712a22f08 button:hover{background-color:#5890e5 ;color:#fff ;border-color:#5890e5;} </style><link href="//fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900|Libre+Baskerville:100,200,300,400,500,600,700,800,900|Bitter:100,200,300,400,500,600,700,800,900|Lato:100,200,300,400,500,600,700,800,900&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet">
+</head>
+<body class="home page-template-default page page-id-80 dslc-page dslc-page-has-content layout-full">
+<div class="wrapper cleafix">
+
+		<!-- BEGIN header -->
+	<header id="header" class="clearfix">
+
+				<div class="sitetitle maxwidth grid ">
+
+			<div class="logo">
+
+				                    <a id="logo" href="http://mso.soict.hust.edu.vn/" title="MSOLab" class="blog-name">
+                MSOLab                    </a>
+				
+				
+									<p class="sitedescription">Modelling, Simulation &amp; Optimization Laboratory</p>
+				
+			</div>
+			
+		</div>
+
+				<div class="topnav grid">
+
+			<div id="mobile-menu" class="mm-active">Menu</div>
+
+			<nav>
+				<ul class="top-menu maxwidth clearfix"><li id="menu-item-34" class="menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-34"><span>Home</span></li>
+<li id="menu-item-32" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-32"><a href="http://mso.soict.hust.edu.vn/?page_id=13">Research Groups</a></li>
+<li id="menu-item-263" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-263"><a href="http://mso.soict.hust.edu.vn/?page_id=260">Projects</a></li>
+<li id="menu-item-30" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-30"><a href="http://mso.soict.hust.edu.vn/?page_id=17">Publications</a></li>
+<li id="menu-item-28" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-28"><a href="http://mso.soict.hust.edu.vn/?page_id=21">Resources</a></li>
+<li id="menu-item-29" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-29"><a href="http://mso.soict.hust.edu.vn/?page_id=19">Events &#038; News</a></li>
+<li id="menu-item-178" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-178"><a href="http://mso.soict.hust.edu.vn/?page_id=25">Contact</a></li>
+</ul>			</nav>
+
+		</div>
+		
+	</header>
+	<!-- END header -->
+
+	
+
+	<div id="main" class="maxwidth clearfix">
+
+		<!-- BEGIN content -->
+	
+	<main id="content" class="content">
+
+		
+						<article class="post page" id="pageid-80">
+				
+								<h1></h1>
+				
+								<div class="entry-box clearfix">
+										<div id="dslc-content" class="dslc-content dslc-clearfix"><div id="dslc-main">
+		<div  class="dslc-modules-section dslc-full " style="padding-bottom:0px;padding-top:0px;" data-section-id="c0785754272">
+
+				
+
+				<div class="dslc-modules-section-wrapper dslc-clearfix"><div class="dslc-modules-area dslc-col dslc-6-col dslc-first-col" data-size="6">
+		<div id="dslc-module-6de2c8d3b15" class="dslc-module-front dslc-module-DSLC_Text_Simple dslc-in-viewport-check dslc-in-viewport-anim-none  dslc-col dslc-12-col dslc-last-col  dslc-module-handle-like-regular " data-module-id="6de2c8d3b15" data-dslc-module-id="DSLC_Text_Simple" data-dslc-module-size="12" data-dslc-anim="none" data-dslc-anim-delay="" data-dslc-anim-duration="650"  data-dslc-anim-easing="ease" data-dslc-preset="none" >
+
+			
+			
+		<div class="dslc-text-module-content"><h6>MSO Lab is an in-depth research unit of Optimization. The main research areas of MSO Lab include: Artificial Intelligence and Machine Learning, Algorithms and Optimization, High Performance Computing. MSO Lab guides basic research and publishes research results in leading international journals and conferences. MSO Lab will pioneer the applications of basic algorithms and optimization researches to solve practical problems such as logistics, scheduling, intelligent systems, network design problems, and sensor networks optimization problems.</h6><h6>MSO Lab cooperates with strong research teams of foreign universities such as Melbourne University, University of Sydney, Nanyang Technological University, and some Vietnamese international corporations such as Cinnamon, DAC, etc.</h6><h6>MSO Lab has been presiding over 04 National Foundation of Science and Technology projects (NAFOSTED) cooperating with Belgium and Germany partners, 02 Ministerial-level Research projects, 01 State-level Research project, 01 International collaboration projects sponsored by US Army Research Lab.</h6></div>
+				</div><!-- .dslc-module -->
+		</div><div class="dslc-modules-area dslc-col dslc-6-col dslc-last-col" data-size="6">
+		<div id="dslc-module-b09a8a49c57" class="dslc-module-front dslc-module-DSLC_Shortcode dslc-in-viewport-check dslc-in-viewport-anim-none  dslc-col dslc-12-col dslc-last-col  dslc-module-handle-like-regular " data-module-id="b09a8a49c57" data-dslc-module-id="DSLC_Shortcode" data-dslc-module-size="12" data-dslc-anim="none" data-dslc-anim-delay="" data-dslc-anim-duration="650"  data-dslc-anim-easing="ease" data-dslc-preset="none" >
+
+			
+			
+		
+		<div class="dslc-module-shortcode">
+
+		<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQy-5ZwV_tYi2ep9RrnqZk6opc9XL1VtqTfHRrHeHWFSrgapFvhTIIeGYl6HT2lhw/embed?start=true&loop=true&delayms=3000" frameborder="0" width="500" height="400" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+		</div>
+
+		
+				</div><!-- .dslc-module -->
+		</div><div class="dslc-modules-area dslc-col dslc-6-col dslc-first-col" data-size="6">
+		<div id="dslc-module-58u2hvjd4eo" class="dslc-module-front dslc-module-DSLC_Text_Simple dslc-in-viewport-check dslc-in-viewport-anim-none  dslc-col dslc-12-col dslc-last-col  dslc-module-handle-like-regular " data-module-id="58u2hvjd4eo" data-dslc-module-id="DSLC_Text_Simple" data-dslc-module-size="12" data-dslc-anim="none" data-dslc-anim-delay="" data-dslc-anim-duration="650"  data-dslc-anim-easing="ease" data-dslc-preset="none" >
+
+			
+			
+		<div class="dslc-text-module-content"><h2><strong><span style="color: #000000;">      News</span></strong></h2></div>
+				</div><!-- .dslc-module -->
+		
+		<div id="dslc-module-a441ebea10a" class="dslc-module-front dslc-module-DSLC_Posts dslc-in-viewport-check dslc-in-viewport-anim-none  dslc-col dslc-12-col dslc-last-col  dslc-module-handle-like-regular " data-module-id="a441ebea10a" data-dslc-module-id="DSLC_Posts" data-dslc-module-size="12" data-dslc-anim="none" data-dslc-anim-delay="" data-dslc-anim-duration="650"  data-dslc-anim-easing="ease" data-dslc-preset="none" >
+
+			
+			
+					<div class="dslc-module-heading">
+
+		<!-- Heading -->
+
+		
+		<!-- Filters -->
+
+		
+		<!-- Carousel -->
+
+									<span class="dslc-carousel-nav fr">
+								<span class="dslc-carousel-nav-inner">
+									<a href="#" class="dslc-carousel-nav-prev"><span class="dslc-icon-chevron-left"></span></a>
+									<a href="#" class="dslc-carousel-nav-next"><span class="dslc-icon-chevron-right"></span></a>
+								</span>
+							</span><!-- .carousel-nav -->
+						
+			</div><!-- .dslc-module-heading -->
+				<div class="dslc-posts dslc-cpt-posts dslc-clearfix dslc-cpt-posts-type-carousel dslc-posts-orientation-vertical "><div class="dslc-posts-inner"><div class="dslc-loader"></div><div class="dslc-carousel" data-stop-on-hover="false" data-autoplay="" data-columns="2" data-pagination="true" data-slide-speed="200" data-pagination-speed="800">
+	<div class="dslc-post dslc-cpt-post dslc-carousel-item dslc-col dslc-6-col  dslc-first-col dslc-post-no-thumb" data-cats="">
+
+
+									
+									
+								
+								
+									<div class="dslc-post-main dslc-cpt-post-main">
+
+										
+											<div class="dslc-cpt-post-title">
+												<h2><a href="http://mso.soict.hust.edu.vn/?p=254">IEEE World Congress on Computational Intelligence</a></h2>
+											</div><!-- .dslc-cpt-post-title -->
+
+										
+										
+											
+											<div class="dslc-cpt-post-meta">
+
+												
+																									<div class="dslc-cpt-post-meta-date">
+														August 16, 2018													</div><!-- .dslc-cpt-post-meta-date -->
+												
+											</div><!-- .dslc-cpt-post-meta -->
+
+										
+										
+											<div class="dslc-cpt-post-excerpt">
+																									Team from MSO Lab has 3 papers accepted at IEEE World Congress on Computational Intelligence (WCCI). We also participated WCCI2018&hellip;																							</div><!-- .dslc-cpt-post-excerpt -->
+
+										
+										
+											<div class="dslc-cpt-post-read-more">
+												<a href="http://mso.soict.hust.edu.vn/?p=254">
+																										CONTINUE READING												</a>
+											</div><!-- .dslc-cpt-post-read-more -->
+
+										
+									</div><!-- .dslc-cpt-post-main -->
+
+								
+							</div><!-- .dslc-cpt-post -->
+
+							
+	<div class="dslc-post dslc-cpt-post dslc-carousel-item dslc-col dslc-6-col  dslc-last-col dslc-post-no-thumb" data-cats="">
+
+
+									
+									
+								
+								
+									<div class="dslc-post-main dslc-cpt-post-main">
+
+										
+											<div class="dslc-cpt-post-title">
+												<h2><a href="http://mso.soict.hust.edu.vn/?p=235">Seminar &#8220;The cocktail party effect: An old problem begging for a new solution&#8221;</a></h2>
+											</div><!-- .dslc-cpt-post-title -->
+
+										
+										
+											
+											<div class="dslc-cpt-post-meta">
+
+												
+																									<div class="dslc-cpt-post-meta-date">
+														March 30, 2018													</div><!-- .dslc-cpt-post-meta-date -->
+												
+											</div><!-- .dslc-cpt-post-meta -->
+
+										
+										
+											<div class="dslc-cpt-post-excerpt">
+																									Thời gian: 14.00 ngày 29/3/2018 Địa điểm: phòng seminar tầng 9 (MICA) Người trình bày: Prof. Pierre Divenyi, Stanford University Title: The&hellip;																							</div><!-- .dslc-cpt-post-excerpt -->
+
+										
+										
+											<div class="dslc-cpt-post-read-more">
+												<a href="http://mso.soict.hust.edu.vn/?p=235">
+																										CONTINUE READING												</a>
+											</div><!-- .dslc-cpt-post-read-more -->
+
+										
+									</div><!-- .dslc-cpt-post-main -->
+
+								
+							</div><!-- .dslc-cpt-post -->
+
+							
+	<div class="dslc-post dslc-cpt-post dslc-carousel-item dslc-col dslc-6-col  dslc-first-col dslc-post-no-thumb" data-cats="">
+
+
+									
+									
+								
+								
+									<div class="dslc-post-main dslc-cpt-post-main">
+
+										
+											<div class="dslc-cpt-post-title">
+												<h2><a href="http://mso.soict.hust.edu.vn/?p=230">Seminar: &#8220;Ergonomic Aspects of Autonomous Driving&#8221;</a></h2>
+											</div><!-- .dslc-cpt-post-title -->
+
+										
+										
+											
+											<div class="dslc-cpt-post-meta">
+
+												
+																									<div class="dslc-cpt-post-meta-date">
+														March 26, 2018													</div><!-- .dslc-cpt-post-meta-date -->
+												
+											</div><!-- .dslc-cpt-post-meta -->
+
+										
+										
+											<div class="dslc-cpt-post-excerpt">
+																									Ergonomic Aspects of Autonomous Driving Studying Human Behavior in Urban Traffic Using Linked Driving Simulation Thời gian: 14.30 ngày thứ&hellip;																							</div><!-- .dslc-cpt-post-excerpt -->
+
+										
+										
+											<div class="dslc-cpt-post-read-more">
+												<a href="http://mso.soict.hust.edu.vn/?p=230">
+																										CONTINUE READING												</a>
+											</div><!-- .dslc-cpt-post-read-more -->
+
+										
+									</div><!-- .dslc-cpt-post-main -->
+
+								
+							</div><!-- .dslc-cpt-post -->
+
+							
+	<div class="dslc-post dslc-cpt-post dslc-carousel-item dslc-col dslc-6-col  dslc-last-col dslc-post-no-thumb" data-cats="">
+
+
+									
+									
+								
+								
+									<div class="dslc-post-main dslc-cpt-post-main">
+
+										
+											<div class="dslc-cpt-post-title">
+												<h2><a href="http://mso.soict.hust.edu.vn/?p=183">Seminar &#8220;Artificial Intelligence and Big Data: the role of machine learning&#8221;</a></h2>
+											</div><!-- .dslc-cpt-post-title -->
+
+										
+										
+											
+											<div class="dslc-cpt-post-meta">
+
+												
+																									<div class="dslc-cpt-post-meta-date">
+														November 3, 2017													</div><!-- .dslc-cpt-post-meta-date -->
+												
+											</div><!-- .dslc-cpt-post-meta -->
+
+										
+										
+											<div class="dslc-cpt-post-excerpt">
+																									Thời gian: 14.30 ngày thứ 2, 6/11/2017 Địa điểm: phòng 803, nhà B1, Đại học Bách khoa Hà Nội Người&hellip;																							</div><!-- .dslc-cpt-post-excerpt -->
+
+										
+										
+											<div class="dslc-cpt-post-read-more">
+												<a href="http://mso.soict.hust.edu.vn/?p=183">
+																										CONTINUE READING												</a>
+											</div><!-- .dslc-cpt-post-read-more -->
+
+										
+									</div><!-- .dslc-cpt-post-main -->
+
+								
+							</div><!-- .dslc-cpt-post -->
+
+							</div></div><!--.dslc-posts-inner --></div><!-- .dslc-cpt-posts -->
+
+				</div><!-- .dslc-module -->
+		</div><div class="dslc-modules-area dslc-col dslc-6-col dslc-last-col" data-size="6">
+		<div id="dslc-module-8kqrj8vph4" class="dslc-module-front dslc-module-DSLC_Text_Simple dslc-in-viewport-check dslc-in-viewport-anim-none  dslc-col dslc-12-col dslc-last-col  dslc-module-handle-like-regular " data-module-id="8kqrj8vph4" data-dslc-module-id="DSLC_Text_Simple" data-dslc-module-size="12" data-dslc-anim="none" data-dslc-anim-delay="" data-dslc-anim-duration="650"  data-dslc-anim-easing="ease" data-dslc-preset="none" >
+
+			
+			
+		<div class="dslc-text-module-content"><h2><span style="color: #000000;"><strong>     Recent publications</strong></span></h2></div>
+				</div><!-- .dslc-module -->
+		
+		<div id="dslc-module-bf712a22f08" class="dslc-module-front dslc-module-DSLC_Text_Simple dslc-in-viewport-check dslc-in-viewport-anim-none  dslc-col dslc-12-col dslc-last-col  dslc-module-handle-like-regular " data-module-id="bf712a22f08" data-dslc-module-id="DSLC_Text_Simple" data-dslc-module-size="12" data-dslc-anim="none" data-dslc-anim-delay="" data-dslc-anim-duration="650"  data-dslc-anim-easing="ease" data-dslc-preset="none" >
+
+			
+			
+		<div class="dslc-text-module-content"><p><div class="tablenav"><div class="tablenav-pages"><span class="displaying-num">55 entries</span> <a class="first-page disabled">&laquo;</a> <a class="prev-page disabled">&lsaquo;</a>  1 of 19 <a href="http://mso.soict.hust.edu.vn/&amp;limit=2&amp;" title="next page" class="page-numbers">&rsaquo;</a> <a href="http://mso.soict.hust.edu.vn/&amp;limit=19&amp;" title="last page" class="page-numbers">&raquo;</a> </div></div><table class="teachpress_publication_list"><tr>
+                    <td>
+                        <h3 class="tp_h3" id="tp_h3_2020">2020</h3>
+                    </td>
+                </tr><tr class="tp_publication"><td class="tp_pub_info"><p class="tp_pub_author"> Binh, Huynh Thi Thanh;  Hanh, Nguyen Thi ;  Quan, La Van ;  Nghia, Nguyen Duc ;  Dey, Nilanjan </p><p class="tp_pub_title"><a class="tp_title_link" onclick="teachpress_pub_showhide('63','tp_links')" style="cursor:pointer;">Metaheuristics for maximization of obstacles constrained area coverage 
+ in heterogeneous wireless sensor networks</a> <span class="tp_pub_type article">Journal Article</span> </p><p class="tp_pub_additional"><span class="tp_pub_additional_journal">Appl. Soft Comput., </span><span class="tp_pub_additional_volume">86 </span>, <span class="tp_pub_additional_year">2020</span>.</p><p class="tp_pub_tags"><span class="tp_resource_link"><a id="tp_links_sh_63" class="tp_show" onclick="teachpress_pub_showhide('63','tp_links')" title="Show links and resources" style="cursor:pointer;">Links</a></span> | <span class="tp_bibtex_link"><a id="tp_bibtex_sh_63" class="tp_show" onclick="teachpress_pub_showhide('63','tp_bibtex')" title="Show BibTeX entry" style="cursor:pointer;">BibTeX</a></span></p><div class="tp_bibtex" id="tp_bibtex_63" style="display:none;"><div class="tp_bibtex_entry">@article{DBLP:journals/asc/BinhHQND20,<br />
+title = {Metaheuristics for maximization of obstacles constrained area coverage <br />
+ in heterogeneous wireless sensor networks},<br />
+author = {Huynh Thi Thanh Binh and <br />
+ Nguyen Thi Hanh and <br />
+ La Van Quan and <br />
+ Nguyen Duc Nghia and <br />
+ Nilanjan Dey},<br />
+url = {https://doi.org/10.1016/j.asoc.2019.105939},<br />
+doi = {10.1016/j.asoc.2019.105939},<br />
+year  = {2020},<br />
+date = {2020-01-01},<br />
+journal = {Appl. Soft Comput.},<br />
+volume = {86},<br />
+keywords = {},<br />
+pubstate = {published},<br />
+tppubtype = {article}<br />
+}<br />
+</div><p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('63','tp_bibtex')">Close</a></p></div><div class="tp_links" id="tp_links_63" style="display:none;"><div class="tp_links_entry"><ul class="tp_pub_list"><li><a class="tp_pub_list" style="background-image: url(http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/images/mimetypes/text-html.png)" href="https://doi.org/10.1016/j.asoc.2019.105939" title="https://doi.org/10.1016/j.asoc.2019.105939" target="_blank">https://doi.org/10.1016/j.asoc.2019.105939</a></li><li><a class="tp_pub_list" style="background-image: url(http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/images/mimetypes/text-html.png)" href="https://dx.doi.org/10.1016/j.asoc.2019.105939" title="Follow DOI:10.1016/j.asoc.2019.105939" target="_blank">doi:10.1016/j.asoc.2019.105939</a></li></ul></div><p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('63','tp_links')">Close</a></p></div></td></tr><tr class="tp_publication"><td class="tp_pub_info"><p class="tp_pub_author"> Ha, Quang Minh;  Deville, Yves ;  Dung, Pham Quang ;  Hà, Minh Hoàng </p><p class="tp_pub_title"><a class="tp_title_link" onclick="teachpress_pub_showhide('66','tp_links')" style="cursor:pointer;">A hybrid genetic algorithm for the traveling salesman problem with  drone</a> <span class="tp_pub_type article">Journal Article</span> </p><p class="tp_pub_additional"><span class="tp_pub_additional_journal">J. Heuristics, </span><span class="tp_pub_additional_volume">26 </span><span class="tp_pub_additional_number">(2), </span><span class="tp_pub_additional_pages">pp. 219–247, </span><span class="tp_pub_additional_year">2020</span>.</p><p class="tp_pub_tags"><span class="tp_resource_link"><a id="tp_links_sh_66" class="tp_show" onclick="teachpress_pub_showhide('66','tp_links')" title="Show links and resources" style="cursor:pointer;">Links</a></span> | <span class="tp_bibtex_link"><a id="tp_bibtex_sh_66" class="tp_show" onclick="teachpress_pub_showhide('66','tp_bibtex')" title="Show BibTeX entry" style="cursor:pointer;">BibTeX</a></span></p><div class="tp_bibtex" id="tp_bibtex_66" style="display:none;"><div class="tp_bibtex_entry">@article{DBLP:journals/heuristics/HaDDH20,<br />
+title = {A hybrid genetic algorithm for the traveling salesman problem with  drone},<br />
+author = {Quang Minh Ha and <br />
+ Yves Deville and <br />
+ Pham Quang Dung and <br />
+ Minh Hoàng Hà},<br />
+url = {https://doi.org/10.1007/s10732-019-09431-y},<br />
+doi = {10.1007/s10732-019-09431-y},<br />
+year  = {2020},<br />
+date = {2020-01-01},<br />
+journal = {J. Heuristics},<br />
+volume = {26},<br />
+number = {2},<br />
+pages = {219--247},<br />
+keywords = {},<br />
+pubstate = {published},<br />
+tppubtype = {article}<br />
+}<br />
+</div><p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('66','tp_bibtex')">Close</a></p></div><div class="tp_links" id="tp_links_66" style="display:none;"><div class="tp_links_entry"><ul class="tp_pub_list"><li><a class="tp_pub_list" style="background-image: url(http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/images/mimetypes/text-html.png)" href="https://doi.org/10.1007/s10732-019-09431-y" title="https://doi.org/10.1007/s10732-019-09431-y" target="_blank">https://doi.org/10.1007/s10732-019-09431-y</a></li><li><a class="tp_pub_list" style="background-image: url(http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/images/mimetypes/text-html.png)" href="https://dx.doi.org/10.1007/s10732-019-09431-y" title="Follow DOI:10.1007/s10732-019-09431-y" target="_blank">doi:10.1007/s10732-019-09431-y</a></li></ul></div><p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('66','tp_links')">Close</a></p></div></td></tr><tr>
+                    <td>
+                        <h3 class="tp_h3" id="tp_h3_2019">2019</h3>
+                    </td>
+                </tr><tr class="tp_publication"><td class="tp_pub_info"><p class="tp_pub_author"> Nguyen, Thi Tam;  Binh, Huynh Thi Thanh ;  Dung, Dinh Anh ;  Lan, Phan Ngoc ;  Le, Vinh Trong ;  Yuan, Bo ;  Yao, Xin </p><p class="tp_pub_title"><a class="tp_title_link" onclick="teachpress_pub_showhide('59','tp_links')" style="cursor:pointer;">A hybrid clustering and evolutionary approach for wireless underground 
+ sensor network lifetime maximization</a> <span class="tp_pub_type article">Journal Article</span> </p><p class="tp_pub_additional"><span class="tp_pub_additional_journal">Inf. Sci., </span><span class="tp_pub_additional_volume">504 </span>, <span class="tp_pub_additional_pages">pp. 372–393, </span><span class="tp_pub_additional_year">2019</span>.</p><p class="tp_pub_tags"><span class="tp_resource_link"><a id="tp_links_sh_59" class="tp_show" onclick="teachpress_pub_showhide('59','tp_links')" title="Show links and resources" style="cursor:pointer;">Links</a></span> | <span class="tp_bibtex_link"><a id="tp_bibtex_sh_59" class="tp_show" onclick="teachpress_pub_showhide('59','tp_bibtex')" title="Show BibTeX entry" style="cursor:pointer;">BibTeX</a></span></p><div class="tp_bibtex" id="tp_bibtex_59" style="display:none;"><div class="tp_bibtex_entry">@article{DBLP:journals/isci/NguyenBDLLYY19,<br />
+title = {A hybrid clustering and evolutionary approach for wireless underground <br />
+ sensor network lifetime maximization},<br />
+author = {Thi Tam Nguyen and <br />
+ Huynh Thi Thanh Binh and <br />
+ Dinh Anh Dung and <br />
+ Phan Ngoc Lan and <br />
+ Vinh Trong Le and <br />
+ Bo Yuan and <br />
+ Xin Yao},<br />
+url = {https://doi.org/10.1016/j.ins.2019.07.060},<br />
+doi = {10.1016/j.ins.2019.07.060},<br />
+year  = {2019},<br />
+date = {2019-01-01},<br />
+journal = {Inf. Sci.},<br />
+volume = {504},<br />
+pages = {372--393},<br />
+keywords = {},<br />
+pubstate = {published},<br />
+tppubtype = {article}<br />
+}<br />
+</div><p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('59','tp_bibtex')">Close</a></p></div><div class="tp_links" id="tp_links_59" style="display:none;"><div class="tp_links_entry"><ul class="tp_pub_list"><li><a class="tp_pub_list" style="background-image: url(http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/images/mimetypes/text-html.png)" href="https://doi.org/10.1016/j.ins.2019.07.060" title="https://doi.org/10.1016/j.ins.2019.07.060" target="_blank">https://doi.org/10.1016/j.ins.2019.07.060</a></li><li><a class="tp_pub_list" style="background-image: url(http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/images/mimetypes/text-html.png)" href="https://dx.doi.org/10.1016/j.ins.2019.07.060" title="Follow DOI:10.1016/j.ins.2019.07.060" target="_blank">doi:10.1016/j.ins.2019.07.060</a></li></ul></div><p class="tp_close_menu"><a class="tp_close" onclick="teachpress_pub_showhide('59','tp_links')">Close</a></p></div></td></tr></table><div class="tablenav"><div class="tablenav-pages"><span class="displaying-num">55 entries</span> <a class="first-page disabled">&laquo;</a> <a class="prev-page disabled">&lsaquo;</a>  1 of 19 <a href="http://mso.soict.hust.edu.vn/&amp;limit=2&amp;" title="next page" class="page-numbers">&rsaquo;</a> <a href="http://mso.soict.hust.edu.vn/&amp;limit=19&amp;" title="last page" class="page-numbers">&raquo;</a> </div></div></p></div>
+				</div><!-- .dslc-module -->
+		</div></div></div></div></div>									</div>
+				
+			</article>
+			
+
+					
+	</main> <!-- #content -->
+	
+<!-- BEGIN #sidebar -->
+<aside id="sidebar" class="block">
+	<ul id="widgetlist">
+
+    <li id="text-6" class="widget widget_text">			<div class="textwidget"></div>
+		</li>
+	</ul>
+</aside>
+<!-- END #sidebar -->
+
+</div> 
+<!-- #main -->
+
+
+<footer id="footer" class="">
+
+	
+	
+	    	<div class="copyrights maxwidth grid">
+		<div class="copytext col6">
+			<p id="copy">
+				<!--noindex--><a href="http://mso.soict.hust.edu.vn/" rel="nofollow">MSOLab</a><!--/noindex--> &copy; 2026				<br/>
+				<span class="copyright-text">SoICT Modelling, Simulation and Optimization Lab</span>
+			</p>
+		</div>
+
+		<div class="themeby col6 tr">
+			
+						<div class="footer-counter"></div>
+		</div>
+	</div>
+    	
+</footer>
+
+
+</div> 
+<!-- .wrapper -->
+
+<a id="toTop">&#10148;</a>
+
+<link rel='stylesheet' id='metaslider-flex-slider-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/ml-slider/assets/sliders/flexslider/flexslider.css?ver=3.6.7' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='metaslider-public-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/ml-slider/assets/metaslider/public.css?ver=3.6.7' type='text/css' media='all' property='stylesheet' />
+<link rel='stylesheet' id='tp_template_2016-css' href='http://mso.soict.hust.edu.vn/wp-content/plugins/teachpress/templates/tp_template_2016.css?ver=6.2.15' type='text/css' media='all' />
+<script type='text/javascript' id='mediaelement-core-js-before'>
+var mejsL10n = {"language":"en","strings":{"mejs.download-file":"Download File","mejs.install-flash":"You are using a browser that does not have Flash player enabled or installed. Please turn on your Flash player plugin or download the latest version from https:\/\/get.adobe.com\/flashplayer\/","mejs.fullscreen":"Fullscreen","mejs.play":"Play","mejs.pause":"Pause","mejs.time-slider":"Time Slider","mejs.time-help-text":"Use Left\/Right Arrow keys to advance one second, Up\/Down arrows to advance ten seconds.","mejs.live-broadcast":"Live Broadcast","mejs.volume-help-text":"Use Up\/Down Arrow keys to increase or decrease volume.","mejs.unmute":"Unmute","mejs.mute":"Mute","mejs.volume-slider":"Volume Slider","mejs.video-player":"Video Player","mejs.audio-player":"Audio Player","mejs.captions-subtitles":"Captions\/Subtitles","mejs.captions-chapters":"Chapters","mejs.none":"None","mejs.afrikaans":"Afrikaans","mejs.albanian":"Albanian","mejs.arabic":"Arabic","mejs.belarusian":"Belarusian","mejs.bulgarian":"Bulgarian","mejs.catalan":"Catalan","mejs.chinese":"Chinese","mejs.chinese-simplified":"Chinese (Simplified)","mejs.chinese-traditional":"Chinese (Traditional)","mejs.croatian":"Croatian","mejs.czech":"Czech","mejs.danish":"Danish","mejs.dutch":"Dutch","mejs.english":"English","mejs.estonian":"Estonian","mejs.filipino":"Filipino","mejs.finnish":"Finnish","mejs.french":"French","mejs.galician":"Galician","mejs.german":"German","mejs.greek":"Greek","mejs.haitian-creole":"Haitian Creole","mejs.hebrew":"Hebrew","mejs.hindi":"Hindi","mejs.hungarian":"Hungarian","mejs.icelandic":"Icelandic","mejs.indonesian":"Indonesian","mejs.irish":"Irish","mejs.italian":"Italian","mejs.japanese":"Japanese","mejs.korean":"Korean","mejs.latvian":"Latvian","mejs.lithuanian":"Lithuanian","mejs.macedonian":"Macedonian","mejs.malay":"Malay","mejs.maltese":"Maltese","mejs.norwegian":"Norwegian","mejs.persian":"Persian","mejs.polish":"Polish","mejs.portuguese":"Portuguese","mejs.romanian":"Romanian","mejs.russian":"Russian","mejs.serbian":"Serbian","mejs.slovak":"Slovak","mejs.slovenian":"Slovenian","mejs.spanish":"Spanish","mejs.swahili":"Swahili","mejs.swedish":"Swedish","mejs.tagalog":"Tagalog","mejs.thai":"Thai","mejs.turkish":"Turkish","mejs.ukrainian":"Ukrainian","mejs.vietnamese":"Vietnamese","mejs.welsh":"Welsh","mejs.yiddish":"Yiddish"}};
+</script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=4.2.17' id='mediaelement-core-js'></script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-includes/js/mediaelement/mediaelement-migrate.min.js?ver=6.2.15' id='mediaelement-migrate-js'></script>
+<script type='text/javascript' id='mediaelement-js-extra'>
+/* <![CDATA[ */
+var _wpmejsSettings = {"pluginPath":"\/wp-includes\/js\/mediaelement\/","classPrefix":"mejs-","stretching":"responsive","audioShortcodeLibrary":"mediaelement","videoShortcodeLibrary":"mediaelement"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-includes/js/mediaelement/wp-mediaelement.min.js?ver=6.2.15' id='wp-mediaelement-js'></script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-includes/js/imagesloaded.min.js?ver=4.1.4' id='imagesloaded-js'></script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-includes/js/masonry.min.js?ver=4.2.2' id='masonry-js'></script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-includes/js/jquery/jquery.masonry.min.js?ver=3.1.2b' id='jquery-masonry-js'></script>
+<script type='text/javascript' id='dslc-main-js-js-extra'>
+/* <![CDATA[ */
+var DSLCAjax = {"ajaxurl":"http:\/\/mso.soict.hust.edu.vn\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-content/plugins/live-composer-page-builder/js/frontend/main.js?ver=1.3.9' id='dslc-main-js-js'></script>
+<!--[if lt IE 9]>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-content/themes/basic/js/html5shiv.min.js?ver=3.7.3' id='basic-html5shiv-js'></script>
+<![endif]-->
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-content/themes/basic/js/functions.js?ver=1' id='basic-scripts-js'></script>
+<script type='text/javascript' src='http://mso.soict.hust.edu.vn/wp-content/plugins/ml-slider/assets/sliders/flexslider/jquery.flexslider.min.js?ver=3.6.7' id='metaslider-flex-slider-js'></script>
+<script type='text/javascript' id='metaslider-flex-slider-js-after'>
+var metaslider_85 = function($) {
+            $('#metaslider_85').addClass('flexslider'); // theme/plugin conflict avoidance
+            $('#metaslider_85').flexslider({ 
+                slideshowSpeed:3000,
+                animation:"fade",
+                controlNav:false,
+                directionNav:true,
+                pauseOnHover:true,
+                direction:"horizontal",
+                reverse:false,
+                animationSpeed:600,
+                prevText:"&lt;",
+                nextText:"&gt;",
+                slideshow:true
+            });
+        };
+        var timer_metaslider_85 = function() {
+            var slider = !window.jQuery ? window.setTimeout(timer_metaslider_85, 100) : !jQuery.isReady ? window.setTimeout(timer_metaslider_85, 1) : metaslider_85(window.jQuery);
+        };
+        timer_metaslider_85();
+</script>
+
+</body>
+</html>

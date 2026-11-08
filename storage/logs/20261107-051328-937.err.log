@@ -1,0 +1,802 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/C:/Users/mimmim-mi/Downloads/hust-search-engine/crawler-module/target/crawler-module-1.0-SNAPSHOT.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+http://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://paymentichst.hust.edu.vn/author : HttpConnectTimeoutException: HTTP connect timed out
+http://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://lab.soict.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://xacnhannhaphoc.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T05:29:54.514463100Z
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T05:29:54.664378900Z
+https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/L%E1%BB%8Bch%20h%E1%BB%8Dc%20-%20l%E1%BB%8Bch%20thi/Lich%20thi%20giua%20ky%20ET3310-20162.pdf : IOException: HTTP 404
+http://ts.hust.edu.vn/tin-tuc/thong-bao-tuyen-sinh-trinh-do-ky-su-chuyen-sau-nam-2026 : Origin cooldown until 2026-11-07T05:35:43.972Z
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=1&wantsurl=%2F&sesskey=CRrqlqj5xm : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=48 : IOException: HTTP 404
+http://fami.hust.edu.vn/dao-tao/dao-tao-dai-hoc/ : HttpTimeoutException: request timed out
+http://fed.hust.edu.vn/vi/bo-mon/bo-mon-su-pham-cac-nganh-ky-thuat/pgs-ts-pham-thi-thanh-hai-293944.html : IOException: HTTP/1.1 header parser received no bytes
+https://apcat.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://fami.hust.edu.vn/don-vi/khoa-hoc-du-lieu-va-ung-dung/gioi-thieu/ : HttpTimeoutException: request timed out
+https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/L%E1%BB%8Bch%20h%E1%BB%8Dc%20-%20l%E1%BB%8Bch%20thi/Lich%20thi%20giua%20ky%20K%E1%BB%B9%20thu%E1%BA%ADt%20nhi%E1%BB%87t-20162.pdf : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=2&wantsurl=%2F&sesskey=CRrqlqj5xm : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=41 : IOException: HTTP 404
+http://fami.hust.edu.vn/tuyen-sinh/faq/ : HttpTimeoutException: request timed out
+https://apcat.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://bkcs.hust.edu.vn/resources : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/L%E1%BB%8Bch%20h%E1%BB%8Dc%20-%20l%E1%BB%8Bch%20thi/Lich%20thi%20giua%20ky%20FL3220-FL3230%20-20162.pdf : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=42 : IOException: HTTP 404
+http://www.bulletin.hust.edu.vn/ : ConnectException: null
+https://asgc9.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://exam.soict.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/L%E1%BB%8Bch%20h%E1%BB%8Dc%20-%20l%E1%BB%8Bch%20thi/Lich%20thi%20giua%20ky%20Giai%20tich%202-3-20162.pdf : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=1&wantsurl=%2F&sesskey=DTFfhO8HhY : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=43 : IOException: HTTP 404
+https://asgc9.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://exam.soict.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/L%E1%BB%8Bch%20h%E1%BB%8Dc%20-%20l%E1%BB%8Bch%20thi/Lich%20thi%20giua%20ky%20%C4%90TVT-20162.pdf : IOException: HTTP 404
+https://giving.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=2&wantsurl=%2F&sesskey=DTFfhO8HhY : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=44 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/L%E1%BB%8Bch%20h%E1%BB%8Dc%20-%20l%E1%BB%8Bch%20thi/Lich%20thi%20giua%20ky%20Ngoai%20ngu-20162.pdf : IOException: HTTP 404
+https://alumni.hust.edu.vn/ : ConnectException: null
+http://alumni.hust.edu.vn/ : ConnectException: null
+https://nct.soict.hust.edu.vn/?feed=comments-rss2 : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=45 : IOException: HTTP 404
+https://bkcs.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://ctt.hust.edu.vn/DisplayWeb/DisplayMenu?menu=13 : IOException: HTTP 500
+https://exam.soict.hust.edu.vn/auth/oauth2/login.php?id=7&wantsurl=%2F&sesskey=xamKR14MU5 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/L%E1%BB%8Bch%20h%E1%BB%8Dc%20-%20l%E1%BB%8Bch%20thi/Lich%20thi%20giua%20ky%20FL1100%20%20va%20FL1101.pdf : IOException: HTTP 404
+https://icpt.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://nct.soict.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=1&wantsurl=%2F&sesskey=aVbh4sF2tb : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=7 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/L%E1%BB%8Bch%20h%E1%BB%8Dc%20-%20l%E1%BB%8Bch%20thi/L%E1%BB%8Bch%20thi%20HK2A%20v%C3%A0%20gi%E1%BB%AFa%20k%E1%BB%B3%202.pdf : IOException: HTTP 404
+https://icpmat-icamt.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://nct.soict.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://nct.soict.hust.edu.vn/?feed=comments-rss2 : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=2&wantsurl=%2F&sesskey=aVbh4sF2tb : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=9 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=35598 : IOException: HTTP 404
+https://icamt2024.smse.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://nct.soict.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=53 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=35482 : IOException: HTTP 404
+https://ichst.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://nct.soict.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=11 : IOException: HTTP 404
+http://fami.hust.edu.vn/tuyen-sinh/gioi-thieu-ve-vien-va-chuyen-nganh-toan-tin/ : IOException: HTTP 404
+http://ichst.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=35451 : IOException: HTTP 404
+https://icpt.hust.edu.vn/sitemap-en.videoclips.xml : IOException: HTTP 404
+https://users.soict.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=12 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=23045 : IOException: HTTP 404
+https://users.soict.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=13 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=26202 : IOException: HTTP 404
+https://seee.hust.edu.vn/vi/sinh-vien/thu-tuc/ : IOException: HTTP 404
+http://ineep.hust.edu.vn/images/vanban/Quyet%20dinh%20thanh%20lap%20Vien%20KTHN-VLMT%20==%20BO%20GDDT%20ky==4-4-2008.pdf : ConnectException: null
+http://hust.edu.vn/web/vi/phong-to-chuc-can-bo : IOException: HTTP/1.1 header parser received no bytes
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=54 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=10149 : IOException: HTTP 404
+https://scls.hust.edu.vn/vi/news/tuyen-dung-hoc-bong/ : HttpTimeoutException: request timed out
+https://seee.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://gdqp.hust.edu.vn/home : HttpConnectTimeoutException: HTTP connect timed out
+http://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mse.hust.edu.vn/ : ConnectException: null
+http://smse.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://sme.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://scls.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=15 : IOException: HTTP 404
+https://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://eflow.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://en.hust.edu.vn/home : ConnectException: null
+https://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://libopac.hust.edu.vn/iii/cas/login?service=https%3A%2F%2Flibopac.hust.edu.vn%3A443%2Fpatroninfo~S1*vie%2F0%2Fredirect%3D%2Fwamvalidate%3Furl%3Dhttps%253A%252F%252F0-ebookcentral-proquest-com.libopac.hust.edu.vn%253A443%252Flib%252Fhustvn-ebooks%252Fhome.actionIIITICKET&lang=vie&scope=1 : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://set.hust.edu.vn/le-thi-lan : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching set.hust.edu.vn found.
+http://set.hust.edu.vn/le-thi-lan : IOException: HTTP 404
+https://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://libopac.hust.edu.vn/ : Origin cooldown until 2026-11-07T06:06:57.826Z
+https://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://ts.hust.edu.vn/tin-tuc/thong-bao-tuyen-sinh-trinh-do-thac-si-nam-2026 : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://www.hust.edu.vn/vi/about/thong-diep-cua-giam-doc-dai-hoc.html : ConnectException: null
+https://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://www.hust.edu.vn/vi/dao-tao/ky-su/chuong-trinh-dao-tao-ky-su-chuyen-sau-dac-thu-cua-truong-dai-hoc-bach-khoa-ha-noi-2.html : ConnectException: null
+http://xacnhannhaphoc.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T05:53:53.560251100Z
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T05:53:53.786164700Z
+http://ts.hust.edu.vn/ : Origin cooldown until 2026-11-07T06:08:35.532Z
+https://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://api.b4e.fintech.hust.edu.vn/ : IOException: HTTP 404
+http://b4e.fintech.hust.edu.vn/ : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=20182 : IOException: HTTP 404
+http://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://crdlab.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://en.hust.edu.vn/documents/112004/593970/Brochure+HUST+preview.pdf/da15ebde-ac76-44e4-b4b9-ec2d836a02f2 : ConnectException: null
+http://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://paymentichst.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://paymentichst.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://lab.soict.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://lkdtlt.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://seee.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://hust.edu.vn/phong-khoa-hoc-cong-nghe : IOException: HTTP/1.1 header parser received no bytes
+http://ctt-daotao.hust.edu.vn/Upload/DTDH/files/Quy%20%C4%91%E1%BB%8Bnh%20-%20Quy%20ch%E1%BA%BF/Q%C4%90%20128-%C4%90HBK-%C4%90T%C4%90H.PDF : IllegalArgumentException: Illegal character in path at index 52: https://ctt-daotao.hust.edu.vn/Upload/DTDH/files/Quy Ä?á»?nh - Quy cháº¿/QÄ? 128-Ä?HBK-Ä?TÄ?H.PDF
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25085 : IOException: HTTP 404
+http://demobktex.hust.edu.vn/sitemap.xml : ConnectException: null
+https://sheer.hust.edu.vn/web/vien-det-may/asset-page/-/asset_publisher/uWusSxFI19Zx/content/khoa-ao-tao-meti-ve-tang-cuong-nang-luc-thiet-ket-thoi-tra-1 : ConnectException: null
+http://sheer.hust.edu.vn/web/vien-det-may/asset-page/-/asset_publisher/uWusSxFI19Zx/content/khoa-ao-tao-meti-ve-tang-cuong-nang-luc-thiet-ket-thoi-tra-1 : ConnectException: null
+http://fami.hust.edu.vn/co-van-hoc-tap/danh-muc-hoc-phan/danh-muc-hoc-phan-cho-cac-khoa-truoc-k62/ : HttpTimeoutException: request timed out
+https://bke.hust.edu.vn/category/hoat-dong-cua-trung-tam/ : IOException: HTTP 500
+http://sis.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25073 : IOException: HTTP 404
+https://mmms.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://xacnhannhaphoc.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T06:09:51.228196100Z
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T06:09:51.494005700Z
+http://sami.hust.edu.vn/tin-tuc-dao-tao/gioi-thieu-chuyen-nganh-dao-tao-toan-tin-2/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sis.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25069 : IOException: HTTP 404
+https://icef.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://mmms.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://research.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://hust.edu.vn/web/vi/phong-tuyen-sinh : IOException: HTTP/1.1 header parser received no bytes
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=25065 : IOException: HTTP 404
+https://icef.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://0-ebookcentral-proquest-com.libopac.hust.edu.vn/lib/hustvn-ebooks/detail.action?docID=31501740&query=%2522mechanics%2520of%2520materials%2522 : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://research.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=95 : IOException: HTTP 404
+https://ctt.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=41 : IOException: HTTP 404
+https://ctt.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://fami.hust.edu.vn/dao-tao/dao-tao-dai-hoc/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sdh.hust.edu.vn/Default.aspx?scid=23&CategoryID=131 : HttpConnectTimeoutException: HTTP connect timed out
+http://sdh.hust.edu.vn/Default.aspx?scid=23&CategoryID=131 : Origin cooldown until 2026-11-07T06:32:42.582Z
+https://icech.hust.edu.vn/category/show/id/1 : IOException: HTTP 404
+http://sdh.hust.edu.vn/ : Origin cooldown until 2026-11-07T06:32:42.582Z
+https://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://eflow.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://libopac.hust.edu.vn/iii/cas/login?service=https%3A%2F%2Flibopac.hust.edu.vn%3A443%2Fpatroninfo~S1*vie%2F0%2Fredirect%3D%2Fwamvalidate%3Furl%3Dhttps%253A%252F%252F0-portal-igpublish-com.libopac.hust.edu.vn%253A443%252FIIITICKET&lang=vie&scope=1 : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+http://libopac.hust.edu.vn/ : Origin cooldown until 2026-11-07T06:37:10.962Z
+https://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://set.hust.edu.vn/ta-thi-kim-hue : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching set.hust.edu.vn found.
+http://set.hust.edu.vn/ta-thi-kim-hue : IOException: HTTP 404
+https://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://ts.hust.edu.vn/tin-tuc/thong-bao-tuyen-sinh-trinh-do-tien-si-nam-2026 : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://www.hust.edu.vn/vi/co-cau-to-chuc-bai-viet/bch-dang-bo-dai-hoc.html : ConnectException: null
+https://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://www.hust.edu.vn/web/vi/phong-hanh-chinh-tong-hop : ConnectException: null
+http://ts.hust.edu.vn/ : Origin cooldown until 2026-11-07T06:38:44.374Z
+https://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://apcat.hust.edu.vn/?p=78 : HttpConnectTimeoutException: HTTP connect timed out
+https://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://crdlab.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://paymentichst.hust.edu.vn/author : HttpConnectTimeoutException: HTTP connect timed out
+http://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://paymentichst.hust.edu.vn/author : HttpConnectTimeoutException: HTTP connect timed out
+http://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://lab.soict.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://xacnhannhaphoc.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T06:35:15.845911100Z
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T06:35:15.974460600Z
+https://sep2.hust.edu.vn/c/document_library/get_file?uuid=40572264-a09b-4ca5-b892-705199fcd253&groupId=3468190 : HttpConnectTimeoutException: HTTP connect timed out
+http://sep2.hust.edu.vn/c/document_library/get_file?uuid=40572264-a09b-4ca5-b892-705199fcd253&groupId=3468190 : HttpConnectTimeoutException: HTTP connect timed out
+http://libopac.hust.edu.vn/iii/cas/login?service=https%3A%2F%2Flibopac.hust.edu.vn%3A443%2Fpatroninfo~S1*vie%2F0%2Fredirect%3D%2Fwamvalidate%3Furl%3Dhttps%253A%252F%252F0-portal-igpublish-com.libopac.hust.edu.vn%253A443%252FIIITICKET&lang=vie&scope=1 : Origin cooldown until 2026-11-07T06:37:10.962Z
+https://cdt.hust.edu.vn/vi/khoa-trung-tam/ : IOException: HTTP 404
+http://ts.hust.edu.vn/tin-tuc/thong-bao-tuyen-sinh-trinh-do-tien-si-nam-2026 : Origin cooldown until 2026-11-07T06:38:44.374Z
+https://demoicea.hust.edu.vn/ : ConnectException: null
+http://demoicea.hust.edu.vn/ : ConnectException: null
+http://is.hust.edu.vn/~haipv/AI/vietnamese/ : ConnectException: null
+https://bksports.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://library.hust.edu.vn/%C2%A0 : IOException: HTTP 404
+http://apcat.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://seee.hust.edu.vn/en/sinh-vien/thu-tuc/ : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=36974 : IOException: HTTP 404
+https://0-ieeexplore-ieee-org.libopac.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+http://apcat.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=1&wantsurl=%2F&sesskey=fdantEQLvH : IOException: HTTP 404
+http://sdh.hust.edu.vn/home/default.aspx?scid=77 : Origin cooldown until 2026-11-07T06:32:42.582Z
+https://cdt.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://bme.hust.edu.vn/google.com.vn : IOException: HTTP 404
+https://fintech.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=2&wantsurl=%2F&sesskey=fdantEQLvH : IOException: HTTP 404
+http://mmms.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://seee.hust.edu.vn/nvson : IOException: HTTP 404
+https://svbk.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://users.soict.hust.edu.vn/vannk/Algorithms/Algo.htm : IOException: HTTP 404
+http://sep.hust.edu.vn/hust.edu.vn : IOException: HTTP 404
+https://bme.hust.edu.vn/about-us : IOException: HTTP 404
+https://fintech.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://scls.hust.edu.vn/vi/download/Chuong-trinh-dao-tao/Hoa-hoc-Chuong-trinh-cu-nhan-thac-si.html : IOException: HTTP/1.1 header parser received no bytes
+http://mmms.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+http://sep.hust.edu.vn/www.iop.vast.ac.vn : IOException: HTTP 404
+http://sami.hust.edu.vn/tuyen-sinh/gioi-thieu-tuyen-sinh/ : HttpConnectTimeoutException: HTTP connect timed out
+http://gdqp.hust.edu.vn/home : HttpConnectTimeoutException: HTTP connect timed out
+http://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=1&wantsurl=%2F&sesskey=V56qHzb8ym : IOException: HTTP 404
+https://scls.hust.edu.vn/vi/dao-tao/ky-thuat-thuc-pham/ : HttpTimeoutException: request timed out
+https://bke.hust.edu.vn/sitemap_index.xml : IOException: HTTP 500
+https://seee.hust.edu.vn/bmktdthcn/-/asset_publisher/nZBn3WmVshGB/content/16-ts-le-minh-thuy?inheritRedirect=false : IOException: HTTP 404
+https://cdt.hust.edu.vn/en/nvalbums/ : IOException: HTTP 404
+http://bme.hust.edu.vn/author/ : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=2&wantsurl=%2F&sesskey=V56qHzb8ym : IOException: HTTP 404
+https://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://eflow.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://libopac.hust.edu.vn/iii/cas/login?service=https%3A%2F%2Flibopac.hust.edu.vn%3A443%2Fpatroninfo~S1*vie%2F0%2Fredirect%3D%2Fwamvalidate%3Furl%3Dhttps%253A%252F%252F0-journals-sagepub-com.libopac.hust.edu.vn%253A443%252FIIITICKET&lang=vie&scope=1 : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://set.hust.edu.vn/nguyen-duc-minh : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching set.hust.edu.vn found.
+http://set.hust.edu.vn/nguyen-duc-minh : IOException: HTTP 404
+https://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://ts.hust.edu.vn/tin-tuc/huong-dan-tra-cuu : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://www.hust.edu.vn/vi/co-cau-to-chuc-bai-viet/hoi-dong-dai-hoc.html : ConnectException: null
+https://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://www.hust.edu.vn/web/vi/phong-to-chuc-can-bo : ConnectException: null
+https://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://xacnhannhaphoc.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T06:56:21.335687Z
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T06:56:21.792530600Z
+http://libopac.hust.edu.vn/ : Origin cooldown until 2026-11-07T07:08:45.489Z
+http://ts.hust.edu.vn/ : Origin cooldown until 2026-11-07T07:10:21.250Z
+http://sdh.hust.edu.vn/Default.aspx?scid=23&CategoryID=131 : IOException: HTTP 500
+http://scls.hust.edu.vn/vi/download/Chuong-trinh-dao-tao/QLTNMT-Cu-nhan-Ky-su-Bac-7.html : IOException: HTTP/1.1 header parser received no bytes
+https://seee.hust.edu.vn/asset-page/-/asset_publisher/3YpEUUuUWBB6/content/02-pgs-ts-nguyen-quoc-cuong?inheritRedirect=false : IOException: HTTP 404
+https://seee.hust.edu.vn/nguyenkientrung : IOException: HTTP 404
+https://users.soict.hust.edu.vn/vannk/AntoanThongtin/VanNK-%20Thong%20tin%20Dinh%20huong%20Detai%20DATN%20K50.pdf : IOException: HTTP 404
+https://asiaccs2025.hust.edu.vn/sitemap_index.xml : IOException: HTTP 500
+https://seee.hust.edu.vn/asset-page/-/asset_publisher/3YpEUUuUWBB6/content/vo-duy-thanh?inheritRedirect=false : IOException: HTTP 404
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=1&wantsurl=%2F&sesskey=W5g02RVRsc : IOException: HTTP 404
+https://seee.hust.edu.vn/bmktdthcn/-/asset_publisher/nZBn3WmVshGB/content/05-pgs-ts-hoang-sy-hong?inheritRedirect=false : IOException: HTTP 404
+http://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://crdlab.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://paymentichst.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://paymentichst.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://lab.soict.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://fami.hust.edu.vn/su-kien/ : IOException: HTTP 500
+https://srl-fed.hust.edu.vn/auth/oauth2/login.php?id=2&wantsurl=%2F&sesskey=W5g02RVRsc : IOException: HTTP 404
+https://sep2.hust.edu.vn/c/document_library/get_file?uuid=40572264-a09b-4ca5-b892-705199fcd253&groupId=3468190 : HttpConnectTimeoutException: HTTP connect timed out
+http://sep2.hust.edu.vn/c/document_library/get_file?uuid=40572264-a09b-4ca5-b892-705199fcd253&groupId=3468190 : HttpConnectTimeoutException: HTTP connect timed out
+http://xacnhannhaphoc.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T07:11:22.238769100Z
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T07:11:22.433286900Z
+http://fami.hust.edu.vn/co-van-hoc-tap/lich-truc-cua-ban-co-van/ : IOException: HTTP 404
+https://fintech.hust.edu.vn/assets/doc/CanEbook_VIETNAM%20DIGITAL%20ECONOMY%20REVIEW%202025.v3.2.pdf : IOException: Stream 3 cancelled
+http://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://act.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://sofl.hust.edu.vn/tin-tuc : IOException: HTTP 404
+http://sep.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://srn.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://bme.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://library.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://srn.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://library.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://seee.hust.edu.vn/vi/con-nguoi/can-bo/ : IOException: HTTP 403
+https://icea.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://fed.hust.edu.vn/vi/tuyen-sinh/thong-tin-tuyen-sinh/thong-tin-tuyen-sinh-182196.html : IOException: HTTP 404
+http://sep.hust.edu.vn/en/educate : IOException: HTTP 404
+https://fpt.hust.edu.vn/vi/news/giang-day/nghien-cuu-224610.html : IOException: HTTP 404
+http://sami.hust.edu.vn/tin-tuc-dao-tao/gioi-thieu-chuyen-nganh-dao-tao-toan-tin-2/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://eflow.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://iep.hust.edu.vn/index.php?option=com_content&view=article&id=578&Itemid=76&lang=vi : HttpConnectTimeoutException: HTTP connect timed out
+https://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://libopac.hust.edu.vn/iii/cas/login?service=https%3A%2F%2Flibopac.hust.edu.vn%3A443%2Fpatroninfo~S1*vie%2F0%2Fredirect%3D%2Fwamvalidate%3Furl%3Dhttps%253A%252F%252F0-www-proquest-com.libopac.hust.edu.vn%253A443%252FIIITICKET&lang=vie&scope=1 : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+http://libopac.hust.edu.vn/ : Origin cooldown until 2026-11-07T07:38:55.394Z
+https://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://set.hust.edu.vn/pham-nguyen-thanh-loan : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching set.hust.edu.vn found.
+https://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://ts.hust.edu.vn/training-cate/nganh-dao-tao-dai-hoc : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+http://ts.hust.edu.vn/ : Origin cooldown until 2026-11-07T07:40:29.328Z
+https://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://www.hust.edu.vn/vi/co-cau-to-chuc-bai-viet/ban-giam-doc-dai-hoc.html : ConnectException: null
+https://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://www.hust.edu.vn/web/vi/phong-dao-tao-dai-hoc : ConnectException: null
+http://set.hust.edu.vn/pham-nguyen-thanh-loan : IOException: HTTP 404
+http://bme.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://iep.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://dce.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching dce.hust.edu.vn found.
+http://dce.hust.edu.vn/ : IOException: HTTP 403
+https://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://crdlab.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://paymentichst.hust.edu.vn/author : HttpConnectTimeoutException: HTTP connect timed out
+http://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://paymentichst.hust.edu.vn/author : HttpConnectTimeoutException: HTTP connect timed out
+http://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://lab.soict.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sep2.hust.edu.vn/c/document_library/get_file?uuid=40572264-a09b-4ca5-b892-705199fcd253&groupId=3468190 : HttpConnectTimeoutException: HTTP connect timed out
+http://sep2.hust.edu.vn/c/document_library/get_file?uuid=40572264-a09b-4ca5-b892-705199fcd253&groupId=3468190 : HttpConnectTimeoutException: HTTP connect timed out
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T09:41:01.861922500Z
+http://gdqp.hust.edu.vn/home : HttpConnectTimeoutException: HTTP connect timed out
+http://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://eflow.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://iep.hust.edu.vn/index.php?option=com_content&view=article&id=579&Itemid=76&lang=vi : HttpConnectTimeoutException: HTTP connect timed out
+https://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://libopac.hust.edu.vn/iii/cas/login?service=https%3A%2F%2Flibopac.hust.edu.vn%3A443%2Fpatroninfo~S1*vie%2F0%2Fredirect%3D%2Fwamvalidate%3Furl%3Dhttps%253A%252F%252F0-www-proquest-com.libopac.hust.edu.vn%253A443%252FIIITICKET&lang=vie&scope=1 : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://set.hust.edu.vn/nguyen-vu-thang : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching set.hust.edu.vn found.
+https://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://ts.hust.edu.vn/p/hoi-dap : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+http://ts.hust.edu.vn/training-cate/nganh-dao-tao-dai-hoc : Origin cooldown until 2026-11-07T10:01:40.264Z
+https://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://www.hust.edu.vn/vi/tuyen-sinh/dai-hoc/thong-tin-tuyen-sinh-dai-hoc-chinh-quy-nam-2023-651872.html : ConnectException: null
+https://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://www.hust.edu.vn/phong-khoa-hoc-cong-nghe : ConnectException: null
+http://set.hust.edu.vn/nguyen-vu-thang : IOException: HTTP 404
+https://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://iep.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sheer.hust.edu.vn/ : ConnectException: null
+http://sheer.hust.edu.vn/ : ConnectException: null
+http://ineep.hust.edu.vn/ : ConnectException: null
+https://sme.hust.edu.vn/vi/nghien-cuu/nghien-cuu-sme/san-pham-nghien-cuu-17.html : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/Upload/SDH/files/ChuongtrinhdaotaoNCS/2018/9440103%20Vat%20ly%20LT%20-%20Vat%20ly%20Toan.pdf : IOException: HTTP 404
+https://sofl.hust.edu.vn/web/vien-ngoai-ngu/cuu-sinh-vien : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/Upload/SDH/files/ChuongtrinhdaotaoNCS/2018/9440104%20Vat%20ly%20chat%20ran.pdf : IOException: HTTP 404
+https://fed.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://0-www-accessengineeringlibrary-com.libopac.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://0-www-accessscience-com.libopac.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://ctt-daotao.hust.edu.vn/Upload/SDH/files/ChuongtrinhdaotaoNCS/2018/9520401%20Vat%20ly%20ky%20thuat.pdf : IOException: HTTP 404
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T09:56:02.552526900Z
+http://bme.hust.edu.vn/google.com.vn : IOException: HTTP 404
+https://fpt.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://research.hust.edu.vn/seee/seee/tin-tuc/truong-dien-dien-tu-dhbk-ha-noi-ky-thoa-thuan-hop-tac-toan-dien-voi-tong-cong-ty-dien-luc-ha-noi-postARVDpXOw02U721Aey0wv : IOException: HTTP 404
+http://bme.hust.edu.vn/about-us : IOException: HTTP 404
+https://sofl.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://sdh.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://is.hust.edu.vn/~haipv/AI/english/ : ConnectException: null
+https://sdh.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://fed.hust.edu.vn/en/nvalbums/ : IOException: HTTP 404
+http://sami.hust.edu.vn/gioi-thieu-chung-2/ : HttpConnectTimeoutException: HTTP connect timed out
+https://qldt.hust.edu.vn/students/news/quy-che-tuyen-sinh-dai-hoc-nam-2024-post-nqamDJYm70U9JNoaVMYV : HttpTimeoutException: request timed out
+https://fpt.hust.edu.vn/sitemap-vi.videoclips.xml : IOException: HTTP 404
+https://iet.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://seee.hust.edu.vn/vi/dao-tao/hoc-phan/ : IOException: HTTP 403
+https://cdt.hust.edu.vn/en/academics/master-s-training/material-engineering-doctorate-program-11.html : IOException: HTTP 404
+https://exam.soict.hust.edu.vn/auth/oauth2/login.php?id=7&wantsurl=%2F&sesskey=0aZK91HKRD : IOException: HTTP 404
+https://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://crdlab.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://paymentichst.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam.soict.hust.edu.vn/auth/oauth2/login.php?id=7&wantsurl=%2F&sesskey=WxaRafkps3 : IOException: HTTP 404
+http://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://paymentichst.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://lab.soict.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sep2.hust.edu.vn/c/document_library/get_file?uuid=40572264-a09b-4ca5-b892-705199fcd253&groupId=3468190 : HttpConnectTimeoutException: HTTP connect timed out
+http://sep2.hust.edu.vn/c/document_library/get_file?uuid=40572264-a09b-4ca5-b892-705199fcd253&groupId=3468190 : HttpConnectTimeoutException: HTTP connect timed out
+http://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdqp.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://gdtc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://library.hust.edu.vn/vi/node/49 : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://eflow.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://iep.hust.edu.vn/index.php?option=com_content&view=article&id=580&Itemid=76&lang=vi : HttpConnectTimeoutException: HTTP connect timed out
+https://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://libopac.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://set.hust.edu.vn/nguyen-van-duc : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching set.hust.edu.vn found.
+https://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://steam.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://testcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://toolcanvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://ts.hust.edu.vn/b/xet-tuyen-tai-nang : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://www.hust.edu.vn/vi/tuyen-sinh/nganh-tuyen-sinh/nganh-tuyen-sinh-dai-hoc-nam-2022-651865.html : ConnectException: null
+https://zabbix.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://www.hust.edu.vn/web/vi/phong-ke-hoach-tai-vu : ConnectException: null
+https://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://iep.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://ts.hust.edu.vn/training-cate/nganh-dao-tao-dai-hoc : Origin cooldown until 2026-11-07T10:37:12.767Z
+http://xttn.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T10:23:07.645682100Z
+http://set.hust.edu.vn/nguyen-van-duc : IOException: HTTP 404
+https://exam.soict.hust.edu.vn/auth/oauth2/login.php?id=7&wantsurl=%2F&sesskey=AWtbzjC3C1 : IOException: HTTP 404
+https://exam.soict.hust.edu.vn/auth/oauth2/login.php?id=7&wantsurl=%2F&sesskey=zQaVkY8DxD : HttpConnectTimeoutException: HTTP connect timed out
+http://exam.soict.hust.edu.vn/auth/oauth2/login.php?id=7&wantsurl=%2F&sesskey=zQaVkY8DxD : Origin cooldown until 2026-11-07T10:42:25.237Z
+https://fpt.hust.edu.vn/sitemap-en.videoclips.xml : IOException: HTTP 404
+http://is.hust.edu.vn/ : ConnectException: null
+https://ds.soict.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching ds.soict.hust.edu.vn found.
+https://mso.soict.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching mso.soict.hust.edu.vn found.
+https://sme-dev.hust.edu.vn/ : IOException: HTTP 404
+http://demovmt.hust.edu.vn/sitemap.xml : ConnectException: null
+https://api-uat.giving.hust.edu.vn/ : IOException: HTTP 404
+https://api.giving.hust.edu.vn/ : IOException: HTTP 404
+https://autodiscover.hust.edu.vn/ : ConnectException: null
+https://baotri.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching baotri.hust.edu.vn found.
+https://bk-fund.hust.edu.vn/ : SSLHandshakeException: (access_denied) Received fatal alert: access_denied
+https://bkcontech.hust.edu.vn/ : ConnectException: null
+https://certificates.fintech.hust.edu.vn/ : SSLHandshakeException: (certificate_expired) PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+https://congdoan-meta.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://congdoan.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://crdlab.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://credentials-manager.bksign.hust.edu.vn/ : IOException: HTTP 404
+https://dtlt.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://ecotech.fintech.hust.edu.vn/ : SSLHandshakeException: (handshake_failure) Received fatal alert: handshake_failure
+https://en.bme.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://feed-exam.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching feed-exam.hust.edu.vn found.
+https://feed.hust.edu.vn/ : ConnectException: null
+https://file-server.bksign.hust.edu.vn/ : IOException: HTTP 404
+https://hosting.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching hosting.hust.edu.vn found.
+https://hust-marjon-project.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching hust-marjon-project.hust.edu.vn found.
+https://ihere.hust.edu.vn/ : ConnectException: null
+https://ithub.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching ithub.hust.edu.vn found.
+https://itims.hust.edu.vn/ : SSLHandshakeException: (certificate_expired) PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+https://lms-sme.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://lms.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://navis.hust.edu.vn/ : ConnectException: null
+https://nxbbk.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching nxbbk.hust.edu.vn found.
+https://office-seee.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching office-seee.hust.edu.vn found.
+https://pdf-signer.bksign.hust.edu.vn/ : IOException: HTTP 404
+https://sbft.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching sbft.hust.edu.vn found.
+https://sce.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching sce.hust.edu.vn found.
+https://signature-detection.hust.edu.vn/ : IOException: HTTP 404
+https://signature-processor.bksign.hust.edu.vn/ : IOException: HTTP 404
+https://sofl-marjon-project.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching sofl-marjon-project.hust.edu.vn found.
+https://sso.hust.edu.vn/ : IOException: HTTP 404
+https://ste.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching ste.hust.edu.vn found.
+https://tccb.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://totp.bksign.hust.edu.vn/ : IOException: HTTP 404
+https://tsnew.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://tuyendung.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://vtb-uat.giving.hust.edu.vn/ : IOException: HTTP 404
+https://vtb.giving.hust.edu.vn/ : IOException: HTTP 404
+https://www.soict.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching www.soict.hust.edu.vn found.
+https://xtdtlt.hust.edu.vn/ : SSLHandshakeException: Remote host terminated the handshake
+https://xttn.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) No subject alternative DNS name matching xttn.hust.edu.vn found.
+http://dlib.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://ihere.hust.edu.vn/ : ConnectException: null
+http://bkcontech.hust.edu.vn/ : ConnectException: null
+http://chemeng.hust.edu.vn/ : ConnectException: null
+https://lms-hub-api.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+http://certificates.fintech.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://eflow.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://feed-exam.hust.edu.vn/ : ConnectException: null
+http://feed.hust.edu.vn/ : ConnectException: null
+http://hst-2023.hust.edu.vn/ : ConnectException: null
+http://lms.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://cdt.hust.edu.vn/sitemap.xml : IOException: HTTP/1.1 header parser received no bytes
+http://lms-hub-api.hust.edu.vn/ : IOException: HTTP 404
+https://lab.soict.hust.edu.vn/ : SSLHandshakeException: (certificate_expired) PKIX path validation failed: java.security.cert.CertPathValidatorException: validity check failed
+http://svbk.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://iet.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+https://daotao.soict.hust.edu.vn/ : HTTP 503; retry after 2026-11-07T12:03:03.433455200Z
+https://0-www-sciencedirect-com.libopac.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://0-portal-igpublish-com.libopac.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://0-sti-vista-gov-vn.libopac.hust.edu.vn/Pages/Trang-chu.aspx : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+https://lms-hub-api-dev.hust.edu.vn/ : ConnectException: null
+http://lms-hub-api-dev.hust.edu.vn/ : ConnectException: null
+http://autodiscover.hust.edu.vn/ : Origin cooldown until 2026-11-07T12:15:52.169Z
+http://congdoan.hust.edu.vn/ : Origin cooldown until 2026-11-07T12:16:04.625Z
+http://congdoan-meta.hust.edu.vn/ : Origin cooldown until 2026-11-07T12:16:04.411Z
+https://www.dtlt.hust.edu.vn/ : ConnectException: null
+http://www.dtlt.hust.edu.vn/ : ConnectException: null
+http://ithub.hust.edu.vn/ : Origin cooldown until 2026-11-07T12:16:18.506Z
+http://lms-sme.hust.edu.vn/ : Origin cooldown until 2026-11-07T12:16:26.239Z
+http://congbao.hust.edu.vn/ : ConnectException: null
+http://icpt.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://tccb.hust.edu.vn/ : Origin cooldown until 2026-11-07T12:16:42.471Z
+http://tuyendung.hust.edu.vn/ : Origin cooldown until 2026-11-07T12:16:49.347Z
+http://navis.hust.edu.vn/index.php/en-people-2/en-representatives-2/65-prof-gustavo-belforte : ConnectException: null
+http://ichst-2023.hust.edu.vn/ : ConnectException: null
+http://fed.hust.edu.vn/sitemap.xml : IOException: HTTP/1.1 header parser received no bytes
+http://www.bulletin.hust.edu.vn/ : ConnectException: null
+https://alumni.hust.edu.vn/ : ConnectException: null
+http://alumni.hust.edu.vn/ : ConnectException: null
+http://mse.hust.edu.vn/ : ConnectException: null
+http://smse.hust.edu.vn/ : IOException: HTTP/1.1 header parser received no bytes
+http://sme.hust.edu.vn/vi/khoa-trung-tam/trung-tam-nghien-cuu-cong-nghe-han-va-ghep-noi/co-so-vat-chat-jwri-hust-uosaka-94.html : IOException: HTTP/1.1 header parser received no bytes
+https://en.hust.edu.vn/ : ConnectException: null
+http://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://en.hust.edu.vn/ : ConnectException: null
+http://demobktex.hust.edu.vn/sitemap.xml : ConnectException: null
+https://0-ebookcentral-proquest-com.libopac.hust.edu.vn/lib/hustvn-ebooks/home.action : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+http://hust.edu.vn/web/vi/phong-hanh-chinh-tong-hop : IOException: HTTP/1.1 header parser received no bytes
+https://dlib.hust.edu.vn/ : Repeated HTTP 403; host paused until 2026-11-07T17:48:57.589822200Z
+http://demoicea.hust.edu.vn/sitemap.xml : ConnectException: null
+http://scls.hust.edu.vn/sitemap.xml : IOException: HTTP/1.1 header parser received no bytes
+https://libopac.hust.edu.vn/ : SSLHandshakeException: (certificate_unknown) PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+http://sbft.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://sheer.hust.edu.vn/web/vien-det-may/asset-page/-/asset_publisher/uWusSxFI19Zx/content/khoa-ao-tao-meti-ve-tang-cuong-nang-luc-thiet-ket-thoi-tra-1 : ConnectException: null
+http://sheer.hust.edu.vn/web/vien-det-may/asset-page/-/asset_publisher/uWusSxFI19Zx/content/khoa-ao-tao-meti-ve-tang-cuong-nang-luc-thiet-ket-thoi-tra-1 : ConnectException: null
+http://sce.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://ineep.hust.edu.vn/images/vanban/Quyet%20dinh%20thanh%20lap%20Vien%20KTHN-VLMT%20==%20BO%20GDDT%20ky==4-4-2008.pdf : ConnectException: null
+http://ste.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://tsnew.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://asso.hust.edu.vn/ : IOException: HTTP 404
+http://nxbbk.hust.edu.vn/vi/ : IOException: HTTP 404
+https://tsdtlt.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://ctt-daotao.hust.edu.vn/DisplayWeb/DisplayMenu?menu=18 : IOException: HTTP 404
+https://ctt-daotao.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://congnghegiaoduc.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://quanlygiaoduc.hust.edu.vn/sitemap_index.xml : IOException: HTTP 404
+https://tsa.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+http://ctt-sis.hust.edu.vn/sitemap.xml : IOException: HTTP 404
+https://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out

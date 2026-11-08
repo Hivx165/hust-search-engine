@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Các nhóm chuyên môn - Lãnh đạo, văn phòng</title>
+        <link>https://fed.hust.edu.vn/vi/bo-mon/lanh-dao-van-phong/</link>
+        <atom:link href="https://fed.hust.edu.vn/vi/bo-mon/rss/lanh-dao-van-phong/" rel="self" />
+                <description>
+            <![CDATA[Khoa Khoa học & Công nghệ giáo dục - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Fri, 5 Jan 2024 15:01:43 GMT</pubDate>
+        <lastBuildDate>Fri, 5 Jan 2024 15:01:43 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Khoa Khoa học &amp; Công nghệ giáo dục]]>
+        </copyright>
+        <docs>https://fed.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://fed.hust.edu.vn/uploads/feed/logo-dhbk-1-02_130_191.png</url>
+            <title>Các nhóm chuyên môn - Lãnh đạo, văn phòng</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/lanh-dao-van-phong/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>PGS.TS. Phạm Thị Thanh Hải</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/pgs-ts-pham-thi-thanh-hai-293944.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293944]]>
+            </guid>
+            
+                        <pubDate>Fri, 5 Jan 2024 15:01:43 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Thư ngỏ của Viện trưởng nhân kỷ niệm 25 năm thành lập viện</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/lanh-dao-van-phong/thu-ngo-cua-vien-truong-nhan-ky-niem-25-nam-thanh-lap-vien-285770.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_285770]]>
+            </guid>
+            
+                        <pubDate>Thu, 15 Sep 2022 07:09:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/assets/feed/bo-mon/2022/09/285773.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>ThS. Hà Thị Lệ Hiền</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/lanh-dao-van-phong/ths-ha-thi-le-hien-183593.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_183593]]>
+            </guid>
+            
+                        <pubDate>Mon, 9 Mar 2020 16:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. Vũ Đình Minh</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/lanh-dao-van-phong/ts-vu-dinh-minh-181803.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_181803]]>
+            </guid>
+            
+                        <pubDate>Sun, 1 Mar 2020 15:03:51 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/assets/feed/bo-mon/journalimg/minhvd.png" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>PGS.TS. THÁI THẾ HÙNG</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/lanh-dao-van-phong/pgs-ts-thai-the-hung-181777.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_181777]]>
+            </guid>
+            
+                        <pubDate>Sun, 1 Mar 2020 15:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Technology Archives - AI4LIFE</title>
+	<atom:link href="https://ai4life.hust.edu.vn/category/technology/feed/" rel="self" type="application/rss+xml" />
+	<link>https://ai4life.hust.edu.vn/category/technology/</link>
+	<description>Institute for AI Innovation and Societal Impact (AI4LIFE)</description>
+	<lastBuildDate>Fri, 26 Jun 2026 04:15:27 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.4</generator>
+
+<image>
+	<url>https://ai4life.hust.edu.vn/wp-content/uploads/2024/11/512px.svg</url>
+	<title>Technology Archives - AI4LIFE</title>
+	<link>https://ai4life.hust.edu.vn/category/technology/</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>[AI4LIFE PUBLIC SEMINAR 06] MEET PROFESSOR MASASHI SUGIYAMA – A LEADING AI EXPERT FROM JAPAN  </title>
+		<link>https://ai4life.hust.edu.vn/2026/06/26/ai4life-public-seminar-06-meet-professor-masashi-sugiyama-a-leading-ai-expert-from-japan/</link>
+					<comments>https://ai4life.hust.edu.vn/2026/06/26/ai4life-public-seminar-06-meet-professor-masashi-sugiyama-a-leading-ai-expert-from-japan/#respond</comments>
+		
+		<dc:creator><![CDATA[My_ai4life]]></dc:creator>
+		<pubDate>Fri, 26 Jun 2026 04:15:25 +0000</pubDate>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[Japan]]></category>
+		<category><![CDATA[News & Events]]></category>
+		<category><![CDATA[Seminar]]></category>
+		<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://ai4life.hust.edu.vn/?p=5223</guid>
+
+					<description><![CDATA[<p>Cơ hội hiếm có dành cho cộng đồng nghiên cứu AI tại Hà Nội! Sắp tới đây, Viện Nghiên cứu và Ứng dụng Trí tuệ nhân tạo (AI4LIFE) rất vinh dự được đón tiếp&#160;Giáo sư Masashi Sugiyama&#160;&#8211; một trong những nhà khoa học uy tín nhất thế giới trong lĩnh vực Trí tuệ nhân tạo...</p>
+<p>The post <a href="https://ai4life.hust.edu.vn/2026/06/26/ai4life-public-seminar-06-meet-professor-masashi-sugiyama-a-leading-ai-expert-from-japan/">[AI4LIFE PUBLIC SEMINAR 06] MEET PROFESSOR MASASHI SUGIYAMA – A LEADING AI EXPERT FROM JAPAN  </a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">Cơ hội hiếm có dành cho cộng đồng nghiên cứu AI tại Hà Nội!</p><p class="wp-block-paragraph">Sắp tới đây, Viện Nghiên cứu và Ứng dụng Trí tuệ nhân tạo (AI4LIFE) rất vinh dự được đón tiếp&nbsp;Giáo sư Masashi Sugiyama&nbsp;&#8211; một trong những nhà khoa học uy tín nhất thế giới trong lĩnh vực Trí tuệ nhân tạo (<a href="https://scholar.google.com/citations?hl=en&amp;user=GkYIrlIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">https://scholar.google.com/citations?hl=en&amp;user=GkYIrlIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate</a>) .</p><p class="wp-block-paragraph">GS. Masashi Sugiyama hiện là Giám đốc Dự án Trí tuệ nhân tạo RIKEN (AIP) của chính phủ Nhật Bản và là Giáo sư tại Đại học Tokyo. Ông là tác giả của nhiều công trình nghiên cứu kinh điển và là diễn giả chính tại các hội nghị AI hàng đầu thế giới.<br>Giáo sư Sugiyama sẽ có bài nói chuyện và giao lưu học thuật tại Viện AI4LIFE, với thông tin cụ thể như sau:</p><p class="wp-block-paragraph">&#8211; Chủ đề:&nbsp;“Foundations of Robust Machine Learning under Imperfect Supervision”</p><p class="wp-block-paragraph">&#8211; Tóm tắt: Trong học máy hiện đại, việc thu thập lượng lớn dữ liệu được gắn nhãn có chất lượng cao ngày càng trở nên đắt đỏ. Dù việc tận dụng dữ liệu không gắn nhãn là một giải pháp thay thế tiền năng nhưng thường thiếu độ tin cậy trong ứng dụng vào các nhiệm vụ quan trọng. Trong bài nói chuyện này, GS. Sugiyama sẽ chia sẻ về những tiến bộ mới nhất trong việc xây dựng các khung học máy mạnh mẽ từ dữ liệu “không hoàn hảo”, bao gồm:</p><ul class="wp-block-list"><li>Học giám sát yếu (Weakly supervised learning)</li>
+
+<li>Học với nhãn nhiễu (Noisy label learning)</li>
+
+<li>Học chuyển đổi (Transfer learning)</li></ul><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cd.png" alt="📍" class="wp-smiley" style="height: 1em; max-height: 1em;" />&nbsp;Thông tin chi tiết:</p><ul class="wp-block-list"><li>Thời gian: 14:30, Thứ Tư, ngày 01/07/2026</li>
+
+<li>Địa điểm: Viện Nghiên cứu và Ứng dụng Trí tuệ nhân tạo, .</li></ul><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f449.png" alt="👉" class="wp-smiley" style="height: 1em; max-height: 1em;" />Đăng ký tham dự tại: https://forms.gle/btDAfZsrerDkUoYa6</p><hr class="wp-block-separator has-alpha-channel-opacity"/><p class="wp-block-paragraph">A rare opportunity for the AI research community in Hanoi!</p><p class="wp-block-paragraph">The Institute for AI Innovation and Societal Impact (AI4LIFE) is honored to host a guest lecture by&nbsp;Professor Masashi Sugiyama, one of the world’s most influential scientists in Artificial Intelligence (<a href="https://scholar.google.com/citations?hl=en&amp;user=GkYIrlIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate">https://scholar.google.com/citations?hl=en&amp;user=GkYIrlIAAAAJ&amp;view_op=list_works&amp;sortby=pubdate</a>).</p><p class="wp-block-paragraph">Prof. Masashi Sugiyama is currently the Director of the RIKEN Center for Advanced Intelligence Project (AIP) and a Professor at the University of Tokyo. He is renowned for his extensive contributions to the field and frequently serves as a keynote speaker at top-tier AI conferences globally.</p><p class="wp-block-paragraph">Professor Sugiyama will be giving a talk and participating in an academic exchange at the AI4LIFE Institute, with the following details:</p><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" />&nbsp;Title:&nbsp;“Foundations of Robust Machine Learning under Imperfect Supervision”<br><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f539.png" alt="🔹" class="wp-smiley" style="height: 1em; max-height: 1em;" />&nbsp;In modern machine learning, acquiring vast amounts of high-quality labeled data is increasingly difficult and costly. While leveraging unlabeled data offers a potential alternative, it often lacks the necessary reliability for mission-critical applications. Prof. Sugiyama will share the latest advances in building powerful machine learning frameworks from &#8220;imperfect&#8221; data, including:</p><ul class="wp-block-list"><li>Weakly supervised learning</li>
+
+<li>Noisy label learning</li>
+
+<li>Transfer learning</li>
+
+<li>Strategic evolution of ML in the era of Large Foundation Models.</li></ul><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cd.png" alt="📍" class="wp-smiley" style="height: 1em; max-height: 1em;" />&nbsp;Event Details:</p><ul class="wp-block-list"><li>Time: 14:30, Wednesday, July 1<sup>st</sup>, 2026.</li>
+
+<li>Venue: Institute of Applied Artificial Intelligence (AI4LIFE) Room 618, Ta Quang Buu Library Building, Hanoi University of Science and Technology, No. 1 Dai Co Viet, Bach Mai, Hai Ba Trung, Hanoi, Vietnam.</li></ul><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f449.png" alt="👉" class="wp-smiley" style="height: 1em; max-height: 1em;" />Register to participate via: https://forms.gle/btDAfZsrerDkUoYa6</p><p>The post <a href="https://ai4life.hust.edu.vn/2026/06/26/ai4life-public-seminar-06-meet-professor-masashi-sugiyama-a-leading-ai-expert-from-japan/">[AI4LIFE PUBLIC SEMINAR 06] MEET PROFESSOR MASASHI SUGIYAMA – A LEADING AI EXPERT FROM JAPAN  </a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ai4life.hust.edu.vn/2026/06/26/ai4life-public-seminar-06-meet-professor-masashi-sugiyama-a-leading-ai-expert-from-japan/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>⏰ CHỈ CÒN ÍT NGÀY ĐỂ ĐĂNG KÝ VÒNG THI KHU VỰC VAIC 2026</title>
+		<link>https://ai4life.hust.edu.vn/2026/05/11/%e2%8f%b0-chi-con-it-ngay-de-dang-ky-vong-thi-khu-vuc-vaic-2026/</link>
+					<comments>https://ai4life.hust.edu.vn/2026/05/11/%e2%8f%b0-chi-con-it-ngay-de-dang-ky-vong-thi-khu-vuc-vaic-2026/#respond</comments>
+		
+		<dc:creator><![CDATA[My_ai4life]]></dc:creator>
+		<pubDate>Mon, 11 May 2026 04:14:04 +0000</pubDate>
+				<category><![CDATA[Competition]]></category>
+		<category><![CDATA[News & Events]]></category>
+		<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://ai4life.hust.edu.vn/?p=5029</guid>
+
+					<description><![CDATA[<p>Cuộc thi Vô địch Trí tuệ nhân tạo Việt Nam 2026 – VAIC 2026 đang bước vào giai đoạn cuối để cho vòng thi khu vực. Các thí sinh hãy nhanh chóng hoàn tất đăng ký để không bỏ lỡ cơ hội thể hiện năng lực và niềm đam mê AI trên toàn quốc! 📌...</p>
+<p>The post <a href="https://ai4life.hust.edu.vn/2026/05/11/%e2%8f%b0-chi-con-it-ngay-de-dang-ky-vong-thi-khu-vuc-vaic-2026/">⏰ CHỈ CÒN ÍT NGÀY ĐỂ ĐĂNG KÝ VÒNG THI KHU VỰC VAIC 2026</a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">Cuộc thi Vô địch Trí tuệ nhân tạo Việt Nam 2026 – VAIC 2026 đang bước vào giai đoạn cuối để cho vòng thi khu vực. Các thí sinh hãy nhanh chóng hoàn tất đăng ký để không bỏ lỡ cơ hội thể hiện năng lực và niềm đam mê AI trên toàn quốc!</p><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Hạn đăng ký vòng khu vực: 01/06/2026</p><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Ngày thi vòng khu vực: 07/06/2026</p><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f4cc.png" alt="📌" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Hình thức thi: Online</p><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f50e.png" alt="🔎" class="wp-smiley" style="height: 1em; max-height: 1em;" /> LƯU Ý QUAN TRỌNG:</p><p class="wp-block-paragraph">Các thí sinh cần đọc kỹ: Thể lệ cuộc thi và nội dung thi để chuẩn bị tốt nhất trước khi bước vào thi chính thức.</p><p class="wp-block-paragraph"><img src="https://s.w.org/images/core/emoji/17.0.2/72x72/1f449.png" alt="👉" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Đăng ký ngay tại: https://aidemyx.edu.vn/ai-championship</p><figure class="wp-block-image size-full"><img width="545" height="379" fetchpriority="high" decoding="async" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1NDUiIGhlaWdodD0iMzc5Ij48cmVjdCB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIj48YW5pbWF0ZSBhdHRyaWJ1dGVOYW1lPSJmaWxsIiB2YWx1ZXM9InJnYmEoMTUzLDE1MywxNTMsMC41KTtyZ2JhKDE1MywxNTMsMTUzLDAuMSk7cmdiYSgxNTMsMTUzLDE1MywwLjUpIiBkdXI9IjJzIiByZXBlYXRDb3VudD0iaW5kZWZpbml0ZSIgLz48L3JlY3Q+PC9zdmc+" alt="" class="wp-post-5029 wp-image-5030" data-public-id="image_5030146ed/image_5030146ed.png" data-format="png" data-transformations="f_auto,q_auto" data-version="1778472722" data-seo="1" data-responsive="1" data-size="545 379" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" /></figure><p>The post <a href="https://ai4life.hust.edu.vn/2026/05/11/%e2%8f%b0-chi-con-it-ngay-de-dang-ky-vong-thi-khu-vuc-vaic-2026/">⏰ CHỈ CÒN ÍT NGÀY ĐỂ ĐĂNG KÝ VÒNG THI KHU VỰC VAIC 2026</a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ai4life.hust.edu.vn/2026/05/11/%e2%8f%b0-chi-con-it-ngay-de-dang-ky-vong-thi-khu-vuc-vaic-2026/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>THÔNG BÁO TUYỂN DỤNG THỰC TẬP SINH AI DỰ ÁN ỨNG DỤNG &#038; TỰ ĐỘNG HÓA BPO [ĐỢT 2]</title>
+		<link>https://ai4life.hust.edu.vn/2026/04/08/thong-bao-tuyen-dung-thuc-tap-sinh-ai-du-an-ung-dung-tu-dong-hoa-bpo-dot-2/</link>
+					<comments>https://ai4life.hust.edu.vn/2026/04/08/thong-bao-tuyen-dung-thuc-tap-sinh-ai-du-an-ung-dung-tu-dong-hoa-bpo-dot-2/#respond</comments>
+		
+		<dc:creator><![CDATA[My_ai4life]]></dc:creator>
+		<pubDate>Wed, 08 Apr 2026 03:35:52 +0000</pubDate>
+				<category><![CDATA[Internship]]></category>
+		<category><![CDATA[Japan]]></category>
+		<category><![CDATA[News & Events]]></category>
+		<category><![CDATA[Recruitment]]></category>
+		<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://ai4life.hust.edu.vn/?p=4998</guid>
+
+					<description><![CDATA[<p>Công ty Cổ phần Altius Link Việt Nam – là công ty con của Altius Link Inc., một công ty BPO lớn nhất tại Nhật Bản, được tạo ra từ sự kết hợp giữa Tập đoàn KDDI Corporation và Tập đoàn Mitsui &#38; Co., Ltd. Công ty được thành lập vào năm 2009, chuyên cung...</p>
+<p>The post <a href="https://ai4life.hust.edu.vn/2026/04/08/thong-bao-tuyen-dung-thuc-tap-sinh-ai-du-an-ung-dung-tu-dong-hoa-bpo-dot-2/">THÔNG BÁO TUYỂN DỤNG THỰC TẬP SINH AI DỰ ÁN ỨNG DỤNG &amp; TỰ ĐỘNG HÓA BPO [ĐỢT 2]</a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph"><img decoding="async" width="16" height="16" src="blob:https://ai4life.hust.edu.vn/c20acef1-da83-447b-8265-89d861ed71d5" alt="&#x1f4a1;">Công ty Cổ phần Altius Link Việt Nam – là công ty con của Altius Link Inc., một công ty BPO lớn nhất tại Nhật Bản, được tạo ra từ sự kết hợp giữa Tập đoàn KDDI Corporation và Tập đoàn Mitsui &amp; Co., Ltd. Công ty được thành lập vào năm 2009, chuyên cung cấp các dịch vụ BPO chất lượng cao, đặc biệt là cho khách hàng Nhật Bản, đồng thời cung cấp dịch vụ hỗ trợ khách hàng cho các công ty có vốn đầu tư nước ngoài đang hoạt động tại thị trường Việt Nam, đóng góp vào sự phát triển kinh doanh của cả Nhật Bản và Việt Nam, cụ thể gồm các dịch vụ sau:</p><ul class="wp-block-list"><li>BPO (Business Process Outsourcing): Nhập liệu, kiểm tra thông tin, dữ liệu, tạo các loại hình báo cáo, dịch thuật…</li>
+
+<li>Chăm sóc khách hàng đa kênh: Tư vấn, hỗ trợ kỹ thuật, tiếp nhận đơn hàng, bán hàng qua điện thoại, SMS, Email, v.v.</li>
+
+<li>Nghiên cứu thị trường: Khảo sát, phân tích hành vi và xu hướng người tiêu dùng.</li></ul><p class="wp-block-paragraph"><img decoding="async" width="16" height="16" src="blob:https://ai4life.hust.edu.vn/e5cb7685-3547-4d8d-8405-08cc6a4f0f1a" alt="&#x1f916;">&nbsp;Nối tiếp thành công hợp tác nghiên cứu giữa công ty Altius Link Việt Nam và Viện Nghiên cứu và Ứng dụng Trí tuệ nhân tạo (AI4LIFE), Đại học Bách khoa Hà Nội, chúng tôi tiếp tục thực hiện pha tiếp theo của dự án:</p><p class="wp-block-paragraph"><strong>“Nghiên cứu ứng dụng và tự động hóa hoạt động BPO”.</strong></p><p class="wp-block-paragraph">Chúng tôi hiện đang tìm kiếm các sinh viên thực tập tham gia vào dự án để cùng phát triển các giải pháp AI ứng dụng thực tế.</p><p class="wp-block-paragraph"><img loading="lazy" decoding="async" width="16" height="16" src="blob:https://ai4life.hust.edu.vn/fdf257f1-1e82-447f-bf5e-3e03b3f3d384" alt="&#x1f5c3;">&nbsp;Thông tin vị trí thực tập</p><ul class="wp-block-list"><li>Thời gian thực tập: 12 tháng (bắt đầu từ tháng 05/2026)</li>
+
+<li>Số lượng: 04 sinh viên</li>
+
+<li>Địa điểm: Hà Nội (có thể linh hoạt tùy theo lịch học)</li></ul><p class="wp-block-paragraph"><img loading="lazy" decoding="async" width="16" height="16" src="blob:https://ai4life.hust.edu.vn/f1440733-d90a-4892-9350-b3f9cb238ae4" alt="&#x1f3af;">&nbsp;Yêu cầu ứng viên</p><ul class="wp-block-list"><li>Sinh viên của HUST từ năm 2 trở lên</li>
+
+<li>Có Kiến thức nền tảng về: Học sâu (Deep Learning), Xử lý ảnh (Computer Vision), Xử lý ngôn ngữ tự nhiên (Natural Language Processing – NLP)</li>
+
+<li>Có kinh nghiệm làm về OCR là một lợi thế</li>
+
+<li>Yêu cầu có trình độ tiếng Nhật tối thiểu N3</li></ul><p class="wp-block-paragraph"><img loading="lazy" decoding="async" width="16" height="16" src="blob:https://ai4life.hust.edu.vn/4c46c2ce-9e0c-400b-86c9-5ecee508e0f1" alt="&#x1f4cc;">Quyền lợi:</p><ul class="wp-block-list"><li>Được làm việc dưới sự hướng dẫn của các chuyên gia AI tại Viện AI4LIFE</li>
+
+<li>Tham gia phát triển giải pháp AI thực tiễn cho doanh nghiệp</li>
+
+<li>Hỗ trợ tài chính trong quá trình thực tập</li>
+
+<li>Có thể đăng ký học phần Thực tập doanh nghiệp</li>
+
+<li>Có cơ hội được tuyển dụng làm việc toàn thời gian tại công ty Altius Link sau khi kết thúc thời gian thực tập</li></ul><p class="wp-block-paragraph"><img loading="lazy" decoding="async" width="16" height="16" src="blob:https://ai4life.hust.edu.vn/abef2e94-9ba1-4c97-8acc-7bc9a2abcf55" alt="&#x2795;">&nbsp;Ứng tuyển ngay</p><p class="wp-block-paragraph"><img loading="lazy" decoding="async" width="16" height="16" src="blob:https://ai4life.hust.edu.vn/71dde3e1-b0eb-4b91-9a73-10932093c185" alt="&#x1f517;">&nbsp;Vui lòng gửi CV và bảng điểm (bản scan/PDF) về form sau: https://forms.gle/kWtD9Qmfi494G9Ls6</p><p class="wp-block-paragraph"><img loading="lazy" decoding="async" width="16" height="16" src="blob:https://ai4life.hust.edu.vn/acceced9-0ef3-4607-915a-6e9affee8b0e" alt="&#x23f0;"> Thời hạn nhận hồ sơ đến hết ngày: 27/04/2026 (đã gia hạn)</p><p class="wp-block-paragraph"></p><p>The post <a href="https://ai4life.hust.edu.vn/2026/04/08/thong-bao-tuyen-dung-thuc-tap-sinh-ai-du-an-ung-dung-tu-dong-hoa-bpo-dot-2/">THÔNG BÁO TUYỂN DỤNG THỰC TẬP SINH AI DỰ ÁN ỨNG DỤNG &amp; TỰ ĐỘNG HÓA BPO [ĐỢT 2]</a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ai4life.hust.edu.vn/2026/04/08/thong-bao-tuyen-dung-thuc-tap-sinh-ai-du-an-ung-dung-tu-dong-hoa-bpo-dot-2/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Sự kiện hợp tác giữa AI4LIFE &#8211; Đại học Bách khoa Hà Nội và AstraZenecca Việt Nam</title>
+		<link>https://ai4life.hust.edu.vn/2026/03/20/su-kien-hop-tac-giua-ai4life-dai-hoc-bach-khoa-ha-noi-va-astrazenecca-viet-nam/</link>
+					<comments>https://ai4life.hust.edu.vn/2026/03/20/su-kien-hop-tac-giua-ai4life-dai-hoc-bach-khoa-ha-noi-va-astrazenecca-viet-nam/#respond</comments>
+		
+		<dc:creator><![CDATA[My_ai4life]]></dc:creator>
+		<pubDate>Fri, 20 Mar 2026 07:31:38 +0000</pubDate>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[News & Events]]></category>
+		<category><![CDATA[Technology]]></category>
+		<guid isPermaLink="false">https://ai4life.hust.edu.vn/?p=4938</guid>
+
+					<description><![CDATA[<p>Ngày 14/12/2025, Trung tâm AI4LIFE &#8211; Đại học Bách khoa Hà Nội và Tập đoàn AstraZeneca chính thức ra mắt Trung tâm Đổi mới Sáng tạo Y tế AZ–HUST. Chương trình thực hiện trên tinh thần Nghị quyết số 57-NQ/TW về phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số...</p>
+<p>The post <a href="https://ai4life.hust.edu.vn/2026/03/20/su-kien-hop-tac-giua-ai4life-dai-hoc-bach-khoa-ha-noi-va-astrazenecca-viet-nam/">Sự kiện hợp tác giữa AI4LIFE &#8211; Đại học Bách khoa Hà Nội và AstraZenecca Việt Nam</a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></description>
+										<content:encoded><![CDATA[<p class="wp-block-paragraph">Ngày 14/12/2025, Trung tâm AI4LIFE &#8211; Đại học Bách khoa Hà Nội và Tập đoàn AstraZeneca chính thức ra mắt Trung tâm Đổi mới Sáng tạo Y tế AZ–HUST.</p><p class="wp-block-paragraph">Chương trình thực hiện trên tinh thần Nghị quyết số 57-NQ/TW về phát triển khoa học, công nghệ, đổi mới sáng tạo và chuyển đổi số quốc gia; Nghị quyết số 72-NQ/TW của Bộ Chính trị về các giải pháp đột phá tăng cường bảo vệ, chăm sóc và nâng cao sức khỏe Nhân dân; cùng định hướng của Tổng Bí thư về mục tiêu “Mỗi người dân được khám sức khỏe ít nhất một lần mỗi năm”. Đồng thời, sự kiện được triển khai nhân dịp chào mừng Đại hội Hội Thầy thuốc trẻ Việt Nam lần thứ V nhiệm kỳ 2025-2030.</p><p class="wp-block-paragraph">Trung tâm được thành lập nhằm thúc đẩy đổi mới sáng tạo và ứng dụng công nghệ trong y tế, tập trung vào y tế số, trí tuệ nhân tạo (AI) và công nghệ y sinh, góp phần nâng cao khả năng tiếp cận dịch vụ y tế chất lượng cho người dân.</p><p class="wp-block-paragraph"> </p><figure class="wp-block-image size-large"><img width="1900" height="1267" decoding="async" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOTAwIiBoZWlnaHQ9IjEyNjciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiPjxhbmltYXRlIGF0dHJpYnV0ZU5hbWU9ImZpbGwiIHZhbHVlcz0icmdiYSgxNTMsMTUzLDE1MywwLjUpO3JnYmEoMTUzLDE1MywxNTMsMC4xKTtyZ2JhKDE1MywxNTMsMTUzLDAuNSkiIGR1cj0iMnMiIHJlcGVhdENvdW50PSJpbmRlZmluaXRlIiAvPjwvcmVjdD48L3N2Zz4=" alt="" class="wp-post-4938 wp-image-4951 wp-image-4958" data-public-id="20251214-nkz_2768-3_jdhyde/20251214-nkz_2768-3_jdhyde.jpg" data-format="jpg" data-transformations="f_auto,q_auto" data-version="1" data-seo="1" data-responsive="1" data-size="1900 1267" data-delivery="upload" onload=";window.CLDBind?CLDBind(this):null;" data-cloudinary="lazy" /></figure><p class="wp-block-paragraph">Đặt tại Viện AI4LIFE – Đại học Bách khoa Hà Nội, AZ–HUST triển khai:<br>&#8211; Nghiên cứu và ứng dụng công nghệ AI, chuyển đổi số trong y tế nhằm phát hiện sớm bệnh không lây nhiễm, tối ưu hóa quy trình khám chữa bệnh và hỗ trợ ra quyết định lâm sàng;<br>&#8211; Ươm tạo và hỗ trợ các startup healthtech, medtech, kết nối với mạng lưới A-Catalyst toàn cầu của AstraZeneca;<br>&#8211; Thí điểm và kiểm chứng các giải pháp y tế số, đưa công nghệ từ nghiên cứu đến thực tiễn khám chữa bệnh;<br>&#8211; Đào tạo, bồi dưỡng năng lực cho đội ngũ bác sĩ, kỹ sư, nhà nghiên cứu trong lĩnh vực AI y tế;<br>&#8211; Thúc đẩy hợp tác liên ngành giữa trường đại học, bệnh viện, viện nghiên cứu, doanh nghiệp và cơ quan quản lý.</p><p class="wp-block-paragraph">Việc ra mắt Trung tâm AZ–HUST thể hiện cam kết hợp tác lâu dài giữa nhà trường và AstraZeneca, góp phần xây dựng hệ sinh thái đổi mới sáng tạo y tế, thúc đẩy chuyển đổi số y tế và phát triển ngành y tế Việt Nam theo hướng hiện đại, bền vững.</p><p>The post <a href="https://ai4life.hust.edu.vn/2026/03/20/su-kien-hop-tac-giua-ai4life-dai-hoc-bach-khoa-ha-noi-va-astrazenecca-viet-nam/">Sự kiện hợp tác giữa AI4LIFE &#8211; Đại học Bách khoa Hà Nội và AstraZenecca Việt Nam</a> appeared first on <a href="https://ai4life.hust.edu.vn">AI4LIFE</a>.</p>
+]]></content:encoded>
+					
+					<wfw:commentRss>https://ai4life.hust.edu.vn/2026/03/20/su-kien-hop-tac-giua-ai4life-dai-hoc-bach-khoa-ha-noi-va-astrazenecca-viet-nam/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

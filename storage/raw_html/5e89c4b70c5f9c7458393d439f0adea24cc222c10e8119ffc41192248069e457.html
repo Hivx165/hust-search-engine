@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head>
+<meta charset="utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="shortcut icon" href="https://library.hust.edu.vn/sites/default/files/favico.ico" type="image/vnd.microsoft.icon" />
+<title>News | Library</title>
+<style type="text/css" media="all">
+@import url("https://library.hust.edu.vn/modules/system/system.base.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/system/system.menus.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/system/system.messages.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/system/system.theme.css?sudva3");
+</style>
+<style type="text/css" media="all">
+@import url("https://library.hust.edu.vn/modules/book/book.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/comment/comment.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/field/theme/field.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/kaltura/style/kaltura.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/node/node.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/search/search.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/user/user.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/views/css/views.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?sudva3");
+</style>
+<style type="text/css" media="all">
+@import url("https://library.hust.edu.vn/sites/all/modules/ctools/css/ctools.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/panels/css/panels.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/libraries/sidr/stylesheets/jquery.sidr.dark.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/libraries/fontawesome/css/font-awesome.css?sudva3");
+</style>
+<style type="text/css" media="all">
+@import url("https://library.hust.edu.vn/sites/all/themes/nexus/css/bootstrap.min.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/themes/nexus/css/flexslider.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/themes/nexus/style.css?sudva3");
+</style>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/misc/drupal.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/jquery_dollar/jquery_dollar.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/kaltura/js/kaltura.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/kaltura/js/kaltura.behaviors.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/responsive_menus/styles/sidr/js/responsive_menus_sidr.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/libraries/sidr/jquery.sidr.min.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/bootstrap_site_alert/js/bootstrap-site-alert.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/bootstrap.min.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/superfish.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/mobilemenu.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/custom.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/openinghours.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/searchtest.js?sudva3"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"en\/","ajaxPageState":{"theme":"nexus","theme_token":"RaaXJUwAR-xI0I8GiP1qRdPA8_2LTs27FC7SonHylXM","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_dollar\/jquery_dollar.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/kaltura\/js\/kaltura.js":1,"sites\/all\/modules\/kaltura\/js\/kaltura.behaviors.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/bootstrap_site_alert\/js\/bootstrap-site-alert.js":1,"sites\/all\/themes\/nexus\/js\/bootstrap.min.js":1,"sites\/all\/themes\/nexus\/js\/superfish.js":1,"sites\/all\/themes\/nexus\/js\/mobilemenu.js":1,"sites\/all\/themes\/nexus\/js\/custom.js":1,"sites\/all\/themes\/nexus\/js\/openinghours.js":1,"sites\/all\/themes\/nexus\/js\/searchtest.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/kaltura\/style\/kaltura.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"sites\/all\/libraries\/fontawesome\/css\/font-awesome.css":1,"sites\/all\/themes\/nexus\/css\/bootstrap.min.css":1,"sites\/all\/themes\/nexus\/css\/flexslider.css":1,"sites\/all\/themes\/nexus\/style.css":1}},"jcarousel":{"ajaxPath":"\/en\/jcarousel\/ajax\/views"},"responsive_menus":[{"selectors":["#main-menu"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"bootstrap_site_alert":{"key":"9fp4XiJG2IT-SQ203wmOcAnsv3xoqsxMIsd8YcqarnE"}});
+//--><!]]>
+</script>
+<!--[if lt IE 9]><script src="/sites/all/themes/nexus/js/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-view-page-tin-tuc i18n-en">
+  <div class="alert bs-site-alert alert-warning" role="alert" style="display:none;"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><p><strong><img alt="" src="/sites/default/files/Untitled-1.png" style="width: 30px; height: 30px; margin-bottom: -9px;">Video hướng dẫn sử dụng thư viện:&nbsp;</strong><a href="https://library.hust.edu.vn/node/254">https://library.hust.edu.vn/node/254</a></p></div>  <div id="page">
+  <div class="navfirst">
+    <ul class="nav">
+			<a href="https://library.hust.edu.vn/vi"><li class="vi"></li></a>
+			<a href="https://library.hust.edu.vn/en"><li class="en"></li></a>
+			<li><a href="http://202.191.56.129/sierrautility" target="_blank">Module Counter</a></li>
+			<li><a href="http://dlib.hust.edu.vn" target="_blank">Digital resources</a></li>
+			<li><a href="https://www.hust.edu.vn/" target="_blank">Hanoi University of Science and Technology</a></li>
+		</ul>
+  	</div>	
+  
+  <header id="masthead" class="site-header container" role="banner">
+   
+    <div class="row">
+	
+	<div class="container" id="container_logo_menu">
+	
+<div class="tbanner" style=" margin-bottom: -6px; ">
+                        <div id="tbanner1">
+                <a href="/en" title="Home">
+                    <img src="https://library.hust.edu.vn/sites/default/files/tbanner222102024.png" alt="Home" style=" border-bottom: 2px solid #4e4e4e; "/>
+                </a>
+            </div>
+            </div>
+
+	  
+	  <div class="col-sm-12 mainmenu">
+        <div class="mobilenavi"></div>
+        <nav id="navigation" role="navigation">
+          <div id="main-menu">
+            <ul class="menu"><li class="first leaf"><a href="/en" title="">Home</a></li>
+<li class="leaf"><a href="/en/page-t-m-ki-m" title="">Search</a></li>
+<li class="leaf"><a href="/en/sanpham_dichvu" title="">Products - Services</a></li>
+<li class="leaf active-trail"><a href="/en/view-page-tin-tuc" title="" class="active-trail active">News</a></li>
+<li class="leaf"><a href="/en/page-tr-gi-p" title="">Help</a></li>
+<li class="leaf"><a href="/en/node/353">Contact</a></li>
+<li class="last leaf"><a href="https://library.hust.edu.vn/en/gi-i-thi-u" title="">Introduction</a></li>
+</ul>          </div>
+        </nav>
+      </div>
+	  </div>
+	  </div>
+   </header>	  
+	  
+  
+  <div class="container-fluid" id="search-vufind">
+	<div class="container" id="search-opac">
+		<div class="row">
+		<div class="region region-form-search-vufind">
+  <div id="block-block-21" class="block block-block">
+
+      
+  <div class="content">
+    <form action="http://202.191.56.133/search/" id="search" method="get" name="search" style="margin-top: -27px;" target="_blank"><input id="iiiFormHandle_1" type="hidden" /><br /><div class="formEntryArea">
+<div class="searchoption">
+<select class="searchtype st-selected" data-isdefault="true" id="searchtype-opac" name="searchtype" style="width: 280px;"><option selected="selected" value="X">Keyword</option><option value="t">Title</option><option value="a">Author</option><option value="d">Subject</option><option value="c">Call Number</option><option value="i">ISBN/ISSN</option><option value="p">Instructor</option><option value="r">Course name</option></select><select class="searchtype hidden" data-isdefault="true" id="searchtype-scientdirect" style="width: 280px;"><option value="qs_all">Keyword</option><option value="qs_author">Author</option><option value="qs_title">Journal/Book Title</option><option value="qs_vol">Volume</option><option value="qs_issue">Issue</option><option value="qs_pages">Page</option></select><select class="searchtype hidden" data-isdefault="true" id="searchtype-ebrary" style="width: 280px;"><option value="all">Text and Key Fields</option><option value="text">Text</option><option value="subject">Subject</option><option value="title">Title</option><option value="author">Author</option><option value="publisher">Publisher</option></select><select class="searchtype hidden" data-isdefault="true" id="searchtype-dspace" style="width: 280px;"><option value="all">All</option><option value="title">Title</option><option value="author">Author</option><option value="advisor">Advisor</option><option value="subject">Subject</option><option value="dateIssued">Date Issued</option></select><p><input id="SORT" name="SORT" type="hidden" value="D" /><input maxlength="75" name="searcharg" placeholder="Input the information of the document you want to search" size="70" /><br /><label for="searchscope" style="display: none;">Search Scope</label></p>
+<select id="searchscope" name="searchscope"><option selected="selected" value="opac">Library Table of Contents</option><option value="dspace">Digital Library</option><option value="science">Science Direct</option><option value="ebrary">Ebrary Academic complete</option></select></div>
+<p><br /><span class="nowrap formButtonArea"><input id="iiiFormHandle_1" type="hidden" /></span></p>
+<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';">
+<div class="buttonSpriteDiv"> </div>
+</div>
+<p><span class="nowrap formButtonArea"><input class="submitHidden" type="submit" value="Search" /></span></p>
+</div>
+</form>
+<p> </p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+		</div>
+	</div>
+  </div>
+  
+  <div class="container-fluid2" id="search-sub-arena">
+	<div class="container">
+		<div class="row">
+				
+		
+		
+		   
+		</div>
+	</div>
+  </div>
+
+
+  
+
+  
+  
+    <div id="main-content">
+    <div class="container"> 
+      <div class="row">
+                <div id="primary" class="content-area col-sm-8">
+          <section id="content" role="main" class="clearfix">
+                                                <div id="content-wrap">
+                            <h1 class="page-title">News</h1>                                                                      <div class="region region-content">
+  <div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+    <div class="view view-view-page-tin-tuc view-id-view_page_tin_tuc view-display-id-page view-dom-id-6d0fd011906bcd41b6cef8cbd2ba4f2b">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-field-anh-tin-tuc">        <div class="field-content"><a href="/en/node/1337"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/_nh_page_tin_t_c/public/T%C3%A0i%20nguy%C3%AAn%20s%E1%BB%91_0.png?itok=mtJXi1Xk" width="169" height="113" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/en/node/1337">DIGITAL RESOURCES</a></span>  </div>  
+  <div class="views-field views-field-created">        <span class="field-content">06/11/25</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-tin-tuc">        <div class="field-content">In the field of education and training, particularly in University education, digital information resources and digital knowledge play an important...</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/en/node/1337">Xem thêm</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-field-anh-tin-tuc">        <div class="field-content"><a href="/en/node/1280"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/_nh_page_tin_t_c/public/%E1%BA%A2nh%20minh%20h%E1%BB%8Da%20-%20ph%E1%BB%A5c%20v%E1%BB%A5%20ngo%C3%A0i%20gi%E1%BB%9D%208-9-2025.jpg?itok=BE1v1SJW" width="169" height="113" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/en/node/1280">ANNOUNCEMENT: Library Service Schedule</a></span>  </div>  
+  <div class="views-field views-field-created">        <span class="field-content">08/09/25</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-tin-tuc">        <div class="field-content">The Center for Communications and Digital Knowledge announces the new Library hours, effective from: September 8th, 2025</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/en/node/1280">Xem thêm</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-field-anh-tin-tuc">        <div class="field-content"><a href="/en/node/1271"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/_nh_page_tin_t_c/public/%E1%BA%A2nh%20minh%20h%E1%BB%8Da1.png?itok=qCvQhabN" width="169" height="113" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/en/node/1271">ANNOUNCEMENT: Services for New Students 2025</a></span>  </div>  
+  <div class="views-field views-field-created">        <span class="field-content">04/09/25</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-tin-tuc">        <div class="field-content">The Center for Communications and Digital Knowledge is pleased to announce that it will officially begin serving New students on September 08th, 2025.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/en/node/1271">Xem thêm</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-field-anh-tin-tuc">        <div class="field-content"><a href="/en/node/565"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/_nh_page_tin_t_c/public/anh-web-01_0.jpg?itok=UQCf2PfP" width="169" height="113" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/en/node/565">Luna New Year’s Calendar 2023</a></span>  </div>  
+  <div class="views-field views-field-created">        <span class="field-content">16/01/23</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-tin-tuc">        <div class="field-content">Ta Quang Buu Library informs the readers about the schedule of service in Lunar New Year 2023</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/en/node/565">Xem thêm</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd views-row-last">  
+  <div class="views-field views-field-field-anh-tin-tuc">        <div class="field-content"><a href="/en/node/346"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/_nh_page_tin_t_c/public/tv3_0.jpg?itok=F4mq3I71" width="169" height="113" alt="" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/en/node/346">Library Schedule from July, 5th, 2021</a></span>  </div>  
+  <div class="views-field views-field-created">        <span class="field-content">05/07/21</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-tin-tuc">        <div class="field-content">Room Opened: 
+- Reading Room 411
+- Textbook Circilation: 111 &amp; 102 
+Opening time: 8:00 - 11:30 (am) &amp; 13:30 - 16:30 (pm)</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/en/node/346">Xem thêm</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+            </div>
+			<div class= "col-sm-12">
+				<div class="container">
+				<div class="row">
+					
+				</div>
+				</div>
+			</div>
+			<div class= "col-sm-12">
+				<div class="container">
+				<div class="row">
+								</div>
+				</div>
+			</div>
+          </section>
+        </div>
+                  <aside id="sidebar" class="col-sm-4" role="complementary">
+           <div class="region region-sidebar-first">
+  <div id="block-views-tin-noi-bat-block" class="block block-views">
+
+        <h2 >Hot News</h2>
+    
+  <div class="content">
+    <div class="view view-tin-noi-bat view-id-tin_noi_bat view-display-id-block view-dom-id-59bb2b4a07ecdfe5b91dbc6dcadc5346">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-created-2">        <span class="field-content"><div class="date-box">
+  <div class="month">
+   <span class="field-content">Sep </span>
+  </div>
+  <div class="day">
+     08
+  </div>
+</div></span>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/en/node/1280">ANNOUNCEMENT: Library Service Schedule</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even views-row-last">  
+  <div class="views-field views-field-created-2">        <span class="field-content"><div class="date-box">
+  <div class="month">
+   <span class="field-content">Sep </span>
+  </div>
+  <div class="day">
+     04
+  </div>
+</div></span>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/en/node/1271">ANNOUNCEMENT: Services for New Students 2025</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+          </aside> 
+              </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid" id="title-doitac">
+	<div class="container">
+		<div class="row">
+				   
+		</div>
+	</div>
+  </div>
+  
+  <div class="container-fluid" id="Slide-doitac">
+	<div class="container">
+		<div class="row">
+				   
+		</div>
+	</div>
+  </div>
+
+     
+
+  
+      
+    <div id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="footer-block col-sm-2">	<div class="region region-footer-first">
+  <div id="block-block-1" class="block block-block">
+
+      
+  <div class="content">
+    <p><a href="http://202.191.56.133"><img alt="" src="/sites/default/files/Group 4.png" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+		</div>					
+		  		  
+		  <div class="footer-block col-sm-7">	<div class="region region-footer-second">
+  <div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <div><span style="font-size:16px;"><span style="color:#b31b1b;"><strong>Center for Communication and Digital Knowledge - Hanoi University of Science and Technology</strong></span></span></div>
+<div> </div>
+<div><span style="color:#000000;">No. 1 Dai Co Viet, Bach Mai, Hanoi</span></div>
+<div><span style="color:#033333;">Telephone: (84-24) 3869 2243, Email: <a href="mailto:tvtqb@hust.edu.vn">tvtqb@hust.edu.vn</a></span></div>
+<div><a href="http://library.hust.edu.vn/sitemap"><span style="color:#428bca;">Sitemap</span></a></div>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+		</div>					
+		  		  
+          <div class="footer-block col-sm-3">	<div class="region region-footer-third">
+  <div id="block-block-4" class="block block-block">
+
+        <h2 >Social</h2>
+    
+  <div class="content">
+    <ul class="social-media-links"><li class="fb"><a href="https://www.facebook.com/TQB.library/?hc_location=group" class="fa fa-facebook-official" aria-hidden="true" target="_blank"></a></li>
+<li class="ytb"><a href="https://www.youtube.com/channel/UCILDWZ7oJhUcvWrYrRtLzVg" class="fa fa-youtube" aria-hidden="true" target="_blank"></a></li>
+<li class="tw"><a href="https://twitter.com/DHBachKhoaHaNoi" class="fa fa-twitter" aria-hidden="true" target="_blank"></a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+		</div>					
+		                      
+        </div>
+      </div>
+    </div>
+  
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="fcred col-sm-12">
+		  		  Copyright &copy; 2026, Center for Communication and Digital Knowledge - Hanoi University of Science and Technology. 
+		  		</div>
+      </div>
+    </div>
+  <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "208707833345376");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+ </div>
+ </div>  </body>
+</html>

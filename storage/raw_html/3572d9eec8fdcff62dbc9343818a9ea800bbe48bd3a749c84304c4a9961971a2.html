@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>Chương tr&#236;nh tham quan tuyển dụng của c&#244;ng ty Goertek Vina tại Bắc Ninh</h3>
+        <p style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; margin: 0px; color: rgb(48, 49, 51); font-family: AT_bold, sans-serif; font-size: 14px; text-align: justify;">
+	<span style="color:#000000;"><span style="font-family: &quot;times new roman&quot;, times, serif; font-size: 16px;">C&ocirc;ng ty TNHH khoa học kỹ thuật Goertek Vina (Sau đ&acirc;y gọi tắt l&agrave; Goertek Vina) thuộc Tập đo&agrave;n Goertek c&oacute; trụ sở tại Duy Phường, Sơn Đ&ocirc;ng, Trung Quốc, được th&agrave;nh lập năm 2019 tại KCN Quế V&otilde;, phường Nam Sơn, TP Bắc Ninh, tỉnh Bắc Ninh. Goertek Vina chủ yếu nghi&ecirc;n cứu v&agrave; sản xuất c&aacute;c sản phẩm linh kiện thiết bị &acirc;m thanh, thiết bị ch&iacute;nh x&aacute;c v&agrave; phần cứng th&ocirc;ng minh. Goertek Việt Nam l&agrave; cơ sở sản xuất chế tạo lớn thứ hai của Tập đo&agrave;n Goertek, hiện c&oacute; 8 khu nh&agrave; m&aacute;y v&agrave; hơn 50.000 người lao động. Cơ sở thứ hai đặt tại Nghệ An, cơ sở thứ ba tại KCN Nam Sơn - Hạp Lĩnh, Bắc Ninh đang trong qu&aacute; tr&igrave;nh ho&agrave;n thiện ​​v&agrave; đ&atilde; đi v&agrave;o hoạt động với quy m&ocirc; hơn 30.000 lao động.</span><br />
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Nội dung gồm 2 phần:<br style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;" />
+	1. Hội thảo online:<br style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;" />
+	- Thời gian: 20h00 ng&agrave;y 12/05/2026<br style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;" />
+	- Nội dung: Giới thiệu c&ocirc;ng ty, c&aacute;c vị tr&iacute; tuyển dụng, trả lời thắc mắc của sinh vi&ecirc;n<br style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;" />
+	2. Tham quan nh&agrave; m&aacute;y v&agrave; phỏng vấn sinh vi&ecirc;n<br style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;" />
+	- Thời gian: 7h00 ng&agrave;y 15/05/2026<br style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;" />
+	- Địa điểm: Nh&agrave; m&aacute;y Goertek Vina tại Bắc Ninh</span></span></span></p>
+<p style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; margin: 0px; color: rgb(48, 49, 51); font-family: AT_bold, sans-serif; font-size: 14px; text-align: center;">
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><span style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-weight: bolder;">Đăng k&yacute; tham quan v&agrave; phỏng vấn tuyển dụng:</span>&nbsp;<a href="https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=n7jxBugHT0a0COwbRXA_MS97dnDGWrVLsl6Z_1CFYmBUNTRDTktTOUE5OTNURk9YT09OMzk2WU1aVy4u" rel="noopener" style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; background-color: transparent; cursor: pointer; text-decoration: inherit;" target="_blank"><span style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; font-weight: bolder;">tại đ&acirc;y</span></a></span></span></p>
+<p style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; margin: 0px; color: rgb(48, 49, 51); font-family: AT_bold, sans-serif; font-size: 14px;">
+	<br style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent;" />
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>- Lịch tr&igrave;nh chi tiết c&oacute; trong ảnh.</strong></span></span></p>
+<p style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; margin: 0px; color: rgb(48, 49, 51); font-family: AT_bold, sans-serif; font-size: 14px; text-align: center;">
+	<img alt="" src="/Upload/Nguyễn Việt Tiến/images/z7794048744582_75b3e7e70e5facdee61751acfade346d.jpg" style="width: 600px; height: 450px;" /></p>
+<p style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; margin: 0px; color: rgb(48, 49, 51); font-family: AT_bold, sans-serif; font-size: 14px;">
+	<br />
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">&nbsp; Để đ&aacute;p ứng cho nhu cầu mở rộng đầu tư, ph&aacute;t triển l&acirc;u d&agrave;i tại Việt Nam, c&ocirc;ng ty đang triển khai chương tr&igrave;nh tuyển dụng &ldquo;C&aacute;n Bộ Nguồn Đ&ocirc;i C&aacute;nh Goertek 2026&rdquo; v&agrave; &ldquo;C&aacute;n bộ Tinh Anh 2026&rdquo;<em> <strong>cụ thể như sau:</strong></em></span></span></p>
+<ol>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em><strong>TUYỂN DỤNG C&Aacute;N BỘ NGUỒN Đ&Ocirc;I C&Aacute;NH GOERTEK 2026</strong></em></span></span></li>
+</ol>
+<p style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; margin: 0px; color: rgb(48, 49, 51); font-family: AT_bold, sans-serif; font-size: 14px;">
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Đối tượng tuyển dụng: Sinh vi&ecirc;n đại học năm cuối, dự kiến tốt nghiệp năm 2025 hoặc trước th&aacute;ng 12/2026 thuộc c&aacute;c chuy&ecirc;n ng&agrave;nh kỹ thuật như: điện, điện tử, tự động h&oacute;a, cơ kh&iacute;, IT, m&aacute;y t&iacute;nh hoặc c&aacute;c ng&agrave;nh học li&ecirc;n quan. Ngo&agrave;i ra, điểm GPA cần đạt từ 2,5 trở l&ecirc;n</em></span></span></p>
+<ul style="list-style-type:circle;">
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em><strong>Số lượng tuyển dụng</strong></em><em>: 20 người</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em><strong>Vị tr&iacute; tuyển dụng</strong></em><em>:</em></span></span></li>
+</ul>
+<ol>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư R&amp;D quang học</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư R&amp;D tần số</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư R&amp;D &acirc;m học</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư ph&aacute;t triển kiểm tra điện &acirc;m</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư R&amp;D phần mềm</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư ph&acirc;n t&iacute;ch v&agrave; cải tiến sản phẩm</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư c&ocirc;ng nghệ (PE)</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư tinh gọn</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư quản l&yacute; dự &aacute;n R&amp;D</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư thiết kế v&agrave; chế tạo đồ g&aacute;</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư tự động h&oacute;a</em></span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>Kỹ sư R&amp;D điện</em></span></span></li>
+</ol>
+<ul style="list-style-type:circle;">
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em><strong>Chế độ đ&atilde;i ngộ</strong></em>:</span></span></li>
+</ul>
+<p style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; margin: 0px; color: rgb(48, 49, 51); font-family: AT_bold, sans-serif; font-size: 14px;">
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em>- Lương thử việc: Bằng 85% lương ch&iacute;nh thức (khoảng 9,2 triệu VND), chưa bao gồm tăng ca v&agrave; c&aacute;c khoản trợ cấp kh&aacute;c.</em><br />
+	<em>- Miễn ph&iacute; 3 bữa ăn/ ng&agrave;y trong v&ograve;ng 6 th&aacute;ng (t&iacute;nh từ thời điểm thử việc) </em><br />
+	<em>- Miễn ph&iacute; xe đưa đ&oacute;n h&agrave;ng ng&agrave;y trong v&ograve;ng 6 th&aacute;ng (t&iacute;nh từ thời điểm thử việc)</em><br />
+	<em>- Miễn ph&iacute; k&yacute; t&uacute;c x&aacute; trong v&ograve;ng 6 th&aacute;ng (t&iacute;nh từ thời điểm thử việc)</em><br />
+	<em>- <strong>Sau khi trở th&agrave;nh nh&acirc;n vi&ecirc;n ch&iacute;nh thức</strong>: Mức lương dao động từ 11.000.000 VND đến 15.000.000 VND, chưa bao gồm tăng ca v&agrave; trợ cấp kh&aacute;c. </em><br />
+	<em>- Được l&agrave;m việc trong m&ocirc;i trường chuy&ecirc;n nghiệp năng động v&agrave; c&oacute; cơ hội thăng tiến cao</em><br />
+	<em>- Tham gia bảo hiểm ngay từ th&aacute;ng thử việc đầu ti&ecirc;n;</em><br />
+	<em>- Thưởng c&aacute;c ng&agrave;y lễ, Tết, thưởng cuối năm,....</em><br />
+	<em>- Nghỉ ph&eacute;p: ph&eacute;p năm, thai sản, nghỉ ph&eacute;p theo giờ ( mỗi th&aacute;ng nghỉ 2 lần 2 tiếng vẫn hưởng lương);</em><br />
+	<em>- Chăm s&oacute;c sức khỏe: tổ chức kh&aacute;m sức khỏe định kỳ miễn ph&iacute; cho nh&acirc;n vi&ecirc;n;</em><br />
+	<em>- C&aacute;c khoản trợ cấp kh&aacute;c: trợ cấp th&acirc;m ni&ecirc;n, nh&agrave; ở, đi lại, chuy&ecirc;n cần, trợ cấp c&ocirc;ng t&aacute;c... </em><br />
+	<em>- C&oacute; cơ hội đ&agrave;o tạo v&agrave; tham quan Tổng bộ Trung Quốc từ 1 &ndash; 6 th&aacute;ng</em></span></span></p>
+<ol>
+	<li value="2">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>TUYỂN DỤNG C&Aacute;N BỘ TINH ANH 2026</strong></span></span></li>
+</ol>
+<p style="box-sizing: border-box; border-width: 0px; border-style: solid; border-color: rgb(229, 231, 235); --tw-border-opacity: 1; --tw-shadow: 0 0 transparent; --tw-ring-inset: ; --tw-ring-offset-width: 0px; --tw-ring-offset-color: #fff; --tw-ring-color: rgba(59,130,246,0.5); --tw-ring-offset-shadow: 0 0 transparent; --tw-ring-shadow: 0 0 transparent; margin: 0px; color: rgb(48, 49, 51); font-family: AT_bold, sans-serif; font-size: 14px;">
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">&nbsp;<em>Đối tượng tuyển dụng: Sinh vi&ecirc;n đại học</em><em> hệ kỹ sư trở l&ecirc;n</em><em> năm cuối, dự kiến tốt nghiệp năm 2025/2026 thuộc c&aacute;c chuy&ecirc;n ng&agrave;nh kỹ thuật như: điện, điện tử, tự động h&oacute;a, cơ kh&iacute;, IT, m&aacute;y t&iacute;nh hoặc c&aacute;c ng&agrave;nh học li&ecirc;n quan. </em></span></span></p>
+<ul style="list-style-type:circle;">
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em><strong>Vị tr&iacute; tuyển dụng</strong></em><em>:</em></span></span></li>
+</ul>
+<ol>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Kỹ sư R&amp;D phần cứng</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Kỹ sư R&amp;D kết cấu</span></span></li>
+</ol>
+<ul style="list-style-type:circle;">
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><em><strong>Chế độ đ&atilde;i ngộ</strong></em><em>:</em></span></span></li>
+</ul>
+<ul>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Thu nhập cạnh tranh: 400 &ndash; 850 triệu VNĐ/năm (thỏa thuận theo năng lực)</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Tham gia BHXH đầy đủ theo quy định; được đ&oacute;ng bảo hiểm ngay từ th&aacute;ng thử việc</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Thưởng c&aacute;c dịp lễ, Tết v&agrave; thưởng cuối năm</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Chế độ nghỉ ph&eacute;p: ph&eacute;p năm, thai sản, nghỉ theo giờ (2 lần/th&aacute;ng, mỗi lần 2 giờ, hưởng nguy&ecirc;n lương)</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Kh&aacute;m sức khỏe định kỳ miễn ph&iacute; h&agrave;ng năm</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">C&aacute;c khoản phụ cấp: th&acirc;m ni&ecirc;n, nh&agrave; ở, đi lại, chuy&ecirc;n cần, c&ocirc;ng t&aacute;c ph&iacute;</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">K&yacute; t&uacute;c x&aacute; miễn ph&iacute; trong 2 năm (ti&ecirc;u chuẩn tương đương 4 sao)</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Xe đưa đ&oacute;n miễn ph&iacute; KTX &ndash; C&ocirc;ng ty trong 2 năm</span></span></li>
+	<li>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Thưởng giữ ch&acirc;n nh&acirc;n t&agrave;i h&agrave;ng năm l&ecirc;n đến 3 th&aacute;ng lương (&aacute;p dụng tối đa 5 năm)</span></span></li>
+</ul>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

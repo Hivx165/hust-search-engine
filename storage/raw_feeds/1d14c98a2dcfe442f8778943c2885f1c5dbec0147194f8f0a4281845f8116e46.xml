@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- This sitemap was động generated on 7 Tháng mười một, 2026 at 1:43 chiều by All in One SEO v5.0.5 - the original SEO plugin for WordPress. -->
+
+<?xml-stylesheet type="text/xsl" href="https://bke.hust.edu.vn/default-sitemap.xsl?sitemap=root"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+	<sitemap>
+		<loc><![CDATA[https://bke.hust.edu.vn/post-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2025-06-26T11:24:11+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[https://bke.hust.edu.vn/page-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2025-08-20T15:52:41+00:00]]></lastmod>
+	</sitemap>
+	<sitemap>
+		<loc><![CDATA[https://bke.hust.edu.vn/category-sitemap.xml]]></loc>
+		<lastmod><![CDATA[2025-06-26T11:24:11+00:00]]></lastmod>
+	</sitemap>
+</sitemapindex>

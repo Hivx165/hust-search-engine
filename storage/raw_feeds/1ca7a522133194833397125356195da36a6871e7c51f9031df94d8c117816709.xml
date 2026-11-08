@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Cơ hội hợp tác - Sự kiện đã diễn ra</title>
+        <link>https://iet.hust.edu.vn/vi/news/su-kien-da-dien-ra/</link>
+        <atom:link href="https://iet.hust.edu.vn/vi/news/rss/su-kien-da-dien-ra/" rel="self" />
+                <description>
+            <![CDATA[Viện Công nghệ Năng lượng - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Tue, 13 Oct 2026 10:10:00 GMT</pubDate>
+        <lastBuildDate>Tue, 13 Oct 2026 10:10:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Viện Công nghệ Năng lượng]]>
+        </copyright>
+        <docs>https://iet.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://iet.hust.edu.vn/uploads/iet/logo-dhbk-1-02_130_191.png</url>
+            <title>Cơ hội hợp tác - Sự kiện đã diễn ra</title>
+            <link>https://iet.hust.edu.vn/vi/news/su-kien-da-dien-ra/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Viện Công nghệ Năng lượng tăng cường hợp tác phát triển công nghệ và sản phẩm chiến lược</title>
+            <link>https://iet.hust.edu.vn/vi/news/tin-tuc/vien-cong-nghe-nang-luong-tang-cuong-hop-tac-phat-trien-cong-nghe-va-san-pham-chien-luoc-27.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_27]]>
+            </guid>
+            
+                        <pubDate>Tue, 13 Oct 2026 10:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/news/2026_10/1791620796350_1457110833904380376_1457110833904380376_9ff6462cb883c4f807c3827ba52bc238_1.jpg" width="100" align="left" border="0">Trong khuôn khổ các hoạt động chào mừng kỷ niệm 70 năm thành lập Đại học Bách khoa Hà Nội, chương trình ngày 10/10/2026 của Viện Công nghệ Năng lượng đã kết nối các cơ quan quản lý, nhà khoa học, hiệp hội, doanh nghiệp và địa phương để trao đổi nhu cầu công nghệ, định hướng nghiên cứu và những nội dung hợp tác cụ thể. Các phát biểu, tham luận và thỏa thuận ký kết cùng hướng tới mục tiêu đưa kết quả nghiên cứu vào sản xuất và đời sống.]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>GÓC NHÌN CHUYÊN GIA VỀ BÀI TOÁN NĂNG LƯỢNG VIỆT NAM TRONG GIAI ĐOẠN CHUYỂN DỊCH</title>
+            <link>https://iet.hust.edu.vn/vi/news/tin-tuc-13/goc-nhin-chuyen-gia-ve-bai-toan-nang-luong-viet-nam-24.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_24]]>
+            </guid>
+            
+                        <pubDate>Thu, 3 Sep 2026 07:09:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/news/2026_09/goc-nhin-chuyen-gia.png" width="100" align="left" border="0">GÓC NHÌN CHUYÊN GIA VỀ BÀI TOÁN NĂNG LƯỢNG VIỆT NAM TRONG GIAI ĐOẠN CHUYỂN DỊCH]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Ra mắt Hội đồng Viện Công nghệ Năng lượng, Đại học Bách khoa Hà Nội</title>
+            <link>https://iet.hust.edu.vn/vi/news/tin-tuc/ra-mat-hoi-dong-vien-cong-nghe-nang-luong-dai-hoc-bach-khoa-ha-noi-23.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_23]]>
+            </guid>
+            
+                        <pubDate>Fri, 6 Feb 2026 03:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/news/2026_02/image-1.jpg" width="100" align="left" border="0">GDVN - Hội đồng Viện Công nghệ Năng lượng (Đại học Bách khoa Hà Nội) gồm 15 thành viên chính thức ra mắt vào chiều 8/5.]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hội thảo “Trí tuệ nhân tạo &amp; Tương lai hạ tầng năng lượng”&#x3A; Kết nối công nghệ – ứng dụng – hợp tác Việt – Hàn</title>
+            <link>https://iet.hust.edu.vn/vi/news/tin-tuc/hoi-thao-tri-tue-nhan-tao-tuong-lai-ha-tang-nang-luong-ket-noi-cong-nghe-ung-dung-hop-tac-viet-han-14.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[news_14]]>
+            </guid>
+            
+                        <pubDate>Thu, 5 Feb 2026 11:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/news/2026_02/img_3687.jpg" width="100" align="left" border="0">Chiều 05/02/2026, tại Đại học Bách khoa Hà Nội, Viện Công nghệ Năng lượng (IET) đã tổ chức Hội thảo “Trí tuệ nhân tạo & Tương lai hạ tầng năng lượng: Kết nối công nghệ – ứng dụng – hợp tác Việt – Hàn” với sự tham dự của gần 50 đại biểu.]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

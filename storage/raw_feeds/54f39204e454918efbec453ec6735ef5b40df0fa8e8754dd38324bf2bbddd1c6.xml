@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Đoàn thanh niên Đại học Bách khoa Hà Nội RSS&#x3A; Lịch làm việc</title>
+        <link>https://svbk.hust.edu.vn/vi/workcalendar/</link>
+        <atom:link href="https://svbk.hust.edu.vn/vi/workcalendar/rss/" rel="self" />
+                <description>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Sun, 20 Sep 2026 13:09:25 GMT</pubDate>
+        <lastBuildDate>Sun, 20 Sep 2026 13:09:25 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </copyright>
+        <docs>https://svbk.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://svbk.hust.edu.vn/uploads/svbk/logo-dhbk-1-02_130_191.png</url>
+            <title>Đoàn thanh niên Đại học Bách khoa Hà Nội RSS&#x3A; Lịch làm việc</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Nhạc Hội HUST FEST</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Nhac-Hoi-HUST-FEST/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_52]]>
+            </guid>
+            
+                        <pubDate>Sun, 20 Sep 2026 13:09:25 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[Đoàn Thanh niên - Hội Sinh viên Đại học phối với các đơn vị liên quan chuẩn bị]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chào tân Sinh viên Bách khoa 2026</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chao-tan-Sinh-vien-Bach-khoa-2026/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_51]]>
+            </guid>
+            
+                        <pubDate>Sun, 20 Sep 2026 13:09:34 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[Đoàn Thanh niên - Hội Sinh viên Đại học phối hợp với các đơn vị liên quan chuẩn bị]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Ngày hội Di chuyển xanh</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Ngay-hoi-Di-chuyen-xanh/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_50]]>
+            </guid>
+            
+                        <pubDate>Sun, 20 Sep 2026 13:09:07 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[Báo Xây dựng phối hợp với Đoàn Thanh niên - Hội Sinh viên Đại học và các đơn vị liên quan phối hợp chuẩn bị]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Tổng kết Hội nghị Sinh viên Nghiên cứu Khoa học</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Tong-ket-Hoi-nghi-Sinh-vien-Nghien-cuu-Khoa-hoc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_49]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 12:06:06 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chương trình hiến máu &quot;Bách khoa nghìn giọt hy vọng lần thứ XXXV</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chuong-trinh-hien-mau-Bach-khoa-nghin-giot-hy-vong-lan-thu-XXXV/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_47]]>
+            </guid>
+            
+                        <pubDate>Mon, 1 Jun 2026 13:06:39 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chương trình sáng tác và biểu diễn nghệ thuật kịch “HỪNG ĐÔNG II&quot;</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chuong-trinh-sang-tac-va-bieu-dien-nghe-thuat-kich-HUNG-DONG-II/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_45]]>
+            </guid>
+            
+                        <pubDate>Wed, 27 May 2026 18:05:08 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chung kết MC ON THE MIC 2026&#x3A; Rạng Việt</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chung-ket-MC-ON-THE-MIC-2026-Rang-Viet/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_44]]>
+            </guid>
+            
+                        <pubDate>Wed, 27 May 2026 18:05:52 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chương trình Ngày hội Sinh viên Tình nguyện</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chuong-trinh-Ngay-hoi-Sinh-vien-Tinh-nguyen/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_42]]>
+            </guid>
+            
+                        <pubDate>Wed, 27 May 2026 13:05:14 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[7h30 - 16h00: Cuộc thi Flashmobs và Teambuilding tại sân ngã 5<br />18h-20h30: Gala tại hội trường tầng 10 thư viện Tạ Quang Bửu]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>CHỦ NHẬT ĐỎ LẦN THỨ XVIII – BÁCH KHOA NGHÌN GIỌT HY VỌNG LẦN THỨ XXXIV</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/CHU-NHAT-DO-LAN-THU-XVIII-BACH-KHOA-NGHIN-GIOT-HY-VONG-LAN-THU-XXXIV/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_41]]>
+            </guid>
+            
+                        <pubDate>Fri, 2 Jan 2026 04:01:03 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chung kết Cuộc thi Bách khoa Ecogreen</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chung-ket-Cuoc-thi-Bach-khoa-Ecogreen/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_40]]>
+            </guid>
+            
+                        <pubDate>Fri, 2 Jan 2026 04:01:10 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chung kết Mr &amp; Miss Bách khoa 2025</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chung-ket-Mr-Miss-Bach-khoa-2025/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_39]]>
+            </guid>
+            
+                        <pubDate>Fri, 2 Jan 2026 04:01:05 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lễ tuyên dương Sinh viên 5 Tốt 2025</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Le-tuyen-duong-Sinh-vien-5-Tot-2025/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_38]]>
+            </guid>
+            
+                        <pubDate>Sun, 28 Dec 2025 09:12:45 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chung kết Cuộc thi hùng biện Tiếng Anh GreenTalk Challenge</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chung-ket-Cuoc-thi-hung-bien-Tieng-Anh-GreenTalk-Challenge/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_37]]>
+            </guid>
+            
+                        <pubDate>Sun, 28 Dec 2025 09:12:36 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hội thao Sinh viên Bách khoa &#40;môn cầu lông&#41; - ngày 8&#x002F;1</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Hoi-thao-Sinh-vien-Bach-khoa-mon-cau-long-ngay-8-1/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_36]]>
+            </guid>
+            
+                        <pubDate>Sun, 28 Dec 2025 09:12:42 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hội thao Sinh viên Bách khoa &#40;môn cầu lông&#41; - ngày 7&#x002F;1</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Hoi-thao-Sinh-vien-Bach-khoa-mon-cau-long-ngay-7-1/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_35]]>
+            </guid>
+            
+                        <pubDate>Sun, 28 Dec 2025 09:12:06 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hội thao Sinh viên Bách khoa &#40;môn Cầu lông&#41;</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Hoi-thao-Sinh-vien-Bach-khoa-mon-Cau-long/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_34]]>
+            </guid>
+            
+                        <pubDate>Sun, 28 Dec 2025 09:12:46 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hội thao Sinh viên Bách khoa &#40;Môn Điền kinh&#41;</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Hoi-thao-Sinh-vien-Bach-khoa-Mon-Dien-kinh/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_33]]>
+            </guid>
+            
+                        <pubDate>Sun, 28 Dec 2025 09:12:28 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hội thao Sinh viên Bách khoa &#40;môn bóng bàn&#41;</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Hoi-thao-Sinh-vien-Bach-khoa-Bo-mon-bong-ban-tai-Nha-thi-dau-Bach-khoa/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_32]]>
+            </guid>
+            
+                        <pubDate>Sun, 28 Dec 2025 09:12:50 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Vòng Pitching các ý tưởng Cuộc thi hùng biện Tiếng Anh GreenTalk Challenge</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Vong-Pitching-cac-y-tuong-Cuoc-thi-hung-bien-Tieng-Anh-GreenTalk-Challenge/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_31]]>
+            </guid>
+            
+                        <pubDate>Sun, 28 Dec 2025 09:12:04 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lễ kiện toàn Ban VNTT, TNTN</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Le-kien-toan-Ban-VNTT-TNTN/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_30]]>
+            </guid>
+            
+                        <pubDate>Thu, 20 Mar 2025 09:03:31 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chương trình Tập huấn Công tác Đoàn vụ và truyền thông cho các Đoàn trường, Liên chi đoàn trực thuộc</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chuong-trinh-Tap-huan-Cong-tac-Doan-vu-va-truyen-thong-cho-cac-Doan-truong-Lien-chi-doan-truc-thuoc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_29]]>
+            </guid>
+            
+                        <pubDate>Mon, 10 Mar 2025 19:03:48 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[Tập huấn về các nội dung:<br />- Công tác đoàn vụ<br />- Công tác truyền thông]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chuẩn bị chương trình Hiến máu Chủ nhật đỏ lần thứ XVI</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Chuan-bi-chuong-trinh-Hien-mau-Chu-nhat-do-lan-thu-XVI/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_28]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:50 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp chuẩn bị cho Hội nghị đối thoại và sáng kiến sinh viên 2023</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Hop-chuan-bi-cho-Hoi-nghi-doi-thoai-va-sang-kien-sinh-vien-2023/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_27]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:02 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Phối hợp với Thành Đoàn Hà Nội tổ chức chung kết chương trình&#x3A; Bệ phóng khởi nghiệp cho sinh viên thủ đô lần thứ I</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Phoi-hop-voi-Thanh-Doan-Ha-Noi-to-chuc-chung-ket-chuong-trinh-Be-phong-khoi-nghiep-cho-sinh-vien-thu-do-lan-thu-I/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_26]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:25 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Vòng Tứ kết giải bóng đá nam cán bộ Bách khoa 2023</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Vong-Tu-ket-giai-bong-da-nam-can-bo-Bach-khoa-2023/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_25]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:38 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Phối hợp với ĐTN + Thành Đoàn để tổng duyệt chạy thử chương trình chung kết cuộc thi&#x3A; Bệ phóng khởi nghiệp cho sinh viên thủ đô lần thứ I</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Phoi-hop-voi-DTN-Thanh-Doan-de-tong-duyet-chay-thu-chuong-trinh-chung-ket-cuoc-thi-Be-phong-khoi-nghiep-cho-sinh-vien-thu-do-lan-thu-I/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_24]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:05 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp rà soát công tác tổ chức Lễ phát động Chủ nhật đỏ lần thứ XVI</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Hop-ra-soat-cong-tac-to-chuc-Le-phat-dong-Chu-nhat-do-lan-thu-XVI/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_23]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:13 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Tổ chức diễn đàn số 1 của Đại hội HSV toàn quốc</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/To-chuc-dien-dan-so-1-cua-Dai-hoi-HSV-toan-quoc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_22]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:14 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bế mạc Hội thao sinh viên Bách khoa 2023</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Be-mac-Hoi-thao-sinh-vien-Bach-khoa-2023/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_21]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:44 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp Ban thường vụ Đoàn Đại học</title>
+            <link>https://svbk.hust.edu.vn/vi/workcalendar/Sinh-vien-Dai-hoc-BKHN/Hop-Ban-thuong-vu-Doan-Dai-hoc1/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_20]]>
+            </guid>
+            
+                        <pubDate>Mon, 18 Dec 2023 01:12:53 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

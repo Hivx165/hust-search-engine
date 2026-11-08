@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>main &#8211; MSOLab</title>
+	<atom:link href="http://mso.soict.hust.edu.vn/?feed=rss2&#038;cat=3" rel="self" type="application/rss+xml" />
+	<link>http://mso.soict.hust.edu.vn</link>
+	<description>Modelling, Simulation &#38; Optimization Laboratory</description>
+	<lastBuildDate>Mon, 26 Mar 2018 11:18:52 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.2.15</generator>
+	<item>
+		<title>Seminar: &#8220;Ergonomic Aspects of Autonomous Driving&#8221;</title>
+		<link>http://mso.soict.hust.edu.vn/?p=230</link>
+					<comments>http://mso.soict.hust.edu.vn/?p=230#comments</comments>
+		
+		<dc:creator><![CDATA[ductv]]></dc:creator>
+		<pubDate>Mon, 26 Mar 2018 11:18:52 +0000</pubDate>
+				<category><![CDATA[main]]></category>
+		<guid isPermaLink="false">http://mso.soict.hust.edu.vn/?p=230</guid>
+
+					<description><![CDATA[Ergonomic Aspects of Autonomous Driving Studying Human Behavior in Urban Traffic Using Linked Driving Simulation Thời gian: 14.30 ngày thứ 2, 26/3/2018 Địa điểm: phòng 803, nhà B1, Đại học  Bách khoa Hà Nội Người trình bày: Prof. Dr. Klaus Bengler (Technical University of Munich) Abstract: The talk will present current projects related to ergonomic ...]]></description>
+		
+					<wfw:commentRss>http://mso.soict.hust.edu.vn/?feed=rss2&#038;p=230</wfw:commentRss>
+			<slash:comments>8930</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

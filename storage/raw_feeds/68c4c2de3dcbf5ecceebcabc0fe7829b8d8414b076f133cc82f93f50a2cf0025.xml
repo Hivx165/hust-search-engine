@@ -1,0 +1,500 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Tài nguyên - Biểu mẫu</title>
+        <link>https://svbk.hust.edu.vn/vi/download/?cat=Bieu-mau</link>
+        <atom:link href="https://svbk.hust.edu.vn/vi/download/rss/" rel="self" />
+                <description>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Thu, 2 Apr 2026 03:04:53 GMT</pubDate>
+        <lastBuildDate>Thu, 2 Apr 2026 03:04:53 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </copyright>
+        <docs>https://svbk.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://svbk.hust.edu.vn/uploads/svbk/logo-dhbk-1-02_130_191.png</url>
+            <title>Tài nguyên - Biểu mẫu</title>
+            <link>https://svbk.hust.edu.vn/vi/download/?cat=Bieu-mau</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Biểu mẫu công tác Đảng 2026-4</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/bieu-mau-cong-tac-dang-2026-4.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_65]]>
+            </guid>
+            
+                        <pubDate>Thu, 2 Apr 2026 03:04:53 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn công tác Đảng mới 2026-3</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/huong-dan-cong-tac-dang-moi-2026-3.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_63]]>
+            </guid>
+            
+                        <pubDate>Tue, 24 Mar 2026 02:03:49 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Cac bieu mau cong tac Dang 2025-12</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/cac-bieu-mau-cong-tac-dang-2025-12.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_61]]>
+            </guid>
+            
+                        <pubDate>Wed, 24 Dec 2025 03:12:54 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn công tác Đảng mới 2025-12</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/huong-dan-cong-tac-dang-moi-2025-12.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_58]]>
+            </guid>
+            
+                        <pubDate>Wed, 24 Dec 2025 03:12:43 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Mẫu đơn xác nhận Cán bộ Đoàn Hội xuất sắc cho hồ sơ kết nạp Đảng</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/mau-don-xac-nhan-can-bo-doan-hoi-xuat-sac-cho-ho-so-ket-nap-dang.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_55]]>
+            </guid>
+            
+                        <pubDate>Tue, 9 Dec 2025 02:12:56 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảng-điểm-đánh-giá-công-tác-Đoàn-2025-2026</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/bang-diem-danh-gia-cong-tac-doan-2025-2026.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_54]]>
+            </guid>
+            
+                        <pubDate>Mon, 1 Dec 2025 06:12:57 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Kế hoạch hoạt động Đoàn Đại học năm học 2025 - 2026</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/ke-hoach-hoat-dong-doan-dai-hoc-nam-hoc-2025-2026.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_53]]>
+            </guid>
+            
+                        <pubDate>Mon, 1 Dec 2025 06:12:34 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Mẫu giấy tờ Đại hội chi đoàn 2025-</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/mau-giay-to-dai-hoi-chi-doan-2025.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_49]]>
+            </guid>
+            
+                        <pubDate>Wed, 29 Oct 2025 06:10:06 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Mau chuyen sinh hoat Doan cho hoc vien sau Dai hoc ve Chi doan Can bo</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/mau-chuyen-sinh-hoat-doan-cho-hoc-vien-sau-dai-hoc-ve-chi-doan-can-bo.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_48]]>
+            </guid>
+            
+                        <pubDate>Wed, 21 May 2025 07:05:02 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Tờ trình xin quay chụp trong khuôn viên Đại học</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/to-trinh-xin-quay-chup-trong-khuon-vien-dai-hoc.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_41]]>
+            </guid>
+            
+                        <pubDate>Fri, 25 Apr 2025 15:04:53 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Chú ý quan trọng Tờ trình đặt bàn và ấn phẩm</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/chu-y-quan-trong-to-trinh-dat-ban-va-an-pham.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_39]]>
+            </guid>
+            
+                        <pubDate>Tue, 15 Apr 2025 02:04:52 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảng-điểm-đánh-giá-công-tác-Đoàn-2024-2025 Dự kiến Apr 8</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/bang-diem-danh-gia-cong-tac-doan-2024-2025-du-kien-apr-8.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_38]]>
+            </guid>
+            
+                        <pubDate>Tue, 8 Apr 2025 04:04:10 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Tờ trình xin mượn phòng BKoffice HTr dốc C1 HTr B1</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/to-trinh-xin-muon-phong-bkoffice-htr-doc-c1-htr-b1.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_37]]>
+            </guid>
+            
+                        <pubDate>Tue, 1 Apr 2025 04:04:04 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Luu y ve an pham truyen thong 2025-</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/luu-y-ve-an-pham-truyen-thong-2025.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_35]]>
+            </guid>
+            
+                        <pubDate>Mon, 31 Mar 2025 03:03:04 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Tờ trình xin mượn phòng BKoffice</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/to-trinh-xin-muon-phong-bkoffice.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_34]]>
+            </guid>
+            
+                        <pubDate>Thu, 27 Mar 2025 10:03:20 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Mau_de_an 2025 - BKoffice</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/mau-de-an-2025-bkoffice.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_30]]>
+            </guid>
+            
+                        <pubDate>Thu, 27 Mar 2025 04:03:35 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Mau_de_an 2025</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/mau-de-an-2025.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_28]]>
+            </guid>
+            
+                        <pubDate>Fri, 21 Mar 2025 08:03:39 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn BKoffice</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/huong-dan-bkoffice.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_27]]>
+            </guid>
+            
+                        <pubDate>Fri, 21 Mar 2025 08:03:29 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Tờ trình đặt bàn và ấn phẩm BKoffice</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/to-trinh-dat-ban-va-an-pham-bkoffice.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_24]]>
+            </guid>
+            
+                        <pubDate>Fri, 21 Mar 2025 08:03:48 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Giấy mời BKoffice</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/giay-moi-bkoffice.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_23]]>
+            </guid>
+            
+                        <pubDate>Fri, 21 Mar 2025 08:03:14 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>BỘ LOGO ĐHBK HÀ NỘI - FILE THIẾT KẾ pdf</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/bo-logo-dhbk-ha-noi-file-thiet-ke-pdf.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_21]]>
+            </guid>
+            
+                        <pubDate>Tue, 11 Mar 2025 02:03:33 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Sổ tay hướng dẫn nhận diện thương hiệu ĐHBK Hà Nội.pdf</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/so-tay-huong-dan-nhan-dien-thuong-hieu-dhbk-ha-noi-pdf.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_20]]>
+            </guid>
+            
+                        <pubDate>Tue, 11 Mar 2025 02:03:10 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Logo ĐHBK+ĐTN 37+HSV &#40;2023 - 2025&#41; pdf</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/logo-dhbk-dtn-37-hsv-2023-2025-20.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_19]]>
+            </guid>
+            
+                        <pubDate>Tue, 11 Mar 2025 02:03:05 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>LOGO ĐHBK + ĐTN&#40;37&#41; + HSV&#40;2023-2025&#41;</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/logo-dhbk-dtn-37-hsv-2023-2025.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_16]]>
+            </guid>
+            
+                        <pubDate>Mon, 10 Mar 2025 10:03:53 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>&#91;OFFICIAL&#93; Bộ Toolkit logo ĐHBK Hà Nội</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/official-bo-toolkit-logo-dhbk-ha-no-i.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_15]]>
+            </guid>
+            
+                        <pubDate>Mon, 10 Mar 2025 10:03:01 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đại hội, Hội nghị Đoàn các cấp.rar</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/Dai-hoi-Hoi-nghi-Doan-cac-cap-rar.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_10]]>
+            </guid>
+            
+                        <pubDate>Wed, 23 Aug 2023 08:08:08 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>&#91;DỰ THẢO&#93; - HD Thể thức văn bản Đoàn trường HUST - ver1.pdf</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/DU-THAO-HD-The-thuc-van-ban-Doan-truong-HUST-ver1-pdf.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_7]]>
+            </guid>
+            
+                        <pubDate>Wed, 23 Aug 2023 07:08:13 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp xét Đảng các cấp.rar</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/Hop-xet-Dang-cac-cap-rar.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_2]]>
+            </guid>
+            
+                        <pubDate>Wed, 23 Aug 2023 07:08:59 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bản kê khai năng lực chuyên môn. Mau HD thue khoan.docx</title>
+            <link>https://svbk.hust.edu.vn/vi/download/Bieu-mau/Ban-ke-khai-nang-luc-chuyen-mon-Mau-HD-thue-khoan-docx.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[download_1]]>
+            </guid>
+            
+                        <pubDate>Wed, 23 Aug 2023 07:08:04 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

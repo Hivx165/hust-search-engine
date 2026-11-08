@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Nghiên cứu - Lĩnh vực nghiên cứu</title>
+        <link>https://iet.hust.edu.vn/vi/nghien-cuu/linh-vuc-nghien-cuu/</link>
+        <atom:link href="https://iet.hust.edu.vn/vi/nghien-cuu/rss/linh-vuc-nghien-cuu/" rel="self" />
+                <description>
+            <![CDATA[Viện Công nghệ Năng lượng - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Thu, 11 Dec 2025 10:12:00 GMT</pubDate>
+        <lastBuildDate>Thu, 11 Dec 2025 10:12:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Viện Công nghệ Năng lượng]]>
+        </copyright>
+        <docs>https://iet.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://iet.hust.edu.vn/uploads/iet/logo-dhbk-1-02_130_191.png</url>
+            <title>Nghiên cứu - Lĩnh vực nghiên cứu</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/linh-vuc-nghien-cuu/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Công nghệ phương tự hành</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/linh-vuc-nghien-cuu/cong-nghe-phuong-tu-hanh-4.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_4]]>
+            </guid>
+            
+                        <pubDate>Thu, 11 Dec 2025 10:12:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2025_12/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Công nghệ môi trường</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/linh-vuc-nghien-cuu/cong-nghe-moi-truong-3.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_3]]>
+            </guid>
+            
+                        <pubDate>Thu, 11 Dec 2025 10:12:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2025_12/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Công nghệ chế biến bảo quản</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/linh-vuc-nghien-cuu/cong-nghe-che-bien-bao-quan-2.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_2]]>
+            </guid>
+            
+                        <pubDate>Thu, 11 Dec 2025 09:12:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2025_12/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Công nghệ năng lượng</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/linh-vuc-nghien-cuu/cong-nghe-nang-luong-1.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_1]]>
+            </guid>
+            
+                        <pubDate>Thu, 11 Dec 2025 08:12:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2025_12/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Giới thiệu chung</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/linh-vuc-nghien-cuu/gioi-thieu-chung-9.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_9]]>
+            </guid>
+            
+                        <pubDate>Tue, 9 Dec 2025 02:12:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2025_12/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

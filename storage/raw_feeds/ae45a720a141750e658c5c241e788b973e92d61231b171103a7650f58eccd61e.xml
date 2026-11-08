@@ -1,0 +1,468 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Các nhóm chuyên môn - Nhóm chuyên môn Công nghệ Giáo dục</title>
+        <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/</link>
+        <atom:link href="https://fed.hust.edu.vn/vi/bo-mon/rss/nhom-chuyen-mon-cong-nghe-giao-duc/" rel="self" />
+                <description>
+            <![CDATA[Khoa Khoa học & Công nghệ giáo dục - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Sat, 24 Oct 2026 15:10:00 GMT</pubDate>
+        <lastBuildDate>Sat, 24 Oct 2026 15:10:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Khoa Khoa học &amp; Công nghệ giáo dục]]>
+        </copyright>
+        <docs>https://fed.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://fed.hust.edu.vn/uploads/feed/logo-dhbk-1-02_130_191.png</url>
+            <title>Các nhóm chuyên môn - Nhóm chuyên môn Công nghệ Giáo dục</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>ThS. Đỗ Minh Trí</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ths-do-minh-tri-293953.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293953]]>
+            </guid>
+            
+                        <pubDate>Sat, 24 Oct 2026 15:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/uploads/feed/about/journalimg/thay-tri.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. Đặng Thị Như Quỳnh</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-dang-thi-nhu-quynh-293952.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293952]]>
+            </guid>
+            
+                        <pubDate>Fri, 9 Oct 2026 03:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/uploads/feed/about/journalimg/co-quynh.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Ths. Nguyễn Yến Chi</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ths-nguyen-yen-chi-293951.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293951]]>
+            </guid>
+            
+                        <pubDate>Tue, 14 Oct 2025 07:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/uploads/feed/about/journalimg/co-chi.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. Nguyễn Thị Huyền</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-thi-huyen-293950.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293950]]>
+            </guid>
+            
+                        <pubDate>Fri, 26 Sep 2025 23:09:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/uploads/feed/about/journalimg/co-huyen.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Nguyễn Trần Khánh Phương</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/nguyen-tran-khanh-phuong-293948.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293948]]>
+            </guid>
+            
+                        <pubDate>Fri, 26 Sep 2025 08:09:21 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/uploads/feed/about/journalimg/khanh-phuong.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. Nguyễn Thị Thanh Thủy</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-thi-thanh-thuy-293946.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293946]]>
+            </guid>
+            
+                        <pubDate>Tue, 12 Mar 2024 22:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/assets/feed/bo-mon/journalimg/thuyntt.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. Vũ Đình Minh</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-vu-dinh-minh-293945.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293945]]>
+            </guid>
+            
+                        <pubDate>Tue, 12 Mar 2024 22:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://fed.hust.edu.vn/assets/feed/bo-mon/journalimg/minhvd.png" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>PGS.TS. Phạm Thị Thanh Hải</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/pgs-ts-pham-thi-thanh-hai-293944.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293944]]>
+            </guid>
+            
+                        <pubDate>Fri, 5 Jan 2024 15:01:43 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>PGS.TS Lê Hiếu Học</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/pgs-ts-le-hieu-hoc-283959.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_283959]]>
+            </guid>
+            
+                        <pubDate>Sun, 4 Sep 2022 00:09:29 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. Nguyễn Thị Thanh Tú</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-thi-thanh-tu-201767.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_201767]]>
+            </guid>
+            
+                        <pubDate>Mon, 1 Jun 2020 19:06:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS Nguyễn Đắc Trung</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-dac-trung-183582.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_183582]]>
+            </guid>
+            
+                        <pubDate>Mon, 9 Mar 2020 16:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>PGS.TS. LÊ HUY TÙNG</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-le-huy-tung-183571.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_183571]]>
+            </guid>
+            
+                        <pubDate>Mon, 9 Mar 2020 16:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>ThS. PHẠM HỒNG HẠNH</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ths-pham-hong-hanh-181762.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_181762]]>
+            </guid>
+            
+                        <pubDate>Sun, 1 Mar 2020 15:03:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. Vũ Thị Lan</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-vu-thi-lan-181597.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_181597]]>
+            </guid>
+            
+                        <pubDate>Thu, 27 Feb 2020 18:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>PGS.TS. BÙI THỊ THÚY HẰNG</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/pgs-ts-bui-thi-thuy-hang-181550.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_181550]]>
+            </guid>
+            
+                        <pubDate>Thu, 27 Feb 2020 18:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>BM Sư phạm NKT - Danh sách cán bộ</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/bm-su-pham-nkt-danh-sach-can-bo-181262.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_181262]]>
+            </guid>
+            
+                        <pubDate>Wed, 26 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. NGUYỄN THỊ HƯƠNG GIANG</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/ts-nguyen-thi-huong-giang-181245.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_181245]]>
+            </guid>
+            
+                        <pubDate>Wed, 26 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Th.S Bùi Ngọc Sơn</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/th-s-bui-ngoc-son-180476.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_180476]]>
+            </guid>
+            
+                        <pubDate>Tue, 25 Feb 2020 18:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>TS. Dương Thị Thùy Mai</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-quan-ly-giao-duc/ts-duong-thi-thuy-mai-180448.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_180448]]>
+            </guid>
+            
+                        <pubDate>Tue, 25 Feb 2020 18:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hợp tác</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/hop-tac-178497.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178497]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Liên hệ</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/lien-he-178507.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178507]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Danh sách đề tài nghiên cứu</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/danh-sach-de-tai-nghien-cuu-178457.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178457]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Cơ sở vật chất</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/co-so-vat-chat-178467.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178467]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Các môn học</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/cac-mon-hoc-178477.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178477]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Sách xuất bản</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/sach-xuat-ban-178487.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178487]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Các hướng nghiên cứu</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/cac-huong-nghien-cuu-178447.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178447]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Giới thiệu chung</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/nhom-chuyen-mon-cong-nghe-giao-duc/bo-mon-spkt-gioi-thieu-chung-178327.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178327]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

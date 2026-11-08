@@ -1,0 +1,5 @@
+2026-11-05T03:17:27.456842100Z crtsh page=1 https://crt.sh/?q=%25.hust.edu.vn&output=json HTTP 200
+2026-11-05T03:17:31.177404100Z certspotter page=1 https://api.certspotter.com/v1/issuances?domain=hust.edu.vn&include_subdomains=true&expand=dns_names HTTP 200
+2026-11-05T03:17:31.661340600Z certspotter page=2 https://api.certspotter.com/v1/issuances?domain=hust.edu.vn&include_subdomains=true&expand=dns_names&after=17878359071 HTTP 200
+2026-11-05T03:17:32.572827800Z certspotter page=3 https://api.certspotter.com/v1/issuances?domain=hust.edu.vn&include_subdomains=true&expand=dns_names&after=18171329523 HTTP 200 Retry-After=3600
+Collected at 2026-11-05T03:17:32.575306400Z: concrete_hosts=245, wildcard_patterns=2, complete=true

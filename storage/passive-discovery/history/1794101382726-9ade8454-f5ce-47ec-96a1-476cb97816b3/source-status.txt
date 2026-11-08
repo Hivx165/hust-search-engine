@@ -1,0 +1,4 @@
+2026-11-08T01:30:07.781641600Z crtsh page=1 https://crt.sh/?q=%25.hust.edu.vn&output=json HTTP 200
+2026-11-08T01:30:08.031513200Z crtsh next_check_at=2026-11-08T07:29:42.729Z
+2026-11-08T01:30:08.033521200Z certspotter CACHE checked_at=2026-11-07T20:21:52.693Z next_check_at=2026-11-08T02:21:39.986Z complete=true
+Collected at 2026-11-08T01:30:08.033521200Z: concrete_hosts=245, wildcard_patterns=2, complete=true

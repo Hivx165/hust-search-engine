@@ -1,0 +1,2465 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>Kế hoạch mở đăng k&#253; lớp học kỳ h&#232; 20253</h3>
+        <meta content="text/html; charset=windows-1252" http-equiv="Content-Type" />
+<meta content="Word.Document" name="ProgId" />
+<meta content="Microsoft Word 15" name="Generator" />
+<meta content="Microsoft Word 15" name="Originator" />
+<link href="Kế%20hoạch%20đăng%20ký%20lớp%20học%20kỳ%20hè%20năm%20học%2020253_files/filelist.xml" rel="File-List" />
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Nguy&#7877;n Qu&#7889;c &#272;&#7841;t</o:Author>
+  <o:LastAuthor>Nguy&#7877;n Qu&#7889;c &#272;&#7841;t</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>113</o:TotalTime>
+  <o:Created>2026-06-20T04:56:00Z</o:Created>
+  <o:LastSaved>2026-06-20T04:56:00Z</o:LastSaved>
+  <o:Pages>4</o:Pages>
+  <o:Words>947</o:Words>
+  <o:Characters>5403</o:Characters>
+  <o:Lines>45</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6338</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link href="Kế%20hoạch%20đăng%20ký%20lớp%20học%20kỳ%20hè%20năm%20học%2020253_files/themedata.thmx" rel="themeData" />
+<link href="Kế%20hoạch%20đăng%20ký%20lớp%20học%20kỳ%20hè%20năm%20học%2020253_files/colorschememapping.xml" rel="colorSchemeMapping" />
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+  </w:Compatibility>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style type="text/css">
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;
+	mso-font-charset:2;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 268435456 0 0 -2147483648 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:Aptos;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:536871559 3 0 0 415 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-style-next:Normal;
+	margin-top:.25in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;}
+h2
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 2 Char";
+	mso-style-next:Normal;
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;}
+h3
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 3 Char";
+	mso-style-next:Normal;
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;}
+h4
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 4 Char";
+	mso-style-next:Normal;
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;
+	font-style:italic;}
+h5
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 5 Char";
+	mso-style-next:Normal;
+	margin-top:4.0pt;
+	margin-right:0in;
+	margin-bottom:2.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;}
+h6
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 6 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-weight:normal;
+	font-style:italic;}
+p.MsoHeading7, li.MsoHeading7, div.MsoHeading7
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 7 Char";
+	mso-style-next:Normal;
+	margin-top:2.0pt;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:7;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoHeading8, li.MsoHeading8, div.MsoHeading8
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 8 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:8;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-style:italic;}
+p.MsoHeading9, li.MsoHeading9, div.MsoHeading9
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 9 Char";
+	mso-style-next:Normal;
+	margin:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:9;
+	font-size:12.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoTitleCxSpFirst, li.MsoTitleCxSpFirst, div.MsoTitleCxSpFirst
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoTitleCxSpMiddle, li.MsoTitleCxSpMiddle, div.MsoTitleCxSpMiddle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin:0in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoTitleCxSpLast, li.MsoTitleCxSpLast, div.MsoTitleCxSpLast
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Title Char";
+	mso-style-next:Normal;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:4.0pt;
+	margin-left:0in;
+	mso-add-space:auto;
+	mso-pagination:widow-orphan;
+	font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Subtitle Char";
+	mso-style-next:Normal;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	letter-spacing:.75pt;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoListParagraphCxSpFirst, li.MsoListParagraphCxSpFirst, div.MsoListParagraphCxSpFirst
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoListParagraphCxSpMiddle, li.MsoListParagraphCxSpMiddle, div.MsoListParagraphCxSpMiddle
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:0in;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoListParagraphCxSpLast, li.MsoListParagraphCxSpLast, div.MsoListParagraphCxSpLast
+	{mso-style-priority:34;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-type:export-only;
+	margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:.5in;
+	mso-add-space:auto;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+p.MsoQuote, li.MsoQuote, div.MsoQuote
+	{mso-style-priority:29;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Quote Char";
+	mso-style-next:Normal;
+	margin-top:8.0pt;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	text-align:center;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#404040;
+	mso-themecolor:text1;
+	mso-themetint:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-style:italic;}
+p.MsoIntenseQuote, li.MsoIntenseQuote, div.MsoIntenseQuote
+	{mso-style-priority:30;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Intense Quote Char";
+	mso-style-next:Normal;
+	margin-top:.25in;
+	margin-right:.6in;
+	margin-bottom:.25in;
+	margin-left:.6in;
+	text-align:center;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	border:none;
+	mso-border-top-alt:solid #0F4761 .5pt;
+	mso-border-top-themecolor:accent1;
+	mso-border-top-themeshade:191;
+	mso-border-bottom-alt:solid #0F4761 .5pt;
+	mso-border-bottom-themecolor:accent1;
+	mso-border-bottom-themeshade:191;
+	padding:0in;
+	mso-padding-alt:10.0pt 0in 10.0pt 0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;
+	font-style:italic;}
+span.MsoIntenseEmphasis
+	{mso-style-priority:21;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+span.MsoIntenseReference
+	{mso-style-priority:32;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	font-variant:small-caps;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	letter-spacing:.25pt;
+	font-weight:bold;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	mso-ansi-font-size:20.0pt;
+	mso-bidi-font-size:20.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading2Char
+	{mso-style-name:"Heading 2 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 2";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading3Char
+	{mso-style-name:"Heading 3 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 3";
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading4Char
+	{mso-style-name:"Heading 4 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 4";
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+span.Heading5Char
+	{mso-style-name:"Heading 5 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 5";
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Heading6Char
+	{mso-style-name:"Heading 6 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 6";
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	font-style:italic;}
+span.Heading7Char
+	{mso-style-name:"Heading 7 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 7";
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;}
+span.Heading8Char
+	{mso-style-name:"Heading 8 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 8";
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;
+	font-style:italic;}
+span.Heading9Char
+	{mso-style-name:"Heading 9 Char";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 9";
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#272727;
+	mso-themecolor:text1;
+	mso-themetint:216;}
+span.TitleChar
+	{mso-style-name:"Title Char";
+	mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Title;
+	mso-ansi-font-size:28.0pt;
+	mso-bidi-font-size:28.0pt;
+	font-family:"Aptos Display",sans-serif;
+	mso-ascii-font-family:"Aptos Display";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Aptos Display";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	letter-spacing:-.5pt;
+	mso-font-kerning:14.0pt;}
+span.SubtitleChar
+	{mso-style-name:"Subtitle Char";
+	mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Subtitle;
+	mso-ansi-font-size:14.0pt;
+	mso-bidi-font-size:14.0pt;
+	font-family:"Aptos",sans-serif;
+	mso-ascii-font-family:Aptos;
+	mso-ascii-theme-font:minor-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:Aptos;
+	mso-hansi-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#595959;
+	mso-themecolor:text1;
+	mso-themetint:166;
+	letter-spacing:.75pt;}
+span.QuoteChar
+	{mso-style-name:"Quote Char";
+	mso-style-priority:29;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:Quote;
+	color:#404040;
+	mso-themecolor:text1;
+	mso-themetint:191;
+	font-style:italic;}
+span.IntenseQuoteChar
+	{mso-style-name:"Intense Quote Char";
+	mso-style-priority:30;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Intense Quote";
+	color:#0F4761;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";}
+span.spelle
+	{mso-style-name:spelle;
+	mso-style-unhide:no;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:12.0pt;
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	margin-bottom:8.0pt;
+	line-height:115%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 45.0pt 40.5pt 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:73628661;
+	mso-list-type:hybrid;
+	mso-list-template-ids:384218600 -1757797024 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l0:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1
+	{mso-list-id:1066687528;
+	mso-list-type:hybrid;
+	mso-list-template-ids:1431474440 -2019762934 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l1:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2
+	{mso-list-id:1186795019;
+	mso-list-type:hybrid;
+	mso-list-template-ids:-236005384 -2019762934 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l2:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3
+	{mso-list-id:1347057400;
+	mso-list-type:hybrid;
+	mso-list-template-ids:669308386 -2019762934 67698691 67698693 67698689 67698691 67698693 67698689 67698691 67698693;}
+@list l3:level1
+	{mso-level-start-at:0;
+	mso-level-number-format:bullet;
+	mso-level-text:-;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.25in;
+	text-indent:-.25in;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:Aptos;
+	mso-fareast-theme-font:minor-latin;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:1.75in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.25in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:2.75in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.25in;
+	text-indent:-.25in;
+	font-family:Symbol;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:3.75in;
+	text-indent:-.25in;
+	font-family:"Courier New";}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:4.25in;
+	text-indent:-.25in;
+	font-family:Wingdings;}
+@list l4
+	{mso-list-id:1598513722;
+	mso-list-template-ids:470566588;}
+@list l4:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0B7;
+	mso-level-tab-stop:.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Symbol;}
+@list l4:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:o;
+	mso-level-tab-stop:1.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:"Courier New";
+	mso-bidi-font-family:"Times New Roman";}
+@list l4:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:1.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:2.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:3.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.0in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+@list l4:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:\F0A7;
+	mso-level-tab-stop:4.5in;
+	mso-level-number-position:left;
+	text-indent:-.25in;
+	mso-ansi-font-size:10.0pt;
+	font-family:Wingdings;}
+ol
+	{margin-bottom:0in;}
+ul
+	{margin-bottom:0in;}
+--></style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin-top:0in;
+	mso-para-margin-right:0in;
+	mso-para-margin-bottom:8.0pt;
+	mso-para-margin-left:0in;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:minor-bidi;
+	mso-font-kerning:1.0pt;
+	mso-ligatures:standardcontextual;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+<div class="WordSection1">
+	<h1 class="MsoNormal" style="text-align: center;">
+		<span class="SpellE"><span class="GramE"><b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Kế</span></b></span></span><span class="GramE"><b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"> <span class="SpellE">hoạch</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">lớp</span> <span class="SpellE">học</span> <span class="SpellE">kỳ</span> <span class="SpellE">h&egrave;</span> <span class="SpellE">năm</span> <span class="SpellE">học</span></span></b></span><b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"> 2025-2026 (<span class="SpellE">kỳ</span> 2025.3)</span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h1>
+	<h2 class="MsoNormal" style="text-align: center;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">(<span class="SpellE">&Aacute;p</span> <span class="SpellE">dụng</span> <span class="SpellE">cho</span> <span class="SpellE">sinh</span> <span class="SpellE">vi&ecirc;n</span> <span class="SpellE">c&aacute;c</span> <span class="SpellE">kh&oacute;a</span> K69 <span class="SpellE">trở</span> <span class="SpellE">về</span> <span class="SpellE">trước</span>)</span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<b><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Lưu &yacute; <span class="SpellE">quan</span> <span class="SpellE">trọng</span>:</span></i></b><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"> <o:p></o:p></span></i></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-bidi-font-style:italic"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span class="SpellE"><i><span style="mso-bidi-font-family: &quot;Times New Roman&quot;">Số</span></i></span><i><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"> <span class="SpellE">lượng</span> <span class="SpellE">lớp</span> <span class="SpellE">mở</span> <span class="SpellE">trong</span> <span class="SpellE">kỳ</span> <span class="SpellE">h&egrave;</span> 2025.3 do Trường/Khoa <span class="SpellE">bố</span> <span class="SpellE">tr&iacute;</span> <span class="SpellE">c&oacute;</span> <span class="SpellE">giới</span> <span class="SpellE">hạn</span>, <span class="SpellE">ưu</span> <span class="SpellE">ti&ecirc;n</span> <span class="SpellE">d&agrave;nh</span> <span class="SpellE">cho</span> <span class="SpellE">sinh</span> <span class="SpellE">vi&ecirc;n</span> <span class="SpellE">c&aacute;c</span> <span class="SpellE">năm</span> <span class="SpellE">cuối</span> <span class="SpellE">nhằm</span> <span class="SpellE">đảm</span> <span class="SpellE">bảo</span> <span class="SpellE">tiến</span> <span class="SpellE">độ</span> <span class="SpellE">tốt</span> <span class="SpellE">nghiệp</span>.<o:p></o:p></span></i></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-bidi-font-style:italic"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Sinh <span class="SpellE">vi&ecirc;n</span> <span class="SpellE">kh&ocirc;ng</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">được</span> do <span class="SpellE">lớp</span> <span class="SpellE">đ&atilde;</span> <span class="SpellE">đủ</span> <span class="SpellE">sĩ</span> <span class="SpellE">số</span> <span class="SpellE">vui</span> <span class="SpellE">l&ograve;ng</span> <span class="SpellE">chủ</span> <span class="SpellE">động</span> <span class="SpellE">l&ecirc;n</span> <span class="SpellE">kế</span> <span class="SpellE">hoạch</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">v&agrave;o</span> <span class="SpellE">kỳ</span> 2026.1<o:p></o:p></span></i></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Sinh <span class="SpellE">vi&ecirc;n</span> K70 <span class="SpellE">kh&ocirc;ng</span> <span class="SpellE">tham</span> <span class="SpellE">gia</span> <span class="SpellE">học</span> <span class="SpellE">kỳ</span> <span class="SpellE">h&egrave;</span> <span class="SpellE">theo</span> <span class="SpellE">kế</span> <span class="SpellE">hoạch</span> <span class="SpellE">năm</span> <span class="SpellE">học</span> <span class="SpellE">đ&atilde;</span> <span class="SpellE">c&ocirc;ng</span> <span class="SpellE">bố</span> <span class="SpellE">ngoại</span> <span class="SpellE">trừ</span> <span class="SpellE">nh&oacute;m</span> <span class="SpellE">sinh</span> <span class="SpellE">vi&ecirc;n</span> <span class="SpellE">c&oacute;</span> <span class="SpellE">kế</span> <span class="SpellE">hoạch</span> <span class="SpellE">học</span> GDQP (</span></i><a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=29237"><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">th&ocirc;ng b&aacute;o tại đ&acirc;y</span></a><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">)<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><b>1. <span class="SpellE">Đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">học</span> <span class="SpellE">tập</span></b><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">a. Đối <span class="SpellE">tượng</span> <span class="SpellE">&aacute;p</span> <span class="SpellE">dụng</span>:</span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Sinh vi&ecirc;n c&aacute;c kh&oacute;a K69 trở về trước thực hiện đăng <span class="SpellE">k&yacute;</span> <span class="SpellE">lớp</span> <span class="SpellE">học</span> <span class="SpellE">cho</span> <span class="SpellE">học</span> <span class="SpellE">kỳ</span> <span class="SpellE">h&egrave;</span> <span class="SpellE">năm</span> <span class="SpellE">học</span> 2025&ndash;2026 (<span class="SpellE">kỳ</span> 2025.3).</span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:VI">Kế hoạch học tập GDQP của K70 tại kỳ h&egrave; xem <a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayKehoach?kehoach=29237">th&ocirc;ng b&aacute;o tại đ&acirc;y</a><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:VI">Sinh vi&ecirc;n kh&oacute;a cũ (chuẩn bị x&eacute;t tốt nghiệp) đăng k&yacute; học lại GDPQ đăng k&yacute; qua link: </span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><a href="https://forms.office.com/r/Vc9xa3JRgh"><span class="SpellE">Đơn</span> <span class="SpellE">xin</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">học</span> <span class="SpellE">lại</span> GDQP <span class="SpellE">kỳ</span> 20253 &ndash; Fill out form</a></span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">b. <span class="SpellE">H&igrave;nh</span> <span class="SpellE">thức</span> <span class="SpellE">v&agrave;</span> <span class="SpellE">hệ</span> <span class="SpellE">thống</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span></span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">:<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Sinh vi&ecirc;n đăng k&yacute; trực tuyến tại địa chỉ: </span><a href="https://qldt.hust.edu.vn/students"><span style="mso-bidi-font-family: &quot;Times New Roman&quot;">https://qldt.hust.edu.vn/students</span></a><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<a href="https://ctt.hust.edu.vn/Upload/Nguy%E1%BB%85n%20Qu%E1%BB%91c%20%C4%90%E1%BA%A1t/files/DTDH_huongdan/HD%20DKHT-2026-V1_20251210.pdf" target="_blank"><b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">(Xem Hướng dẫn đăng k&yacute; trực tiếp tr&ecirc;n hệ thống đăng k&yacute; hoặc Tại đ&acirc;y).</span></b></a><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">c. T&agrave;i <span class="SpellE">khoản</span> <span class="SpellE">đăng</span> <span class="SpellE">nhập</span>:</span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- <span class="SpellE">T&ecirc;n</span> <span class="SpellE">đăng</span> <span class="SpellE">nhập</span></span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;">: <span class="SpellE">địa</span> <span class="SpellE">chỉ</span> email Office 365 do <span class="SpellE">Đại</span> <span class="SpellE">học</span> <span class="SpellE">cấp</span> <span class="SpellE">cho</span> <span class="SpellE">sinh</span> <span class="SpellE">vi&ecirc;n</span>.<br />
+		<b>- <span class="SpellE">Mật</span> <span class="SpellE">khẩu</span></b>: <span class="SpellE">mật</span> <span class="SpellE">khẩu</span> <span class="SpellE">của</span> <span class="SpellE">t&agrave;i</span> <span class="SpellE">khoản</span> email Office 365.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">d. <span class="SpellE">Thời</span> <span class="SpellE">kh&oacute;a</span> <span class="SpellE">biểu</span> <span class="SpellE">v&agrave;</span> <span class="SpellE">th&ocirc;ng</span> tin <span class="SpellE">lớp</span> <span class="SpellE">học</span>:</span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Thời kh&oacute;a biểu dự kiến học kỳ 2025.3 v&agrave; danh s&aacute;ch c&aacute;c lớp mở được c&ocirc;ng bố v&agrave; cập nhật thường xuy&ecirc;n tại: </span><a href="https://ctt.hust.edu.vn/"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">https://ctt.hust.edu.vn</span></a><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">. Sinh vi&ecirc;n cần theo d&otilde;i thường xuy&ecirc;n để cập nhật c&aacute;c điều chỉnh (nếu c&oacute;).<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<a href="https://husteduvn-my.sharepoint.com/:x:/g/personal/dat_nguyenquoc_hust_edu_vn/IQDNrILN-Tg2R6jye9o0guqmAY7Swbe1P344XF621BlzV1Q?e=563nqO" target="_blank"><b><u><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">THỜI KH&Oacute;A BIỂU DỰ KIẾN KỲ 20253 XEM CHI TIẾT TẠI Đ&Acirc;Y (<span class="SpellE">Cập</span> <span class="SpellE">nhật</span> <span class="SpellE">thường</span> <span class="SpellE">xuy&ecirc;n</span>)</span></u></b></a><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">đ. Lưu &yacute; <span class="SpellE">khi</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">học</span> <span class="SpellE">phần</span>:</span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Sinh vi&ecirc;n cần kiểm tra kỹ Chương tr&igrave;nh đ&agrave;o tạo (CTĐT) trong t&agrave;i khoản CTT để đăng k&yacute; đ&uacute;ng m&atilde; học phần theo quy định; Sinh vi&ecirc;n chương tr&igrave;nh chuẩn kh&ocirc;ng đăng k&yacute; v&agrave;o c&aacute;c lớp mở cho chương tr&igrave;nh Elitech v&agrave; chương tr&igrave;nh hợp t&aacute;c quốc tế (SIE) v&agrave; ngược lại.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">e. Khối <span class="SpellE">lượng</span> <span class="SpellE">t&iacute;n</span> <span class="SpellE">chỉ</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span>:</span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- <span class="SpellE">Kỳ</span></span><span lang="VI" style="mso-bidi-font-family: &quot;Times New Roman&quot;;mso-ansi-language:VI"> h&egrave; s</span><span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">inh</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"> <span class="SpellE">vi&ecirc;n</span> <span class="SpellE">được</span></span><span lang="VI" style="mso-bidi-font-family: &quot;Times New Roman&quot;;mso-ansi-language:VI"> ph&eacute;p đăng k&yacute; </span><span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">tối</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"> <span class="SpellE">đa</span> 8 TC</span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:VI"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- Kỳ h&egrave; l&agrave; kỳ tự <span class="SpellE">nguyện</span> <span class="SpellE">v&igrave;</span> <span class="SpellE">vậy</span> <span class="SpellE">sinh</span> <span class="SpellE">vi&ecirc;n</span> <span class="SpellE">tham</span> <span class="SpellE">khảo</span> <span class="SpellE"><a href="https://ctt.hust.edu.vn/DisplayWeb/DisplayBaiViet?baiviet=44562">quy định về học ph&iacute; kỳ h&egrave; tại đ&acirc;y.</a></span><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Sinh vi&ecirc;n cần kiểm tra điều kiện chuẩn tiếng Anh theo quy định hoặc tham gia c&aacute;c kỳ thi lấy chứng chỉ theo Phụ lục 2 của Quy định về ngoại ngữ.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">2. <span class="SpellE">Thời</span> <span class="SpellE">gian</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span></span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="font-size:18px;">C&aacute;c chương tr&igrave;nh theo c&aacute;c hệ v&agrave; kh&oacute;a được chia th&agrave;nh c&aacute;c khung thời gian đăng k&yacute; như sau:</span></h2>
+	<div align="center">
+		<table align="center" border="2" cellpadding="1" cellspacing="0" class="MsoNormalTable" style="background:white;border-collapse:collapse;mso-yfti-tbllook: 1184;mso-padding-alt:0in 0in 0in 0in;width: 800px" width="665">
+			<tbody>
+				<tr style="mso-yfti-irow:0;mso-yfti-firstrow:yes">
+					<td style="width:110.0pt;background:#ADADAD;padding:0in 0in 0in 0in" width="147">
+						<h2 class="MsoNormal" style="margin-left: 17.25pt; text-align: justify;">
+							<span class="SpellE"><b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">Nội</span></b></span><b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> dung</span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:113.8pt;background:#ADADAD;padding:0in 0in 0in 0in" width="152">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">Chương</span></b></span><b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">tr&igrave;nh</span></span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:167.3pt;background:#ADADAD;padding:0in 0in 0in 0in" width="223">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">Thời</span></b></span><b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">gian</span></span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:1.5in;background:#ADADAD;padding:0in 0in 0in 0in" valign="top" width="144">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">Ghi</span></b></span><b><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt: windowtext;mso-ansi-language:VI"> ch&uacute;</span></b><b><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></b></h2>
+					</td>
+				</tr>
+				<tr style="mso-yfti-irow:1">
+					<td rowspan="3" style="width:110.0pt;padding:0in 0in 0in 0in" width="147">
+						<h2 class="MsoNormal" style="margin-left: 3.75pt; text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black; mso-color-alt:windowtext">Đăng</span></span><span style="mso-bidi-font-family: &quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">k&yacute;</span> <span class="SpellE">lớp</span></span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></h2>
+						<h2 class="MsoNormal" style="margin-left: 3.75pt; text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black; mso-color-alt:windowtext">ch&iacute;nh</span></span><span style="mso-bidi-font-family: &quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">thức</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:113.8pt;background:#83CAEB;padding:0in 0in 0in 0in" width="152">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Chuẩn</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> &ndash; <span class="SpellE">Elitech</span> &ndash; SIE K67 <span class="SpellE">trở</span> <span class="SpellE">về</span> <span class="SpellE">trước</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">KSCS <span class="SpellE">c&aacute;c</span> <span class="SpellE">kh&oacute;a</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:167.3pt;background:#83CAEB;padding:0in 0in 0in 0in" width="223">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Từ</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> 16h <span class="SpellE">ng&agrave;y</span> 22/06/2026<br />
+							<span class="SpellE">đến</span> 14h <span class="SpellE">ng&agrave;y</span> 24/06/2026</span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td rowspan="7" style="width:1.5in;background:#83CAEB;padding:0in 0in 0in 0in" width="144">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">Hệ</span></i></span><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">thống</span></span></i><i><span lang="VI" style="mso-bidi-font-family: &quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></i></h2>
+						<h2 class="MsoNormal" style="text-align: center;">
+							<i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"><span class="SpellE">sẽ</span> <span class="SpellE">được</span> <span class="SpellE">bảo</span> <span class="SpellE">tr&igrave;</span></span></i><i><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></i></h2>
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">từ</span></i></span><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> 00h00 <span class="SpellE">đến</span> 02h00</span></i><i><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></i></h2>
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">s&aacute;ng</span></i></span><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">h&agrave;ng</span> <span class="SpellE">ng&agrave;y</span>. Sinh <span class="SpellE">vi&ecirc;n</span> <span class="SpellE">kh&ocirc;ng</span> <span class="SpellE">v&agrave;o</span> </span></i><i><span lang="VI" style="mso-bidi-font-family: &quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></i></h2>
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">trang</span></i></span><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span></span></i><i><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></i></h2>
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">trong</span></i></span><i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">thời</span> <span class="SpellE">gian</span> <span class="SpellE">n&agrave;y</span></span></i><i><span lang="VI" style="mso-bidi-font-family: &quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext;mso-ansi-language: VI">.</span></i><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:VI"><o:p></o:p></span></h2>
+					</td>
+				</tr>
+				<tr style="mso-yfti-irow:2">
+					<td style="width:113.8pt;background:#F6C5AC;padding:0in 0in 0in 0in" width="152">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Chuẩn</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> &ndash; <span class="SpellE">Elitech</span> &ndash; SIE K68</span><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:167.3pt;background:#F6C5AC;padding:0in 0in 0in 0in" width="223">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Từ</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> 16h <span class="SpellE">ng&agrave;y</span> 24/06/2026<br />
+							<span class="SpellE">đến</span> 14h <span class="SpellE">ng&agrave;y</span> 26/06/2026</span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+				</tr>
+				<tr style="mso-yfti-irow:3">
+					<td style="width:113.8pt;background:#84E290;padding:0in 0in 0in 0in" width="152">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Chuẩn</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> &ndash; <span class="SpellE">Elitech</span> &ndash; SIE K69</span><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:167.3pt;background:#84E290;padding:0in 0in 0in 0in" width="223">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Từ</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> 16h <span class="SpellE">ng&agrave;y</span> 26/06/2026<br />
+							<span class="SpellE">đến</span> 14h <span class="SpellE">ng&agrave;y</span> 28/06/2026</span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+				</tr>
+				<tr style="mso-yfti-irow:4">
+					<td rowspan="4" style="width:110.0pt;padding:0in 0in 0in 0in" width="147">
+						<h2 class="MsoNormal" style="margin-left: 12.75pt; text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext">Đăng</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">k&yacute;</span> <span class="SpellE">điều</span> <span class="SpellE">chỉnh</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:113.8pt;background:#83CAEB;padding:0in 0in 0in 0in" width="152">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Chuẩn</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> &ndash; <span class="SpellE">Elitech</span> &ndash; SIE K67 <span class="SpellE">trở</span> <span class="SpellE">về</span> <span class="SpellE">trước</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">KSCS <span class="SpellE">c&aacute;c</span> <span class="SpellE">kh&oacute;a</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:167.3pt;background:#83CAEB;padding:0in 0in 0in 0in" width="223">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Từ</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> 16h <span class="SpellE">ng&agrave;y</span> 28/06/2026<br />
+							<span class="SpellE">đến</span> 14h <span class="SpellE">ng&agrave;y</span> 02/07/2026</span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+				</tr>
+				<tr style="mso-yfti-irow:5">
+					<td style="width:113.8pt;background:#F6C5AC;padding:0in 0in 0in 0in" width="152">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Chuẩn</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> &ndash; <span class="SpellE">Elitech</span> &ndash; SIE K68</span><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:167.3pt;background:#F6C5AC;padding:0in 0in 0in 0in" width="223">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Từ</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> 16h <span class="SpellE">ng&agrave;y</span> 02/07/2026<br />
+							<span class="SpellE">đến</span> 14h <span class="SpellE">ng&agrave;y</span> 04/07/2026</span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></h2>
+					</td>
+				</tr>
+				<tr style="mso-yfti-irow:6">
+					<td style="width:113.8pt;background:#84E290;padding:0in 0in 0in 0in" width="152">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Chuẩn</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> &ndash; <span class="SpellE">Elitech</span> &ndash; SIE K69</span><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:167.3pt;background:#84E290;padding:0in 0in 0in 0in" width="223">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Từ</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> 16h <span class="SpellE">ng&agrave;y</span> 04/07/2026<br />
+							<span class="SpellE">đến</span> 14h <span class="SpellE">ng&agrave;y</span> 06/07/2026</span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></h2>
+					</td>
+				</tr>
+				<tr style="mso-yfti-irow:7;mso-yfti-lastrow:yes">
+					<td style="width:113.8pt;background:#E59EDC;padding:0in 0in 0in 0in" width="152">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Tất</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> <span class="SpellE">cả</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+					</td>
+					<td style="width:167.3pt;background:#E59EDC;padding:0in 0in 0in 0in" width="223">
+						<h2 class="MsoNormal" style="text-align: center;">
+							<span class="SpellE"><span style="mso-bidi-font-family:&quot;Times New Roman&quot;; color:black;mso-color-alt:windowtext">Từ</span></span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;;color:black;mso-color-alt:windowtext"> 16h <span class="SpellE">ng&agrave;y</span> 06/07/2026<br />
+							<span class="SpellE">đến</span> 14h <span class="SpellE">ng&agrave;y</span> 11/07/2026</span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></h2>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- <span class="SpellE">Đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">ch&iacute;nh</span></span></b><b><span lang="VI" style="mso-bidi-font-family: &quot;Times New Roman&quot;;mso-ansi-language:VI"> thức</span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">: sinh vi&ecirc;n đ&atilde; đăng k&yacute; học phần cho học kỳ h&egrave; (v&agrave;o tuần 3-4 của học kỳ trước) sẽ được ưu ti&ecirc;n đăng k&yacute; lớp thời gian n&agrave;y; sinh vi&ecirc;n kh&ocirc;ng đăng k&yacute; học phần sẽ đăng k&yacute; lớp v&agrave;o thời gian <i>Đăng k&yacute; điều chỉnh.</i><br />
+		<b>- Đăng k&yacute; điều chỉnh</b>: tất cả c&aacute;c sinh vi&ecirc;n sẽ được đăng k&yacute; lớp trong thời gian n&agrave;y.</span><br />
+		<span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:VI"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">C&aacute;c <span class="SpellE">mốc</span> <span class="SpellE">thời</span> <span class="SpellE">gian</span> <span class="SpellE">quan</span> <span class="SpellE">trọng</span></span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 80px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- <span class="SpellE">Hạn</span> <span class="SpellE">mở</span> <span class="SpellE">th&ecirc;m</span> <span class="SpellE">lớp</span>: 30/06/2026.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 80px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- Th&ocirc;ng <span class="SpellE">b&aacute;o</span> <span class="SpellE">lớp</span> <span class="SpellE">&iacute;t</span> <span class="SpellE">sinh</span> <span class="SpellE">vi&ecirc;n</span>: 03/07/2026.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 80px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- Th&ocirc;ng <span class="SpellE">b&aacute;o</span> <span class="SpellE">lớp</span> <span class="SpellE">hủy</span>/<span class="SpellE">giữ</span> <span class="SpellE">ch&iacute;nh</span> <span class="SpellE">thức</span>: 5/07/2026.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 80px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- <span class="SpellE">Đ&oacute;ng</span> <span class="SpellE">hệ</span> <span class="SpellE">thống</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">trực</span> <span class="SpellE">tuyến</span>: 11/07/2026.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 80px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">- <span class="SpellE">Kết</span> <span class="SpellE">th&uacute;c</span> <span class="SpellE">to&agrave;n</span> <span class="SpellE">bộ</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span>: 13/07/2026.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Sau khi kết th&uacute;c đăng k&yacute; ch&iacute;nh thức v&agrave; đăng k&yacute; điều chỉnh, sinh vi&ecirc;n kh&ocirc;ng được thay đổi m&ocirc;n học đ&atilde; đăng k&yacute;.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">3. C&aacute;c <span class="SpellE">lưu</span> &yacute; <span class="SpellE">quan</span> <span class="SpellE">trọng</span></span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="VI" style="mso-ansi-language:VI">H</span>o&agrave;n th&agrave;nh học ph&iacute;: Sinh vi&ecirc;n chưa ho&agrave;n th&agrave;nh học ph&iacute; theo th&ocirc;ng b&aacute;o trước đ&oacute; <span class="SpellE">sẽ</span> <span class="SpellE">bị</span> <span class="SpellE">tạm</span> <span class="SpellE">ngừng</span> <span class="SpellE">truy</span> <span class="SpellE">cập</span> <span class="SpellE">hệ</span> <span class="SpellE">thống</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span>.</h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]-->Giảm tắc nghẽn hệ thống: Do số lượng sinh vi&ecirc;n truy cập hệ thống lớn, sinh vi&ecirc;n cần l&ecirc;n kế hoạch học tập trước, đăng nhập v&agrave;o hệ thống trong khung giờ quy định <span class="SpellE">v&agrave;</span> <span class="SpellE">tho&aacute;t</span> <span class="SpellE">ra</span> <span class="SpellE">ngay</span> <span class="SpellE">sau</span> <span class="SpellE">khi</span> <span class="SpellE">ho&agrave;n</span> <span class="SpellE">tất</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span>.</h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span lang="VI" style="mso-ansi-language:VI">Q</span>uy định khi truy cập: Kh&ocirc;ng tải lại trang li&ecirc;n tục, mở nhiều tab hoặc nhờ can thiệp từ b&ecirc;n ngo&agrave;i. Mọi <span class="SpellE">h&agrave;nh</span> <span class="SpellE">động</span> vi <span class="SpellE">phạm</span> <span class="SpellE">sẽ</span> <span class="SpellE">bị</span> <span class="SpellE">xử</span> <span class="SpellE">l&yacute;</span> <span class="SpellE">nghi&ecirc;m</span>.</h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]-->Kiểm tra trạng th&aacute;i đăng k&yacute; lớp &iacute;t nhất sau 1 ng&agrave;y đăng <span class="SpellE">k&yacute;</span>, <span class="SpellE">nếu</span> <span class="SpellE">tạng</span> <span class="SpellE">th&aacute;i</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> &ldquo;<span class="SpellE">hết</span> <span class="SpellE">chỗ</span>&rdquo; <span class="SpellE">th&igrave;</span> <span class="SpellE">phải</span><span style="mso-ansi-language:VI"> </span><span class="SpellE">điều</span> <span class="SpellE">chỉnh</span> <span class="SpellE">lại</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">lớp</span> <span class="SpellE">trong</span> <span class="SpellE">thời</span> <span class="SpellE">gian</span> <span class="SpellE">mở</span> <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span>.<span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Với <span class="SpellE">đăng</span> <span class="SpellE">k&yacute;</span> <span class="SpellE">lớp</span> <span class="SpellE">học</span> <span class="SpellE">phần</span> <span class="SpellE">Kỹ</span> <span class="SpellE">sư</span> <span class="SpellE">chuy&ecirc;n</span> <span class="SpellE">s&acirc;u</span>:<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 80px; text-align: justify;">
+		<!--[if !supportLists]--><span style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">SV đ&atilde; được cấp m&atilde; số kỹ sư th&igrave; d&ugrave;ng t&agrave;i khoản n&agrave;y để đăng k&yacute; c&aacute;c lớp học phần kỹ</span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"> sư</span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"> (<span class="SpellE">kh&ocirc;ng</span> <span class="SpellE">d&ugrave;ng</span> MSSV).<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 80px; text-align: justify;">
+		<!--[if !supportLists]--><span style="font-family:&quot;Courier New&quot;;mso-fareast-font-family:&quot;Courier New&quot;"><span style="mso-list:Ignore">o<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">SV đủ điều kiện đăng k&yacute; học t&iacute;ch lũy trước chương tr&igrave;nh kỹ sư v&agrave; chưa đủ điều kiện được cấp m&atilde; kỹ sư, th&igrave; d&ugrave;ng t&agrave;i khoản MSSV đăng k&yacute; học t&iacute;ch lũy trước tối đa 15TC</span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"> bậc</span><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"> KS.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">4. <span class="SpellE">Hỗ</span> <span class="SpellE">trợ</span> <span class="SpellE">thắc</span> <span class="SpellE">mắc</span></span></b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]-->Xem th&ocirc;ng tin: Sinh vi&ecirc;n c&oacute; thể t&igrave;m hiểu trong mục &quot;Sổ tay sinh vi&ecirc;n&quot; tại <a href="https://ctt.hust.edu.vn/">ctt.hust.edu.vn</a>.</h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]-->Th&iacute; nghiệm, thực tập v&agrave; đồ &aacute;n: Với lớp th&iacute; nghiệm, thực tập, đồ &aacute;n, sinh vi&ecirc;n li&ecirc;n hệ Trường/Khoa phụ tr&aacute;ch học phần.</h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]-->Li&ecirc;n hệ trực tiếp: Trường/Khoa sẽ cung cấp lịch v&agrave; giải đ&aacute;p c&aacute;c thắc mắc về thời kh&oacute;a biểu, số lượng sinh vi&ecirc;n trong lớp.</h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<b><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">5. Quy <span class="SpellE">định</span> <span class="SpellE">về</span> <span class="SpellE">hủy</span> <span class="SpellE">lớp</span>, <span class="SpellE">mở</span> <span class="SpellE">th&ecirc;m</span> <span class="SpellE">lớp</span> <span class="SpellE">v&agrave;</span> <span class="SpellE">r&uacute;t</span> <span class="SpellE">học</span> <span class="SpellE">phần</span></span></b><span style="mso-bidi-font-family: &quot;Times New Roman&quot;"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Hủy lớp: C&aacute;c lớp c&oacute; số lượng sinh vi&ecirc;n đăng k&yacute; lớn hơn 20 sẽ được duy tr&igrave;. C&aacute;c lớp c&oacute; số lượng &iacute;t hơn 5 sẽ bị hủy. <span class="SpellE">Lớp</span> <span class="SpellE">c&oacute;</span> <span class="SpellE">từ</span> 5-9 <span class="SpellE">sinh</span> <span class="SpellE">vi&ecirc;n</span> <span class="SpellE">sẽ</span> <span class="SpellE">được</span> <span class="SpellE">xem</span> <span class="SpellE">x&eacute;t</span> <span class="SpellE">từng</span> <span class="SpellE">trường</span> <span class="SpellE">hợp</span>.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">Mở th&ecirc;m lớp: Sinh vi&ecirc;n c&oacute; nhu cầu mở th&ecirc;m lớp cần l&agrave;m <span class="SpellE">đơn</span> <span class="SpellE">gửi</span> Trường/Khoa <span class="SpellE">phụ</span> <span class="SpellE">tr&aacute;ch</span> <span class="SpellE">chậm</span> <span class="SpellE">nhất</span> <span class="SpellE">ng&agrave;y</span> 30/06/2026. C&aacute;c lớp được mở th&ecirc;m (<span class="SpellE">nếu</span> <span class="SpellE">c&oacute;</span>) <span class="SpellE">sẽ</span> <span class="SpellE">c&ocirc;ng</span> <span class="SpellE">bố</span> <span class="SpellE">muộn</span> <span class="SpellE">nhất</span> <span class="SpellE">v&agrave;o</span> <span class="SpellE">ng&agrave;y</span> 03/07/2026.<o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 40px; text-align: justify;">
+		<!--[if !supportLists]--><span lang="VI" style="mso-fareast-font-family:&quot;Times New Roman&quot;;mso-bidi-font-family:&quot;Times New Roman&quot;; mso-ansi-language:VI"><span style="mso-list:Ignore">-<span style="font:7.0pt &quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><!--[endif]--><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">R&uacute;t <span class="SpellE">học</span> <span class="SpellE">phần</span></span><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI">: <b>Kỳ h&egrave; l&agrave; kỳ tự nguyện n&ecirc;n sẽ kh&ocirc;ng c&oacute; R&uacute;t học phần.</b><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="margin-left: 400px; text-align: justify;">
+		<i><span style="mso-bidi-font-family:&quot;Times New Roman&quot;">H&agrave; <span class="SpellE">Nội</span>, ng&agrave;y 20&nbsp;<span class="SpellE">th&aacute;ng</span> 6 <span class="SpellE">năm</span> 2026</span></i><span lang="VI" style="mso-bidi-font-family:&quot;Times New Roman&quot;;mso-ansi-language:VI"><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <b>BAN Đ&Agrave;O TẠO</b><o:p></o:p></span></h2>
+	<h2 class="MsoNormal" style="text-align: justify;">
+		<span style="mso-bidi-font-family:&quot;Times New Roman&quot;"><o:p> </o:p></span></h2>
+</div>
+<div style="text-align: justify;">
+	<span id="cke_bm_356E" style="display: none;">&nbsp;</span><span id="cke_bm_355E" style="display: none;">&nbsp;</span><span id="cke_bm_361E" style="display: none;">&nbsp;</span><span id="cke_bm_387E" style="display: none;">&nbsp;</span></div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

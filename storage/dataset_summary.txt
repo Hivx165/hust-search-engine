@@ -1,0 +1,4 @@
+Summary[totalUrls=7601, htmlPages=7324, articles=2220, files=277, observedLinks=425508, unavailable=0, analyzed=193, cacheHits=7131, snapshotAt=2026-11-08T04:40:27.104861400Z]
+classifier_version=39170f18566f2916cee9868578d70cea5d0ec67a4984b941b84043ff557b705c
+ARTICLE is a heuristic classification. Observed targets need not have been fetched.
+UNAVAILABLE raw bodies retain prior cached edges for retry; consult page_quality.csv.

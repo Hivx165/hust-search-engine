@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Phòng lab nghiên cứu - Lab hợp tác doanh nghiệp KIMSEN</title>
+        <link>https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/lab-hop-tac-doanh-nghiep-kimsen/</link>
+        <atom:link href="https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/rss/lab-hop-tac-doanh-nghiep-kimsen/" rel="self" />
+                <description>
+            <![CDATA[Viện Công nghệ Điều khiển và Tự động hóa - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Wed, 5 Aug 2026 03:08:00 GMT</pubDate>
+        <lastBuildDate>Wed, 5 Aug 2026 03:08:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Viện Công nghệ Điều khiển và Tự động hóa]]>
+        </copyright>
+        <docs>https://act.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://act.hust.edu.vn/uploads/act/logo-dhbk-1-02_130_191.png</url>
+            <title>Phòng lab nghiên cứu - Lab hợp tác doanh nghiệp KIMSEN</title>
+            <link>https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/lab-hop-tac-doanh-nghiep-kimsen/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Giới thiệu chung</title>
+            <link>https://act.hust.edu.vn/vi/phong-lab-nghien-cuu/lab-hop-tac-doanh-nghiep-kimsen/gioi-thieu-chung-lab-kimsen-8.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[phong-lab-nghien-cuu_8]]>
+            </guid>
+            
+                        <pubDate>Wed, 5 Aug 2026 03:08:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[Giới thiệu chung về Lab hợp tác doanh nghiệp KIMSEN.]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

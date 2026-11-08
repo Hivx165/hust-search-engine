@@ -1,0 +1,8 @@
+2026-11-07T05:13:30.257661100Z wayback CACHE next_check_at=2026-11-07T05:36:47.431Z complete=false
+2026-11-07T05:13:30.260684100Z commoncrawl cache query changed: reset page metadata, retain host evidence
+2026-11-07T05:13:31.745080400Z commoncrawl-catalog https://index.commoncrawl.org/collinfo.json HTTP 200
+2026-11-07T05:13:42.179711700Z commoncrawl-metadata https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=hust.edu.vn%2F&matchType=domain&output=json&fl=url&collapse=urlkey&pageSize=1&showNumPages=true HTTP 504
+2026-11-07T05:13:42.310523400Z commoncrawl hosts=0 complete=false next_check_at=2026-11-07T05:43:42.189Z
+2026-11-07T05:13:42.313643600Z complete=false concrete_hosts=0
+ERROR wayback: RequestFailure: HTTP 429
+ERROR commoncrawl: RequestFailure: HTTP 504

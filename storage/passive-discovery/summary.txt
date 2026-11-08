@@ -1,0 +1,3 @@
+2026-11-08T04:26:31.653805300Z
+Report[reportedHosts=314, dnsResolvedHosts=212, wildcardPatterns=2, sourceComplete=false, sourceErrors=[wayback: RequestFailure: HTTP 429]]
+DNS resolution does not prove HTTP availability. Wildcard patterns are not concrete hosts.

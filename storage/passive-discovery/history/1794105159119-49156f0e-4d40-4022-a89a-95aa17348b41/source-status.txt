@@ -1,0 +1,6 @@
+2026-11-08T02:32:39.121575800Z crtsh CACHE checked_at=2026-11-08T01:30:08.022Z next_check_at=2026-11-08T07:29:42.729Z complete=true
+2026-11-08T02:32:41.603408700Z certspotter page=1 https://api.certspotter.com/v1/issuances?domain=hust.edu.vn&include_subdomains=true&expand=dns_names HTTP 200
+2026-11-08T02:32:41.977862100Z certspotter page=2 https://api.certspotter.com/v1/issuances?domain=hust.edu.vn&include_subdomains=true&expand=dns_names&after=17904262964 HTTP 200
+2026-11-08T02:32:42.879839500Z certspotter page=3 https://api.certspotter.com/v1/issuances?domain=hust.edu.vn&include_subdomains=true&expand=dns_names&after=18205402207 HTTP 200 Retry-After=3600
+2026-11-08T02:32:42.882655100Z certspotter next_check_at=2026-11-08T08:32:39.121Z
+Collected at 2026-11-08T02:32:42.882655100Z: concrete_hosts=245, wildcard_patterns=2, complete=true

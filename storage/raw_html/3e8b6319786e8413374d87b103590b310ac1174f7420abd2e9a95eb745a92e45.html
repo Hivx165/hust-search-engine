@@ -1,0 +1,806 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+
+<head id="Head"><link rel="stylesheet" type="text/css" href="/DXR.axd?r=1_8,1_4,100_127,100_124,100_206,100_209,100_130,100_133-jvfI7" /><link href="../App_Themes/SisTheme/Chart/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/Editors/sprite.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/Editors/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/GridView/sprite.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/GridView/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/HtmlEditor/sprite.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/HtmlEditor/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/PivotGrid/sprite.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/PivotGrid/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/Scheduler/sprite.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/Scheduler/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/SpellChecker/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/TreeList/sprite.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/TreeList/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/Web/sprite.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/Web/styles.css" type="text/css" rel="stylesheet" /><link href="../App_Themes/SisTheme/XtraReports/sprite.css" type="text/css" rel="stylesheet" /><title>
+	
+    SIS &#149; Courses List
+
+</title><link rel="SHORTCUT ICON" href="../Styles/favicon.ico" /><link href="../Styles/Site.css" rel="stylesheet" type="text/css" />
+    
+    <script src="~/Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.0/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        var MasterIsPostback = false;
+        document.onkeydown = function () {
+            switch (event.keyCode) {
+                case 116: //F5 button
+                    event.returnValue = false;
+                    event.keyCode = 0;
+                    return false;
+                case 82: //R button
+                    if (event.ctrlKey) {
+                        event.returnValue = false;
+                        event.keyCode = 0;
+                        return false;
+                    }
+            }
+        }
+
+	</script>
+
+
+</head>
+
+<body>
+    <form method="post" action="./CourseLists.aspx" id="mainForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+
+
+<script src="/ScriptResource.axd?d=Tzg-g9lX8upHGPYGzxSFkiMn4FL7PTvF24Q0MElt9xTL4N-diNmoGX7QQCRcu5_vd8kZ-I_hAYQ79pY4F0pVQpC7yhvRhBnF8D3s7bqDhEPfSNu2TcIj-WzAI_-VcpIlrpatMwKK1LLvdHPBGBSPeA2&amp;t=7c776dc1" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+if (typeof(Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
+//]]>
+</script>
+
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6BE18101" />
+<input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAPWE4M4jNt2cnj8YOjgloia3l+e55hmaTw3lAZuEpNRfDk2I4lZckSc5l930v8UkjrZQNb2f745s2/Fi5gl7jHnyfXGamlGe0xBjhDTwkibMw==" />
+        
+        <center>
+            <div id="bgtop">
+                <div id="site_header">
+                    
+                        
+
+    <script type="text/javascript" language="javascript">
+    // <![CDATA[
+        var cLogInisPostback = false;
+        function bt_cLogIn_ClientOnclick(s, e) {
+            e.processOnServer = !cLogInisPostback;
+            cLogInisPostback = true;
+        }
+
+    // ]]>
+    </script>
+
+ <table width="100%">
+                <tr>
+                    <td align="left" valign="top">
+                    <a href ="/"><div style="width: 80px; height: 120px; left: 40px; position: relative;"></div></a>
+                    </td>
+
+                    <td align="center" valign="middle" style="width: 600px">
+                    </td>
+
+                    <td align="right" style="padding: 0px 10px 10px 10px; margin: 0px 10px 10px 10px;" valign="top">
+                        
+    <table width="100%" style="padding: 5px">
+    <tr>
+        <td align="right">
+            <div>
+                <input type="hidden"/><script id="dxis_660618792" src="/DXR.axd?r=1_145,1_81,1_99,1_105,1_137,1_106,1_92,1_130,1_135,1_121,1_98,1_78,1_128,1_101,1_91,1_114,1_126-jvfI7" type="text/javascript"></script><label class="dxeBase_SisTheme" id="cLogIn1_lb_cLogIn_User" for="cLogIn1_tb_cLogIn_User_I" style="display:inline-block;"><font color="White">t&#224;i khoản:</font></label>
+            </div>
+        </td>
+        <td align="left">
+            <div>
+                <table class="dxeTextBoxSys dxeTextBox_SisTheme" cellspacing="0" cellpadding="0" id="cLogIn1_tb_cLogIn_User">
+	<tr>
+		<td class="dxic" width="100%"><input class="dxeEditArea_SisTheme dxeEditAreaSys" id="cLogIn1_tb_cLogIn_User_I" name="ctl00$cLogIn1$tb_cLogIn_User" onfocus="aspxEGotFocus(&#39;cLogIn1_tb_cLogIn_User&#39;)" onblur="aspxELostFocus(&#39;cLogIn1_tb_cLogIn_User&#39;)" onkeydown="aspxEKeyDown(&#39;cLogIn1_tb_cLogIn_User&#39;, event)" onkeyup="aspxEKeyUp(&#39;cLogIn1_tb_cLogIn_User&#39;, event)" type="text" /></td>
+	</tr>
+</table><script id="dxss_340104185" type="text/javascript">
+<!--
+aspxAddDisabledItems('cLogIn1_tb_cLogIn_User',[[['dxeDisabled_SisTheme'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('cLogIn1_tb_cLogIn_User');
+window['tb_cLogIn_User'] = dxo;
+dxo.uniqueID = 'ctl00$cLogIn1$tb_cLogIn_User';
+dxo.renderIFrameForPopupElements = true;
+dxo.widthCorrectionRequired = true;
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_SisTheme','');
+dxo.InlineInitialize();
+
+//-->
+</script>
+            </div>
+        </td>
+        <td align="right">
+            <div>
+                <label class="dxeBase_SisTheme" id="cLogIn1_lb_cLogIn_Pass" for="cLogIn1_tb_cLogIn_Pass_I" style="display:inline-block;"><font color="White">mật khẩu:</font></label>
+            </div>
+        </td>
+        <td align="left">
+            <div>
+                <table class="dxeTextBoxSys dxeTextBox_SisTheme" cellspacing="0" cellpadding="0" id="cLogIn1_tb_cLogIn_Pass">
+	<tr>
+		<td class="dxic" width="100%"><input class="dxeEditArea_SisTheme dxeEditAreaSys" name="ctl00$cLogIn1$tb_cLogIn_Pass" onkeyup="aspxEKeyUp(&#39;cLogIn1_tb_cLogIn_Pass&#39;, event)" id="cLogIn1_tb_cLogIn_Pass_I" onchange="aspxEValueChanged(&#39;cLogIn1_tb_cLogIn_Pass&#39;)" onblur="aspxELostFocus(&#39;cLogIn1_tb_cLogIn_Pass&#39;)" onfocus="aspxEGotFocus(&#39;cLogIn1_tb_cLogIn_Pass&#39;)" type="password" onkeydown="aspxEKeyDown(&#39;cLogIn1_tb_cLogIn_Pass&#39;, event)" /></td>
+	</tr>
+</table><script id="dxss_1414859609" type="text/javascript">
+<!--
+aspxAddDisabledItems('cLogIn1_tb_cLogIn_Pass',[[['dxeDisabled_SisTheme'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('cLogIn1_tb_cLogIn_Pass');
+window['tb_cLogIn_Pass'] = dxo;
+dxo.uniqueID = 'ctl00$cLogIn1$tb_cLogIn_Pass';
+dxo.renderIFrameForPopupElements = true;
+dxo.ValueChanged.AddHandler(function(s,e) {   bt_cLogIn.DoClick(); });
+dxo.widthCorrectionRequired = true;
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_SisTheme','');
+dxo.InlineInitialize();
+
+//-->
+</script>
+            </div>
+        </td>
+        <td>
+            <div>
+                <table cellspacing="0" cellpadding="0" id="cLogIn1_bt_cLogIn" width="100" style="border-collapse:separate;">
+	<tr>
+		<td id="cLogIn1_bt_cLogIn_B" class="dxbButton_SisTheme" align="center"><div id="cLogIn1_bt_cLogIn_CD" class="dxb">
+			<span>Đăng nhập</span>
+		</div></td><td width="0%"><input value="" onfocus="aspxBGotFocus(&#39;cLogIn1_bt_cLogIn&#39;)" type="button" name="ctl00$cLogIn1$bt_cLogIn" border="0" style="padding:0px;" /></td>
+	</tr>
+</table><script id="dxss_1730087740" type="text/javascript">
+<!--
+aspxAddHoverItems('cLogIn1_bt_cLogIn',[[['dxbButtonHover_SisTheme'],[''],['B'],['','TC'],[['']],['Img']]]);
+aspxAddPressedItems('cLogIn1_bt_cLogIn',[[['dxbButtonPressed_SisTheme'],[''],['B'],['','TC'],[['']],['Img']]]);
+aspxAddDisabledItems('cLogIn1_bt_cLogIn',[[['dxbDisabled_SisTheme'],[''],['B'],['','TC'],[['']],['Img']]]);
+
+var dxo = new ASPxClientButton('cLogIn1_bt_cLogIn');
+window['bt_cLogIn'] = dxo;
+dxo.autoPostBack = true;
+dxo.uniqueID = 'ctl00$cLogIn1$bt_cLogIn';
+dxo.renderIFrameForPopupElements = true;
+dxo.Click.AddHandler(bt_cLogIn_ClientOnclick);
+dxo.RegisterServerEventAssigned(['Click']);
+aspxAddSelectedItems('cLogIn1_bt_cLogIn',[[['dxbf'],[''],['CD']]]);
+dxo.autoPostBackFunction = function(postBackArg) { WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("ctl00$cLogIn1$bt_cLogIn",  postBackArg, true, "", "", false, true)); };
+dxo.useSubmitBehavior = false;
+dxo.InlineInitialize();
+
+//-->
+</script> 
+            </div>
+        </td>
+    </tr>
+</table>
+
+                        
+                    </td>
+                </tr>
+
+            
+                </table>
+
+
+
+
+
+                </div>
+                <div id="dvSite_Header_Statistic"><span class="dxeBase_SisTheme" id="statisticMember_StatusTextLabel">Học kỳ 20261,tuần thứ 10,ng&#224;y 7 th&#225;ng 11 năm 2026<br />Ch&#250;ng ta c&#243; 5 kh&#225;ch v&#224; 0 th&#224;nh vi&#234;n trực tuyến </span>
+</div>
+            </div>
+            <div id="bgbody" style="padding: 20px 0px 0px 0px">
+                
+                <table class="decorateTable" cellpadding="0px" cellspacing="0px" style="padding-bottom: 10px">
+                    <tr><td class="c1"></td><td class="c2"></td><td class="c3"></td></tr>
+                    <tr><td class="c4"></td>
+                        <td class="c5" style="padding: 0px; margin: 0px; width: 100%;">
+                        
+                            <div id="MainMenu">
+                                <table cellspacing="0" cellpadding="0" id="cTopMenu1_UserMenu" width="100%" style="border-collapse:separate;">
+	<tr>
+		<td class="dxmMenu_SisTheme" valign="top" style="text-align:Left;"><table cellspacing="0" cellpadding="0" height="100%" width="100%" style="border-collapse:separate;float:left;">
+			<tr>
+				<td id="cTopMenu1_UserMenu_DXI0_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;0&#39;)" width="15%" style="cursor:pointer;text-align:Left;white-space:nowrap;"><a href="../" style="white-space:nowrap;">Trang chủ</a></td><td><div id="cTopMenu1_UserMenu_DXI0_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI1_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI1_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI1_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI1_T" class="dxmMenuItemWithPopOutImage_SisTheme dxmIFC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;1&#39;)" width="15%" style="cursor:pointer;text-align:Left;white-space:nowrap;border-right:0px!important;padding-right:4px!important;"><span style="cursor:pointer;">Chương tr&#236;nh đ&#224;o tạo</span></td><td id="cTopMenu1_UserMenu_DXI1_P" class="dxmMenuItemWithPopOutImage_SisTheme dxmILC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;1&#39;)" style="cursor:pointer;padding-left:0px!important;border-left:0px!important;"><img id="cTopMenu1_UserMenu_DXI1_PImg" class="dxWeb_mHorizontalPopOut_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" /></td><td><div id="cTopMenu1_UserMenu_DXI1_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI2_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI2_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI2_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI2_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" width="14%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Kế hoạch học tập</span></td><td><div id="cTopMenu1_UserMenu_DXI2_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI3_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI3_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI3_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI3_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" width="14%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Kết quả học tập</span></td><td><div id="cTopMenu1_UserMenu_DXI3_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI4_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI4_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI4_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI4_T" class="dxmMenuItemWithPopOutImage_SisTheme dxmIFC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;4&#39;)" width="14%" style="cursor:pointer;text-align:Left;white-space:nowrap;border-right:0px!important;padding-right:4px!important;"><span style="cursor:pointer;">Đăng k&#253; học tập</span></td><td id="cTopMenu1_UserMenu_DXI4_P" class="dxmMenuItemWithPopOutImage_SisTheme dxmILC" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;4&#39;)" style="cursor:pointer;padding-left:0px!important;border-left:0px!important;"><img id="cTopMenu1_UserMenu_DXI4_PImg" class="dxWeb_mHorizontalPopOut_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" /></td><td><div id="cTopMenu1_UserMenu_DXI4_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI5_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI5_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI5_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI5_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" width="14%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Tra cứu</span></td><td><div id="cTopMenu1_UserMenu_DXI5_II" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI6_ISF" class="dxmMenuFullHeightSeparator_SisTheme" bgcolor="Red"><div class="dx">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI6_IS" class="dxmMenuSeparator_SisTheme"><div class="dx">
+
+				</div></td><td><div id="cTopMenu1_UserMenu_DXI6_ISI" class="dxmMenuItemSeparatorSpacing_SisTheme" style="overflow:hidden;font-size:1px;">
+
+				</div></td><td id="cTopMenu1_UserMenu_DXI6_T" class="dxmMenuItem_SisTheme dxmIFC dxmILC" width="14%" style="cursor:default;text-align:Left;white-space:nowrap;"><span style="cursor:default;">Hướng dẫn</span></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><div id="cTopMenu1_UserMenu_DXM1_" style="position:absolute;left:0px;top:0px;z-index:20000;visibility:hidden;display:none;">
+	<table id="cTopMenu1_UserMenu_DXMST1_" cellspacing="0" cellpadding="0" style="border-collapse:separate;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=85);position:relative;">
+		<tr>
+			<td class="dxmSubMenu_SisTheme"><div id="cTopMenu1_UserMenu_DXSB1_U" class="dxmScrollUpButton_SisTheme" style="display:none;">
+				<img id="cTopMenu1_UserMenu_DXSB1_UImg" class="dxWeb_mScrollUp_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="^" title="" />
+			</div><div id="cTopMenu1_UserMenu_DXSA1" class="dxmScrollArea_SisTheme">
+				<table cellspacing="0" cellpadding="0" style="border-collapse:separate;float:left;">
+					<tr id="cTopMenu1_UserMenu_DXI1i0_">
+						<td id="cTopMenu1_UserMenu_DXI1i0_T" class="dxmSubMenuItem_SisTheme dxmSubMenuItemSelected_SisTheme" width="100%" style="cursor:default;"><span style="cursor:default;">Danh mục học phần</span></td>
+					</tr>
+				</table>
+			</div><div id="cTopMenu1_UserMenu_DXSB1_D" class="dxmScrollDownButton_SisTheme" style="display:none;">
+				<img id="cTopMenu1_UserMenu_DXSB1_DImg" class="dxWeb_mScrollDown_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" />
+			</div></td>
+		</tr>
+	</table>
+</div><div id="cTopMenu1_UserMenu_DXM4_" style="position:absolute;left:0px;top:0px;z-index:20000;visibility:hidden;display:none;">
+	<table id="cTopMenu1_UserMenu_DXMST4_" cellspacing="0" cellpadding="0" style="border-collapse:separate;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=85);position:relative;">
+		<tr>
+			<td class="dxmSubMenu_SisTheme"><div id="cTopMenu1_UserMenu_DXSB4_U" class="dxmScrollUpButton_SisTheme" style="display:none;">
+				<img id="cTopMenu1_UserMenu_DXSB4_UImg" class="dxWeb_mScrollUp_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="^" title="" />
+			</div><div id="cTopMenu1_UserMenu_DXSA4" class="dxmScrollArea_SisTheme">
+				<table cellspacing="0" cellpadding="0" style="border-collapse:separate;float:left;">
+					<tr id="cTopMenu1_UserMenu_DXI4i0_" onclick="aspxMIClick(event, &#39;cTopMenu1_UserMenu&#39;, &#39;4i0&#39;)">
+						<td id="cTopMenu1_UserMenu_DXI4i0_T" class="dxmSubMenuItem_SisTheme" width="100%" style="cursor:pointer;"><a href="../ModuleRegisterClass/CourseListRegister.aspx">Học phần mở đăng k&#253;</a></td>
+					</tr>
+				</table>
+			</div><div id="cTopMenu1_UserMenu_DXSB4_D" class="dxmScrollDownButton_SisTheme" style="display:none;">
+				<img id="cTopMenu1_UserMenu_DXSB4_DImg" class="dxWeb_mScrollDown_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" />
+			</div></td>
+		</tr>
+	</table>
+</div><iframe id="cTopMenu1_UserMenu_DXMIF0" src="javascript:false" scrolling="no" frameborder="0" style="position:absolute;display:none;z-index:19997;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=0);">
+
+</iframe><iframe id="cTopMenu1_UserMenu_DXMIF1" src="javascript:false" scrolling="no" frameborder="0" style="position:absolute;display:none;z-index:19997;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=0);">
+
+</iframe><script id="dxss_1136239739" type="text/javascript">
+<!--
+aspxAddHoverItems('cTopMenu1_UserMenu',[[[''],[''],['DXM_','DXM1_','DXMBC1_','DXM4_','DXMBC4_']],[['dxmMenuItemHover_SisTheme'],[''],['DXI0_','DXI2_','DXI3_','DXI5_','DXI6_'],['I','N','T','P'],[[''],[''],[''],[''],['']],['Img','PImg']],[['dxmScrollButtonHover_SisTheme'],[''],['DXSB0_U','DXSB0_D','DXSB1i0_U','DXSB1i0_D','DXSB1_U','DXSB1_D','DXSB2_U','DXSB2_D','DXSB3_U','DXSB3_D','DXSB4i0_U','DXSB4i0_D','DXSB4_U','DXSB4_D','DXSB5_U','DXSB5_D','DXSB6_U','DXSB6_D'],,[[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],[''],['']],['Img']],[['dxmMenuItemHoverWithPopOutImage_SisTheme'],[''],['DXI1_','DXI4_'],['I','N','T','P'],[['',''],['','']],['Img','PImg']],[['',''],['',''],['DXI1i0_'],['I','N','T','P'],[['']],['Img','PImg']],[['dxmSubMenuItemHover_SisTheme'],[''],['DXI4i0_'],['I','N','T','P'],[['']],['Img','PImg']]]);
+aspxAddPressedItems('cTopMenu1_UserMenu',[[['dxmScrollButtonPressed_SisTheme'],[''],['DXSB1_U','DXSB1_D','DXSB4_U','DXSB4_D'],,[[''],[''],[''],['']],['Img']]]);
+
+var dxo = new ASPxClientMenu('cTopMenu1_UserMenu');
+window['cTopMenu1_UserMenu'] = dxo;
+dxo.uniqueID = 'ctl00$cTopMenu1$UserMenu';
+dxo.renderIFrameForPopupElements = true;
+dxo.disappearAfter=200;
+dxo.subMenuFIXOffset=1;
+dxo.subMenuFIYOffset=-1;
+dxo.subMenuLIXOffset=1;
+dxo.subMenuLIYOffset=-1;
+dxo.subMenuXOffset=1;
+dxo.subMenuYOffset=-1;
+dxo.rootSubMenuFIXOffset=-1;
+dxo.rootSubMenuLIXOffset=-1;
+dxo.rootSubMenuXOffset=-1;
+dxo.scrollInfo=['0','1','1i0','2','3','4','4i0','5','6'];
+dxo.shadowVisible=false;
+dxo.InlineInitialize();
+
+//-->
+</script>
+                            </div>
+                        
+                        </td>
+                    <td class="c6"></td></tr><tr><td class="c7"></td><td class="c8"></td><td class="c9"></td></tr>
+                </table>
+               
+
+
+                
+                <table class="decorateTable" cellpadding="0px" cellspacing="0px">
+                    <tr>
+                        <td class="n1"></td><td class="n2"></td><td class="n3"></td>
+                    </tr>
+                    <tr>
+                        <td class="n4"></td>
+                        <td class="n5" style="padding: 10px 10px 10px 10px; margin: 0px; width: 100%">
+                            <div id="mainTextHeader">
+                                
+    <img id="main_text_header_ASPxImage1" src="../Styles/programcourse.png" alt="" height="32" width="32" />&nbsp; Danh mục học phần
+
+                            </div>
+                            <div class="nSeparator" style="width: 100%; padding-top:20px;">
+                            </div>
+                            <div id="mainTextBody">
+                                
+    <script type="text/javascript" language="javascript">
+    // <![CDATA[
+        function cbAcademic_valueChange(s, e) {
+            var AcademicID = s.GetValue();
+            //            gvCoursesGrid.FilterExpression = "[CourseUnits]=1";
+            if (AcademicID != "All") {
+                gvCoursesGrid.ApplyFilter("[AcademicUnitID]='" + AcademicID + "'");
+            }
+            else {
+                gvCoursesGrid.ApplyFilter("");
+             }
+        }
+        function tbCourseID_valueChange(s, e) {
+            var CourseID = s.GetText();
+            if (CourseID != "") {
+                gvCoursesGrid.ApplyFilter("Contains([CourseID], '" + CourseID + "')");
+            }
+            else {
+                if (cbAcademic.GetValue() != "All") { gvCoursesGrid.ApplyFilter("[AcademicUnitID]='" + cbAcademic.GetValue() + "'"); }
+                else { gvCoursesGrid.ApplyFilter(""); }
+            }
+        }
+        function tbCourseName_valueChange(s, e) {
+            var CourseName = s.GetText();
+            if (CourseName != "") {
+                gvCoursesGrid.FilterExpression = "Contains([CourseName], '" + CourseName + "')";
+                gvCoursesGrid.ApplyFilter(gvCoursesGrid.FilterExpression);
+            }
+            else {
+                if (tbCourseID.GetText() != "") { gvCoursesGrid.ApplyFilter("[CourseID]='" + tbCourseID.GetText() + "'"); }
+                else { gvCoursesGrid.ApplyFilter(""); }
+            }
+        }
+
+
+
+    // ]]>
+    </script>
+
+
+    <div style="padding: 20px 0px 20px 0px; width:100%">
+        <table>
+            <tr>
+                <td><label class="dxeBase_SisTheme" id="MainContent_lbAcademic" for="MainContent_cbAcademic_I">T&#236;m theo khoa viện</label></td>
+                <td><label class="dxeBase_SisTheme" id="MainContent_lbCourseID" for="MainContent_tbCourseID_I">T&#236;m theo m&#227; học phần</label></td>
+                <td><label class="dxeBase_SisTheme" id="MainContent_lbCourseName" for="MainContent_tbCourseName_I">T&#236;m theo t&#234;n học phần</label></td>
+            </tr>
+            <tr>
+                <td><table id="MainContent_cbAcademic_LP" class="dxeLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+	<tr>
+		<td class="dx"><span id="MainContent_cbAcademic_TL">Loading&hellip;</span><br /><img src="/DXR.axd?r=100_123-8V9H7" alt="" align="middle" style="margin-top:8px;" /></td>
+	</tr>
+</table><div id="MainContent_cbAcademic_LD" class="dxeLoadingDiv_SisTheme" style="left:0px;top:0px;z-index:29999;display:none;position:absolute;">
+
+</div><table class="dxeButtonEditSys dxeButtonEditSysWithSpacing dxeButtonEdit_SisTheme" cellspacing="1" cellpadding="0" id="MainContent_cbAcademic" bordercolor="#41567A" bgcolor="Gainsboro" width="350">
+	<tr>
+		<td style="display:none;"><input id="MainContent_cbAcademic_VI" name="MainContent_cbAcademic_VI" type="hidden" /></td><td class="dxic" onmousedown="return aspxDDDropDown(&#39;MainContent_cbAcademic&#39;, event)" width="100%"><input class="dxeEditArea_SisTheme dxeEditAreaSys" name="ctl00$MainContent$cbAcademic" id="MainContent_cbAcademic_I" onchange="aspxETextChanged(&#39;MainContent_cbAcademic&#39;)" onblur="aspxELostFocus(&#39;MainContent_cbAcademic&#39;)" onfocus="aspxEGotFocus(&#39;MainContent_cbAcademic&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;MainContent_cbAcademic&#39;, event)" readonly="readonly" style="cursor:default;" /></td><td id="MainContent_cbAcademic_B-1" class="dxeButtonEditButton_SisTheme" onmousedown="return aspxDDDropDown(&#39;MainContent_cbAcademic&#39;, event)"><table class="dxbebt" cellspacing="0" cellpadding="0" style="border-collapse:separate;">
+			<tr>
+				<td class="dx"><img id="MainContent_cbAcademic_B-1Img" class="dxEditors_edtDropDown_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="v" title="" /></td>
+			</tr>
+		</table></td>
+	</tr>
+</table><input type="hidden" id="MainContent_cbAcademic_DDDWS" name="MainContent_cbAcademic_DDDWS" value="0:0:-1:-10000:-10000:0:-10000:-10000:1:0:0:0" /><div id="MainContent_cbAcademic_DDD_PW-1" style="position:absolute;left:0px;top:0px;z-index:10000;visibility:hidden;display:none;">
+	<table id="MainContent_cbAcademic_DDD_PWST-1" cellspacing="0" cellpadding="0" style="border-collapse:separate;position:relative;">
+		<tr>
+			<td class="dxpc-ddSys" onmousedown="aspxPWMDown(event,&#39;MainContent_cbAcademic_DDD&#39;,-1,false)" width="0" style="cursor:default;"><table id="MainContent_cbAcademic_DDD_CLW-1" cellspacing="0" cellpadding="0" width="0" style="border-collapse:separate;">
+				<tr>
+					<td id="MainContent_cbAcademic_DDD_PWC-1"><div id="MainContent_cbAcademic_DDD_CSD-1">
+						<input type="hidden" id="MainContent_cbAcademic_DDD_LDeletedItems" name="MainContent_cbAcademic_DDD_LDeletedItems" value="" /><input type="hidden" id="MainContent_cbAcademic_DDD_LInsertedItems" name="MainContent_cbAcademic_DDD_LInsertedItems" value="" /><input type="hidden" id="MainContent_cbAcademic_DDD_LCustomCallback" name="MainContent_cbAcademic_DDD_LCustomCallback" value="" /><table class="dxeListBox_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_cbAcademic_DDD_L" style="border-collapse:separate;">
+							<tr>
+								<td valign="top"><div id="MainContent_cbAcademic_DDD_L_D" class="dxlbd" style="overflow-x:hidden;overflow-y:auto;">
+									<input id="MainContent_cbAcademic_DDD_L_VI" type="hidden" name="ctl00$MainContent$cbAcademic$DDD$L" /><table cellspacing="0" cellpadding="0" style="border-collapse:separate;visibility:hidden!important;display:none!important;">
+										<tr id="MainContent_cbAcademic_DDD_L_LBI-1" class="dxeListBoxItemRow_SisTheme">
+											<td id="MainContent_cbAcademic_DDD_L_LBII" class="dxeListBoxItem_SisTheme">&nbsp;</td>
+										</tr>
+									</table><table id="MainContent_cbAcademic_DDD_L_LBT" cellspacing="0" cellpadding="0" width="100%" style="border-collapse:separate;">
+										<tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">All</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Khoa Gi&#225;o dục Thể chất</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Khoa Gi&#225;o dục Quốc ph&#242;ng v&#224; An ninh</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Trường Kinh tế</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Khoa L&#253; luận ch&#237;nh trị</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Khoa Ngoại ngữ</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Khoa Khoa học v&#224; C&#244;ng nghệ Gi&#225;o dục</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Khoa To&#225;n - Tin</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Ban Đ&#224;o tạo</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Văn ph&#242;ng c&#225;c chương tr&#236;nh quốc tế</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Trường Cơ kh&#237;</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Trường C&#244;ng nghệ th&#244;ng tin v&#224; Truyền th&#244;ng</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Trường Điện - Điện tử</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Trung t&#226;m Khảo th&#237; ngoại ngữ v&#224; Trao đổi văn h&#243;a</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Trường Vật liệu</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Trường H&#243;a v&#224; Khoa học sự sống</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Trung t&#226;m Đ&#224;o tạo li&#234;n tục</td>
+										</tr><tr class="dxeListBoxItemRow_SisTheme">
+											<td class="dxeListBoxItem_SisTheme">Khoa Vật l&#253; kỹ thuật</td>
+										</tr>
+									</table>
+								</div></td>
+							</tr>
+						</table><script id="dxss_407518365" type="text/javascript">
+<!--
+aspxAddDisabledItems('MainContent_cbAcademic_DDD_L',[[['dxeDisabled_SisTheme'],[''],['']]]);
+
+var dxo = new ASPxClientListBox('MainContent_cbAcademic_DDD_L');
+window['MainContent_cbAcademic_DDD_L'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$cbAcademic$DDD$L';
+dxo.renderIFrameForPopupElements = true;
+dxo.SelectedIndexChanged.AddHandler(function (s, e) { aspxCBLBSelectedIndexChanged('MainContent_cbAcademic', e); });
+dxo.ItemClick.AddHandler(function (s, e) { aspxCBLBItemMouseUp('MainContent_cbAcademic', e); });
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_SisTheme','');
+dxo.itemsValue=['All','BGDTC','KGDQP','KKTVQL','KML','KNN','KSPKT','KTTD','PDTDH','SIE','TCK','TCNTT','TDDT','TTNNHT','TVL','THKHSS','VDTLT','VVLKT'];
+dxo.isComboBoxList = true;
+dxo.hasSampleItem = true;
+dxo.hoverClasses=['dxeListBoxItemHover_SisTheme'];
+dxo.selectedClasses=['dxeListBoxItemSelected_SisTheme'];
+dxo.disabledClasses=['dxeDisabled_SisTheme'];
+dxo.InlineInitialize();
+
+//-->
+</script>
+					</div></td>
+				</tr>
+			</table></td>
+		</tr>
+	</table>
+</div><iframe id="MainContent_cbAcademic_DDD_DXPWIF-1" src="javascript:false" scrolling="no" frameborder="0" style="position:absolute;display:none;z-index:9999;filter:progid:DXImageTransform.Microsoft.Alpha(Style=0, Opacity=0);">
+
+</iframe><script id="dxss_992857649" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientPopupControl('MainContent_cbAcademic_DDD');
+window['MainContent_cbAcademic_DDD'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$cbAcademic$DDD';
+dxo.renderIFrameForPopupElements = true;
+dxo.Shown.AddHandler(function (s, e) { aspxDDBPCShown('MainContent_cbAcademic', e); });
+dxo.adjustInnerControlsSizeOnShow=false;
+dxo.popupAnimationType='slide';
+dxo.closeAction='CloseButton';
+dxo.popupHorizontalAlign='LeftSides';
+dxo.popupVerticalAlign='Below';
+dxo.isPopupPositionCorrectionOn=false;
+dxo.shadowVisible=false;
+dxo.width=0;
+dxo.height=0;
+dxo.InlineInitialize();
+
+//-->
+</script><script id="dxss_549811141" type="text/javascript">
+<!--
+aspxAddHoverItems('MainContent_cbAcademic',[[['dxeButtonEditButtonHover_SisTheme'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddPressedItems('MainContent_cbAcademic',[[['dxeButtonEditButtonPressed_SisTheme'],[''],['B-1'],,[['']],['Img']]]);
+aspxAddDisabledItems('MainContent_cbAcademic',[[['dxeDisabled_SisTheme'],[''],['','I']],[['dxeDisabled_SisTheme dxeButtonDisabled_SisTheme'],[''],['B-1'],,[[{'spriteCssClass':'dxEditors_edtDropDownDisabled_SisTheme'}]],['Img']]]);
+document.getElementById("MainContent_cbAcademic_I").setAttribute("autocomplete", "off");
+
+var dxo = new ASPxClientComboBox('MainContent_cbAcademic');
+window['cbAcademic'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$cbAcademic',arg,aspxCallback,'MainContent_cbAcademic',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$cbAcademic';
+dxo.renderIFrameForPopupElements = true;
+dxo.ValueChanged.AddHandler(function(s,e){cbAcademic_valueChange(s,e);});
+dxo.widthCorrectionRequired = true;
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_SisTheme','');
+dxo.lastSuccessValue = null;
+dxo.islastSuccessValueInit = true;
+dxo.InlineInitialize();
+
+//-->
+</script></td>
+                <td><table class="dxeTextBoxSys dxeTextBox_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_tbCourseID" bordercolor="#41567A" bgcolor="Gainsboro" width="150">
+	<tr>
+		<td class="dxic" width="100%"><input class="dxeEditArea_SisTheme dxeEditAreaSys" name="ctl00$MainContent$tbCourseID" onkeyup="aspxEKeyUp(&#39;MainContent_tbCourseID&#39;, event)" id="MainContent_tbCourseID_I" onchange="aspxEValueChanged(&#39;MainContent_tbCourseID&#39;)" onblur="aspxELostFocus(&#39;MainContent_tbCourseID&#39;)" onfocus="aspxEGotFocus(&#39;MainContent_tbCourseID&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;MainContent_tbCourseID&#39;, event)" /></td>
+	</tr>
+</table><script id="dxss_939767878" type="text/javascript">
+<!--
+aspxAddDisabledItems('MainContent_tbCourseID',[[['dxeDisabled_SisTheme'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('MainContent_tbCourseID');
+window['tbCourseID'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$tbCourseID';
+dxo.renderIFrameForPopupElements = true;
+dxo.TextChanged.AddHandler(function(s,e){tbCourseID_valueChange(s,e);});
+dxo.widthCorrectionRequired = true;
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_SisTheme','');
+dxo.InlineInitialize();
+
+//-->
+</script></td>
+                <td><table class="dxeTextBoxSys dxeTextBox_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_tbCourseName" bordercolor="#41567A" bgcolor="Gainsboro" width="150">
+	<tr>
+		<td class="dxic" width="100%"><input class="dxeEditArea_SisTheme dxeEditAreaSys" name="ctl00$MainContent$tbCourseName" onkeyup="aspxEKeyUp(&#39;MainContent_tbCourseName&#39;, event)" id="MainContent_tbCourseName_I" onchange="aspxEValueChanged(&#39;MainContent_tbCourseName&#39;)" onblur="aspxELostFocus(&#39;MainContent_tbCourseName&#39;)" onfocus="aspxEGotFocus(&#39;MainContent_tbCourseName&#39;)" type="text" onkeydown="aspxEKeyDown(&#39;MainContent_tbCourseName&#39;, event)" /></td>
+	</tr>
+</table><script id="dxss_954617368" type="text/javascript">
+<!--
+aspxAddDisabledItems('MainContent_tbCourseName',[[['dxeDisabled_SisTheme'],[''],['','I']]]);
+
+var dxo = new ASPxClientTextBox('MainContent_tbCourseName');
+window['tbCourseName'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$tbCourseName';
+dxo.renderIFrameForPopupElements = true;
+dxo.TextChanged.AddHandler(function(s,e){tbCourseName_valueChange(s,e);});
+dxo.widthCorrectionRequired = true;
+dxo.RequireStyleDecoration();
+dxo.styleDecoration.AddStyle('F','dxeFocused_SisTheme','');
+dxo.InlineInitialize();
+
+//-->
+</script></td>
+            </tr>
+        </table>
+    </div>
+
+
+    <div style="border-style: inset; border-width: medium; padding: 0px; width:100%">
+        <table class="dxgvControl_SisTheme" cellspacing="0" cellpadding="0" id="MainContent_gvCoursesGrid" width="100%" style="border-collapse:separate;">
+	<tr>
+		<td><table id="MainContent_gvCoursesGrid_DXTitle" cellspacing="0" cellpadding="0" width="100%">
+			<tr>
+				<td class="dxgvTitlePanel_SisTheme">Danh sách các học phần</td>
+			</tr>
+		</table><table id="MainContent_gvCoursesGrid_DXMainTable" class="dxgvTable_SisTheme" cellspacing="0" cellpadding="0" onclick="aspxGVTableClick(&#39;MainContent_gvCoursesGrid&#39;, event);" width="100%" style="empty-cells:show;">
+			<tr id="MainContent_gvCoursesGrid_DXHeadersRow0">
+				<td class="dxgvHeader_SisTheme" width="0.1%" style="border-top-width:0px;border-left-width:0px;cursor:default;"><img class="dxGridView_gvExpandedButton_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="" style="visibility:hidden;" /></td><td id="MainContent_gvCoursesGrid_col0" class="dxgvHeader_SisTheme" onmousedown="aspxGVHeaderMouseDown(&#39;MainContent_gvCoursesGrid&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>Mã học phần</td>
+					</tr>
+				</table></td><td id="MainContent_gvCoursesGrid_col1" class="dxgvHeader_SisTheme" onmousedown="aspxGVHeaderMouseDown(&#39;MainContent_gvCoursesGrid&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>Tên học phần</td>
+					</tr>
+				</table></td><td id="MainContent_gvCoursesGrid_col3" class="dxgvHeader_SisTheme" onmousedown="aspxGVHeaderMouseDown(&#39;MainContent_gvCoursesGrid&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>Thời lượng</td>
+					</tr>
+				</table></td><td id="MainContent_gvCoursesGrid_col4" class="dxgvHeader_SisTheme" onmousedown="aspxGVHeaderMouseDown(&#39;MainContent_gvCoursesGrid&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>Số tín chỉ</td>
+					</tr>
+				</table></td><td id="MainContent_gvCoursesGrid_col5" class="dxgvHeader_SisTheme" onmousedown="aspxGVHeaderMouseDown(&#39;MainContent_gvCoursesGrid&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;"><table cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>TC học phí</td>
+					</tr>
+				</table></td><td id="MainContent_gvCoursesGrid_col9" class="dxgvHeader_SisTheme" onmousedown="aspxGVHeaderMouseDown(&#39;MainContent_gvCoursesGrid&#39;, this, event);" style="border-top-width:0px;border-left-width:0px;border-right-width:0px;"><table cellspacing="0" cellpadding="0" width="100%">
+					<tr>
+						<td>Trọng số</td>
+					</tr>
+				</table></td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow0" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,0,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">MI1010</td><td class="dxgv">Giải t&#237;ch I</td><td class="dxgv">3(3-2-0-6)</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right">5</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow1" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,1,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">MI1030</td><td class="dxgv">Đại số</td><td class="dxgv">3(3-2-0-6)</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right">5</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow2" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,2,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">IT1010</td><td class="dxgv">Tin học đại cương</td><td class="dxgv">3(3-1-1-6)</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right">5.5</td><td class="dxgv" align="right" style="border-right-width:0px;">0.6</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow3" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,3,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">FL1010</td><td class="dxgv">Tiếng Anh I</td><td class="dxgv">3(3-2-0-6)</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right">5</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow4" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,4,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">ME2010</td><td class="dxgv">Hình học họa hình</td><td class="dxgv">2(1-1-0-4)</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow5" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,5,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">SSH1030</td><td class="dxgv">Lịch sử Đảng CSVN</td><td class="dxgv">2(2-0-2-4)</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right">5</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow6" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,6,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">PE1010</td><td class="dxgv">Gi&#225;o dục thể chất A</td><td class="dxgv">0(0-2-0-2)</td><td class="dxgv" align="right">0</td><td class="dxgv" align="right">1.5</td><td class="dxgv" align="right" style="border-right-width:0px;">1</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow7" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,7,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">MI1020</td><td class="dxgv">Giải t&#237;ch II</td><td class="dxgv">3(2-2-0-6)</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right">4</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow8" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,8,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">MI1040</td><td class="dxgv">Phương tr&#236;nh vi ph&#226;n v&#224; chuỗi</td><td class="dxgv">2(2-1-0-4)</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow9" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,9,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">PH1010</td><td class="dxgv">Vật l&#253; đại cương I</td><td class="dxgv">4(3-2-1-8)</td><td class="dxgv" align="right">4</td><td class="dxgv" align="right">6.5</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow10" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,10,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">FL1020</td><td class="dxgv">Tiếng Anh II</td><td class="dxgv">3(3-1-0-6)</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right">4</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow11" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,11,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">ME2020</td><td class="dxgv">Vẽ kỹ thu&#226;̣t </td><td class="dxgv">2(1-1-0-4)</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow12" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,12,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">SSH1010</td><td class="dxgv">Triết học M&#225;c-L&#234;nin</td><td class="dxgv">4(3-0-3-6)</td><td class="dxgv" align="right">4</td><td class="dxgv" align="right">7.5</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow13" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,13,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">PE1020</td><td class="dxgv">Gi&#225;o dục thể chất B</td><td class="dxgv">0(0-2-0-2)</td><td class="dxgv" align="right">0</td><td class="dxgv" align="right">1.5</td><td class="dxgv" align="right" style="border-right-width:0px;">1</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow14" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,14,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">MIL1010</td><td class="dxgv">Gi&#225;o dục quốc ph&#242;ng I</td><td class="dxgv">0(1-0-2-0)</td><td class="dxgv" align="right">0</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right" style="border-right-width:0px;">1</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow15" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,15,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">SSH1020</td><td class="dxgv">Kinh tế ch&#237;nh trị</td><td class="dxgv">3(3-0-2-6)</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right">6</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow16" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,16,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">SSH1040</td><td class="dxgv">CNXH khoa học</td><td class="dxgv">2(2-0-2-4)</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right">5</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow17" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,17,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">SSH1050</td><td class="dxgv">Tư tưởng HCM</td><td class="dxgv">2(2-0-0-4)</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right" style="border-right-width:0px;">0.5</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow18" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,18,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">FL2010</td><td class="dxgv">Tiếng Anh KHKT</td><td class="dxgv">2(2-1-0-4)</td><td class="dxgv" align="right">2</td><td class="dxgv" align="right">3</td><td class="dxgv" align="right" style="border-right-width:0px;">0.7</td>
+			</tr><tr id="MainContent_gvCoursesGrid_DXDataRow19" class="dxgvDataRow_SisTheme">
+				<td class="dxgvDetailButton_SisTheme dxgv" width="0" style="border-right-width:0px;"><img class="dxGridView_gvDetailCollapsedButton_SisTheme" onclick="aspxGVShowDetailRow(&#39;MainContent_gvCoursesGrid&#39;,19,event);event.cancelBubble = true" src="/DXR.axd?r=1_10-jvfI7" alt="[Expand]" title="" style="cursor:pointer;" /></td><td class="dxgv" align="left" style="vertical-align:Middle;">PE1030</td><td class="dxgv">Gi&#225;o dục thể chất C</td><td class="dxgv">0(0-2-0-2)</td><td class="dxgv" align="right">0</td><td class="dxgv" align="right">1.5</td><td class="dxgv" align="right" style="border-right-width:0px;">1</td>
+			</tr>
+		</table><img id="MainContent_gvCoursesGrid_IADD" class="dxGridView_gvDragAndDropArrowDown_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="|" title="" style="position:absolute;visibility:hidden;top:-100px;" /><img id="MainContent_gvCoursesGrid_IADU" class="dxGridView_gvDragAndDropArrowUp_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="|" title="" style="position:absolute;visibility:hidden;top:-100px;" /><img id="MainContent_gvCoursesGrid_IDHF" class="dxGridView_gvDragAndDropHideColumn_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="Hide" title="" style="position:absolute;visibility:hidden;top:-100px;" /><div class="dxgvPagerBottomPanel_SisTheme">
+			<div class="dxpLite_SisTheme" id="MainContent_gvCoursesGrid_DXPagerBottom">
+				<b class="dxp-lead dxp-summary">Page 1 of 417 (8331 items)</b><b class="dxp-button dxp-disabledButton"><img class="dxWeb_pPrevDisabled_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="Prev" title="" /></b><b class="dxp-num dxp-current">1</b><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN1&#39;);">2</a><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN2&#39;);">3</a><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN3&#39;);">4</a><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN4&#39;);">5</a><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN5&#39;);">6</a><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN6&#39;);">7</a><b class="dxp-ellip">&hellip;</b><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN414&#39;);">415</a><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN415&#39;);">416</a><a class="dxp-num" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PN416&#39;);">417</a><b class="dxp-button" onclick="aspxGVPagerOnClick(&#39;MainContent_gvCoursesGrid&#39;,&#39;PBN&#39;);"><img class="dxWeb_pNext_SisTheme" src="/DXR.axd?r=1_10-jvfI7" alt="Next" title="" /></b>
+			</div><b class="dx-clear"></b><script id="dxss_488054933" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientPager('MainContent_gvCoursesGrid_DXPagerBottom');
+window['MainContent_gvCoursesGrid_DXPagerBottom'] = dxo;
+dxo.uniqueID = 'ctl00$MainContent$gvCoursesGrid$DXPagerBottom';
+dxo.renderIFrameForPopupElements = true;
+dxo.liteRender=true;
+dxo.hasOwnerControl=true;
+dxo.pageSizeItems = [{'text':'10','value':'10'},{'text':'20','value':'20'},{'text':'50','value':'50'},{'text':'100','value':'100'},{'text':'200','value':'200'}];
+dxo.pageSizeSelectedItem = ({'text':'20','value':20});
+dxo.pageSizeChangedHandler.AddHandler(function(s, e) { aspxGVPagerOnClick('MainContent_gvCoursesGrid',e.value); });
+dxo.InlineInitialize();
+
+//-->
+</script>
+		</div><table id="MainContent_gvCoursesGrid_LP" class="dxgvLoadingPanel_SisTheme" cellspacing="0" cellpadding="0" style="left:0px;top:0px;z-index:30000;display:none;">
+			<tr>
+				<td class="dx"><img src="/DXR.axd?r=100_129-8V9H7" alt="" align="middle" /></td>
+			</tr>
+		</table><div id="MainContent_gvCoursesGrid_LD" class="dxgvLoadingDiv_SisTheme" style="display:none;z-index:29999;position:absolute;">
+
+		</div><input type="hidden" name="ctl00$MainContent$gvCoursesGrid$DXSelInput" id="MainContent_gvCoursesGrid_DXSelInput" /><input type="hidden" name="ctl00$MainContent$gvCoursesGrid$DXKVInput" id="MainContent_gvCoursesGrid_DXKVInput" value="[&#39;MI1010&#39;,&#39;MI1030&#39;,&#39;IT1010&#39;,&#39;FL1010&#39;,&#39;ME2010&#39;,&#39;SSH1030&#39;,&#39;PE1010&#39;,&#39;MI1020&#39;,&#39;MI1040&#39;,&#39;PH1010&#39;,&#39;FL1020&#39;,&#39;ME2020&#39;,&#39;SSH1010&#39;,&#39;PE1020&#39;,&#39;MIL1010&#39;,&#39;SSH1020&#39;,&#39;SSH1040&#39;,&#39;SSH1050&#39;,&#39;FL2010&#39;,&#39;PE1030&#39;]" /><table id="MainContent_gvCoursesGrid_DXStyleTable" style="display:none;">
+			<tr>
+				<td></td>
+			</tr><tr class="dxgvEditingErrorRow_SisTheme">
+				<td class="dxgvIndentCell dxgv" style="border-left-width:0px;border-right-width:0px;">&nbsp;</td><td class="dxgv" colspan="6" style="border-right-width:0px;"></td>
+			</tr><tr class="dxgvSelectedRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvFocusedRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvFocusedGroupRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr><tr class="dxgvDataRow_SisTheme">
+				<td></td>
+			</tr>
+		</table><input type="hidden" name="ctl00$MainContent$gvCoursesGrid$CallbackState" id="MainContent_gvCoursesGrid_CallbackState" value="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" /></td>
+	</tr>
+</table><script id="dxss_1249895589" type="text/javascript">
+<!--
+
+var dxo = new ASPxClientGridView('MainContent_gvCoursesGrid');
+window['gvCoursesGrid'] = dxo;
+dxo.callBack = function(arg) { WebForm_DoCallback('ctl00$MainContent$gvCoursesGrid',arg,aspxCallback,'MainContent_gvCoursesGrid',aspxCallbackError,true); };
+dxo.uniqueID = 'ctl00$MainContent$gvCoursesGrid';
+dxo.renderIFrameForPopupElements = true;
+dxo.callBacksEnabled=true;
+dxo.pageRowCount=20;
+dxo.pageRowSize=20;
+dxo.pageIndex=0;
+dxo.pageCount=417;
+dxo.selectedWithoutPageRowCount=0;
+dxo.visibleStartIndex=0;
+dxo.focusedRowIndex=-1;
+dxo.allowFocusedRow=false;
+dxo.allowSelectByRowClick=false;
+dxo.allowSelectSingleRowOnly=false;
+dxo.isDefaultLoadingPanelMode=true;
+dxo.indentColumnCount=1;
+dxo.callbackOnFocusedRowChanged=false;
+dxo.callbackOnSelectionChanged=false;
+dxo.autoFilterDelay='1200';
+dxo.columns = [new ASPxClientGridViewColumn('',0,-1,'CourseID',1,'',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',1,-1,'CourseName',1,'',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',2,-1,'ShortName',0,'',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',3,-1,'LoadHoursCode',1,'',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',4,-1,'CourseUnits',1,'',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',5,-1,'TuitionUnits',1,'',0,1,1,1,0,0,0),
+new ASPxClientGridViewColumn('',6,-1,'AcademicUnitID',0,'',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',7,-1,'CourseRequisite',0,'',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',8,-1,'EnglishName',0,'',0,1,1,1,0,1,0),
+new ASPxClientGridViewColumn('',9,-1,'ExamFactor',1,'',0,1,1,1,0,0,0)];
+dxo.editState=0;
+dxo.editMode=2;
+dxo.InlineInitialize();
+
+//-->
+</script>
+    </div>
+
+
+                            </div>
+                        </td>
+                        <td class="n6"></td>
+                    </tr>
+                    <tr>
+                        <td class="n7"></td><td class="n8"></td><td class="n9"></td>
+                    </tr>
+                </table>
+
+
+
+
+
+
+                
+
+
+                
+                <table class="decorateTable" cellpadding="0px" cellspacing="0px" style="padding-top: 20px">
+                    <tr><td class="c1"></td><td class="c2"></td><td class="c3"></td></tr>
+                    <tr><td class="c4"></td>
+                        <td class="c5" style="padding: 10px 10px 10px 10px; margin: 0px; width: 100%;">
+                                        <div style="text-align: center" >
+                                            Trang SIS phòng Đào tạo Đại học trường Đại học Bách Khoa Hà Nội
+                                        </div>
+                                        <p align="center" style="font-size: small; color: #800000" class="status_text">
+                                            Hanoi University of Science and Technology - No. 1, Dai Co Viet Str., Hanoi, Vietnam
+                                            <br />
+                                            Tel: (+844)38682305, (+844)38692008 - E-mail: <a href="mailto:dt@hust.edu.vn" id="A2" class="custom">DTDH@mail.hust.edu.vn</a>
+                                        </p>
+                        </td>
+                    <td class="c6"></td></tr><tr><td class="c7"></td><td class="c8"></td><td class="c9"></td></tr>
+                </table>
+
+
+
+            </div>
+            <div id="bgbottom"></div>
+        </center>
+    </form>
+</body>
+</html>

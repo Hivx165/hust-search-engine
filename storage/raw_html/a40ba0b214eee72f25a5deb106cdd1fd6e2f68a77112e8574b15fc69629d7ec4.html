@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<!--[if IE 9 ]> <html lang="en-GB" class="ie9 loading-site no-js bg-fill"> <![endif]-->
+<!--[if IE 8 ]> <html lang="en-GB" class="ie8 loading-site no-js bg-fill"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en-GB" class="loading-site no-js bg-fill"> <!--<![endif]-->
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://bme.hust.edu.vn/xmlrpc.php" />
+
+	<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<title>Giải tích I &#8211; MI1111 &#8211; BME</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" type="application/rss+xml" title="BME &raquo; Feed" href="http://bme.hust.edu.vn/feed/" />
+<link rel="alternate" type="application/rss+xml" title="BME &raquo; Comments Feed" href="http://bme.hust.edu.vn/comments/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"http:\/\/bme.hust.edu.vn\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.11"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+/* ]]> */
+</script>
+<style id='wp-emoji-styles-inline-css' type='text/css'>
+
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<link rel='stylesheet' id='wp-block-library-css' href='http://bme.hust.edu.vn/wp-includes/css/dist/block-library/style.min.css?ver=6.7.11' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-vendors-style-css' href='http://bme.hust.edu.vn/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/vendors-style.css?ver=4.0.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wc-block-style-css' href='http://bme.hust.edu.vn/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=4.0.0' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='contact-form-7-css' href='http://bme.hust.edu.vn/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.4.2' type='text/css' media='all' />
+<style id='woocommerce-inline-inline-css' type='text/css'>
+.woocommerce form .form-row .required { visibility: visible; }
+</style>
+<link rel='stylesheet' id='flatsome-icons-css' href='http://bme.hust.edu.vn/wp-content/themes/flatsome/assets/css/fl-icons.css?ver=3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-main-css' href='http://bme.hust.edu.vn/wp-content/themes/flatsome/assets/css/flatsome.css?ver=3.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-shop-css' href='http://bme.hust.edu.vn/wp-content/themes/flatsome/assets/css/flatsome-shop.css?ver=3.6.0' type='text/css' media='all' />
+<link rel='stylesheet' id='flatsome-style-css' href='http://bme.hust.edu.vn/wp-content/themes/flatsome-child/style.css?ver=3.6.0' type='text/css' media='all' />
+<script type="text/javascript">(function(a,d){if(a._nsl===d){a._nsl=[];var c=function(){if(a.jQuery===d)setTimeout(c,33);else{for(var b=0;b<a._nsl.length;b++)a._nsl[b].call(a,a.jQuery);a._nsl={push:function(b){b.call(a,a.jQuery)}}}};c()}})(window);</script><script type="text/javascript" src="http://bme.hust.edu.vn/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="http://bme.hust.edu.vn/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="http://bme.hust.edu.vn/wp-json/wp/v2/posts/6000" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://bme.hust.edu.vn/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.11" />
+<meta name="generator" content="WooCommerce 4.9.3" />
+<link rel="canonical" href="http://bme.hust.edu.vn/2025/08/21/giai-tich-i-mi1111/16/16/10/" />
+<link rel='shortlink' href='http://bme.hust.edu.vn/?p=6000' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="http://bme.hust.edu.vn/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbme.hust.edu.vn%2F2025%2F08%2F21%2Fgiai-tich-i-mi1111%2F16%2F16%2F10%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="http://bme.hust.edu.vn/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fbme.hust.edu.vn%2F2025%2F08%2F21%2Fgiai-tich-i-mi1111%2F16%2F16%2F10%2F&#038;format=xml" />
+<!-- Analytics by WP-Statistics v13.0.9 - https://wp-statistics.com/ -->
+<style>.bg{opacity: 0; transition: opacity 1s; -webkit-transition: opacity 1s;} .bg-loaded{opacity: 1;}</style><!--[if IE]><link rel="stylesheet" type="text/css" href="http://bme.hust.edu.vn/wp-content/themes/flatsome/assets/css/ie-fallback.css"><script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.1/html5shiv.js"></script><script>var head = document.getElementsByTagName('head')[0],style = document.createElement('style');style.type = 'text/css';style.styleSheet.cssText = ':before,:after{content:none !important';head.appendChild(style);setTimeout(function(){head.removeChild(style);}, 0);</script><script src="http://bme.hust.edu.vn/wp-content/themes/flatsome/assets/libs/ie-flexibility.js"></script><![endif]-->    <script type="text/javascript">
+    WebFontConfig = {
+      google: { families: [ "-apple-system,+BlinkMacSystemFont,+&quot;Segoe+UI&quot;,+Roboto,+Oxygen-Sans,+Ubuntu,+Cantarell,+&quot;Helvetica+Neue&quot;,+sans-serif:regular,700italic","-apple-system,+BlinkMacSystemFont,+&quot;Segoe+UI&quot;,+Roboto,+Oxygen-Sans,+Ubuntu,+Cantarell,+&quot;Helvetica+Neue&quot;,+sans-serif:regular,regular","-apple-system,+BlinkMacSystemFont,+&quot;Segoe+UI&quot;,+Roboto,+Oxygen-Sans,+Ubuntu,+Cantarell,+&quot;Helvetica+Neue&quot;,+sans-serif:regular,700","-apple-system,+BlinkMacSystemFont,+&quot;Segoe+UI&quot;,+Roboto,+Oxygen-Sans,+Ubuntu,+Cantarell,+&quot;Helvetica+Neue&quot;,+sans-serif:regular,regular", ] }
+    };
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })(); </script>
+  	<noscript><style>.woocommerce-product-gallery{ opacity: 1 !important; }</style></noscript>
+	<link rel="icon" href="http://bme.hust.edu.vn/wp-content/uploads/2021/08/cropped-logobme-4-scaled-1-32x32.jpg" sizes="32x32" />
+<link rel="icon" href="http://bme.hust.edu.vn/wp-content/uploads/2021/08/cropped-logobme-4-scaled-1-192x192.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="http://bme.hust.edu.vn/wp-content/uploads/2021/08/cropped-logobme-4-scaled-1-180x180.jpg" />
+<meta name="msapplication-TileImage" content="http://bme.hust.edu.vn/wp-content/uploads/2021/08/cropped-logobme-4-scaled-1-270x270.jpg" />
+<style id="custom-css" type="text/css">:root {--primary-color: #446084;}/* Site Width */#wrapper,#main,#main.dark{background-color: #eeecec}.header-main{height: 92px}#logo img{max-height: 92px}#logo{width:255px;}#logo img{padding:8px 0;}#logo a{max-width:200px;}.header-bottom{min-height: 55px}.header-top{min-height: 40px}.transparent .header-main{height: 113px}.transparent #logo img{max-height: 113px}.has-transparent + .page-title:first-of-type,.has-transparent + #main > .page-title,.has-transparent + #main > div > .page-title,.has-transparent + #main .page-header-wrapper:first-of-type .page-title{padding-top: 143px;}.header.show-on-scroll,.stuck .header-main{height:70px!important}.stuck #logo img{max-height: 70px!important}.search-form{ width: 64%;}.header-bg-color, .header-wrapper {background-color: #202c45}.header-bottom {background-color: #f1f1f1}.header-main .nav > li > a{line-height: 18px }.header-wrapper:not(.stuck) .header-main .header-nav{margin-top: 1px }@media (max-width: 549px) {.header-main{height: 70px}#logo img{max-height: 70px}}.header-top{background-color:#9c1010!important;}.alert.is-underline:hover,.alert.is-outline:hover,.alert{background-color: #850404}.alert.is-link, .alert.is-outline, .color-alert{color: #850404;}body{font-size: 100%;}body{font-family:"-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif", sans-serif}body{font-weight: 0}body{color: #000000}.nav > li > a {font-family:"-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif", sans-serif;}.nav > li > a {font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font, .off-canvas-center .nav-sidebar.nav-vertical > li > a{font-family: "-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif", sans-serif;}h1,h2,h3,h4,h5,h6,.heading-font,.banner h1,.banner h2{font-weight: 700;}h1,h2,h3,h4,h5,h6,.heading-font{color: #1e73be;}.alt-font{font-family: "-apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Roboto, Oxygen-Sans, Ubuntu, Cantarell, &quot;Helvetica Neue&quot;, sans-serif", sans-serif;}.alt-font{font-weight: 0!important;}.header:not(.transparent) .header-nav.nav > li > a {color: #ffffff;}@media screen and (min-width: 550px){.products .box-vertical .box-image{min-width: 247px!important;width: 247px!important;}}.footer-1{background-color: #202c45}.footer-2{background-color: #202c45}.absolute-footer, html{background-color: #ffffff}.label-new.menu-item > a:after{content:"New";}.label-hot.menu-item > a:after{content:"Hot";}.label-sale.menu-item > a:after{content:"Sale";}.label-popular.menu-item > a:after{content:"Popular";}</style></head>
+
+<body class="post-template-default single single-post postid-6000 single-format-standard theme-flatsome woocommerce-no-js unselectable full-width bg-fill lightbox nav-dropdown-has-arrow">
+
+<a class="skip-link screen-reader-text" href="#main">Skip to content</a>
+
+<div id="wrapper">
+
+
+<header id="header" class="header header-full-width has-sticky sticky-jump">
+   <div class="header-wrapper">
+	<div id="top-bar" class="header-top hide-for-sticky nav-dark">
+    <div class="flex-row container">
+      <div class="flex-col hide-for-medium flex-left">
+          <ul class="nav nav-left medium-nav-center nav-small  nav-divided">
+              <li class="html custom html_topbar_left"><strong class="uppercase"> đại học bách khoa Hà Nội</strong></li>          </ul>
+      </div><!-- flex-col left -->
+
+      <div class="flex-col hide-for-medium flex-center">
+          <ul class="nav nav-center nav-small  nav-divided">
+                        </ul>
+      </div><!-- center -->
+
+      <div class="flex-col hide-for-medium flex-right">
+         <ul class="nav top-bar-nav nav-right nav-small  nav-divided">
+              <li class="header-search header-search-lightbox has-icon">
+			<a href="#search-lightbox" data-open="#search-lightbox" data-focus="input.search-field"
+		class="is-small">
+		<i class="icon-search" style="font-size:16px;"></i></a>
+			
+	<div id="search-lightbox" class="mfp-hide dark text-center">
+		<div class="searchform-wrapper ux-search-box relative form- is-large"><form role="search" method="get" class="searchform" action="http://bme.hust.edu.vn/">
+		<div class="flex-row relative">
+									<div class="flex-col flex-grow">
+			  <input type="search" class="search-field mb-0" name="s" value="" placeholder="Search&hellip;" />
+		    <input type="hidden" name="post_type" value="product" />
+        			</div><!-- .flex-col -->
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0">
+					<i class="icon-search" ></i>				</button>
+			</div><!-- .flex-col -->
+		</div><!-- .flex-row -->
+	 <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li>
+<li class="html header-social-icons ml-0">
+	<div class="social-icons follow-icons " ><a href="https://www.facebook.com/tuyensinhBME" target="_blank" data-label="Facebook"  rel="noopener noreferrer nofollow" class="icon primary button circle facebook tooltip" title="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="mailto:bme.set@hust.edu.vn" data-label="E-mail"  rel="nofollow" class="icon primary button circle  email tooltip" title="Send us an email"><i class="icon-envelop" ></i></a></div></li>          </ul>
+      </div><!-- .flex-col right -->
+
+            <div class="flex-col show-for-medium flex-grow">
+          <ul class="nav nav-center nav-small mobile-nav  nav-divided">
+              <li class="html custom html_topbar_left"><strong class="uppercase"> đại học bách khoa Hà Nội</strong></li>          </ul>
+      </div>
+      
+    </div><!-- .flex-row -->
+</div><!-- #header-top -->
+<div id="masthead" class="header-main nav-dark">
+      <div class="header-inner flex-row container logo-left medium-logo-center" role="navigation">
+
+          <!-- Logo -->
+          <div id="logo" class="flex-col logo">
+            <!-- Header logo -->
+<a href="http://bme.hust.edu.vn/" title="BME - Không ngừng đổi mới sáng tạo" rel="home">
+    <img width="255" height="92" src="http://bme.hust.edu.vn/wp-content/uploads/2021/08/227147078_603221027750275_3730916598529050324_n-scaled.jpg" class="header_logo header-logo" alt="BME"/><img  width="255" height="92" src="http://bme.hust.edu.vn/wp-content/uploads/2021/08/227147078_603221027750275_3730916598529050324_n-scaled.jpg" class="header-logo-dark" alt="BME"/></a>
+          </div>
+
+          <!-- Mobile Left Elements -->
+          <div class="flex-col show-for-medium flex-left">
+            <ul class="mobile-nav nav nav-left ">
+              <li class="nav-icon has-icon">
+  		<a href="#" data-open="#main-menu" data-pos="left" data-bg="main-menu-overlay" data-color="" class="is-small" aria-controls="main-menu" aria-expanded="false">
+		
+		  <i class="icon-menu" ></i>
+		  		</a>
+	</li>            </ul>
+          </div>
+
+          <!-- Left Elements -->
+          <div class="flex-col hide-for-medium flex-left
+            flex-grow">
+            <ul class="header-nav header-nav-main nav nav-left  nav-size-large nav-uppercase" >
+              <li id="menu-item-349" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-349 has-dropdown"><a href="http://bme.hust.edu.vn/gioi-thieu/" class="nav-top-link">Giới thiệu<i class="icon-angle-down" ></i></a>
+<ul class='nav-dropdown nav-dropdown-bold'>
+	<li id="menu-item-574" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-574"><a href="http://bme.hust.edu.vn/nganh-ktys/">Ngành KTYS</a></li>
+	<li id="menu-item-433" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-433"><a href="http://bme.hust.edu.vn/bo-mon-cndt-va-ktys/">Bộ môn CNĐT và KTYS</a></li>
+	<li id="menu-item-436" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-436"><a href="http://bme.hust.edu.vn/phong-thi-nghiem-bo-mon/">Phòng thí nghiệm bộ môn</a></li>
+	<li id="menu-item-435" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-435"><a href="http://bme.hust.edu.vn/doi-ngu-can-bo/">Đội ngũ cán bộ</a></li>
+</ul>
+</li>
+<li id="menu-item-355" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-355 has-dropdown"><a href="http://bme.hust.edu.vn/tin-tuc/" class="nav-top-link">Tin tức &#038; thông báo<i class="icon-angle-down" ></i></a>
+<ul class='nav-dropdown nav-dropdown-bold'>
+	<li id="menu-item-394" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-394"><a href="http://bme.hust.edu.vn/thong-bao/">Thông báo</a></li>
+	<li id="menu-item-445" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-445"><a href="http://bme.hust.edu.vn/tin-tuc-chung/">Tin tức chung</a></li>
+	<li id="menu-item-446" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-446"><a href="http://bme.hust.edu.vn/tin-tuc-bo-mon/">Tin tức bộ môn</a></li>
+	<li id="menu-item-1232" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-1232"><a href="http://bme.hust.edu.vn/tin-tuc-sinh-vien/">Tin tức sinh viên</a></li>
+</ul>
+</li>
+<li id="menu-item-352" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-352 has-dropdown"><a href="http://bme.hust.edu.vn/dao-tao/" class="nav-top-link">Đào tạo<i class="icon-angle-down" ></i></a>
+<ul class='nav-dropdown nav-dropdown-bold'>
+	<li id="menu-item-1173" class="menu-item menu-item-type-post_type menu-item-object-post  menu-item-1173"><a href="http://bme.hust.edu.vn/2020/12/03/dao-tao-chinh-quy/18/35/48/">Đào tạo chính quy</a></li>
+	<li id="menu-item-1176" class="menu-item menu-item-type-post_type menu-item-object-post  menu-item-1176"><a href="http://bme.hust.edu.vn/2021/01/14/chuong-trinh-tien-tien-ky-thuat-y-sinh/03/32/32/">Chương trình tiên tiến</a></li>
+	<li id="menu-item-1175" class="menu-item menu-item-type-post_type menu-item-object-post  menu-item-1175"><a href="http://bme.hust.edu.vn/2020/12/09/dao-tao-cao-hoc/06/55/41/">Cao học</a></li>
+	<li id="menu-item-828" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-828"><a href="http://bme.hust.edu.vn/dao-tao/dao-tao-tien-si/">Tiến sĩ</a></li>
+	<li id="menu-item-1179" class="menu-item menu-item-type-post_type menu-item-object-post  menu-item-1179"><a href="http://bme.hust.edu.vn/2021/03/04/thong-bao-tuyen-sinh-dai-hoc-van-bang-hai-chinh-qui-2021/09/37/07/">Vừa học vừa làm</a></li>
+</ul>
+</li>
+<li id="menu-item-5706" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-5706 has-dropdown"><a href="http://bme.hust.edu.vn/tai-lieu-y-sinh/" class="nav-top-link">TÀI LIỆU Y SINH<i class="icon-angle-down" ></i></a>
+<ul class='nav-dropdown nav-dropdown-bold'>
+	<li id="menu-item-5707" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-5707"><a href="http://bme.hust.edu.vn/ly-luan-chinh-tri-phap-luat-dai-cuong-2/">Lý luận chính trị + Pháp luật đại cương</a></li>
+	<li id="menu-item-5708" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-5708"><a href="http://bme.hust.edu.vn/tieng-anh-quoc-phong-the-chat-2/">Tiếng Anh-Quốc phòng-Thể chất</a></li>
+	<li id="menu-item-5709" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-5709"><a href="http://bme.hust.edu.vn/khoi-kien-thuc-toan-va-khoa-hoc-co-ban-2/">Khối kiến thức Toán và Khoa học cơ bản</a></li>
+	<li id="menu-item-5710" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-5710"><a href="http://bme.hust.edu.vn/khoi-kien-thuc-bo-tro-2/">Khối kiến thức bổ trợ</a></li>
+	<li id="menu-item-5711" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-5711"><a href="http://bme.hust.edu.vn/khoi-kien-thuc-co-so-va-cot-loi-nganh/">Khối kiến thức cơ sở và cốt lõi ngành</a></li>
+	<li id="menu-item-5712" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-5712"><a href="http://bme.hust.edu.vn/khoi-kien-thuc-chuyen-nganh-2/">Khối kiến thức chuyên ngành</a></li>
+</ul>
+</li>
+<li id="menu-item-353" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-353 has-dropdown"><a href="http://bme.hust.edu.vn/nghien-cuu/" class="nav-top-link">Nghiên cứu khoa học<i class="icon-angle-down" ></i></a>
+<ul class='nav-dropdown nav-dropdown-bold'>
+	<li id="menu-item-1233" class="menu-item menu-item-type-post_type menu-item-object-post  menu-item-1233"><a href="http://bme.hust.edu.vn/2020/12/03/cac-cong-trinh-da-cong-bo-den-nam-2014/18/38/36/">Các công trình đã công bố</a></li>
+	<li id="menu-item-472" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-472"><a href="http://bme.hust.edu.vn/cac-de-tai/">Các đề tài phát triển</a></li>
+	<li id="menu-item-473" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-473"><a href="http://bme.hust.edu.vn/san-pham-nghien-cuu/">Sản phẩm nghiên cứu</a></li>
+</ul>
+</li>
+<li id="menu-item-351" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children  menu-item-351 has-dropdown"><a href="http://bme.hust.edu.vn/tuyen-sinh/" class="nav-top-link">Tuyển sinh<i class="icon-angle-down" ></i></a>
+<ul class='nav-dropdown nav-dropdown-bold'>
+	<li id="menu-item-487" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-487"><a href="http://bme.hust.edu.vn/thong-tin-chung/">Thông tin chung</a></li>
+	<li id="menu-item-488" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-488"><a href="http://bme.hust.edu.vn/dai-hoc/">Đại học</a></li>
+	<li id="menu-item-489" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-489"><a href="http://bme.hust.edu.vn/tuyen-sinh-cao-hoc/">Cao học</a></li>
+	<li id="menu-item-490" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-490"><a href="http://bme.hust.edu.vn/nghien-cuu-sinh/">Nghiên cứu sinh</a></li>
+</ul>
+</li>
+<li id="menu-item-680" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-680"><a href="http://bme.hust.edu.vn/hop-tac/" class="nav-top-link">Hợp tác</a></li>
+<li id="menu-item-356" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-356"><a href="http://bme.hust.edu.vn/tu-lieu/" class="nav-top-link">Tuyển dụng</a></li>
+<li id="menu-item-5399" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children  menu-item-5399 has-dropdown"><a href="http://bme.hust.edu.vn/category/tuyen-sinh-2026/" class="nav-top-link">Tuyển sinh 2026<i class="icon-angle-down" ></i></a>
+<ul class='nav-dropdown nav-dropdown-bold'>
+	<li id="menu-item-5402" class="menu-item menu-item-type-post_type menu-item-object-page  menu-item-5402"><a href="http://bme.hust.edu.vn/tuyen-sinh-2025/">Tư vấn tuyển sinh 2026</a></li>
+</ul>
+</li>
+            </ul>
+          </div>
+
+          <!-- Right Elements -->
+          <div class="flex-col hide-for-medium flex-right">
+            <ul class="header-nav header-nav-main nav nav-right  nav-size-large nav-uppercase">
+                          </ul>
+          </div>
+
+          <!-- Mobile Right Elements -->
+          <div class="flex-col show-for-medium flex-right">
+            <ul class="mobile-nav nav nav-right ">
+              <li class="cart-item has-icon">
+
+      <a href="http://bme.hust.edu.vn" class="header-cart-link off-canvas-toggle nav-top-link is-small" data-open="#cart-popup" data-class="off-canvas-cart" title="Cart" data-pos="right">
+  
+    <span class="cart-icon image-icon">
+    <strong>0</strong>
+  </span> 
+  </a>
+
+
+  <!-- Cart Sidebar Popup -->
+  <div id="cart-popup" class="mfp-hide widget_shopping_cart">
+  <div class="cart-popup-inner inner-padding">
+      <div class="cart-popup-title text-center">
+          <h4 class="uppercase">Cart</h4>
+          <div class="is-divider"></div>
+      </div>
+      <div class="widget_shopping_cart_content">
+          
+
+	<p class="woocommerce-mini-cart__empty-message">No products in the cart.</p>
+
+
+      </div>
+             <div class="cart-sidebar-content relative"></div>  </div>
+  </div>
+
+</li>
+            </ul>
+          </div>
+
+      </div><!-- .header-inner -->
+     
+            <!-- Header divider -->
+      <div class="container"><div class="top-divider full-width"></div></div>
+      </div><!-- .header-main -->
+<div class="header-bg-container fill"><div class="header-bg-image fill"></div><div class="header-bg-color fill"></div></div><!-- .header-bg-container -->   </div><!-- header-wrapper-->
+</header>
+
+
+<main id="main" class="">
+
+<div id="content" class="blog-wrapper blog-single page-wrapper">
+	
+
+<div class="row row-large row-divided ">
+	
+	<div class="large-9 col">
+		
+
+
+<article id="post-6000" class="post-6000 post type-post status-publish format-standard has-post-thumbnail hentry category-khoi-kien-thuc-toan-va-khoa-hoc-co-ban">
+	<div class="article-inner has-shadow box-shadow-1">
+		<header class="entry-header">
+	<div class="entry-header-text entry-header-text-top text-center">
+		<h6 class="entry-category is-xsmall">
+	<a href="http://bme.hust.edu.vn/category/tai-lieu-y-sinh/khoi-kien-thuc-toan-va-khoa-hoc-co-ban/" rel="category tag">Khối kiến thức Toán Và Khoa học cơ bản</a></h6>
+
+<h1 class="entry-title">Giải tích I &#8211; MI1111</h1>
+<div class="entry-divider is-divider small"></div>
+
+	<div class="entry-meta uppercase is-xsmall">
+		<span class="posted-on">Posted on <a href="http://bme.hust.edu.vn/2025/08/21/giai-tich-i-mi1111/16/16/10/" rel="bookmark"><time class="entry-date published updated" datetime="2025-08-21T16:16:10+07:00">21 August, 2025</time></a></span><span class="byline"> by <span class="meta-author vcard"><a class="url fn n" href="http://bme.hust.edu.vn/author/phuongnam/">phuongnam</a></span></span>	</div><!-- .entry-meta -->
+	</div><!-- .entry-header -->
+
+	</header><!-- post-header -->
+		<div class="entry-content single-page">
+
+	<p><span style="color: #ff6600;"><strong><span style="font-size: 150%;">1.Tài liệu</span></strong></span></p>
+<p style="text-align: center;"><a href="https://drive.google.com/drive/folders/1CClDAJ3dW7wY2Mu18DAjMgmZ9pDQjjDF?usp=drive_link">Đề cương</a></p>
+<p style="text-align: center;"><a href="https://drive.google.com/drive/folders/1TMtyQ8DXY7RtlVwbWIbflVoy6-MqdCeE?usp=drive_link">Giáo trình tham khảo</a></p>
+<p style="text-align: center;"><a href="https://drive.google.com/drive/folders/1asjczq1kh2mFwO_rrqRQKHCNqbyjEf8Z?usp=drive_link">MI1111-Slides-Giaitich1</a></p>
+<p><span style="color: #ff6600;"><span style="font-size: 21.6px;"><b>2.Đề thi</b></span></span></p>
+<p style="text-align: center;"><a href="https://drive.google.com/drive/folders/1OuG3wvVj0eUcdjGnnD_AKjPzwezTeeCo?usp=drive_link">Giữa kỳ</a></p>
+<p style="text-align: center;"><a href="https://drive.google.com/drive/folders/1OvMx1-nX42m_9RzwfKJasYNKkcZfsHzu?usp=drive_link">Cuối kỳ</a></p>
+<p><span style="color: #ff6600;"><strong><span style="font-size: 150%;">3.Tài liệu khác</span></strong></span></p>
+<p style="text-align: center;"><a href="https://drive.google.com/drive/folders/1XVCW3YCS350rphz0YI_Lbe4lBGs3Fqs3?usp=drive_link">Sổ tay GT-ĐS</a></p>
+<p style="text-align: center;"><a href="https://drive.google.com/file/d/14NDk4kbOjkNgn_MT5XYx6jTBPzpzpLYI/view?usp=drive_link">Bản tóm tắt công thức</a></p>
+<p style="text-align: center;"><a href="https://drive.google.com/drive/folders/1OzfKP1zas8EJJHuMl9b7nGFlLtXaa3rq?usp=drive_link">Một số tài liệu thêm</a></p>
+<p style="text-align: center;"><a href="https://docs.google.com/spreadsheets/d/1LLLjcU6Aq6ugID0sSTK8S1wrtIVBw1viaPlzK8acHKE/edit?usp=drive_link">Lộ trình chinh phục A+ Đại cương 2024.1 &#8211; CLB Hỗ trợ Học tập</a></p>
+
+	
+	<div class="blog-share text-center"><div class="is-divider medium"></div><div class="social-icons share-icons share-row relative icon-style-outline " ></div></div></div><!-- .entry-content2 -->
+
+	<footer class="entry-meta text-center">
+		This entry was posted in <a href="http://bme.hust.edu.vn/category/tai-lieu-y-sinh/khoi-kien-thuc-toan-va-khoa-hoc-co-ban/" rel="category tag">Khối kiến thức Toán Và Khoa học cơ bản</a>. Bookmark the <a href="http://bme.hust.edu.vn/2025/08/21/giai-tich-i-mi1111/16/16/10/" title="Permalink to Giải tích I &#8211; MI1111" rel="bookmark">permalink</a>.	</footer><!-- .entry-meta -->
+
+
+        <nav role="navigation" id="nav-below" class="navigation-post">
+	<div class="flex-row next-prev-nav bt bb">
+		<div class="flex-col flex-grow nav-prev text-left">
+			    <div class="nav-previous"><a href="http://bme.hust.edu.vn/2025/08/21/quan-ly-chat-luong-trong-ktys-bf4608/16/04/42/" rel="prev"><span class="hide-for-small"><i class="icon-angle-left" ></i></span> Quản lý chất lượng trong KTYS-BF4608</a></div>
+		</div>
+		<div class="flex-col flex-grow nav-next text-right">
+			    <div class="nav-next"><a href="http://bme.hust.edu.vn/2025/08/21/giai-tich-ii-mi1121/16/17/36/" rel="next">Giải tích II &#8211; MI1121 <span class="hide-for-small"><i class="icon-angle-right" ></i></span></a></div>		</div>
+	</div>
+
+	    </nav><!-- #nav-below -->
+
+    	</div><!-- .article-inner -->
+</article><!-- #-6000 -->
+
+
+
+
+<div id="comments" class="comments-area">
+
+	
+	
+	
+	
+</div><!-- #comments -->
+	</div> <!-- .large-9 -->
+
+	<div class="post-sidebar large-3 col">
+		<div id="secondary" class="widget-area " role="complementary">
+		
+		<aside id="recent-posts-10" class="widget widget_recent_entries">
+		<span class="widget-title "><span>Bài viết mới</span></span><div class="is-divider small"></div>
+		<ul>
+											<li>
+					<a href="http://bme.hust.edu.vn/2026/10/20/%f0%9f%92%95-chuc-mung-ngay-phu-nu-viet-nam-20-10/19/18/15/">💕 CHÚC MỪNG NGÀY PHỤ NỮ VIỆT NAM 20/10</a>
+									</li>
+											<li>
+					<a href="http://bme.hust.edu.vn/2026/02/24/thong-bao-lich-bao-ve-bme-design-2-4-ky-2025-1/08/57/23/">[THÔNG BÁO: LỊCH BẢO VỆ BME DESIGN 2 &#038; 4 &#8211; KỲ 2025.1]</a>
+									</li>
+											<li>
+					<a href="http://bme.hust.edu.vn/2026/02/10/thong-tin-seminar-hoc-bong-thac-sy-ncs/19/46/08/">[THÔNG TIN SEMINAR HỌC BỔNG THẠC SỸ, NCS]</a>
+									</li>
+											<li>
+					<a href="http://bme.hust.edu.vn/2026/01/28/thoi-gian-bao-ve-bme-design-2-va-4-ky-2025-1/17/06/30/">[Thời gian bảo vệ BME Design 2 và 4 kỳ 2025.1]</a>
+									</li>
+											<li>
+					<a href="http://bme.hust.edu.vn/2026/01/10/dang-ky-nhom-va-gvhd-bme1-cho-k69/13/46/06/">[Đăng ký Nhóm và GVHD BME1 cho K69]</a>
+									</li>
+											<li>
+					<a href="http://bme.hust.edu.vn/2025/11/12/jd-tuyen-dung-ky-su-thiet-bi-y-te-phuong-dong/21/45/54/">[JD TUYỂN DỤNG KỸ SƯ THIẾT BỊ Y TẾ PHƯƠNG ĐÔNG]</a>
+									</li>
+											<li>
+					<a href="http://bme.hust.edu.vn/2025/10/28/thong-tin-tuyen-dung-cua-cong-ty-thiet-bi-y-te-sg-sagomed/12/03/09/">Thông tin tuyển dụng của công ty Thiết bị y tế SG Sagomed</a>
+									</li>
+											<li>
+					<a href="http://bme.hust.edu.vn/2025/10/04/hoi-thao-embark-on-your-phd-journey-at-college-of-engineering-ntu-singapore/11/25/20/">[Hội thảo: Embark On Your PhD Journey At COLLEGE OF ENGINEERING, NTU SINGAPORE]</a>
+									</li>
+					</ul>
+
+		</aside></div><!-- #secondary -->
+	</div><!-- .post-sidebar -->
+
+</div><!-- .row -->
+
+</div><!-- #content .page-wrapper -->
+
+
+</main><!-- #main -->
+
+<footer id="footer" class="footer-wrapper">
+
+	
+<!-- FOOTER 1 -->
+<div class="footer-widgets footer footer-1">
+		<div class="row dark large-columns-4 mb-0">
+	   		<div id="text-15" class="col pb-0 widget widget_text"><span class="widget-title">Liên hệ</span><div class="is-divider small"></div>			<div class="textwidget"><p>Ngành Kỹ thuật Y sinh, Khoa Điện tử, Trường Điện-Điện Tử, Đại học Bách Khoa Hà Nội</p>
+</div>
+		</div><div id="text-16" class="col pb-0 widget widget_text"><span class="widget-title"> </span><div class="is-divider small"></div>			<div class="textwidget"><ul>
+<li>Văn phòng trường: Phòng 605 &#8211; C7, Đại học Bách Khoa Hà Nội</li>
+</ul>
+</div>
+		</div><div id="text-17" class="col pb-0 widget widget_text"><span class="widget-title"> </span><div class="is-divider small"></div>			<div class="textwidget"><ul>
+<li>Địa chỉ: Số 1, Đại Cồ Việt, Bạch Mai &#8211; Hà Nội &#8211; Việt Nam</li>
+</ul>
+</div>
+		</div><div id="text-18" class="col pb-0 widget widget_text"><span class="widget-title">  </span><div class="is-divider small"></div>			<div class="textwidget"><ul>
+<li>Website: <a href="http://bme.hust.edu.vn/">http://bme.hust.edu.vn</a></li>
+<li>Email: bme.set@hust.edu.vn</li>
+<li><strong>Hotline: 0983444322</strong></li>
+</ul>
+</div>
+		</div>        
+		</div><!-- end row -->
+</div><!-- footer 1 -->
+
+
+<!-- FOOTER 2 -->
+
+
+
+<div class="absolute-footer dark medium-text-center small-text-center">
+  <div class="container clearfix">
+
+    
+    <div class="footer-primary pull-left">
+              <div class="menu-1e73be-2-container"><ul id="menu-1e73be-2" class="links footer-nav uppercase"><li id="menu-item-318" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-318"><a href="http://bme.hust.edu.vn/elements/pages/about/">About</a></li>
+<li id="menu-item-320" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-320"><a href="http://bme.hust.edu.vn/elements/pages/contact/">Contact</a></li>
+</ul></div>            <div class="copyright-footer">
+              </div>
+          </div><!-- .left -->
+  </div><!-- .container -->
+</div><!-- .absolute-footer -->
+<a href="#top" class="back-to-top button invert plain is-outline hide-for-medium icon circle fixed bottom z-1" id="top-link"><i class="icon-angle-up" ></i></a>
+
+</footer><!-- .footer-wrapper -->
+
+</div><!-- #wrapper -->
+
+<!-- Mobile Sidebar -->
+<div id="main-menu" class="mobile-sidebar no-scrollbar mfp-hide">
+    <div class="sidebar-menu no-scrollbar ">
+        <ul class="nav nav-sidebar  nav-vertical nav-uppercase">
+              <li class="header-search-form search-form html relative has-icon">
+	<div class="header-search-form-wrapper">
+		<div class="searchform-wrapper ux-search-box relative form- is-normal"><form role="search" method="get" class="searchform" action="http://bme.hust.edu.vn/">
+		<div class="flex-row relative">
+									<div class="flex-col flex-grow">
+			  <input type="search" class="search-field mb-0" name="s" value="" placeholder="Search&hellip;" />
+		    <input type="hidden" name="post_type" value="product" />
+        			</div><!-- .flex-col -->
+			<div class="flex-col">
+				<button type="submit" class="ux-search-submit submit-button secondary button icon mb-0">
+					<i class="icon-search" ></i>				</button>
+			</div><!-- .flex-col -->
+		</div><!-- .flex-row -->
+	 <div class="live-search-results text-left z-top"></div>
+</form>
+</div>	</div>
+</li><li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-349"><a href="http://bme.hust.edu.vn/gioi-thieu/" class="nav-top-link">Giới thiệu</a>
+<ul class=children>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-574"><a href="http://bme.hust.edu.vn/nganh-ktys/">Ngành KTYS</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-433"><a href="http://bme.hust.edu.vn/bo-mon-cndt-va-ktys/">Bộ môn CNĐT và KTYS</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-436"><a href="http://bme.hust.edu.vn/phong-thi-nghiem-bo-mon/">Phòng thí nghiệm bộ môn</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-435"><a href="http://bme.hust.edu.vn/doi-ngu-can-bo/">Đội ngũ cán bộ</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-355"><a href="http://bme.hust.edu.vn/tin-tuc/" class="nav-top-link">Tin tức &#038; thông báo</a>
+<ul class=children>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-394"><a href="http://bme.hust.edu.vn/thong-bao/">Thông báo</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-445"><a href="http://bme.hust.edu.vn/tin-tuc-chung/">Tin tức chung</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-446"><a href="http://bme.hust.edu.vn/tin-tuc-bo-mon/">Tin tức bộ môn</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1232"><a href="http://bme.hust.edu.vn/tin-tuc-sinh-vien/">Tin tức sinh viên</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-352"><a href="http://bme.hust.edu.vn/dao-tao/" class="nav-top-link">Đào tạo</a>
+<ul class=children>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1173"><a href="http://bme.hust.edu.vn/2020/12/03/dao-tao-chinh-quy/18/35/48/">Đào tạo chính quy</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1176"><a href="http://bme.hust.edu.vn/2021/01/14/chuong-trinh-tien-tien-ky-thuat-y-sinh/03/32/32/">Chương trình tiên tiến</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1175"><a href="http://bme.hust.edu.vn/2020/12/09/dao-tao-cao-hoc/06/55/41/">Cao học</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-828"><a href="http://bme.hust.edu.vn/dao-tao/dao-tao-tien-si/">Tiến sĩ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1179"><a href="http://bme.hust.edu.vn/2021/03/04/thong-bao-tuyen-sinh-dai-hoc-van-bang-hai-chinh-qui-2021/09/37/07/">Vừa học vừa làm</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-5706"><a href="http://bme.hust.edu.vn/tai-lieu-y-sinh/" class="nav-top-link">TÀI LIỆU Y SINH</a>
+<ul class=children>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5707"><a href="http://bme.hust.edu.vn/ly-luan-chinh-tri-phap-luat-dai-cuong-2/">Lý luận chính trị + Pháp luật đại cương</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5708"><a href="http://bme.hust.edu.vn/tieng-anh-quoc-phong-the-chat-2/">Tiếng Anh-Quốc phòng-Thể chất</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5709"><a href="http://bme.hust.edu.vn/khoi-kien-thuc-toan-va-khoa-hoc-co-ban-2/">Khối kiến thức Toán và Khoa học cơ bản</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5710"><a href="http://bme.hust.edu.vn/khoi-kien-thuc-bo-tro-2/">Khối kiến thức bổ trợ</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5711"><a href="http://bme.hust.edu.vn/khoi-kien-thuc-co-so-va-cot-loi-nganh/">Khối kiến thức cơ sở và cốt lõi ngành</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5712"><a href="http://bme.hust.edu.vn/khoi-kien-thuc-chuyen-nganh-2/">Khối kiến thức chuyên ngành</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-353"><a href="http://bme.hust.edu.vn/nghien-cuu/" class="nav-top-link">Nghiên cứu khoa học</a>
+<ul class=children>
+	<li class="menu-item menu-item-type-post_type menu-item-object-post menu-item-1233"><a href="http://bme.hust.edu.vn/2020/12/03/cac-cong-trinh-da-cong-bo-den-nam-2014/18/38/36/">Các công trình đã công bố</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-472"><a href="http://bme.hust.edu.vn/cac-de-tai/">Các đề tài phát triển</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-473"><a href="http://bme.hust.edu.vn/san-pham-nghien-cuu/">Sản phẩm nghiên cứu</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-351"><a href="http://bme.hust.edu.vn/tuyen-sinh/" class="nav-top-link">Tuyển sinh</a>
+<ul class=children>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-487"><a href="http://bme.hust.edu.vn/thong-tin-chung/">Thông tin chung</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-488"><a href="http://bme.hust.edu.vn/dai-hoc/">Đại học</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-489"><a href="http://bme.hust.edu.vn/tuyen-sinh-cao-hoc/">Cao học</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-490"><a href="http://bme.hust.edu.vn/nghien-cuu-sinh/">Nghiên cứu sinh</a></li>
+</ul>
+</li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-680"><a href="http://bme.hust.edu.vn/hop-tac/" class="nav-top-link">Hợp tác</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-356"><a href="http://bme.hust.edu.vn/tu-lieu/" class="nav-top-link">Tuyển dụng</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-5399"><a href="http://bme.hust.edu.vn/category/tuyen-sinh-2026/" class="nav-top-link">Tuyển sinh 2026</a>
+<ul class=children>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5402"><a href="http://bme.hust.edu.vn/tuyen-sinh-2025/">Tư vấn tuyển sinh 2026</a></li>
+</ul>
+</li>
+<li class="account-item has-icon menu-item">
+<a href="http://bme.hust.edu.vn/my-account/"
+    class="nav-top-link nav-top-not-logged-in">
+    <span class="header-account-title">
+    Login  </span>
+</a><!-- .account-login-link -->
+
+</li>
+<li class="header-newsletter-item has-icon">
+
+  <a href="#header-newsletter-signup" class="tooltip" title="Sign up for Newsletter">
+
+    <i class="icon-envelop"></i>
+    <span class="header-newsletter-title">
+      email    </span>
+  </a><!-- .newsletter-link -->
+
+</li><li class="html header-social-icons ml-0">
+	<div class="social-icons follow-icons " ><a href="https://www.facebook.com/tuyensinhBME" target="_blank" data-label="Facebook"  rel="noopener noreferrer nofollow" class="icon primary button circle facebook tooltip" title="Follow on Facebook"><i class="icon-facebook" ></i></a><a href="mailto:bme.set@hust.edu.vn" data-label="E-mail"  rel="nofollow" class="icon primary button circle  email tooltip" title="Send us an email"><i class="icon-envelop" ></i></a></div></li>        </ul>
+    </div><!-- inner -->
+</div><!-- #mobile-menu -->
+
+        <div id='fb-root'></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            js = d.createElement(s); js.id = id;
+            js.src = 'https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js#xfbml=1&version=v6.0&autoLogAppEvents=1';
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+          <div class='fb-customerchat'
+            attribution='wordpress'
+            attribution_version='1.8'
+            page_id=1631786627080114
+          >
+        </div>
+        	<div id="wpcp-error-message" class="msgmsg-box-wpcp warning-wpcp hideme"><span>error: </span>Content is protected !!</div>
+	<script>
+	var timeout_result;
+	function show_wpcp_message(smessage)
+	{
+		if (smessage !== "")
+			{
+			var smessage_text = '<span>Alert: </span>'+smessage;
+			document.getElementById("wpcp-error-message").innerHTML = smessage_text;
+			document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp showme";
+			clearTimeout(timeout_result);
+			timeout_result = setTimeout(hide_message, 3000);
+			}
+	}
+	function hide_message()
+	{
+		document.getElementById("wpcp-error-message").className = "msgmsg-box-wpcp warning-wpcp hideme";
+	}
+	</script>
+		<style>
+	@media print {
+	body * {display: none !important;}
+		body:after {
+		content: "You are not allowed to print preview this page, Thank you"; }
+	}
+	</style>
+		<style type="text/css">
+	#wpcp-error-message {
+	    direction: ltr;
+	    text-align: center;
+	    transition: opacity 900ms ease 0s;
+	    z-index: 99999999;
+	}
+	.hideme {
+    	opacity:0;
+    	visibility: hidden;
+	}
+	.showme {
+    	opacity:1;
+    	visibility: visible;
+	}
+	.msgmsg-box-wpcp {
+		border-radius: 10px;
+		color: #555;
+		font-family: Tahoma;
+		font-size: 11px;
+		margin: 10px;
+		padding: 10px 36px;
+		position: fixed;
+		width: 255px;
+		top: 50%;
+  		left: 50%;
+  		margin-top: -10px;
+  		margin-left: -130px;
+  		-webkit-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		-moz-box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+		box-shadow: 0px 0px 34px 2px rgba(242,191,191,1);
+	}
+	.msgmsg-box-wpcp span {
+		font-weight:bold;
+		text-transform:uppercase;
+	}
+	.error-wpcp {		background:#ffecec url('http://bme.hust.edu.vn/wp-content/plugins/wp-content-copy-protector/images/error.png') no-repeat 10px 50%;
+		border:1px solid #f5aca6;
+	}
+	.success {
+		background:#e9ffd9 url('http://bme.hust.edu.vn/wp-content/plugins/wp-content-copy-protector/images/success.png') no-repeat 10px 50%;
+		border:1px solid #a6ca8a;
+	}
+	.warning-wpcp {
+		background:#ffecec url('http://bme.hust.edu.vn/wp-content/plugins/wp-content-copy-protector/images/warning.png') no-repeat 10px 50%;
+		border:1px solid #f5aca6;
+	}
+	.notice {
+		background:#e3f7fc url('http://bme.hust.edu.vn/wp-content/plugins/wp-content-copy-protector/images/notice.png') no-repeat 10px 50%;
+		border:1px solid #8ed9f6;
+	}
+    </style>
+    <div id="login-form-popup" class="lightbox-content mfp-hide">
+            
+
+<div class="woocommerce-notices-wrapper"></div>
+<div class="account-container lightbox-inner">
+
+	
+		<div class="account-login-inner">
+
+			<h3 class="uppercase">Login</h3>
+
+			<form class="woocommerce-form woocommerce-form-login login" method="post">
+
+				
+				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+					<label for="username">Username or email address&nbsp;<span class="required">*</span></label>
+					<input type="text" class="woocommerce-Input woocommerce-Input--text input-text" name="username" id="username" autocomplete="username" value="" />				</p>
+				<p class="woocommerce-form-row woocommerce-form-row--wide form-row form-row-wide">
+					<label for="password">Password&nbsp;<span class="required">*</span></label>
+					<input class="woocommerce-Input woocommerce-Input--text input-text" type="password" name="password" id="password" autocomplete="current-password" />
+				</p>
+
+				
+				<p class="form-row">
+					<input type="hidden" id="woocommerce-login-nonce" name="woocommerce-login-nonce" value="3354bb3d28" /><input type="hidden" name="_wp_http_referer" value="/2025/08/21/giai-tich-i-mi1111/16/16/10/" />					<button type="submit" class="woocommerce-Button button" name="login" value="Log in">Log in</button>
+					<label class="woocommerce-form__label woocommerce-form__label-for-checkbox inline">
+						<input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span>Remember me</span>
+					</label>
+				</p>
+				<p class="woocommerce-LostPassword lost_password">
+					<a href="http://bme.hust.edu.vn/my-account/lost-password/">Lost your password?</a>
+				</p>
+
+				
+			</form>
+		</div><!-- .login-inner -->
+
+
+</div><!-- .account-login-container -->
+
+          </div>
+  	<script type="text/javascript">
+		(function () {
+			var c = document.body.className;
+			c = c.replace(/woocommerce-no-js/, 'woocommerce-js');
+			document.body.className = c;
+		})()
+	</script>
+	<script type="text/javascript" src="http://bme.hust.edu.vn/wp-includes/js/dist/vendor/wp-polyfill.min.js?ver=3.15.0" id="wp-polyfill-js"></script>
+<script type="text/javascript" id="contact-form-7-js-extra">
+/* <![CDATA[ */
+var wpcf7 = {"api":{"root":"http:\/\/bme.hust.edu.vn\/wp-json\/","namespace":"contact-form-7\/v1"}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/plugins/contact-form-7/includes/js/index.js?ver=5.4.2" id="contact-form-7-js"></script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70" id="jquery-blockui-js"></script>
+<script type="text/javascript" id="wc-add-to-cart-js-extra">
+/* <![CDATA[ */
+var wc_add_to_cart_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","i18n_view_cart":"View cart","cart_url":"http:\/\/bme.hust.edu.vn","is_cart":"","cart_redirect_after_add":"no"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/plugins/woocommerce/assets/js/frontend/add-to-cart.min.js?ver=4.9.3" id="wc-add-to-cart-js"></script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4" id="js-cookie-js"></script>
+<script type="text/javascript" id="woocommerce-js-extra">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.9.3" id="woocommerce-js"></script>
+<script type="text/javascript" id="wc-cart-fragments-js-extra">
+/* <![CDATA[ */
+var wc_cart_fragments_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%","cart_hash_key":"wc_cart_hash_62d93ab4e5f216b09b314160069ca2f0","fragment_name":"wc_fragments_62d93ab4e5f216b09b314160069ca2f0","request_timeout":"5000"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=4.9.3" id="wc-cart-fragments-js"></script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/themes/flatsome/inc/extensions/flatsome-live-search/flatsome-live-search.js?ver=3.6.0" id="flatsome-live-search-js"></script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-includes/js/hoverIntent.min.js?ver=1.10.2" id="hoverIntent-js"></script>
+<script type="text/javascript" id="flatsome-js-js-extra">
+/* <![CDATA[ */
+var flatsomeVars = {"ajaxurl":"http:\/\/bme.hust.edu.vn\/wp-admin\/admin-ajax.php","rtl":"","sticky_height":"70","user":{"can_edit_pages":false}};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/themes/flatsome/assets/js/flatsome.js?ver=3.6.0" id="flatsome-js-js"></script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/themes/flatsome/assets/js/woocommerce.js?ver=3.6.0" id="flatsome-theme-woocommerce-js-js"></script>
+<script type="text/javascript" id="zxcvbn-async-js-extra">
+/* <![CDATA[ */
+var _zxcvbnSettings = {"src":"http:\/\/bme.hust.edu.vn\/wp-includes\/js\/zxcvbn.min.js"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-includes/js/zxcvbn-async.min.js?ver=1.0" id="zxcvbn-async-js"></script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script type="text/javascript" id="wp-i18n-js-after">
+/* <![CDATA[ */
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+/* ]]> */
+</script>
+<script type="text/javascript" id="password-strength-meter-js-extra">
+/* <![CDATA[ */
+var pwsL10n = {"unknown":"Password strength unknown","short":"Very weak","bad":"Weak","good":"Medium","strong":"Strong","mismatch":"Mismatch"};
+/* ]]> */
+</script>
+<script type="text/javascript" id="password-strength-meter-js-translations">
+/* <![CDATA[ */
+( function( domain, translations ) {
+	var localeData = translations.locale_data[ domain ] || translations.locale_data.messages;
+	localeData[""].domain = domain;
+	wp.i18n.setLocaleData( localeData, domain );
+} )( "default", {"translation-revision-date":"2025-04-06 12:53:37+0000","generator":"GlotPress\/4.1.0","domain":"messages","locale_data":{"messages":{"":{"domain":"messages","plural-forms":"nplurals=2; plural=n != 1;","lang":"en_GB"},"%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code.":["%1$s is deprecated since version %2$s! Use %3$s instead. Please consider writing more inclusive code."]}},"comment":{"reference":"wp-admin\/js\/password-strength-meter.js"}} );
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-admin/js/password-strength-meter.min.js?ver=6.7.11" id="password-strength-meter-js"></script>
+<script type="text/javascript" id="wc-password-strength-meter-js-extra">
+/* <![CDATA[ */
+var wc_password_strength_meter_params = {"min_password_strength":"3","stop_checkout":"","i18n_password_error":"Please enter a stronger password.","i18n_password_hint":"Hint: The password should be at least twelve characters long. To make it stronger, use upper and lower case letters, numbers, and symbols like ! \" ? $ % ^ & )."};
+/* ]]> */
+</script>
+<script type="text/javascript" src="http://bme.hust.edu.vn/wp-content/plugins/woocommerce/assets/js/frontend/password-strength-meter.min.js?ver=4.9.3" id="wc-password-strength-meter-js"></script>
+
+</body>
+</html>

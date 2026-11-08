@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Sponsors &#8211; Data Science Laboratory</title>
+	<atom:link href="http://ds.soict.hust.edu.vn/?feed=rss2&#038;cat=7" rel="self" type="application/rss+xml" />
+	<link>http://ds.soict.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Sep 2026 08:08:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.35</generator>
+	<item>
+		<title>VINIF: Vingroup Innovation Foundation</title>
+		<link>http://ds.soict.hust.edu.vn/?p=658</link>
+		<pubDate>Mon, 26 Aug 2019 19:56:58 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Sponsors]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=658</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>ONRG: Office of Naval Research Global</title>
+		<link>http://ds.soict.hust.edu.vn/?p=412</link>
+		<pubDate>Thu, 02 Mar 2017 23:24:01 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Sponsors]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=412</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>Samsung Vietnam Mobile R&#038;D Center</title>
+		<link>http://ds.soict.hust.edu.vn/?p=310</link>
+		<pubDate>Thu, 18 Aug 2016 01:40:48 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Sponsors]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=310</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>VC Corporation</title>
+		<link>http://ds.soict.hust.edu.vn/?p=244</link>
+		<pubDate>Tue, 16 Feb 2016 21:32:44 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Industrial partners]]></category>
+		<category><![CDATA[Sponsors]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=244</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>National Foundation for Science and Technology Development, Vietnam</title>
+		<link>http://ds.soict.hust.edu.vn/?p=161</link>
+		<pubDate>Mon, 20 Apr 2015 08:58:19 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Sponsors]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=161</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>Asian Office of Aerospace R&#038;D</title>
+		<link>http://ds.soict.hust.edu.vn/?p=107</link>
+		<pubDate>Mon, 13 Apr 2015 23:14:44 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Sponsors]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=107</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>Air Force Office of Scientific Research</title>
+		<link>http://ds.soict.hust.edu.vn/?p=104</link>
+		<pubDate>Mon, 13 Apr 2015 23:13:29 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Sponsors]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=104</guid>
+		<description><![CDATA[]]></description>
+		</item>
+	</channel>
+</rss>

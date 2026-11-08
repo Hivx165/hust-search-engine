@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Proceedings - ICPT.HUST 2023</title>
+        <link>https://icpt.hust.edu.vn/en/proceedings/icpt-hust-2023/</link>
+        <atom:link href="https://icpt.hust.edu.vn/en/proceedings/rss/icpt-hust-2023/" rel="self" />
+                <description>
+            <![CDATA[International conference on human resources for sustaninable development]]>
+        </description>
+        
+        <language>en</language>
+                <pubDate>Tue, 30 Jan 2024 03:01:00 GMT</pubDate>
+        <lastBuildDate>Tue, 30 Jan 2024 03:01:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[ICPT.HUST – International conference on human resources for sustainable development]]>
+        </copyright>
+        <docs>https://icpt.hust.edu.vn/en/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://icpt.hust.edu.vn/uploads/icpt/logo-dhbk-1-02_130_191.png</url>
+            <title>Proceedings - ICPT.HUST 2023</title>
+            <link>https://icpt.hust.edu.vn/en/proceedings/icpt-hust-2023/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>PROCEEDINGS OF ICPT.HUST 2023</title>
+            <link>https://icpt.hust.edu.vn/en/proceedings/icpt-hust-2023/proceedings-of-icpt-hust-2023-12.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[proceedings_12]]>
+            </guid>
+            
+                        <pubDate>Tue, 30 Jan 2024 03:01:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://icpt.hust.edu.vn/assets/icpt/proceedings/2024_03/bia-1.png" width="100" align="left" border="0">The International Conference on Human Resources for Sustainable Development (ISBNE: 978-604-316-371-1)Bach Khoa Publishing House]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

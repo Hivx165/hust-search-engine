@@ -1,0 +1,38 @@
+WARNING: A restricted method in java.lang.System has been called
+WARNING: java.lang.System::load has been called by org.sqlite.SQLiteJDBCLoader in an unnamed module (file:/C:/Users/mimmim-mi/Downloads/hust-search-engine/crawler-module/target/crawler-module-1.0-SNAPSHOT.jar)
+WARNING: Use --enable-native-access=ALL-UNNAMED to avoid a warning for callers in this module
+WARNING: Restricted methods will be blocked in a future release unless native access is enabled
+
+https://dtdh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://vpn.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://ttmt.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://navis.hust.edu.vn/ : ConnectException: null
+https://aist.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://api.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://be-staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://bklms.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://canvas.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certificates.clc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://certs.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cfl.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://cla.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://crdlab.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://dk-sis.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://doh.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://en.hust.edu.vn/home : ConnectException: null
+http://exam.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://exam2.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://hpcc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+https://paymentichst.hust.edu.vn/author : HttpConnectTimeoutException: HTTP connect timed out
+http://ichst-2023.hust.edu.vn/wp-content/uploads/2023/03/abstract_template-ICHST-2023.docx : ConnectException: null
+http://mail.poc.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://manager.b4e.fintech.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://mybook.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://nextcloud.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sie.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://sois2018.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out
+http://staging-ai-research.hust.edu.vn/ : HttpConnectTimeoutException: HTTP connect timed out

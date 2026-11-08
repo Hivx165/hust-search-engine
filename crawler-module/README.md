@@ -132,7 +132,19 @@ Crawler dùng hàng đợi bền vững, cân bằng các origin và lịch duy�
 
 Kiểm thử tự động dùng HTTP proxy cục bộ, không truy cập website thật: kiểm tra HTML/PDF, chặn URL ngoài HUST và robots, crawl lại phát hiện thay đổi, SQLite tồn tại sau khi mở lại, chuẩn hóa URL và hash.
 
-Mốc 1000 tài liệu phải kiểm tra bằng số bản ghi thực trong SQLite sau khi thu thập. HTML có thể gồm trang danh mục/trang chủ, nên số URL không tự chứng minh đủ 1000 **bài viết**. Cần thành viên 2 lọc nội dung và đếm lại, tăng giới hạn nếu thiếu. Dataset không đưa vào Git; không tạo dữ liệu giả để đạt chỉ tiêu.
+Mốc 1000 tài liệu phải kiểm tra bằng số bản ghi thực trong SQLite sau khi thu thập. HTML có thể gồm trang danh mục/trang chủ, nên số URL không tự chứng minh đủ 1000 **bài viết**. Cần thành viên 2 lọc nội dung và đếm lại, tăng giới hạn nếu thiếu. Snapshot dữ liệu thật được bàn giao trên Git; không tạo dữ liệu giả để đạt chỉ tiêu.
+
+## Lấy đầy đủ dữ liệu đã thu thập từ GitHub
+
+Nhánh `feature/crawler` chứa snapshot `storage/`, gồm HTML/tệp gốc, feed, SQLite, CSV, bằng chứng khám phá và log. Dữ liệu được lưu trực tiếp trong Git. Riêng cache `dataset.db` vượt giới hạn một file của GitHub được nén không mất dữ liệu thành `storage/dataset.db.gz`, kèm SHA-256 và script khôi phục:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/restore-crawler-cache.ps1
+```
+
+Các file PID, lock và journal tạm của SQLite thuộc tiến trình đang chạy được bỏ qua. Quy tắc `storage/** -text` giữ nguyên byte dữ liệu để mã SHA-256 không đổi sau khi clone trên hệ điều hành khác. Các lượt crawl mới tiếp tục thay đổi dữ liệu cục bộ; GitHub giữ bản đã commit tại thời điểm chốt snapshot.
+
+Trường `local_path` trong SQLite/CSV ghi đường dẫn trên máy tạo snapshot. Crawler có cơ chế tìm file thô tương ứng dưới storage hiện tại khi chuyển máy; chạy `--export-only true` để tạo lại CSV với đường dẫn của máy mới. Parser cũng có thể ghép tên file với thư mục `storage/raw_html`, `storage/raw_files` hoặc `storage/raw_feeds` của checkout hiện tại.
 
 Root POM hiện chỉ kích hoạt `crawler-module` vì các module thành viên khác còn là khung rỗng; thêm chúng khi có POM và triển khai tương ứng.
 

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Recent projects &#8211; Data Science Laboratory</title>
+	<atom:link href="http://ds.soict.hust.edu.vn/?feed=rss2&#038;cat=12" rel="self" type="application/rss+xml" />
+	<link>http://ds.soict.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Sep 2026 08:08:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.35</generator>
+	<item>
+		<title>2 new projects funded by VINIF</title>
+		<link>http://ds.soict.hust.edu.vn/?p=639</link>
+		<pubDate>Tue, 16 Jul 2019 17:26:17 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent projects]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=639</guid>
+		<description><![CDATA[See at http://ds.soict.hust.edu.vn/?page_id=18]]></description>
+		</item>
+		<item>
+		<title>A new project: ONRG (2018-2020)</title>
+		<link>http://ds.soict.hust.edu.vn/?p=410</link>
+		<pubDate>Thu, 02 Mar 2017 23:21:19 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent projects]]></category>
+
+		<guid isPermaLink="false">http://ds.soict.hust.edu.vn/?p=410</guid>
+		<description><![CDATA[A new research project on Representation Learning will start from this year, and will be sponsored by both US Office of Naval Research Global &#38; US Air <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=410" title="A new project: ONRG (2018-2020)">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>A new project: Samsung (2016)</title>
+		<link>http://ds.soict.hust.edu.vn/?p=314</link>
+		<pubDate>Thu, 18 Aug 2016 21:31:22 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent projects]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=314</guid>
+		<description><![CDATA[]]></description>
+		</item>
+		<item>
+		<title>A new project: AFOSR (2015-2017)</title>
+		<link>http://ds.soict.hust.edu.vn/?p=99</link>
+		<pubDate>Mon, 13 Apr 2015 23:00:16 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent projects]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=99</guid>
+		<description><![CDATA[AFOSR (2015-2017): + Director: Khoat Than + Funding agency: Air Force Office of Scientific Research, USA + Project title: Inferring the latent structures in big heterogeneous <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=99" title="A new project: AFOSR (2015-2017)">[...]</a>]]></description>
+		</item>
+		<item>
+		<title>A new project: NAFOSTED (2015-2017)</title>
+		<link>http://ds.soict.hust.edu.vn/?p=97</link>
+		<pubDate>Mon, 13 Apr 2015 22:58:48 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Recent projects]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=97</guid>
+		<description><![CDATA[NAFOSTED (2015-2017): + Director: Khoat Than + Funding agency: National Foundation for Science and Technology Development, Vietnam + Project title: Inference methods for analyzing the <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=97" title="A new project: NAFOSTED (2015-2017)">[...]</a>]]></description>
+		</item>
+	</channel>
+</rss>

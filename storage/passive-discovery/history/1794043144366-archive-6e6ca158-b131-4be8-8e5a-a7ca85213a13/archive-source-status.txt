@@ -1,0 +1,10 @@
+2026-11-07T09:19:20.757799900Z wayback-page-1 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false HTTP 200
+2026-11-07T09:19:46.084242500Z wayback hosts=1 complete=false next_check_at=2026-11-07T09:49:46.075Z
+2026-11-07T09:19:48.215506600Z commoncrawl-catalog https://index.commoncrawl.org/collinfo.json HTTP 200
+2026-11-07T09:19:56.749115500Z commoncrawl-metadata https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=hust.edu.vn%2F&matchType=domain&output=json&fl=url&collapse=urlkey&pageSize=1&showNumPages=true HTTP 200
+2026-11-07T09:20:07.034359300Z commoncrawl-page-0 https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=hust.edu.vn%2F&matchType=domain&output=json&fl=url&collapse=urlkey&pageSize=1&page=0 HTTP 200
+2026-11-07T09:20:17.491865Z commoncrawl-page-1 https://index.commoncrawl.org/CC-MAIN-2026-43-index?url=hust.edu.vn%2F&matchType=domain&output=json&fl=url&collapse=urlkey&pageSize=1&page=1 HTTP 504
+2026-11-07T09:20:17.511643400Z commoncrawl hosts=23 complete=false next_check_at=2026-11-07T09:50:17.500Z
+2026-11-07T09:20:17.511643400Z complete=false concrete_hosts=24
+ERROR wayback: HttpTimeoutException: request timed out
+ERROR commoncrawl: RequestFailure: HTTP 504

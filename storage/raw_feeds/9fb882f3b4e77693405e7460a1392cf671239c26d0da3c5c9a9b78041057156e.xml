@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Trường Hóa và Khoa học Sự sống RSS&#x3A; Lịch làm việc - Trường Hóa và Khoa học Sự sống</title>
+        <link>https://scls.hust.edu.vn/vi/workcalendar/?cat=Truong-Hoa-va-Khoa-hoc-Su-song</link>
+        <atom:link href="https://scls.hust.edu.vn/vi/workcalendar/rss/" rel="self" />
+                <description>
+            <![CDATA[Trường Hóa và Khoa học Sự sống]]>
+        </description>
+        
+        <language>vi</language>
+        
+        <copyright>
+            <![CDATA[Trường Hóa và Khoa học Sự sống]]>
+        </copyright>
+        <docs>https://scls.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://scls.hust.edu.vn/uploads/scls/logo-dhbk-1-02_130_191.png</url>
+            <title>Trường Hóa và Khoa học Sự sống RSS&#x3A; Lịch làm việc - Trường Hóa và Khoa học Sự sống</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/?cat=Truong-Hoa-va-Khoa-hoc-Su-song</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+        
+    </channel>
+</rss>

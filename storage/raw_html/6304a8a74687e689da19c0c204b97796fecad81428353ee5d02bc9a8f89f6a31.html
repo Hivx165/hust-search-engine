@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-9 col-xs-12">
+		<h3>LỊCH TIẾP NHẬN TRỞ LẠI HỌC TỪ HỌC KỲ 2 NĂM HỌC 2025-2026 (20252)</h3>
+        <h3 style="box-sizing: border-box; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-weight: 500; line-height: 1.1; color: rgb(51, 51, 51); margin-top: 20px; margin-bottom: 10px; font-size: 24px; text-align: center;">
+	<strong style="box-sizing: border-box;">Lịch tiếp nhận trở lại học từ kỳ 2 năm 2025-2026 (20252)</strong></h3>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<br style="box-sizing: border-box;" />
+	<span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-size: 10pt; font-family: Arial, sans-serif; color: black;"><span style="box-sizing: border-box; font-size: 16px;">Ban Đ&agrave;o tạo&nbsp; tiếp nhận sinh vi&ecirc;n v&agrave;o học tiếp từ kỳ 2 năm học 2025-2026 (20252) như sau:</span></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">Sinh vi&ecirc;n đ&agrave;o tạo theo t&iacute;n chỉ&nbsp;(học c&ugrave;ng 66,67,68,69,70):</span></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">1/&nbsp; Thời gian nhận hồ sơ:</span><span style="box-sizing: border-box; background-color: transparent; font-style: inherit; font-weight: inherit; font-family: Arial, sans-serif; color: black;">&nbsp;<br style="box-sizing: border-box;" />
+	<span style="box-sizing: border-box; font-style: inherit; font-weight: inherit; background-color: transparent;"><span style="box-sizing: border-box; font-style: inherit; background-color: transparent; font-weight: 700;">V&agrave;o học tiếp từ kỳ 2 năm học 2025-2026 (20252): từ 01/12/2025 đến 25/12/2025</span></span></span></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">-</span><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; color: black;">&nbsp;</span><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">SV đăng k&yacute; lớp học trong đợt đăng k&yacute; điều chỉnh,&nbsp;<span style="box-sizing: border-box; font-weight: 700;">online&nbsp;</span>tr&ecirc;n hệ thống đăng k&yacute; lớp.</span><span style="box-sizing: border-box; background-color: transparent; font-style: inherit; font-weight: inherit; font-family: Arial, sans-serif; color: black;">&nbsp; ( kh&ocirc;ng cần đăng k&yacute; học phần ).</span></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">2/&nbsp; Hồ sơ gồm :</span></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">&nbsp;</span><span style="box-sizing: border-box; background-color: transparent; color: black; font-family: Arial, sans-serif; font-style: inherit; font-weight: inherit;">+ Đơn xin tiếp nhận trở lại học trong mục&nbsp;<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/phong-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi" style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration-line: none;" target="_blank">Sổ tay sinh vi&ecirc;n (Mục 24) :</a></span><span style="box-sizing: border-box; background: transparent; font-family: Arial, sans-serif; font-style: inherit; font-weight: inherit; border: 0px; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; color: rgb(5, 5, 5);"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; color: rgb(153, 0, 0);"><a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/phong-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi" style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration-line: none;" target="_blank">http://ctt.hust.edu.vn</a>&nbsp;<span style="box-sizing: border-box; color: rgb(5, 5, 5);"><span style="box-sizing: border-box; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border-style: initial; border-color: initial; border-image: initial; font-style: inherit; font-weight: inherit; outline-color: initial; outline-style: initial;">(</span></span></span></span><span style="box-sizing: border-box; background: transparent; font-family: Arial, sans-serif; font-style: inherit; font-weight: inherit; border: 0px; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; color: rgb(5, 5, 5);"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; color: rgb(153, 0, 0);"><span style="box-sizing: border-box; text-decoration-line: underline;"><a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/phong-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi" style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration-line: none;" target="_blank"><span style="box-sizing: border-box; color: rgb(5, 5, 5);"><span style="box-sizing: border-box; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border-style: initial; border-color: initial; border-image: initial; font-style: inherit; font-weight: inherit; outline-color: initial; outline-style: initial;">tại đ&acirc;y</span></span></a></span></span></span><a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/phong-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi" style="box-sizing: border-box; background-color: transparent; color: rgb(51, 122, 183); text-decoration-line: none;" target="_blank"><span style="box-sizing: border-box; background: transparent; font-family: Arial, sans-serif; font-style: inherit; font-weight: inherit; border: 0px; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; color: rgb(5, 5, 5);"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; color: rgb(153, 0, 0);"><span style="box-sizing: border-box; color: rgb(5, 5, 5);"><span style="box-sizing: border-box; background-image: initial; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial; border-style: initial; border-color: initial; border-image: initial; font-style: inherit; font-weight: inherit; outline-color: initial; outline-style: initial;">)</span></span></span></span></a></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">&nbsp;+&nbsp;</span></span><span style="box-sizing: border-box; background-color: transparent; color: black; font-family: Arial, sans-serif; font-style: inherit; font-weight: inherit;">Nơi trả kết quả: b&agrave;n 6 Ban Đ&agrave;o tạo (C1-202A) gặp chuy&ecirc;n vi&ecirc;n Nguyễn Kim Huệ</span></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">&nbsp;<span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; text-decoration-line: underline;">Ghi ch&uacute;</span>&nbsp;:</span></span></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; font-weight: 700;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">Sinh vi&ecirc;n l&agrave;m thủ tục nhập học theo đ&uacute;ng lịch tr&ecirc;n để kịp thời đăng k&yacute; lớp học cho kỳ 2 năm học 2025-2026 (20252)</span></span></span></p>
+<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+	&nbsp;</p>
+<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; font-size: medium; border: none; color: rgb(0, 0, 51); font-family: Arial, Helvetica, sans-serif;">
+	<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; font-size: 17.5px; border: none;">
+		<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; border: none;">
+			<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; border: none;">
+				<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; border: none;">
+					<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; border: none;">
+						<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; border: none;">
+							<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; border: none;">
+								<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; border: none;">
+									<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+										<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">&nbsp;Ng&agrave;y&nbsp; 01&nbsp; th&aacute;ng &nbsp;12 năm 2025</span></span></p>
+								</blockquote>
+							</blockquote>
+						</blockquote>
+					</blockquote>
+				</blockquote>
+			</blockquote>
+		</blockquote>
+	</blockquote>
+</blockquote>
+<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; font-size: medium; border: none; color: rgb(0, 0, 51); font-family: Arial, Helvetica, sans-serif;">
+	<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; font-size: 17.5px; border: none;">
+		<blockquote style="box-sizing: border-box; padding: 0px; margin: 0px 0px 0px 40px; border: none;">
+			<p style="box-sizing: border-box; margin: 0.5em 0px 0.0001pt; color: rgb(85, 85, 85); font-family: Tahoma, Helvetica, Arial, sans-serif; font-size: 13px; line-height: 13.5pt;">
+				<span style="box-sizing: border-box; font-size: 16px;"><span style="box-sizing: border-box; background: transparent; border: 0px; font-style: inherit; font-weight: inherit; margin: 0px; padding: 0px; outline: 0px; vertical-align: baseline; font-family: Arial, sans-serif; color: black;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; BAN Đ&Agrave;O TẠO</span></span></p>
+		</blockquote>
+	</blockquote>
+</blockquote>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#kehoach").css("border-bottom", "3px solid red");
+	$("#kehoach .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

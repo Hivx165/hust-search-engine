@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+    <div class="col-md-9 col-xs-12">
+		<h3>TH&#212;NG B&#193;O MỞ ĐĂNG K&#221; TỐT NGHIỆP ĐỢT 2024.3</h3>
+        <div style="text-align: center;">
+	<span style="font-size:18px;"><strong>TH&Ocirc;NG B&Aacute;O&nbsp;</strong><strong>MỞ ĐĂNG K&Yacute; TỐT NGHIỆP ĐỢT 2024.3</strong></span></div>
+<span style="font-size:18px;">&nbsp;</span>
+<div style="text-align: justify;">
+	<span style="font-size:18px;">Ban Đ&agrave;o tạo th&ocirc;ng b&aacute;o mở đăng k&yacute; x&eacute;t tốt nghiệp đợt 2024.3 như sau:</span></div>
+<ol>
+	<li style="text-align: justify;">
+		<span style="font-size:18px;"><strong>Thủ tục đăng k&yacute; tốt nghiệp</strong></span></li>
+</ol>
+<ol style="list-style-type: lower-alpha; margin-left: 40px;">
+	<li style="text-align: justify;">
+		<span style="font-size:18px;">Sinh vi&ecirc;n c&oacute; mong muốn tốt nghiệp cần đăng k&yacute; x&eacute;t tốt nghiệp từ t&agrave;i khoản học tập của c&aacute; nh&acirc;n (t&agrave;i khoản Cổng th&ocirc;ng tin, viết tắt l&agrave; CTT).</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:18px;">Thời gian mở đăng k&yacute;: <strong>từ ng&agrave;y 20/9/2025 đến hết ng&agrave;y 28</strong><strong>/</strong><strong>9/2025</strong><strong>.</strong></span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:18px;">Sinh vi&ecirc;n <strong>lưu &yacute; chỉ đăng k&yacute; đủ số t&iacute;n chỉ hoặc tối đa kh&ocirc;ng qu&aacute; 3 t&iacute;n chỉ</strong> so với y&ecirc;u cầu của chương tr&igrave;nh đ&agrave;o tạo. Trong trường hợp sinh vi&ecirc;n đăng k&yacute; qu&aacute; quy định tr&ecirc;n th&igrave; Ban Đ&agrave;o tạo sẽ loại bỏ c&aacute;c học phần để đảm bảo số t&iacute;n chỉ, khi đ&oacute; điểm CPA tốt nghiệp sẽ thay đổi so với kết quả ban đầu.</span></li>
+</ol>
+<ol>
+	<li style="text-align: justify;" value="2">
+		<span style="font-size:18px;"><strong>Trường hợp đặc biệt</strong></span></li>
+</ol>
+<div style="margin-left: 40px; text-align: justify;">
+	<span style="font-size:18px;">Những sinh vi&ecirc;n đ&atilde; c&oacute; đủ điểm, tuy nhi&ecirc;n <strong>cần b&ugrave; t&iacute;n chỉ</strong> do học tương đương/thay thế học phần sẽ gửi đơn qua email cho chuy&ecirc;n vi&ecirc;n Nguyễn Thị Hương (<a href="mailto:huong.nguyenthi1@hust.edu.vn">huong.nguyenthi1@hust.edu.vn</a>) để xử l&yacute; dữ liệu v&agrave; đăng k&yacute; tốt nghiệp cho sinh vi&ecirc;n.<br />
+	Mẫu đơn c&oacute; tại mục số 14 ở đ&acirc;y: <a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi</a>&nbsp;<br />
+	<strong>Thời gian nhận email:</strong> trong thời gian mở đăng k&yacute; tốt nghiệp như tại Phần 1 (từ ng&agrave;y 20/9/2025 đến hết ng&agrave;y 28/9/2025).</span></div>
+<ol>
+	<li style="text-align: justify;" value="3">
+		<span style="font-size:18px;"><strong>Về điểm ngoại ngữ khi x&eacute;t tốt nghiệp</strong></span></li>
+</ol>
+<div style="margin-left: 40px; text-align: justify;">
+	<span style="font-size:18px;">Thời điểm qu&eacute;t điểm ngoại ngữ x&eacute;t tốt nghiệp theo Kế hoạch năm học đ&atilde; được ph&ecirc; duyệt l&agrave; <strong>ng&agrave;y 28/9/2025</strong><strong>:</strong></span></div>
+<div style="margin-left: 80px; text-align: justify;">
+	<span style="font-size:18px;">+ Sinh vi&ecirc;n đ&atilde; c&oacute; điểm ngoại ngữ tr&ecirc;n CTT đạt mức y&ecirc;u cầu v&agrave; c&ograve;n hạn tới ng&agrave;y 28/9/2025 sẽ đủ điều kiện ngoại ngữ để x&eacute;t tốt nghiệp.<br />
+	+ Sinh vi&ecirc;n c&oacute; điểm ngoại ngữ hết hạn trước ng&agrave;y 28/9/2025 hoặc cập nhật điểm ngoại ngữ l&ecirc;n CTT sau ng&agrave;y 28/9/2025 sẽ kh&ocirc;ng đủ điều kiện ngoại ngữ để x&eacute;t tốt nghiệp.</span></div>
+<ol>
+	<li style="text-align: justify;" value="4">
+		<span style="font-size:18px;"><strong>Giải quyết thắc mắc x&eacute;t tốt nghiệp</strong></span></li>
+</ol>
+<ol style="list-style-type: lower-alpha; margin-left: 40px;">
+	<li style="text-align: justify;">
+		<span style="font-size:18px;">Kết quả x&eacute;t tốt nghiệp sẽ được cập nhật v&agrave;o CTT của từng sinh vi&ecirc;n theo từng đợt, do vậy c&aacute;c em cần thường xuy&ecirc;n theo d&otilde;i để kịp thời gửi thắc mắc nếu cần.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:18px;">Thời gian tiếp nhận thắc mắc <strong>từ ng&agrave;y 29/9/2025 đến 06/10/2025</strong>. Việc xử l&yacute; v&agrave; trả kết quả thắc mắc cũng thực hiện theo đợt.</span></li>
+	<li style="text-align: justify;">
+		<span style="font-size:18px;">C&aacute;c thắc mắc nếu c&oacute; (b&ugrave; t&iacute;n chỉ, điểm CPA tốt nghiệp, điểm ngoại ngữ&hellip;) sẽ thực hiện theo hướng dẫn ở Mục 14 tại đ&acirc;y <a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi</a></span></li>
+</ol>
+<ol>
+	<li style="text-align: justify;" value="5">
+		<span style="font-size:18px;"><strong>C&aacute;c lưu &yacute; với sinh vi&ecirc;n</strong></span></li>
+</ol>
+<div style="margin-left: 40px; text-align: justify;">
+	<span style="font-size:18px;">Để đảm bảo qu&aacute; tr&igrave;nh x&eacute;t tốt nghiệp được nhanh ch&oacute;ng, sinh vi&ecirc;n cần lưu &yacute;:</span></div>
+<div style="margin-left: 80px; text-align: justify;">
+	<span style="font-size:18px;">a) <strong>Chỉ đăng k&yacute; x&eacute;t tốt nghiệp khi đ&atilde; c&oacute; đủ điểm trong bảng kết quả học tập c&aacute; nh&acirc;n tr&ecirc;n CTT</strong> (lưu &yacute; điểm xem tr&ecirc;n QLĐT chỉ l&agrave; nhập tạm thời, điểm trong t&agrave;i khoản CTT mới l&agrave; điểm ch&iacute;nh thức; nếu điểm chưa được l&ecirc;n CTT đ&uacute;ng hạn cần thực hiện theo hướng dẫn ở Mục 10 tại đ&acirc;y <a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi</a>).<br />
+	b) C&ocirc;ng nhận tương đương/thay thế cho c&aacute;c học phần nếu cần: thực hiện theo hướng dẫn trong Mục 7 tại đ&acirc;y: <a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">https://sv-ctt.hust.edu.vn/#/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi</a><br />
+	c) Kiểm tra xem đ&atilde; đạt đủ c&aacute;c học phần thuộc khối kiến thức Gi&aacute;o dục quốc ph&ograve;ng &ndash; an ninh v&agrave; Gi&aacute;o dục thể chất. Nếu c&oacute; thắc mắc về mục n&agrave;y sẽ li&ecirc;n hệ chuy&ecirc;n vi&ecirc;n Trần L&ecirc; H&ugrave;ng (email: <a href="mailto:hung.tranle@hust.edu.vn">hung.tranle@hust.edu.vn</a>) để cập nhật điều kiện ho&agrave;n th&agrave;nh GD QP-AN v&agrave; GDTC.<br />
+	d) Để chuẩn bị cho việc in văn bằng tốt nghiệp: c&aacute;c em cần <strong>kiểm tra lại th&ocirc;ng tin</strong> về họ v&agrave; t&ecirc;n, ng&agrave;y, th&aacute;ng, năm sinh, giới t&iacute;nh, nơi sinh. Nếu c&oacute; bất cứ sai s&oacute;t n&agrave;o th&igrave; cần li&ecirc;n hệ với chuy&ecirc;n vi&ecirc;n L&ecirc; Minh Thuyết (email: <a href="mailto:son.nguyenthanh1@hust.edu.vn">thuyet.leminh@hust.edu.vn</a>) để được hướng dẫn.<br />
+	e) Để chuẩn bị cho việc tốt nghiệp ra trường, c&aacute;c em xem hướng dẫn thủ tục thanh to&aacute;n ra trường tại đ&acirc;y: <a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv/73/huong-dan-lam-thu-tuc-thanh-toan-ra-truong">https://sv-ctt.hust.edu.vn/#/so-tay-sv/73/huong-dan-lam-thu-tuc-thanh-toan-ra-truong</a><br />
+	g) C&aacute;c em cần thường xuy&ecirc;n theo d&otilde;i kết quả x&eacute;t tốt nghiệp trong t&agrave;i khoản CTT, xem c&aacute;c th&ocirc;ng b&aacute;o li&ecirc;n quan tr&ecirc;n Cổng th&ocirc;ng tin sinh vi&ecirc;n (ctt.hust.edu.vn) v&agrave; ch&uacute; &yacute; theo d&otilde;i email.</span></div>
+<br />
+<div style="margin-left: 640px;">
+	<span style="font-size:18px;"><strong>BAN Đ&Agrave;O TẠO </strong></span></div>
+<br />
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#kehoach").css("border-bottom", "3px solid red");
+	$("#kehoach .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

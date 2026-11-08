@@ -1,0 +1,5 @@
+2026-11-07T15:08:18.927057900Z wayback-page-1 https://web.archive.org/cdx/search/cdx?url=hust.edu.vn%2F&matchType=domain&fl=original&collapse=urlkey&filter=statuscode%3A200&output=json&showResumeKey=true&limit=5000&gzip=false&resumeKey=eJwNxlsKgCAQAMCr9Buku-sD9DiCokaosFp0-5qvuduR4jrK4rnDGlcPkYFfhpYeBoXkAQ2UXkXLpYoZhigrNIFWak_WW6lQaS_Pkbd_Bh050kqT_QBFTBqp HTTP 200
+2026-11-07T15:08:44.009573900Z wayback hosts=1 complete=false next_check_at=2026-11-07T15:38:44.007Z
+2026-11-07T15:08:44.009573900Z commoncrawl CACHE next_check_at=2026-11-08T11:44:47.844Z complete=true
+2026-11-07T15:08:44.009573900Z complete=false concrete_hosts=58
+ERROR wayback: HttpTimeoutException: request timed out

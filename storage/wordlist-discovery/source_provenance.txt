@@ -1,0 +1,8 @@
+wordlist_source=resource:/subdomain_wordlist.txt
+wordlist_sha256=bf1120320c5f28e4c19e77eaf74464ab24c68ef981948b2b3395a43c6f79f424
+external_source=C:\Users\mimmim-mi\Downloads\hust-search-engine\data\external-subdomains.txt
+external_present=false
+external_sha256=e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+fingerprint=faec9245c3aa9d820bad2412a645cc4f5f6599996d998c2881c5a397c2162da4
+checked_at=2026-11-07T05:07:09.362894600Z
+next_check_at=2026-11-08T05:07:09.362Z

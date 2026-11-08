@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Social activities &#8211; Data Science Laboratory</title>
+	<atom:link href="http://ds.soict.hust.edu.vn/?feed=rss2&#038;cat=10" rel="self" type="application/rss+xml" />
+	<link>http://ds.soict.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Mon, 28 Sep 2026 08:08:07 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.35</generator>
+	<item>
+		<title>KDE Open Day on 19/3/2016</title>
+		<link>http://ds.soict.hust.edu.vn/?p=248</link>
+		<pubDate>Thu, 25 Feb 2016 02:16:38 +0000</pubDate>
+		<dc:creator><![CDATA[Khoat Than]]></dc:creator>
+				<category><![CDATA[Opportunities]]></category>
+		<category><![CDATA[Social activities]]></category>
+
+		<guid isPermaLink="false">http://kde.soict.hust.edu.vn/?p=248</guid>
+		<description><![CDATA[We will hold KDE Open Day on 19/3/2016 at Seminar room 923, Ta Quang Buu library, HUST. The aim of this event is to open an <a class="mh-excerpt-more" href="http://ds.soict.hust.edu.vn/?p=248" title="KDE Open Day on 19/3/2016">[...]</a>]]></description>
+		</item>
+	</channel>
+</rss>

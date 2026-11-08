@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>Job Fair 2026 - Ng&#224;y hội hướng nghiệp v&#224; việc l&#224;m tại Đại học B&#225;ch khoa H&#224; Nội</h3>
+        <div>
+	<strong><span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Năm nay Nh&agrave; trường tiếp tục phối hợp c&ugrave;ng với c&aacute;c doanh nghiệp, c&aacute;c đơn vị ... để tổ chức NG&Agrave;Y HỘI VIỆC L&Agrave;M - JOB FAIR 2026 hứa hẹn mang đến v&ocirc; v&agrave;n hoạt động hấp dẫn!</span></span></strong></div>
+<div>
+	<strong><span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Tại NG&Agrave;Y HỘI VIỆC L&Agrave;M 2026, sinh vi&ecirc;n sẽ c&oacute; cơ hội trải nghiệm:</span></span></strong></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">🔎 C&aacute;c chương tr&igrave;nh phỏng vấn ho&agrave;n to&agrave;n miễn ph&iacute;.</span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">🏠 C&aacute;c gian h&agrave;ng tr&ograve; chơi tương t&aacute;c ứng dụng.</span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">🎤 Tham dự hội thảo xu hướng việc l&agrave;m tại ph&ograve;ng Hội thảo C2 để lắng nghe những chia sẻ từ diễn giả kh&aacute;ch mời l&agrave; c&aacute;c L&atilde;nh đạo doanh nghiệp đầy kinh nghiệm.</span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">🎁ĐẶC BIỆT, nhiều qu&agrave; tặng hấp dẫn từ c&aacute;c nh&agrave; t&agrave;i trợ, c&aacute;c đơn vị đồng h&agrave;nh đang chờ đ&oacute;n c&aacute;c bạn khi đến với chương tr&igrave;nh.</span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">📍 Ng&agrave;y hội việc l&agrave;m 2026 ch&iacute;nh l&agrave; cơ hội &lsquo;ng&agrave;n v&agrave;ng&rsquo; cho tất cả c&aacute;c bạn sinh vi&ecirc;n được tham gia tư vấn, kh&aacute;m ph&aacute; năng lực của bản th&acirc;n v&agrave; chọn cho m&igrave;nh được ng&agrave;nh nghề ph&ugrave; hợp nhất. Chương tr&igrave;nh tạo m&ocirc;i trường cho c&aacute;c nh&agrave; tuyển dụng tiếp cận với nguồn nh&acirc;n lực chất lượng cao, l&agrave; cầu nối vững chắc giữa doanh nghiệp v&agrave; sinh vi&ecirc;n, gi&uacute;p c&aacute;c doanh nghiệp quảng b&aacute; thương hiệu, truyền th&ocirc;ng thương hiệu. Tuổi trẻ l&agrave; chặng đường m&agrave; ta kh&ocirc;ng ngừng đặt cho bản th&acirc;n những mục ti&ecirc;u cần đạt được. V&igrave; thế, h&atilde;y tự mở ra cơ hội cho bản th&acirc;n được trải nghiệm, học hỏi ở một m&ocirc;i trường l&agrave;m việc chuy&ecirc;n nghiệp nh&eacute;!</span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Ban tổ chức mong rằng chương tr&igrave;nh NG&Agrave;Y HỘI VIỆC L&Agrave;M 2026 c&oacute; thể đồng h&agrave;nh c&ugrave;ng bạn để ho&agrave;n thiện giấc mơ, mục ti&ecirc;u của m&igrave;nh.</span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">📌 Th&ocirc;ng tin chương tr&igrave;nh:</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">C&aacute;c hoạt động hướng nghiệp v&agrave; tuyển dụng trực tiếp sẽ được tổ chức:</span></span></div>
+<blockquote>
+	<div>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">- <strong>Thời gian: </strong>Chủ Nhật, ng&agrave;y 19/4/2026.</span></span></div>
+	<div>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">- <strong>Địa điểm: </strong>Hội trường C2, Đại học B&aacute;ch khoa H&agrave; Nội</span></span></div>
+</blockquote>
+<div>
+	<strong><span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Link event: <a href="https://www.facebook.com/events/2436287786800722/">https://www.facebook.com/events/2436287786800722/</a></span></span></strong></div>
+<blockquote>
+	<div>
+		<strong><span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">C&aacute;c hoạt động hướng nghiệp v&agrave; tuyển dụng trực tuyến (Online) được tổ chức</span></span></strong></div>
+	<div>
+		<strong><span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Thời gian: Thứ Hai, từ ng&agrave;y 20/4/2026 đến ng&agrave;y 30/5/2026</span></span></strong></div>
+</blockquote>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Chi tiết th&ocirc;ng tin c&aacute;c vị tr&iacute; tuyển dụng xem th&ecirc;m tại đ&acirc;y: <strong><a href="https://work.hust.edu.vn/#/">https://work.hust.edu.vn/#/</a></strong></span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">&bull; Số lượng doanh nghiệp tham gia: doanh nghiệp trong v&agrave; ngo&agrave;i nước.</span></span><br />
+	<table align="center" border="1" cellpadding="0" cellspacing="0" style="width: 625px" width="625">
+		<colgroup>
+			<col />
+			<col />
+			<col />
+		</colgroup>
+		<tbody>
+			<tr height="21">
+				<td height="21" style="height: 21px; width: 35px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;"><strong>ID</strong></span></span></td>
+				<td style="width: 431px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;"><strong>T&ecirc;n doanh nghiệp</strong></span></span></td>
+				<td style="width: 160px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;"><strong>Loại h&igrave;nh</strong></span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">1</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty Cổ Phần Ph&ograve;ng Thử Nghiệm Ph&uacute;c Gia</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Nh&agrave; t&agrave;i trợ V&agrave;ng</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">2</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH DENSO Việt Nam</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Nh&agrave; t&agrave;i trợ Bạc</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">3</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH Rorze Robotech</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Nh&agrave; t&agrave;i trợ Đồng</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">4</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH Linh kiện điện tử SEI (Việt Nam)</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Nh&agrave; t&agrave;i trợ Đồng</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">5</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">VAMOBA Hiệp hội &ocirc; t&ocirc; xe m&aacute;y xe đạp VN - C&ocirc;ng ty CP PT ĐTM SELEX</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Nh&agrave; t&agrave;i trợ Đồng</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">6</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH Đ&oacute;ng t&agrave;u Damen S&ocirc;ng Cấm</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">7</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Hyundai Kefico Việt Nam</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">8</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Piaggio Việt Nam</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">9</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH kỹ thuật X&acirc;y dựng v&agrave; Cơ điện c&ocirc;ng tr&igrave;nh ECMEC</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">10</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH c&ocirc;ng nghệ m&aacute;y văn ph&ograve;ng Kyocera Việt Nam</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">11</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH ETS VINA</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">12</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH SEKONIX VINA</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">13</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Assa Abloy Smart Technology Vietnam</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">14</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH NISSEI ELECTRIC H&Agrave; NỘI</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">15</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty cổ phần TECHBANK SOFTWARE</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">16</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty cổ phần tập đo&agrave;n c&ocirc;ng nghệ EPI</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">17</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty cổ phần đầu tư quốc tế Thagaco</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">18</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty cổ phần phần mềm MOR - Chi nh&aacute;nh H&agrave; Nội</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">19</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH Cayi Technology Việt Nam</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">20</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH C&ocirc;ng nghiệp ch&iacute;nh x&aacute;c BOZHON VN</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">21</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH QISDA VIỆT NAM</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">22</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty Cổ phần Mondelez Kinh Đ&ocirc; Việt Nam</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">23</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">CISCO Systems Vietnam LTD</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">24</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">LG Innotek Việt Nam Hải Ph&ograve;ng</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+			<tr height="20">
+				<td height="20" style="height: 20px; text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">25</span></span></td>
+				<td>
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">C&ocirc;ng ty TNHH Boydens Vietnam part of Sweco</span></span></td>
+				<td style="text-align: center;">
+					<span style="font-size:14px;"><span style="font-family:times new roman,times,serif;">Gian H&agrave;ng ti&ecirc;u chuẩn</span></span></td>
+			</tr>
+		</tbody>
+	</table>
+</div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">&bull; Đối tượng tham gia: sinh vi&ecirc;n to&agrave;n trường tất cả c&aacute;c kh&oacute;a v&agrave; c&aacute;c chuy&ecirc;n ng&agrave;nh (ưu ti&ecirc;n c&aacute;c bạn sinh vi&ecirc;n đ&atilde; v&agrave; sẽ tốt nghiệp năm 2026).</span></span></div>
+<div>
+	&nbsp;</div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>C&aacute;c bạn sinh vi&ecirc;n năm cuối chuẩn bị tốt nghiệp đăng k&yacute; phỏng vấn tại đ&acirc;y:</strong> https://forms.cloud.microsoft/r/wGehyEhpzd</span></span></div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

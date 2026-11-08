@@ -1,0 +1,110 @@
+<!doctype html><html lang="vi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Kỷ yếu Trường Cơ khí</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600&family=Playfair+Display:wght@700&display=swap&subset=vietnamese">
+<style>
+/* Layout: a dark reading room, the book centred on stage, thin bars top and bottom */
+:root{
+  --stage:#1d0a0c; --stage2:#3a1015; --bar:rgba(20,6,8,.86);
+  --gold:#e9b949; --ink:#f6ece6; --muted:#c9a9a6; --line:rgba(233,185,73,.28);
+  --display:'Playfair Display',Georgia,serif; --body:'Be Vietnam Pro',system-ui,sans-serif;
+  color-scheme:dark;
+}
+html,body{height:100%}
+[hidden]{display:none!important}
+body{margin:0;background:radial-gradient(ellipse at 50% 40%,var(--stage2) 0%,var(--stage) 70%);background-color:var(--stage);color:var(--ink);font-family:var(--body);display:flex;flex-direction:column;overflow:hidden}
+header,footer{display:flex;align-items:center;gap:12px;padding-inline:16px;background:var(--bar);border-color:var(--line);border-style:solid;border-width:0;flex-wrap:wrap}
+header{border-bottom-width:1px;padding-block:10px;padding-top:calc(10px + env(safe-area-inset-top,0px))}
+footer{border-top-width:1px;padding-block:10px;padding-bottom:calc(10px + env(safe-area-inset-bottom,0px));justify-content:center}
+.brand{display:flex;flex-direction:column;min-width:120px;flex:1}
+.brand b{font-family:var(--display);font-size:19px;letter-spacing:.5px;color:var(--gold);text-wrap:balance}
+.brand span{font-size:11.5px;letter-spacing:1.6px;text-transform:uppercase;color:var(--muted)}
+.tag{font-size:11px;letter-spacing:1px;color:var(--stage);background:var(--gold);padding:3px 8px;border-radius:2px;font-weight:600}
+button,select{font:inherit;color:var(--ink);background:transparent;border:1px solid var(--line);border-radius:3px;padding:7px 12px;cursor:pointer}
+button:hover,select:hover{border-color:var(--gold);color:var(--gold)}
+button:focus-visible,select:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+select option{background:var(--stage);color:var(--ink)}
+#stage{flex:1;min-height:0;position:relative;padding:18px 16px}
+#book{width:100%;height:100%}
+#book .page{background:#fff}
+#book .page img{width:100%;height:100%;display:block;object-fit:cover;user-select:none;-webkit-user-drag:none}
+.count{font-variant-numeric:tabular-nums;min-width:96px;text-align:center;color:var(--muted);font-size:13.5px}
+.count b{color:var(--ink);font-weight:600}
+.hint{position:absolute;left:50%;bottom:6px;transform:translateX(-50%);font-size:12px;color:var(--muted);opacity:.8;pointer-events:none;white-space:nowrap}
+#zv{position:fixed;inset:0;z-index:50;background:rgba(15,4,6,.96);display:flex;flex-direction:column}
+.zbar{background:var(--stage);display:flex;justify-content:space-between;align-items:center;padding:10px 16px;padding-top:calc(10px + env(safe-area-inset-top,0px));border-bottom:1px solid var(--line);color:var(--muted);font-size:14px}
+#zimgs{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;align-items:center;gap:16px}
+#zimgs img{width:min(1000px,100%);height:auto;background:#fff}
+#toc{max-width:340px}
+@media (max-width:560px){.brand span{display:none}.tag{display:none}#toc{max-width:140px}.fst{display:none}.brand b{font-size:16px}}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head><body>
+
+<header>
+  <div class="brand"><b>Kỷ yếu Trường Cơ khí</b><span>70 năm Cơ khí Bách khoa · 1956–2026</span></div>
+  <button id="zoom" type="button" title="Phóng to trang đang xem">🔍<span class="fst"> Phóng to</span></button>
+  <select id="toc" aria-label="Mục lục"><option value="">Mục lục…</option><option value="1">Bìa trước</option><option value="2">Mục lục</option><option value="4">Lời ngỏ · tr. 4</option><option value="5">Phần I – Trường Cơ khí hôm nay · tr. 5</option><option value="6">&nbsp;&nbsp;&nbsp;Cơ cấu tổ chức · tr. 6</option><option value="7">&nbsp;&nbsp;&nbsp;Văn phòng Trường · tr. 7</option><option value="8">Phần II – 70 năm Cơ khí Bách khoa · tr. 8</option><option value="8">&nbsp;&nbsp;&nbsp;1956–1966: Những ngày đặt nền móng · tr. 8</option><option value="9">&nbsp;&nbsp;&nbsp;1966–1975: Những năm chiến tranh · tr. 9</option><option value="10">&nbsp;&nbsp;&nbsp;1975–1995: Thời kỳ khoa chuyên ngành · tr. 10</option><option value="11">&nbsp;&nbsp;&nbsp;1995–2021: Khoa Cơ khí và ba viện · tr. 11</option><option value="12">&nbsp;&nbsp;&nbsp;2021: Thành lập Trường Cơ khí · tr. 12</option><option value="14">Phần III – Trường Cơ khí (2021–2026) · tr. 14</option><option value="16">Phần IV – Các khoa và Trung tâm · tr. 16</option><option value="16">&nbsp;&nbsp;&nbsp;Khoa Cơ khí Chế tạo máy · tr. 16</option><option value="47">&nbsp;&nbsp;&nbsp;Khoa Cơ khí Động lực · tr. 47</option><option value="93">&nbsp;&nbsp;&nbsp;Khoa Cơ điện tử · tr. 93</option><option value="109">&nbsp;&nbsp;&nbsp;Khoa Năng lượng Nhiệt · tr. 109</option><option value="140">&nbsp;&nbsp;&nbsp;Trung tâm Kỹ thuật Cơ khí · tr. 140</option><option value="145">&nbsp;&nbsp;&nbsp;Các trung tâm nghiên cứu · tr. 145</option><option value="148">Phần V – Những người thầy · tr. 148</option><option value="152">Phần VI – Hướng tới tương lai · tr. 152</option><option value="153">Phụ lục – Niên biểu 1956–2026 · tr. 153</option><option value="155">Bìa sau · tr. 155</option></select>
+  <button id="fs" type="button" title="Toàn màn hình">⤢<span class="fst"> Toàn màn hình</span></button>
+</header>
+
+<main id="stage">
+  <div id="book"></div>
+  <div class="hint">Kéo góc trang hoặc dùng phím ← → để lật</div>
+</main>
+<div id="zv" hidden><div class="zbar"><span id="ztitle"></span><button id="zclose" type="button">Đóng ✕</button></div><div id="zimgs"></div></div>
+
+<footer>
+  <button id="prev" type="button" aria-label="Trang trước">‹ Trước</button>
+  <div class="count" id="count"><b>1</b> / 155</div>
+  <button id="next" type="button" aria-label="Trang sau">Sau ›</button>
+</footer>
+
+<script src="page-flip.browser.js"></script>
+<script>
+const N=155;
+const book=document.getElementById('book');
+const pad=n=>String(n).padStart(3,'0');
+for(let i=1;i<=N;i++){
+  const d=document.createElement('div');d.className='page';
+  if(i===1||i===N)d.dataset.density='hard';
+  d.innerHTML='<img alt="Trang '+i+'" data-src="p/'+pad(i)+'.jpg">';
+  book.appendChild(d);
+}
+const imgs=[...book.querySelectorAll('img')];
+function warm(idx){for(let k=Math.max(0,idx-3);k<=Math.min(N-1,idx+6);k++){const im=imgs[k];if(!im.src)im.src=im.dataset.src;}}
+warm(0);
+const pf=new St.PageFlip(book,{
+  width:595,height:842,size:'stretch',minWidth:260,maxWidth:1400,minHeight:360,maxHeight:2000,
+  showCover:true,usePortrait:true,autoSize:false,maxShadowOpacity:.45,flippingTime:800,mobileScrollSupport:false
+});
+pf.loadFromHTML(book.querySelectorAll('.page'));
+const count=document.getElementById('count');
+function visible(i){
+  const o=pf.getOrientation?pf.getOrientation():'landscape';
+  if(o==='landscape'&&i>0&&i<N-1){const a=i%2?i:i-1;return [a,a+1];}
+  return [i];
+}
+function show(i){warm(i);const v=visible(i);count.innerHTML='<b>'+v.map(x=>x+1).join('–')+'</b> / '+N;}
+pf.on('flip',e=>show(e.data));
+pf.on('changeOrientation',()=>show(pf.getCurrentPageIndex()));
+show(0);
+document.getElementById('prev').onclick=()=>pf.flipPrev();
+document.getElementById('next').onclick=()=>pf.flipNext();
+document.getElementById('toc').onchange=e=>{if(e.target.value!==''){const t=+e.target.value-1;warm(t);pf.turnToPage(t);show(t);e.target.value='';}};
+document.addEventListener('keydown',e=>{if(!zv.hidden){if(e.key==='Escape')zv.hidden=true;return;}if(e.key==='ArrowRight')pf.flipNext();if(e.key==='ArrowLeft')pf.flipPrev();});
+document.getElementById('fs').onclick=()=>{
+  const el=document.documentElement;
+  try{ if(!document.fullscreenElement){el.requestFullscreen&&el.requestFullscreen().catch(()=>{});} else document.exitFullscreen(); }catch(_){}
+};
+const zv=document.getElementById('zv');
+document.getElementById('zoom').onclick=()=>{
+  const v=visible(pf.getCurrentPageIndex());
+  document.getElementById('zimgs').innerHTML=v.map(k=>'<img alt="Trang '+(k+1)+'" src="p/'+pad(k+1)+'.jpg">').join('');
+  document.getElementById('ztitle').textContent='Trang '+v.map(x=>x+1).join('–');
+  zv.hidden=false;document.getElementById('zimgs').scrollTop=0;
+};
+document.getElementById('zclose').onclick=()=>{zv.hidden=true;};
+</script>
+</body></html>

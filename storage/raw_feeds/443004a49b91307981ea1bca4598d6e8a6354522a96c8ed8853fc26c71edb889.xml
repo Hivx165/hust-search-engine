@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Nghiên cứu - Đề tài nghiên cứu</title>
+        <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/</link>
+        <atom:link href="https://act.hust.edu.vn/vi/nghien-cuu/rss/de-tai-nghien-cuu/" rel="self" />
+                <description>
+            <![CDATA[Viện Công nghệ Điều khiển và Tự động hóa - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Thu, 24 Jul 2025 08:07:00 GMT</pubDate>
+        <lastBuildDate>Thu, 24 Jul 2025 08:07:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Viện Công nghệ Điều khiển và Tự động hóa]]>
+        </copyright>
+        <docs>https://act.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://act.hust.edu.vn/uploads/act/logo-dhbk-1-02_130_191.png</url>
+            <title>Nghiên cứu - Đề tài nghiên cứu</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Development of Output Filter for Inverter with long motor cable</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/development-of-output-filter-for-inverter-with-long-motor-cable-25.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_25]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 08:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Design the 400Hz Ground Power Unit for Aircraft</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/design-the-400hz-ground-power-unit-for-aircraft-24.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_24]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 08:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Intelligent Storage Management Device</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/intelligent-storage-management-device-23.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_23]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 08:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Research, design and manufacture of a system to quickly fix short-term voltage increase &#x002F; decrease incidents for load</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/research-design-and-manufacture-of-a-system-to-quickly-fix-short-term-voltage-increase-decrease-incidents-for-load-22.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_22]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 08:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Research, design and build wireless smart sensor systems for Smart grid- Ministry of Education and Training- 2015</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/research-design-and-build-wireless-smart-sensor-systems-for-smart-grid-ministry-of-education-and-training-2015-21.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_21]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 08:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Studying and design the wireless dust concentration measurement and supervisor system in industry</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/studying-and-design-the-wireless-dust-concentration-measurement-and-supervisor-system-in-industry-20.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_20]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 08:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Study design of motion control system for 4-dimensional CNC milling machine- Ministry of Science and Technology- 2015</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/study-design-of-motion-control-system-for-4-dimensional-cnc-milling-machine-ministry-of-science-and-technology-2015-19.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_19]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 08:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Research and manufacture three-phase AC Servo drives - Ministry of Science and Technology - 2019</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/research-and-manufacture-three-phase-ac-servo-drives-ministry-of-science-and-technology-2019-18.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_18]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 07:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đề tài nghiên cứu</title>
+            <link>https://act.hust.edu.vn/vi/nghien-cuu/de-tai-nghien-cuu/de-tai-nghien-cuu-17.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_17]]>
+            </guid>
+            
+                        <pubDate>Thu, 24 Jul 2025 07:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://act.hust.edu.vn/assets/act/nghien-cuu/2025_07/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

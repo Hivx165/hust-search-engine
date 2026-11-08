@@ -1,0 +1,680 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hệ thống Bản đồ Đào tạo - Đại học Bách khoa Hà Nội</title>
+    <link rel="shortcut icon" href="https://hust.edu.vn/uploads/sys/android-icon-36x36.png">
+    <link rel="stylesheet" href="https://hust.edu.vn/themes/hust/css/style.css?t=1708913709">
+    <link rel="stylesheet" href="https://hust.edu.vn/themes/hust/css/hust.css?t=1708913709">
+    <link rel="stylesheet" href="https://hust.edu.vn/themes/hust/css/custom.css?t=1708913709">
+    <link rel="stylesheet" href="https://hust.edu.vn/themes/hust/css/bootstrap.min.css?">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://unpkg.com/zdog@1/dist/zdog.dist.min.js"></script>  
+    <script src="https://cdn.jsdelivr.net/npm/zfont@latest/dist/zfont.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.0.3/chroma.min.js"></script>
+
+    <style>
+        .container h2 {
+            font-family: Inter, sans-serif;
+            font-size: 36px;
+            font-weight: 700;
+            line-height: 58.09px;
+            text-align: center;
+            color: #C02135;
+            text-transform: uppercase;
+        }
+
+        .container h3 {
+            font-family: serif;
+            font-size: 16px;
+            font-style: italic;
+            text-decoration: underline;
+        }
+
+        .container p {
+            font-family: Inter, sans-serif;
+            font-size: 17px;
+            font-weight: 500;
+            line-height: 20.57px;
+            color: #333;
+
+        }
+
+        .type-education__item,
+        .training-field__item {
+            display: flex;
+        }
+
+        .type-education__item .checkbox-wrapper-52,
+        .training-field__item .checkbox-wrapper-52 {
+            flex: 1;
+        }
+
+        .filter {
+            position: absolute;
+            top: 150px;
+        }
+
+        .filter__list {
+            background: white;
+            width: 255px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .filter__list .training-field__title {
+            font-weight: 600;
+            text-align: start;
+            padding: 15px 20px 10px;
+            border-bottom: solid 1px #3333;
+
+
+        }
+
+        .filter__list .dropdown {
+            margin: 0;
+        }
+
+        .filter__list .dropdown .selected-list {
+            display: none;
+        }
+
+        .filter__list ul {
+            padding: 5px 20px 15px;
+            text-align: start;
+        }
+
+        .filter__list .selected-list ul {
+            padding: 12px 0px;
+        }
+
+        .filter__list .selected-list ul li {
+            padding: 5px 9px;
+            text-align: start;
+            display: flex;
+        }
+
+        .filter__list .selected-list ul li div:first-child {
+            flex: 1;
+        }
+
+        .filter__list .selected-list ul li div:last-child {
+            color: red;
+            margin: auto;
+            padding: 3px;
+        }
+
+        .filter__list ul li {
+            padding: 7px 0;
+        }
+
+        .filter.left {
+            left: 30px;
+        }
+
+        .filter.left .filter__list {
+            width: 321px;
+        }
+
+        .filter.right {
+            right: 30px;
+        }
+
+        .zoom {
+            font-size: 25px;
+            align-items: center;
+            margin-left: 5px;
+            color: #738491;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+        }
+
+        .zoom .zoom-in {
+            position: relative;
+            padding: 10px 5px;
+        }
+
+        .zoom .zoom-out {
+            position: relative;
+            padding: 10px 5px;
+        }
+
+        .zoom .reset-zoom {
+            position: relative;
+            padding: 10px 5px;
+        }
+
+        .zoom .zoom-in:hover {
+            cursor: pointer;
+
+        }
+
+        .zoom .zoom-out:hover {
+            cursor: pointer;
+
+        }
+
+        .zoom .reset-zoom:hover {
+            cursor: pointer;
+        }
+
+        .search-title {
+            text-align: left;
+            color: #DD9299;
+            padding-left: 5px;
+        }
+
+        .zdog-canvas {
+            /*   background-color: black; */
+            /* cursor: move; */
+            width: 100%;
+            height: 100%;
+            /* background: radial-gradient(#f1f1f1, #aaa2f9a6); */
+        }
+
+        .zdog-canvas1 {
+            /*   background-color: black; */
+            cursor: move;
+            width: 100%;
+            height: 100%;
+        }
+
+        .node-info {
+            position: absolute;
+            display: none;
+            top: 330px;
+            left: 900px;
+            width: 369px;
+            padding: 6px;
+            color: rgba(255, 255, 255, 1);
+            /* background: linear-gradient(108.46deg, rgba(255, 255, 255, 0.264) 10%, rgba(255, 255, 255, 0.066) 100%); */
+            background: linear-gradient(108.46deg, rgba(0, 0, 0, 0.51) 0%, rgba(0, 0, 0, 0.24) 100%);
+            border: 0.5px solid;
+            border-radius: 6px;
+            border-image-source: linear-gradient(70.15deg, #898989 0.06%, rgba(255, 255, 255, 0) 100%);
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .node-info.active {
+            animation: tooltipAnimation 0.3s forwards;
+        }
+
+        .node-info .p-title {
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .node-info .p-sub-title {
+            text-align: center;
+        }
+
+        @keyframes tooltipAnimation {
+            0% {
+                opacity: 0;
+                transform: translate(36px, 36px);
+            }
+
+            100% {
+                opacity: 1;
+                transform: translate(0, 0);
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="section-header home-header">
+            <div class="wraper">
+                <div id="header">
+                    <div class="logo">
+                        <div class="text-site">
+                            <a title="Đại học Bách khoa Hà Nội" href="https://hust.edu.vn/vi/">
+                                <img src="https://hust.edu.vn/uploads/sys/logo-dhbk-1-02_130_191.png"
+                                    alt="Đại học Bách khoa Hà Nội">
+                            </a>
+                            <ul class="text-sologan">
+                                <li class="bo">
+                                    <a href="#" style="font-size: 24px;">Hệ Thống Bản Đồ Đào Tạo</a>
+                                </li>
+                                <li class="cuc">
+                                    <a href="#" style="font-size: 14px;">Training Map System</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header home-header">
+            <div class="wraper">
+                <div id="header">
+                    <nav style="padding-top: 9px;">
+                        <ul>
+                            <li><a href="index.html">Bản đồ tổng thế</a></li>
+                            <li><a href="phan-tich-chuyen-mon.html">Phân tích chuyên môn</a></li>
+                            <li><a href="phan-tich-tuong-quan.html">Phân tích tương quan</a></li>
+                            <li><a href="#">Liên hệ</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <!-- 
+            <div class="container">
+                <nav>
+                    <ul>
+                        <li><a href="#">Trang chủ</a></li>
+                        <li>
+                            <a href="#">Chương trình đào tạo</a>
+                            <ul class="submenu">
+                                <li><a href="#">Chương trình A</a></li>
+                                <li><a href="#">Chương trình B</a></li>
+                                <li><a href="#">Chương trình C</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">So sánh</a>
+                            <ul class="submenu">
+                                <li><a href="index.html">Tổng thể</a></li>
+                                
+                                <li><a href="perspective.html">Theo từng góc nhìn</a></li>
+                                <li><a href="specialize.html">Chuyên môn</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Liên hệ</a></li>
+                    </ul>
+                </nav>
+            </div> -->
+    </header>
+    <section class="content">
+        <div class="container c-content">
+            <h2>Bản đồ tổng thể</h2>
+            <div class="btn_top">
+            </div>
+
+            <!--  -->
+
+
+        </div>
+        <div class="wrap">
+            <div class="comparison-options">
+                <canvas id="zdog-canvas" class="zdog-canvas" width="100%" height="100%"></canvas>
+                <canvas id="hidden-canvas" class="zdog-canvas" style="visibility: hidden; display: none;"></canvas>
+            </div>
+            <div class="zoom" style="display: flex;">
+                <div class="zoom-in" id="zoom-in">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass-plus"></i>
+                </div>
+                <div class="zoom-out" id="zoom-out">
+                    <i class="fa-sharp fa-solid fa-magnifying-glass-minus"></i>
+                </div>
+                <div class="reset-zoom" id="reset">
+                    <i class="fa-solid fa-rotate"></i>
+                </div>
+            </div>
+            <div class="filter left" style="left: 30px;">
+                <div class="search-title">Chọn chương trình quan tâm</div>
+                <div class="filter__list">
+                    <div class="search-container dropdown">
+                        <div style="display: inline-flex; padding: 12px;">
+                            <svg width="18" height="18" viewBox="0 0 18 18" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.5 16.5L12.875 12.875M14.8333 8.16667C14.8333 11.8486 11.8486 14.8333 8.16667 14.8333C4.48477 14.8333 1.5 11.8486 1.5 8.16667C1.5 4.48477 4.48477 1.5 8.16667 1.5C11.8486 1.5 14.8333 4.48477 14.8333 8.16667Z"
+                                    stroke="#667085" stroke-width="1.66667" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            <input type="text" class="search-input" id="searchBox" placeholder="Search..." onkeyup="filterFunction()"
+                                onfocus="showDropdown()" onblur="hideDropdown()" />
+                        </div>
+                        <div class="dropdown-content program-list" id="dropdownItems"></div>
+                        <div class="program-list selected-list">
+                            <ul id="selectedItems"></ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter__list">
+                    <div class="training-field__title">Kết nối đào tạo</div>
+                    <ul class="type-connection__list">
+                        <li class="type-connection__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="conn_near" class="item">
+                                    <input type="checkbox" id="conn_near" class="hidden" checked />
+                                    <label for="conn_near" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="conn_near" class="cbx-lbl">Kết nối gần (ngành gần)</label>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="type-connection__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="conn_fit" class="item">
+                                    <input type="checkbox" id="conn_fit" class="hidden" checked />
+                                    <label for="conn_fit" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="conn_fit" class="cbx-lbl">Kết nối phù hợp (ngành phù hợp)</label>
+                                </label>
+                            </div>
+                        </li>
+                        <li class="type-connection__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="conn_ref" class="item">
+                                    <input type="checkbox" id="conn_ref" class="hidden" checked />
+                                    <label for="conn_ref" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="conn_ref" class="cbx-lbl">Kết nối liên hệ (ngành có liên hệ)</label>
+                                </label>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="filter right">
+                <div class="filter__list">
+                    <div class="training-field__title">Lĩnh vực đào tạo</div>
+                    <ul class="training-field__list">
+                        <li class="training-field__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="KTCN" class="item">
+                                    <input type="checkbox" id="KTCN" class="hidden" checked />
+                                    <label for="KTCN" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="KTCN" class="cbx-lbl">Kỹ thuật - Công nghệ</label>
+                                </label>
+                            </div>
+                            <div id="no_items_ktcn">0</div>
+                        </li>
+                        <li class="training-field__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="MTCN" class="item">
+                                    <input type="checkbox" id="MTCN" class="hidden" checked />
+                                    <label for="MTCN" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="MTCN" class="cbx-lbl">Máy tính và CNTT</label>
+                                </label>
+                            </div>
+                            <div id="no_items_mtcn">0</div>
+                        </li>
+                        <li class="training-field__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="KTQL" class="item">
+                                    <input type="checkbox" id="KTQL" class="hidden" checked />
+                                    <label for="KTQL" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="KTQL" class="cbx-lbl">Kinh tế - Quản lý</label>
+                                </label>
+                            </div>
+                            <div id="no_items_ktql">0</div>
+                        </li>
+                        <li class="training-field__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="KHGD" class="item">
+                                    <input type="checkbox" id="KHGD" class="hidden" checked />
+                                    <label for="KHGD" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="KHGD" class="cbx-lbl">Khoa học giáo dục</label>
+                                </label>
+                            </div>
+                            <div id="no_items_khgd">0</div>
+                        </li>
+                        <li class="training-field__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="TAKT" class="item">
+                                    <input type="checkbox" id="TAKT" class="hidden" checked />
+                                    <label for="TAKT" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="TAKT" class="cbx-lbl">Tiếng Anh kỹ thuật</label>
+                                </label>
+                            </div>
+                            <div id="no_items_takt">0</div>
+                        </li>
+                        <li class="training-field__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="KHSS" class="item">
+                                    <input type="checkbox" id="KHSS" class="hidden" checked />
+                                    <label for="KHSS" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="KHSS" class="cbx-lbl">Khoa học sự sống</label>
+                                </label>
+                            </div>
+                            <div id="no_items_khss">0</div>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="filter__list">
+                    <div class="training-field__title">Loại hình đào tạo</div>
+                    <ul class="type-education__list">
+                        <li class="type-education__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="CTC" class="item">
+                                    <input type="checkbox" id="CTC" class="hidden" checked />
+                                    <label for="CTC" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="CTC" class="cbx-lbl">Chương trình chuẩn</label>
+                                </label>
+                            </div>
+                            <div id="no_items_ctc">0</div>
+                        </li>
+                        <li class="type-education__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="CTEL" class="item">
+                                    <input type="checkbox" id="CTEL" class="hidden" checked />
+                                    <label for="CTEL" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="CTEL" class="cbx-lbl">Chương trình Elitech</label>
+                                </label>
+                            </div>
+                            <div id="no_items_ctel">0</div>
+                        </li>
+                        <li class="type-education__item">
+                            <div class="checkbox-wrapper-52">
+                                <label for="CTQT" class="item">
+                                    <input type="checkbox" id="CTQT" class="hidden" checked />
+                                    <label for="CTQT" class="cbx">
+                                        <svg width="14px" height="12px" viewBox="0 0 14 12">
+                                            <polyline points="1 7.6 5 11 13 1"></polyline>
+                                        </svg>
+                                    </label>
+                                    <label for="CTQT" class="cbx-lbl">Chương trình quốc tế</label>
+                                </label>
+                            </div>
+                            <div id="no_items_ctqt">0</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container  c-content">
+
+
+        </div>
+    </section>
+    <div id="node-info" class="node-info">
+        <div class="p-title"></div>
+        <div class="p-sub-title"><span id="p-root"></span></div>
+        <div class="p-code">Mã chương trình: <span id="p-code"></span></div>
+        <div class="p-quotas">Chỉ tiêu: <span id="p-quotas">0</span></div>
+        <div class="p-statistic">
+            <div class="p-statistic-title">Chỉ số chuyên môn:</div>
+            <div>
+                <ul>
+                    <li>Tuyển sinh: <span id="p-stb-1">7.01</span></li>
+                    <li>Đào tạo: <span id="p-stb-2">7.01</span></li>
+                    <li>Nghề nghiệp: <span id="p-stb-3">7.01</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="p-statistic">
+            <div class="p-statistic-title">Điểm chuẩn trung bình:</div>
+            <div>
+                <ul>
+                    <li>XTTN: <span id="p-sta-1">7.01</span></li>
+                    <li>ĐGTD: <span id="p-sta-2">7.01</span></li>
+                    <li>THPT: <span id="p-sta-3">7.01</span></li>
+                </ul>
+            </div>
+        </div>
+        <div class="">Ngành gần: <span id="p-nears"></span></div>
+    </div>
+
+    <!--     
+    <section class="content" style="padding: 0;">
+        <div class="wrap">
+            <div class="comparison-options">
+                <canvas id="hidden-canvas" class="zdog-canvas"></canvas>
+            </div>
+        </div>
+    </section>
+ -->
+
+    <nav class="section-footer-bottom footerNav2">
+        <div class="wraper">
+            <div class="container">
+                <div class="col-md-5 col-sm-5 col-xs-24" style="padding-left: 0px"><img alt="Logo HUST 02" height="79"
+                        src="https://hust.edu.vn/uploads/sys/logo-hust-02.png" width="200">
+                </div>
+                <div class="col-md-19 col-sm-19 col-xs-24 css-banquyen">
+                    <div><span class="copy-title">Hệ Thống Bản Đồ Đào Tạo</span></div>
+                    <div class="copy-content">Bản quyền thuộc về Đại học Bách khoa Hà Nội<br>
+                        Thông tin liên hệ: Ban Tuyển sinh - Hướng nghiệp<br>
+                        Tel: 0243 868 3408 | Email: tuyensinh@hust.edu.vn
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="general.js"></script>
+    <script src="script.js"></script>
+    <script>
+        var list_selected_programs = []
+        var list_all = document.getElementById('dropdownItems')
+        PROGRAMS_DATA.forEach(p => {
+            var listItem = document.createElement("div");
+            listItem.setAttribute('class', 'item');
+            // listItem.setAttribute("onclick", "selectItem(1)");
+            listItem.onclick = () => selectItem(p.id);
+
+            var itemText = document.createTextNode(p.name + ' (' + p.code + ')');
+            listItem.appendChild(itemText);
+
+            list_all.appendChild(listItem)
+        })
+
+        function selectItem(pid) {
+            // let idx = list_selected_programs.indexOf(pid);
+            // list_selected_programs = list_selected_programs.splice(idx, 1)
+            if (list_selected_programs.includes(pid)) return;
+            list_selected_programs.push(pid)
+
+            generate_selected_list()
+        }
+
+        function removeItem(pid) {
+            if (!list_selected_programs.includes(pid)) return;
+
+            let idx = list_selected_programs.indexOf(pid);
+            list_selected_programs.splice(idx, 1)
+
+            generate_selected_list()
+        }
+
+        function generate_selected_list() {
+            let selected_items = document.getElementById('selectedItems')
+            if (list_selected_programs.length > 0) {
+                selected_items.parentElement.style.display = 'block'
+            } else {
+                selected_items.parentElement.style.display = 'none'
+            }
+            selected_items.innerText = ''
+
+            list_selected_programs.forEach(pid => {
+                var prog = NODES[NODES.findIndex(p => p.id === pid)]
+                var listItem = document.createElement("li");
+
+                var textItem = document.createElement('div')
+                var itemText = document.createTextNode(prog.name + ' (' + prog.code + ')');
+                textItem.appendChild(itemText);
+                listItem.appendChild(textItem);
+
+                var btnItem = document.createElement('div')
+
+                const iconSvg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+                const iconPath = document.createElementNS(
+                    'http://www.w3.org/2000/svg',
+                    'path'
+                );
+
+                iconSvg.setAttribute('enable-background', 'new 0 0 32 32');
+                iconSvg.setAttribute('viewBox', '0 0 32 32');
+                iconSvg.setAttribute('height', '12px');
+                iconSvg.setAttribute('width', '12px');
+                // iconSvg.classList.add('post-icon');
+
+                iconPath.setAttribute(
+                    'd',
+                    'M20.377,16.519l6.567-6.566c0.962-0.963,0.962-2.539,0-3.502l-0.876-0.875c-0.963-0.964-2.539-0.964-3.501,0  L16,12.142L9.433,5.575c-0.962-0.963-2.538-0.963-3.501,0L5.056,6.45c-0.962,0.963-0.962,2.539,0,3.502l6.566,6.566l-6.566,6.567  c-0.962,0.963-0.962,2.538,0,3.501l0.876,0.876c0.963,0.963,2.539,0.963,3.501,0L16,20.896l6.567,6.566  c0.962,0.963,2.538,0.963,3.501,0l0.876-0.876c0.962-0.963,0.962-2.538,0-3.501L20.377,16.519z'
+                );
+                iconPath.setAttribute('fill', 'red');
+
+                iconSvg.appendChild(iconPath);
+
+                // node.appendChild(iconSvg);
+
+                // var itemText = document.createTextNode('<svg enable-background="new 0 0 32 32" height="32px" id="Layer_1" version="1.1" viewBox="0 0 32 32" width="32px" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="" fill="#515151"/></svg>');
+                btnItem.appendChild(iconSvg)
+                btnItem.onclick = () => removeItem(pid)
+                listItem.appendChild(btnItem);
+
+                listItem.onclick = () => removeItem(pid)
+                selected_items.appendChild(listItem)
+            })
+
+            checkCheckboxes(list_selected_programs)
+        }
+    </script>
+
+</body>
+
+</html>

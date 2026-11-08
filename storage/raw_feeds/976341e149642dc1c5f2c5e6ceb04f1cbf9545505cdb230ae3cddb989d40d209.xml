@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Các nhóm chuyên môn - Giảng viên đặc biệt</title>
+        <link>https://fed.hust.edu.vn/vi/bo-mon/giang-vien-dac-biet/</link>
+        <atom:link href="https://fed.hust.edu.vn/vi/bo-mon/rss/giang-vien-dac-biet/" rel="self" />
+                <description>
+            <![CDATA[Khoa Khoa học & Công nghệ giáo dục - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Mon, 27 Feb 2023 19:02:00 GMT</pubDate>
+        <lastBuildDate>Mon, 27 Feb 2023 19:02:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Khoa Khoa học &amp; Công nghệ giáo dục]]>
+        </copyright>
+        <docs>https://fed.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://fed.hust.edu.vn/uploads/feed/logo-dhbk-1-02_130_191.png</url>
+            <title>Các nhóm chuyên môn - Giảng viên đặc biệt</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/giang-vien-dac-biet/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Danh sách cán bộ</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/giang-vien-dac-biet/danh-sach-can-bo-293941.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293941]]>
+            </guid>
+            
+                        <pubDate>Mon, 27 Feb 2023 19:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đội ngũ Giảng viên đặc biệt</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/giang-vien-dac-biet/doi-ngu-giang-vien-dac-biet-293897.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_293897]]>
+            </guid>
+            
+                        <pubDate>Mon, 27 Feb 2023 19:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Giới thiệu chung</title>
+            <link>https://fed.hust.edu.vn/vi/bo-mon/giang-vien-dac-biet/gioi-thieu-chung-178437.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[bo-mon_178437]]>
+            </guid>
+            
+                        <pubDate>Sun, 23 Feb 2020 16:02:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,516 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Trường Hóa và Khoa học Sự sống RSS&#x3A; Lịch làm việc</title>
+        <link>https://scls.hust.edu.vn/vi/workcalendar/</link>
+        <atom:link href="https://scls.hust.edu.vn/vi/workcalendar/rss/" rel="self" />
+                <description>
+            <![CDATA[Trường Hóa và Khoa học Sự sống]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Thu, 5 Nov 2026 02:11:50 GMT</pubDate>
+        <lastBuildDate>Thu, 5 Nov 2026 02:11:50 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Trường Hóa và Khoa học Sự sống]]>
+        </copyright>
+        <docs>https://scls.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://scls.hust.edu.vn/uploads/scls/logo-dhbk-1-02_130_191.png</url>
+            <title>Trường Hóa và Khoa học Sự sống RSS&#x3A; Lịch làm việc</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Nghiệm thu đề tài cấp cơ sở “Nghiên cứu tổng hợp vật liệu hữu cơ huỳnh quang và đánh giá khả năng tiêu diệt các tế bào ung thư”, mã số T2024-XS-002.</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Nghiem-thu-de-tai-cap-co-so-Nghien-cuu-tong-hop-vat-lieu-huu-co-huynh-quang-va-danh-gia-kha-nang-tieu-diet-cac-te-bao-ung-thu-ma-so-T2024-XS-002/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_713]]>
+            </guid>
+            
+                        <pubDate>Thu, 5 Nov 2026 02:11:50 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Xét tuyển hồ sơ NCS của ứng viên Lê Đình Khiêm _Hóa học</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Xet-tuyen-ho-so-NCS-cua-ung-vien-Le-Dinh-Khiem-Hoa-hoc/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_712]]>
+            </guid>
+            
+                        <pubDate>Thu, 5 Nov 2026 02:11:34 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Khoa Kỹ thuật Hóa học tiếp giáo sư Patrick COGNET đến từ Viện Quốc gia Bách Khoa Toulouse - Pháp</title>
+            <link>https://scls.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Truong-Hoa-va-Khoa-hoc-Su-song/Khoa Kỹ thuật Hóa học tiếp giáo sư Patrick COGNET đến từ Viện Quốc gia Bách Khoa Toulouse - Pháp</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_711]]>
+            </guid>
+            
+                        <pubDate>Wed, 4 Nov 2026 10:11:20 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Kiểm định chương trình đào tạo Hóa học và Kỹ thuật Thực phẩm _Hệ Cử nhân &#40;Cả ngày&#41;</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Kiem-dinh-chuong-trinh-dao-tao-Hoa-hoc-va-Ky-thuat-Thuc-pham-He-Cu-nhan/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_709]]>
+            </guid>
+            
+                        <pubDate>Tue, 27 Oct 2026 04:10:13 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ luận văn Th.S của học viên Bùi Minh An với đề tài &quot;Nghiên cứu xúc tác oxit đất hiếm cho phản ứng oxy hoá ghép đôi Metan&quot; - 20242162M - KTHH</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-luan-van-Th-S-cua-hoc-vien-Bui-Minh-An-voi-de-tai-Nghien-cuu-xuc-tac-oxit-dat-hiem-cho-phan-ung-oxy-hoa-ghep-doi-Metan-20242162M-KTHH/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_708]]>
+            </guid>
+            
+                        <pubDate>Mon, 26 Oct 2026 02:10:35 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ luận văn Th.S của học viên Vũ Công Duy với đề tài &quot;Nghiên cứu các dạng gia công cho hoạt chất Fluazinam và đánh giá độc tính của chúng.&quot; _20241113M_KTHH</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-luan-van-Th-S-cua-hoc-vien-Vu-Duy-Cong-voi-de-tai-Nghien-cuu-cac-dang-gia-cong-cho-hoat-chat-Fluazinam-va-danh-gia-doc-tinh-cua-chung-20241113M-KTHH/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_707]]>
+            </guid>
+            
+                        <pubDate>Sun, 25 Oct 2026 07:10:21 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Ban giám hiệu tiếp đoàn NTU</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Ban-giam-hieu-tiep-doan-NTU/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_706]]>
+            </guid>
+            
+                        <pubDate>Sun, 25 Oct 2026 07:10:28 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>BGĐ &#40;PGĐ. H.Đ.Chính&#41; họp dự án Cao su &#40;JCC&#41;</title>
+            <link>https://scls.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Truong-Hoa-va-Khoa-hoc-Su-song/BGĐ (PGĐ. H.Đ.Chính) họp dự án Cao su (JCC)</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_705]]>
+            </guid>
+            
+                        <pubDate>Fri, 23 Oct 2026 09:10:34 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp Tiểu ban xét tuyển NCS cho thí sinh Bùi Phương Thảo ngành Kỹ thuật môi trường</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Hop-Tieu-ban-xet-tuyen-NCS-cho-thi-sinh-Bui-Phuong-Thao-nganh-Ky-thuat-moi-truong/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_704]]>
+            </guid>
+            
+                        <pubDate>Fri, 23 Oct 2026 08:10:12 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Ban Giám hiệu tiếp đoàn Đại học CCU_Đài Loan về chương trình INTENSE và TEEF</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Ban-Giam-hieu-tiep-doan-Dai-hoc-CCU-Dai-Loan-ve-chuong-trinh-INTENSE-va-TEEF/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_703]]>
+            </guid>
+            
+                        <pubDate>Fri, 23 Oct 2026 08:10:52 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp Hội đồng phát triển chương trình đào tạo ngành Môi trường</title>
+            <link>https://scls.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Truong-Hoa-va-Khoa-hoc-Su-song/Họp Hội đồng phát triển chương trình đào tạo ngành Môi trường</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_702]]>
+            </guid>
+            
+                        <pubDate>Wed, 21 Oct 2026 02:10:50 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp kiểm tra định kỳ đề tài NĐT&#x002F;HU&#x002F;22&#x002F;21</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Hop-kiem-tra-dinh-ky-de-tai-NDT-HU-22-21/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_701]]>
+            </guid>
+            
+                        <pubDate>Wed, 7 Oct 2026 07:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ LV.Th.s của học viên Phạm Đình Phúc với đề tài &quot;Nghiên cứu chế tạo nano bạc từ dịch chiết thực vật ứng dụng kích thích nảy mầm và tăng trưởng trên cây trồng&quot; _20251139M_KTHH</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-LV-Th-s-cua-hoc-vien-Pham-Dinh-Phuc-voi-de-tai-Nghien-cuu-che-tao-nano-bac-tu-dich-chiet-thuc-vat-ung-dung-kich-thich-nay-mam-va-tang-truong-tren-cay-trong-20251139M-KTHH/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_700]]>
+            </guid>
+            
+                        <pubDate>Sat, 3 Oct 2026 01:10:54 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp tiểu ban đánh giá chuyên môn Nội dung 3 đề tài NCUD.06-2025.05</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Hop-tieu-ban-danh-gia-chuyen-mon-Noi-dung-3-de-tai-NCUD-06-2025-05/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_699]]>
+            </guid>
+            
+                        <pubDate>Wed, 30 Sep 2026 08:09:52 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Báo cáo chuyên đề NCS Bùi Văn Năng</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-cao-chuyen-de-NCS-Bui-Van-Nang/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_698]]>
+            </guid>
+            
+                        <pubDate>Wed, 23 Sep 2026 10:09:09 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Báo cáo seminar Cao học ngành KT Môi trường</title>
+            <link>https://scls.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Truong-Hoa-va-Khoa-hoc-Su-song/Báo cáo seminar Cao học ngành KT Môi trường</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_697]]>
+            </guid>
+            
+                        <pubDate>Wed, 23 Sep 2026 01:09:29 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Ban HTĐN tiếp Đại học Adelaide</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Ban-HTDN-tiep-Dai-hoc-Adelaide/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_695]]>
+            </guid>
+            
+                        <pubDate>Sat, 19 Sep 2026 08:09:20 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp Hội đồng kỷ luật sinh viên Đại học Bách Khoa Hà Nội tháng 9&#x002F;2026</title>
+            <link>https://scls.hust.edu.vn/index.php?language=vi&amp;nv=workcalendar&amp;op=Truong-Hoa-va-Khoa-hoc-Su-song/Họp Hội đồng kỷ luật sinh viên Đại học Bách Khoa Hà Nội tháng 9/2026</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_694]]>
+            </guid>
+            
+                        <pubDate>Thu, 17 Sep 2026 09:09:15 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>PGĐ Tạ Hải Tùng làm việc với Cục ĐCK - Bộ Công Thương</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/PGD-Ta-Hai-Tung-lam-viec-voi-Cuc-DCK-Bo-Cong-Thuong/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_693]]>
+            </guid>
+            
+                        <pubDate>Tue, 15 Sep 2026 02:09:57 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Báo cáo seminar NCS Phạm Quang Minh</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-cao-seminar-NCS-Pham-Quang-Minh/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_692]]>
+            </guid>
+            
+                        <pubDate>Tue, 15 Sep 2026 02:09:56 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ luận văn Thạc sĩ học viên Vũ Anh Đức đề tài &quot;Nghiên cứu tương thích và tăng cường tính chất của hydrogel gốc cellulose với poly&#40;methyl methacrylate&#41; cho các ứng dụng bền vững&quot;_HH2024B</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-luan-van-Thac-si-hoc-vien-Vu-Anh-Duc-de-tai-Nghien-cuu-tuong-thich-va-tang-cuong-tinh-chat-cua-hydrogel-goc-cellulose-voi-poly-methyl-methacrylate-cho-cac-ung-dung-ben-vung-HH2024B/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_691]]>
+            </guid>
+            
+                        <pubDate>Tue, 15 Sep 2026 01:09:15 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp kỷ yếu Thành lập 70 năm Hust</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Hop-ky-yeu-Thanh-lap-70-nam-Hust/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_690]]>
+            </guid>
+            
+                        <pubDate>Tue, 15 Sep 2026 01:09:39 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Họp tổ công tác xây dựng CTĐT Elitech Môi trường</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Hop-to-cong-tac-xay-dung-CTDT-Elitech-Moi-truong/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_689]]>
+            </guid>
+            
+                        <pubDate>Tue, 15 Sep 2026 01:09:01 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án tốt nghiệp kỳ 2025.3 chuyên ngành Máy và Thiết bị công nghiệp hóa chất – dầu khí</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-do-an-tot-nghiep-ky-2025-3-chuyen-nganh-May-va-Thiet-bi-cong-nghiep-hoa-chat-dau-khi/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_688]]>
+            </guid>
+            
+                        <pubDate>Thu, 10 Sep 2026 11:09:36 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án tốt nghiệp kỳ 2025.3 chuyên ngành Hóa Vô cơ và Vật liệu tiên tiến</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-do-an-tot-nghiep-ky-2025-3-chuyen-nganh-Hoa-Vo-co-va-Vat-lieu-tien-tien/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_687]]>
+            </guid>
+            
+                        <pubDate>Thu, 10 Sep 2026 10:09:10 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án tốt nghiệp kỳ 2025.3 chuyên ngành Điện hóa và tích trữ, chuyển đổi năng lượng</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-do-an-tot-nghiep-ky-2025-3-chuyen-nganh-Dien-hoa-va-tich-tru-chuyen-doi-nang-luong/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_686]]>
+            </guid>
+            
+                        <pubDate>Thu, 10 Sep 2026 10:09:10 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án tốt nghiệp kỳ 2025.3 chuyên ngành Công nghệ Vật liệu Polyme và compozit</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-do-an-tot-nghiep-ky-2025-3-chuyen-nganh-Cong-nghe-Vat-lieu-Polyme-va-compozit/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_685]]>
+            </guid>
+            
+                        <pubDate>Thu, 10 Sep 2026 10:09:05 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án tốt nghiệp kỳ 2025.3 chuyên ngành CN Hóa dầu và khí</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-do-an-tot-nghiep-ky-2025-3-chuyen-nganh-CN-Hoa-dau-va-khi/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_684]]>
+            </guid>
+            
+                        <pubDate>Thu, 10 Sep 2026 10:09:06 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án tốt nghiệp kỳ 2025.3 chuyên ngành CN Vật liệu Silicat</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-do-an-tot-nghiep-ky-2025-3-chuyen-nganh-CN-Vat-lieu-Silicat/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_683]]>
+            </guid>
+            
+                        <pubDate>Thu, 10 Sep 2026 10:09:30 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Bảo vệ đồ án tốt nghiệp kỳ 2025.3 chuyên ngành CN Giấy và Bao bì</title>
+            <link>https://scls.hust.edu.vn/vi/workcalendar/Truong-Hoa-va-Khoa-hoc-Su-song/Bao-ve-do-an-tot-nghiep-ky-2025-3-chuyen-nganh-CN-Giay-va-Bao-bi/</link>
+                        <guid isPermaLink="false">
+                <![CDATA[workcalendar_682]]>
+            </guid>
+            
+                        <pubDate>Thu, 10 Sep 2026 10:09:27 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

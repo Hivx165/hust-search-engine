@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Đơn vị trực thuộc - Liên chi đoàn - Liên chi hội</title>
+        <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/</link>
+        <atom:link href="https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/rss/lien-chi-doan-lien-chi-hoi/" rel="self" />
+                <description>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Wed, 23 Aug 2023 07:08:00 GMT</pubDate>
+        <lastBuildDate>Wed, 23 Aug 2023 07:08:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Đoàn thanh niên Đại học Bách khoa Hà Nội]]>
+        </copyright>
+        <docs>https://svbk.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://svbk.hust.edu.vn/uploads/svbk/logo-dhbk-1-02_130_191.png</url>
+            <title>Đơn vị trực thuộc - Liên chi đoàn - Liên chi hội</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Danh sách Liên chi đoàn - Liên chi hội</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/danh-sach-lien-chi-doan-lien-chi-hoi-284667.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_284667]]>
+            </guid>
+            
+                        <pubDate>Wed, 23 Aug 2023 07:08:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Liên chi đoàn Khoa Vật lý Kỹ thuật</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-vat-ly-ky-thuat-207936.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207936]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Liên chi đoàn Khoa Ngoại ngữ</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-ngoai-ngu-207894.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207894]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Liên chi đoàn Khoa Khoa học &amp; Công nghệ Giáo dục</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-su-pham-ky-thuat-207908.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207908]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Liên chi đoàn Khoa Toán - Tin</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-toan-ung-dung-va-tin-hoc-207922.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207922]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đoàn trường Hoá &amp; Khoa học sự sống</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-ky-thuat-hoa-hoc-207880.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207880]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đoàn trường Kinh tế</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-kinh-te-va-quan-ly-207852.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207852]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 15:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đoàn trường Vật liệu</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-khoa-hoc-va-ky-thuat-vat-lieu-207838.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207838]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 14:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đoàn trường Điện - Điện tử</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/truong-dien-dien-tu-207782.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207782]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 14:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đoàn trường Công nghệ Thông tin và Truyền thông</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-cong-nghe-thong-tin-va-truyen-thong-207712.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207712]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 14:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đoàn trường Cơ khí</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/vien-co-khi-207726.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207726]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 14:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Liên chi đoàn Trường Cao đẳng nghề Bách Khoa</title>
+            <link>https://svbk.hust.edu.vn/vi/don-vi-truc-thuoc/lien-chi-doan-lien-chi-hoi/truong-cao-dang-nghe-bach-khoa-207530.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[don-vi-truc-thuoc_207530]]>
+            </guid>
+            
+                        <pubDate>Thu, 9 Jul 2020 13:07:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

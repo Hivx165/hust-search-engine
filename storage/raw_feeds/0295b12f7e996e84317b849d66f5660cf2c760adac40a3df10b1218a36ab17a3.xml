@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>content</title>
+	<atom:link href="http://ichst.hust.edu.vn/category/content/feed/" rel="self" type="application/rss+xml" />
+	<link>http://ichst.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Fri, 27 Mar 2026 02:24:06 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=7.1.4</generator>
+
+<image>
+	<url>http://ichst.hust.edu.vn/wp-content/uploads/2023/02/cropped-tai-xuong-1-32x32.png</url>
+	<title>content</title>
+	<link>http://ichst.hust.edu.vn</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>Translational Healthcare Technology from Advanced to Low and Middle Income Countries in the Era of Covid and Digital Transformation</title>
+		<link>http://ichst.hust.edu.vn/translational-healthcare-technology-from-advanced-to-low-and-middle-income-countries-in-the-era-of-covid-and-digital-transformation/</link>
+		
+		<dc:creator><![CDATA[Nguyen Tung]]></dc:creator>
+		<pubDate>Thu, 16 Feb 2023 16:30:02 +0000</pubDate>
+				<category><![CDATA[content]]></category>
+		<guid isPermaLink="false">http://localhost/phanbao/?p=68</guid>
+
+					<description><![CDATA[The 9th&#160;International Conference on the Development of Biomedical Engineering (BME9) from December 27th-29th&#160;2022 in Vietnam is an international scientific conference&#8230; ]]></description>
+										<content:encoded><![CDATA[
+<p class="wp-block-paragraph">The 9th&nbsp;International Conference on the Development of Biomedical Engineering (BME9) from December 27th-29th&nbsp;2022 in Vietnam is an international scientific conference that promotes the connections among research, entrepreneurship and education in biomedical engineering with the theme of&nbsp;<em>“Translational Healthcare Technology from Advanced to Low and Middle Income Countries in the Era of Covid and Digital Transformation”</em>. Vietnam is a LMIC, yet it has an intellectual workforce of an emerging country. In addition, LMIC have many unexplored research topics very attractive to pioneer researchers to discover. Therefore, this meeting serves as an exciting forum and a model of LMIC for researchers, educators, entrepreneurs, administrators and policy makers from advanced and LMI countries to exchange novel ideas, discuss current biomedical issues, propose solutions and develop collaborations on translational research and technologies in healthcare applications particularly for LMIC in the Era of Covid and Digital Transformation.&nbsp;</p>
+
+
+
+<p class="wp-block-paragraph">All accepted papers will be published in the conference proceedings, which will be published by Springer (approved) in the series of&nbsp;&nbsp;<a href="https://www.springer.com/series/7403">IFMBE Proceedings</a>,&nbsp;indexed by&nbsp;<strong>SCOPUS</strong>&nbsp;and&nbsp;<strong>EI-Compendex</strong>.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>

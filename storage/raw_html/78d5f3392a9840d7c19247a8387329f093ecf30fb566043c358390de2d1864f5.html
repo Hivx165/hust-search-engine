@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en" id="htmlLang">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Organizing Committee - QMFS 2026</title>
+    <meta name="description" content="Meet the Organizing Committee of QMFS 2026, coordinating and managing all conference activities." />
+
+    <!-- ======= Google Fonts =======-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- End Google Fonts-->
+
+    <!-- ======= Bootstrap & Icons =======-->
+    <link href="assets/vendors/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/vendors/bootstrap-icons/font/bootstrap-icons.min.css" rel="stylesheet" />
+    <!-- End Bootstrap-->
+
+    <!-- ======= Custom Styles =======-->
+    <link href="styles.css" rel="stylesheet" />
+    <!-- End Custom Styles-->
+
+    <!-- ======= Apply theme =======-->
+    <script>
+      (function () {
+        const storedTheme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-bs-theme', storedTheme);
+      })();
+    </script>
+
+    <style>
+      .committee-hero {
+        background: linear-gradient(135deg, rgba(15, 122, 99, 0.08) 0%, rgba(224, 142, 43, 0.05) 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="site-wrap">
+      <!-- ======= Organizer Logo Bar =======-->
+      <div class="org-topbar">
+        <div class="container">
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/hust-70.png" alt="HUST 70 years (1956 - 2026)" /></a>
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/vinacert-vicb.png" alt="VinaCert - VICB Inspection" /></a>
+          <a class="org-topbar-logo" href="index.html"><img src="assets/images/organizers/scls-hust.png" alt="School of Chemistry and Life Sciences, Hanoi University of Science and Technology" /></a>
+          <a class="org-topbar-logo org-topbar-logo--wide" href="index.html"><img src="assets/images/organizers/greenwich-kent-lase.png" alt="University of Greenwich, University of Kent, LASE University Group" /></a>
+        </div>
+      </div>
+      <!-- End Organizer Logo Bar-->
+
+      <!-- ======= Header / Navigation =======-->
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img src="assets/images/organizers/qmfs-2026.png" alt="QMFS 2026 - International Conference on Quality Management and Food Safety" style="max-height: 50px" />
+          </a>
+
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto align-items-center">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#home" data-i18n="nav.home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-link--recap" href="recap.html" data-i18n="nav.recap">Recap</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#topics" data-i18n="nav.topic">Topics</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#speakers" data-i18n="nav.speakers">Speakers</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="program.html"
+                  id="programDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-i18n="nav.program"
+                >
+                  Program
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="programDropdown">
+                  <li>
+                    <a class="dropdown-item" href="program.html#overview" data-i18n="nav.programOverview">General Program</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="program.html#schedule" data-i18n="nav.programSchedule">Detailed Schedule</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="program.html#poster" data-i18n="nav.programPoster">Student Poster</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="timeline.html" data-i18n="nav.history">History</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle active"
+                  href="#"
+                  id="committeeDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  data-i18n="nav.committee"
+                >
+                  Committee
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="committeeDropdown">
+                  <li>
+                    <a class="dropdown-item active" href="organizing-committee.html" data-i18n="nav.organizing">Organizing Committee</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="scientific-committee.html" data-i18n="nav.scientific">Scientific Committee</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#pricing" data-i18n="nav.pricing">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="btn btn-primary ms-2" href="index.html#contact" data-i18n="nav.registration">Registration</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Header-->
+
+      <main>
+        <!-- ======= Page Hero ======= -->
+        <section class="section committee-hero">
+          <div class="container">
+            <div class="section-header reveal">
+              <span class="section-badge">Organizing Committee</span>
+              <h1 class="section-title">QMFS 2026 Organizing Committee</h1>
+              <p class="section-description">
+                The Organizing Committee is responsible for coordinating and managing all conference activities,
+                ensuring the success of QMFS 2026.
+              </p>
+            </div>
+          </div>
+        </section>
+        <!-- End Page Hero -->
+
+        <!-- ======= Committee Members ======= -->
+        <section class="section">
+          <div class="container">
+            <div class="speakers-grid">
+              <div class="speaker-card reveal">
+                <img src="assets/images/SonCK.jpg" alt="Assoc. Prof. Chu Ky Son" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. Chu Ky Son</h4>
+                <p class="speaker-title">Chairman</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/DungNH-vinacert.jpg" alt="Mr. Nguyen Huu Dung" class="speaker-avatar" />
+                <h4 class="speaker-name">Mr. Nguyen Huu Dung</h4>
+                <p class="speaker-title">Vice-Chairman</p>
+                <p class="speaker-bio">VinaCert Certification and Inspection Joint Stock Company</p>
+              </div>
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/TuNTM.jpg" alt="Assoc. Prof. Nguyen Thi Minh Tu" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. Nguyen Thi Minh Tu</h4>
+                <p class="speaker-title">Vice-Chairman</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/NhatDM.jpg" alt="Assoc. Prof. Dang Minh Nhat" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. Dang Minh Nhat</h4>
+                <p class="speaker-title"><br></p>
+                <p class="speaker-bio">Danang University of Science and Technology</p>
+              </div>
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/HungPV.jpg" alt="Prof. Pham Van Hung" class="speaker-avatar" />
+                <h4 class="speaker-name">Prof. Pham Van Hung</h4>
+                <p class="speaker-title"><br> </p>
+                <p class="speaker-bio">Ho Chi Minh City University of Technology</p>
+              </div>
+
+
+                
+                <div class="speaker-card reveal">
+                <img src="assets/images/ToanNV.jpg" alt="Prof. Nguyen Van Toan" class="speaker-avatar" />
+                <h4 class="speaker-name">Prof. Nguyen Van Toan</h4>
+                <p class="speaker-title"><br></p>
+                <p class="speaker-bio">University of Agriculture and Forestry - Hue University</p>
+              </div>
+              <!--
+              <div class="speaker-card reveal">
+                <img src="assets/images/LienNH.jpg" alt="Assoc. Prof. Nguyen Hong Lien" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. Nguyen Hong Lien</h4>
+                <p class="speaker-title">Member</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/TuyetNTA.jpg" alt="Assoc. Prof. Nguyen Thi Anh Tuyet" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. Nguyen Thi Anh Tuyet</h4>
+                <p class="speaker-title">Member</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/VinhLT.jpg" alt="Assoc. Prof. La The Vinh" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. La The Vinh</h4>
+                <p class="speaker-title">Member</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/HuongHTT.jpg" alt="Assoc. Prof. Hoang Thi Thu Huong" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. Hoang Thi Thu Huong</h4>
+                <p class="speaker-title">Member</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+              -->
+              <div class="speaker-card reveal">
+                <img src="assets/images/TrangVT.jpg" alt="Assoc. Prof. Vu Thu Trang" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. Vu Thu Trang</h4>
+                <p class="speaker-title">Member</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/HuongNL.jpg" alt="Assoc. Prof. Nguyen Lan Huong" class="speaker-avatar" />
+                <h4 class="speaker-name">Assoc. Prof. Nguyen Lan Huong</h4>
+                <p class="speaker-title">Member</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+              <div class="speaker-card reveal">
+                <img src="assets/images/SonVH.jpg" alt="Dr. Vu Hong Son" class="speaker-avatar" />
+                <h4 class="speaker-name">Dr. Vu Hong Son</h4>
+                <p class="speaker-title">Member</p>
+                <p class="speaker-bio">Hanoi University of Science and Technology</p>
+              </div>
+
+
+
+
+
+
+            </div>
+          </div>
+        </section>
+        <!-- End Committee Members -->
+
+        <!-- ======= Footer =======-->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer-content">
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.aboutTitle">About QMFS 2026</h4>
+                <p style="color: rgba(255, 255, 255, 0.8)" data-i18n="footer.about">
+                  The 8th International Conference on Quality Management and Food Safety - A meeting place
+                  for leading scientists and experts in the food field.
+                </p>
+              </div>
+
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.quickLinks">Quick Links</h4>
+                <ul class="footer-links">
+                  <li><a href="index.html#home" data-i18n="footer.linkHome">Home</a></li>
+                  <li><a href="recap.html" data-i18n="footer.linkRecap">QMFS 2026 Recap</a></li>
+                  <li><a href="index.html#about" data-i18n="footer.linkAbout">About</a></li>
+                  <li><a href="index.html#topics" data-i18n="footer.linkTopics">Topics</a></li>
+                  <li><a href="program.html" data-i18n="footer.linkProgram">Conference Program</a></li>
+                  <li><a href="timeline.html" data-i18n="footer.linkHistory">Conference History</a></li>
+                  <li><a href="index.html#contact" data-i18n="footer.linkContact">Contact</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-section reveal">
+                <h4 data-i18n="footer.contact">Contact</h4>
+                <p style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-geo-alt-fill me-2"></i>
+                  C4 Building, Hanoi University of Science and Technology, No. 1, Dai Co Viet Street, Hanoi, Vietnam
+                </p>
+                <p style="margin-bottom: 1rem; color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-envelope-fill me-2"></i>
+                  <a>qmfs@hust.edu.vn</a>
+                </p>
+                <p style="color: rgba(255, 255, 255, 0.8)">
+                  <i class="bi bi-telephone-fill me-2"></i>
+                  <a href="tel:+842438692468" style="color: rgba(255, 255, 255, 0.8)">+84 (24) 3869 2468</a>
+                </p>
+              </div>
+            </div>
+
+            <div class="footer-bottom">
+              <p>
+                &copy;
+                <script>
+                  document.write(new Date().getFullYear());
+                </script>
+                QMFS 2026. All rights reserved. | Code by Phuc Le Tuan
+              </p>
+            </div>
+          </div>
+        </footer>
+        <!-- End Footer-->
+      </main>
+    </div>
+
+    <!-- ======= Language Toggle =======-->
+    <button id="langToggle" class="lang-toggle-btn" type="button" title="Switch language" aria-label="Switch language">
+      <i class="bi bi-translate"></i>
+      <span id="langText">VI</span>
+    </button>
+    <!-- End Language Toggle-->
+
+    <!-- ======= Javascripts =======-->
+    <script src="assets/vendors/bootstrap/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+    <script src="assets/js/i18n.js"></script>
+    <!-- End JavaScripts-->
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" aria-label="Back to top">
+      <i class="bi bi-arrow-up"></i>
+    </button>
+  </body>
+</html>

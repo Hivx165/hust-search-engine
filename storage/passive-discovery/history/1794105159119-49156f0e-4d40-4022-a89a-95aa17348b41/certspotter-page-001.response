@@ -1,0 +1,1229 @@
+[
+	{
+		"id": "13590614414",
+		"tbs_sha256": "2a2a74a870aca5734a917c90e3997cd8eb6c0f08d1c1bbfec714ee39f92877a0",
+		"cert_sha256": "30847a3cdb277c5bab75aec1798f93959d0ee05d00852fd6662f6d7c7b6b079b",
+		"dns_names": [
+			"*.libopac.hust.edu.vn",
+			"libopac.hust.edu.vn"
+		],
+		"pubkey_sha256": "df01a59c0b73b3ccf595eeb97b0af1d8ee1f24df1d975873ca54c0e0e2d42f08",
+		"not_before": "2026-01-28T00:00:00Z",
+		"not_after": "2027-02-28T23:59:59Z",
+		"revoked": false
+	},
+	{
+		"id": "15221184868",
+		"tbs_sha256": "d5c402ecf3f059a71e22bcbe9e05f74963e9389e8466f126ccf4202fb70856be",
+		"cert_sha256": "7280ca93bdb881df58b631b2b957e3e7e75e047f9135aa7e6b2cda5b121d0df9",
+		"dns_names": [
+			"*.hust.edu.vn",
+			"hust.edu.vn"
+		],
+		"pubkey_sha256": "67c769e1bb321c7ba522068f18a98c4722ef25d963b08a8d5d13e24ac457b16a",
+		"not_before": "2026-06-05T02:56:26Z",
+		"not_after": "2026-12-21T02:56:26Z",
+		"revoked": false
+	},
+	{
+		"id": "15463706225",
+		"tbs_sha256": "7819d65b11c964527e23b063ef12172507954c36d8f4fc5442d2fe033b067eae",
+		"cert_sha256": "62a59682d693b35a30a064eb8696c4163a38fedc3612fae41c4fed1c4cf1ce50",
+		"dns_names": [
+			"*.hust.edu.vn",
+			"hust.edu.vn"
+		],
+		"pubkey_sha256": "6948bfe222f57a828d80b24e4c9af44e4cd42c5a74859e236a1b9ac164ec5965",
+		"not_before": "2026-06-19T01:52:01Z",
+		"not_after": "2026-12-21T02:56:26Z",
+		"revoked": false
+	},
+	{
+		"id": "16428528313",
+		"tbs_sha256": "fcf4721d691136cf4fc5772da906da636ffffad6b2374c9ae0dd69d12352fb94",
+		"cert_sha256": "3d3ca6b7e4e118ca13c9d52a377ac0d7fbd6e4509fdb890e87c66ada0d458ffe",
+		"dns_names": [
+			"lkdtlt.hust.edu.vn"
+		],
+		"pubkey_sha256": "4c01f5f083d20f08c29de1cc73fdc84c040f038f2dcc476d1412333ee115469f",
+		"not_before": "2026-08-11T02:33:25Z",
+		"not_after": "2026-11-09T02:33:24Z",
+		"revoked": false
+	},
+	{
+		"id": "16428815276",
+		"tbs_sha256": "5dc0b9f27e367868c922016afd4f21506134a256e569174b6a5f092c0e38ec91",
+		"cert_sha256": "b1ccfcbf71bdd876ddab1c0accb2cffbcbf0954608e224057a067a6b829165f8",
+		"dns_names": [
+			"users.soict.hust.edu.vn"
+		],
+		"pubkey_sha256": "e6b84e0b9c5e4e7e0cf2730dcb462d0664546f2d76205a2d13456a1840e50d94",
+		"not_before": "2026-08-11T02:54:31Z",
+		"not_after": "2026-11-09T02:54:30Z",
+		"revoked": false
+	},
+	{
+		"id": "16428859901",
+		"tbs_sha256": "0784f44e0c97a62ec44d11b421e99a6a58bc89d42b77c5e11032ed4b3dd515b5",
+		"cert_sha256": "2f0badea001fabc21ed7bc8441053eb270a122a6440e68b3a3ae2deeeea12b7f",
+		"dns_names": [
+			"nct.soict.hust.edu.vn",
+			"users.soict.hust.edu.vn"
+		],
+		"pubkey_sha256": "e9059c8475d46a1885eb5805d6018235a2d030c9d1cd4e48445d938dd2024d4c",
+		"not_before": "2026-08-11T02:56:40Z",
+		"not_after": "2026-11-09T02:56:39Z",
+		"revoked": false
+	},
+	{
+		"id": "16439325313",
+		"tbs_sha256": "f5025da2f3f00c9ac4564be84cc4339906858b27caa4ccd57464084cfa905b27",
+		"cert_sha256": "10e173c8298d46e91a0a7106e94a7941ec2208dff4cfd2eeedfeefbdd0f83eab",
+		"dns_names": [
+			"bmec.hust.edu.vn"
+		],
+		"pubkey_sha256": "0c25c946d5feb5ef042a95df232efa491821bc1e95e92c100038e377e3ffb8ea",
+		"not_before": "2026-08-11T12:46:33Z",
+		"not_after": "2026-11-09T12:46:32Z",
+		"revoked": false
+	},
+	{
+		"id": "16442638084",
+		"tbs_sha256": "d3c1c5d4c18f180004297a8fed327ee47ff812ee684ec147d44abac47836757b",
+		"cert_sha256": "d65df9fd6cd0d7d56273bdbc1fa134553903edd942d8485154ba90644a69d677",
+		"dns_names": [
+			"e-jst.hust.edu.vn"
+		],
+		"pubkey_sha256": "f624b964e808d62249c55b57adb0475732524cc290a7bc962a833b36d57505e5",
+		"not_before": "2026-08-11T15:48:36Z",
+		"not_after": "2026-11-09T16:37:27Z",
+		"revoked": false
+	},
+	{
+		"id": "16517919205",
+		"tbs_sha256": "4200f2916f93a6a1f4c7200fc5bfa60f706809619c854947a69453e03cee12eb",
+		"cert_sha256": "d6d2b51b7a074f4e8325b8a5daaac8869f5ab4e9183bd47a0c8697f2fefce62d",
+		"dns_names": [
+			"www.esso.hust.edu.vn"
+		],
+		"pubkey_sha256": "4cb899c092baec74ae50eae04f476a7f52e2e6c95f5f59cca934601a39755a19",
+		"not_before": "2026-08-15T04:25:34Z",
+		"not_after": "2026-11-13T05:16:06Z",
+		"revoked": false
+	},
+	{
+		"id": "16532306939",
+		"tbs_sha256": "43f2bea4da08767f6b9d1fdc9dede9bf21117d620091b67bd7174e938dc69b0f",
+		"cert_sha256": "3e7f2e3785b382356b6032b2b06ca056fd641b065b1ed4ea392d0444a49df079",
+		"dns_names": [
+			"asiaccs2025.hust.edu.vn",
+			"bkcs.hust.edu.vn"
+		],
+		"pubkey_sha256": "eac43a2c4a4205a021b10017c10d9e6ee088eab8da07c35f9672be5f45d8efe0",
+		"not_before": "2026-08-15T21:44:39Z",
+		"not_after": "2026-11-13T21:44:38Z",
+		"revoked": false
+	},
+	{
+		"id": "16542899386",
+		"tbs_sha256": "1182bed777e81dab1cacac4fde8c3343c6a99fbc94fb6d1b7f092b02bee4aa0c",
+		"cert_sha256": "a32cca37fd5468bf72a78e64a0be4de20cabc8ff843b4efa8149891eac73c768",
+		"dns_names": [
+			"jst.hust.edu.vn"
+		],
+		"pubkey_sha256": "a3e4d0a6d22d0ecb4cca04854440662720ed173d600bdfedb0f9ea91e70a2403",
+		"not_before": "2026-08-16T10:41:51Z",
+		"not_after": "2026-11-14T10:41:50Z",
+		"revoked": false
+	},
+	{
+		"id": "16551521066",
+		"tbs_sha256": "90f71c7927baff3f41421a46516e102568f9387ddc70770e6c20b2cdf292283e",
+		"cert_sha256": "050c9a74039dffb97b20045a2b028f011fe86dfdd8b59f737f252731e1f91db9",
+		"dns_names": [
+			"daotao.soict.hust.edu.vn"
+		],
+		"pubkey_sha256": "652de3c3a2758f3bccb3653ac01679b8ffd33287380d3de7a24d9ac073505931",
+		"not_before": "2026-08-16T21:06:02Z",
+		"not_after": "2026-11-14T21:55:53Z",
+		"revoked": false
+	},
+	{
+		"id": "16557899197",
+		"tbs_sha256": "b5510bcefae19dd4eb29245dc00e1b78c962502de543b1e12d87336a72a3e584",
+		"cert_sha256": "49cd2743dd1e2d1152bcb47891ba6477b059d8e5df11d3a075f8930516330ef1",
+		"dns_names": [
+			"bkcs.hust.edu.vn"
+		],
+		"pubkey_sha256": "f79307920007d3ddde1ed25452dc6c2a8ffa176237302394d4e885f26136f914",
+		"not_before": "2026-08-17T04:50:44Z",
+		"not_after": "2026-11-15T04:50:43Z",
+		"revoked": false
+	},
+	{
+		"id": "16628545823",
+		"tbs_sha256": "d5c402ecf3f059a71e22bcbe9e05f74963e9389e8466f126ccf4202fb70856be",
+		"cert_sha256": "7280ca93bdb881df58b631b2b957e3e7e75e047f9135aa7e6b2cda5b121d0df9",
+		"dns_names": [
+			"*.hust.edu.vn",
+			"hust.edu.vn"
+		],
+		"pubkey_sha256": "67c769e1bb321c7ba522068f18a98c4722ef25d963b08a8d5d13e24ac457b16a",
+		"not_before": "2026-06-05T02:56:26Z",
+		"not_after": "2026-12-21T02:56:26Z",
+		"revoked": false
+	},
+	{
+		"id": "16630965180",
+		"tbs_sha256": "e4a386da53b4b42467b773489495840858a66ed845aaa1b00fb2585969a58c50",
+		"cert_sha256": "a08588fa9ab2eb0dd17a6c0cb19c93b1fb1b92f55fb957cdfd3dbb5c8ed79a24",
+		"dns_names": [
+			"qmfs.hust.edu.vn"
+		],
+		"pubkey_sha256": "bc12a0488505983896f8899e50825816a2902cfbbc7ed86fc3dba288b5acbec5",
+		"not_before": "2026-08-20T11:43:37Z",
+		"not_after": "2026-11-18T11:43:36Z",
+		"revoked": false
+	},
+	{
+		"id": "16647209205",
+		"tbs_sha256": "9ec0981543c308f1921707ee707af0eda11a39359f09234a33952c93cdafa066",
+		"cert_sha256": "e176caa355d2459005e870f2873bbbe927483607244f19ad08b8ec2cd06408e8",
+		"dns_names": [
+			"tamlyhoctochuc.hust.edu.vn"
+		],
+		"pubkey_sha256": "7f68d3ae344e874b231a8d9fdef42f65b1be4e2a8b8a2389cc12ff8e7cdfc0b2",
+		"not_before": "2026-08-21T01:53:19Z",
+		"not_after": "2026-11-19T01:53:18Z",
+		"revoked": false
+	},
+	{
+		"id": "16669183454",
+		"tbs_sha256": "11bab493715651eb630655dfb728849135a04f81bdb9e028ee9f96c20f648fc3",
+		"cert_sha256": "fadc79905d774318028f287c49bf26621d93ff64b945e29785e4e90eb95c0fe5",
+		"dns_names": [
+			"stc.hust.edu.vn"
+		],
+		"pubkey_sha256": "e303019ea8065a2bc76806541f99342462356762163cf0e39f5ba79571a258d3",
+		"not_before": "2026-08-21T21:01:46Z",
+		"not_after": "2026-11-19T21:50:57Z",
+		"revoked": false
+	},
+	{
+		"id": "16670373771",
+		"tbs_sha256": "3f07e3c29aa92742317f7c03ca9c9f77c1d05134c03d9d9f0bfd80ab78873966",
+		"cert_sha256": "436caa3c94a8a4736e4a8afdd47b712468fb3b9b9a1d25279ea7efca415a04c2",
+		"dns_names": [
+			"sensbft.hust.edu.vn"
+		],
+		"pubkey_sha256": "cde7866253b3934837a94115706147e36891e8dd98d4cae3d4fdd554b1dbdf72",
+		"not_before": "2026-08-21T22:07:00Z",
+		"not_after": "2026-11-19T22:06:59Z",
+		"revoked": false
+	},
+	{
+		"id": "16694585846",
+		"tbs_sha256": "78bdebb17ec859f025a0427689426268a124765748c534c4394f97ede6f29a44",
+		"cert_sha256": "83135d32c71dd9523a122225033088c4085c537efaa025f01511e1cff390e36f",
+		"dns_names": [
+			"otoso.hust.edu.vn"
+		],
+		"pubkey_sha256": "fc257595ddacd1214ae2539ab458864886b5c8e3f64584e422e32009811863b6",
+		"not_before": "2026-08-22T19:19:45Z",
+		"not_after": "2026-11-20T19:19:44Z",
+		"revoked": false
+	},
+	{
+		"id": "16701282262",
+		"tbs_sha256": "b701c5246c9d4930c89522e276a63856cb0ce46f27735dc50624315c06caaf95",
+		"cert_sha256": "18b8274863c1537646ec3423778f61f4d68f0fdde363fc9206d09905ded67f4c",
+		"dns_names": [
+			"ts-hn.hust.edu.vn"
+		],
+		"pubkey_sha256": "1149d433d8cf216eeef9bf9a8ae58e47c836a057e966e4f21da0e5b3336ddff7",
+		"not_before": "2026-08-23T01:10:26Z",
+		"not_after": "2026-11-21T01:10:25Z",
+		"revoked": false
+	},
+	{
+		"id": "16724790786",
+		"tbs_sha256": "779e5dbbf90614e4c2f6faad5dc79bc11302ca216df29db05329ac41995316db",
+		"cert_sha256": "2d3695b172fdf8973a26c327f34089b0ba6eef9f88c5080667913e0802ec6c89",
+		"dns_names": [
+			"drive.hust.edu.vn"
+		],
+		"pubkey_sha256": "693866597114a872b804d45dd68c06bb31c2753d8c81675ba85462abdb424fbd",
+		"not_before": "2026-08-23T21:56:23Z",
+		"not_after": "2026-11-21T21:56:22Z",
+		"revoked": false
+	},
+	{
+		"id": "16736150578",
+		"tbs_sha256": "ff1171a37f38c3c02d7a1239bbb18287c140aa412d3467242821ebc0650e7062",
+		"cert_sha256": "e01d74f505b327b6fbb494174e19287c7e490157e7ee672a6a40eef181d99d3f",
+		"dns_names": [
+			"ai4life.hust.edu.vn"
+		],
+		"pubkey_sha256": "686a82142a852af4b1c6ac43f09d4ee5850cba3623f96a112c7065c696cfd0c6",
+		"not_before": "2026-08-24T08:04:55Z",
+		"not_after": "2026-11-22T08:04:54Z",
+		"revoked": false
+	},
+	{
+		"id": "16762254674",
+		"tbs_sha256": "1132bf7f3eec970f10980c2dac0065516aa596d9741917123c399a97d29a589e",
+		"cert_sha256": "a8060f18413d014e378ee170aebad00cd7a521a6a5cd5cefb9c2899f7ba497b3",
+		"dns_names": [
+			"csv.hust.edu.vn"
+		],
+		"pubkey_sha256": "b377ca3d50471164ad21c859b3f40450c359a807c8f51f8534424f897f40c7f1",
+		"not_before": "2026-08-25T07:04:31Z",
+		"not_after": "2026-11-23T07:04:30Z",
+		"revoked": false
+	},
+	{
+		"id": "16782644479",
+		"tbs_sha256": "88c38fad926bafdb063f71499d3a5ee8d64dddc1971f97ede21a399f4ebb39ec",
+		"cert_sha256": "b893e3b60b440eecda6c3581038b389b1bbef3178ba3c80ce8fa0e9e13c8f342",
+		"dns_names": [
+			"bke.hust.edu.vn"
+		],
+		"pubkey_sha256": "61260473e5836659a1d11da391821b1356db1b27a27f24671617565408af832d",
+		"not_before": "2026-08-26T02:03:11Z",
+		"not_after": "2026-11-24T02:03:10Z",
+		"revoked": false
+	},
+	{
+		"id": "16810928628",
+		"tbs_sha256": "e26a3fc2288f0e47c703ff53998a081843713b3d7275bb28369ee16a9333e119",
+		"cert_sha256": "73f7358cf265c34d4f5fd130e5f7beb3a743acb7a7fdc30744158af8e53cdc93",
+		"dns_names": [
+			"login.icech.hust.edu.vn"
+		],
+		"pubkey_sha256": "960b0e1b50cf9b76e99dbcf94ac868614c2a50a2c4b9277db1d1323e89e9523a",
+		"not_before": "2026-08-27T05:44:53Z",
+		"not_after": "2026-11-25T05:44:52Z",
+		"revoked": false
+	},
+	{
+		"id": "16911834538",
+		"tbs_sha256": "a199b4578279d2aa34cdd36c6e6f5510653bf89a60f9be562b21839c0274a7f6",
+		"cert_sha256": "2b591f8ceb3999bcee69ecd5508b3d0f1ab0ffeeb50c22fc4f414d1c8daacf7a",
+		"dns_names": [
+			"icech.hust.edu.vn"
+		],
+		"pubkey_sha256": "c9cd2ec634b70b014329c06b4a8fd77cb53048911fdd911892f52a5be0fb3cc5",
+		"not_before": "2026-08-31T21:11:21Z",
+		"not_after": "2026-11-29T21:11:20Z",
+		"revoked": false
+	},
+	{
+		"id": "16965236876",
+		"tbs_sha256": "1efe50169726717e6dee44b5227a92cdc0745e8627405cfd469b1cedbb8d7c17",
+		"cert_sha256": "f02649e7887c16e77a0c29718bd3eae1b7f888099703de383940857588e8a271",
+		"dns_names": [
+			"sami.hust.edu.vn"
+		],
+		"pubkey_sha256": "f302e123c47d12d73ca76cb509d827167407308d804b80a8f325db890ae6ae0d",
+		"not_before": "2026-09-03T13:22:49Z",
+		"not_after": "2026-12-02T13:22:48Z",
+		"revoked": false
+	},
+	{
+		"id": "16975118217",
+		"tbs_sha256": "695c8c9076f3094967ca9cdda6c208f62401934d0261f578a908591fea20cf94",
+		"cert_sha256": "3044e71ea8c9da20c21bfb329e01db137a6bf3bd1619027326de77fe6d06f1ac",
+		"dns_names": [
+			"icamt2024.smse.hust.edu.vn"
+		],
+		"pubkey_sha256": "2f97b8e23360b257ab75356fcd6f5abe84c2e1ee52a72dc31d6d5dff53f9aab5",
+		"not_before": "2026-09-04T01:45:35Z",
+		"not_after": "2026-12-03T01:45:34Z",
+		"revoked": false
+	},
+	{
+		"id": "16995994422",
+		"tbs_sha256": "0adf4d85629611d2d5d33ecb42e3e5867b25c59652ac72c10a0ce49ed47f6c85",
+		"cert_sha256": "e0f76dedc3d005c6305435fbbcf6e0762596177d0d80d6dfaa5bbf5ecd537796",
+		"dns_names": [
+			"cms.dkdtlt.hust.edu.vn"
+		],
+		"pubkey_sha256": "25e3824edf51dedd3576328f02e0598f6ce6b267b4ea13cac543bd8dd090d9c7",
+		"not_before": "2026-09-05T03:36:06Z",
+		"not_after": "2026-12-04T03:36:05Z",
+		"revoked": false
+	},
+	{
+		"id": "16996001543",
+		"tbs_sha256": "3f76c961760bef2012111c880e19da663b77b728af01d8367f5c23067c956f7e",
+		"cert_sha256": "b94be9b598685b6602d717215e529b766f8bfe0cb1039ec19c759bc737a3f73b",
+		"dns_names": [
+			"tsdtlt.hust.edu.vn"
+		],
+		"pubkey_sha256": "7ea9d8444a104724b108681414968acaeee82004b8c0623a8dad4985a01279f0",
+		"not_before": "2026-09-05T03:36:58Z",
+		"not_after": "2026-12-04T03:36:57Z",
+		"revoked": false
+	},
+	{
+		"id": "16996008064",
+		"tbs_sha256": "d0708161918a557d4f7a43c2a9403142a08a11c0c92b6b7f07f5161657789192",
+		"cert_sha256": "4ffc321ccf80a2c886ac32b5d6b75c27d221a38778e170476a74994e33e6f99a",
+		"dns_names": [
+			"cms.tsdtlt.hust.edu.vn"
+		],
+		"pubkey_sha256": "1a9bfc4321de70fabe4a59a3deab3922be2a99e12aa9d60f37574f27df74e50c",
+		"not_before": "2026-09-05T03:36:25Z",
+		"not_after": "2026-12-04T03:36:24Z",
+		"revoked": false
+	},
+	{
+		"id": "16996008435",
+		"tbs_sha256": "a1e98a9e17730ddfe5cd80ff003fbdfb3bcf6d2ddf9fab2219ea08fb797b9301",
+		"cert_sha256": "389bbec0b465ea0c3686a1ed52481ce81174f0560f006d7ffa58b064800acc17",
+		"dns_names": [
+			"dkdtlt.hust.edu.vn"
+		],
+		"pubkey_sha256": "c4b30fa730dcad8d4da0907aaef1c27c018373726cdc34b602a4c3dc078266e1",
+		"not_before": "2026-09-05T03:36:40Z",
+		"not_after": "2026-12-04T03:36:39Z",
+		"revoked": false
+	},
+	{
+		"id": "17003294461",
+		"tbs_sha256": "c8564cdeccf5e086e178d12153b14bec6158eecdd5d491e09e6ac6bc7d02b688",
+		"cert_sha256": "5501aa472e1dbba390871d9a1296630b8605d38f1b73424a3e27dbe05ea101c1",
+		"dns_names": [
+			"bksign.hust.edu.vn"
+		],
+		"pubkey_sha256": "8ff8e6cd826c0268d3821771a17eec9cf0d35de6d60313fb8e5013e151e062b9",
+		"not_before": "2026-09-05T13:27:27Z",
+		"not_after": "2026-12-04T13:27:26Z",
+		"revoked": false
+	},
+	{
+		"id": "17003303364",
+		"tbs_sha256": "5173eb510b6e9ffc8848fb6211d8dcdd7c360ba4b358999f3628fd6aa6c782a9",
+		"cert_sha256": "fb149895a91b99708850704374aebccef55a52ac504fb2e019d3ce498c49dfb1",
+		"dns_names": [
+			"crl-intermediate-ca.hust.edu.vn"
+		],
+		"pubkey_sha256": "bc1bebd8b73d4599cae6e6f15d50c11d07c8f305c1a77a8125bd9b7bd69ccee6",
+		"not_before": "2026-09-05T13:28:35Z",
+		"not_after": "2026-12-04T13:28:34Z",
+		"revoked": false
+	},
+	{
+		"id": "17003306280",
+		"tbs_sha256": "87f797e865df1c5c5205cb1e84bb3caec4eadc85bfd22b0222a29aa15bfb2066",
+		"cert_sha256": "73c5687b2b6d0e59006f017856bcbf4a82fab3848eb27b82b3233f36d014b6f7",
+		"dns_names": [
+			"test.hust.edu.vn"
+		],
+		"pubkey_sha256": "1a6324b1746add0e840b4b5aec9c53b9bbdec985297465ae386998e843da93da",
+		"not_before": "2026-09-05T13:27:57Z",
+		"not_after": "2026-12-04T13:27:56Z",
+		"revoked": false
+	},
+	{
+		"id": "17003311123",
+		"tbs_sha256": "b22c7e9dfc628734ebaa3237420544b6d0fa56cabc5a62e37693629c1ab3b0aa",
+		"cert_sha256": "662d3fd8a5280f5ed0aae80a341e2fec3f5a829420fcb9b76c5b16a59ce5b1f4",
+		"dns_names": [
+			"credentials-manager.bksign.hust.edu.vn"
+		],
+		"pubkey_sha256": "088567056cfacc6d6b2b7003176e4aa2839d7456f9da6128a1b4788fd3dda9c4",
+		"not_before": "2026-09-05T13:27:51Z",
+		"not_after": "2026-12-04T13:27:50Z",
+		"revoked": false
+	},
+	{
+		"id": "17003318495",
+		"tbs_sha256": "02704ed4af9c1c9009cabb0cfbd2b87f9cfed978857c05a556c5389db52723a8",
+		"cert_sha256": "bd70fd5e8d5d8c4623ae9df16ee8c1228ebe5aa164a54dd597f59dbeb1a60fc2",
+		"dns_names": [
+			"file-server.bksign.hust.edu.vn"
+		],
+		"pubkey_sha256": "43c8ddd37f5ede312a2a3373d460cdbe9b1c1b0528b83c404b92184705c7204b",
+		"not_before": "2026-09-05T13:29:21Z",
+		"not_after": "2026-12-04T13:29:20Z",
+		"revoked": false
+	},
+	{
+		"id": "17003335989",
+		"tbs_sha256": "1a1e5b50d3c1cf2a63f53702250473180931cc34e61e309f6d570bfbed293af3",
+		"cert_sha256": "d7807a6fbe03480a0d04ad46dbde196f9e1ee03a1795b6eaa82995bc4686bbf0",
+		"dns_names": [
+			"crl-root-ca.hust.edu.vn"
+		],
+		"pubkey_sha256": "6ea3946f15feee0705e7dee3817c3a180a2e9cd482961f92f0696acbebbc9849",
+		"not_before": "2026-09-05T13:28:55Z",
+		"not_after": "2026-12-04T13:28:54Z",
+		"revoked": false
+	},
+	{
+		"id": "17003336481",
+		"tbs_sha256": "0902500c3608f165e72c85adbe363388fecad79cfd298b9c5c3a77e70abea8ae",
+		"cert_sha256": "5df33d4fde98492fe94cc5c26e13aea1647a7c401b42fe91300eca74acaeb8e3",
+		"dns_names": [
+			"intermediate-ca.hust.edu.vn"
+		],
+		"pubkey_sha256": "65fb4029b15bc66b4391be2022acab5d8ee941ca6504167964dfb99064488802",
+		"not_before": "2026-09-05T13:30:20Z",
+		"not_after": "2026-12-04T13:30:19Z",
+		"revoked": false
+	},
+	{
+		"id": "17003340686",
+		"tbs_sha256": "50ab48fb1723100e3c89b31d206cbf93216f7a006604d649c0d3dcf6e75fe173",
+		"cert_sha256": "05ccef3e5cc9b36bcdabb507e8e1b57e37fec0d2a80a9f710ff5463be4267861",
+		"dns_names": [
+			"ocsp-intermediate-ca.hust.edu.vn"
+		],
+		"pubkey_sha256": "38d8464bf373a99ef8af373f8601ba96de0936c8def00c97b65c5f7996843f24",
+		"not_before": "2026-09-05T13:30:44Z",
+		"not_after": "2026-12-04T13:30:43Z",
+		"revoked": false
+	},
+	{
+		"id": "17003350745",
+		"tbs_sha256": "8d7c5e04cec060b6cc8b95401ba953d25e3865b946536bccd75acb6a881c82dc",
+		"cert_sha256": "1da6d707fd320ef98f462ab9aee291484599f62529a33bea586ac3af64961931",
+		"dns_names": [
+			"pdf-signer.bksign.hust.edu.vn"
+		],
+		"pubkey_sha256": "a9f541288db747e36516dddaba8b9c50ad6c605443202a44e83a0066c838cd7f",
+		"not_before": "2026-09-05T13:31:54Z",
+		"not_after": "2026-12-04T13:31:53Z",
+		"revoked": false
+	},
+	{
+		"id": "17003356078",
+		"tbs_sha256": "1eee7f48a9eb6b35c9347559b33e6cb52b3f9afd385a42bbdf468c92ae3b6c89",
+		"cert_sha256": "cee98796dff682a8b18b3311ad57ed1b0fd68ce69178af2bf4988a4588f04323",
+		"dns_names": [
+			"ocsp-root-ca.hust.edu.vn"
+		],
+		"pubkey_sha256": "43d913c1265d3864878fcd621a71f9a93a0b1c98b30aa45b36742165dc63b99c",
+		"not_before": "2026-09-05T13:31:07Z",
+		"not_after": "2026-12-04T13:31:06Z",
+		"revoked": false
+	},
+	{
+		"id": "17003356730",
+		"tbs_sha256": "62ff5274de4dfe0ac0762244da643cb5c9df5192634cfdec732f8473ca6b9be2",
+		"cert_sha256": "592daf5441a60539fa1311d1593d35a07d6ac7a1344ce5300119109214520bb7",
+		"dns_names": [
+			"pdf-generator.bksign.hust.edu.vn"
+		],
+		"pubkey_sha256": "900a1f828ac5c93754a903357f7eb614ba04aa1eaa4ff896bc766e22114eba44",
+		"not_before": "2026-09-05T13:31:32Z",
+		"not_after": "2026-12-04T13:31:31Z",
+		"revoked": false
+	},
+	{
+		"id": "17003359118",
+		"tbs_sha256": "9bb58187d7687792cabc6c0f695518a94951aa4f8df8a61ab10e57b10af68fb2",
+		"cert_sha256": "35bd4196f0d20b92821f7fa3f7dd3ddce11d9eccb14be1dd9832f7bf954d7f9f",
+		"dns_names": [
+			"signature-processor.bksign.hust.edu.vn"
+		],
+		"pubkey_sha256": "96468eb8934de93c7c469ab855de31931104ba91c6f38ad68434ab49fd25cdc2",
+		"not_before": "2026-09-05T13:32:14Z",
+		"not_after": "2026-12-04T13:32:13Z",
+		"revoked": false
+	},
+	{
+		"id": "17003365162",
+		"tbs_sha256": "a3dbf5ba57112b1456d7f598e7d3b0addc9cf830ed95688db23a8a4365213c53",
+		"cert_sha256": "b3c7770bec2c287202367c8a111cef6b6c0542f26aa324dbe6178e83d6c57471",
+		"dns_names": [
+			"totp.bksign.hust.edu.vn"
+		],
+		"pubkey_sha256": "70b7192d88aa55c4ad3540af372ca9b4ff2f24d7df9d4f3933971d73ccea7a56",
+		"not_before": "2026-09-05T13:32:35Z",
+		"not_after": "2026-12-04T13:32:34Z",
+		"revoked": false
+	},
+	{
+		"id": "17025234045",
+		"tbs_sha256": "b0eedc4e18b8a63f18ab8b3e1d974bbceb58c77105e32543d760141aa8a75764",
+		"cert_sha256": "e6b3af748a1a387190373ac519122292e5bef26b9e1e7e5391281beb9a9126e8",
+		"dns_names": [
+			"icpmat-icamt.hust.edu.vn"
+		],
+		"pubkey_sha256": "7dd56adf9ae4966343f07fdc598478ff1483ce90572857a3653f1e7cd2806ef6",
+		"not_before": "2026-09-06T17:37:42Z",
+		"not_after": "2026-12-05T17:37:41Z",
+		"revoked": false
+	},
+	{
+		"id": "17062175514",
+		"tbs_sha256": "df02a1552c6e104b281a3f4005128cc1c92e5b9034a7ebb8268c026b24d29987",
+		"cert_sha256": "9dc9b1af9b5b34e7820108ff7faa40b9be18784ab67014c5cb4e737ce04fbcc8",
+		"dns_names": [
+			"bme.hust.edu.vn"
+		],
+		"pubkey_sha256": "02739aa11b4e7cbc287b3ffd42666b46ff028cf6845532a1bf86a59e008a68a6",
+		"not_before": "2026-09-08T16:12:42Z",
+		"not_after": "2026-12-07T16:12:41Z",
+		"revoked": false
+	},
+	{
+		"id": "17101697135",
+		"tbs_sha256": "33781b49698dc8a9e78cf27368f86761a23e9dca785d22133fb88117bb21c669",
+		"cert_sha256": "3d028cb324a7bc74ea111ce27e9aff2b7ddaa3d0670d19f51d16df3861f1eaab",
+		"dns_names": [
+			"www.stc.hust.edu.vn"
+		],
+		"pubkey_sha256": "4337734573c2e4f996dd4549e24362cf21ab742d9078914e5dfef1f79e3d954f",
+		"not_before": "2026-09-10T14:22:44Z",
+		"not_after": "2026-12-09T15:13:15Z",
+		"revoked": false
+	},
+	{
+		"id": "17182162118",
+		"tbs_sha256": "46761edaf9c5ee866ca7ded5c3d7db827cedfc24b8cdb258504882809c2701bd",
+		"cert_sha256": "775b68eaa954992e2a26dcfa1b66032f52b55ffdf66f7cb6659c1a47a59aa35c",
+		"dns_names": [
+			"srn.hust.edu.vn"
+		],
+		"pubkey_sha256": "6b8f47296f6d37d4814296780fa2b03967844a2b10f51b829f6d0467ac3a5e3e",
+		"not_before": "2026-09-14T23:15:18Z",
+		"not_after": "2026-12-13T23:15:17Z",
+		"revoked": false
+	},
+	{
+		"id": "17208313082",
+		"tbs_sha256": "5ac268a1e9f96d2814476a85180e21da3f530d8f9a572ea3f0830a16cb8747c8",
+		"cert_sha256": "e80725177f4f6517011864026b6088a5461d79b6fd34d0d7b954749f8088e893",
+		"dns_names": [
+			"asgc9.hust.edu.vn"
+		],
+		"pubkey_sha256": "13cc4d83a5b0c0a58fba1d15729561474f7e24a0bc9740671ebb300bd25b8541",
+		"not_before": "2026-09-16T07:39:34Z",
+		"not_after": "2026-12-15T07:39:33Z",
+		"revoked": false
+	},
+	{
+		"id": "17208314945",
+		"tbs_sha256": "8cec5f416ada0325e78f2a2e1ada6199ab7c144cb952f2bdb7106b1f3572dcde",
+		"cert_sha256": "823c855dad272f7d961e21b4b8bbcc645cbd6d8af52b5ffbedb7384366b87687",
+		"dns_names": [
+			"apcat.hust.edu.vn"
+		],
+		"pubkey_sha256": "fbcc56f393ef5a6abff152b6b7e1c6bee49ee7d0d39dacd2a8c4c83001be523c",
+		"not_before": "2026-09-16T07:39:09Z",
+		"not_after": "2026-12-15T07:39:08Z",
+		"revoked": false
+	},
+	{
+		"id": "17208324917",
+		"tbs_sha256": "cd3ef7671909d89b329e716793af52a0e4856c5a399c4817a7181bfef8ff3842",
+		"cert_sha256": "b1a424c32c0e9ad499bda2e81eac340c7e7afdb9b218350ea148aa8e55c2c600",
+		"dns_names": [
+			"bulletin.hust.edu.vn"
+		],
+		"pubkey_sha256": "63952588d74ff5aa6641452a6b1e7f455067e0659cfa7de661ce6dd7f44f419d",
+		"not_before": "2026-09-16T07:40:24Z",
+		"not_after": "2026-12-15T07:40:23Z",
+		"revoked": false
+	},
+	{
+		"id": "17208334693",
+		"tbs_sha256": "615e6b7bf414449391c550adb2deef6ab180b60f4440612ff686c5d046c2d9ad",
+		"cert_sha256": "19601a5731bf3ec0849b52de3f2160a05b47ba06ecfd51d2e6a04f6375b1b0c4",
+		"dns_names": [
+			"bioinfo-lab.hust.edu.vn"
+		],
+		"pubkey_sha256": "7b1a81d7c6e75232944ce71be632e92c495cf3143ae57d60ddbe44c173305bfb",
+		"not_before": "2026-09-16T07:39:58Z",
+		"not_after": "2026-12-15T07:39:57Z",
+		"revoked": false
+	},
+	{
+		"id": "17208336644",
+		"tbs_sha256": "dd394d4f14bb9eea36bc1a4f2e42e40bb2c28c83e45e636763070a0496a71ecf",
+		"cert_sha256": "53c88d3f38799bbbe348aeb69ff3540eb0906eeacee2eae5c4cadbb83fd43a60",
+		"dns_names": [
+			"ichst.hust.edu.vn"
+		],
+		"pubkey_sha256": "4c454077873343b37943d1b550f9c52ede251a4174b25d07dc17c54f6441f788",
+		"not_before": "2026-09-16T07:41:33Z",
+		"not_after": "2026-12-15T07:41:32Z",
+		"revoked": false
+	},
+	{
+		"id": "17208339962",
+		"tbs_sha256": "4aed97b0da356a0cae4e45ec4bdd469514515e6b438557f7e29ca85e709cc866",
+		"cert_sha256": "96e76d3f953c3e1e8ca2eb5a2bb24dfe5b7d33ce6579dd6724979c0325fe660c",
+		"dns_names": [
+			"kadict.hust.edu.vn"
+		],
+		"pubkey_sha256": "55210d54d76df49532efaa17a59df85390a22ffaebbd7ddcbc42d2ce10876c77",
+		"not_before": "2026-09-16T07:41:58Z",
+		"not_after": "2026-12-15T07:41:57Z",
+		"revoked": false
+	},
+	{
+		"id": "17208343218",
+		"tbs_sha256": "19cec625f24d0db3c69bb87f9a62a472bf184d97676b79c8eb19cec77d483133",
+		"cert_sha256": "fa5caec9ce26c8afea47e02711a1562b502d3d4afd8a3932a251827844641908",
+		"dns_names": [
+			"event.hust.edu.vn"
+		],
+		"pubkey_sha256": "3716c1cd9722f9e074cba12d7769ea36f6c757338f2381a7e6f3750accb10cb9",
+		"not_before": "2026-09-16T07:40:47Z",
+		"not_after": "2026-12-15T07:40:46Z",
+		"revoked": false
+	},
+	{
+		"id": "17208348492",
+		"tbs_sha256": "548f2adf797a0ada5bc1dff404dd74931500a0e79537485b0b67372276a1739b",
+		"cert_sha256": "4491490390e888e941018cf2386a895cb923a5085bc5ff7036a1871573c4bba9",
+		"dns_names": [
+			"icef.hust.edu.vn"
+		],
+		"pubkey_sha256": "ecd24bd089bd4634672bacb42f7f2045a96a70abd38a25cb0e9ce55463f77255",
+		"not_before": "2026-09-16T07:41:10Z",
+		"not_after": "2026-12-15T07:41:09Z",
+		"revoked": false
+	},
+	{
+		"id": "17208357332",
+		"tbs_sha256": "0faa5b14123dd359ad490ec871a20eda23117878148fbe8bde5391cccbc7cb23",
+		"cert_sha256": "74fa20bdc7d042306c03891c4870770b2969517a658762b3fd3d5f6ca3bc22b7",
+		"dns_names": [
+			"mmms.hust.edu.vn"
+		],
+		"pubkey_sha256": "e5126f5cdc89d8df8456b32df2b28989c2ebd0054badf70ddb5f880c775c61fe",
+		"not_before": "2026-09-16T07:42:20Z",
+		"not_after": "2026-12-15T07:42:19Z",
+		"revoked": false
+	},
+	{
+		"id": "17208369137",
+		"tbs_sha256": "aa5715d5768245bd7020e6d6f119aca6330473b2d028279f60e51eed6ba3bcbc",
+		"cert_sha256": "2b872c57a9174c69b97fb273bf4b0a70d503d58237aef705d9d9a584ac228f58",
+		"dns_names": [
+			"sep.hust.edu.vn"
+		],
+		"pubkey_sha256": "b0ab54857ed188cf874738bf9816c09243b446756ad9ca8f68486a21a8bb6382",
+		"not_before": "2026-09-16T07:43:33Z",
+		"not_after": "2026-12-15T07:43:32Z",
+		"revoked": false
+	},
+	{
+		"id": "17208376409",
+		"tbs_sha256": "c3d20b6336d1fa1b9e72dfba9bee378c5892f5c24ee548b1960d4de8d45ea063",
+		"cert_sha256": "98cb4f32b66bf7900521199e9e343da63533bcd9094e5a9bc8f2c0e4c7939bd9",
+		"dns_names": [
+			"seee-dev.hust.edu.vn"
+		],
+		"pubkey_sha256": "54f2da2d44276d99093626f76577b0ebbd87e2b7afccc4b8451424a838c65511",
+		"not_before": "2026-09-16T07:42:43Z",
+		"not_after": "2026-12-15T07:42:42Z",
+		"revoked": false
+	},
+	{
+		"id": "17208384978",
+		"tbs_sha256": "8f48c1f0d26b7fda333a9d081b964fcdeb7df59edc0961135253de48f19b663b",
+		"cert_sha256": "cf85e6a4185b2df6eba3d5b18229131063bb118ebad3573a59f5746824ef3aa3",
+		"dns_names": [
+			"seee.hust.edu.vn"
+		],
+		"pubkey_sha256": "5aff8c5fdfb8c9e6b77ae0422125fd06108b0ae91c0433890592d442d994e8d8",
+		"not_before": "2026-09-16T07:43:08Z",
+		"not_after": "2026-12-15T07:43:07Z",
+		"revoked": false
+	},
+	{
+		"id": "17253549116",
+		"tbs_sha256": "b9a515f41ef5525dc085490d87d9dd759cc097059a4a79c1d5edf76f1543744a",
+		"cert_sha256": "9e82df31e18a23c29869433a75c3e7ea26652df2843941a895eb1d5a7b37c50c",
+		"dns_names": [
+			"api.giving.hust.edu.vn",
+			"giving.hust.edu.vn",
+			"storage.giving.hust.edu.vn",
+			"vtb.giving.hust.edu.vn"
+		],
+		"pubkey_sha256": "50071da2025097b7bd53c1b2c5ade040b2ac03cc6242213d9f94620a462165de",
+		"not_before": "2026-09-18T09:18:42Z",
+		"not_after": "2026-12-17T09:18:41Z",
+		"revoked": false
+	},
+	{
+		"id": "17273508194",
+		"tbs_sha256": "bdfa513c1683438e9ec57df238ad5a93196c419a6e6443bd8f35cbd31bdd976d",
+		"cert_sha256": "63138d2155687cd6d61918a91fab9ef072b7dc4adf56f8a7f2f4bf99416e863f",
+		"dns_names": [
+			"api.giving.hust.edu.vn",
+			"giving.hust.edu.vn",
+			"storage.giving.hust.edu.vn",
+			"vtb.giving.hust.edu.vn"
+		],
+		"pubkey_sha256": "b42dda71477cb5f8de28e7c64bcd1e3ca761a32e0cbffc58de386455c3d6e067",
+		"not_before": "2026-09-19T07:24:09Z",
+		"not_after": "2026-12-18T07:24:08Z",
+		"revoked": false
+	},
+	{
+		"id": "17274301002",
+		"tbs_sha256": "2726ba35a1ab268208863dd486e5d64ce26c7535856cdefdb686b510a488f2c8",
+		"cert_sha256": "acdc51f192d7d089a7dd17604c4c844f7662e11c892b1851f5d67441b488dd5e",
+		"dns_names": [
+			"api.giving.hust.edu.vn",
+			"giving.hust.edu.vn",
+			"portal.giving.hust.edu.vn",
+			"sso.giving.hust.edu.vn",
+			"storage.giving.hust.edu.vn",
+			"vtb.giving.hust.edu.vn"
+		],
+		"pubkey_sha256": "9f251dad4bf27c7db8cff23d0e89e9d226fd3410eae998e625bf900e025b89ea",
+		"not_before": "2026-09-19T08:16:28Z",
+		"not_after": "2026-12-18T08:16:27Z",
+		"revoked": false
+	},
+	{
+		"id": "17277711880",
+		"tbs_sha256": "1a3f9df5699920edbb54aa235588578a37dafd1a09fb5aacd0477e414814f256",
+		"cert_sha256": "2f6a0cead62026e5ae8760283a360b87dad03819dca5178afdeb154bf58b980d",
+		"dns_names": [
+			"lms-sme.hust.edu.vn"
+		],
+		"pubkey_sha256": "453ef2d8b63bffc92dd077e56c0e59b621d6c9c714c117cefcb205d8441c2c4f",
+		"not_before": "2026-09-19T12:05:01Z",
+		"not_after": "2026-12-18T12:05:00Z",
+		"revoked": false
+	},
+	{
+		"id": "17280532121",
+		"tbs_sha256": "465e0e0dd8c09b3230755d8aa8ca4ab06b68f37887bb0c8b7aa7de25d45e0db3",
+		"cert_sha256": "9c282526de8e7699b247dbd7bdf208bb02171ca026ad1da4cb0dd0af6b4739f0",
+		"dns_names": [
+			"soict.hust.edu.vn"
+		],
+		"pubkey_sha256": "627e7c6f3360bacd4a3796f8917fcffdaebd2bc0ad902647b08dfaf4ceb20d88",
+		"not_before": "2026-09-19T15:13:29Z",
+		"not_after": "2026-12-18T15:13:28Z",
+		"revoked": false
+	},
+	{
+		"id": "17302023023",
+		"tbs_sha256": "85406e62886fdba12972b0da2fc42cd51b19797d70663376f8741c6860dfeb03",
+		"cert_sha256": "2445f4dbf46bd8c67450e670180f9c6c37026c2821b06ceb9be2340aa1b32968",
+		"dns_names": [
+			"exam.soict.hust.edu.vn"
+		],
+		"pubkey_sha256": "1f2fafc799465c912bc7faee25c1d5ee6b654f1c0eccc99843aa5721f5f79b12",
+		"not_before": "2026-09-20T16:44:57Z",
+		"not_after": "2026-12-19T16:44:56Z",
+		"revoked": false
+	},
+	{
+		"id": "17332367791",
+		"tbs_sha256": "b043a89aa3a2adf8487dcdfa4c27976bdcd2e55b0538eab3b28fe88b874dc7b6",
+		"cert_sha256": "3297b3b58b522e86381ec3ab7b5b717d02fe96ef3b09cacbf9a3025377f37edc",
+		"dns_names": [
+			"ts-hn.hust.edu.vn"
+		],
+		"pubkey_sha256": "789e35e287aef02f47d0092841cbc5947afb2d58ac1fe5d0f5382cb17cb50276",
+		"not_before": "2026-09-22T01:55:49Z",
+		"not_after": "2026-12-21T01:55:48Z",
+		"revoked": false
+	},
+	{
+		"id": "17337093939",
+		"tbs_sha256": "2f7dde29f80c3c04827e64e9ce198b565083213e7c0c387986c6a0dca0e8103a",
+		"cert_sha256": "384370abc3047fd2d8bc444408965959cfc6bc14939ba106dd9ec9b520a18382",
+		"dns_names": [
+			"tsngoaingu.hust.edu.vn"
+		],
+		"pubkey_sha256": "1b19ec41f8c0afe7b110a6a104325381916e2169777e6403a8e8c3f03e5f6caf",
+		"not_before": "2026-09-22T07:20:46Z",
+		"not_after": "2026-12-21T07:20:45Z",
+		"revoked": false
+	},
+	{
+		"id": "17337105534",
+		"tbs_sha256": "7db073ad6b3085adb8d0458407c2960710de27e3cbd3bcc440418a4bea9c2cb8",
+		"cert_sha256": "e6449708ab3e5a511587a69b86035514ee56f8178a4b7ab858001ff7bff54faa",
+		"dns_names": [
+			"tsngoaingu.hust.edu.vn"
+		],
+		"pubkey_sha256": "37636d5118d0633bb630c541a398a7699c6426efcdb28138072a9931a97bb06e",
+		"not_before": "2026-09-22T07:21:17Z",
+		"not_after": "2026-12-21T07:21:16Z",
+		"revoked": false
+	},
+	{
+		"id": "17356609425",
+		"tbs_sha256": "5bd5ff09647f4f91273742945e1cd9dddacd4939cc5a7f73ff5095698a755f12",
+		"cert_sha256": "c733daedb1f420cc38cb971f778d4441f8efa99a3c4bbdd67bf756935f4afec7",
+		"dns_names": [
+			"congdoan-meta.hust.edu.vn"
+		],
+		"pubkey_sha256": "7b5b98a8d1e48927e60c482b3f8f72808b9e0b614fe28b55cc3137e7ad499f2b",
+		"not_before": "2026-09-23T03:04:54Z",
+		"not_after": "2026-12-22T03:04:53Z",
+		"revoked": false
+	},
+	{
+		"id": "17381932432",
+		"tbs_sha256": "670903d6cef0fe461d72d34f6cf4be1b0d23686663176235c889093ff5a242a1",
+		"cert_sha256": "312db7936655e762ee61257664a99a6a8ca4e4d27955776ae004d6463516d1ba",
+		"dns_names": [
+			"api-uat.giving.hust.edu.vn",
+			"api.giving.hust.edu.vn",
+			"giving.hust.edu.vn",
+			"portal-uat.giving.hust.edu.vn",
+			"portal.giving.hust.edu.vn",
+			"sso.giving.hust.edu.vn",
+			"storage.giving.hust.edu.vn",
+			"uat.giving.hust.edu.vn",
+			"vtb-uat.giving.hust.edu.vn",
+			"vtb.giving.hust.edu.vn"
+		],
+		"pubkey_sha256": "36f4e89237c16870b62ea25a77be0069c6edbfc695156585f00124f655ba5387",
+		"not_before": "2026-09-24T07:14:05Z",
+		"not_after": "2026-12-23T07:14:04Z",
+		"revoked": false
+	},
+	{
+		"id": "17387703446",
+		"tbs_sha256": "3965da18a2ab80a452d9b5dff781a8e8d261bd2c7b1d326cd5e31f4be352cbc1",
+		"cert_sha256": "2aa818aa141b7fe6f930b48f503bde40fd3480cfc96e1aad5f8d2da118c79312",
+		"dns_names": [
+			"www.e-jst.hust.edu.vn"
+		],
+		"pubkey_sha256": "3a315e566e97109998d1e5b65b2f63defd29912e11498ecb57cab37c1c810708",
+		"not_before": "2026-09-24T13:31:28Z",
+		"not_after": "2026-12-23T14:19:59Z",
+		"revoked": false
+	},
+	{
+		"id": "17404347282",
+		"tbs_sha256": "f821a86630b14af863418100098f718b0bf356a7edf559c4c2fb3fa7ab932ae0",
+		"cert_sha256": "cf0c45325dfe7aee353ef2bceb131bbade7135291f1c4a6a0082d4d9cc6c888c",
+		"dns_names": [
+			"asiaccs2025.hust.edu.vn"
+		],
+		"pubkey_sha256": "1f48688d5cbee4e7cbe13c3065a1c85dcb279a0864d41d38ec41de02ac6176cb",
+		"not_before": "2026-09-25T09:34:59Z",
+		"not_after": "2026-12-24T09:34:58Z",
+		"revoked": false
+	},
+	{
+		"id": "17431821067",
+		"tbs_sha256": "af7688e9fa7f4f0698ca195570b54585a25403f354136136fbf4548553d42c96",
+		"cert_sha256": "534a8b9b4a990e37be179d132aaf6fab602c062740481ff56d2dde48390381e4",
+		"dns_names": [
+			"hosting-cwp152.hust.edu.vn"
+		],
+		"pubkey_sha256": "0b17e4888e4fc37f71686392d41d9da87ee1de75ce94b1733385dc7f3dde6d35",
+		"not_before": "2026-09-26T19:46:50Z",
+		"not_after": "2026-12-25T19:46:49Z",
+		"revoked": false
+	},
+	{
+		"id": "17457905789",
+		"tbs_sha256": "2c4217ea2bef15756c728fa939292a7257f434a37be6e76337cd47d23a1ca532",
+		"cert_sha256": "16062c9e8b0af3a066fdc13dfab7e389f2711ed544d58d7094afa7be4033cba9",
+		"dns_names": [
+			"hust-dev.hust.edu.vn"
+		],
+		"pubkey_sha256": "78492c43c8fc00260206c958324167af2ee4adb6e03a88026cf0fd2bee578514",
+		"not_before": "2026-09-28T07:18:32Z",
+		"not_after": "2026-12-27T07:18:31Z",
+		"revoked": false
+	},
+	{
+		"id": "17500889456",
+		"tbs_sha256": "d80528e4cecd7cd9039ef7f48dced3df5b38ee73ae950c7da2a003f5ab34eac5",
+		"cert_sha256": "b2dec9213aa409e4f863a7dd07e0fcdc053a840b52b19149e2d2912b9532a94d",
+		"dns_names": [
+			"sami.hust.edu.vn"
+		],
+		"pubkey_sha256": "a8777e9f7b12cffe20ec6b2417ea4022d0708bff8291ee4805ff9a73e1230eeb",
+		"not_before": "2026-09-30T12:34:47Z",
+		"not_after": "2026-12-29T12:34:46Z",
+		"revoked": false
+	},
+	{
+		"id": "17529277659",
+		"tbs_sha256": "f6520c7caa7ad27fbcdf273462d748c8c2b517023e4763212454d8fe32cfb0a9",
+		"cert_sha256": "1e7967a0c7c841a9a87fefeb0c534cef0591ab045ae790692c7aa38df92ab8ad",
+		"dns_names": [
+			"sem.hust.edu.vn"
+		],
+		"pubkey_sha256": "dc6fac38ae116b7dfea653c4cc5788082acd35f9dd625d671a4eb5006bfbc876",
+		"not_before": "2026-10-01T21:21:53Z",
+		"not_after": "2026-12-30T21:21:52Z",
+		"revoked": false
+	},
+	{
+		"id": "17573109052",
+		"tbs_sha256": "2c9c4aa3c82782183859264374b4e179ac5a9fa8da031fcc385a5c660c5fcce4",
+		"cert_sha256": "bf20d70cee9d97aa977b81bd70207b78d00045bbefb9832591cd222beb23dc4d",
+		"dns_names": [
+			"lms.fintech.hust.edu.vn"
+		],
+		"pubkey_sha256": "2b57b9bfc4e00e9e8f3b8a1b264516785f64a786943280e9b77ed115d38c78a9",
+		"not_before": "2026-10-04T04:20:28Z",
+		"not_after": "2027-01-02T04:20:27Z",
+		"revoked": false
+	},
+	{
+		"id": "17586081683",
+		"tbs_sha256": "85ee20693c1621b7731a676222a06bcff9a3f0800ec7cc2d4ececdfb31e3a104",
+		"cert_sha256": "52a1809a8bdaabf5775a1072263c459cb6305d0b8c0f70bc2b237e893c0d395c",
+		"dns_names": [
+			"thinoiboclc.hust.edu.vn"
+		],
+		"pubkey_sha256": "df4a6ed17ceb7ca177b1b953200362e99d73b71de856c2a7f7a0c560c7ae2b40",
+		"not_before": "2026-10-04T20:43:55Z",
+		"not_after": "2027-01-02T20:43:54Z",
+		"revoked": false
+	},
+	{
+		"id": "17595739904",
+		"tbs_sha256": "bd827fb9099debf0c71884f51684783f765605e78d8c270a235c1457ac368253",
+		"cert_sha256": "cc6afbbd5ab8e99d221b3c2baa1dbcb067b3e699cc14cc74acd0cdfcc780e693",
+		"dns_names": [
+			"exam.hust.edu.vn"
+		],
+		"pubkey_sha256": "083fa819c1ad38ff506094deacd8debeee75bbddc9b8cc3d8db4cb1cb0d2d7bc",
+		"not_before": "2026-10-05T07:52:19Z",
+		"not_after": "2027-01-03T07:52:18Z",
+		"revoked": false
+	},
+	{
+		"id": "17602575304",
+		"tbs_sha256": "ad48aa54302a3a25c33270d59bf2e6f27657c95d4f2759207fd9f4ce56e53054",
+		"cert_sha256": "4ca4f2b7ec77f627ff74d1e17b21f86feb3dc92b06e04490aa1f4b96fdb5ad49",
+		"dns_names": [
+			"test.hust.edu.vn"
+		],
+		"pubkey_sha256": "30a48718e1f0691cbf083f5e28f6ffb19946ab0b32447e0f0573717cff103d35",
+		"not_before": "2026-10-05T15:32:38Z",
+		"not_after": "2027-01-03T15:32:37Z",
+		"revoked": false
+	},
+	{
+		"id": "17607148160",
+		"tbs_sha256": "cd8ee372d87a348cc19c679a90e0ff338d8a83ef12d0f867e8f2eb11f7538a3b",
+		"cert_sha256": "fd24a89fb753b45f1969fd5254feb583ff5dabc34db98745116de2c0340a9f2c",
+		"dns_names": [
+			"exam.hust.edu.vn"
+		],
+		"pubkey_sha256": "cd461cafc4f556d3280a8a4f66e4abde4401a2c095943c3c446ce1968e2154fc",
+		"not_before": "2026-10-05T20:55:52Z",
+		"not_after": "2027-01-03T20:55:51Z",
+		"revoked": false
+	},
+	{
+		"id": "17631575236",
+		"tbs_sha256": "a88aca4b5fc1e55bbc6eebc6bc78fbdcfec808f3c0f6ef103426fc1e01bb2cbf",
+		"cert_sha256": "893d0ec1a7c7d2f2ebef945703511754176512d359145410875364ca270dd63f",
+		"dns_names": [
+			"e-jst.hust.edu.vn"
+		],
+		"pubkey_sha256": "8471979096c416c76d5f59b9bc9bd6851d108906efbac120df62878034da0727",
+		"not_before": "2026-10-07T01:14:16Z",
+		"not_after": "2027-01-05T02:02:46Z",
+		"revoked": false
+	},
+	{
+		"id": "17642621316",
+		"tbs_sha256": "bb606fd5914748cd49420a958da4f1e5f258aca67e32101f9d686d4879dfcb09",
+		"cert_sha256": "46b54985fe18d5aab95fb3e0b12525c7ecb1a655ae385138b1313b8598d625be",
+		"dns_names": [
+			"www.esso.hust.edu.vn"
+		],
+		"pubkey_sha256": "0145949a693c88515989a828d27170ff5aa69986cee8839c5e1333299227ee04",
+		"not_before": "2026-10-07T13:46:42Z",
+		"not_after": "2027-01-05T14:37:13Z",
+		"revoked": false
+	},
+	{
+		"id": "17653054008",
+		"tbs_sha256": "dcad138685e6b7109248822119623a1e2452066a67414bd731ffe10df54c9794",
+		"cert_sha256": "9ac7244550d6f85e1e0510074188fed20567b67ee354207cd267b1880bcfdbe3",
+		"dns_names": [
+			"fami.hust.edu.vn"
+		],
+		"pubkey_sha256": "a98a95a2a9bd4ec8a6a9da3da24bf7655217633a50119ab5445105113e51f676",
+		"not_before": "2026-10-08T01:58:39Z",
+		"not_after": "2027-01-06T01:58:38Z",
+		"revoked": false
+	},
+	{
+		"id": "17693066030",
+		"tbs_sha256": "b83d8f3c2bbc3c9c0e75451e4b444f5939ff81616aed8e59ed717bfd7b718525",
+		"cert_sha256": "ee80b763eecab0adcb8e046cd6dabcfdea3d1a74e1232dbbb24217beee5a9bf6",
+		"dns_names": [
+			"edumap.hust.edu.vn"
+		],
+		"pubkey_sha256": "ff853ee1c42aeb1b4eb17bd0ce4a8be85d243cd6e567722a566cb5d670a85659",
+		"not_before": "2026-10-09T22:02:04Z",
+		"not_after": "2027-01-07T22:02:03Z",
+		"revoked": false
+	},
+	{
+		"id": "17696061645",
+		"tbs_sha256": "85e902892b4b0d718bca2c64e7c5f499435f085db7df7a4027fa9296cd35e4b7",
+		"cert_sha256": "090ededf2a6e1d14f506c3d3b0d755435429abc2f22deadbf5d263c9c62ca0da",
+		"dns_names": [
+			"lkdtlt.hust.edu.vn"
+		],
+		"pubkey_sha256": "e87d224658254da31e41502e19f7964cf0ba129a3a2f0e221aacf5c39924654b",
+		"not_before": "2026-10-10T01:39:31Z",
+		"not_after": "2027-01-08T01:39:30Z",
+		"revoked": false
+	},
+	{
+		"id": "17711959899",
+		"tbs_sha256": "7a617d9332fa263d41767f8d06ee72b8ae7a5a381cede621d5389d2b96fafffd",
+		"cert_sha256": "ea95647329579f5f9ebfdfa8628eea7c491a074576b5fbafb6a815089f751ae3",
+		"dns_names": [
+			"daotao.soict.hust.edu.vn"
+		],
+		"pubkey_sha256": "fa4339d5df80afae1d109c4bdb410c4822bee743685fefcda508d3d53aa9f865",
+		"not_before": "2026-10-10T22:30:49Z",
+		"not_after": "2027-01-08T23:16:57Z",
+		"revoked": false
+	},
+	{
+		"id": "17722708160",
+		"tbs_sha256": "ecaee9f58f933e8accf9ef844e1b4cbf20a8efd28eef216f8aafaf64c033a896",
+		"cert_sha256": "767cf090efe7cbf9be7b2234bb6b0f1d9cf9915096100d8b13e7de4f44ed38c9",
+		"dns_names": [
+			"bmec.hust.edu.vn"
+		],
+		"pubkey_sha256": "af6ed21735fd0d45613fe7c1278b9beb74e01bfc4c4b09f9540f5f365aadf06b",
+		"not_before": "2026-10-11T13:22:19Z",
+		"not_after": "2027-01-09T13:22:18Z",
+		"revoked": false
+	},
+	{
+		"id": "17794150806",
+		"tbs_sha256": "93b67f75ffe9bab924a640100a44f887612f365b2c96c19e401c4ae0eec03661",
+		"cert_sha256": "17facb010a6fc68d73b2a4ee9afd465fb2c62df4076912d0533a0e2c7af923d6",
+		"dns_names": [
+			"asiaccs2025.hust.edu.vn",
+			"bkcs.hust.edu.vn"
+		],
+		"pubkey_sha256": "595d7e1191faee05d4f9ad6e7ec716b879f10c18e396b9708ee57b6c60218dc6",
+		"not_before": "2026-10-15T04:40:14Z",
+		"not_after": "2027-01-13T04:40:13Z",
+		"revoked": false
+	},
+	{
+		"id": "17796179527",
+		"tbs_sha256": "dd184f6acecf4b191abe5238420e51669e756697c8e3a7ddc8f5ae42a0e5e6d5",
+		"cert_sha256": "1248fdce7723a26242d2737aadced107961f1b2f608ba37c9bf1eff50a529e00",
+		"dns_names": [
+			"jst.hust.edu.vn"
+		],
+		"pubkey_sha256": "d1b2a349cab9166d1a80f4f9097c6402b78915ef3977656f5d9efa5f9f26e51c",
+		"not_before": "2026-10-15T07:15:47Z",
+		"not_after": "2027-01-13T07:15:46Z",
+		"revoked": false
+	},
+	{
+		"id": "17812823272",
+		"tbs_sha256": "a8220d13fb49f4b647a6051f43b243e7fcc74cf0f5eb83aa4409e196e9409db6",
+		"cert_sha256": "8a324911e3806336ffc650151cfac1d18b06013f0954a1722c0574e1970bd9ae",
+		"dns_names": [
+			"bkcs.hust.edu.vn"
+		],
+		"pubkey_sha256": "c3575ab15b765d8baa950ceee8dde621f20b3e0e1256dfe4ea0579b15be3f8c7",
+		"not_before": "2026-10-16T04:38:36Z",
+		"not_after": "2027-01-14T04:38:35Z",
+		"revoked": false
+	},
+	{
+		"id": "17816316671",
+		"tbs_sha256": "3fa43bd906b9110a643806adf960b094285336e9d723f8afe05b5155a24256ac",
+		"cert_sha256": "217d95966c308fc5a7e6b57fce3d62d92c492f00fdfd836295342ad040f83346",
+		"dns_names": [
+			"srl-fed.hust.edu.vn"
+		],
+		"pubkey_sha256": "ee6731d82c37196dc6e152c49ec139853ddef58e0b372b9cc74e5ede10af7553",
+		"not_before": "2026-10-16T08:58:56Z",
+		"not_after": "2027-01-14T08:58:55Z",
+		"revoked": false
+	},
+	{
+		"id": "17829133998",
+		"tbs_sha256": "9c1d18134f8504d848675788f872f758db22a94b370100941f34bedc46acfd83",
+		"cert_sha256": "0b52799bb859b932331fddba4ed4a888a021a76bac3ba2fd20a5c11005027759",
+		"dns_names": [
+			"stc.hust.edu.vn"
+		],
+		"pubkey_sha256": "a80ab68fc423e86cdf59f13e8a037d140b10c3f7f51f1b9f9c672f31dcf7d41e",
+		"not_before": "2026-10-17T01:52:32Z",
+		"not_after": "2027-01-15T02:43:44Z",
+		"revoked": false
+	},
+	{
+		"id": "17870478498",
+		"tbs_sha256": "8b3c5d36d1014c1616b9a91647b539168138c11f82ea58811e34e9f30abb492a",
+		"cert_sha256": "63039046809c4e7440de3c1ddcbf404bb5c3a00ca5f22019cf493b5cbcde7217",
+		"dns_names": [
+			"qmfs.hust.edu.vn"
+		],
+		"pubkey_sha256": "337d7706e1bc21e42b54da4ce840fdc342c24c1f45536b769c86e70076387cc5",
+		"not_before": "2026-10-19T14:35:47Z",
+		"not_after": "2027-01-17T14:35:46Z",
+		"revoked": false
+	},
+	{
+		"id": "17878352500",
+		"tbs_sha256": "fff52650a92570e5372779dd62f501048cc4c18b9d72eef546c0cdb65570d734",
+		"cert_sha256": "5598f110f4a93381fd3e5be73192373f92b4c200f84bd233ba586fd7c728169d",
+		"dns_names": [
+			"tamlyhoctochuc.hust.edu.vn"
+		],
+		"pubkey_sha256": "ae553a1e1e08d581160dd7d0ecf68433126ac7d1bea75b211e7d89dc5697a5e9",
+		"not_before": "2026-10-20T00:55:33Z",
+		"not_after": "2027-01-18T00:55:32Z",
+		"revoked": false
+	},
+	{
+		"id": "17878359071",
+		"tbs_sha256": "d359b9e3063c838114c78792c7a8883cefd74bcf3b863172e6061f0a9f7d7fcc",
+		"cert_sha256": "3118f1ff4a6a1078b1eee09f3138d30c490fe1080277206848687b209ac695f0",
+		"dns_names": [
+			"tamlyhoctochuc.hust.edu.vn"
+		],
+		"pubkey_sha256": "efbb0f78eb8e4691c8b5a8eed6d2c6a370fefcae0d6c6e82e30536aa89db6985",
+		"not_before": "2026-10-20T00:56:10Z",
+		"not_after": "2027-01-18T00:56:09Z",
+		"revoked": false
+	},
+	{
+		"id": "17878366627",
+		"tbs_sha256": "7a3e272277bf1bd7701d036de5dcca5969dfa0d52ce2c8ec19f84d279c688802",
+		"cert_sha256": "f2d9bdb49031691caa163576f62d5d79d57b684ed1b8c6aa1a363b3f28b46a75",
+		"dns_names": [
+			"tamlyhoctochuc.hust.edu.vn"
+		],
+		"pubkey_sha256": "a17806965fc452e351b55352d9493032499e46ae8c8194b7f70b5d02e796226d",
+		"not_before": "2026-10-20T00:55:48Z",
+		"not_after": "2027-01-18T00:55:47Z",
+		"revoked": false
+	},
+	{
+		"id": "17904262964",
+		"tbs_sha256": "98e9fb35be91f31c4dacabd2d54eb7597137b435ef130ec7229dff7c1e15dbc6",
+		"cert_sha256": "79402f9b5f230c6f5bdfd61a5a2b2102f49a5838e144fa12d967e41ae90093fb",
+		"dns_names": [
+			"sensbft.hust.edu.vn"
+		],
+		"pubkey_sha256": "8768187c40e61603cc6297acc6b104f176af239d02827bad2d5c58a5604f7564",
+		"not_before": "2026-10-21T10:36:35Z",
+		"not_after": "2027-01-19T10:36:34Z",
+		"revoked": false
+	}
+]

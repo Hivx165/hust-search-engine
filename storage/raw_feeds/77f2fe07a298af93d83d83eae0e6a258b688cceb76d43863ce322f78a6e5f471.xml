@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Uncategorized - Trung tâm Sáng tạo và Khởi nghiệp Sinh viên - Đại học Bách khoa Hà Nội</title>
+	<atom:link href="https://bke.hust.edu.vn/category/uncategorized/feed/" rel="self" type="application/rss+xml" />
+	<link>https://bke.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Thu, 26 Jun 2025 11:24:11 +0000</lastBuildDate>
+	<language>vi</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.8.12</generator>
+	<item>
+		<title>Nộp bài dự thi</title>
+		<link>https://bke.hust.edu.vn/nop-bai-du-thi/</link>
+					<comments>https://bke.hust.edu.vn/nop-bai-du-thi/#respond</comments>
+		
+		<dc:creator><![CDATA[admin@gmail.com]]></dc:creator>
+		<pubDate>Thu, 26 Jun 2025 11:22:14 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://bke.hust.edu.vn/?p=2061</guid>
+
+					<description><![CDATA[]]></description>
+										<content:encoded><![CDATA[Form có thể được điền vào <a href="https://bke.hust.edu.vn/nop-bai-du-thi/">URL trang web</a> thực tế.<p>The post <a href="https://bke.hust.edu.vn/nop-bai-du-thi/">Nộp bài dự thi</a> first appeared on <a href="https://bke.hust.edu.vn">Trung tâm Sáng tạo và Khởi nghiệp Sinh viên - Đại học Bách khoa Hà Nội</a>.</p>]]></content:encoded>
+					
+					<wfw:commentRss>https://bke.hust.edu.vn/nop-bai-du-thi/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+			</item>
+		<item>
+		<title>Hello world!</title>
+		<link>https://bke.hust.edu.vn/hello-world/</link>
+					<comments>https://bke.hust.edu.vn/hello-world/#comments</comments>
+		
+		<dc:creator><![CDATA[admin@gmail.com]]></dc:creator>
+		<pubDate>Sun, 08 Jun 2025 11:30:01 +0000</pubDate>
+				<category><![CDATA[Uncategorized]]></category>
+		<guid isPermaLink="false">https://bke.hust.edu.vn/?p=1</guid>
+
+					<description><![CDATA[<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p>
+<p>The post <a href="https://bke.hust.edu.vn/hello-world/">Hello world!</a> first appeared on <a href="https://bke.hust.edu.vn">Trung tâm Sáng tạo và Khởi nghiệp Sinh viên - Đại học Bách khoa Hà Nội</a>.</p>]]></description>
+										<content:encoded><![CDATA[<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</p><p>The post <a href="https://bke.hust.edu.vn/hello-world/">Hello world!</a> first appeared on <a href="https://bke.hust.edu.vn">Trung tâm Sáng tạo và Khởi nghiệp Sinh viên - Đại học Bách khoa Hà Nội</a>.</p>]]></content:encoded>
+					
+					<wfw:commentRss>https://bke.hust.edu.vn/hello-world/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+			</item>
+	</channel>
+</rss>

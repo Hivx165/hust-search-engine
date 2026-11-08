@@ -16,9 +16,13 @@ import java.io.*;
 public final class ChangeDetectionService implements AutoCloseable {
     public enum Status { NEW, UPDATED, UNCHANGED }
     private final Connection connection;
+    private final Path storageRoot;
+    private static final java.util.regex.Pattern RAW_PATH = java.util.regex.Pattern.compile(
+            "(?:^|/)(raw_html|raw_files|raw_feeds)/([^/]+)$");
 
     public ChangeDetectionService(Path database) throws Exception {
-        Files.createDirectories(database.toAbsolutePath().getParent());
+        storageRoot = database.toAbsolutePath().normalize().getParent();
+        Files.createDirectories(storageRoot);
         connection = DriverManager.getConnection("jdbc:sqlite:" + database.toAbsolutePath());
         try (Statement s = connection.createStatement()) {
             s.execute("PRAGMA busy_timeout=5000");
@@ -60,7 +64,7 @@ public final class ChangeDetectionService implements AutoCloseable {
         List<StoredPage> result = new ArrayList<>();
         try (Statement s = connection.createStatement(); ResultSet r = s.executeQuery(
                 "SELECT url,local_path,content_type,title,content_hash,last_scraped_at,status FROM crawled_pages ORDER BY url")) {
-            while (r.next()) result.add(new StoredPage(r.getString(1), Path.of(r.getString(2)),
+            while (r.next()) result.add(new StoredPage(r.getString(1), resolveStoredPath(r.getString(2)),
                     r.getString(3), r.getString(4), r.getString(5), r.getString(6), r.getString(7)));
         }
         return List.copyOf(result);
@@ -79,7 +83,7 @@ public final class ChangeDetectionService implements AutoCloseable {
         try (PreparedStatement s = connection.prepareStatement("SELECT p.local_path,p.content_type,h.etag,h.last_modified FROM crawled_pages p LEFT JOIN crawl_http_state h ON h.url=p.url WHERE p.url=?")) {
             s.setString(1, url);
             try (ResultSet r = s.executeQuery()) {
-                return r.next() ? Optional.of(new CachedPage(Path.of(r.getString(1)), r.getString(2), r.getString(3), r.getString(4))) : Optional.empty();
+                return r.next() ? Optional.of(new CachedPage(resolveStoredPath(r.getString(1)), r.getString(2), r.getString(3), r.getString(4))) : Optional.empty();
             }
         }
     }
@@ -101,12 +105,25 @@ public final class ChangeDetectionService implements AutoCloseable {
                 out.write("id,url,title,subdomain,content_type,crawled_at,content_hash,local_path,status\n");
                 while (r.next()) {
                     out.write(csv(computeSHA256(r.getString(1))));
-                    for (int i = 1; i <= 8; i++) { out.write(','); out.write(csv(r.getString(i))); }
+                    for (int i = 1; i <= 8; i++) {
+                        out.write(',');
+                        out.write(csv(i == 7 ? resolveStoredPath(r.getString(i)).toString() : r.getString(i)));
+                    }
                     out.newLine();
                 }
             }
             Files.move(temporary, destination, StandardCopyOption.REPLACE_EXISTING);
         } finally { Files.deleteIfExists(temporary); }
+    }
+    /** Relocate known crawler raw files without changing the producer's persisted metadata. */
+    private Path resolveStoredPath(String stored) {
+        var match = RAW_PATH.matcher(stored.replace('\\', '/'));
+        if (match.find() && !match.group(2).equals(".") && !match.group(2).equals("..")) {
+            Path current = storageRoot.resolve(match.group(1)).resolve(match.group(2)).normalize();
+            if (current.startsWith(storageRoot) && Files.isRegularFile(current)) return current;
+        }
+        // Older callers can store arbitrary paths outside the crawler's raw directories.
+        return Path.of(stored);
     }
     private static String csv(String value) { return "\"" + value.replace("\"", "\"\"") + "\""; }
     @Override public void close() throws SQLException { connection.close(); }

@@ -1,0 +1,2 @@
+*.hust.edu.vn
+*.libopac.hust.edu.vn

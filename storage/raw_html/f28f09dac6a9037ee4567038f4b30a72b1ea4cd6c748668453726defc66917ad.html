@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>[Chuỗi sự kiện Jobfair 2026][NH&#192; T&#192;I TRỢ ĐỒNG] VAMOBA Hiệp hội &#244; t&#244; xe m&#225;y xe đạp Việt Nam</h3>
+        <div>
+	<h2 data-path-to-node="3">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><b data-index-in-node="0" data-path-to-node="3">I. GIỚI THIỆU CHUNG</b></span></span></h2>
+	<p data-path-to-node="4">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Trong khu&ocirc;n khổ <b data-index-in-node="16" data-path-to-node="4">Ng&agrave;y hội việc l&agrave;m B&aacute;ch Khoa 2026</b>, Hiệp hội &Ocirc; t&ocirc;, Xe m&aacute;y, Xe đạp Việt Nam (<b data-index-in-node="90" data-path-to-node="4">VAMOBA</b>) phối hợp c&ugrave;ng c&aacute;c doanh nghiệp hội vi&ecirc;n mang đến h&agrave;ng loạt cơ hội thực tập v&agrave; việc l&agrave;m hấp dẫn cho sinh vi&ecirc;n khối ng&agrave;nh kỹ thuật.</span></span></p>
+	<p data-path-to-node="5">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Với hơn 30 năm ph&aacute;t triển v&agrave; mạng lưới hơn <b data-index-in-node="43" data-path-to-node="5">230 doanh nghiệp</b>, VAMOBA l&agrave; cầu nối quan trọng gi&uacute;p th&uacute;c đẩy đổi mới c&ocirc;ng nghệ v&agrave; tạo ra nguồn việc l&agrave;m chất lượng cao trong c&aacute;c lĩnh vực: &Ocirc; t&ocirc;, xe m&aacute;y, xe điện v&agrave; c&ocirc;ng nghiệp hỗ trợ.</span></span></p>
+	<h2 data-path-to-node="6">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><b data-index-in-node="0" data-path-to-node="6">II. CƠ HỘI D&Agrave;NH CHO SINH VI&Ecirc;N</b></span></span></h2>
+	<p data-path-to-node="7">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Khi tham gia chương tr&igrave;nh, bạn sẽ c&oacute; cơ hội:</span></span></p>
+	<ul data-path-to-node="8">
+		<li>
+			<p data-path-to-node="8,0,0">
+				<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Tiếp cận trực tiếp nhiều doanh nghiệp kỹ thuật h&agrave;ng đầu.</span></span></p>
+		</li>
+		<li>
+			<p data-path-to-node="8,1,0">
+				<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Tham gia chương tr&igrave;nh thực tập b&agrave;i bản, c&oacute; lộ tr&igrave;nh l&ecirc;n nh&acirc;n sự ch&iacute;nh thức.</span></span></p>
+		</li>
+		<li>
+			<p data-path-to-node="8,2,0">
+				<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">L&agrave;m việc c&ugrave;ng đội ngũ kỹ sư gi&agrave;u kinh nghiệm.</span></span></p>
+		</li>
+		<li>
+			<p data-path-to-node="8,3,0">
+				<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Ph&aacute;t triển sự nghiệp trong c&aacute;c lĩnh vực ti&ecirc;n phong: <b data-index-in-node="52" data-path-to-node="8,3,0">Xe điện &ndash; Năng lượng &ndash; C&ocirc;ng nghệ cao</b>.</span></span></p>
+		</li>
+	</ul>
+	<h2 data-path-to-node="9">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><b data-index-in-node="0" data-path-to-node="9">III. DANH S&Aacute;CH DOANH NGHIỆP &amp; VỊ TR&Iacute; TUYỂN DỤNG</b></span></span></h2>
+	<h3 data-path-to-node="10">
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">1. SELEX MOTORS (Xe điện th&ocirc;ng minh &amp; Năng lượng)<br />
+		2. C&Ocirc;NG TY SUFAT VIỆT NAM<br />
+		3. C&Ocirc;NG TY CỔ PHẦN H.F.T VIỆT NAM (Sản xuất Động cơ xe điện)<br />
+		4. C&Ocirc;NG TY TNHH XUPAI POWER VIỆT NAM (Pin &amp; Năng lượng)<br />
+		5. C&Ocirc;NG TY SX-LR TUẤN NGHĨA (Thương hiệu BEFORE ALL)</span></span></h3>
+</div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Hẹn gặp tất cả c&aacute;c bạn tại B&aacute;ch Khoa 🍀</span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>⚡️ Chi tiết chương tr&igrave;nh:</strong></span></span></div>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">Ng&agrave;y hội việc l&agrave;m - hướng nghiệp 2026</span></span></div>
+<blockquote>
+	<div>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">⏰ Thời gian: 7:30 - 17:00 Chủ Nhật ng&agrave;y 19/04/2026</span></span></div>
+	<div>
+		<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;">🏡 Địa điểm: Hội trường C2 - ĐH B&aacute;ch khoa H&agrave; Nội</span></span></div>
+</blockquote>
+<div>
+	<span style="font-family:times new roman,times,serif;"><span style="font-size:16px;"><strong>[Vị tr&iacute; tuyển dụng]&nbsp;</strong></span></span><span style="font-size: 16px; font-family: &quot;times new roman&quot;, times, serif;">https://work.hust.edu.vn/#/</span></div>
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

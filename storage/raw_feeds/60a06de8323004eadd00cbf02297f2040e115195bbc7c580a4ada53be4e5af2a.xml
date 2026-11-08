@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Nghiên cứu - Sản phẩm khoa học công nghệ</title>
+        <link>https://iet.hust.edu.vn/vi/nghien-cuu/san-pham-khoa-hoc-cong-nghe/</link>
+        <atom:link href="https://iet.hust.edu.vn/vi/nghien-cuu/rss/san-pham-khoa-hoc-cong-nghe/" rel="self" />
+                <description>
+            <![CDATA[Viện Công nghệ Năng lượng - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Wed, 14 Oct 2026 08:10:00 GMT</pubDate>
+        <lastBuildDate>Wed, 14 Oct 2026 08:10:00 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Viện Công nghệ Năng lượng]]>
+        </copyright>
+        <docs>https://iet.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://iet.hust.edu.vn/uploads/iet/logo-dhbk-1-02_130_191.png</url>
+            <title>Nghiên cứu - Sản phẩm khoa học công nghệ</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/san-pham-khoa-hoc-cong-nghe/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Hệ thống Sấy phun Nhiệt độ cao</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/san-pham-khoa-hoc-cong-nghe/he-thong-say-phun-nhiet-do-cao-16.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_16]]>
+            </guid>
+            
+                        <pubDate>Wed, 14 Oct 2026 08:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2026_10/05_say_phun.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hệ thống vận hành thông minh nhà máy năng lượng tái tạo</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/san-pham-khoa-hoc-cong-nghe/he-thong-van-hanh-thong-minh-nha-may-nang-luong-tai-tao-17.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_17]]>
+            </guid>
+            
+                        <pubDate>Wed, 14 Oct 2026 08:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2026_10/06_standee_optima.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hệ thống hạ thủy phần dịch nhiệt độ thấp, tiết kiệm năng lượng</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/san-pham-khoa-hoc-cong-nghe/he-thong-ha-thuy-phan-dich-nhiet-do-thap-tiet-kiem-nang-luong-15.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_15]]>
+            </guid>
+            
+                        <pubDate>Wed, 14 Oct 2026 08:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2026_10/04_thap_say_ha_thuy_phan_dich.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Lạc Hồng AUV Phương tiện tự hành dưới nước</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/san-pham-khoa-hoc-cong-nghe/lac-hong-auv-phuong-tien-tu-hanh-duoi-nuoc-14.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_14]]>
+            </guid>
+            
+                        <pubDate>Wed, 14 Oct 2026 08:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2026_10/03_lac_hong_rov.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Công nghệ chiết xuất tinh dầu bằng CO2 siêu tới hạn</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/san-pham-khoa-hoc-cong-nghe/cong-nghe-chiet-xuat-tinh-dau-bang-co2-sieu-toi-han-13.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_13]]>
+            </guid>
+            
+                        <pubDate>Wed, 14 Oct 2026 08:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2026_10/02_chiet_xuat_tinh_dau_co2_sieu_toi_han.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Thiết bị xử lý bụi mịn PM2,5 Cộng sinh tiết kiệm điện</title>
+            <link>https://iet.hust.edu.vn/vi/nghien-cuu/san-pham-khoa-hoc-cong-nghe/thiet-bi-xu-ly-bui-min-pm2-5-cong-sinh-tiet-kiem-dien-12.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[nghien-cuu_12]]>
+            </guid>
+            
+                        <pubDate>Wed, 14 Oct 2026 08:10:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://iet.hust.edu.vn/assets/iet/nghien-cuu/2026_10/01_xu_ly_bui_min_pm25_ion_am.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

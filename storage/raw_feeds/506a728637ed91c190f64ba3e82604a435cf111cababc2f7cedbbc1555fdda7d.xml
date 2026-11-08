@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="/assets/css/rss.xsl" media="screen"?>
+<rss version="2.0"
+    xmlns:content="http://purl.org/rss/1.0/modules/content/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:atom="http://www.w3.org/2005/Atom"
+>
+    <channel>
+        <title>Hỗ trợ sinh viên</title>
+        <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/</link>
+        <atom:link href="https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/rss/" rel="self" />
+                <description>
+            <![CDATA[Trung tâm Chuyển đổi số - Đại học Bách khoa Hà Nội]]>
+        </description>
+        
+        <language>vi</language>
+                <pubDate>Tue, 2 Jun 2026 08:06:52 GMT</pubDate>
+        <lastBuildDate>Tue, 2 Jun 2026 08:06:52 GMT</lastBuildDate>
+        
+        <copyright>
+            <![CDATA[Trung tâm Chuyển đổi số]]>
+        </copyright>
+        <docs>https://cdt.hust.edu.vn/vi/rss/</docs>
+        <generator>
+            <![CDATA[NukeViet v4.0]]>
+        </generator>
+                <image>
+            <url>https://cdt.hust.edu.vn/uploads/cdt/logo-dhbk-1-02_130_191.png</url>
+            <title>Hỗ trợ sinh viên</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/</link>
+            <width>144</width>
+            <height>211</height>
+        </image>
+        
+                <item>
+            <title>Hướng dẫn sinh viên làm bài kiểm tra trên Teams và nộp bài tập Assignment &#40;Phần 2&#41;</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/huong-dan-su-dung-office-365-cho-sinh-vien/huong-dan-sinh-vien-lam-bai-kiem-tra-tren-teams-va-nop-bai-tap-assignment-phan-2-9.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_9]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 08:06:52 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn sinh viên làm bài kiểm tra trên Teams &#40;Phần 1&#41;</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/huong-dan-su-dung-office-365-cho-sinh-vien/huong-dan-sinh-vien-lam-bai-kiem-tra-tren-teams-phan-1-8.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_8]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 08:06:19 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn đổi mật khẩu Office 365</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/huong-dan-su-dung-office-365-cho-sinh-vien/huong-dan-doi-mat-khau-office-365-7.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_7]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 08:06:06 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn sinh viên học tập trên MS Teams &#40;Phần 2&#41;</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/huong-dan-su-dung-office-365-cho-sinh-vien/huong-dan-sinh-vien-hoc-tap-tren-ms-teams-phan-2-6.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_6]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 08:06:26 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn sinh viên học tập trên MS Teams &#40;Phần 1&#41;</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/huong-dan-su-dung-office-365-cho-sinh-vien/huong-dan-sinh-vien-hoc-tap-tren-ms-teams-phan-1-5.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_5]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 08:06:20 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn sinh viên tham gia vào lớp học trên Teams bằng Teams Code</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/huong-dan-su-dung-office-365-cho-sinh-vien/huong-dan-sinh-vien-tham-gia-vao-lop-hoc-tren-teams-bang-teams-code-4.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_4]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 07:06:48 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn sử dụng phím tắt trong Teams</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/huong-dan-su-dung-office-365-cho-sinh-vien/huong-dan-su-dung-phim-tat-trong-teams-3.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_3]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 07:06:13 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Hướng dẫn cài đặt Office 365 Pro Plus</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/huong-dan-su-dung-office-365-cho-sinh-vien/huong-dan-cai-dat-office-365-pro-plus-2.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_2]]>
+            </guid>
+            
+                        <pubDate>Tue, 2 Jun 2026 07:06:00 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+        <item>
+            <title>Đổi mật khẩu email</title>
+            <link>https://cdt.hust.edu.vn/vi/ho-tro-sinh-vien/doi-mat-khau-email-sv/doi-mat-khau-email-1.html</link>
+                        <guid isPermaLink="false">
+                <![CDATA[ho-tro-sinh-vien_1]]>
+            </guid>
+            
+                        <pubDate>Tue, 21 Apr 2026 03:04:41 GMT</pubDate>
+            
+            
+            <description>
+                <![CDATA[<img src="https://cdt.hust.edu.vn/assets/cdt/ho-tro-sinh-vien/2026_04/cover.jpg" width="100" align="left" border="0">]]>
+            </description>
+            
+        </item>
+        
+    </channel>
+</rss>

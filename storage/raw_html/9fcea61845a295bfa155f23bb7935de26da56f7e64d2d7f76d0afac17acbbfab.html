@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="vi" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head>
+<meta charset="utf-8" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<link rel="shortcut icon" href="https://library.hust.edu.vn/sites/default/files/favico.ico" type="image/vnd.microsoft.icon" />
+<title>Thư viện</title>
+<style type="text/css" media="all">
+@import url("https://library.hust.edu.vn/modules/system/system.base.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/system/system.menus.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/system/system.messages.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/system/system.theme.css?sudva3");
+</style>
+<style type="text/css" media="screen">
+@import url("https://library.hust.edu.vn/sites/all/modules/views_slideshow/views_slideshow.css?sudva3");
+</style>
+<style type="text/css" media="all">
+@import url("https://library.hust.edu.vn/modules/book/book.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/comment/comment.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/field/theme/field.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/kaltura/style/kaltura.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/node/node.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/search/search.css?sudva3");
+@import url("https://library.hust.edu.vn/modules/user/user.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/views/css/views.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/media/modules/media_wysiwyg/css/media_wysiwyg.base.css?sudva3");
+</style>
+<style type="text/css" media="all">
+@import url("https://library.hust.edu.vn/sites/all/modules/ctools/css/ctools.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/panels/css/panels.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/views_slideshow/contrib/views_slideshow_cycle/views_slideshow_cycle.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/libraries/sidr/stylesheets/jquery.sidr.dark.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/quicktabs/css/quicktabs.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/modules/quicktabs/quicktabs_tabstyles/tabstyles/basic/basic.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/libraries/fontawesome/css/font-awesome.css?sudva3");
+</style>
+<style type="text/css" media="all">
+@import url("https://library.hust.edu.vn/sites/all/themes/nexus/css/bootstrap.min.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/themes/nexus/css/flexslider.css?sudva3");
+@import url("https://library.hust.edu.vn/sites/all/themes/nexus/style.css?sudva3");
+</style>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/jquery_update/replace/jquery/1.10/jquery.min.js?v=1.10.2"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/misc/drupal.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/jquery_dollar/jquery_dollar.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/jquery_update/replace/ui/external/jquery.cookie.js?v=67fb34f6a866c40d0570"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/jquery_update/replace/misc/jquery.form.min.js?v=2.69"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/views_slideshow/js/views_slideshow.js?v=1.0"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/misc/ajax.js?v=7.52"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/jquery_update/js/jquery_update.js?v=0.0.1"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/kaltura/js/kaltura.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/kaltura/js/kaltura.behaviors.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/misc/progress.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/default/files/languages/vi_uFlwPAEWRVSOHZUWnUCSmsf5huNNpn87Ts0uRC_ikvU.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/views/js/base.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/libraries/jquery.cycle/jquery.cycle.all.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/views_slideshow/contrib/views_slideshow_cycle/js/views_slideshow_cycle.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/ctools/js/jump-menu.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/views/js/ajax_view.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/responsive_menus/styles/sidr/js/responsive_menus_sidr.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/libraries/sidr/jquery.sidr.min.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/quicktabs/js/quicktabs.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/modules/bootstrap_site_alert/js/bootstrap-site-alert.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/bootstrap.min.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/superfish.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/mobilemenu.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/custom.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/openinghours.js?sudva3"></script>
+<script type="text/javascript" src="https://library.hust.edu.vn/sites/all/themes/nexus/js/searchtest.js?sudva3"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"vi\/","ajaxPageState":{"theme":"nexus","theme_token":"zzJc8yNeq0LnEKIE-LeR-AX1_ksIlLOGYv-R7pgvC2I","jquery_version":"1.10","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.10\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_dollar\/jquery_dollar.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"sites\/all\/modules\/views_slideshow\/js\/views_slideshow.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/jquery_update\/js\/jquery_update.js":1,"sites\/all\/modules\/kaltura\/js\/kaltura.js":1,"sites\/all\/modules\/kaltura\/js\/kaltura.behaviors.js":1,"misc\/progress.js":1,"public:\/\/languages\/vi_uFlwPAEWRVSOHZUWnUCSmsf5huNNpn87Ts0uRC_ikvU.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"sites\/all\/libraries\/jquery.cycle\/jquery.cycle.all.js":1,"sites\/all\/modules\/views_slideshow\/contrib\/views_slideshow_cycle\/js\/views_slideshow_cycle.js":1,"sites\/all\/modules\/ctools\/js\/jump-menu.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/responsive_menus\/styles\/sidr\/js\/responsive_menus_sidr.js":1,"sites\/all\/libraries\/sidr\/jquery.sidr.min.js":1,"sites\/all\/modules\/quicktabs\/js\/quicktabs.js":1,"sites\/all\/modules\/bootstrap_site_alert\/js\/bootstrap-site-alert.js":1,"sites\/all\/themes\/nexus\/js\/bootstrap.min.js":1,"sites\/all\/themes\/nexus\/js\/superfish.js":1,"sites\/all\/themes\/nexus\/js\/mobilemenu.js":1,"sites\/all\/themes\/nexus\/js\/custom.js":1,"sites\/all\/themes\/nexus\/js\/openinghours.js":1,"sites\/all\/themes\/nexus\/js\/searchtest.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/views_slideshow\/views_slideshow.css":1,"modules\/book\/book.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/kaltura\/style\/kaltura.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/media\/modules\/media_wysiwyg\/css\/media_wysiwyg.base.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/panels\/css\/panels.css":1,"sites\/all\/modules\/views_slideshow\/contrib\/views_slideshow_cycle\/views_slideshow_cycle.css":1,"sites\/all\/libraries\/sidr\/stylesheets\/jquery.sidr.dark.css":1,"sites\/all\/modules\/quicktabs\/css\/quicktabs.css":1,"sites\/all\/modules\/quicktabs\/quicktabs_tabstyles\/tabstyles\/basic\/basic.css":1,"sites\/all\/libraries\/fontawesome\/css\/font-awesome.css":1,"sites\/all\/themes\/nexus\/css\/bootstrap.min.css":1,"sites\/all\/themes\/nexus\/css\/flexslider.css":1,"sites\/all\/themes\/nexus\/style.css":1}},"jcarousel":{"ajaxPath":"\/vi\/jcarousel\/ajax\/views"},"views":{"ajax_path":"\/vi\/views\/ajax","ajaxViews":{"views_dom_id:ab79437061a184aadaf50bbacac5d97f":{"view_name":"tro_giup_lien_quan","view_display_id":"block","view_args":"","view_path":"tan_sinh_vien","view_base_path":null,"view_dom_id":"ab79437061a184aadaf50bbacac5d97f","pager_element":"2"}}},"viewsSlideshow":{"slide_anh-block":{"methods":{"goToSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"nextSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"pause":["viewsSlideshowControls","viewsSlideshowCycle"],"play":["viewsSlideshowControls","viewsSlideshowCycle"],"previousSlide":["viewsSlideshowPager","viewsSlideshowSlideCounter","viewsSlideshowCycle"],"transitionBegin":["viewsSlideshowPager","viewsSlideshowSlideCounter"],"transitionEnd":[]},"paused":0}},"viewsSlideshowPager":{"slide_anh-block":{"bottom":{"type":"viewsSlideshowPagerFields"}}},"viewsSlideshowPagerFields":{"slide_anh-block":{"bottom":{"activatePauseOnHover":0}}},"viewsSlideshowCycle":{"#views_slideshow_cycle_main_slide_anh-block":{"num_divs":7,"id_prefix":"#views_slideshow_cycle_main_","div_prefix":"#views_slideshow_cycle_div_","vss_id":"slide_anh-block","effect":"scrollLeft","transition_advanced":1,"timeout":9000,"speed":700,"delay":0,"sync":1,"random":0,"pause":1,"pause_on_click":0,"action_advanced":0,"start_paused":0,"remember_slide":0,"remember_slide_days":1,"pause_in_middle":0,"pause_when_hidden":0,"pause_when_hidden_type":"full","amount_allowed_visible":"","nowrap":0,"fixed_height":1,"items_per_slide":1,"wait_for_image_load":1,"wait_for_image_load_timeout":3000,"cleartype":0,"cleartypenobg":0,"advanced_options":"{}"}},"urlIsAjaxTrusted":{"\/tan_sinh_vien":true},"responsive_menus":[{"selectors":["#main-menu"],"trigger_txt":"Menu","side":"left","speed":"200","media_size":"768","displace":"1","renaming":"1","onOpen":"","onClose":"","responsive_menus_style":"sidr"}],"bootstrap_site_alert":{"key":"9fp4XiJG2IT-SQ203wmOcAnsv3xoqsxMIsd8YcqarnE"},"quicktabs":{"qt_t_n_sinh_vi_n_c_n_bi_t":{"name":"t_n_sinh_vi_n_c_n_bi_t","tabs":[{"vid":"h_ng_d_n_s_d_ng_th_vi_n","display":"page","args":"","view_path":"tan_sinh_vien","view_dom_id":1,"ajax_args":"","actual_args":[]},{"vid":"t_i_li_u_h_c_t_p","display":"page","args":"","view_path":"tan_sinh_vien","view_dom_id":2,"ajax_args":"","actual_args":[]},{"vid":"th_ng_tin_h_tr_","display":"page","args":"","view_path":"tan_sinh_vien","view_dom_id":3,"ajax_args":"","actual_args":[]}],"urlIsAjaxTrusted":{"\/tan_sinh_vien":true}}}});
+//--><!]]>
+</script>
+<!--[if lt IE 9]><script src="/sites/all/themes/nexus/js/html5.js"></script><![endif]-->
+</head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-tan-sinh-vien i18n-vi">
+  <div class="alert bs-site-alert alert-warning" role="alert" style="display:none;"><button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button><p><strong><img alt="" src="/sites/default/files/Untitled-1.png" style="width: 30px; height: 30px; margin-bottom: -9px;">Video hướng dẫn sử dụng thư viện:&nbsp;</strong><a href="https://library.hust.edu.vn/node/254">https://library.hust.edu.vn/node/254</a></p></div>  <div id="page">
+  <div class="navfirst">
+      <ul class="nav">
+			<a href="https://library.hust.edu.vn/vi"><li class="vi"></li></a>
+			<a href="https://library.hust.edu.vn/en"><li class="en"></li></a>
+			<li><a href="http://202.191.56.129/sierrautility" target="_blank">Module đếm lượt</a></li>
+			<li><a href="http://dlib.hust.edu.vn" target="_blank">Tài nguyên số </a></li>
+			<li><a href="https://www.hust.edu.vn/" target="_blank">Đại học Bách Khoa Hà Nội</a></li>
+		</ul>
+  	</div>	
+  
+  <header id="masthead" class="site-header container" role="banner">
+   
+    <div class="row">
+	
+	<div class="container" id="container_logo_menu">
+	
+<div class="tbanner" style=" margin-bottom: -6px; ">
+                        <div id="tbanner1">
+                <a href="/vi" title="Trang chủ">
+                    <img src="https://library.hust.edu.vn/sites/default/files/tbanner122102024.png" alt="Trang chủ" style=" border-bottom: 2px solid #4e4e4e; "/>
+                </a>
+            </div>
+            </div>
+
+	  
+	  <div class="col-sm-12 mainmenu">
+        <div class="mobilenavi"></div>
+        <nav id="navigation" role="navigation">
+          <div id="main-menu">
+            <ul class="menu"><li class="first leaf"><a href="/vi" title="">Trang chủ</a></li>
+<li class="leaf"><a href="/vi/page-t-m-ki-m" title="">Tìm kiếm</a></li>
+<li class="leaf"><a href="/vi/sanpham_dichvu" title="">Sản phẩm - Dịch vụ</a></li>
+<li class="leaf"><a href="/vi/view-page-tin-tuc" title="">Tin tức</a></li>
+<li class="leaf"><a href="/vi/page-tr-gi-p" title="">Trợ giúp</a></li>
+<li class="leaf"><a href="/vi/node/48" title="">Liên hệ</a></li>
+<li class="last leaf"><a href="https://library.hust.edu.vn/gi-i-thi-u" title="">Giới thiệu</a></li>
+</ul>          </div>
+        </nav>
+      </div>
+	  </div>
+	  </div>
+   </header>	  
+	  
+  
+  <div class="container-fluid" id="search-vufind">
+	<div class="container" id="search-opac">
+		<div class="row">
+		<div class="region region-form-search-vufind">
+  <div id="block-block-17" class="block block-block">
+
+      
+  <div class="content">
+    <form action="https://library.hust.edu.vn/search/" id="search" method="get" name="search" style="margin-top: -27px;" target="_blank"><input id="iiiFormHandle_1" type="hidden" /><br /><div class="formEntryArea">
+<div class="searchoption">
+<select class="searchtype st-selected" data-isdefault="true" id="searchtype-opac" name="searchtype" style="width: 280px;"><option selected="selected" value="X">Từ Khóa</option><option value="t">Nhan đề</option><option value="a">Tác giả</option><option value="d">Chủ đề</option><option value="c">Ký hiệu xếp giá</option><option value="i">ISBN/ISSN</option><option value="p">Người hướng dẫn</option><option value="r">Tên khóa học</option></select><select class="searchtype hidden" data-isdefault="true" id="searchtype-scientdirect" style="width: 280px;"><option value="qs_all">Keyword</option><option value="qs_author">Author</option><option value="qs_title">Journal/Book Title</option><option value="qs_vol">Volume</option><option value="qs_issue">Issue</option><option value="qs_pages">Page</option></select><select class="searchtype hidden" data-isdefault="true" id="searchtype-ebrary" style="width: 280px;"><option value="fullTitle">Title</option><option value="series">Series Title</option><option value="contributors">Author</option><option value="publisher">Publisher</option><option value="isbn">ISBN</option><option value="bisacCode">BISAC Code</option><option value="bisacName">BISAC Subject Heading</option><option value="lcSubject">LC Subject Heading</option><option value="lcCallNumber">LC Call Number</option><option value="dewey">Dewey Decimal Number</option><option value="subject">Ebook Central Subject</option></select><select class="searchtype hidden" data-isdefault="true" id="searchtype-dspace" style="width: 280px;"><option value="all">Tất cả</option><option value="title">Nhan đề</option><option value="author">Tác giả</option><option value="advisor">Người hướng dẫn</option><option value="subject">Chủ đề</option><option value="dateIssued">Năm xuất bản</option></select><select class="searchtype hidden" data-isdefault="true" id="searchtype-sage" style="width: 280px;"><option value="AllField">Anywhere</option><option value="Title">Title</option><option value="Contrib">Author</option><option value="Keyword">Keywords</option><option value="Abstract">Abstract</option><option value="Affiliation">Affiliation</option></select><p><input id="SORT" name="SORT" type="hidden" value="D" /><input maxlength="75" name="searcharg" placeholder="Nhập thông tin tài liệu bạn muốn tìm kiếm" size="70" /><br /><label for="searchscope" style="display: none;">Search Scope</label></p>
+<select id="searchscope" name="searchscope"><option selected="selected" value="opac">Mục lục thư viện</option><option value="dspace">Thư viện số</option><option value="ebrary">Proquest Ebook Central (Ebrary)</option><option value="sage">SAGE</option><option value="science">Science Direct</option></select></div>
+<p><br /><span class="nowrap formButtonArea"><input id="iiiFormHandle_1" type="hidden" /></span></p>
+<div onmousedown="this.className='pressedState';" onmouseout="this.className='';" onmouseup="this.className='';">
+<div class="buttonSpriteDiv"> </div>
+</div>
+<p><span class="nowrap formButtonArea"><input class="submitHidden" type="submit" value="Tìm kiếm" /></span></p>
+</div>
+</form>
+<p> </p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+		</div>
+	</div>
+  </div>
+  
+  <div class="container-fluid2" id="search-sub-arena">
+	<div class="container">
+		<div class="row">
+				
+		
+		
+		   
+		</div>
+	</div>
+  </div>
+
+
+  
+
+  
+  
+    <div id="main-content">
+    <div class="container"> 
+      <div class="row">
+                <div id="primary" class="content-area col-sm-8">
+          <section id="content" role="main" class="clearfix">
+                                                <div id="content-wrap">
+                                                                                                  <div class="region region-content">
+  <div id="block-quicktabs-t-n-sinh-vi-n-c-n-bi-t" class="block block-quicktabs">
+
+        <h2 >Tân sinh viên cần biết</h2>
+    
+  <div class="content">
+    <div  id="quicktabs-t_n_sinh_vi_n_c_n_bi_t" class="quicktabs-wrapper quicktabs-style-basic"><div class="item-list"><ul class="quicktabs-tabs quicktabs-style-basic"><li class="active first"><a href="/vi/tan_sinh_vien?qt-t_n_sinh_vi_n_c_n_bi_t=0#qt-t_n_sinh_vi_n_c_n_bi_t" id="quicktabs-tab-t_n_sinh_vi_n_c_n_bi_t-0" class="active">Hướng dẫn sử dụng thư viện</a></li>
+<li><a href="/vi/tan_sinh_vien?qt-t_n_sinh_vi_n_c_n_bi_t=1#qt-t_n_sinh_vi_n_c_n_bi_t" id="quicktabs-tab-t_n_sinh_vi_n_c_n_bi_t-1" class="active">Tài liệu học tập</a></li>
+<li class="last"><a href="/vi/tan_sinh_vien?qt-t_n_sinh_vi_n_c_n_bi_t=2#qt-t_n_sinh_vi_n_c_n_bi_t" id="quicktabs-tab-t_n_sinh_vi_n_c_n_bi_t-2" class="active">Thông tin hỗ trợ</a></li>
+</ul></div><div id="quicktabs-container-t_n_sinh_vi_n_c_n_bi_t" class="quicktabs_main quicktabs-style-basic"><div  id="quicktabs-tabpage-t_n_sinh_vi_n_c_n_bi_t-0" class="quicktabs-tabpage "><div class="view view-h-ng-d-n-s-d-ng-th-vi-n view-id-h_ng_d_n_s_d_ng_th_vi_n view-display-id-page view-dom-id-2465aa555f366f79a79faeba7855a67f">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/B%C3%8CA%20T%C3%8CM%20S%C3%81CH%20%C4%90%E1%BA%A0I%20C%C6%AF%C6%A0NG.png?itok=WK2U6SQn" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Hướng dẫn tìm sách triết học, kinh tế và ngoại ngữ tại thư viện</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Đối với sinh viên năm thứ nhất, ngoài Toán đại cương, bạn cũng sẽ gặp những môn học quan trọng khác như Triết học, Kinh tế chính trị và Ngoại ngữ</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/1324">xem</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/h%C6%B0%E1%BB%9Bng%20d%E1%BA%ABn%20t%C3%ACm%20to%C3%A1n%20%C4%91%E1%BA%A1i%20c%C6%B0%C6%A1ng.png?itok=BMwQ10A8" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Hướng dẫn tìm sách toán đại cương tại Thư viện</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Toán đại cương là thử thách lớn với sinh viên năm thứ nhất, nhưng cũng chính là nền móng cho các môn học sau này. Sau đây là cách tìm kiếm tài liệu giúp học tốt các môn Toán đại cương. Hãy bắt đầu từ giáo trình Đại số và Giải tích, đây chính là tài liệu gối đầu giường của sinh viên Bách khoa.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/1323">xem</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/411.jpg?itok=Soiktqs8" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Bí quyết “hack” các học phần đại cương của BK-ers</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Chưa vào Bách khoa Hà Nội thì chắc bạn cũng biết đến “cửa ải” khó nhằn mang tên “đại cương” như Toán cao cấp, Giải tích, Vật lý, Hóa học… Hãy cùng Trung tâm Truyền thông và Truyền thông và Tri thức số “xử lý gọn” các học phần này bằng “Key”</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/1299">xem</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20minh%20h%E1%BB%8Da%20%286%29_0.png?itok=OJIrzJFS" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Top 5 “chiêu thức” đọc bài báo khoa học dành cho sinh viên bách khoa</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Đây là 5 “chiêu thức” chuẩn sinh viên Bách khoa giúp bạn lĩnh hội kiến thức trong một bài báo khoa học</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/1291">xem</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20minh%20h%E1%BB%8Da_7.png?itok=tLoiQvjl" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Đọc sách và đọc bài báo khoa học có gì khác?</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Giúp bạn không “lạc trôi” giữa rừng tài liệu, Trung tâm Truyền thông &amp; Tri thức số sẽ bật mí cho bạn vài điểm khác nhau thú vị khi đọc sách và đọc báo khoa học. </div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/1287">xem</a></span>  </div></li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/Picture321122022.jpg?itok=oVmTNOAC" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Thủ tục đền sách khi làm mất tài liệu thư viện</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Thủ tục bồi thường thiết bị, tài sản: Lãnh đạo Thư viện báo với phòng Cơ sở vật chất để liên hệ với các cơ sở sửa chữa, cung cấp thiết bị, tài sản để kiểm tra, gửi báo giá sửa chữa, thay thế thiết bị mới</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/549">xem</a></span>  </div></li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/quet%20ma.jpg?itok=uxyZ0eoY" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Hướng dẫn làm thủ tục (check-in) khi đến thư viện</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Bạn đọc đến Thư viện cần check in tại cửa ra vào tầng 1 (quầy bảo vệ) của Tòa nhà  và tại quầy phục vụ các phòng Đoc tại chỗ, phòng Mượn về nhà của Thư viện Tạ Quang Bửu.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/536">xem</a></span>  </div></li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/061020221_0.png?itok=O9ZdBNId" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Hướng dẫn mượn trả sách tại Phòng mượn sách tham khảo (Phòng 102)</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Phòng 102, nằm ở phía trái, mặt trước Tòa nhà Thư viện Tạ Quang Bửu</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/502">xem</a></span>  </div></li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/tpic1_0.png?itok=73MOur7s" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Quy trình mượn trả sách tại Phòng 111</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Hướng dẫn quy trình sử dụng Phòng mượn giáo trình 111 - Thư viện Tạ Quang Bửu</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/483">xem</a></span>  </div></li>
+          <li class="views-row views-row-10 views-row-even">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/6c369c9d-80f0-46dc-9511-db53a88f3d0f.jpg?itok=5pj1nvJo" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Quy trình sử dụng phòng đọc </span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Hướng dẫn quy trình sử dụng phòng đọc tại chỗ Thư viện Tạ Quang Bửu</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/471">xem</a></span>  </div></li>
+          <li class="views-row views-row-11 views-row-odd views-row-last">  
+  <div class="views-field views-field-field--nh-h-ng-d-n-s-d-ng">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/contact-3017%20%281%29_0.png?itok=pKW6G_O1" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Thông tin tư vấn và giải đáp thắc mắc</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan-1">        <div class="field-content">Thông tin tiếp nhận phản hồi của Thư viện Tạ Quang Bửu</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/356">xem</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div  id="quicktabs-tabpage-t_n_sinh_vi_n_c_n_bi_t-1" class="quicktabs-tabpage quicktabs-hide"><div class="view view-t-i-li-u-h-c-t-p view-id-t_i_li_u_h_c_t_p view-display-id-page view-dom-id-8245d049c8b33dde338a34990ed31eea">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20ngang%20-%20B%E1%BB%99%20s%C3%A1ch%20Gi%E1%BA%A3i%20t%C3%ADch.png?itok=OImpyZhl" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Bộ sách Giải tích 1, 2, 3 </span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Từ những khái niệm cơ bản nhất đến các ứng dụng toán học quan trọng, bộ sách sẽ giúp các bạn từng bước chinh phục môn Giải tích.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/1571">xem</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20b%C3%ACa_13.png?itok=AjZqVpa5" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Giới thiệu tài liệu điện tử theo học phần Sản xuất bột giấy hiệu suất cao</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Trong thời đại mà hiệu quả sản xuất và phát triển bền vững trở thành ưu tiên hàng đầu, công nghệ sản xuất bột giấy hiệu suất cao đang mở ra những hướng đi mới cho ngành công nghiệp giấy.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/1360">xem</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/screenshot_1724639589.png?itok=JX8k7EyL" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Danh mục sách Hóa học đại cương </span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Thư viện Tạ Quang Bửu giới thiệu với các em sinh viên một số đầu sách tham khảo về Hóa học đại cương có trong CSDL điện tử Ebrary và IG Publishing mà Thư viện đang cung cấp quyền truy cập.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/813">xem</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/Danhmuc_0.jpg?itok=V_6IMdXI" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Danh mục tài liệu tiếng Anh </span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Danh mục bao gồm các tài liệu về Tiếng anh cơ bản, Toeic, PreToeic, IELTS,... Bạn đọc có thể tham khảo những tài liệu này tại Phòng đọc chuyên ngành 402</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/530">xem</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/t192022.jpg?itok=yuJEvZJq" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Tài liệu môn học &quot;Đại số tuyến tính&quot;</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">“Đại số” là một một học đại cương có tiếng là “khó nhằn” của các sinh viên năm đầu tiên trải nghiệm chương trình học tập tại Trường Đại học Bách khoa Hà Nội.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/496">xem</a></span>  </div></li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/24616096.jpg?itok=TUuXo0uk" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Hóa học đại cương</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Danh mục bao gồm các tài liệu về Hóa đại cương. Bạn đọc có thể tham khảo những tài liệu này tại Phòng đọc chuyên ngành 411, Phòng mượn giáo trình 111</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/397">xem</a></span>  </div></li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/physic.jpg?itok=WqoqM0SY" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Vật lý đại cương</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Danh mục bao gồm các tài liệu về Vật lý I, II, III. Bạn đọc có thể tham khảo những tài liệu này tại phòng đọc chuyên ngành 411, Phòng mượn sách GT 111</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/396">xem</a></span>  </div></li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/math.png?itok=eJnS_885" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Toán Đại cương</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Danh mục bao gồm các tài liệu về Đại số, Giải tích I. II, III, Xác suất thống kê. Bạn đọc có thể tham khảo những tài liệu này tại phòng đọc chuyên ngành 411</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/395">xem</a></span>  </div></li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/mac-lenin.jpg?itok=uOIYUNBE" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Tài liệu môn học Triết học Mac-Lê</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Tài liệu môn học Triết học Mác - Lê Nin hiện có tại phòng đọc chuyên ngành 402 và phòng mượn giáo trình 111.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/358">xem</a></span>  </div></li>
+          <li class="views-row views-row-10 views-row-even views-row-last">  
+  <div class="views-field views-field-field--nh-t-i-li-u-h-c-t-p">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/tu-tuong-ho-chi-minh-1_0.jpg?itok=_Zakxq8n" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Tài liệu môn học Tư tưởng Hồ Chí Minh</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Tài liệu Môn học về Tư tưởng Hồ Chí Minh có tại Phòng đọc chuyên ngành 402 và phòng mượn Giáo trình 111.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/357">xem</a></span>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div></div><div  id="quicktabs-tabpage-t_n_sinh_vi_n_c_n_bi_t-2" class="quicktabs-tabpage quicktabs-hide"><div class="view view-th-ng-tin-h-tr- view-id-th_ng_tin_h_tr_ view-display-id-page view-dom-id-ecdffea26d4c7cf2538f823632ea2556">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/5%20k%E1%BB%B9%20n%C4%83ng%20h%E1%BB%8Dc%20%C4%91%E1%BA%A1i%20h%E1%BB%8Dc_1.png?itok=Ij8j3m9A" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">5 Kỹ năng học đại học mà không ai dạy bạn</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Môi trường đại học đòi hỏi bạn phải chủ động làm chủ khối lượng kiến thức lớn thay vì phụ thuộc vào giảng viên. Bên cạnh chuyên môn, hãy trang bị 5 kỹ năng dưới đây để học tập hiệu quả hơn</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/1570">xem</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/B%C3%AD%20k%C3%ADp%20h%E1%BB%8Dc%20t%E1%BA%ADp%20hi%E1%BB%87u%20qu%E1%BA%A3.jpg?itok=2SMRcH4E" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">“Nằm lòng” 5 “bí kíp” để học tập hiệu quả</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Trong cuốn sách “Giáo huấn từ cổ nhân”, mẹ Mạnh Tử có nói: “Người quân tử lấy học tập để lập danh, chịu khó học hỏi thì biết rộng, cho nên khi ở thì yên ổn, lúc hành động thì không nguy”. Qua đó ta hiểu rằng học vấn không chỉ đưa chúng ta đến với thành công mà còn giúp ta vượt qua mọi khó khăn trong cuộc sống. Trung tâm Truyền thông và Tri thức số gửi tới các bạn một vài bí kíp giúp các bạn phát huy năng lực trong học tập, nghiên cứu và tiếp thu kiến thức.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/940">xem</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/ph%E1%BB%91%20s%C3%A1ch%20b%C3%ACa.jpg?itok=WDWqg96z" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Khám phá 3 phố sách lớn nhất Hà Nội</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Trong thời đại smartphone và internet bùng nổ, chỉ với một cụm từ tìm kiếm, một cái click chuột đã hiện ra muôn vàn những thông tin bạn cần… Không thể phủ nhận với những tiện lợi mà công nghệ mang lại đã và đang khiến sách truyền thống mất dần đi vị thế của mình. Vậy nhưng giữa lòng Thủ đô hoa lệ, giữa dòng người, dòng xe hối hả, có những con phố sách vẫn tồn tại, vẫn phát triển và thu hút được sự quan tâm đông đảo của những người yêu sách, trong đó có không ít những bạn trẻ. Hãy cùng Trung tâm Truyền thông và Tri thức số khám phá 3 phố sách tại Hà Nội.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/938">xem</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20b%C3%ACa%20Top%205%20B%E1%BA%A3o%20t%C3%A0ng%20%E1%BB%9F%20HN.jpg?itok=9ygjCJ9d" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Top 5 bào tàng đẹp nhất ở Hà nội</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Bảo tàng có vai trò quan trọng trong việc bảo tồn và phát huy di sản văn hóa. Là niềm tự hào đồng thời cũng là điểm đến thỏa mãn mọi nhu cầu khám phá của du khách. Bảo tàng giúp chúng ta có những hiểu biết về thiên nhiên, nghệ thuật, văn hóa và lịch sử Việt Nam. Mời các bạn hãy cùng chúng tôi khám phá 5 bảo tàng nổi tiếng hấp dẫn của mảnh đất Hà Thành này nhé!</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/908">xem</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20b%C3%ACa%20Kh%C3%A1m%20ph%C3%A1%20l%C3%A0ng%20g%E1%BB%93m%20B%C3%A1t%20Tr%C3%A0ng.png?itok=1l10c99f" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Khám phá Làng gốm Bát Tràng</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Làng gốm Bát Tràng mang trong mình giá trị nét đẹp văn hóa lâu đời làng nghề truyền thống của Thủ đô Hà Nội. Nhiều năm gần đây, làng Bát Tràng đã trở thành địa điểm tham quan thú vị, giúp bạn trẻ vừa sở hữu những góc sống ảo, check in triệu like vừa giúp quảng bá hình ảnh tươi đẹp của quê hương Bắc Bộ với du khách gần xa. </div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/907">xem</a></span>  </div></li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20b%C3%ACa_4.jpg?itok=8xUGC3qm" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">“Bỏ túi” 7 kỹ năng sống cho sinh viên năm nhất</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Sinh viên năm nhất là thời kỳ quan trọng và cũng đầy thú vị để chúng ta khám phá bản thân, đây cũng là thời gian để các bạn sinh viên năm nhất vạch ra kế hoạch và tạo lập thói quen nền tảng cho những năm học tiếp theo. Dưới đây là những lời khuyên được đúc kết từ kinh nghiệm của những thế hệ trước để giúp các em có được một năm khởi đầu thành công trong hành trình chinh phục giấc mơ nghề nghiệp của mình. </div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/899">xem</a></span>  </div></li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20b%C3%ACa%20-%20Du%20l%E1%BB%8Bch%20H%C3%A0%20N%E1%BB%99i.png?itok=XaXANTOB" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Rủ nhau ghé thăm 6 không gian nên thơ đất Hà Thành</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Với những Tân sinh viên từ tỉnh xa lên học tập tại Hà Nội hẳn sẽ có nhiều cảm hứng được đi thăm thú đó đây ngắm những cảnh đẹp Hà Nội, thưởng thức những món ăn Hà Nội, hít thở không khí tuyệt vời khi Hà Nội vào thu. Rất nhiều địa điểm nên thơ của Hà Nội đón chờ bạn ghé thăm, nhưng Trung tâm Truyền thông và Tri thức số xin đề cử 6 địa điểm sau đây. Bạn hãy tham khảo và lên kế hoạch “check in” nhé.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/874">xem</a></span>  </div></li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/V%C6%B0%E1%BB%A3t%20qua%20n%E1%BB%97i%20s%E1%BB%A3-%20%E1%BA%A2nh%20b%C3%ACa.jpg?itok=H2fXQKKq" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Bí quyết vượt qua “nỗi sợ” khi học các môn đại cương</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Đối với sinh viên năm thứ nhất, đây là các môn học mới lạ so với học phổ thông và tương đối khó để làm quen. Không ít bạn sinh viên cảm thấy khô khan, nhàm chán, không thích học những môn này và không ít bạn đã phải học lại. Tuy nhiên các môn đại cương lại giúp bạn có tư duy logic, là tiền đề để các bạn có phương pháp học môn chuyên ngành. Để học tốt các môn đại cương, Trung tâm sẽ gợi ý các bạn một số bí quyết sau: </div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/872">xem</a></span>  </div></li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20b%C3%ACa%20Nh%E1%BB%AFng%20%C4%91i%E1%BB%83m%20check%20in%20H%C3%A0%20N%E1%BB%99i.jpg?itok=wwbbvztN" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Những địa điểm check in đẹp nao lòng với mùa thu Hà Nội!</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Hà Nội mỗi mùa đều mang một vẻ đẹp riêng. Thế nhưng có lẽ mùa thu là mùa khiến lòng người say đắm, thổn thức hơn cả. Bởi vậy mà nhạc sĩ Hoàng Hiệp đã viết nên câu hát: “Dù có đi bốn phương trời, lòng vẫn nhớ về Hà Nội…”. Hà Nội đẹp nhất khi sang thu bởi mọi con đường, góc phố Thủ đô len lỏi tia nắng nhẹ, trong vắt và đẹp mơ màng. Mời các bạn hãy cùng chúng tôi khám phá những vẻ đẹp quyến rũ của mùa thu Hà Nội nhé!</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/839">xem</a></span>  </div></li>
+          <li class="views-row views-row-10 views-row-even">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20b%C3%ACa%20Top%205%20th%E1%BB%A9c%20qu%C3%A0%20H%C3%A0%20N%E1%BB%99i.jpg?itok=jZBXAopH" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Top 5 thức quà Hà nội nhất định phải thưởng thức vào mùa thu</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Mùa thu được coi là thời điểm đẹp nhất trong năm, không chỉ đẹp lãng mạn với sắc trời trong xanh cùng làn gió heo may nhè nhẹ, mà thu Hà Nội còn khiến chúng ta “quên lối về” bởi thế giới ẩm thực mùa thu với nhiều món ngon hấp dẫn. Xin mời các bạn sinh viên Đại học Bách khoa hãy cùng chúng tôi khám phá món quà ẩm thực khi Hà Nội bước vào những ngày chớm thu này nhé!</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/837">xem</a></span>  </div></li>
+          <li class="views-row views-row-11 views-row-odd">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/Picture1_5.png?itok=D9okDR8c" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Bạn đã chekin một trong những thư viện lớn nhất khu vực chưa??? </span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Hãy chekin Thư viện của Đại học Bách khoa Hà Nội để tận hưởng không gian học tập hiện đại và có cơ hội cộng 6 điểm rèn luyện nhé các bạn sinh viên của Hust! </div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/834">xem</a></span>  </div></li>
+          <li class="views-row views-row-12 views-row-even">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20ti%C3%AAu%20%C4%91%E1%BB%81.jpg?itok=5LnNo3eJ" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Lời khuyên cho sinh viên khi lên Hà nội học</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Các New Husters thân mến! Các bạn đã xuất sắc “vượt vũ môn” để trở thành những Tân sinh viên của Đại học Bách khoa Hà Nội. Lúc này nhiều bạn sẽ phải tập làm quen với cuộc sống xa nhà, xa gia đình, với bao nỗi lo trong đó có việc làm quen với môi trường mới… Để giúp các bạn tự tin và thành công trong quãng đời sinh viên, Trung tâm Truyền thông và Tri thức số xin gửi đến các bạn một số lời khuyên vô cùng hữu ích sau. </div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/832">xem</a></span>  </div></li>
+          <li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/B%C3%AD%20quy%E1%BA%BFt%20s%C4%83n%20h%E1%BB%8Dc%20b%E1%BB%95ng%20%E1%BA%A2nh%20b%C3%ACa%20%28%C4%91%C3%A3%20s%E1%BB%ADa%29.png?itok=qIeenGJB" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Bí kíp “SĂN” học bổng cho tân sinh viên</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Học bổng (Scholarship) là một phần thưởng vô cùng danh dự, xứng đáng cho các sinh viên có thành tích cao trong học tập (hay còn gọi là Excellence scholarship). Học bổng đóng vai trò quan trọng và cũng là mục tiêu mà sinh viên nào cũng muốn hướng tới, là động lực giúp họ cố gắng học tập hết mình, đồng thời cũng là bước đệm vững chắc để gây dựng sự nghiệp tương lai. Với những bí kíp săn học bổng cực kì thông minh sau đây sẽ giúp bạn chinh phục được các suất học bổng vô cùng giá trị. </div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/831">xem</a></span>  </div></li>
+          <li class="views-row views-row-14 views-row-even">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20HD%20%C4%91%C4%83ng%20k%C3%BD%20v%C3%A9%20th%C3%A1ng%20xe%20bus.png?itok=zGH1OUGm" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Các bước làm vé xe bus tháng cho tân sinh viên</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Khi mới nhập học bạn chưa có phương tiện giao thông riêng, bạn muốn tiết kiệm chi phí đi lại? Bạn chưa thông thạo đường phố nơi bạn học hoặc bạn muốn có phương tiện di chuyển tránh nắng mưa…thì xe bus chính là phương tiện phù hợp nhất với bạn.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/824">xem</a></span>  </div></li>
+          <li class="views-row views-row-15 views-row-odd">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/%E1%BA%A2nh%20Kinh%20nghi%E1%BB%87m%20t%C3%ACm%20nh%C3%A0%20tr%E1%BB%8D.png?itok=1GfR2bhM" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Kinh nghiệm tìm nhà trọ cho tân sinh viên</span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Vào đầu năm học mới tại một thành phố xa lạ, xa gia đình với một môi trường khác biệt là nỗi lo lắng đối với các tân sinh viên. Trong đó vấn đề tìm chỗ ở cho phù hợp trở thành một trong những điều quan trọng nhất khiến không chỉ sinh viên mà cả các bậc phụ huynh lo lắng. Dưới đây là một số kinh nghiệm tìm chỗ trọ cho sinh viên năm nhất.</div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/822">xem</a></span>  </div></li>
+          <li class="views-row views-row-16 views-row-even views-row-last">  
+  <div class="views-field views-field-field--nh-th-ng-tin-h-tr-">        <div class="field-content"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anh_dichvu/public/T%C3%A2n%20sinh%20vi%C3%AAn%20nh%E1%BB%AFng%20%C4%91i%E1%BB%81u%20c%E1%BA%A7n%20bi%E1%BA%BFt%20-%20%E1%BA%A2nh%20b%C3%ACa.png?itok=LKdZPf6t" width="176" height="106" alt="" /></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content">Tân sinh viên - Những điều cần biết! </span>  </div>  
+  <div class="views-field views-field-field-tom-tat-huong-dan">        <div class="field-content">Chào mừng New HUSTERS đến với cuộc sống sinh viên - một giai đoạn đầy hứa hẹn và thử thách trong thanh xuân của các bạn. Với bao cơ hội và trải nghiệm sắp tới, bạn thường có tâm lý không biết mình có hòa nhập được với môi trường mới không? </div>  </div>  
+  <div class="views-field views-field-view-node">        <span class="field-content"><a href="/vi/node/820">xem</a></span>  </div></li>
+      </ul></div>    </div>
+  
+      <h2 class="element-invisible">Trang</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a title="Đến trang 2" href="/vi/tan_sinh_vien?page=1">2</a></li>
+<li class="pager-next"><a href="/vi/tan_sinh_vien?page=1">next ›</a></li>
+<li class="pager-last last"><a href="/vi/tan_sinh_vien?page=1">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div></div></div></div>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-system-main" class="block block-system">
+
+      
+  <div class="content">
+    <div class="view view-sanpham-dichvu view-id-sanpham_dichvu view-display-id-page view-dom-id-d9e77638381b77cd876d623411c4cc1d">
+        
+  
+  
+  
+  
+  
+  
+  
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+            </div>
+			<div class= "col-sm-12">
+				<div class="container">
+				<div class="row">
+					
+				</div>
+				</div>
+			</div>
+			<div class= "col-sm-12">
+				<div class="container">
+				<div class="row">
+								</div>
+				</div>
+			</div>
+          </section>
+        </div>
+                  <aside id="sidebar" class="col-sm-4" role="complementary">
+           <div class="region region-sidebar-first">
+  <div id="block-views-tai-nguyen-dientu-block" class="block block-views">
+
+        <h2 >Tài nguyên điện tử</h2>
+    
+  <div class="content">
+    <div class="view view-tai-nguyen-dientu view-id-tai_nguyen_dientu view-display-id-block view-dom-id-bf5ae87d4cf4073d8dd73b25d3118aed">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/1425"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/IEEE%201.png?itok=cbELRPQQ" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/101"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/scien.jpg?itok=zdMADN5c" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/391"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/ProQuest-ebook.jpg?itok=iWM6BkoA" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/100"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/proquest.jpg?itok=Ht5LE-EJ" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/362"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/ig_0.png?itok=FnLNNret" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/103"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/sage-logo.jpg?itok=J-Zk1M3a" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/572"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/JST%20Frame_1.png?itok=KvKFFvoK" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-8 views-row-even">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/1442"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/TRANG%20T%C3%80I%20NGUY%C3%8AN%20S%E1%BB%90%20%281%29.png?itok=RKJpV3hx" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-9 views-row-odd">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/1581"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/ebsco%20ebook.jpg?itok=jV3UfwIo" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-10 views-row-even">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/1443"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/CSDL%20webofscience%20final.jpg?itok=UEVSUM2c" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-11 views-row-odd">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/1444"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/CSDL%20Sival%20-%20%E1%BA%A2nh.jpg?itok=-SmC4GOM" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-12 views-row-even">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/280"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/1200px-Global_Open_Educational_Resources_Logo.svg_.png?itok=bqLmKS7A" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-13 views-row-odd">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/482"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/nasati_0.png?itok=qz79r7wS" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-14 views-row-even">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/523"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/logo%20compas_0_1_0.png?itok=TompoYLs" width="96" height="66" alt="" /></a></div>  </div></li>
+          <li class="views-row views-row-15 views-row-odd views-row-last">  
+  <div class="views-field views-field-field-anh-tai-nguyen-dt">        <div class="field-content"><a href="/vi/node/658"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/tai_nguyen_dien_tu/public/CSDL1.png?itok=ZLO32tjN" width="96" height="66" alt="" /></a></div>  </div></li>
+      </ul></div>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-views-tro-giup-lien-quan-block" class="block block-views">
+
+        <h2 >Trợ giúp</h2>
+    
+  <div class="content">
+    <div class="view view-tro-giup-lien-quan view-id-tro_giup_lien_quan view-display-id-block view-dom-id-ab79437061a184aadaf50bbacac5d97f">
+        
+  
+  
+      <div class="view-content">
+      <div class="item-list">    <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/49">Hướng dẫn quản lý tài khoản bạn đọc</a></span>  </div></li>
+          <li class="views-row views-row-2 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/50">Các câu hỏi thường gặp</a></span>  </div></li>
+          <li class="views-row views-row-3 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/51">Hướng dẫn tìm kiếm tài liệu qua OPAC</a></span>  </div></li>
+          <li class="views-row views-row-4 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/52">Hướng dẫn sử dụng trang Tài nguyên số</a></span>  </div></li>
+          <li class="views-row views-row-5 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/53">Lớp hướng dẫn sử dụng Thư viện</a></span>  </div></li>
+          <li class="views-row views-row-6 views-row-even">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/54">Tài liệu hướng dẫn sử dụng thư viện</a></span>  </div></li>
+          <li class="views-row views-row-7 views-row-odd">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/55">Đề tài nghiên cứu khoa học</a></span>  </div></li>
+          <li class="views-row views-row-8 views-row-even views-row-last">  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/183">Hướng dẫn gia hạn tài liệu</a></span>  </div></li>
+      </ul></div>    </div>
+  
+      <h2 class="element-invisible">Trang</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a title="Đến trang 2" href="/vi/tan_sinh_vien?page=0%2C0%2C1">2</a></li>
+<li class="pager-item"><a title="Đến trang 3" href="/vi/tan_sinh_vien?page=0%2C0%2C2">3</a></li>
+<li class="pager-next"><a href="/vi/tan_sinh_vien?page=0%2C0%2C1">next ›</a></li>
+<li class="pager-last last"><a href="/vi/tan_sinh_vien?page=0%2C0%2C2">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-views-slide-anh-block" class="block block-views">
+
+        <h2 ><a href="/vi/tranh-nh-th-vi-n" class="block-title-link">Ảnh thư viện</a></h2>
+    
+  <div class="content">
+    <div class="view view-slide-anh view-id-slide_anh view-display-id-block view-dom-id-c79095dfab9339be8a2a3ae788aca908">
+        
+  
+  
+      <div class="view-content">
+      
+  <div class="skin-default">
+    
+    <div id="views_slideshow_cycle_main_slide_anh-block" class="views_slideshow_cycle_main views_slideshow_main"><div id="views_slideshow_cycle_teaser_section_slide_anh-block" class="views-slideshow-cycle-main-frame views_slideshow_cycle_teaser_section">
+  <div id="views_slideshow_cycle_div_slide_anh-block_0" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-1 views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-0 views-row-odd views-row-first">
+    
+  <div class="views-field views-field-field-anh-slide-album">        <div class="field-content"><a href="/vi/node/44"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anhslide_album/public/4IKWdc4kIc1B7S8Bach%20Khoa.jpg?itok=1Ma9pBPH" width="282" height="167" alt="" title="Trường Đại học Bách Khoa Hà Nội" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/44">Ảnh thư viện</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slide_anh-block_1" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-2 views_slideshow_cycle_hidden views-row-even">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-1 views-row-even">
+    
+  <div class="views-field views-field-field-anh-slide-album">        <div class="field-content"><a href="/vi/node/44"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anhslide_album/public/7fd288c5-6753-44ab-8767-1ec4db11b9b4.jpg?itok=bStz_fLJ" width="282" height="167" alt="" title="Thư viện Tạ Quang Bửu" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/44">Ảnh thư viện</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slide_anh-block_2" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-3 views_slideshow_cycle_hidden views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-2 views-row-odd">
+    
+  <div class="views-field views-field-field-anh-slide-album">        <div class="field-content"><a href="/vi/node/44"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anhslide_album/public/1490432965564.jpg?itok=CpdLxoaF" width="282" height="167" alt="" title="Trường ĐH Bách Khoa HN" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/44">Ảnh thư viện</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slide_anh-block_3" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-4 views_slideshow_cycle_hidden views-row-even">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-3 views-row-even">
+    
+  <div class="views-field views-field-field-anh-slide-album">        <div class="field-content"><a href="/vi/node/44"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anhslide_album/public/thu-vien-ta-quang-buu-dai-hoc-bach-khoa-ha-noi-104250.jpg?itok=WrRCBxZN" width="282" height="167" alt="" title="Quang cảnh thư viện Tạ Quang Bửu" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/44">Ảnh thư viện</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slide_anh-block_4" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-5 views_slideshow_cycle_hidden views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-4 views-row-odd">
+    
+  <div class="views-field views-field-field-anh-slide-album">        <div class="field-content"><a href="/vi/node/42"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anhslide_album/public/img0085.JPG?itok=pPhPTuyZ" width="282" height="167" alt="" title="Lễ khánh thành Công trình thư viện điện tử" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/42">Ảnh hoạt động thư viện</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slide_anh-block_5" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-6 views_slideshow_cycle_hidden views-row-even">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-5 views-row-even">
+    
+  <div class="views-field views-field-field-anh-slide-album">        <div class="field-content"><a href="/vi/node/42"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anhslide_album/public/img6039_0.JPG?itok=_RD4omve" width="282" height="167" alt="" title="Biểu diễn văn nghệ" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/42">Ảnh hoạt động thư viện</a></span>  </div></div>
+</div>
+<div id="views_slideshow_cycle_div_slide_anh-block_6" class="views-slideshow-cycle-main-frame-row views_slideshow_cycle_slide views_slideshow_slide views-row-7 views_slideshow_cycle_hidden views-row-odd">
+  <div class="views-slideshow-cycle-main-frame-row-item views-row views-row-6 views-row-odd views-row-last">
+    
+  <div class="views-field views-field-field-anh-slide-album">        <div class="field-content"><a href="/vi/node/42"><img typeof="foaf:Image" src="https://library.hust.edu.vn/sites/default/files/styles/anhslide_album/public/10-10-077_0.jpg?itok=PpKhUezZ" width="282" height="167" alt="" title="Triển lãm thư viện" /></a></div>  </div>  
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/vi/node/42">Ảnh hoạt động thư viện</a></span>  </div></div>
+</div>
+</div>
+</div>
+          <div class="views-slideshow-controls-bottom clearfix">
+        <div id="widget_pager_bottom_slide_anh-block" class="views-slideshow-pager-fields widget_pager widget_pager_bottom views_slideshow_pager_field">
+  <div id="views_slideshow_pager_field_item_bottom_slide_anh-block_0" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd views-row-first">
+  <div class="views-field-counter">
+    <div class="views-content-counter">
+    1  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_bottom_slide_anh-block_1" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even">
+  <div class="views-field-counter">
+    <div class="views-content-counter">
+    2  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_bottom_slide_anh-block_2" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd">
+  <div class="views-field-counter">
+    <div class="views-content-counter">
+    3  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_bottom_slide_anh-block_3" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even">
+  <div class="views-field-counter">
+    <div class="views-content-counter">
+    4  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_bottom_slide_anh-block_4" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd">
+  <div class="views-field-counter">
+    <div class="views-content-counter">
+    5  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_bottom_slide_anh-block_5" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-even">
+  <div class="views-field-counter">
+    <div class="views-content-counter">
+    6  </div>
+</div>
+</div>
+<div id="views_slideshow_pager_field_item_bottom_slide_anh-block_6" class="views-slideshow-pager-field-item views_slideshow_pager_field_item views-row-odd views-row-last">
+  <div class="views-field-counter">
+    <div class="views-content-counter">
+    7  </div>
+</div>
+</div>
+</div>
+      </div>
+      </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+<div id="block-views-view-lien-ket-website-block" class="block block-views">
+
+      
+  <div class="content">
+    <div class="view view-view-lien-ket-website view-id-view_lien_ket_website view-display-id-block view-dom-id-1b99e2469e5652b594380e9b5d044ac6">
+        
+  
+  
+      <div class="view-content">
+      <form action="/tan_sinh_vien" method="post" id="ctools-jump-menu" accept-charset="UTF-8"><div><div class="container-inline"><div class="form-item form-type-select form-item-jump">
+ <select class="ctools-jump-menu-select ctools-jump-menu-change form-select" id="edit-jump" name="jump"><option value="" selected="selected">Liên kết hữu ích</option><option value="cdcf0196cae5ac680dce8802fe46f8f4::http://www.bkholdings.com.vn/">  
+          Công ty TNHH MTV đầu tư và phát triển công nghệ Bách khoa Hà Nội   </option><option value="5f99155f2eea06d12267b70180ff48ab::https://svf.org.vn/">  
+          Tổ chức khởi nghiệp Việt Nam   </option><option value="da91d4f44742d71ec609e8fe9a62426a::http://cov.gov.vn/">  
+          Cục Bản quyền tác giả   </option><option value="e6a97f9b29fd8682b040276f60e330d8::http://www.noip.gov.vn">  
+          Cục Sở hữu trí tuệ   </option><option value="a6393d49ee3820b0bc4c6aad3847ca07::http://vipri.gov.vn/">  
+          Viện Khoa học Sở hữu trí tuệ   </option><option value="af43b2182dafb53aa108d4aa5bca617a::https://www.ipos.gov.sg/">  
+          Cơ quan Sở hữu trí tuệ Singapore   </option><option value="7d000686eac47cc9b50d46c6b1838ede::http://www.sipo.gov.cn/">  
+          Cơ quan Sở hữu trí tuệ Trung Quốc   </option><option value="795f9b3ea8c738797eae10c698c8bfe7::https://www.inpi.fr/fr">  
+          Cơ quan Sở hữu trí tuệ Pháp   </option><option value="5f6779893830eaeb357e3f9d534915af::https://www.gov.uk/government/organisations/intellectual-property-office">  
+          Cơ quan Sở hữu trí tuệ Anh    </option><option value="f749c0d9cfc3aacaeab61d0ac11320bc::https://www.jpo.go.jp/e/">  
+          Cơ quan Sở hữu trí tuệ Nhật   </option><option value="943ede25d7f4fe01a1c5c1f9d8bd7bf2::https://www.uspto.gov/">  
+          Cơ quan Sở hữu trí tuệ Mỹ    </option><option value="a02486bc8f9029a5c90a8669478981c8::https://www.epo.org/">  
+          Cơ quan Sở hữu trí tuệ Châu Âu   </option><option value="ed111530ebef4de890b1d75127000307::https://www.wipo.int/portal/en/index.html">  
+          Cơ quan Sở hữu trí tuệ Thế giới  </option><option value="fa92929650efa3b298fe94a690494394::http://www.vnulib.edu.vn/#1">  
+          Thư viện trung tâm Đại học Quốc gia Tp. Hồ Chí Minh  </option><option value="e9d83bbf811dfd8b5bc99a184d8953e3::http://www.thuvientphcm.gov.vn/index.php?lang=vi">  
+          Thư viện Khoa học tổng hợp Tp. Hồ Chí Minh  </option><option value="071c969d1c02a2ba110ffcf5e79d7fd5::http://lib.hanu.vn/">  
+          Thư viện Đại học Hà Nội  </option><option value="af2f79ce3a48f30924fc8a65b0f3dae8::https://lic.vnu.edu.vn/vi">  
+          Trung tâm Thông tin - TV Đại học Quốc gia Hà Nội  </option><option value="4c9c616afae9f174dcc2e6ca99616d32::http://nlv.gov.vn/">  
+          Thư viện quốc gia Việt Nam  </option><option value="f43431337e8c53b92d0c045918bb8d5c::https://www.hust.edu.vn/">  
+          Trường ĐH Bách Khoa Hà Nội  </option></select>
+</div>
+<input class="ctools-jump-menu-button ctools-jump-menu-hide form-submit" type="submit" id="edit-go" name="op" value="Go" /></div><input type="hidden" name="form_build_id" value="form-1lYqgGBfSbJtpNBmDBti2DYdjtnyEFWP6JY_Jb0mn4M" />
+<input type="hidden" name="form_id" value="ctools_jump_menu" />
+</div></form>    </div>
+  
+  
+  
+  
+  
+  
+</div>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+          </aside> 
+              </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid" id="title-doitac">
+	<div class="container">
+		<div class="row">
+				   
+		</div>
+	</div>
+  </div>
+  
+  <div class="container-fluid" id="Slide-doitac">
+	<div class="container">
+		<div class="row">
+				   
+		</div>
+	</div>
+  </div>
+
+     
+
+  
+      
+    <div id="bottom">
+      <div class="container">
+        <div class="row">
+          <div class="footer-block col-sm-2">	<div class="region region-footer-first">
+  <div id="block-block-1" class="block block-block">
+
+      
+  <div class="content">
+    <p><a href="http://202.191.56.133"><img alt="" src="/sites/default/files/Group 4.png" /></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+		</div>					
+		  		  
+		  <div class="footer-block col-sm-7">	<div class="region region-footer-second">
+  <div id="block-block-2" class="block block-block">
+
+      
+  <div class="content">
+    <div><span style="color:#b31b1b;"><span style="font-size:16px;"><strong>Trung tâm Truyền thông và Tri thức số - Đại học Bách khoa Hà Nội </strong></span></span></div>
+<div> </div>
+<div><span style="color:#000000;">Số 1 Đại Cồ Việt, phường Bạch Mai, Thành phố Hà Nội</span></div>
+<div><span style="color:#033333;">Điện thoại: (84-24) 3869 2243, Email: <a href="mailto:tvtqb@hust.edu.vn">tvtqb@hust.edu.vn</a></span></div>
+<p><a href="http://library.hust.edu.vn/sitemap"><span style="color:#428bca;">Sitemap</span></a></p>
+  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+		</div>					
+		  		  
+          <div class="footer-block col-sm-3">	<div class="region region-footer-third">
+  <div id="block-block-4" class="block block-block">
+
+        <h2 >Mạng xã hội</h2>
+    
+  <div class="content">
+    <ul class="social-media-links"><li class="fb"><a href="https://www.facebook.com/trungtamTTVTTS/" class="fa fa-facebook-official" aria-hidden="true" target="_blank"></a></li>
+<li class="ytb"><a href="https://www.youtube.com/channel/UC1YcL9E0IiB5zEMBQhcBAJg/featured" class="fa fa-youtube" aria-hidden="true" target="_blank"></a></li>
+</ul>  </div>
+  
+</div> <!-- /.block -->
+</div>
+ <!-- /.region -->
+		</div>					
+		                      
+        </div>
+      </div>
+    </div>
+  
+  <footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="row">
+        <div class="fcred col-sm-12">
+		            Bản quyền &copy; 2026, Trung tâm Truyền thông và Tri thức số - Đại học Bách khoa Hà Nội.
+          		</div>
+      </div>
+    </div>
+  <!-- Messenger Plugin chat Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "208707833345376");
+      chatbox.setAttribute("attribution", "biz_inbox");
+
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v12.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script>
+ </div>
+ </div>  </body>
+</html>

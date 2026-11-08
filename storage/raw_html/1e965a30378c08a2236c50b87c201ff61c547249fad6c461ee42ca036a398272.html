@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CTT ĐHBKHN</title>
+    <link href="/Content/bootstrap.css" rel="stylesheet">
+    <link href="/Content/Site.css" rel="stylesheet">
+    <script src="/Scripts/jquery-3.4.1.js"></script>
+
+    <style>
+        /* Button used to open the contact form - fixed at the bottom of the page */
+        .open-button {
+            background-color: #555;
+            color: white;
+            padding: 16px 20px;
+            border: none;
+            cursor: pointer;
+            opacity: 0.8;
+            position: fixed;
+            bottom: 23px;
+            right: 28px;
+            width: 280px;
+        }
+
+        /* The popup form - hidden by default */
+        .form-popup {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            right: 15px;
+            border: 3px solid #f1f1f1;
+            z-index: 9;
+        }
+
+        /* Add styles to the form container */
+        .form-container {
+            max-width: 300px;
+            padding: 10px;
+            background-color: white;
+        }
+
+            /* Full-width input fields */
+            .form-container input[type=text], .form-container input[type=password] {
+                width: 100%;
+                padding: 15px;
+                margin: 5px 0 22px 0;
+                border: none;
+                background: #f1f1f1;
+            }
+
+                /* When the inputs get focus, do something */
+                .form-container input[type=text]:focus, .form-container input[type=password]:focus {
+                    background-color: #ddd;
+                    outline: none;
+                }
+
+            /* Set a style for the submit/login button */
+            .form-container .btn {
+                background-color: #04AA6D;
+                color: white;
+                padding: 16px 20px;
+                border: none;
+                cursor: pointer;
+                width: 100%;
+                margin-bottom: 10px;
+                opacity: 0.8;
+            }
+
+            /* Add a red background color to the cancel button */
+            .form-container .cancel {
+                background-color: red;
+            }
+
+            /* Add some hover effects to buttons */
+            .form-container .btn:hover, .open-button:hover {
+                opacity: 1;
+            }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <div class="container">
+                <div class="w-left col-md-6 col-xs-12">
+                    <a href="https://ctt.hust.edu.vn/"><img src="/Images/logo.png"></a>
+                </div>
+                <div class="w-right col-md-6 col-xs-12">
+                    <div class="search">
+<form action="/BaiViets/SearchBaiViet" method="post">                            <input type="text" name="strSearch" placeholder="Tìm kiếm">
+                            <img src="/Images/mask.svg">
+</form>
+                    </div>
+                    <div class="">
+                            <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://asso.hust.edu.vn/adfs/ls/?wtrealm=https%3A%2F%2Fctt.hust.edu.vn%2F&wctx=WsFedOwinState%3DDuNr3hbm4Ne4GNNtLx4f4_Dt54ECMPwvbdtOJzi1bGT5S4pDTqU0pREWhJY-fbdCgqP65IoohcbJRcFhqWwktsYO6YaZANjvpwfllWoYFgiqj5bLNOTjicl72xHxFcNG3aVCHfLWPOwIAO2bkXJGaA&wa=wsignin1.0&wreply=https%3A%2F%2Fctt.hust.edu.vn%2F">
+                Đăng nhập
+            </a>
+        </div>
+    </div>
+    <div class="logIn">
+        <div class="btn-submit">
+            <a id="loginLink" href="https://ctt-sis.hust.edu.vn">
+                Dành cho phụ huynh
+            </a>
+        </div>
+    </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="menu">
+            <div class="navigation">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div class="navbar-collapse collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="dropdown" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+                            <li class="dropdown" id="thongbao">
+                                <a href="#" class="activeMenu">Thông báo</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                                </ul>
+                            </li>
+							
+                            <!-- <li class="dropdown" id="kehoach"> -->
+                                <!-- <a href="#" class="activeMenu">Kế hoạch</a> -->
+                                <!-- <ul class="child-menu dropdown-menu"> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li> -->
+                                    <!-- <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li> -->
+                                <!-- </ul> -->
+                            <!-- </li> -->
+                            <li class="dropdown" id="quydinh">
+                                <a href="#" class="activeMenu">Quy định</a>
+                                <ul class="child-menu dropdown-menu">
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                                    
+                                    <li><a href="/DisplayWeb/DisplayMenu?menu=13">Biểu mẫu</a></li>
+                                </ul>
+                            </li>
+							<li class="dropdown" id="sotay">
+                                <a href="https://ctsv.hust.edu.vn/so-tay-sv">Sổ tay</a>
+                            </li>
+                            <li class="dropdown" id="dichvu">
+								<a href="https://sv-ctt.hust.edu.vn/#/so-tay-sv">Dịch vụ</a>
+                                <!-- <a href="/Services">Dịch vụ</a> -->
+                            </li>
+							<!-- <li class="dropdown" id="nhaphoc">
+                                <a href="https://sv-ctt.hust.edu.vn/#/nhap-hoc">Nhập học</a>
+                                
+                            </li> -->
+                            <li class="dropdown" id="tracuuvanbang">
+                                <a href="https://ctt-sis.hust.edu.vn/pub/SearchGraduation.aspx">Tra cứu</a>
+                                
+                            </li>
+                            <li class="dropdown" id="lienhe">
+								<a href="https://ctsv.hust.edu.vn/so-tay-sv/69/ban-dao-tao-huong-dan-thu-tuc-bieu-mau-thac-mac-ve-hoc-tap-hoc-phi">Liên hệ</a>
+                                <!-- <a href="/DisplayWeb/DisplayMenu?menu=2058">Li&#234;n hệ</a> -->
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="body">
+            
+
+<div class="container" style="margin-top: 15px;">
+    <div class="col-md-3 col-xs-12">
+        <ul class="slideBar">
+            <li class="" id="trangchu"><a href="/">Trang chủ</a><div class="pseudo_after"></div></li>
+            <li class="" id="thongbao">
+                <a href="#">Thông báo</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListBaiViet?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+
+            <li class="" id="kehoach">
+                <a href="#">Kế hoạch</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayListKeHoach?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="quydinh">
+                <a href="#">Quy định</a>
+                <ul class="chil-slideBar">
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTĐH">Đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=ĐTSĐH">Sau đại học</a></li>
+                    <li><a href="/DisplayWeb/DisplayQuyChe?tag=VLVH">Vừa làm vừa học</a></li>
+                </ul>
+            </li>
+            <li class="" id="dichvu">
+                <a href="/Services">Dịch vụ</a>
+            </li>
+        </ul>
+    </div>
+	
+    <div class="col-md-9 col-xs-12">
+		<h3>TH&#212;NG B&#193;O VỀ VIỆC TUYỂN CHỌN NAM SINH VI&#202;N ĐI Đ&#192;O TẠO SĨ QUAN DỰ BỊ NĂM 2026</h3>
+        &nbsp; &nbsp; &nbsp;Thực hiện Quyết định số 60/QĐ-BGDĐT ng&agrave;y 07/4/2026 của Bộ Gi&aacute;o dục v&agrave; Đ&agrave;o tạo về việc giao nhiệm vụ tuyển chọn nam sinh vi&ecirc;n tốt nghiệp đại học đi đ&agrave;o tạo sĩ quan dự bị (SQDB) năm 2026, Đại học B&aacute;ch khoa H&agrave; Nội th&ocirc;ng b&aacute;o về c&ocirc;ng t&aacute;c tuyển chọn nam sinh vi&ecirc;n tốt nghiệp đại học đi đ&agrave;o tạo SQDB như sau:<br />
+<br />
+<strong>1. Chỉ ti&ecirc;u đ&agrave;o tạo</strong><br />
+Tổng chỉ ti&ecirc;u đ&agrave;o tạo SQDB năm 2026 l&agrave; 08 chỉ ti&ecirc;u thuộc c&aacute;c ng&agrave;nh sau:<br />
+- Kỹ thuật Cơ điện tử<br />
+- Kỹ thuật Cơ kh&iacute;<br />
+- Kỹ thuật &Ocirc; t&ocirc;<br />
+- Kỹ thuật Cơ kh&iacute; động lực<br />
+- Kỹ thuật M&aacute;y t&iacute;nh<br />
+- Kỹ thuật Nhiệt<br />
+- Kỹ thuật Phần mềm<br />
+- Kỹ thuật Điện tử - Viễn th&ocirc;ng<br />
+- Kỹ thuật Điều khiển v&agrave; Tự động h&oacute;a<br />
+<br />
+<strong>2. Thời gian đ&agrave;o tạo</strong><br />
+Thời gian đ&agrave;o tạo 4 th&aacute;ng theo chương tr&igrave;nh đ&agrave;o tạo của Bộ Quốc Ph&ograve;ng, dự kiến khai giảng v&agrave;o đầu th&aacute;ng 7/2026 (thời gian cụ thể sẽ th&ocirc;ng b&aacute;o sau).<br />
+<br />
+<strong>3. Địa điểm đ&agrave;o tạo: </strong>Trường Qu&acirc;n sự Bộ tư lệnh Thủ đ&ocirc; H&agrave; Nội.<br />
+<br />
+<strong>4. Đối tượng v&agrave; ti&ecirc;u chuẩn</strong><br />
+a) Đối tượng: Nam sinh vi&ecirc;n c&oacute; đủ điều kiện về ch&iacute;nh trị, sức khỏe, tuổi đời kh&ocirc;ng qu&aacute; 30, đ&atilde; tốt nghiệp đại học trong năm 2026 v&agrave; kh&ocirc;ng thuộc diện tạm ho&atilde;n gọi nhập ngũ hoặc miễn gọi nhập ngũ trong thời b&igrave;nh, cụ thể:<br />
+b) Ti&ecirc;u chuẩn<br />
+- Về ch&iacute;nh trị, đạo đức, tr&igrave;nh độ chuy&ecirc;n m&ocirc;n: C&oacute; l&yacute; lịch r&otilde; r&agrave;ng, đủ ti&ecirc;u chuẩn về ch&iacute;nh trị để bồi dưỡng ph&aacute;t triển th&agrave;nh đảng vi&ecirc;n Đảng Cộng sản Việt Nam; c&oacute; bản lĩnh ch&iacute;nh trị vững v&agrave;ng, trung th&agrave;nh với Tổ quốc, với Đảng, với nh&acirc;n d&acirc;n; c&oacute; phẩm chất đạo đức tốt; đ&atilde; tốt nghiệp đại học c&aacute;c ng&agrave;nh như tr&ecirc;n (ưu ti&ecirc;n những sinh vi&ecirc;n c&oacute; kết quả tốt nghiệp đạt loại kh&aacute; trở l&ecirc;n); l&agrave; đảng vi&ecirc;n hoặc đo&agrave;n vi&ecirc;n thanh ni&ecirc;n cộng sản Hồ Ch&iacute; Minh.<br />
+- Về thể lực: sức khỏe đạt từ loại 1 đến loại 2 theo quy định tại Th&ocirc;ng tư số 105/2023/TT-BQP ng&agrave;y 06/12/2023 của Bộ Quốc ph&ograve;ng quy định về ti&ecirc;u chuẩn sức khỏe, kh&aacute;m sức khỏe cho c&aacute;c đối tượng thuộc phạm vi quản l&yacute; của Bộ Quốc ph&ograve;ng.<br />
+<br />
+<strong>5. Nghĩa vụ của sinh vi&ecirc;n</strong><br />
+Nam sinh vi&ecirc;n được tuyển chọn đ&agrave;o tạo SQDB c&oacute; tr&aacute;ch nhiệm thực hiện c&aacute;c quy định về tuyển chọn v&agrave; chấp h&agrave;nh lệnh gọi đi đ&agrave;o tạo SQDB.<br />
+<br />
+<strong>6. Quyền lợi</strong><br />
+a) Trong thời gian đ&agrave;o tạo SQDB:<br />
+- Được hưởng chế độ ăn h&agrave;ng ng&agrave;y như đối với học vi&ecirc;n đ&agrave;o tạo sĩ quan cấp ph&acirc;n đội kể từ ng&agrave;y c&oacute; mặt tại cơ sở đ&agrave;o tạo cho đến khi kết th&uacute;c kho&aacute; đ&agrave;o tạo;<br />
+- Được mượn, cấp qu&acirc;n trang v&agrave; một số đồ d&ugrave;ng sinh hoạt theo quy định của Bộ Quốc ph&ograve;ng;<br />
+- Được hưởng phụ cấp tr&aacute;ch nhiệm quản l&yacute; đơn vị dự bị động vi&ecirc;n theo quy định hiện h&agrave;nh của Nh&agrave; nước;<br />
+b) Sau khi tốt nghiệp SQDB:<br />
+- Được phong qu&acirc;n h&agrave;m sĩ quan dự bị;<br />
+- Được đăng k&yacute; v&agrave;o ngạch dự bị động vi&ecirc;n v&agrave; <strong><em>được miễn thực hiện nghĩa vụ qu&acirc;n sự trong thời b&igrave;nh khi chưa c&oacute; lệnh động vi&ecirc;n</em></strong>;<br />
+- Được phục vụ l&acirc;u d&agrave;i trong Qu&acirc;n đội nếu c&oacute; nguyện vọng v&agrave; được Bộ Quốc ph&ograve;ng đồng &yacute; tuyển dụng.<br />
+<br />
+<strong>7. Dự kiến kế hoạch thực hiện </strong><br />
+<table border="1" cellpadding="0" cellspacing="0">
+	<tbody>
+		<tr>
+			<td style="width:47px;">
+				<strong>TT</strong></td>
+			<td style="width:378px;">
+				<strong>Nội dung c&ocirc;ng việc</strong></td>
+			<td style="width:187px;">
+				<strong>Thời gian dự kiến</strong><br />
+				<em>(Từ ng&agrave;y ... đến ng&agrave;y ...)</em></td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				1</td>
+			<td style="width:378px;">
+				Th&ocirc;ng b&aacute;o tuyển chọn sinh vi&ecirc;n đi đ&agrave;o tạo SQDB năm 2026</td>
+			<td style="width:187px;">
+				29/4-10/5/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				2</td>
+			<td style="width:378px;">
+				Sinh vi&ecirc;n đăng k&yacute; (online) v&agrave; k&ecirc; khai l&yacute; lịch (theo mẫu &ndash; tải ở mục 8 b&ecirc;n dưới)</td>
+			<td style="width:187px;">
+				29/4-10/5/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				3</td>
+			<td style="width:378px;">
+				Gặp mặt ứng vi&ecirc;n đăng k&yacute; dự tuyển, thu bản k&ecirc; khai l&yacute; lịch v&agrave; phổ biến quy định đ&agrave;o tạo SQDB</td>
+			<td style="width:187px;">
+				12/5/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				4</td>
+			<td style="width:378px;">
+				Họp Hội đồng tuyển chọn SQDB sơ tuyển v&ograve;ng 1</td>
+			<td style="width:187px;">
+				14/5/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				5</td>
+			<td style="width:378px;">
+				X&aacute;c minh l&yacute; lịch ứng vi&ecirc;n được tuyển v&ograve;ng 1 (Nh&agrave; trường x&aacute;c minh)</td>
+			<td style="width:187px;">
+				15/5-31/5/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				6</td>
+			<td style="width:378px;">
+				Kh&aacute;m sức khỏe cho ứng vi&ecirc;n được sơ tuyển v&ograve;ng 1 (Nh&agrave; trường tổ chức kh&aacute;m sức khỏe cho sinh vi&ecirc;n)</td>
+			<td style="width:187px;">
+				03/6/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				7</td>
+			<td style="width:378px;">
+				Họp Hội đồng tuyển chọn SQDB tuyển ứng vi&ecirc;n đủ ti&ecirc;u chuẩn v&agrave; ho&agrave;n thiện hồ sơ b&aacute;o c&aacute;o Bộ GD&amp;ĐT</td>
+			<td style="width:187px;">
+				09/6/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				8</td>
+			<td style="width:378px;">
+				Chờ lệnh gọi của Bộ Quốc ph&ograve;ng</td>
+			<td style="width:187px;">
+				Từ 09/6-30/6/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				9</td>
+			<td style="width:378px;">
+				Lễ b&agrave;n giao qu&acirc;n</td>
+			<td style="width:187px;">
+				06/7/2026</td>
+		</tr>
+		<tr>
+			<td style="width:47px;">
+				10</td>
+			<td style="width:378px;">
+				Tập trung học tại Trường Qu&acirc;n sự Bộ tư lệnh Thủ đ&ocirc; H&agrave; Nội</td>
+			<td style="width:187px;">
+				06/7-06/11/2026</td>
+		</tr>
+	</tbody>
+</table>
+<strong><em><u>Lưu &yacute;</u></em></strong><em>: Kế hoạch tr&ecirc;n c&oacute; thể thay đổi, Ban C&ocirc;ng t&aacute;c sinh vi&ecirc;n sẽ cập nhật v&agrave; gửi qua email (do Đại học cấp) cho ứng vi&ecirc;n.</em><br />
+<br />
+<strong>8. Phương thức, biểu mẫu v&agrave; hồ sơ đăng k&yacute; dự tuyển đ&agrave;o tạo SQDB</strong><br />
+- Sinh vi&ecirc;n đăng k&yacute; dự tuyển tại đ&acirc;y: <a href="https://forms.office.com/r/qXinuKawwy">https://forms.office.com/r/qXinuKawwy</a><br />
+- Tải mẫu l&yacute; lịch (mẫu 5b) tại đ&acirc;y: <a href="https://husteduvn-my.sharepoint.com/:w:/g/personal/khai_tranquang_hust_edu_vn1/EayVgefXSMtNioy99Sp-5vkBqil-2ICJue-S4MVAEGDtWQ?e=abKfZL">Mau-tham-tra-xac-minh-ly-lich 5b.doc</a><br />
+- Xem hướng dẫn k&ecirc; khai mẫu 5b tại đ&acirc;y: <a href="https://husteduvn-my.sharepoint.com/:b:/g/personal/khai_tranquang_hust_edu_vn1/ERxq3Rea179Psuc67v6KDqABaVH6vBqfeB6BZghUAhspRg?e=usf2QX">Hướng dẫn khai Mẫu 5b.pdf</a><br />
+<em>Th&ocirc;ng tin chi tiết về việc tuyển chọn SQDB xin li&ecirc;n hệ với Chuy&ecirc;n vi&ecirc;n Ng&ocirc; Anh Ngọc, ĐT: 0981.181.366 , email: ngoc.ngoanh@hust.edu.vn.</em><br />
+<br />
+
+    </div>
+</div>
+<script type="text/javascript">
+    $("#thongbao").css("border-bottom", "3px solid red");
+	$("#thongbao .activeMenu").css("color", "#e70000");
+</script>
+
+
+
+        </div>
+        <div class="footer">
+            <div class="text">
+                <p>Bản quyền thuộc về Đại học Bách Khoa Hà Nội</p>
+                <p class="normal">Địa chỉ: Số 1 Đại Cồ Việt, Hai Bà Trưng, Hà Nội</p>
+            </div>
+        </div>
+        <script src="/bundles/jquery?v=eb2jXqSfUvTzglcYJmAPvAmCoKM7It9q8QvAflpVkwA1"></script>
+
+        <script src="/bundles/bootstrap?v=M4Nk6kIOwMFflsEKET0iPL9i5YBqbzMzvUOrd8gyCnw1"></script>
+
+        
+        
+
+        <!-- <button class="open-button" onclick="openForm()">THÔNG TIN LIÊN HỆ</button> -->
+
+        <!-- <div class="form-popup" id="myForm" style="display:block"> -->
+            <!-- <form action="/action_page.php" class="form-container"> -->
+                <!-- <p style="box-sizing: border-box; margin: 0px 0px 10px; font-family: &quot;Helvetica Neue&quot;, Helvetica, Arial, sans-serif; font-size: 20px; color: rgb(0, 0, 0);"> -->
+                    <!-- <span style="box-sizing: border-box; font-weight: 700; color: rgb(0, 119, 179); outline: 0px; font-family: &quot;times new roman&quot;, serif;"><span style="box-sizing: border-box;"><span style="box-sizing: border-box; color: maroon;">THÔNG TIN LIÊN HỆ</span></span></span> -->
+                <!-- </p> -->
+                <!-- <div class="content1" data-v-759c90ec="" style="box-sizing: inherit; color: rgb(0, 0, 0); font-family: &quot;Helvetica Neue&quot;, Helvetica, &quot;PingFang SC&quot;, &quot;Hiragino Sans GB&quot;, &quot;Microsoft YaHei&quot;, Arial, sans-serif; font-size: 14px;"> -->
+                    <!-- <div class="contact_title" data-v-759c90ec="" style="box-sizing: inherit; font-weight: 700; text-transform: uppercase;"> -->
+                        <!-- TRƯỜNG ĐẠI HỌC BÁCH KHOA HÀ NỘI <br/> -->
+                        <!-- PHÒNG ĐÀO TẠO ĐẠI HỌC -->
+                    <!-- </div> -->
+                    <!-- <div data-v-759c90ec="" style="box-sizing: inherit;"> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Ph&ograve;ng 202, Nh&agrave; C1, Trường Đại học B&aacute;ch Khoa H&agrave; Nội -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Điện thoại: 024 3869 2008 -->
+                        <!-- </p> -->
+                        <!-- <p data-v-759c90ec="" style="box-sizing: inherit; margin: 3px 0px;"> -->
+                            <!-- Email: dt@hust.edu.vn -->
+                        <!-- </p> -->
+                    <!-- </div> -->
+                <!-- </div> -->
+
+                <!-- <button type="button" class="btn cancel" onclick="closeForm()">Close</button> -->
+            <!-- </form> -->
+        <!-- </div> -->
+
+        <!-- <script> -->
+            <!-- function openForm() { -->
+                <!-- document.getElementById("myForm").style.display = "block"; -->
+            <!-- } -->
+
+            <!-- function closeForm() { -->
+                <!-- document.getElementById("myForm").style.display = "none"; -->
+            <!-- } -->
+        <!-- </script> -->
+</body>
+</html>

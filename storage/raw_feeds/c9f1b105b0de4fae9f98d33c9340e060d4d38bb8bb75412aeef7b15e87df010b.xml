@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Projects &#8211; Bach Khoa Cybersecurity Center</title>
+	<atom:link href="https://bkcs.hust.edu.vn/projects/feed/" rel="self" type="application/rss+xml" />
+	<link>https://bkcs.hust.edu.vn</link>
+	<description></description>
+	<lastBuildDate>Thu, 20 Mar 2025 14:04:02 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=6.7.2</generator>
+
+<image>
+	<url>https://bkcs.hust.edu.vn/wp-content/uploads/2025/03/cropped-android-chrome-512x512-1-32x32.png</url>
+	<title>Projects &#8211; Bach Khoa Cybersecurity Center</title>
+	<link>https://bkcs.hust.edu.vn</link>
+	<width>32</width>
+	<height>32</height>
+</image> 
+	<item>
+		<title>A comprehensive solution for the security of industrial control systems</title>
+		<link>https://bkcs.hust.edu.vn/projects/a-comprehensive-solution-for-the-security-of-industrial-control-systems/</link>
+		
+		<dc:creator><![CDATA[bkcs]]></dc:creator>
+		<pubDate>Tue, 18 Mar 2025 06:23:56 +0000</pubDate>
+				<guid isPermaLink="false">https://bkcs.hust.edu.vn/?post_type=projects&#038;p=182</guid>
+
+					<description><![CDATA[The objective of the project is to create a comprehensive solution, comprising both hardware and software, to monitor, identify, and]]></description>
+										<content:encoded><![CDATA[
+<p class="has-text-align-justify has-text-align-justify">The objective of the project is to create a comprehensive solution, comprising both hardware and software, to monitor, identify, and mitigate attacks on the Industrial Control System/Operational Technology (ICS/OT) within factories and industrial organizations. To achieve this objective, we perform research on attack risks across many layers, ranging from the user application layer to the physical device layer of the ICS/OT system. Consequently, we developed an OT Security Appliance that facilitates early detection of attacks from both internal and external sources, is simple to deploy, and exhibits strong compatibility with the device levels inside the infrastructure. The centralized management application, OT Security Dashboard, will be built to enable the monitoring and management of security devices, offering an in-depth view of the system&#8217;s information security posture. This project seeks to use advanced machine learning models to improve the analysis of access flows and the detection of attacks on ICS/OT systems.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+		<item>
+		<title>An AI-driven Security Information and Event Management system for enhancing the security of e-Government services</title>
+		<link>https://bkcs.hust.edu.vn/projects/an-ai-driven-security-information-and-event-management-system-for-enhancing-the-security-of-e-government-services/</link>
+		
+		<dc:creator><![CDATA[bkcs]]></dc:creator>
+		<pubDate>Mon, 17 Mar 2025 10:38:24 +0000</pubDate>
+				<guid isPermaLink="false">https://bkcs.hust.edu.vn/?post_type=projects&#038;p=162</guid>
+
+					<description><![CDATA[E-Government refers to the use of IT by government agencies that are responsible for transforming information between people, businesses, and]]></description>
+										<content:encoded><![CDATA[
+<p class="has-text-align-justify has-text-align-justify">E-Government refers to the use of IT by government agencies that are responsible for transforming information between people, businesses, and all other governmental stakeholders. The objectives of e-government include better delivery of public services to people, enhancing business and industry collaborations, citizen empowerment through access to information, and more effective governance.&nbsp; For e-government services, cybersecurity is a distinct challenge due to the myriad threats that government organizations encounter every day and the magnitude of their repercussions if they are inadequately addressed.</p>
+
+
+
+<p class="has-text-align-justify has-text-align-justify">In this research project, we develop an AI-driven security information and event management system. Such a system provides automated, continuous analysis and correlation of all activities collected within the e-Government services.</p>
+]]></content:encoded>
+					
+		
+		
+			</item>
+	</channel>
+</rss>
