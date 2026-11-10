@@ -1,0 +1,9 @@
+target/
+.idea/
+*.iml
+.vscode/
+storage/
+.archify/
+.agents/
+AGENTS.md
+GEMINI.md
