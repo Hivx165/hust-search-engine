@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
@@ -7,20 +7,41 @@
     <groupId>edu.hust.search</groupId>
     <artifactId>hust-search-engine</artifactId>
     <version>1.0-SNAPSHOT</version>
-    
+
     <packaging>pom</packaging>
     <name>HUST Search Engine Root</name>
 
     <modules>
-        <!-- <module>crawler-module</module>
-        <module>evaluation-module</module>
-        <module>lucene-core-module</module>
-        <module>parser-module</module> -->
         <module>web-app-module</module>
+      
+        <module>crawler-module</module>
+        
+        <!-- Các module khác tạm thời ẩn, mở ra khi bạn kéo code của họ về -->
+        <!-- <module>evaluation-module</module> -->
+        <!-- <module>lucene-core-module</module> -->
+        <!-- <module>parser-module</module> -->
     </modules>
 
     <properties>
         <maven.compiler.release>17</maven.compiler.release>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
+
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <version>3.13.0</version>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.5.2</version>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
 </project>
+>>>>>>> origin/feature/crawler
