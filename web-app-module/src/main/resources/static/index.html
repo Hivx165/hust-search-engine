@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HUST Search Engine</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="search-header">
+      <h1 class="logo">N67 HUST Search</h1>
+      <div class="search-box-container">
+        <div class="search-box">
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Nhập từ khóa tìm kiếm..."
+            autocomplete="off"
+          />
+          <select id="subdomainFilter" class="subdomain-select">
+            <option value="">Tất cả các Trường</option>
+            <option value="soict.hust.edu.vn">CNTT & TT (SOICT)</option>
+            <option value="sami.hust.edu.vn">Toán ứng dụng (SAMI)</option>
+            <option value="cfl.hust.edu.vn">Ngoại ngữ (CFL)</option>
+          </select>
+          <button id="searchBtn">Tìm kiếm</button>
+        </div>
+        <div id="searchHistory" class="search-history"></div>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <div id="searchStats" class="search-stats"></div>
+      <div id="resultsContainer" class="results-container"></div>
+      <div id="paginationContainer" class="pagination"></div>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
