@@ -21,7 +21,7 @@
             <version>3.2.0</version>
         </dependency>
 
-        <!-- <dependency>
+        <dependency>
             <groupId>edu.hust.search</groupId>
             <artifactId>lucene-core-module</artifactId>
             <version>${project.version}</version>
@@ -31,7 +31,8 @@
             <groupId>edu.hust.search</groupId>
             <artifactId>crawler-module</artifactId>
             <version>${project.version}</version>
-        </dependency> -->
+        </dependency>
+
     </dependencies>
 
     <build>

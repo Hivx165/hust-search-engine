@@ -110,9 +110,17 @@ mark {
   background-color: #f1f3f4;
 }
 .history-icon {
-  margin-right: 10px;
-  font-size: 14px;
-  color: #9aa0a6;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+}
+.history-icon svg {
+  width: 20px;
+  height: 20px;
+  fill: #9aa0a6;
+}
+.history-text {
+  flex: 1;
 }
 
 #searchInput {
@@ -123,6 +131,7 @@ mark {
   border-radius: 24px 0 0 24px;
   outline: none;
   background: transparent;
+  line-height: 1.5;
 }
 
 #searchBtn {
@@ -150,7 +159,28 @@ mark {
 }
 
 .result-item {
-  margin-bottom: 25px;
+  margin-bottom: 32px;
+}
+
+/* Định dạng URL kiểu mới (có icon và dấu điều hướng) */
+.breadcrumb-url {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #202124;
+  margin-bottom: 6px;
+}
+
+.breadcrumb-url .favicon {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  background-color: #f1f3f4;
+}
+
+.breadcrumb-url span {
+  color: #4d5156;
 }
 .result-url {
   color: #006621;
@@ -163,7 +193,7 @@ mark {
   color: #1a0dab;
   font-size: 20px;
   text-decoration: none;
-  display: block;
+  display: inline-block;
   margin-bottom: 4px;
 }
 .result-title:hover {
@@ -173,6 +203,12 @@ mark {
   color: #4d5156;
   font-size: 14px;
   line-height: 1.5;
+}
+.result-item > a {
+  text-decoration: none;
+}
+.result-item > a:hover .result-title {
+  text-decoration: underline;
 }
 
 .pagination {
@@ -197,4 +233,85 @@ mark {
 .page-btn:disabled {
   color: #9aa0a6;
   cursor: not-allowed;
+}
+
+.filter-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+}
+
+.subdomain-select-bottom {
+  padding: 8px 16px;
+  background-color: #f1f3f4;
+  border: 1px solid #dfe1e5;
+  border-radius: 16px;
+  color: #3c4043;
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.subdomain-select-bottom:hover {
+  background-color: #e8eaed;
+  box-shadow: 0 1px 3px rgba(32, 33, 36, 0.1);
+}
+
+/* TODO: TRẠNG THÁI TẢI DỮ LIỆU (SKELETON) */
+
+.skeleton-item {
+  margin-bottom: 32px;
+}
+
+.skeleton {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    to right,
+    #f6f7f8 0%,
+    #e7e9ed 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 100%;
+  animation-duration: 1.2s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: placeholderShimmer;
+  animation-timing-function: linear;
+  border-radius: 4px;
+}
+
+/* Keyframes định nghĩa dải sáng lướt từ trái qua phải */
+@keyframes placeholderShimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton-url {
+  width: 50%; /* Giả lập độ dài của đường link / breadcrumb */
+  height: 14px;
+  margin-bottom: 8px;
+  border-radius: 12px;
+}
+
+.skeleton-title {
+  width: 80%; /* Giả lập độ dài tiêu đề */
+  height: 22px;
+  margin-bottom: 12px;
+}
+
+.skeleton-text {
+  width: 100%; /* Giả lập dòng mô tả (snippet) thứ 1 */
+  height: 16px;
+  margin-bottom: 6px;
+}
+
+.skeleton-text.short {
+  width: 65%; /* Giả lập dòng mô tả (snippet) thứ 2 bị ngắn hơn */
 }

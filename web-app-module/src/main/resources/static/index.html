@@ -9,6 +9,8 @@
   <body>
     <header class="search-header">
       <h1 class="logo">N67 HUST Search</h1>
+
+      <!-- Hộp tìm kiếm chính -->
       <div class="search-box-container">
         <div class="search-box">
           <input
@@ -17,12 +19,6 @@
             placeholder="Nhập từ khóa tìm kiếm..."
             autocomplete="off"
           />
-          <select id="subdomainFilter" class="subdomain-select">
-            <option value="">Tất cả các Trường</option>
-            <option value="soict.hust.edu.vn">CNTT & TT (SOICT)</option>
-            <option value="sami.hust.edu.vn">Toán ứng dụng (SAMI)</option>
-            <option value="cfl.hust.edu.vn">Ngoại ngữ (CFL)</option>
-          </select>
           <button id="searchBtn">Tìm kiếm</button>
         </div>
         <div id="searchHistory" class="search-history"></div>
@@ -31,6 +27,9 @@
 
     <!-- MAIN CONTENT -->
     <main class="main-content">
+      <div class="filter-container">
+        <select id="subdomainFilter" class="subdomain-select-bottom"></select>
+      </div>
       <div id="searchStats" class="search-stats"></div>
       <div id="resultsContainer" class="results-container"></div>
       <div id="paginationContainer" class="pagination"></div>

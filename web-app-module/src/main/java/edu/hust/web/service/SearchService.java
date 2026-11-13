@@ -1,56 +1,45 @@
 package edu.hust.web.service;
 
-import edu.hust.web.dto.DocumentDto;
-import edu.hust.web.dto.SearchRequest;
-import edu.hust.web.dto.SearchResponse;
-import org.springframework.stereotype.Service;
+import edu.hust.search.query.LuceneSearchService;
+import edu.hust.search.query.SearchResultDTO;
+// Import thêm DTO Wrapper mà ta vừa tạo
+import edu.hust.search.query.PagedSearchResponse;
 
-import java.util.ArrayList;
-import java.util.List;
+import org.springframework.stereotype.Service;
+import java.util.Collections;
 
 @Service
 public class SearchService {
 
-    public SearchResponse search(SearchRequest request) {
-        long startTime = System.currentTimeMillis();
+    private final LuceneSearchService luceneSearchService;
 
-        // Lấy các giá trị đã được chuẩn hóa từ Request
-        String keyword = request.keyword();
-        int page = request.page();
-        int size = request.size();
-
-        List<DocumentDto> allMockResults = generateMockData(keyword);
-        int totalResults = allMockResults.size();
-        
-        int totalPages = (int) Math.ceil((double) totalResults / size);
-        
-        if (page > totalPages && totalPages > 0) {
-            page = totalPages;
-        }
-
-        int startIndex = (page - 1) * size;
-        
-        List<DocumentDto> pagedResults = new ArrayList<>();
-        if (startIndex < totalResults) {
-            int endIndex = Math.min(startIndex + size, totalResults);
-            pagedResults = allMockResults.subList(startIndex, endIndex);
-        }
-
-        long processingTime = System.currentTimeMillis() - startTime;
-
-        return new SearchResponse(keyword, totalResults, page, totalPages, processingTime, pagedResults);
+    public SearchService(LuceneSearchService luceneSearchService) {
+        this.luceneSearchService = luceneSearchService;
     }
 
-    private List<DocumentDto> generateMockData(String keyword) {
-        List<DocumentDto> list = new ArrayList<>();
-        for (int i = 1; i <= 25; i++) {
-            list.add(new DocumentDto(
-                "Tài liệu " + i + " về: " + keyword,
-                "https://hust.edu.vn/doc/" + i,
-                "Đây là trích đoạn nội dung...",
-                (float) (Math.random() * 10)
-            ));
+    public PagedSearchResponse search(String keyword, String subdomain, int page, int size) {
+
+        // Validation
+        if (keyword == null || keyword.trim().isEmpty()) {
+            // Fallback: Trả về đối tượng PagedSearchResponse với tổng số = 0 và danh sách
+            // rỗng
+            return new PagedSearchResponse(0, Collections.emptyList());
         }
-        return list;
+
+        if (page < 1)
+            page = 1;
+        if (size <= 0)
+            size = 10;
+        if (size > 100)
+            size = 100;
+
+        try {
+            return luceneSearchService.doSearch(keyword, subdomain, page, size);
+
+        } catch (Exception e) {
+            System.err.println("Lỗi trong quá trình tìm kiếm Lucene: " + e.getMessage());
+            e.printStackTrace();
+            return new PagedSearchResponse(0, Collections.emptyList());
+        }
     }
 }
