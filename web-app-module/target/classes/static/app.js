@@ -16,6 +16,50 @@ searchInput.addEventListener("keypress", (e) => {
   if (e.key === "Enter") triggerSearch();
 });
 
+window.addEventListener("DOMContentLoaded", async () => {
+  // Đọc các tham số trên thanh địa chỉ URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const keyword = urlParams.get("keyword");
+  const subdomain = urlParams.get("subdomain") || "";
+  const page = parseInt(urlParams.get("page")) || 1;
+
+  await loadSubdomains(subdomain);
+
+  // Nếu có từ khóa trên thanh URL -> Tự động điền vào ô input và gọi tìm kiếm
+  if (keyword) {
+    searchInput.value = keyword;
+    subdomainFilter.value = subdomain;
+    currentKeyword = keyword;
+
+    // Gọi thẳng hàm fetch để bỏ qua bước lưu lịch sử khi mới load trang
+    fetchResults(keyword, page);
+  }
+});
+
+subdomainFilter.addEventListener("change", () => {
+  if (currentKeyword) {
+    fetchResults(currentKeyword, 1);
+  }
+});
+
+window.addEventListener("popstate", (event) => {
+  if (event.state) {
+    const { keyword, subdomain, page } = event.state;
+    searchInput.value = keyword;
+    subdomainFilter.value = subdomain;
+    currentKeyword = keyword;
+
+    // Gọi lại hàm để render dữ liệu cũ mà không làm reload trang
+    fetchResults(keyword, page);
+  } else {
+    // Nếu quay về trang chủ (không có tham số)
+    resultsContainer.innerHTML = "";
+    searchStats.textContent = "";
+    paginationContainer.innerHTML = "";
+    searchInput.value = "";
+  }
+});
+
 function triggerSearch() {
   const keyword = searchInput.value.trim();
   if (!keyword) return;
@@ -30,7 +74,7 @@ function triggerSearch() {
 
 //TODO: CALL API Spring Boot
 function fetchResults(keyword, page) {
-  // SỬA Ở ĐÂY: Gọi hiệu ứng nhấp nháy Skeleton thay vì in chữ
+  // loading skeleton
   showLoadingSkeleton();
 
   const subdomain = subdomainFilter.value;
@@ -92,20 +136,16 @@ function renderPagination(data) {
 
   const { currentPage, totalPages } = data;
 
-  // Cấu hình số lượng nút tối đa muốn hiển thị (nên để số lẻ như 5 hoặc 7)
   const maxVisibleButtons = 7;
 
-  // Tính toán điểm bắt đầu và kết thúc của dải nút
   let startPage = Math.max(1, currentPage - Math.floor(maxVisibleButtons / 2));
   let endPage = startPage + maxVisibleButtons - 1;
 
-  // Điều chỉnh lại nếu dải nút vượt quá tổng số trang
   if (endPage > totalPages) {
     endPage = totalPages;
     startPage = Math.max(1, endPage - maxVisibleButtons + 1);
   }
 
-  // --- NÚT TRƯỚC ---
   const prevBtn = document.createElement("button");
   prevBtn.className = "page-btn";
   prevBtn.textContent = "Trước";
@@ -113,7 +153,6 @@ function renderPagination(data) {
   prevBtn.onclick = () => fetchResults(currentKeyword, currentPage - 1);
   paginationContainer.appendChild(prevBtn);
 
-  // --- HIỂN THỊ TRANG ĐẦU VÀ DẤU ... NẾU CẦN ---
   if (startPage > 1) {
     const firstBtn = document.createElement("button");
     firstBtn.className = "page-btn";
@@ -129,7 +168,6 @@ function renderPagination(data) {
     }
   }
 
-  // --- RENDER CÁC TRANG Ở GIỮA ---
   for (let i = startPage; i <= endPage; i++) {
     const pageBtn = document.createElement("button");
     pageBtn.className = `page-btn ${i === currentPage ? "active" : ""}`;
@@ -138,7 +176,6 @@ function renderPagination(data) {
     paginationContainer.appendChild(pageBtn);
   }
 
-  // --- HIỂN THỊ TRANG CUỐI VÀ DẤU ... NẾU CẦN ---
   if (endPage < totalPages) {
     if (endPage < totalPages - 1) {
       const dots = document.createElement("span");
@@ -154,7 +191,6 @@ function renderPagination(data) {
     paginationContainer.appendChild(lastBtn);
   }
 
-  // --- NÚT TIẾP ---
   const nextBtn = document.createElement("button");
   nextBtn.className = "page-btn";
   nextBtn.textContent = "Tiếp";
@@ -280,47 +316,3 @@ async function loadSubdomains(initialSubdomain = "") {
     subdomainSelect.innerHTML = '<option value="">Tất cả các Trường</option>';
   }
 }
-
-window.addEventListener("DOMContentLoaded", async () => {
-  // Đọc các tham số trên thanh địa chỉ URL
-  const urlParams = new URLSearchParams(window.location.search);
-  const keyword = urlParams.get("keyword");
-  const subdomain = urlParams.get("subdomain") || "";
-  const page = parseInt(urlParams.get("page")) || 1;
-
-  await loadSubdomains(subdomain);
-
-  // Nếu có từ khóa trên thanh URL -> Tự động điền vào ô input và gọi tìm kiếm
-  if (keyword) {
-    searchInput.value = keyword;
-    subdomainFilter.value = subdomain;
-    currentKeyword = keyword;
-
-    // Gọi thẳng hàm fetch để bỏ qua bước lưu lịch sử khi mới load trang
-    fetchResults(keyword, page);
-  }
-});
-
-subdomainFilter.addEventListener("change", () => {
-  if (currentKeyword) {
-    fetchResults(currentKeyword, 1);
-  }
-});
-
-window.addEventListener("popstate", (event) => {
-  if (event.state) {
-    const { keyword, subdomain, page } = event.state;
-    searchInput.value = keyword;
-    subdomainFilter.value = subdomain;
-    currentKeyword = keyword;
-
-    // Gọi lại hàm để render dữ liệu cũ mà không làm reload trang
-    fetchResults(keyword, page);
-  } else {
-    // Nếu quay về trang chủ (không có tham số)
-    resultsContainer.innerHTML = "";
-    searchStats.textContent = "";
-    paginationContainer.innerHTML = "";
-    searchInput.value = "";
-  }
-});
