@@ -15,7 +15,7 @@
         <module>web-app-module</module>
         <module>crawler-module</module>
         <module>lucene-core-module</module>
-        <!-- <module>evaluation-module</module> -->
+        <module>evaluation-module</module>
         <module>parser-module</module>
     </modules>
 

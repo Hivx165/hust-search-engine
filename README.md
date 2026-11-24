@@ -136,10 +136,12 @@ hust-search-engine/
 │   ├── src/main/java/edu/hust/evaluation/
 │   │   ├── BenchmarkRunner.java             # Nạp tập truy vấn và chạy tự động
 │   │   ├── MapCalculator.java               # Công thức tính Precision@k, AP, MAP
-│   │   └── EvaluationReportExporter.java    # Xuất kết quả ra file Markdown/CSV
+│   │   └── EvaluationReportExporter.java    # Xuất CSV, Markdown, HTML và biểu đồ SVG
 │   └── src/main/resources/
 │       ├── test_queries.json                # Tập các query thử nghiệm (|Q| ~ 3)
 │       └── ground_truth_relevance.csv       # File gán nhãn đúng/sai thực tế
+│
+├── reports/                                  # Báo cáo benchmark và biểu đồ sinh từ dữ liệu thật
 │
 └── web-app-module/                           # Module 5: Giao diện Web & REST API
     ├── src/main/java/edu/hust/web/
@@ -387,6 +389,44 @@ public class LuceneSearchService {
    Q02,doc_889,1
    ```
 3. **Lập trình tính MAP tự động:** Chạy từng câu truy vấn qua hệ thống Lucene, lấy Top-50 kết quả trả về và tính toán $P@k$, $AP$, và cuối cùng là $MAP$.
+
+### Chạy benchmark và xuất báo cáo
+
+Từ thư mục gốc repository, chạy unit/integration test của evaluation module:
+
+```shell
+mvn -pl evaluation-module test
+```
+
+Để build các module phụ thuộc, chạy benchmark trên `storage/lucene_index` (read-only) và sinh lại báo cáo:
+
+```shell
+mvn -pl evaluation-module -am verify
+```
+
+Ở phase `verify`, `EvaluationReportExporter` chạy Top-50 cho `BASELINE` và
+`TITLE_BOOST_SHOULD`, rồi ghi các đầu ra vào `reports/`:
+
+- `ap_at_50.csv`: AP@50 từng query và dòng MAP@50 tổng hợp.
+- `ap_at_50_comparison.svg`, `map_at_50_comparison.svg`: biểu đồ AP và MAP.
+- `benchmark_report.md`: phương pháp, số liệu và nhận xét.
+- `benchmark_dashboard.html`: bảng và biểu đồ có thể mở trực tiếp bằng trình duyệt.
+
+### Kết quả thực nghiệm mới nhất
+
+Kết quả chạy trên 25 truy vấn và 119 nhãn (88 relevant, 31 non-relevant):
+
+| Cấu hình | MAP@50 |
+| --- | ---: |
+| BASELINE | 0.8354 |
+| TITLE_BOOST_SHOULD | 0.8166 |
+
+Trên bộ nhãn hiện tại, cấu hình có Title Boost/SHOULD thấp hơn BASELINE 0.0188
+MAP. AP từng truy vấn và phân tích chi tiết được sinh từ benchmark trong
+[`reports/benchmark_report.md`](./reports/benchmark_report.md); dashboard nằm ở
+[`reports/benchmark_dashboard.html`](./reports/benchmark_dashboard.html).
+Ground truth là tập nhãn mẫu, không phải đánh giá đầy đủ mọi tài liệu của index,
+nên cần xem MAP trong phạm vi 25 truy vấn và 119 judgment này.
 
 ### Code mẫu Thuật toán tính MAP (Java):
 
