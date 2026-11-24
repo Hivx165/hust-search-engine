@@ -1,8 +1,6 @@
 package edu.hust.web.service;
 
 import edu.hust.search.query.LuceneSearchService;
-import edu.hust.search.query.SearchResultDTO;
-// Import thêm DTO Wrapper mà ta vừa tạo
 import edu.hust.search.query.PagedSearchResponse;
 
 import org.springframework.stereotype.Service;
@@ -33,13 +31,6 @@ public class SearchService {
         if (size > 100)
             size = 100;
 
-        try {
-            return luceneSearchService.doSearch(keyword, subdomain, page, size);
-
-        } catch (Exception e) {
-            System.err.println("Lỗi trong quá trình tìm kiếm Lucene: " + e.getMessage());
-            e.printStackTrace();
-            return new PagedSearchResponse(0, Collections.emptyList());
-        }
+        return luceneSearchService.doSearch(keyword, subdomain, page, size);
     }
 }

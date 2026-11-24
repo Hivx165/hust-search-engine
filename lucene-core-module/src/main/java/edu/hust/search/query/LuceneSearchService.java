@@ -7,8 +7,10 @@ import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
 import org.apache.lucene.search.TopDocs;
 import org.apache.lucene.search.highlight.*;
+import org.apache.lucene.queryparser.classic.ParseException;
 import org.springframework.stereotype.Service;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -23,18 +25,19 @@ public class LuceneSearchService {
 
     public PagedSearchResponse doSearch(String keyword, String subdomain, int page, int size) {
         List<SearchResultDTO> results = new ArrayList<>();
-        IndexSearcher searcher = null;
-        long totalHits = 0; // Biến lưu tổng số lượng
-
+        IndexSearcher searcher;
         try {
             searcher = indexManager.getSearcherManager().acquire();
+        } catch (IOException e) {
+            throw new IllegalStateException("Unable to acquire a Lucene searcher.", e);
+        }
+
+        RuntimeException searchFailure = null;
+        try {
             Query query = QueryBuilderHelper.buildAdvancedQuery(keyword, null, subdomain, indexManager.getAnalyzer());
 
             int totalHitsToFetch = page * size;
             TopDocs topDocs = searcher.search(query, Math.max(totalHitsToFetch, 1));
-
-            // Lấy TỔNG SỐ LƯỢNG THỰC TẾ khớp với truy vấn trong toàn bộ cơ sở dữ liệu
-            totalHits = topDocs.totalHits.value;
 
             QueryScorer scorer = new QueryScorer(query);
             Highlighter highlighter = new Highlighter(new SimpleHTMLFormatter("<mark>", "</mark>"), scorer);
@@ -59,19 +62,25 @@ public class LuceneSearchService {
                 results.add(new SearchResultDTO(title, url, snippet, scoreDoc.score));
             }
 
-        } catch (Exception e) {
-            e.printStackTrace();
+            return new PagedSearchResponse(topDocs.totalHits.value, results);
+        } catch (IOException | ParseException | InvalidTokenOffsetsException e) {
+            IllegalStateException failure =
+                    new IllegalStateException("Lucene search failed for keyword: " + keyword, e);
+            searchFailure = failure;
+            throw failure;
+        } catch (RuntimeException e) {
+            searchFailure = e;
+            throw e;
         } finally {
-            if (searcher != null) {
-                try {
-                    indexManager.getSearcherManager().release(searcher);
-                } catch (Exception e) {
-                    e.printStackTrace();
+            try {
+                indexManager.getSearcherManager().release(searcher);
+            } catch (IOException e) {
+                if (searchFailure != null) {
+                    searchFailure.addSuppressed(e);
+                } else {
+                    throw new IllegalStateException("Unable to release the Lucene searcher.", e);
                 }
             }
         }
-
-        // Trả về cả tổng số lượng (totalHits) và danh sách cắt trang (results)
-        return new PagedSearchResponse(totalHits, results);
     }
 }
