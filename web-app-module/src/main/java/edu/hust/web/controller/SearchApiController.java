@@ -1,6 +1,6 @@
 package edu.hust.web.controller;
 
-import edu.hust.search.query.PagedSearchResponse;
+import edu.hust.search.query.SearchResponseDTO;
 import edu.hust.web.dto.SearchResponse;
 import edu.hust.web.service.SearchService;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -24,18 +24,18 @@ public class SearchApiController {
             @RequestParam(name = "size", defaultValue = "10") int size) {
         long startTime = System.currentTimeMillis();
 
-        PagedSearchResponse pagedResponse = searchService.search(keyword, subdomain, page, size);
+        SearchResponseDTO searchResponse = searchService.search(keyword, subdomain, page, size);
 
         long processingTimeMs = System.currentTimeMillis() - startTime;
 
-        int calculatedTotalPages = (int) Math.ceil((double) pagedResponse.getTotalHits() / size);
+        int calculatedTotalPages = (int) Math.ceil((double) searchResponse.getTotalHits() / size);
 
         return new SearchResponse(
                 keyword,
-                (int) pagedResponse.getTotalHits(),
+                (int) searchResponse.getTotalHits(),
                 page,
                 calculatedTotalPages,
                 processingTimeMs,
-                pagedResponse.getResults());
+                searchResponse.getResults());
     }
 }

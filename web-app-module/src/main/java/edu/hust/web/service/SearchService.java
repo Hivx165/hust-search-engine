@@ -1,9 +1,9 @@
 package edu.hust.web.service;
 
 import edu.hust.search.query.LuceneSearchService;
-import edu.hust.search.query.PagedSearchResponse;
-
+import edu.hust.search.query.SearchResponseDTO;
 import org.springframework.stereotype.Service;
+
 import java.util.Collections;
 
 @Service
@@ -15,22 +15,32 @@ public class SearchService {
         this.luceneSearchService = luceneSearchService;
     }
 
-    public PagedSearchResponse search(String keyword, String subdomain, int page, int size) {
+    public SearchResponseDTO search(String keyword, String subdomain, int page, int size) {
+        long startTime = System.currentTimeMillis();
 
-        // Validation
-        if (keyword == null || keyword.trim().isEmpty()) {
-            // Fallback: Trả về đối tượng PagedSearchResponse với tổng số = 0 và danh sách
-            // rỗng
-            return new PagedSearchResponse(0, Collections.emptyList());
+        int validPage = Math.max(1, page);
+        int validSize = size <= 0 ? 10 : Math.min(size, 100);
+
+        if (keyword == null || keyword.isBlank()) {
+            return new SearchResponseDTO(
+                    keyword,
+                    0L,
+                    validPage,
+                    validSize,
+                    System.currentTimeMillis() - startTime,
+                    Collections.emptyList());
         }
 
-        if (page < 1)
-            page = 1;
-        if (size <= 0)
-            size = 10;
-        if (size > 100)
-            size = 100;
-
-        return luceneSearchService.doSearch(keyword, subdomain, page, size);
+        try {
+            return luceneSearchService.searchPaged(keyword, subdomain, validPage, validSize);
+        } catch (Exception e) {
+            return new SearchResponseDTO(
+                    keyword,
+                    0L,
+                    validPage,
+                    validSize,
+                    System.currentTimeMillis() - startTime,
+                    Collections.emptyList());
+        }
     }
 }

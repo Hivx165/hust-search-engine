@@ -2,13 +2,16 @@ package edu.hust.web.service;
 
 import edu.hust.search.index.LuceneIndexManager;
 import edu.hust.search.query.LuceneSearchService;
+import edu.hust.search.query.SearchResponseDTO;
+import edu.hust.search.query.SearchResultDTO;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
 
 import java.io.IOException;
 import java.nio.file.Path;
+import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class SearchServiceTest {
@@ -17,36 +20,33 @@ class SearchServiceTest {
     Path tempDir;
 
     @Test
-    void doesNotTurnLuceneQueryParseErrorsIntoEmptyResults() throws IOException {
-        try (LuceneIndexManager indexManager =
-                     new LuceneIndexManager(tempDir.resolve("lucene-index"))) {
-            SearchService searchService =
-                    new SearchService(new LuceneSearchService(indexManager));
+    void returnsEmptyResponseOnInvalidLuceneQuery() throws IOException {
+        Path indexDir = tempDir.resolve("lucene-index");
+        try (LuceneIndexManager ignored = new LuceneIndexManager(indexDir)) {
+            LuceneSearchService luceneSearchService = new LuceneSearchService(indexDir);
+            SearchService searchService = new SearchService(luceneSearchService);
 
-            IllegalStateException error = assertThrows(
-                    IllegalStateException.class,
-                    () -> searchService.search("title:(", null, 1, 10));
+            SearchResponseDTO response = searchService.search("title:(", null, 1, 10);
 
-            assertTrue(error.getMessage().contains("Lucene search failed"));
-            assertTrue(error.getCause() instanceof org.apache.lucene.queryparser.classic.ParseException);
+            assertEquals(0L, response.getTotalHits());
+            assertTrue(response.getResults().isEmpty());
         }
     }
 
     @Test
-    void doesNotTurnUnexpectedSearchFailuresIntoEmptyResults() {
-        LuceneSearchService failingSearchService = new LuceneSearchService(null) {
+    void returnsEmptyResponseWhenSearchServiceFails() throws IOException {
+        Path indexDir = tempDir.resolve("failing-index");
+        LuceneSearchService failingSearchService = new LuceneSearchService(indexDir) {
             @Override
-            public edu.hust.search.query.PagedSearchResponse doSearch(
-                    String keyword, String subdomain, int page, int size) {
+            public List<SearchResultDTO> search(String queryText, int topK) {
                 throw new IllegalStateException("index unavailable");
             }
         };
         SearchService searchService = new SearchService(failingSearchService);
 
-        IllegalStateException error = assertThrows(
-                IllegalStateException.class,
-                () -> searchService.search("keyword", null, 1, 10));
+        SearchResponseDTO response = searchService.search("keyword", null, 1, 10);
 
-        assertTrue(error.getMessage().contains("index unavailable"));
+        assertEquals(0L, response.getTotalHits());
+        assertTrue(response.getResults().isEmpty());
     }
 }

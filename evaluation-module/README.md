@@ -30,7 +30,7 @@ evaluation-module/
 3. `BenchmarkRunner.runBoth()` mở `storage/lucene_index` ở chế độ read-only bằng `FSDirectory` và `DirectoryReader`.
 4. `BenchmarkRunner.validateGroundTruthDocIds()` kiểm tra mọi doc_id relevant đều tồn tại trong field Lucene `id`.
 5. `BenchmarkRunner.retrieveResults()` chạy mỗi truy vấn với hai mode:
-   - `BASELINE`: chỉ truyền query làm từ khóa bắt buộc.
+   - `BASELINE`: chỉ truyền query làm từ khóa bắt buộc, với trọng số `title=1.0`, `content=1.0`.
    - `TITLE_BOOST_SHOULD`: thêm cùng query dưới dạng SHOULD và boost `title=2.0`, `content=1.0`.
 6. Mỗi truy vấn lấy tối đa 50 `ScoreDoc`, đọc stored field `id` và chuyển thành danh sách doc_id.
 7. `MapCalculator.evaluateAtK()` tính AP@50 từng query và MAP@50 tổng hợp.

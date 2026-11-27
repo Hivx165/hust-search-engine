@@ -36,9 +36,9 @@ web-app-module/
 storage/lucene_index
 ```
 
-Index phải đã được tạo/chỉnh sửa bởi `lucene-core-module` và có field `id`, `title`, `content`, `subdomain`, `url`.
+Index phải được tạo bởi `lucene-core-module` và có các field `id`, `title`, `content`, `subdomain`, `url`.
 
-Nếu thư mục index chưa tồn tại hoặc service không thể mở Searcher, ứng dụng Spring phải được dừng và kiểm tra thay vì coi lỗi thành tập kết quả rỗng. Với từ khóa rỗng, `SearchService` chủ động trả `PagedSearchResponse` với tổng hit bằng `0`.
+Index được mở khi Spring khởi tạo `LuceneSearchService`; nếu không mở được, ứng dụng không khởi động thành công. Với từ khóa rỗng, `SearchService` trả `SearchResponseDTO` có tổng hit bằng `0` và danh sách kết quả rỗng.
 
 ## Chạy ứng dụng
 
@@ -98,8 +98,10 @@ Tham số:
 
 - `keyword`: từ khóa bắt buộc về mặt logic giao diện; mặc định chuỗi rỗng.
 - `subdomain`: tên miền con; chuỗi rỗng hoặc bỏ qua để tìm toàn bộ.
-- `page`: trang hiện tại; giá trị nhỏ hơn `1` được `SearchService` chuyển thành `1`.
-- `size`: số kết quả mỗi trang; mặc định hoặc giới hạn là `10`, giá trị âm hoặc bằng `0` trở thành `10`, giá trị trên `100` trở thành `100`.
+- `page`: trang hiện tại, bắt đầu từ `1`; mặc định là `1`.
+- `size`: số kết quả mỗi trang; mặc định là `10`. Giá trị hợp lệ là từ `1` đến `100`.
+
+`SearchService` chuẩn hóa `page` và `size` trước khi truy vấn Lucene. Tuy nhiên, response hiện dùng `page` đầu vào làm `currentPage` và controller tính `totalPages` từ `size` đầu vào. Vì vậy, hãy gửi `page >= 1` và `1 <= size <= 100` để metadata phân trang chính xác.
 
 Phản hồi JSON do `SearchResponse` tạo:
 
@@ -116,10 +118,14 @@ Phản hồi JSON do `SearchResponse` tạo:
 
 Mỗi phần tử kết quả có:
 
+- `id`
 - `title`
 - `url`
 - `snippet`
 - `score`
+- `subdomain`
+- `crawledDate`
+- `fileType`
 
 ### Danh mục subdomain
 
@@ -135,24 +141,24 @@ Danh mục được [`SubdomainUtil`](src/main/java/edu/hust/web/util/SubdomainU
 Browser / app.js
     -> SearchApiController
     -> SearchService
-    -> LuceneSearchService
+    -> LuceneSearchService.searchPaged(...)
     -> QueryBuilderHelper
     -> storage/lucene_index
-    -> PagedSearchResponse
-    -> SearchResponse
+    -> SearchResponseDTO
+    -> SearchApiController chuyển thành SearchResponse
     -> JSON trả về browser
 ```
 
-`SearchApiController` tính `totalPages` từ `totalHits` và `size`. `LuceneSearchService` dùng cùng analyzer Lucene, MultiFieldQueryParser, Top-K phân trang và Highlighter.
+`LuceneSearchService.searchPaged(...)` dựng query có bộ lọc subdomain, lấy tổng số hit và cắt kết quả theo trang. Query dùng `VietnameseLuceneAnalyzer`, BooleanQuery với title boost và BM25; kết quả có snippet được tạo bằng Lucene Highlighter.
 
-Trong ứng dụng Web hiện tại, `SearchService` gọi `LuceneSearchService.doSearch(keyword, subdomain, page, size)` và không truyền SHOULD từ benchmark. Vì vậy luồng Web vẫn ở ranking baseline và không thay đổi cấu hình đánh giá của module evaluation.
+Luồng Web dùng `searchPaged(...)` của Lucene core, không dùng cấu hình SHOULD của benchmark trong `evaluation-module`.
 
 ## Xử lý lỗi
 
 - Từ khóa rỗng: trả response tổng hit `0`, danh sách rỗng và không truy vấn Lucene.
-- Lỗi parse/query hoặc lỗi Lucene: ném `IllegalStateException` thay vì nuốt thành danh sách rỗng.
-- Tham số phân trang ngoài phạm vi: được chuẩn hóa trong `SearchService`.
-- Lỗi mạng hoặc HTTP ở phía browser: `app.js` hiển thị thông báo lỗi kết nối.
+- Lỗi query hoặc lỗi Lucene trong lúc tìm kiếm: `SearchService` hiện bắt exception và trả response rỗng với tổng hit `0`. Response này không phân biệt được với trường hợp không có kết quả; cần xem log/backend nếu gặp bất thường.
+- `SearchService` chuẩn hóa tham số phân trang trước khi gọi Lucene; để `currentPage` và `totalPages` nhất quán, chỉ gửi `page >= 1` và `size` trong khoảng `1–100`.
+- Lỗi mạng hoặc response JSON không hợp lệ ở phía browser: `app.js` hiển thị thông báo lỗi kết nối.
 
 ## Kiểm thử
 
@@ -168,4 +174,4 @@ Chạy đầy đủ test cùng dependency:
 mvn -pl web-app-module -am test
 ```
 
-Test hiện có trong [`src/test/java/edu/hust/web/service/SearchServiceTest.java`](src/test/java/edu/hust/web/service/SearchServiceTest.java) kiểm tra rằng lỗi parse query và lỗi Lucene không bị biến thành kết quả rỗng.
+Test hiện có trong [`src/test/java/edu/hust/web/service/SearchServiceTest.java`](src/test/java/edu/hust/web/service/SearchServiceTest.java) kiểm tra response rỗng khi query không hợp lệ hoặc Lucene gặp lỗi.

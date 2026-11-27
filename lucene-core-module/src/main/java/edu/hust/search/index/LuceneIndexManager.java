@@ -55,7 +55,8 @@ public class LuceneIndexManager implements AutoCloseable {
     private final AtomicBoolean isClosed = new AtomicBoolean(false);
 
     /**
-     * Default constructor opening index in standard location "storage/lucene_index".
+     * Default constructor opening index in standard location
+     * "storage/lucene_index".
      */
     public LuceneIndexManager() throws IOException {
         this(Paths.get("storage", "lucene_index"), new VietnameseLuceneAnalyzer());
@@ -88,7 +89,8 @@ public class LuceneIndexManager implements AutoCloseable {
 
         this.indexWriter = new IndexWriter(this.directory, config);
 
-        // SearcherManager manages near-real-time IndexSearcher instances for downstream modules
+        // SearcherManager manages near-real-time IndexSearcher instances for downstream
+        // modules
         this.searcherManager = new SearcherManager(this.indexWriter, true, true, null);
 
         this.objectMapper = new ObjectMapper();
@@ -146,7 +148,8 @@ public class LuceneIndexManager implements AutoCloseable {
     }
 
     /**
-     * Reads and imports documents from a JSON or JSONL file delivered by parser-module (Member 2).
+     * Reads and imports documents from a JSON or JSONL file delivered by
+     * parser-module (Member 2).
      * Automatically detects standard JSON array vs. JSON Lines format.
      *
      * @param jsonPath Path to the input JSON / JSONL file
@@ -176,7 +179,8 @@ public class LuceneIndexManager implements AutoCloseable {
 
             if (firstChar == '[') {
                 // Format: Standard JSON array [ {...}, {...} ]
-                documents = objectMapper.readValue(reader, new TypeReference<List<DocumentModel>>() {});
+                documents = objectMapper.readValue(reader, new TypeReference<List<DocumentModel>>() {
+                });
             } else {
                 // Format: JSON Lines (one JSON object per line)
                 String line;
@@ -206,7 +210,8 @@ public class LuceneIndexManager implements AutoCloseable {
     }
 
     /**
-     * Retrieves current index statistics (number of live documents, max docs, deleted docs).
+     * Retrieves current index statistics (number of live documents, max docs,
+     * deleted docs).
      */
     public IndexStats getIndexStats() {
         ensureOpen();

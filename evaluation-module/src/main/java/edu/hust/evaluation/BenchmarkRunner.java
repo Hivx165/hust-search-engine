@@ -12,7 +12,6 @@ import edu.hust.search.index.DocumentSchema;
 import edu.hust.search.query.QueryBuilderHelper;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
-import org.apache.lucene.queryparser.classic.ParseException;
 import org.apache.lucene.search.IndexSearcher;
 import org.apache.lucene.search.Query;
 import org.apache.lucene.search.ScoreDoc;
@@ -181,21 +180,21 @@ public final class BenchmarkRunner {
             List<QueryDefinition> queries,
             RankingMode mode) throws IOException {
         Map<String, List<String>> retrieved = new LinkedHashMap<>();
+        QueryBuilderHelper queryBuilder = new QueryBuilderHelper(analyzer);
 
         for (QueryDefinition queryDefinition : queries) {
             String shouldKeyword = mode == RankingMode.TITLE_BOOST_SHOULD
                     ? queryDefinition.query()
                     : null;
-            Query query;
-            try {
-                query = QueryBuilderHelper.buildAdvancedQuery(
-                        queryDefinition.query(), shouldKeyword, null, analyzer);
-            } catch (ParseException e) {
-                throw new IOException(
-                        "Could not parse query " + queryDefinition.queryId() + ": "
-                                + queryDefinition.query(),
-                        e);
-            }
+            float titleBoost = mode == RankingMode.TITLE_BOOST_SHOULD
+                    ? QueryBuilderHelper.DEFAULT_TITLE_BOOST
+                    : QueryBuilderHelper.DEFAULT_CONTENT_BOOST;
+            Query query = queryBuilder.buildAdvancedQuery(
+                    queryDefinition.query(),
+                    shouldKeyword,
+                    null,
+                    titleBoost,
+                    QueryBuilderHelper.DEFAULT_CONTENT_BOOST);
 
             TopDocs topDocs = searcher.search(query, cutoff);
             List<String> docIds = new ArrayList<>(topDocs.scoreDocs.length);
