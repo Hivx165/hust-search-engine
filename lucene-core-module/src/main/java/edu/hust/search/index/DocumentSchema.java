@@ -1,105 +1,83 @@
 package edu.hust.search.index;
 
-import edu.hust.search.model.DocumentModel;
-import org.apache.lucene.document.Document;
-import org.apache.lucene.document.Field;
-import org.apache.lucene.document.LongPoint;
-import org.apache.lucene.document.NumericDocValuesField;
-import org.apache.lucene.document.StoredField;
-import org.apache.lucene.document.StringField;
-import org.apache.lucene.document.TextField;
+import org.apache.lucene.document.*;
 
-import java.time.Instant;
-import java.util.Objects;
+import edu.hust.search.model.DocumentModel;
 
 /**
- * Standard Document Schema definition for Lucene Core (Member 3).
- * Maps DocumentModel to Lucene Document using modern Lucene 9.x+ APIs.
+ * Định nghĩa cấu trúc Field của tài liệu trong Inverted Index Apache Lucene.
+ * Quy định chuẩn giao tiếp chung giữa Crawler, Parser, Indexer và Searcher.
  */
 public final class DocumentSchema {
 
+    // Tên các trường chuẩn trong Lucene Document
     public static final String FIELD_ID = "id";
     public static final String FIELD_URL = "url";
     public static final String FIELD_TITLE = "title";
     public static final String FIELD_CONTENT = "content";
     public static final String FIELD_SUBDOMAIN = "subdomain";
-    public static final String FIELD_FILE_TYPE = "file_type";
     public static final String FIELD_CRAWLED_DATE = "crawled_date";
+    public static final String FIELD_FILE_TYPE = "file_type";
     public static final String FIELD_CONTENT_HASH = "content_hash";
 
     private DocumentSchema() {
-        // Private constructor for utility class
+        // Utility class
     }
 
     /**
-     * Converts a DocumentModel into an Apache Lucene Document adhering strictly
-     * to the 8-field architectural schema specification.
-     *
-     * @param model Domain data transfer object
-     * @return Fully mapped Lucene Document
+     * Tạo một đối tượng Document của Lucene từ các trường dữ liệu thô.
      */
-    public static Document toLuceneDocument(DocumentModel model) {
-        Objects.requireNonNull(model, "DocumentModel must not be null");
-        Objects.requireNonNull(model.getId(), "Document ID must not be null for indexing");
-
+    public static Document createDocument(
+            String id,
+            String url,
+            String title,
+            String content,
+            String subdomain,
+            long crawledDate,
+            String fileType,
+            String contentHash) {
         Document doc = new Document();
 
-        // 1. id: StringField (exact keyword, stored). Used as primary key for updates
-        doc.add(new StringField(FIELD_ID, model.getId(), Field.Store.YES));
+        if (id != null) {
+            doc.add(new StringField(FIELD_ID, id, Field.Store.YES));
+        }
+        if (url != null) {
+            doc.add(new StoredField(FIELD_URL, url));
+        }
+        if (title != null) {
+            doc.add(new TextField(FIELD_TITLE, title, Field.Store.YES));
+        }
+        if (content != null) {
+            doc.add(new TextField(FIELD_CONTENT, content, Field.Store.YES));
+        }
+        if (subdomain != null) {
+            doc.add(new StringField(FIELD_SUBDOMAIN, subdomain, Field.Store.YES));
+        }
+        doc.add(new LongPoint(FIELD_CRAWLED_DATE, crawledDate));
+        doc.add(new StoredField(FIELD_CRAWLED_DATE, crawledDate));
 
-        // 2. url: StoredField (stored for UI presentation only, not indexed)
-        doc.add(new StoredField(FIELD_URL, model.getUrl() != null ? model.getUrl() : ""));
-
-        // 3. title: TextField (analyzed full-text, stored for UI display & query boosting)
-        doc.add(new TextField(FIELD_TITLE, model.getTitle() != null ? model.getTitle() : "", Field.Store.YES));
-
-        // 4. content: TextField (analyzed full-text, STORED.YES is required for Member 4 Highlighter)
-        doc.add(new TextField(FIELD_CONTENT, model.getContent() != null ? model.getContent() : "", Field.Store.YES));
-
-        // 5. subdomain: StringField (exact keyword, stored for filtering by school/department)
-        doc.add(new StringField(FIELD_SUBDOMAIN, model.getSubdomain() != null ? model.getSubdomain() : "", Field.Store.YES));
-
-        // 6. file_type: StringField (exact keyword: HTML, PDF, DOCX)
-        doc.add(new StringField(FIELD_FILE_TYPE, model.getFileType() != null ? model.getFileType() : "HTML", Field.Store.YES));
-
-        // 7. crawled_date: Multi-field for modern Lucene (Point + Stored + DocValues)
-        long epochMillis = model.getCrawledEpochMillis();
-        // A) LongPoint: For BKD-tree range filter queries (LongPoint.newRangeQuery)
-        doc.add(new LongPoint(FIELD_CRAWLED_DATE, epochMillis));
-        // B) StoredField: Retrieval for UI display
-        doc.add(new StoredField(FIELD_CRAWLED_DATE, epochMillis));
-        // C) NumericDocValuesField: Columnar storage for fast sorting and aggregation
-        doc.add(new NumericDocValuesField(FIELD_CRAWLED_DATE, epochMillis));
-
-        // 8. content_hash: StoredField (stored for crawler change-detection and audit)
-        doc.add(new StoredField(FIELD_CONTENT_HASH, model.getContentHash() != null ? model.getContentHash() : ""));
+        if (fileType != null) {
+            doc.add(new StringField(FIELD_FILE_TYPE, fileType, Field.Store.YES));
+        }
+        if (contentHash != null) {
+            doc.add(new StoredField(FIELD_CONTENT_HASH, contentHash));
+        }
 
         return doc;
     }
 
-    /**
-     * Helper to reconstruct a DocumentModel from stored fields in a Lucene hit Document.
-     * Useful for search service retrieval (Member 4) and verification.
-     */
-    public static DocumentModel fromLuceneDocument(Document doc) {
+    public static Document toLuceneDocument(DocumentModel doc) {
         if (doc == null) {
-            return null;
+            return new Document();
         }
-
-        DocumentModel model = new DocumentModel();
-        model.setId(doc.get(FIELD_ID));
-        model.setUrl(doc.get(FIELD_URL));
-        model.setTitle(doc.get(FIELD_TITLE));
-        model.setContent(doc.get(FIELD_CONTENT));
-        model.setSubdomain(doc.get(FIELD_SUBDOMAIN));
-        model.setFileType(doc.get(FIELD_FILE_TYPE));
-        model.setContentHash(doc.get(FIELD_CONTENT_HASH));
-
-        Number dateVal = doc.getField(FIELD_CRAWLED_DATE) != null ? doc.getField(FIELD_CRAWLED_DATE).numericValue() : null;
-        if (dateVal != null) {
-            model.setCrawledAt(Instant.ofEpochMilli(dateVal.longValue()).toString());
-        }
-
-        return model;
+        return createDocument(
+                doc.getId(),
+                doc.getUrl(),
+                doc.getTitle(),
+                doc.getContent(),
+                doc.getSubdomain(),
+                doc.getCrawledEpochMillis(),
+                doc.getFileType(),
+                doc.getContentHash());
     }
 }
