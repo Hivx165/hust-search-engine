@@ -1,0 +1,15 @@
+[
+  { "value": "", "label": "Tất cả các Trang" },
+  { "value": "soict.hust.edu.vn", "label": "CNTT & TT (SOICT)" },
+  { "value": "sami.hust.edu.vn", "label": "Toán ứng dụng (SAMI)" },
+  { "value": "cfl.hust.edu.vn", "label": "Ngoại ngữ (CFL)" },
+  { "value": "seee.hust.edu.vn", "label": "Điện - Điện tử (SEEE)" },
+  { "value": "sme.hust.edu.vn", "label": "Cơ khí (SME)" },
+  { "value": "chemeng.hust.edu.vn", "label": "Kỹ thuật Hóa học" },
+  { "value": "sbft.hust.edu.vn", "label": "CNSH & Thực phẩm (SBFT)" },
+  { "value": "ctt.hust.edu.vn", "label": "Cổng thông tin (CTT)" },
+  { "value": "ctsv.hust.edu.vn", "label": "Công tác Sinh viên (CTSV)" },
+  { "value": "qldt.hust.edu.vn", "label": "Quản lý Đào tạo" },
+  { "value": "lms.hust.edu.vn", "label": "E-Learning (LMS)" },
+  { "value": "library.hust.edu.vn", "label": "Thư viện Tạ Quang Bửu" }
+]

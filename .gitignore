@@ -1,0 +1,51 @@
+# Compiled & Maven build artifacts
+target/
+*/target/
+out/
+*.class
+*.jar
+*.war
+*.ear
+hs_err_pid*.log
+
+# Logs & local environment
+*.log
+.env
+.env.*
+application-local.*
+
+# IDEs, Eclipse & OS temp files
+.idea/
+*.iml
+.classpath
+.project
+.settings/
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+*.temp
+*.bak
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+.pytest_cache/
+
+# Node / Frontend (if applicable)
+node_modules/
+dist/
+build/
+.next/
+*.tsbuildinfo
+
+# Local data, index & evaluation outputs (kiểm tra kỹ trước khi bật)
+models/
+reports/
+storage/

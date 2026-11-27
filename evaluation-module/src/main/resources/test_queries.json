@@ -1,0 +1,102 @@
+[
+  {
+    "query_id": "Q01",
+    "query": "tuyển sinh đại học"
+  },
+  {
+    "query_id": "Q02",
+    "query": "học bổng sinh viên"
+  },
+  {
+    "query_id": "Q03",
+    "query": "đăng ký học phần"
+  },
+  {
+    "query_id": "Q04",
+    "query": "nghiên cứu khoa học sinh viên"
+  },
+  {
+    "query_id": "Q05",
+    "query": "đánh giá tư duy"
+  },
+  {
+    "query_id": "Q06",
+    "query": "đồ án tốt nghiệp"
+  },
+  {
+    "query_id": "Q07",
+    "query": "lịch thi học kỳ"
+  },
+  {
+    "query_id": "Q08",
+    "query": "học bổng khuyến khích"
+  },
+  {
+    "query_id": "Q09",
+    "query": "hội nghị khoa học"
+  },
+  {
+    "query_id": "Q10",
+    "query": "khởi nghiệp sinh viên"
+  },
+  {
+    "query_id": "Q11",
+    "query": "tuyển sinh cao học"
+  },
+  {
+    "query_id": "Q12",
+    "query": "seminar khoa học"
+  },
+  {
+    "query_id": "Q13",
+    "query": "thực tập doanh nghiệp"
+  },
+  {
+    "query_id": "Q14",
+    "query": "chuyển đổi số giáo dục"
+  },
+  {
+    "query_id": "Q15",
+    "query": "hợp tác quốc tế"
+  },
+  {
+    "query_id": "Q16",
+    "query": "ngày hội việc làm"
+  },
+  {
+    "query_id": "Q17",
+    "query": "chương trình đào tạo đại học"
+  },
+  {
+    "query_id": "Q18",
+    "query": "đăng ký tốt nghiệp"
+  },
+  {
+    "query_id": "Q19",
+    "query": "quy chế tuyển sinh"
+  },
+  {
+    "query_id": "Q20",
+    "query": "điều khiển tự động hóa"
+  },
+  {
+    "query_id": "Q21",
+    "query": "vật liệu tiên tiến"
+  },
+  {
+    "query_id": "Q22",
+    "query": "câu lạc bộ khởi nghiệp"
+  },
+  {
+    "query_id": "Q23",
+    "query": "đăng ký học kỳ"
+  },
+  {
+    "query_id": "Q24",
+    "query": "hội thảo quốc tế"
+  },
+  {
+    "query_id": "Q25",
+    "query": "bảo vệ tốt nghiệp đại học"
+  }
+]
